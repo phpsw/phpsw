@@ -1,0 +1,14 @@
+{
+    "name": "phpsw/phpsw",
+    "description": "PHPSW",
+    "require": {
+        "dms/meetup-api-client": "~1.0"
+    },
+    "authors": [
+        {
+            "name": "Steve Lacey",
+            "email": "steve@stevelacey.net"
+        }
+    ],
+    "minimum-stability": "stable"
+}

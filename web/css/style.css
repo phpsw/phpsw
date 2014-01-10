@@ -1,0 +1,94 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url("/images/php-elephant.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-width: 320px;
+    margin: 0;
+    padding: 2em;
+    font: 16px helvetica neue, arial;
+    line-height: 1.6;
+}
+
+@media (min-width: 600px) {
+    padding: 4em 2em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #3c67a3;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 0;
+    margin: 0;
+    visibility: hidden;
+}
+
+.box {
+    background: white;
+    background: rgba(255, 255, 255, .9);
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+@media (min-width: 600px) {
+    .group div {
+        float: left;
+        width: 40%;
+        margin-left: -.5em;
+    }
+
+    .events {
+        float: right;
+        width: 60%;
+        margin-right: -.5em;
+    }
+}
+
+.event--upcoming {
+    background: white;
+}
+
+.post {
+    background: rgba(200, 229, 252, .75);
+}
+
+.group {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Clearfix group */
+
+/* For modern browsers */
+.group:before,
+.group:after {
+        display: table;
+        content: "";
+}
+
+.group:after {
+        clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.group {
+        zoom: 1;
+}
