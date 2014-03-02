@@ -118,6 +118,11 @@ img {
     padding: 2px 0;
 }
 
+.event__attendee img {
+    width: 32px;
+    height: 32px;
+}
+
 /* JS */
 
 .read-less {
