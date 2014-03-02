@@ -17,7 +17,14 @@
         </p>
     {% endif %}
 
-    <p>{{ event.yes_rsvp_count }} Attending</p>
+    <p>
+        {{ event.yes_rsvp_count }}
+        {% if event.status == 'upcoming' %}
+            Attending
+        {% else %}
+            Attended
+        {% endif %}
+    </p>
 
     <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
         {{ event.date.format('j') }}
