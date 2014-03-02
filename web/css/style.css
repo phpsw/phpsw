@@ -30,6 +30,15 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
+button {
+    width: 100%;
+    border: none;
+    padding: .75em;
+    font-size: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
 h1, h2, h3 {
     margin-top: 0;
 }
@@ -110,6 +119,11 @@ img {
 }
 
 /* JS */
+
+.read-less {
+    display: block;
+    margin: 1em 0;
+}
 
 .js-hide {
     display: none;

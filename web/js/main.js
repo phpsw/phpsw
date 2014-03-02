@@ -1,4 +1,12 @@
 $(function() {
+    $('.event__description').expander({
+        expandEffect: 'show',
+        expandSpeed: 0,
+        collapseEffect: 'hide',
+        collapseSpeed: 0,
+        slicePoint: 320
+    });
+
     $('.event--past:gt(2)').addClass('js-hide').first().after(
         $('<button>', {text: 'See more past events', class: 'box'}).click(function() {
             $(this).siblings('.event--past').removeClass('js-hide');
