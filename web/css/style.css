@@ -146,6 +146,7 @@ img {
 
 .contact ul li a {
     display: block;
+    max-width: 100px;
 }
 
 .contact ul li img {
