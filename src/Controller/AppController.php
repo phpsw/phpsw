@@ -100,10 +100,14 @@ class AppController
 
                 // if we have media attached, let's extract those from the entities as well
                 if (isset($tweet->entities->media)) {
-                    foreach ($tweet->entities->media as $media) {
+                    foreach ($tweet->entities->media as $key => $media) {
+                        $media->expanded_url_https = preg_replace('#^http://#', 'https://', $media->expanded_url);
+
                         $old_url        = $media->url;
-                        $replacement    = '<a href="' . $media->expanded_url . '" rel="external" class="twitter-media" data-media="' . $media->media_url . '">' . $media->display_url . '</a>';
+                        $replacement    = '<a href="' . $media->expanded_url_https . '" class="twitter-media" data-media="' . $media->media_url_https . '" rel="external">' . $media->display_url . '</a>';
                         $tweet->html    = str_ireplace($old_url, $replacement, $tweet->html);
+
+                        $tweet->entities->media[$key] = $media;
                     }
                 }
 

@@ -4,8 +4,8 @@
     {% if tweet.entities.media is defined %}
         {% for media in tweet.entities.media %}
             {% if media.type == 'photo' %}
-                <a href="{{ media.expanded_url }}" rel="external">
-                    <img src="{{ media.media_url }}">
+                <a href="{{ media.expanded_url_https }}" rel="external">
+                    <img src="{{ media.media_url_https }}">
                 </a>
             {% endif %}
         {% endfor %}
