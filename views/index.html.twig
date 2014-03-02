@@ -4,6 +4,7 @@
         <title>{{ app.title }}</title>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/css/fonts.css">
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
@@ -16,16 +17,32 @@
 
                     <p>{{ app.description }}</p>
 
-                    <ul>
-                        <li><a href="{{ app.meetup.url }}">Meetup page</a></li>
-                        <li><a href="{{ app.twitter.url }}">Twitter @{{ app.twitter.user }}</a></li>
+                    <ul class="list list--icons">
+                        <li>
+                            <a href="{{ app.meetup.url }}">
+                                <span class="genericon genericon-month"></span>
+                                <span>Find us on Meetup</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ app.twitter.url }}">
+                                <span class="genericon genericon-twitter"></span>
+                                <span>Tweet us at @{{ app.twitter.user }}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ app.github.url }}">
+                                <span class="genericon genericon-github"></span>
+                                <span>Fork this on GitHub</span>
+                            </a>
+                        </li>
                     </ul>
                 </header>
 
                 <section class="contact box">
                     <h2>Get in touch</h2>
 
-                    <ul>
+                    <ul class="list">
                         {% for organiser in app.organisers %}
                             <li>
                                 <img src="{{ organiser.photo }}" alt="{{ organiser.name }}">

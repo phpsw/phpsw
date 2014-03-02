@@ -20,6 +20,9 @@ organisers:
         twitter: stevelacey
         url: http://stevelacey.net
 
+github:
+    url: https://github.com/phpsw/phpsw
+
 meetup:
     name: PHPSW
     url: http://www.meetup.com/php-sw

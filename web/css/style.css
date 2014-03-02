@@ -17,6 +17,17 @@ body {
     }
 }
 
+@font-face {
+    font-family: 'JustVector';
+    src: url('/fonts/justvectorv2-webfont.eot');
+    src: url('/fonts/justvectorv2-webfont.eot?#iefix') format('eot'),
+         url('/fonts/justvectorv2-webfont.woff') format('woff'),
+         url('/fonts/justvectorv2-webfont.ttf') format('truetype'),
+         url('/fonts/justvectorv2-webfont.svg#webfontkw9J4lGf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -123,12 +134,6 @@ img {
     height: 32px;
 }
 
-.contact ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 .contact ul li {
     position: relative;
     margin-bottom: 1em;
@@ -149,6 +154,49 @@ img {
     left: 0;
     width: 3em;
     height: 3em;
+}
+
+/* Lists */
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list--icons li {
+    margin-bottom: .5em;
+}
+
+.list--icons li:last-child {
+    margin-bottom: 0;
+}
+
+.list--icons li a {
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.list--icons li a .genericon {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+}
+
+.list--icons li a:hover .genericon,
+.list--icons li a:focus .genericon {
+    text-decoration: none;
+}
+
+.list--icons li a:hover span,
+.list--icons li a:focus span {
+    text-decoration: underline;
+}
+
+.list--inline {
+  li {
+    display: inline-block;
+  }
 }
 
 /* JS */
