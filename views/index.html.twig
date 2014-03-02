@@ -25,6 +25,14 @@
                         {{ include('post.html.twig') }}
                     {% endfor %}
                 </section>
+
+                <section class="tweets">
+                    <h2>Tweets</h2>
+
+                    {% for tweet in tweets %}
+                        {{ include('tweet.html.twig') }}
+                    {% endfor %}
+                </section>
             </div>
 
             <section class="events">

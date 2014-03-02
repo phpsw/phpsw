@@ -1,0 +1,9 @@
+<article class="tweet box">
+    <h3>{{ tweet.html | raw }}</h3>
+
+    <a href="{{ tweet.url }}">
+        <time datetime="{{ tweet.created_date.format(constant('DATE_W3C')) }}">
+            {{ tweet.created_date.format('l jS F Y') }}
+        </time>
+    </a>
+</article>

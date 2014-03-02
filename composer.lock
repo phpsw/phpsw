@@ -3,8 +3,46 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d2ccdde7b038318fb6a9b68769eb87c4",
+    "hash": "12efb9218afb5f0a09413f23a71c993a",
     "packages": [
+        {
+            "name": "dg/twitter-php",
+            "version": "v3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dg/twitter-php.git",
+                "reference": "5ca5b8cb823972e1239656c5f3b17ddd28e6d816"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dg/twitter-php/zipball/5ca5b8cb823972e1239656c5f3b17ddd28e6d816",
+                "reference": "5ca5b8cb823972e1239656c5f3b17ddd28e6d816",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                }
+            ],
+            "description": "Small and easy Twitter wrapper for PHP.",
+            "homepage": "https://github.com/dg/twitter-php",
+            "keywords": [
+                "oauth",
+                "twitter"
+            ],
+            "time": "2014-01-17 16:59:53"
+        },
         {
             "name": "dms/meetup-api-client",
             "version": "1.1.1",
