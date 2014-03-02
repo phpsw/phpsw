@@ -5,7 +5,7 @@ $(function() {
         if ($venue.data('latitude') && $venue.data('longitude')) {
             $map = $('<div>', {class: 'event__map'});
 
-            $venue.after($map);
+            $venue.before($map);
 
             var map = new GMaps({
                 div: $map.get(0),
