@@ -1,7 +1,15 @@
-<section class="events">
-    <h2>Events</h2>
+<section class="events events--upcoming">
+    <h2>Upcoming events</h2>
 
-    {% for event in events %}
+    {% for event in upcoming_events %}
+        {{ include('meetup/event.html.twig') }}
+    {% endfor %}
+</section>
+
+<section class="events events--past">
+    <h2>Past events</h2>
+
+    {% for event in past_events %}
         {{ include('meetup/event.html.twig') }}
     {% endfor %}
 </section>

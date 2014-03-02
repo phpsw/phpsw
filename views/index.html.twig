@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>{{ app.name }}</title>
@@ -10,6 +10,8 @@
                 <header class="box">
                     <h1>{{ app.name }}</h1>
 
+                    <img src="/images/php-elephant.jpg" alt="{{ app.name }}">
+
                     <p>{{ app.description }}</p>
 
                     <ul>
@@ -18,12 +20,13 @@
                     </ul>
                 </header>
 
-                {{ render('/meetup/posts') }}
-
-                {{ render('/twitter/tweets') }}
             </div>
 
             {{ render('/meetup/events') }}
+
+            {{ render('/twitter/tweets') }}
+
+            {{ render('/meetup/posts') }}
         </div>
         <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>

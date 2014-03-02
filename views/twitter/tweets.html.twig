@@ -1,5 +1,10 @@
 <section class="tweets">
-    <h2>Tweets</h2>
+    <h2>
+        Twitter
+        <a href="https://twitter.com/{{ app.twitter.user }}">
+            @{{ app.twitter.user }}
+        </a>
+    </h2>
 
     {% for tweet in tweets %}
         {{ include('twitter/tweet.html.twig') }}
