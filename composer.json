@@ -1,8 +1,12 @@
 {
     "name": "phpsw/phpsw",
     "description": "PHPSW",
+    "license": "MIT",
     "require": {
-        "dms/meetup-api-client": "~1.0"
+        "dms/meetup-api-client": "~1.0",
+        "silex/silex": "~1.1",
+        "symfony/twig-bridge": "~2.3",
+        "twig/twig": ">=1.8,<2.0-dev"
     },
     "authors": [
         {
@@ -10,5 +14,8 @@
             "email": "steve@stevelacey.net"
         }
     ],
+    "autoload": {
+        "psr-4": { "PHPSW\\": "src" }
+    },
     "minimum-stability": "stable"
 }
