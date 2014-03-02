@@ -72,8 +72,6 @@ class AppController
 
         $tweets = array_map(
             function ($tweet) {
-                $tweet->url = 'https://twitter.com/' . $tweet->user->screen_name . '/status/' . $tweet->id;
-
                 // create xhtml safe text (mostly to be safe of ampersands)
                 $tweet->html = htmlentities(html_entity_decode($tweet->text, ENT_NOQUOTES, 'UTF-8'), ENT_NOQUOTES, 'UTF-8');
 
@@ -83,19 +81,19 @@ class AppController
                     $expanded_url   = (empty($url->expanded_url))   ? $url->url : $url->expanded_url;
                     $display_url    = (empty($url->display_url))    ? $url->url : $url->display_url;
                     $replacement    = '<a href="' . $expanded_url . '" rel="external">' . $display_url . '</a>';
-                    $tweet->html    = str_replace($old_url, $replacement, $tweet->html);
+                    $tweet->html    = str_ireplace($old_url, $replacement, $tweet->html);
                 }
 
                 // let's extract the hashtags from the entities object
                 foreach ($tweet->entities->hashtags as $hashtags) {
                     $hashtag        = '#' . $hashtags->text;
-                    $replacement    = '<a href="https://twitter.com/search?q=%23'.$hashtags->text.'" rel="external">'.$hashtag.'</a>';
+                    $replacement    = '<a href="https://twitter.com/search?q=%23' . $hashtags->text . '" rel="external">' . $hashtag . '</a>';
                     $tweet->html    = str_ireplace($hashtag, $replacement, $tweet->html);
                 }
 
                 // let's extract the usernames from the entities object
                 foreach ($tweet->entities->user_mentions as $user_mentions) {
-                    $username       = '@'.$user_mentions->screen_name;
+                    $username       = '@' . $user_mentions->screen_name;
                     $replacement    = '<a href="https://twitter.com/' . $user_mentions->screen_name . '" rel="external" title="' . $user_mentions->name . ' on Twitter">' . $username . '</a>';
                     $tweet->html    = str_ireplace($username, $replacement, $tweet->html);
                 }
@@ -105,9 +103,11 @@ class AppController
                     foreach ($tweet->entities->media as $media) {
                         $old_url        = $media->url;
                         $replacement    = '<a href="' . $media->expanded_url . '" rel="external" class="twitter-media" data-media="' . $media->media_url . '">' . $media->display_url . '</a>';
-                        $tweet->html    = str_replace($old_url, $replacement, $tweet->html);
+                        $tweet->html    = str_ireplace($old_url, $replacement, $tweet->html);
                     }
                 }
+
+                $tweet->url = 'https://twitter.com/' . $tweet->user->screen_name . '/status/' . $tweet->id;
 
                 $tweet->created_date = new DateTime($tweet->created_at);
 

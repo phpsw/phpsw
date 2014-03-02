@@ -37,6 +37,10 @@ h2 {
     visibility: hidden;
 }
 
+img {
+    max-width: 100%;
+}
+
 .box {
     background: white;
     background: rgba(255, 255, 255, .9);

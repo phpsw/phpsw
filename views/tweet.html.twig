@@ -1,6 +1,16 @@
 <article class="tweet box">
     <h3>{{ tweet.html | raw }}</h3>
 
+    {% if tweet.entities.media is defined %}
+        {% for media in tweet.entities.media %}
+            {% if media.type == 'photo' %}
+                <a href="{{ media.expanded_url }}" rel="external">
+                    <img src="{{ media.media_url }}">
+                </a>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
     <a href="{{ tweet.url }}">
         <time datetime="{{ tweet.created_date.format(constant('DATE_W3C')) }}">
             {{ tweet.created_date.format('l jS F Y') }}
