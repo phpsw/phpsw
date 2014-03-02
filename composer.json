@@ -3,6 +3,7 @@
     "description": "PHPSW",
     "license": "MIT",
     "require": {
+        "php": "~5.4",
         "dms/meetup-api-client": "~1.0",
         "igorw/config-service-provider": "~1.2",
         "silex/silex": "~1.1",

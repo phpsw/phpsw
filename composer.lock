@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2682e764a2caf072b2db6fc3c22ab2db",
+    "hash": "d2ccdde7b038318fb6a9b68769eb87c4",
     "packages": [
         {
             "name": "dms/meetup-api-client",
@@ -995,9 +995,9 @@
     "stability-flags": [
 
     ],
-    "platform": [
-
-    ],
+    "platform": {
+        "php": "~5.4"
+    },
     "platform-dev": [
 
     ]
