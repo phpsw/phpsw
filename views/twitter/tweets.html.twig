@@ -1,0 +1,7 @@
+<section class="tweets">
+    <h2>Tweets</h2>
+
+    {% for tweet in tweets %}
+        {{ include('twitter/tweet.html.twig') }}
+    {% endfor %}
+</section>

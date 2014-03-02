@@ -18,30 +18,12 @@
                     </ul>
                 </header>
 
-                <section class="posts">
-                    <h2>Posts</h2>
+                {{ render('/meetup/posts') }}
 
-                    {% for post in posts %}
-                        {{ include('post.html.twig') }}
-                    {% endfor %}
-                </section>
-
-                <section class="tweets">
-                    <h2>Tweets</h2>
-
-                    {% for tweet in tweets %}
-                        {{ include('tweet.html.twig') }}
-                    {% endfor %}
-                </section>
+                {{ render('/twitter/tweets') }}
             </div>
 
-            <section class="events">
-                <h2>Events</h2>
-
-                {% for event in events %}
-                    {{ include('event.html.twig') }}
-                {% endfor %}
-            </section>
+            {{ render('/meetup/events') }}
         </div>
         <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>

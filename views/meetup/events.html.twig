@@ -1,0 +1,7 @@
+<section class="events">
+    <h2>Events</h2>
+
+    {% for event in events %}
+        {{ include('meetup/event.html.twig') }}
+    {% endfor %}
+</section>
