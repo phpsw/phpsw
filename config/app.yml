@@ -1,7 +1,7 @@
 meetup:
     name: PHPSW
-    url: http://www.meetup.com/PHPUGSW
-    urlname: PHPUGSW
+    url: http://www.meetup.com/php-sw
+    urlname: php-sw
     api:
         key: ~
 
