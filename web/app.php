@@ -4,7 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 $app = new Silex\Application;
 
-if (strpos(__DIR__, 'phpsw.org.uk' !== false)) {
+if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
     $env = 'prod';
 } else {
     $env = 'dev';
