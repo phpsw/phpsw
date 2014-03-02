@@ -34,6 +34,11 @@ class Meetup
                     $event = (object) $event;
 
                     $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
+                    $event->description = preg_replace(
+                        '#<a href="mailto:.*">(.*)@(.*)</a>#',
+                        '\1 at \2',
+                        $event->description
+                    );
                     $event->url = $event->event_url;
                     $event->venue = (object) $event->venue;
 
