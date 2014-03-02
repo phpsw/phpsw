@@ -6,8 +6,12 @@
     </h3>
 
     <?php if ((array) $event->venue) : ?>
-        <p>
-            <?= $event->venue->name ?>,
+        <p
+            class="event__venue"
+            <?php if ($event->venue->lat) : ?>data-latitude="<?= $event->venue->lat ?>"<?php endif ?>
+            <?php if ($event->venue->lon) : ?>data-longitude="<?= $event->venue->lon ?>"<?php endif ?>
+        >
+            <span class="event__venue__name"><?= $event->venue->name ?></span>,
             <?= $event->venue->address_1 ?>,
             <?= $event->venue->city ?>
         </p>

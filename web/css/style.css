@@ -14,10 +14,6 @@ body {
     line-height: 1.6;
 }
 
-@media (min-width: 600px) {
-    padding: 4em 2em;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -49,7 +45,7 @@ h2 {
 }
 
 @media (min-width: 600px) {
-    .group div {
+    .group > div {
         float: left;
         width: 40%;
         margin-left: -.5em;
@@ -64,6 +60,11 @@ h2 {
 
 .event--upcoming {
     background: white;
+}
+
+.event__map {
+    width: 100%;
+    height: 200px;
 }
 
 .post {
