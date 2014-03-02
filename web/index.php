@@ -49,7 +49,7 @@ $posts = array_map(
 $events = $client->getEvents([
     'group_urlname' => $meetup->urlname,
     'status' => implode(',', [
-        'upcoming', 'past', 'proposed', 'suggested', 'cancelled', 'draft'
+        'upcoming', 'past', 'proposed', 'suggested', 'cancelled'
     ]),
     'desc' => 'true'
 ]);
