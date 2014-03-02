@@ -1,4 +1,11 @@
 $(function() {
+    $('.event--past:gt(2)').addClass('js-hide').first().after(
+        $('<button>', {text: 'See more past events', class: 'box'}).click(function() {
+            $(this).siblings('.event--past').removeClass('js-hide');
+            $(this).remove();
+        })
+    );
+
     $('.event--upcoming:first').each(function() {
         $venue = $(this).find('.event__venue');
 

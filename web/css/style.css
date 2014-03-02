@@ -109,8 +109,14 @@ img {
     padding: 2px 0;
 }
 
-.post {
-    background: rgba(200, 229, 252, .75);
+/* JS */
+
+.js-hide {
+    display: none;
+}
+
+.js-show {
+    display: block;
 }
 
 /* Clearfix group */
