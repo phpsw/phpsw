@@ -1,18 +1,18 @@
 <!doctype html>
 <html>
     <head>
-        <title>{{ meetup.name }}</title>
+        <title>{{ app.meetup.name }}</title>
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <div class="group">
             <div>
                 <header class="box">
-                    <h1>{{ meetup.name }}</h1>
+                    <h1>{{ app.meetup.name }}</h1>
 
                     <ul>
-                        <li><a href="{{ meetup.url }}">Meetup page</a></li>
-                        <li><a href="{{ twitter.url }}">Twitter @{{ twitter.user }}</a></li>
+                        <li><a href="{{ app.meetup.url }}">Meetup page</a></li>
+                        <li><a href="{{ app.twitter.url }}">Twitter @{{ app.twitter.user }}</a></li>
                     </ul>
                 </header>
 

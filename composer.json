@@ -4,8 +4,10 @@
     "license": "MIT",
     "require": {
         "dms/meetup-api-client": "~1.0",
+        "igorw/config-service-provider": "~1.2",
         "silex/silex": "~1.1",
         "symfony/twig-bridge": "~2.3",
+        "symfony/yaml": "~2.3",
         "twig/twig": ">=1.8,<2.0-dev"
     },
     "authors": [

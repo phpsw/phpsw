@@ -1,0 +1,10 @@
+meetup:
+    name: PHPSW
+    url: http://www.meetup.com/PHPUGSW
+    urlname: PHPUGSW
+    api:
+        key: ~
+
+twitter:
+    url: http://twitter.com/phpsw
+    user: phpsw

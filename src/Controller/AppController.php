@@ -11,44 +11,28 @@ class AppController
 {
     public function indexAction(Request $request, Application $app)
     {
-        $meetup = (object) [
-            'name' => 'PHPSW',
-            'url' => 'http://www.meetup.com/PHPUGSW',
-            'urlname' => 'PHPUGSW',
-            'api' => (object) [
-                'key' => null
-            ]
-        ];
-
-        $twitter = (object) [
-            'url' => 'http://twitter.com/phpsw',
-            'user' => 'phpsw'
-        ];
-
-        require_once __DIR__ . '/../../config.php';
-
-        $client = MeetupKeyAuthClient::factory(['key' => $meetup->api->key]);
+        $client = MeetupKeyAuthClient::factory(['key' => $app['meetup']['api']['key']]);
 
         $boards = $client->getDiscussionBoards([
-            'urlname' => $meetup->urlname
+            'urlname' => $app['meetup']['urlname']
         ]);
 
         $board = (object) current($boards->getData());
 
         $posts = $client
             ->getDiscussions([
-                'urlname' => $meetup->urlname,
+                'urlname' => $app['meetup']['urlname'],
                 'bid' => $board->id
             ])
         ;
 
         $posts = array_map(
-            function ($post) use ($meetup) {
+            function ($post) use ($app) {
                 $post = (object) $post;
 
                 $post->last_post = (object) $post->last_post;
                 $post->last_post->created_date = DateTime::createFromFormat('U', $post->last_post->created / 1000);
-                $post->url = $meetup->url . '/messages/boards/thread/' . $post->id;
+                $post->url = $app['meetup']['url'] . '/messages/boards/thread/' . $post->id;
 
                 return $post;
             },
@@ -56,7 +40,7 @@ class AppController
         );
 
         $events = $client->getEvents([
-            'group_urlname' => $meetup->urlname,
+            'group_urlname' => $app['meetup']['urlname'],
             'status' => implode(',', [
                 'upcoming', 'past', 'proposed', 'suggested', 'cancelled'
             ]),
@@ -79,9 +63,7 @@ class AppController
         return $app['twig']->render('index.html.twig', [
             'boards' => $boards,
             'events' => $events,
-            'meetup' => $meetup,
-            'posts' => array_slice($posts, 0, 3),
-            'twitter' => $twitter
+            'posts' => array_slice($posts, 0, 3)
         ]);
     }
 }
