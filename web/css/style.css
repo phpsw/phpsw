@@ -123,6 +123,34 @@ img {
     height: 32px;
 }
 
+.contact ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact ul li {
+    position: relative;
+    margin-bottom: 1em;
+    padding-left: 3.5em;
+}
+
+.contact ul li:last-child {
+    margin-bottom: 0;
+}
+
+.contact ul li a {
+    display: block;
+}
+
+.contact ul li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3em;
+    height: 3em;
+}
+
 /* JS */
 
 .read-less {

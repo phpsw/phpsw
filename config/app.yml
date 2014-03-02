@@ -5,6 +5,20 @@ description: |
     We meet every month to discuss all things PHP.
     Brilliant opportunity to learn something new, share your skills, network, find a job, advertise a job, drink beer.
 
+organisers:
+    -
+        name: Ade Slade
+        email: adeslade@gmail.com
+        photo: http://photos1.meetupstatic.com/photos/member/a/d/e/0/thumb_36884512.jpeg
+        twitter: adeslade
+        url: http://adeslade.co.uk
+    -
+        name: Steve Lacey
+        email: steve@stevelacey.net
+        photo: http://photos2.meetupstatic.com/photos/member/6/e/3/4/thumb_155008212.jpeg
+        twitter: stevelacey
+        url: http://stevelacey.net
+
 meetup:
     name: PHPSW
     url: http://www.meetup.com/php-sw

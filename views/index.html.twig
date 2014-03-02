@@ -20,6 +20,30 @@
                     </ul>
                 </header>
 
+                <section class="contact box">
+                    <h2>Get in touch</h2>
+
+                    <ul>
+                        {% for organiser in app.organisers %}
+                            <li>
+                                <img src="{{ organiser.photo }}" alt="{{ organiser.name }}">
+
+                                <a href="{{ organiser.url }}">
+                                    {{ organiser.name }}
+                                </a>
+
+                                <a href="https://twitter.com/{{ organiser.twitter }}">
+                                    @{{ organiser.twitter }}
+                                </a>
+
+                                {#
+                                <span>{{ organiser.email | replace({'@': ' at ', '.': ' dot '}) }}</span>
+                                #}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+
             </div>
 
             {{ render('/meetup/events') }}
