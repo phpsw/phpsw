@@ -61,6 +61,10 @@ img {
     max-width: 100%;
 }
 
+strong, b {
+    color: #746A5D;
+}
+
 .group {
     max-width: 1000px;
     margin: 0 auto;
