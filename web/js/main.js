@@ -32,7 +32,8 @@ $(function() {
             var map = new GMaps({
                 div: $map.get(0),
                 lat: $venue.data('latitude'),
-                lng: $venue.data('longitude')
+                lng: $venue.data('longitude'),
+                scrollwheel: false
             });
 
             map.addMarker({
