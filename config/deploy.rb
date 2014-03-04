@@ -16,10 +16,28 @@ namespace :composer do
   desc "Install"
   task :install do
     on roles :all do
-      execute :composer, :install, "--no-dev --optimize-autoloader --prefer-source --working-dir #{release_path} --verbose"
+      execute "composer install --no-dev --optimize-autoloader --prefer-source --working-dir #{release_path} --verbose"
+    end
+  end
+end
+
+namespace :mod_pagespeed do
+  task :flush do
+    on roles :all do
+      execute "touch /var/cache/mod_pagespeed/cache.flush"
+    end
+  end
+end
+
+namespace :varnish do
+  task :restart do
+    on roles :all do
+      execute "sudo service varnish restart"
     end
   end
 end
 
 after "deploy:updating", "composer:copy_vendors"
 after "deploy:updating", "composer:install"
+after "deploy:finishing", "mod_pagespeed:flush"
+after "deploy:finishing", "varnish:restart"
