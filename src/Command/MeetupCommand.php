@@ -3,7 +3,6 @@
 namespace PHPSW\Command;
 
 use PHPSW\API\Meetup,
-    Predis,
     Knp\Command\Command,
     Symfony\Component\Console\Input\InputArgument,
     Symfony\Component\Console\Input\InputInterface,
@@ -23,12 +22,28 @@ class MeetupCommand extends Command
     {
         $app = $this->getSilexApplication();
 
-        $redis = new Predis\Client;
+        $redis = new \Predis\Client;
 
-        $meetup = new Meetup($app['meetup']);
+        $meetup = new Meetup($app['meetup'], false);
+
+        echo 'Events: ';
 
         foreach ($meetup->getEvents() as $event) {
-            $redis->hset('events', $event->id, json_encode($event));
+            $redis->hset('phpsw:events', $event->id, json_encode($event));
+
+            echo '.';
         }
+
+        echo PHP_EOL;
+
+        echo 'Posts: ';
+
+        foreach ($meetup->getPosts() as $post) {
+            $redis->hset('phpsw:posts', $post->id, json_encode($post));
+
+            echo '.';
+        }
+
+        echo PHP_EOL;
     }
 }

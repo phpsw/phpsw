@@ -6,53 +6,46 @@ use DMS\Service\Meetup\MeetupKeyAuthClient;
 
 class Meetup
 {
+    protected $cache;
+
     protected $client;
 
     protected $config;
 
     protected $events;
 
-    public function __construct(array $config)
+    protected $posts;
+
+    public function __construct(array $config, $cache = true)
     {
-        $this->client = MeetupKeyAuthClient::factory(['key' => $config['api']['key']]);
+        if (!$cache) {
+            $this->client = MeetupKeyAuthClient::factory(['key' => $config['api']['key']]);
+        } else {
+            $this->redis = new \Predis\Client;
+        }
+
+        $this->cache = $cache;
         $this->config = $config;
     }
 
     public function getEvents()
     {
         if ($this->events === null) {
-            $events = $this->client->getEvents([
-                'group_urlname' => $this->config['urlname'],
-                'status' => implode(',', [
-                    'upcoming', 'past', 'proposed', 'suggested', 'cancelled'
-                ]),
-                'desc' => 'true'
-            ]);
-
-            $this->events = array_map(
-                function ($event) {
-                    $event = (object) $event;
-
-                    $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
-                    $event->description = preg_replace(
-                        '#<a href="mailto:.*">(.*)@(.*)</a>#',
-                        '\1 at \2',
-                        $event->description
-                    );
-                    $event->url = $event->event_url;
-                    $event->venue = (object) $event->venue;
-
-                    if ($event->status == 'upcoming') {
-                        $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));
-                    }
-
-                    return $event;
-                },
-                iterator_to_array($events)
-            );
+            if (!$this->cache) {
+                $this->events = $this->getEventsFromApi();
+            } else {
+                $this->events = $this->getEventsFromCache();
+            }
         }
 
-        return $this->events;
+        return array_map(
+            function ($event) {
+                $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
+
+                return $event;
+            },
+            $this->events
+        );
     }
 
     public function getPastEvents()
@@ -90,6 +83,70 @@ class Meetup
 
     public function getPosts($board = null)
     {
+        if ($this->posts === null) {
+            if (!$this->cache) {
+                $this->posts = $this->getPostsFromApi();
+            } else {
+                $this->posts = $this->getPostsFromCache();
+            }
+        }
+
+        return array_map(
+            function ($post) {
+                $post->last_post->created_date = \DateTime::createFromFormat('U', $post->last_post->created / 1000);
+
+                return $post;
+            },
+            $this->posts
+        );
+    }
+
+    protected function getEventsFromApi()
+    {
+        $events = $this->client->getEvents([
+            'group_urlname' => $this->config['urlname'],
+            'status' => implode(',', [
+                'upcoming', 'past', 'proposed', 'suggested', 'cancelled'
+            ]),
+            'desc' => 'true'
+        ]);
+
+        return array_map(
+            function ($event) {
+                $event = (object) $event;
+
+                $event->description = preg_replace(
+                    '#<a href="mailto:.*">(.*)@(.*)</a>#',
+                    '\1 at \2',
+                    $event->description
+                );
+                $event->url = $event->event_url;
+                $event->venue = (object) $event->venue;
+
+                if ($event->status == 'upcoming') {
+                    $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));
+                }
+
+                return $event;
+            },
+            iterator_to_array($events)
+        );
+    }
+
+    protected function getEventsFromCache()
+    {
+        return array_map(
+            function ($event) {
+                $event = json_decode($event);
+
+                return $event;
+            },
+            $this->redis->hgetall('phpsw:events')
+        );
+    }
+
+    protected function getPostsFromApi($board = null)
+    {
         if ($board === null) {
             $board = $this->getDiscussionBoard();
         }
@@ -104,12 +161,23 @@ class Meetup
                 $post = (object) $post;
 
                 $post->last_post = (object) $post->last_post;
-                $post->last_post->created_date = \DateTime::createFromFormat('U', $post->last_post->created / 1000);
                 $post->url = $this->config['url'] . '/messages/boards/thread/' . $post->id;
 
                 return $post;
             },
             $posts->getData()
+        );
+    }
+
+    protected function getPostsFromCache()
+    {
+        return array_map(
+            function ($post) {
+                $post = json_decode($post);
+
+                return $post;
+            },
+            $this->redis->hgetall('phpsw:posts')
         );
     }
 }
