@@ -9,6 +9,7 @@ body {
     padding: 2em;
     font: 16px helvetica neue, arial;
     line-height: 1.6;
+    color: #8A7F70;
 }
 
 @media (min-width: 600px) {
@@ -47,10 +48,12 @@ button {
     padding: .75em;
     font-size: inherit;
     text-align: center;
+    color: #44403A;
     cursor: pointer;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
+    color: #44403A;
     margin-top: 0;
 }
 
@@ -72,7 +75,7 @@ img {
 
 .box footer {
     margin-top: 1em;
-    color: #BBAB96;
+    color: #A5998B;
     font-size: 12px;
     text-align: right;
 }
