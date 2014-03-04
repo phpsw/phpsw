@@ -38,4 +38,6 @@ $(function() {
             });
         }
     })
+
+    $(".box footer time").timeago();
 })
