@@ -56,18 +56,18 @@ class Meetup
 
     public function getPastEvents()
     {
-        return array_reverse(
-            array_filter($this->getEvents(), function ($event) {
-                return $event->status == 'past';
-            })
-        );
+        return array_filter($this->getEvents(), function ($event) {
+            return $event->status == 'past';
+        });
     }
 
     public function getUpcomingEvents()
     {
-        return array_filter($this->getEvents(), function ($event) {
-            return $event->status == 'upcoming';
-        });
+        return array_reverse(
+            array_filter($this->getEvents(), function ($event) {
+                return $event->status == 'upcoming';
+            })
+        );
     }
 
     public function getDiscussionBoard()
