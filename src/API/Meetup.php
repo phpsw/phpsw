@@ -36,16 +36,22 @@ class Meetup
             } else {
                 $this->events = $this->getEventsFromCache();
             }
+
+            $this->events = array_map(
+                function ($event) {
+                    $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
+
+                    return $event;
+                },
+                $this->events
+            );
+
+            uasort($this->events, function($a, $b) {
+                return $a->date < $b->date;
+            });
         }
 
-        return array_map(
-            function ($event) {
-                $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
-
-                return $event;
-            },
-            $this->events
-        );
+        return $this->events;
     }
 
     public function getPastEvents()
@@ -89,16 +95,22 @@ class Meetup
             } else {
                 $this->posts = $this->getPostsFromCache();
             }
+
+            $this->posts = array_map(
+                function ($post) {
+                    $post->last_post->created_date = \DateTime::createFromFormat('U', $post->last_post->created / 1000);
+
+                    return $post;
+                },
+                $this->posts
+            );
+
+            uasort($this->posts, function($a, $b) {
+                return $a->last_post->created_date < $b->last_post->created_date;
+            });
         }
 
-        return array_map(
-            function ($post) {
-                $post->last_post->created_date = \DateTime::createFromFormat('U', $post->last_post->created / 1000);
-
-                return $post;
-            },
-            $this->posts
-        );
+        return $this->posts;
     }
 
     protected function getEventsFromApi()
