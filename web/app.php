@@ -19,6 +19,12 @@ foreach (['app', $env, 'secrets'] as $config) {
     $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__ . '/../config/' . $config . '.yml'));
 }
 
+$app->register(new Knp\Provider\ConsoleServiceProvider, array(
+    'console.name' => 'ConsoleApp',
+    'console.version' => '1.0.0',
+    'console.project_directory' => __DIR__ . '/..'
+));
+
 $app->register(new Silex\Provider\TwigServiceProvider, [
     'twig.path' => __DIR__ . '/../views'
 ]);

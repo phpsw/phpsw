@@ -1,0 +1,28 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$app = new Silex\Application;
+
+if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
+    $env = 'prod';
+} else {
+    $env = 'dev';
+}
+
+foreach (['app', $env, 'secrets'] as $config) {
+    $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__ . '/../config/' . $config . '.yml'));
+}
+
+$app->register(new Knp\Provider\ConsoleServiceProvider, array(
+    'console.name' => 'PHPSW',
+    'console.version' => '0.1.0',
+    'console.project_directory' => __DIR__ . '/..'
+));
+
+$console = $app['console'];
+$console->add(new PHPSW\Command\MeetupCommand);
+$console->run();
