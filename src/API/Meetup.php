@@ -132,12 +132,10 @@ class Meetup
                     '\1 at \2',
                     $event->description
                 );
-                $event->url = $event->event_url;
-                $event->venue = (object) $event->venue;
 
-                if ($event->status == 'upcoming') {
-                    $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));
-                }
+                $event->url = $event->event_url;
+                $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));
+                $event->venue = (object) $event->venue;
 
                 return $event;
             },
