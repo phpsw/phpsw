@@ -5,6 +5,11 @@
         </a>
     </h3>
 
+    <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
+        {{ event.date.format('j') }}
+        <span>{{ event.date.format('M') }}</span>
+    </time>
+
     {% if event.status == 'upcoming' %}
         <div class="event__description">
             {{ event.description | raw }}
@@ -21,20 +26,17 @@
                 {{ event.venue.city }}
             </p>
         {% endif %}
-    {% endif %}
 
-    {% if event.rsvps is defined %}
-        {% for rsvp in event.rsvps if rsvp.response == 'yes' %}
-            <a href="{{ app.meetup.url }}/members/{{ rsvp.member.member_id }}" class="event__attendee" title="{{ rsvp.member.name }}">
-                <img src="{{ rsvp.member_photo.thumb_link }}" alt="{{ rsvp.member.name }}">
-            </a>
-        {% endfor %}
+        {% if event.rsvps is defined %}
+            <div class="event__attendees">
+                {% for rsvp in event.rsvps if rsvp.response == 'yes' %}
+                    <a href="{{ app.meetup.url }}/members/{{ rsvp.member.member_id }}" class="event__attendee" title="{{ rsvp.member.name }}">
+                        <img src="{{ rsvp.member_photo.thumb_link }}" alt="{{ rsvp.member.name }}">
+                    </a>
+                {% endfor %}
+            </div>
+        {% endif %}
     {% endif %}
-
-    <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
-        {{ event.date.format('j') }}
-        <span>{{ event.date.format('M') }}</span>
-    </time>
 
     <footer>
         <span class="genericon genericon-user"></span>
