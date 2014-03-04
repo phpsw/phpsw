@@ -109,6 +109,10 @@ strong, b {
     height: 200px;
 }
 
+.event__map * {
+    color: #44403A;
+}
+
 .event__map img {
     max-width: inherit;
 }
