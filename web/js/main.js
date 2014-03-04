@@ -7,12 +7,19 @@ $(function() {
         slicePoint: 320
     });
 
-    $('.event--past:gt(2)').addClass('js-hide').first().after(
-        $('<button>', {text: 'See more past events', class: 'box'}).click(function() {
-            $(this).siblings('.event--past').removeClass('js-hide');
-            $(this).remove();
-        })
-    );
+    $('section[id]').each(function() {
+        $section = $(this);
+
+        $section.find('.box:gt(2)').addClass('js-hide').first().after(
+            $('<button>', {
+                text: 'See more ' + $section.attr('id').replace('-', ' '),
+                class: 'box'
+            }).click(function() {
+                $(this).siblings().removeClass('js-hide');
+                $(this).remove();
+            })
+        );
+    })
 
     $('.event--upcoming:first').each(function() {
         $venue = $(this).find('.event__venue');
