@@ -3,6 +3,14 @@
 
     {% for event in upcoming_events %}
         {{ include('meetup/event.html.twig') }}
+    {% else %}
+        <div class="box box--empty">
+            Nothing to announce right now,
+            <a href="{{ app.twitter.url }}">
+                follow us on Twitter
+            </a>
+            for updates.
+        </div>
     {% endfor %}
 </section>
 
