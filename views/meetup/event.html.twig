@@ -31,17 +31,27 @@
         {% endfor %}
     {% endif %}
 
-    <p>
-        {{ event.yes_rsvp_count }}
-        {% if event.status == 'upcoming' %}
-            Attending
-        {% else %}
-            Attended
-        {% endif %}
-    </p>
-
     <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
         {{ event.date.format('j') }}
         <span>{{ event.date.format('M') }}</span>
     </time>
+
+    <footer>
+        <span class="genericon genericon-user"></span>
+
+        {% if event.yes_rsvp_count > 0 %}
+            {{ event.yes_rsvp_count }}
+
+            {% if event.status == 'upcoming' %}
+                attending
+            {% else %}
+                attended
+            {% endif %}
+        {% endif %}
+
+        {% if event.rating is defined and event.rating.average > 3 %}
+            <span class="genericon genericon-digg"></span>
+            {{ event.rating.average | round(1) }}/5 by {{ event.rating.count }} {{ event.group.who | lower }}
+        {% endif %}
+    </footer>
 </article>

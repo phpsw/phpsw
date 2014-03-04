@@ -5,7 +5,9 @@
         </a>
     </h3>
 
-    <time datetime="{{ post.last_post.created_date.format(constant('DATE_W3C')) }}">
-        {{ post.last_post.created_date.format('l jS F Y') }}
-    </time>
+    <footer>
+        <time datetime="{{ post.last_post.created_date.format(constant('DATE_W3C')) }}">
+            {{ post.last_post.created_date.format('l jS F Y') }}
+        </time>
+    </footer>
 </article>

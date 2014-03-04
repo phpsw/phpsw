@@ -11,9 +11,11 @@
         {% endfor %}
     {% endif %}
 
-    <a href="{{ tweet.url }}">
-        <time datetime="{{ tweet.created_date.format(constant('DATE_W3C')) }}">
-            {{ tweet.created_date.format('l jS F Y') }}
-        </time>
-    </a>
+    <footer>
+        <a href="{{ tweet.url }}">
+            <time datetime="{{ tweet.created_date.format(constant('DATE_W3C')) }}">
+                {{ tweet.created_date.format('l jS F Y') }}
+            </time>
+        </a>
+    </footer>
 </article>
