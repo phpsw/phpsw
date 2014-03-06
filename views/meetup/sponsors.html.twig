@@ -1,0 +1,19 @@
+{% if sponsors %}
+    <section class="sponsors box">
+        <h2>Sponsors</h2>
+
+        <ul class="list">
+            {% for sponsor in sponsors %}
+                <li>
+                    <a href="{{ sponsor.url }}" title="{{ sponsor.name }} - {{ sponsor.details }}">
+                        {% if sponsor.image_url is not defined %}
+                                {{ sponsor.name }}
+                        {% else %}
+                            <img src="{{ sponsor.image_url }}" alt="{{ sponsor.name }} - {{ sponsor.details }}">
+                        {% endif %}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endif %}

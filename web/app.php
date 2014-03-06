@@ -13,6 +13,7 @@ if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
 $app->get('/', 'PHPSW\Controller\AppController::indexAction');
 $app->get('/meetup/events', 'PHPSW\Controller\MeetupController::eventsAction');
 $app->get('/meetup/posts', 'PHPSW\Controller\MeetupController::postsAction');
+$app->get('/meetup/sponsors', 'PHPSW\Controller\MeetupController::sponsorsAction');
 $app->get('/twitter/tweets', 'PHPSW\Controller\TwitterController::tweetsAction');
 
 foreach (['app', $env, 'secrets'] as $config) {

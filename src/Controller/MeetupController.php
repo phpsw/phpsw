@@ -28,4 +28,15 @@ class MeetupController
             'posts' => array_slice($meetup->getPosts(), 0, 3)
         ]);
     }
+
+    public function sponsorsAction(Request $request, Application $app)
+    {
+        $meetup = new Meetup($app['meetup']);
+
+        $group = $meetup->getGroup();
+
+        return $app['twig']->render('meetup/sponsors.html.twig', [
+            'sponsors' => $group ? $group->sponsors : []
+        ]);
+    }
 }

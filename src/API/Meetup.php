@@ -14,6 +14,8 @@ class Meetup
 
     protected $events;
 
+    protected $group;
+
     protected $posts;
 
     public function __construct(array $config, $cache = true)
@@ -26,6 +28,22 @@ class Meetup
 
         $this->cache = $cache;
         $this->config = $config;
+    }
+
+    public function getGroup()
+    {
+        if (!$this->cache) {
+            $response = $this->client->getGroups([
+                'group_urlname' => $this->config['urlname'],
+                'fields' => implode(',', ['photos', 'sponsors'])
+            ]);
+
+            $this->group = current($response->getData());
+        } else {
+            $this->group = json_decode($this->redis->get('phpsw:group'));
+        }
+
+        return $this->group;
     }
 
     public function getEvents()

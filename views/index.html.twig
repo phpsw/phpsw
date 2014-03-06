@@ -15,13 +15,19 @@
 
                     <img src="/images/php-elephant.jpg" alt="{{ app.name }}">
 
-                    <p>{{ app.description }}</p>
+                    {{ meetup.group.description | raw }}
 
                     <ul class="list list--icons">
                         <li>
                             <a href="{{ app.meetup.url }}">
                                 <span class="genericon genericon-month"></span>
                                 <span>Find us on Meetup</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ app.meetup.url }}/members">
+                                <span class="genericon genericon-user"></span>
+                                <span>{{ meetup.group.members }} {{ meetup.group.who | lower }}</span>
                             </a>
                         </li>
                         <li>
@@ -63,6 +69,7 @@
                     </ul>
                 </section>
 
+                {{ render('/meetup/sponsors') }}
             </div>
 
             {{ render('/meetup/events') }}

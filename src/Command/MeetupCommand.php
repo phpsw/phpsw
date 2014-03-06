@@ -26,6 +26,16 @@ class MeetupCommand extends Command
 
         $meetup = new Meetup($app['meetup'], false);
 
+        echo 'Group: ';
+
+        if ($meetup->getGroup()) {
+            $redis->set('phpsw:group', json_encode($meetup->getGroup()));
+
+            echo '.';
+        }
+
+        echo PHP_EOL;
+
         echo 'Events: ';
 
         foreach ($meetup->getEvents() as $event) {
