@@ -38,7 +38,19 @@ class Meetup
                 'fields' => implode(',', ['photos', 'sponsors'])
             ]);
 
-            $this->group = current($response->getData());
+            $this->group = (object) current($response->getData());
+
+            $this->group->rating = (object) [
+                'average' => $this->group->rating,
+                'count' => array_sum(
+                    array_map(
+                        function ($event) {
+                            return isset($event->rating) ? $event->rating['count'] : 0;
+                        },
+                        $this->getEvents()
+                    )
+                )
+            ];
         } else {
             $this->group = json_decode($this->redis->get('phpsw:group'));
         }

@@ -75,6 +75,17 @@ strong, b {
     text-align: right;
 }
 
+.box footer a,
+.box footer a:hover .genericon,
+.box footer a:focus .genericon {
+    text-decoration: none;
+}
+
+.box footer a:hover span,
+.box footer a:focus span {
+    text-decoration: underline;
+}
+
 @media (min-width: 600px) {
     .group > div {
         float: left;

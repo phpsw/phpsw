@@ -25,12 +25,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ app.meetup.url }}/members">
-                                <span class="genericon genericon-user"></span>
-                                <span>{{ meetup.group.members }} {{ meetup.group.who | lower }}</span>
-                            </a>
-                        </li>
-                        <li>
                             <a href="{{ app.twitter.url }}">
                                 <span class="genericon genericon-twitter"></span>
                                 <span>Tweet us at @{{ app.twitter.user }}</span>
@@ -43,6 +37,18 @@
                             </a>
                         </li>
                     </ul>
+
+                    <footer>
+                        <a href="{{ app.meetup.url }}/members">
+                            <span class="genericon genericon-user"></span>
+                            <span>{{ meetup.group.members }} {{ meetup.group.who | lower }}</span>
+                        </a>
+
+                        {% if meetup.group.rating is defined and meetup.group.rating.average > 3 %}
+                            <span class="genericon genericon-digg"></span>
+                            {{ meetup.group.rating.average | round(1) }}/5 from {{ meetup.group.rating.count }} ratings
+                        {% endif %}
+                    </footer>
                 </header>
 
                 <section class="contact box">
