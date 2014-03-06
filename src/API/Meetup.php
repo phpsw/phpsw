@@ -32,27 +32,29 @@ class Meetup
 
     public function getGroup()
     {
-        if (!$this->cache) {
-            $response = $this->client->getGroups([
-                'group_urlname' => $this->config['urlname'],
-                'fields' => implode(',', ['photos', 'sponsors'])
-            ]);
+        if ($this->group === null) {
+            if (!$this->cache) {
+                $response = $this->client->getGroups([
+                    'group_urlname' => $this->config['urlname'],
+                    'fields' => implode(',', ['photos', 'sponsors'])
+                ]);
 
-            $this->group = (object) current($response->getData());
+                $this->group = (object) current($response->getData());
 
-            $this->group->rating = (object) [
-                'average' => $this->group->rating,
-                'count' => array_sum(
-                    array_map(
-                        function ($event) {
-                            return isset($event->rating) ? $event->rating['count'] : 0;
-                        },
-                        $this->getEvents()
+                $this->group->rating = (object) [
+                    'average' => $this->group->rating,
+                    'count' => array_sum(
+                        array_map(
+                            function ($event) {
+                                return isset($event->rating) ? $event->rating['count'] : 0;
+                            },
+                            $this->getEvents()
+                        )
                     )
-                )
-            ];
-        } else {
-            $this->group = json_decode($this->redis->get('phpsw:group'));
+                ];
+            } else {
+                $this->group = json_decode($this->redis->get('phpsw:group'));
+            }
         }
 
         return $this->group;
