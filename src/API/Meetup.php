@@ -18,6 +18,8 @@ class Meetup
 
     protected $posts;
 
+    protected $reviews;
+
     public function __construct(array $config, $cache = true)
     {
         if (!$cache) {
@@ -145,6 +147,37 @@ class Meetup
         }
 
         return $this->posts;
+    }
+
+    public function getReviews()
+    {
+        if ($this->reviews === null) {
+            if (!$this->cache) {
+                $this->reviews = $this->client->getComments(['group_urlname' => $this->config['urlname']])->getData();
+            } else {
+                $this->reviews = array_map(
+                    function ($review) {
+                        $review = json_decode($review);
+
+                        return $review;
+                    },
+                    $this->redis->hgetall('phpsw:reviews')
+                );
+            }
+
+            $this->reviews = array_map(
+                function ($review) {
+                    $review = (object) $review;
+
+                    $review->created_date = new \DateTime($review->created);
+
+                    return $review;
+                },
+                $this->reviews
+            );
+        }
+
+        return $this->reviews;
     }
 
     protected function getEventsFromApi()

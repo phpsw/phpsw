@@ -55,5 +55,15 @@ class MeetupCommand extends Command
         }
 
         echo PHP_EOL;
+
+        echo 'Reviews: ';
+
+        foreach ($meetup->getReviews() as $review) {
+            $redis->hset('phpsw:reviews', $review->member_id, json_encode($review));
+
+            echo '.';
+        }
+
+        echo PHP_EOL;
     }
 }

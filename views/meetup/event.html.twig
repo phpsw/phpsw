@@ -31,7 +31,7 @@
             <div class="event__attendees">
                 {% for rsvp in event.rsvps if rsvp.response == 'yes' %}
                     <a href="{{ app.meetup.url }}/members/{{ rsvp.member.member_id }}" class="event__attendee" title="{{ rsvp.member.name }}">
-                        <img src="{{ rsvp.member_photo.thumb_link }}" alt="{{ rsvp.member.name }}">
+                        <img src="{{ rsvp.member_photo.thumb_link }}" class="avatar-mini" alt="{{ rsvp.member.name }}">
                     </a>
                 {% endfor %}
             </div>

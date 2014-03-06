@@ -29,6 +29,15 @@ class MeetupController
         ]);
     }
 
+    public function reviewsAction(Request $request, Application $app)
+    {
+        $meetup = new Meetup($app['meetup']);
+
+        return $app['twig']->render('meetup/reviews.html.twig', [
+            'reviews' => $meetup->getReviews()
+        ]);
+    }
+
     public function sponsorsAction(Request $request, Application $app)
     {
         $meetup = new Meetup($app['meetup']);

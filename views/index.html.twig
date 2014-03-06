@@ -57,7 +57,7 @@
                     <ul class="list">
                         {% for organiser in app.organisers %}
                             <li>
-                                <img src="{{ organiser.photo }}" alt="{{ organiser.name }}">
+                                <img src="{{ organiser.photo }}" class="avatar" alt="{{ organiser.name }}">
 
                                 <a href="{{ organiser.url }}">
                                     {{ organiser.name }}
@@ -74,6 +74,8 @@
                         {% endfor %}
                     </ul>
                 </section>
+
+                {{ render('/meetup/reviews') }}
 
                 {{ render('/meetup/sponsors') }}
             </div>

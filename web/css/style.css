@@ -75,15 +75,23 @@ strong, b {
     text-align: right;
 }
 
-.box footer a,
-.box footer a:hover .genericon,
-.box footer a:focus .genericon {
+.box footer a {
     text-decoration: none;
 }
 
 .box footer a:hover span,
 .box footer a:focus span {
     text-decoration: underline;
+}
+
+.avatar {
+    width: 3em;
+    height: 3em;
+}
+
+.avatar-mini {
+    width: 32px;
+    height: 32px;
 }
 
 @media (min-width: 600px) {
@@ -153,11 +161,6 @@ strong, b {
     padding: 2px 0;
 }
 
-.event__attendee img {
-    width: 32px;
-    height: 32px;
-}
-
 .contact ul li {
     position: relative;
     margin-bottom: 1em;
@@ -173,12 +176,14 @@ strong, b {
     max-width: 100px;
 }
 
-.contact ul li img {
+.contact ul li .avatar {
     position: absolute;
     top: 0;
     left: 0;
-    width: 3em;
-    height: 3em;
+}
+
+.reviews li .avatar {
+    vertical-align: middle;
 }
 
 /* Lists */
