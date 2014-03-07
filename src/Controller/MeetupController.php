@@ -29,6 +29,15 @@ class MeetupController
         ]);
     }
 
+    public function photosAction(Request $request, Application $app)
+    {
+        $meetup = new Meetup($app['meetup']);
+
+        return $app['twig']->render('meetup/photos.html.twig', [
+            'photos' => $meetup->getGroup()->photos
+        ]);
+    }
+
     public function reviewsAction(Request $request, Application $app)
     {
         $meetup = new Meetup($app['meetup']);

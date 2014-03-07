@@ -12,6 +12,7 @@ if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
 
 $app->get('/', 'PHPSW\Controller\AppController::indexAction');
 $app->get('/meetup/events', 'PHPSW\Controller\MeetupController::eventsAction');
+$app->get('/meetup/photos', 'PHPSW\Controller\MeetupController::photosAction');
 $app->get('/meetup/posts', 'PHPSW\Controller\MeetupController::postsAction');
 $app->get('/meetup/reviews', 'PHPSW\Controller\MeetupController::reviewsAction');
 $app->get('/meetup/sponsors', 'PHPSW\Controller\MeetupController::sponsorsAction');

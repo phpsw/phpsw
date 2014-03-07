@@ -1,0 +1,20 @@
+{% if photos %}
+    <section id="photos" class="photos box">
+        <h2>Photos</h2>
+
+        <ul class="list list--inline">
+            {% for photo in photos %}
+                <li>
+                    <a href="#photo-{{ photo.photo_id }}">
+                      <img src="{{ photo.thumb_link }}">
+                    </a>
+
+                    <!-- lightbox container hidden with CSS -->
+                    <a href="#photos" class="lightbox" id="photo-{{ photo.photo_id }}">
+                      <img src="{{ photo.highres_link }}">
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endif %}
