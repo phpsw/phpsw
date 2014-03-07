@@ -25,7 +25,7 @@ class MeetupController
         $meetup = new Meetup($app['meetup']);
 
         return $app['twig']->render('meetup/posts.html.twig', [
-            'posts' => array_slice($meetup->getPosts(), 0, 3)
+            'posts' => $meetup->getPosts()
         ]);
     }
 
