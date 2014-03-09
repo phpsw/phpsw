@@ -3,6 +3,7 @@
 namespace PHPSW\API;
 
 use DMS\Service\Meetup\MeetupKeyAuthClient;
+use Symfony\Component\DomCrawler\Crawler;
 
 class Meetup
 {
@@ -16,6 +17,8 @@ class Meetup
 
     protected $group;
 
+    protected $members;
+
     protected $posts;
 
     protected $reviews;
@@ -24,12 +27,11 @@ class Meetup
     {
         if (!$cache) {
             $this->client = MeetupKeyAuthClient::factory(['key' => $config['api']['key']]);
-        } else {
-            $this->redis = new \Predis\Client;
         }
 
         $this->cache = $cache;
         $this->config = $config;
+        $this->redis = new \Predis\Client;
     }
 
     public function getGroup()
@@ -149,6 +151,63 @@ class Meetup
         return $this->posts;
     }
 
+    public function getMember($id)
+    {
+        return $this->getMembers()[$id];
+    }
+
+    public function getMembers()
+    {
+        if ($this->members === null) {
+            if (!$this->cache) {
+                $this->members = $this->client->getGroupProfiles(['group_urlname' => $this->config['urlname']])->getData();
+            } else {
+                $this->members = array_map(
+                    function ($member) {
+                        $member = json_decode($member);
+
+                        return $member;
+                    },
+                    $this->redis->hgetall('phpsw:members')
+                );
+            }
+
+            $this->members = array_combine(
+                array_map(
+                    function ($member) {
+                        $member = (object) $member;
+
+                        return $member->member_id;
+                    },
+                    $this->members
+                ),
+                array_map(
+                    function ($member) {
+                        $member = (object) $member;
+
+                        if (isset($member->photo)) {
+                            $member->photo = (object) $member->photo;
+                        }
+
+                        $member->other_services = array_map(
+                            function ($service) {
+                                return (object) $service;
+                            },
+                            $member->other_services
+                        );
+
+                        $member->visited_date = \DateTime::createFromFormat('U', ($member->visited / 1000));
+
+                        return $member;
+                    },
+                    $this->members
+                )
+            );
+        }
+
+        return $this->members;
+    }
+
     public function getReviews()
     {
         if ($this->reviews === null) {
@@ -202,6 +261,7 @@ class Meetup
 
                 $event->url = $event->event_url;
                 $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));
+                $event->talks = $this->getTalks($event);
                 $event->venue = (object) $event->venue;
 
                 return $event;
@@ -256,5 +316,89 @@ class Meetup
             },
             $this->redis->hgetall('phpsw:posts')
         );
+    }
+
+    protected function getTalks($event)
+    {
+        $crawler = new Crawler(
+            trim(preg_replace('/[^(\x20-\x7F)]*/', '', $event->description))
+        );
+
+        $talks = $crawler
+            ->filter('p')
+            ->reduce(function (Crawler $node) {
+                return (boolean) preg_match('#^-[^-]#', $node->text());
+            })
+            ->each(function (Crawler $node) use ($event) {
+                $talk = (object) [];
+
+                $b = $node->filter('b')->first();
+
+                if ($b->count()) {
+                    $talk->id = $event->id . '-' . md5($b->text());
+                    $talk->title = $b->text();
+
+                    $string = explode(',', preg_replace('#-\s*' . preg_quote($talk->title) . '#', '', $node->text()));
+
+                    $talk->speaker = (object) [
+                        'id' => md5(trim($string[0])),
+                        'name' => trim($string[0])
+                    ];
+
+                    $siblings = $b->nextAll()->filter('a');
+
+                    $speakerNode = $siblings->first();
+
+                    if ($speakerNode->count()) {
+                        $talk->speaker->url = $speakerNode->attr('href');
+
+                        if (preg_match('#http://www.meetup.com/php-sw/members/([^\/]+)#', $talk->speaker->url, $matches)) {
+                            $talk->speaker->id = $matches[1];
+                            $talk->speaker->member = $this->getMember($talk->speaker->id);
+
+                            if (isset($talk->speaker->member->photo)) {
+                                $talk->speaker->photo = $talk->speaker->member->photo;
+                            }
+
+                            foreach ($talk->speaker->member->other_services as $key => $service) {
+                                $talk->speaker->$key = $service->identifier;
+                            }
+                        }
+
+                        if (preg_match('#https://twitter.com/([^\/]+)#', $talk->speaker->url, $matches)) {
+                            $talk->speaker->id = $talk->speaker->twitter = $matches[1];
+
+                            $talk->speaker->photo = (object) [
+                                'thumb_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=normal',
+                                'photo_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=bigger',
+                                'highres_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=original'
+                            ];
+                        }
+                    }
+
+                    if (isset($string[1])) {
+                        $talk->speaker->organisation = (object) [
+                            'name' => $string[1]
+                        ];
+
+                        $orgNode = $siblings->eq(1);
+
+                        if ($orgNode->count()) {
+                            $talk->speaker->organisation->url = $orgNode->attr('href');
+                        }
+                    }
+
+                    $talk->slides = $this->redis->hget('phpsw:slides', $talk->id);
+                }
+
+                return $talk;
+            })
+        ;
+
+        $talks = array_filter($talks, function ($talk) {
+            return isset($talk->title);
+        });
+
+        return $talks;
     }
 }

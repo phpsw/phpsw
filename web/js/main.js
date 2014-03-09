@@ -1,11 +1,13 @@
 $(function() {
-    $('.event__description').expander({
-        expandEffect: 'show',
-        expandSpeed: 0,
-        collapseEffect: 'hide',
-        collapseSpeed: 0,
-        slicePoint: 320
-    });
+    $('.event').each(function() {
+        $(this).find('.event__description').expander({
+            expandEffect: 'show',
+            expandSpeed: 0,
+            collapseEffect: 'hide',
+            collapseSpeed: 0,
+            slicePoint: $(this).hasClass('event--upcoming') ? 320 : 160
+        });
+    })
 
     $('section[id]').each(function() {
         $section = $(this);

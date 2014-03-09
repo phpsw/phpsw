@@ -87,6 +87,7 @@ strong, b {
 .avatar {
     width: 3em;
     height: 3em;
+    vertical-align: middle;
 }
 
 .avatar-mini {
@@ -119,6 +120,14 @@ strong, b {
 
 .event--upcoming {
     background: white;
+}
+
+.event__attendees {
+    font-size: 0;
+}
+
+.event__attendees li {
+    margin: 0 2px 4px;
 }
 
 .event__map {
@@ -189,10 +198,6 @@ strong, b {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.reviews li .avatar {
-    vertical-align: middle;
 }
 
 /* Lists */

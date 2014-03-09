@@ -1,4 +1,4 @@
-<article class="event event--{{ event.status }} box">
+<article id="event-{{ event.id }}" class="event event--{{ event.status }} box">
     <h3>
         <a href="{{ event.url }}">
             {{ event.name }}
@@ -10,11 +10,55 @@
         <span>{{ event.date.format('M') }}</span>
     </time>
 
-    {% if event.status == 'upcoming' %}
-        <div class="event__description">
-            {{ event.description | raw }}
-        </div>
+    {% if event.talks %}
+        <div class="event__talks">
+            <ul class="list">
+                {% for talk in event.talks %}
+                    <li>
+                        <p>
+                            <strong>{{ talk.title }}</strong>
 
+                            <br>
+
+                            {% if talk.speaker.url is defined %}
+                                <a
+                                    href="{{ talk.speaker.url }}"
+                                    {% if talk.speaker.member.bio is defined %}
+                                        title="{{ talk.speaker.member.bio }}"
+                                    {% endif %}
+                                >
+                                    {% if talk.speaker.photo is defined %}
+                                        <img src="{{ talk.speaker.photo.thumb_link }}" class="avatar-mini" alt="{{ talk.speaker.name }}">
+                                    {% endif %}
+
+                                    {{- talk.speaker.name -}}
+                                </a>
+                            {%- else -%}
+                                {{ talk.speaker.name }}
+                            {%- endif -%}
+
+                            {%- if talk.speaker.organisation.name is defined -%}
+                                ,
+                                {% if talk.speaker.organisation.url is defined %}
+                                    <a href="{{ talk.speaker.organisation.url }}">
+                                        {{ talk.speaker.organisation.name }}
+                                    </a>
+                                {% else %}
+                                    {{ talk.speaker.organisation.name }}
+                                {% endif %}
+                            {% endif %}
+                        </p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    <div class="event__description">
+        {{ event.description | raw }}
+    </div>
+
+    {% if event.status == 'upcoming' %}
         {% if event.venue %}
             <p
                 class="event__venue"
@@ -28,7 +72,7 @@
         {% endif %}
 
         {% if event.rsvps is defined %}
-            <ul class="list list--inline">
+            <ul class="event__attendees list list--inline">
                 {% for rsvp in event.rsvps if rsvp.response == 'yes' %}
                     <li>
                         <a href="{{ app.meetup.url }}/members/{{ rsvp.member.member_id }}" class="event__attendee" title="{{ rsvp.member.name }}">
