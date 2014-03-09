@@ -351,7 +351,7 @@ class Meetup
                 $talk->title = preg_replace('#\s+#u', ' ', $titleNode->text());
                 $talk->id = $event->id . '-' . Inflexible::slugify($talk->title);
 
-                $speakerAndOrg = explode(',', preg_replace('#-\s*' . preg_quote($talk->title) . '#u', '', $node->text()));
+                $speakerAndOrg = explode(',', preg_replace('#-\s*' . preg_quote($titleNode->text()) . '#u', '', $node->text()));
                 $speakerAndOrg = preg_replace('#^\s*(.*)\s*$#u', '\1', $speakerAndOrg);
 
                 $talk->speaker = (object) [
