@@ -43,17 +43,22 @@ button {
     cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     color: #44403A;
     margin-top: 0;
 }
 
-img {
-    max-width: 100%;
+h4, h5, h6, strong, b {
+    margin: 0;
+    color: #746A5D;
 }
 
-strong, b {
-    color: #746A5D;
+hr {
+    border: 1px dashed #EDE4D3;
+}
+
+img {
+    max-width: 100%;
 }
 
 .group {

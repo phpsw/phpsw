@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7cc4401af72f716e3c7f670b051612c1",
+    "hash": "c848407474425b381f06cad3504e2165",
     "packages": [
         {
             "name": "dg/twitter-php",

@@ -10,13 +10,27 @@
         <span>{{ event.date.format('M') }}</span>
     </time>
 
+    <div class="event__description">
+        {{ event.description | raw }}
+    </div>
+
     {% if event.talks %}
         <div class="event__talks">
+            <h4>Talks</h4>
+
             <ul class="list">
                 {% for talk in event.talks %}
-                    <li>
+                    <li id="talk-{{ talk.id }}">
                         <p>
-                            <strong>{{ talk.title }}</strong>
+                            <strong>
+                                {% if talk.slides %}
+                                    <a href="{{ talk.slides }}">
+                                        {{ talk.title }}
+                                    </a>
+                                {% else %}
+                                    {{ talk.title }}
+                                {% endif %}
+                            </strong>
 
                             <br>
 
@@ -53,10 +67,6 @@
             </ul>
         </div>
     {% endif %}
-
-    <div class="event__description">
-        {{ event.description | raw }}
-    </div>
 
     {% if event.status == 'upcoming' %}
         {% if event.venue %}
