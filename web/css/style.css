@@ -85,7 +85,9 @@ img {
 }
 
 .box__footer a:hover span,
-.box__footer a:focus span {
+.box__footer a:focus span,
+.box__footer a:hover time,
+.box__footer a:focus time {
     text-decoration: underline;
 }
 
@@ -107,6 +109,11 @@ img {
     margin: .5em 0;
     padding: .25em .75em;
     color: white;
+}
+
+.genericon-time {
+    height: 18px;
+    vertical-align: middle;
 }
 
 @media (min-width: 600px) {
