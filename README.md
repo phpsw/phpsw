@@ -1,5 +1,5 @@
-PHPSW Website
-=============
+PHP South West UK User Group Website
+====================================
 
 A simple [Silex](http://silex.sensiolabs.org)-based website for PHP South West UK User Group.
 
@@ -51,6 +51,8 @@ app/console twitter:import:all
 Meetup
 ------
 
-Almost all of our data resides in Meetup, when we grab event descriptions we try to derive what talks feature in them so that they can be highlighted in the templates, mapped to members or Twitter profiles, and so that slides can be attached.
+Almost all of our data resides in [Meetup](http://www.meetup.com/php-sw), when we grab event descriptions we try to derive what talks feature in them so that they can be highlighted in the templates, mapped to members or Twitter profiles, and so that slides can be attached.
 
-Slide URL's are stored in the redis hset `phpsw:slides` and map to talk ID's we made up when we stored them (based on the event ID and title sluggified).
+Slide URL's are stored in a Redis hash called `phpsw:slides` and reside on key based on the talk ID for which they represent.
+
+All Redis data other than the slides is disposable, the tasks overwrite everything on each run.
