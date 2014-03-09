@@ -61,6 +61,20 @@ img {
     max-width: 100%;
 }
 
+.logo {
+    float: right;
+    max-width: 40%;
+    margin: 0 0 1em 1em;
+}
+
+@media (min-width: 600px) {
+    .logo {
+        float: none;
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
 .group {
     max-width: 1000px;
     margin: 0 auto;
