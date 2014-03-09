@@ -1,5 +1,7 @@
 <article class="tweet box">
-    <h3>{{ tweet.html | raw }}</h3>
+    <header class="box__header">
+        <h3>{{ tweet.html | raw }}</h3>
+    </header>
 
     {% if tweet.entities.media is defined %}
         {% for media in tweet.entities.media %}
@@ -11,7 +13,7 @@
         {% endfor %}
     {% endif %}
 
-    <footer>
+    <footer class="box__footer">
         <a href="{{ tweet.url }}">
             <time datetime="{{ tweet.created_date.format(constant('DATE_W3C')) }}">
                 {{ tweet.created_date.format('l jS F Y') }}
