@@ -101,21 +101,22 @@
     {% endif %}
 
     <footer class="box__footer">
-        <span class="genericon genericon-user"></span>
-
         {% if event.yes_rsvp_count > 0 %}
-            {{ event.yes_rsvp_count }}
+            <span class="genericon genericon-user">
+                {{ event.yes_rsvp_count }}
 
-            {% if event.status == 'upcoming' %}
-                attending
-            {% else %}
-                attended
-            {% endif %}
+                {% if event.status == 'upcoming' %}
+                    attending
+                {% else %}
+                    attended
+                {% endif %}
+            </span>
         {% endif %}
 
         {% if event.rating is defined and event.rating.average > 3 %}
-            <span class="genericon genericon-digg"></span>
-            {{ event.rating.average | round(1) }}/5 by {{ event.rating.count }} {{ event.group.who | lower }}
+            <span class="genericon genericon-digg">
+                {{ event.rating.average | round(1) }}/5 by {{ event.rating.count }} {{ event.group.who | lower }}
+            </span>
         {% endif %}
     </footer>
 </article>

@@ -8,8 +8,7 @@
     </header>
 
     <footer class="box__footer">
-        <span class="genericon genericon-time"></span>
-        <time datetime="{{ post.last_post.created_date.format(constant('DATE_W3C')) }}">
+        <time class="genericon genericon-time" datetime="{{ post.last_post.created_date.format(constant('DATE_W3C')) }}">
             {{ post.last_post.created_date.format('l jS F Y') }}
         </time>
     </footer>

@@ -80,17 +80,6 @@ img {
     text-align: right;
 }
 
-.box__footer a {
-    text-decoration: none;
-}
-
-.box__footer a:hover span,
-.box__footer a:focus span,
-.box__footer a:hover time,
-.box__footer a:focus time {
-    text-decoration: underline;
-}
-
 .avatar {
     width: 3em;
     height: 3em;
@@ -111,9 +100,9 @@ img {
     color: white;
 }
 
-.genericon-time {
-    height: 18px;
-    vertical-align: middle;
+.genericon-time:before {
+    line-height: 18px;
+    width: 18px;
 }
 
 @media (min-width: 600px) {
@@ -230,23 +219,12 @@ img {
 
 .list--icons li a {
     line-height: 32px;
-    text-decoration: none;
 }
 
-.list--icons li a .genericon {
+.list--icons li .genericon:before {
     width: 32px;
     height: 32px;
     font-size: 32px;
-}
-
-.list--icons li a:hover .genericon,
-.list--icons li a:focus .genericon {
-    text-decoration: none;
-}
-
-.list--icons li a:hover span,
-.list--icons li a:focus span {
-    text-decoration: underline;
 }
 
 .list--inline li {

@@ -19,34 +19,31 @@
 
                     <ul class="list list--icons">
                         <li>
-                            <a href="{{ app.meetup.url }}">
-                                <span class="genericon genericon-month"></span>
+                            <a href="{{ app.meetup.url }}" class="genericon genericon-month">
                                 <span>Find us on Meetup</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ app.twitter.url }}">
-                                <span class="genericon genericon-twitter"></span>
+                            <a href="{{ app.twitter.url }}" class="genericon genericon-twitter">
                                 <span>Tweet us at @{{ app.twitter.user }}</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ app.github.url }}">
-                                <span class="genericon genericon-github"></span>
+                            <a href="{{ app.github.url }}" class="genericon genericon-github">
                                 <span>Fork this on GitHub</span>
                             </a>
                         </li>
                     </ul>
 
                     <div class="box__footer">
-                        <a href="{{ app.meetup.url }}/members">
-                            <span class="genericon genericon-user"></span>
-                            <span>{{ meetup.group.members }} {{ meetup.group.who | lower }}</span>
+                        <a href="{{ app.meetup.url }}/members" class="genericon genericon-user">
+                            {{- meetup.group.members }} {{ meetup.group.who | lower -}}
                         </a>
 
                         {% if meetup.group.rating is defined and meetup.group.rating.average > 3 %}
-                            <span class="genericon genericon-digg"></span>
-                            {{ meetup.group.rating.average | round(1) }}/5 from {{ meetup.group.rating.count }} ratings
+                            <span class="genericon genericon-digg">
+                                {{ meetup.group.rating.average | round(1) }}/5 from {{ meetup.group.rating.count }} ratings
+                            </span>
                         {% endif %}
                     </div>
                 </header>

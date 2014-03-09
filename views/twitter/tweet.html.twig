@@ -15,8 +15,7 @@
 
     <footer class="box__footer">
         <a href="{{ tweet.url }}">
-            <span class="genericon genericon-time"></span>
-            <time datetime="{{ tweet.created_date.format(constant('DATE_W3C')) }}">
+            <time datetime="{{ tweet.created_date.format(constant('DATE_W3C')) }}" class="genericon genericon-time">
                 {{ tweet.created_date.format('l jS F Y') }}
             </time>
         </a>
