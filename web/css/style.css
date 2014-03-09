@@ -89,6 +89,7 @@ img {
     background: rgba(255, 255, 255, .9);
     margin-bottom: 1em;
     padding: 1em;
+    overflow: hidden;
 }
 
 .box__footer {
