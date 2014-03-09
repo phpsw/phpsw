@@ -260,10 +260,12 @@ class Meetup
                     $event->description
                 );
 
-                $event = $this->parse($event);
                 $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));
+                $event->talks = [];
                 $event->url = $event->event_url;
                 $event->venue = (object) $event->venue;
+
+                $event = $this->parse($event);
 
                 return $event;
             },
@@ -330,99 +332,107 @@ class Meetup
 
     protected function parse($event)
     {
-        $crawler = $this
-            ->crawl($event->description)
-            ->filter('p')
-            ->reduce(function (Crawler $node) {
-                return (boolean) preg_match('#^-[^-]#', $node->text());
-            })
-        ;
+        $crawler = $this->crawl($event->description);
 
-        $event->talks = [];
+        if ($crawler->count()) {
+            $crawler = $crawler->children()->first();
 
-        foreach ($crawler as $i => $node) {
-            $node = new Crawler($node);
+            $event->description = $crawler->html();
 
-            $talk = (object) [];
+            $crawler = $crawler
+                ->filter('p')
+                ->reduce(function (Crawler $node) {
+                    return (boolean) preg_match('#^-[^-]#', $node->text());
+                })
+            ;
 
-            $titleNode = $node->filter('b')->first();
+            foreach ($crawler as $i => $node) {
+                $node = new Crawler($node);
 
-            if ($titleNode->count()) {
-                $talk->title = preg_replace('#\s+#u', ' ', $titleNode->text());
-                $talk->id = $event->id . '-' . Inflexible::slugify($talk->title);
+                $talk = (object) [];
 
-                $speakerAndOrg = explode(',', preg_replace('#-\s*' . preg_quote($titleNode->text()) . '#u', '', $node->text()));
-                $speakerAndOrg = preg_replace('#^\s*(.*)\s*$#u', '\1', $speakerAndOrg);
+                $titleNode = $node->filter('b')->first();
 
-                $talk->speaker = (object) [
-                    'id' => Inflexible::slugify($speakerAndOrg[0]),
-                    'name' => $speakerAndOrg[0]
-                ];
+                if ($titleNode->count()) {
+                    $talk->title = preg_replace('#\s+#u', ' ', $titleNode->text());
+                    $talk->id = $event->id . '-' . Inflexible::slugify($talk->title);
 
-                $nodesAfterTitleNode = $titleNode->nextAll()->filter('a');
+                    $speakerAndOrg = explode(',', preg_replace('#-\s*' . preg_quote($titleNode->text()) . '#u', '', $node->text()));
+                    $speakerAndOrg = preg_replace('#^\s*(.*)\s*$#u', '\1', $speakerAndOrg);
 
-                $speakerNode = $nodesAfterTitleNode->first();
-
-                if ($speakerNode->count()) {
-                    $talk->speaker->url = $speakerNode->attr('href');
-
-                    if (preg_match('#http://www.meetup.com/php-sw/members/([^\/]+)#', $talk->speaker->url, $matches)) {
-                        $talk->speaker->id = $matches[1];
-                        $talk->speaker->member = $this->getMember($talk->speaker->id);
-
-                        if (isset($talk->speaker->member->photo)) {
-                            $talk->speaker->photo = $talk->speaker->member->photo;
-                        }
-
-                        foreach ($talk->speaker->member->other_services as $key => $service) {
-                            $talk->speaker->$key = $service->identifier;
-                        }
-                    }
-
-                    if (preg_match('#https://twitter.com/([^\/]+)#', $talk->speaker->url, $matches)) {
-                        $talk->speaker->id = $talk->speaker->twitter = $matches[1];
-
-                        $talk->speaker->photo = (object) [
-                            'thumb_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=normal',
-                            'photo_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=bigger',
-                            'highres_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=original'
-                        ];
-                    }
-                }
-
-                if (isset($speakerAndOrg[1])) {
-                    $talk->speaker->organisation = (object) [
-                        'name' => $speakerAndOrg[1]
+                    $talk->speaker = (object) [
+                        'id' => Inflexible::slugify($speakerAndOrg[0]),
+                        'name' => $speakerAndOrg[0]
                     ];
 
-                    $orgNode = $nodesAfterTitleNode->eq(1);
+                    $nodesAfterTitleNode = $titleNode->nextAll()->filter('a');
 
-                    if ($orgNode->count()) {
-                        $talk->speaker->organisation->url = $orgNode->attr('href');
+                    $speakerNode = $nodesAfterTitleNode->first();
+
+                    if ($speakerNode->count()) {
+                        $talk->speaker->url = $speakerNode->attr('href');
+
+                        if (preg_match('#http://www.meetup.com/php-sw/members/([^\/]+)#', $talk->speaker->url, $matches)) {
+                            $talk->speaker->id = $matches[1];
+                            $talk->speaker->member = $this->getMember($talk->speaker->id);
+
+                            if (isset($talk->speaker->member->photo)) {
+                                $talk->speaker->photo = $talk->speaker->member->photo;
+                            }
+
+                            foreach ($talk->speaker->member->other_services as $key => $service) {
+                                $talk->speaker->$key = $service->identifier;
+                            }
+                        }
+
+                        if (preg_match('#https://twitter.com/([^\/]+)#', $talk->speaker->url, $matches)) {
+                            $talk->speaker->id = $talk->speaker->twitter = $matches[1];
+
+                            $talk->speaker->photo = (object) [
+                                'thumb_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=normal',
+                                'photo_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=bigger',
+                                'highres_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=original'
+                            ];
+                        }
                     }
+
+                    if (isset($speakerAndOrg[1])) {
+                        $talk->speaker->organisation = (object) [
+                            'name' => $speakerAndOrg[1]
+                        ];
+
+                        $orgNode = $nodesAfterTitleNode->eq(1);
+
+                        if ($orgNode->count()) {
+                            $talk->speaker->organisation->url = $orgNode->attr('href');
+                        }
+                    }
+
+                    $talk->slides = $this->redis->hget('phpsw:slides', $talk->id);
+
+                    $event->description = str_replace('<p>' . $node->html() . '</p>', '', $event->description);
+                    $event->talks[] = $talk;
                 }
-
-                $talk->slides = $this->redis->hget('phpsw:slides', $talk->id);
-
-                $event->description = str_replace('<p>' . $node->html() . '</p>', '', $this->crawl($event->description)->children()->first()->html());
-                $event->talks[] = $talk;
             }
+
+            // hr up any dashes
+            $event->description = preg_replace('#<p>--</p>#', '<hr>', $event->description);
+
+            // strip blank p's
+            $event->description = preg_replace('#<p>\s*</p>#u', '', $event->description);
+
+            // strip leading and trailings br's and whitespace in p's
+            $event->description = preg_replace(['#<p>\s*(<br>)*#u', '#(<br>)*\s*</p>#u'], ['<p>', '</p>'], $event->description);
+
+            // html entityify everything
+            $event->description = htmlentities($event->description, ENT_NOQUOTES, 'UTF-8', false);
+
+            // html de-entityify tags
+            $event->description = str_replace(['&lt;', '&gt;'], ['<', '>'], $event->description);
+        } else {
+            // strip crazy </p> descriptions meetup returns
+            $event->description = null;
         }
-
-        // hr up any dashes
-        $event->description = preg_replace('#<p>--</p>#', '<hr>', $event->description);
-
-        // strip blank p's
-        $event->description = preg_replace('#<p>\s*</p>#u', '', $event->description);
-
-        // strip leading and trailings br's in p's
-        $event->description = preg_replace(['#<p>\s+#u', '#\s+</p>#u'], ['<p>', '</p>'], $event->description);
-
-        // html entityify everything
-        $event->description = htmlentities($event->description, ENT_NOQUOTES, 'UTF-8', false);
-
-        // html de-entityify tags
-        $event->description = str_replace(['&lt;', '&gt;'], ['<', '>'], $event->description);
 
         return $event;
     }
