@@ -3,8 +3,58 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c848407474425b381f06cad3504e2165",
+    "hash": "851f8256de24253a73f46b4f30b111d4",
     "packages": [
+        {
+            "name": "borisguery/inflexible",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/borisguery/Inflexible.git",
+                "reference": "cd46d8102bac710e2a04c99337c595ca2f34175f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/borisguery/Inflexible/zipball/cd46d8102bac710e2a04c99337c595ca2f34175f",
+                "reference": "cd46d8102bac710e2a04c99337c595ca2f34175f",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "dev-master",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Inflexible": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFL"
+            ],
+            "authors": [
+                {
+                    "name": "Boris Guéry",
+                    "email": "guery.b@gmail.com",
+                    "homepage": "http://borisguery.com"
+                }
+            ],
+            "description": "Collection of Inflectors for string, date, numbers, etc.",
+            "homepage": "http://github.com/borisguery/Inflexible",
+            "keywords": [
+                "date",
+                "inflection",
+                "inflector",
+                "number",
+                "string",
+                "utility"
+            ],
+            "time": "2013-06-17 12:50:41"
+        },
         {
             "name": "dg/twitter-php",
             "version": "v3.2",
@@ -95,6 +145,75 @@
                 "meetup.com"
             ],
             "time": "2013-11-12 21:21:13"
+        },
+        {
+            "name": "doctrine/inflector",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/inflector.git",
+                "reference": "a81c334f2764b09e2f13a55cfd8fe3233946f728"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/a81c334f2764b09e2f13a55cfd8fe3233946f728",
+                "reference": "a81c334f2764b09e2f13a55cfd8fe3233946f728",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Inflector\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com",
+                    "homepage": "http://www.instaclick.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "http://jmsyst.com",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Common String Manipulations with regard to casing and singular/plural rules.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "inflection",
+                "pluralize",
+                "singularize",
+                "string"
+            ],
+            "time": "2013-12-21 19:19:50"
         },
         {
             "name": "guzzle/guzzle",
@@ -1283,6 +1402,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "borisguery/inflexible": 20,
+        "doctrine/inflector": 20,
         "knplabs/console-service-provider": 20
     },
     "platform": {

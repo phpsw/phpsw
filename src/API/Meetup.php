@@ -2,8 +2,9 @@
 
 namespace PHPSW\API;
 
-use DMS\Service\Meetup\MeetupKeyAuthClient;
-use Symfony\Component\DomCrawler\Crawler;
+use DMS\Service\Meetup\MeetupKeyAuthClient,
+    Inflexible\Inflexible,
+    Symfony\Component\DomCrawler\Crawler;
 
 class Meetup
 {
@@ -348,13 +349,13 @@ class Meetup
 
             if ($titleNode->count()) {
                 $talk->title = preg_replace('#\s+#u', ' ', $titleNode->text());
-                $talk->id = $event->id . '-' . md5($talk->title);
+                $talk->id = $event->id . '-' . Inflexible::slugify($talk->title);
 
                 $speakerAndOrg = explode(',', preg_replace('#-\s*' . preg_quote($talk->title) . '#u', '', $node->text()));
                 $speakerAndOrg = preg_replace('#^\s*(.*)\s*$#u', '\1', $speakerAndOrg);
 
                 $talk->speaker = (object) [
-                    'id' => md5($speakerAndOrg[0]),
+                    'id' => Inflexible::slugify($speakerAndOrg[0]),
                     'name' => $speakerAndOrg[0]
                 ];
 
