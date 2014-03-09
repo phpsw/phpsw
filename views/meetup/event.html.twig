@@ -1,14 +1,16 @@
 <article id="event-{{ event.id }}" class="event event--{{ event.status }} box">
-    <h3>
-        <a href="{{ event.url }}">
-            {{ event.name }}
-        </a>
-    </h3>
+    <header class="box__header">
+        <h3>
+            <a href="{{ event.url }}">
+                {{ event.name }}
+            </a>
+        </h3>
 
-    <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
-        {{ event.date.format('j') }}
-        <span>{{ event.date.format('M') }}</span>
-    </time>
+        <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
+            {{ event.date.format('j') }}
+            <span>{{ event.date.format('M') }}</span>
+        </time>
+    </header>
 
     <div class="event__description">
         {{ event.description | raw }}
@@ -98,7 +100,7 @@
         </a>
     {% endif %}
 
-    <footer>
+    <footer class="box__footer">
         <span class="genericon genericon-user"></span>
 
         {% if event.yes_rsvp_count > 0 %}

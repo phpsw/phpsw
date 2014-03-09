@@ -1,11 +1,13 @@
 <article class="post box">
-    <h3>
-        <a href="{{ post.url }}">
-            {{ post.subject }}
-        </a>
-    </h3>
+    <header class="box__header">
+        <h3>
+            <a href="{{ post.url }}">
+                {{ post.subject }}
+            </a>
+        </h3>
+    </header>
 
-    <footer>
+    <footer class="box__footer">
         <time datetime="{{ post.last_post.created_date.format(constant('DATE_W3C')) }}">
             {{ post.last_post.created_date.format('l jS F Y') }}
         </time>

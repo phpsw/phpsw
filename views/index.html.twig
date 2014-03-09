@@ -38,7 +38,7 @@
                         </li>
                     </ul>
 
-                    <footer>
+                    <div class="box__footer">
                         <a href="{{ app.meetup.url }}/members">
                             <span class="genericon genericon-user"></span>
                             <span>{{ meetup.group.members }} {{ meetup.group.who | lower }}</span>
@@ -48,11 +48,13 @@
                             <span class="genericon genericon-digg"></span>
                             {{ meetup.group.rating.average | round(1) }}/5 from {{ meetup.group.rating.count }} ratings
                         {% endif %}
-                    </footer>
+                    </div>
                 </header>
 
                 <section class="contact box">
-                    <h2>Get in touch</h2>
+                    <header class="box__header">
+                        <h2>Get in touch</h2>
+                    </header>
 
                     <ul class="list">
                         {% for organiser in app.organisers %}

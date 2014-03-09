@@ -73,19 +73,19 @@ img {
     padding: 1em;
 }
 
-.box footer {
+.box__footer {
     margin-top: 1em;
     color: #A5998B;
     font-size: 12px;
     text-align: right;
 }
 
-.box footer a {
+.box__footer a {
     text-decoration: none;
 }
 
-.box footer a:hover span,
-.box footer a:focus span {
+.box__footer a:hover span,
+.box__footer a:focus span {
     text-decoration: underline;
 }
 
