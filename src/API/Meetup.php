@@ -347,8 +347,8 @@ class Meetup
             $titleNode = $node->filter('b')->first();
 
             if ($titleNode->count()) {
-                $talk->id = $event->id . '-' . md5($titleNode->text());
-                $talk->title = $titleNode->text();
+                $talk->title = preg_replace('#\s+#u', ' ', $titleNode->text());
+                $talk->id = $event->id . '-' . md5($talk->title);
 
                 $speakerAndOrg = explode(',', preg_replace('#-\s*' . preg_quote($talk->title) . '#u', '', $node->text()));
                 $speakerAndOrg = preg_replace('#^\s*(.*)\s*$#u', '\1', $speakerAndOrg);
