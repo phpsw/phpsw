@@ -75,6 +75,10 @@ img {
     }
 }
 
+.fn, .org {
+    white-space: nowrap;
+}
+
 .group {
     max-width: 1000px;
     margin: 0 auto;
@@ -97,12 +101,14 @@ img {
 .avatar {
     width: 3em;
     height: 3em;
+    margin-right: .25em;
     vertical-align: middle;
 }
 
 .avatar-mini {
     width: 32px;
     height: 32px;
+    margin-right: .25em;
     vertical-align: middle;
 }
 

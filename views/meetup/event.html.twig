@@ -43,11 +43,13 @@
                                         title="{{ talk.speaker.member.bio }}"
                                     {% endif %}
                                 >
-                                    {% if talk.speaker.photo is defined %}
+                                    {%- if talk.speaker.photo is defined -%}
                                         <img src="{{ talk.speaker.photo.thumb_link }}" class="avatar-mini" alt="{{ talk.speaker.name }}">
-                                    {% endif %}
+                                    {%- endif -%}
 
-                                    {{- talk.speaker.name -}}
+                                    {%- spaceless -%}
+                                        <span class="fn">{{ talk.speaker.name }}</span>
+                                    {%- endspaceless -%}
                                 </a>
                             {%- else -%}
                                 {{ talk.speaker.name }}
@@ -57,10 +59,10 @@
                                 ,
                                 {% if talk.speaker.organisation.url is defined %}
                                     <a href="{{ talk.speaker.organisation.url }}">
-                                        {{ talk.speaker.organisation.name }}
+                                        <span class="org">{{ talk.speaker.organisation.name }}</span>
                                     </a>
                                 {% else %}
-                                    {{ talk.speaker.organisation.name }}
+                                    <span class="org">{{ talk.speaker.organisation.name }}</span>
                                 {% endif %}
                             {% endif %}
                         </p>

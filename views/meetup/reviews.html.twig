@@ -8,11 +8,11 @@
             {% for review in reviews %}
                 <li>
                     <a href="{{ review.link }}">
-                        {% if review.photo_url %}
+                        {%- if review.photo_url -%}
                             <img src="{{ review.photo_url }}" class="avatar" alt="{{ review.name }}">
-                        {% endif %}
+                        {%- endif -%}
 
-                        {{ review.name }}
+                        {{- review.name -}}
                     </a>
 
                     <p>{{ review.comment }}</p>
