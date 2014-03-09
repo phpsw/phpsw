@@ -1,5 +1,5 @@
-PHP South West UK User Group Website
-====================================
+PHP South West UK User Group
+============================
 
 A simple [Silex](http://silex.sensiolabs.org)-based website for PHP South West UK User Group.
 
