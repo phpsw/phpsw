@@ -92,6 +92,15 @@ strong, b {
 .avatar-mini {
     width: 32px;
     height: 32px;
+    vertical-align: middle;
+}
+
+.btn {
+    display: inline-block;
+    background: #CA3838;
+    margin: .5em 0;
+    padding: .25em .75em;
+    color: white;
 }
 
 @media (min-width: 600px) {
