@@ -1,23 +1,19 @@
-<section id="upcoming-events" class="events events--upcoming">
-    <h2>Upcoming events</h2>
+{% for status in statuses %}
+    <section id="{{ status }}-events" class="events events--{{ status }}">
+        <h2>{{ status | title }} events</h2>
 
-    {% for event in upcoming_events %}
-        {{ include('meetup/event.html.twig') }}
-    {% else %}
-        <div class="box box--empty">
-            Nothing to announce right now,
-            <a href="{{ app.twitter.url }}">
-                follow us on Twitter
-            </a>
-            for updates.
-        </div>
-    {% endfor %}
-</section>
-
-<section id="past-events" class="events events--past">
-    <h2>Past events</h2>
-
-    {% for event in past_events %}
-        {{ include('meetup/event.html.twig') }}
-    {% endfor %}
-</section>
+        {% for event in attribute(_context, status ~ '_events') %}
+            {{ include('meetup/event.html.twig') }}
+        {% else %}
+            {% if status == 'upcoming' %}
+                <div class="box box--empty">
+                    Nothing to announce right now,
+                    <a href="{{ app.twitter.url }}">
+                        follow us on Twitter
+                    </a>
+                    for updates.
+                </div>
+            {% endif %}
+        {% endfor %}
+    </section>
+{% endfor %}

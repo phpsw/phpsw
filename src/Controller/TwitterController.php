@@ -9,8 +9,6 @@ class TwitterController
 {
     public function tweetsAction(Request $request, Application $app)
     {
-        $redis = new \Predis\Client;
-
         $tweets = array_map(
             function ($tweet) {
                 $tweet = json_decode($tweet);
@@ -19,7 +17,7 @@ class TwitterController
 
                 return $tweet;
             },
-            $redis->hgetall('phpsw:tweets')
+            $app['redis']->hgetall('phpsw:tweets')
         );
 
         uasort($tweets, function($a, $b) {

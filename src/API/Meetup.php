@@ -8,11 +8,13 @@ use DMS\Service\Meetup\MeetupKeyAuthClient,
 
 class Meetup
 {
-    protected $cache;
+    protected $cli;
 
     protected $client;
 
     protected $config;
+
+    protected $debug;
 
     protected $events;
 
@@ -24,21 +26,22 @@ class Meetup
 
     protected $reviews;
 
-    public function __construct(array $config, $cache = true)
+    public function __construct($app, array $config, $cli, $debug = false)
     {
-        if (!$cache) {
+        if ($cli) {
             $this->client = MeetupKeyAuthClient::factory(['key' => $config['api']['key']]);
         }
 
-        $this->cache = $cache;
+        $this->cli = $cli;
+        $this->debug = $debug;
         $this->config = $config;
-        $this->redis = new \Predis\Client;
+        $this->redis = $app['redis'];
     }
 
     public function getGroup()
     {
         if ($this->group === null) {
-            if (!$this->cache) {
+            if ($this->cli) {
                 $response = $this->client->getGroups([
                     'group_urlname' => $this->config['urlname'],
                     'fields' => implode(',', ['photos', 'sponsors'])
@@ -68,7 +71,7 @@ class Meetup
     public function getEvents()
     {
         if ($this->events === null) {
-            if (!$this->cache) {
+            if ($this->cli) {
                 $this->events = $this->getEventsFromApi();
             } else {
                 $this->events = $this->getEventsFromCache();
@@ -77,6 +80,10 @@ class Meetup
             $this->events = array_map(
                 function ($event) {
                     $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
+
+                    if ($this->cli && !$this->debug || !$this->cli && $this->debug) {
+                        $event = $this->parse($event);
+                    }
 
                     return $event;
                 },
@@ -89,6 +96,15 @@ class Meetup
         }
 
         return $this->events;
+    }
+
+    public function getDraftEvents()
+    {
+        return array_reverse(
+            array_filter($this->getEvents(), function ($event) {
+                return $event->status == 'draft';
+            })
+        );
     }
 
     public function getPastEvents()
@@ -129,7 +145,7 @@ class Meetup
     public function getPosts($board = null)
     {
         if ($this->posts === null) {
-            if (!$this->cache) {
+            if ($this->cli) {
                 $this->posts = $this->getPostsFromApi();
             } else {
                 $this->posts = $this->getPostsFromCache();
@@ -160,7 +176,7 @@ class Meetup
     public function getMembers()
     {
         if ($this->members === null) {
-            if (!$this->cache) {
+            if ($this->cli) {
                 $this->members = $this->client->getGroupProfiles(['group_urlname' => $this->config['urlname']])->getData();
             } else {
                 $this->members = array_map(
@@ -212,7 +228,7 @@ class Meetup
     public function getReviews()
     {
         if ($this->reviews === null) {
-            if (!$this->cache) {
+            if ($this->cli) {
                 $this->reviews = $this->client->getComments(['group_urlname' => $this->config['urlname']])->getData();
             } else {
                 $this->reviews = array_map(
@@ -245,7 +261,7 @@ class Meetup
         $events = $this->client->getEvents([
             'group_urlname' => $this->config['urlname'],
             'status' => implode(',', [
-                'upcoming', 'past', 'proposed', 'suggested', 'cancelled'
+                'upcoming', 'draft', 'past', 'proposed', 'suggested', 'cancelled'
             ]),
             'desc' => 'true'
         ]);
@@ -264,8 +280,6 @@ class Meetup
                 $event->talks = [];
                 $event->url = $event->event_url;
                 $event->venue = (object) $event->venue;
-
-                $event = $this->parse($event);
 
                 return $event;
             },

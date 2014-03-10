@@ -2,8 +2,7 @@
 
 namespace PHPSW\Command;
 
-use PHPSW\API\Meetup,
-    Knp\Command\Command,
+use Knp\Command\Command,
     Symfony\Component\Console\Input\InputArgument,
     Symfony\Component\Console\Input\InputInterface,
     Symfony\Component\Console\Input\InputOption,
@@ -22,9 +21,8 @@ class MeetupCommand extends Command
     {
         $app = $this->getSilexApplication();
 
-        $redis = new \Predis\Client;
-
-        $meetup = new Meetup($app['meetup'], false);
+        $redis = $app['redis'];
+        $meetup = $app['meetup.client'];
 
         $tasks = [
             'group' => function ($callback) use ($meetup, $redis) {

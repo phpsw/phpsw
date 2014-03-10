@@ -21,16 +21,7 @@ class TwitterCommand extends Command
     {
         $app = $this->getSilexApplication();
 
-        $redis = new \Predis\Client;
-
-        $twitter = new \Twitter(
-            $app['twitter']['api']['key'],
-            $app['twitter']['api']['secret'],
-            $app['twitter']['access_token'],
-            $app['twitter']['access_token_secret']
-        );
-
-        $tweets = $twitter->load(\Twitter::ME);
+        $tweets = $app['twitter.client']->load(\Twitter::ME);
 
         $tweets = array_map(
             function ($tweet) {
@@ -83,7 +74,7 @@ class TwitterCommand extends Command
         echo 'Tweets: ';
 
         foreach ($tweets as $tweet) {
-            $redis->hset('phpsw:tweets', $tweet->id, json_encode($tweet));
+            $app['redis']->hset('phpsw:tweets', $tweet->id, json_encode($tweet));
 
             echo '.';
         }
