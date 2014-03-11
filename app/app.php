@@ -36,7 +36,7 @@ $app->get('/meetup/posts', 'PHPSW\Controller\MeetupController::postsAction')->bi
 $app->get('/meetup/reviews', 'PHPSW\Controller\MeetupController::reviewsAction')->bind('reviews');
 $app->get('/meetup/sponsors', 'PHPSW\Controller\MeetupController::sponsorsAction')->bind('sponsors');
 $app
-    ->get('/twitter/{user}/photo/{size}', 'PHPSW\Controller\TwitterController::photoAction')
+    ->get('/twitter/{user}-{size}', 'PHPSW\Controller\TwitterController::photoAction')
     ->bind('twitter_photo')
     ->assert('size', implode('|', ['bigger', 'normal', 'mini', 'original']))
     ->value('size', 'normal')
