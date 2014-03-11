@@ -55,15 +55,8 @@
                                 {{ talk.speaker.name }}
                             {%- endif -%}
 
-                            {%- if talk.speaker.organisation.name is defined -%}
-                                ,
-                                {% if talk.speaker.organisation.url is defined %}
-                                    <a href="{{ talk.speaker.organisation.url }}">
-                                        <span class="org">{{ talk.speaker.organisation.name }}</span>
-                                    </a>
-                                {% else %}
-                                    <span class="org">{{ talk.speaker.organisation.name }}</span>
-                                {% endif %}
+                            {%- if talk.speaker.bio -%}
+                                , {{ talk.speaker.bio | raw }}
                             {% endif %}
                         </p>
                     </li>

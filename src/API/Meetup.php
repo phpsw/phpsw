@@ -371,13 +371,29 @@ class Meetup
                     $talk->title = preg_replace('#\s+#u', ' ', $titleNode->text());
                     $talk->id = $event->id . '-' . Inflexible::slugify($talk->title);
 
-                    $speakerAndOrg = explode(',', preg_replace('#-\s*' . preg_quote($titleNode->text()) . '#u', '', $node->text()));
+                    $speakerAndOrg = explode(',', preg_replace('#-\s*' . preg_quote($titleNode->text()) . '#u', '', $node->text()), 2);
                     $speakerAndOrg = preg_replace('#^\s*(.*)\s*$#u', '\1', $speakerAndOrg);
 
                     $talk->speaker = (object) [
                         'id' => Inflexible::slugify($speakerAndOrg[0]),
-                        'name' => $speakerAndOrg[0]
+                        'name' => $speakerAndOrg[0],
+                        'bio' => null
                     ];
+
+                    /* bio */
+
+                    $nodeHtml = preg_replace('#\s+#u', ' ', $node->html());
+                    $titleHtml = preg_replace('#\s+#u', ' ', $titleNode->html());
+
+                    $speakerHtml = trim(str_replace('<br>' , '', preg_replace('#- <b>' . preg_quote($titleHtml) . '</b>#u', '', $nodeHtml)));
+
+                    $speakerExplode = explode(', ', $speakerHtml, 2);
+
+                    if (isset($speakerExplode[1])) {
+                        $talk->speaker->bio = $speakerExplode[1];
+                    }
+
+                    /* end */
 
                     $nodesAfterTitleNode = $titleNode->nextAll()->filter('a');
 
@@ -410,16 +426,13 @@ class Meetup
                         }
                     }
 
-                    if (isset($speakerAndOrg[1])) {
+                    $orgNode = $nodesAfterTitleNode->eq(1);
+
+                    if ($orgNode->count()) {
                         $talk->speaker->organisation = (object) [
-                            'name' => $speakerAndOrg[1]
+                            'name' => $orgNode->text(),
+                            'url' => $orgNode->attr('href')
                         ];
-
-                        $orgNode = $nodesAfterTitleNode->eq(1);
-
-                        if ($orgNode->count()) {
-                            $talk->speaker->organisation->url = $orgNode->attr('href');
-                        }
                     }
 
                     $talk->slides = $this->redis->hget('phpsw:slides', $talk->id);
