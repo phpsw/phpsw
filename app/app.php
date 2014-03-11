@@ -13,7 +13,7 @@ $app['cli'] = false;
 $app['redis'] = new Predis\Client;
 
 $app['meetup.client'] = function ($app) {
-    return new PHPSW\Api\Meetup($app, $app['meetup'], $app['cli'], $app['debug']);
+    return new PHPSW\API\Meetup($app, $app['meetup'], $app['cli'], $app['debug']);
 };
 
 $app['twitter.client'] = function ($app) {
