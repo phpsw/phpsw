@@ -10,7 +10,7 @@ if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
 
 $app['cli'] = false;
 
-$app['guzzle'] = new Guzzle\HTTP\Client;
+$app['guzzle'] = new Guzzle\Http\Client;
 
 $app['redis'] = new Predis\Client;
 
