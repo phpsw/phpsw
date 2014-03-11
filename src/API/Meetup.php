@@ -32,6 +32,7 @@ class Meetup
             $this->client = MeetupKeyAuthClient::factory(['key' => $config['api']['key']]);
         }
 
+        $this->app = $app;
         $this->cli = $cli;
         $this->debug = $debug;
         $this->config = $config;
@@ -418,9 +419,9 @@ class Meetup
                             $talk->speaker->id = $talk->speaker->twitter = $matches[1];
 
                             $talk->speaker->photo = (object) [
-                                'thumb_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=normal',
-                                'photo_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=bigger',
-                                'highres_link' => 'https://twitter.com/api/users/profile_image/' . $talk->speaker->twitter . '?size=original'
+                                'thumb_link' => $this->app->path('twitter_photo', ['user' => $talk->speaker->twitter]),
+                                'photo_link' => $this->app->path('twitter_photo', ['user' => $talk->speaker->twitter, 'size' => 'bigger']),
+                                'highres_link' => $this->app->path('twitter_photo', ['user' => $talk->speaker->twitter, 'size' => 'original'])
                             ];
                         }
                     }

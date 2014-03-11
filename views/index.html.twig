@@ -52,11 +52,11 @@
             </header>
 
             <div class="right">
-                {{ render('/meetup/events') }}
+                {{ render(path('events')) }}
 
-                {{ render('/twitter/tweets') }}
+                {{ render(path('tweets')) }}
 
-                {{ render('/meetup/posts') }}
+                {{ render(path('posts')) }}
             </div>
 
             <div class="left">
@@ -86,11 +86,11 @@
                     </ul>
                 </section>
 
-                {{ render('/meetup/photos') }}
+                {{ render(path('photos')) }}
 
-                {{ render('/meetup/reviews') }}
+                {{ render(path('reviews')) }}
 
-                {{ render('/meetup/sponsors') }}
+                {{ render(path('sponsors')) }}
             </div>
         </div>
         <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>

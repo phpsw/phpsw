@@ -1,6 +1,6 @@
 <?php
 
-$app = new Silex\Application;
+$app = new PHPSW\Application;
 
 if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
     $app['env'] = 'prod';
@@ -9,6 +9,8 @@ if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
 }
 
 $app['cli'] = false;
+
+$app['guzzle'] = new Guzzle\HTTP\Client;
 
 $app['redis'] = new Predis\Client;
 
