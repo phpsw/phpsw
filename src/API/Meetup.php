@@ -376,8 +376,7 @@ class Meetup
 
                     $talk->speaker = (object) [
                         'id' => Inflexible::slugify($speakerAndOrg[0]),
-                        'name' => $speakerAndOrg[0],
-                        'bio' => null
+                        'name' => $speakerAndOrg[0]
                     ];
 
                     /* bio */

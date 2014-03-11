@@ -55,7 +55,7 @@
                                 {{ talk.speaker.name }}
                             {%- endif -%}
 
-                            {%- if talk.speaker.bio -%}
+                            {%- if talk.speaker.bio is defined -%}
                                 , {{ talk.speaker.bio | raw }}
                             {% endif %}
                         </p>
