@@ -8,8 +8,6 @@ use Knp\Command\Command,
     Symfony\Component\Console\Input\InputOption,
     Symfony\Component\Console\Output\OutputInterface;
 
-use Symfony\Component\Finder\Finder;
-
 class TwitterCommand extends Command
 {
     protected function configure()
