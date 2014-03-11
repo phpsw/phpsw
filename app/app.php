@@ -8,8 +8,6 @@ if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
     $app['env'] = 'dev';
 }
 
-$app['cli'] = false;
-
 $app['guzzle'] = new Guzzle\Http\Client;
 
 $app['redis'] = new Predis\Client;
@@ -30,5 +28,26 @@ $app['twitter.client'] = function ($app) {
 foreach (['app', $app['env'], 'secrets'] as $config) {
     $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__ . '/../config/' . $config . '.yml'));
 }
+
+$app->get('/', 'PHPSW\Controller\AppController::indexAction')->bind('home');
+$app->get('/meetup/events', 'PHPSW\Controller\MeetupController::eventsAction')->bind('events');
+$app->get('/meetup/photos', 'PHPSW\Controller\MeetupController::photosAction')->bind('photos');
+$app->get('/meetup/posts', 'PHPSW\Controller\MeetupController::postsAction')->bind('posts');
+$app->get('/meetup/reviews', 'PHPSW\Controller\MeetupController::reviewsAction')->bind('reviews');
+$app->get('/meetup/sponsors', 'PHPSW\Controller\MeetupController::sponsorsAction')->bind('sponsors');
+$app
+    ->get('/twitter/{user}/photo/{size}', 'PHPSW\Controller\TwitterController::photoAction')
+    ->bind('twitter_photo')
+    ->assert('size', implode('|', ['bigger', 'normal', 'mini', 'original']))
+    ->value('size', 'normal')
+;
+$app
+    ->get('/twitter/{user}/tweets', 'PHPSW\Controller\TwitterController::tweetsAction')
+    ->bind('tweets')
+    ->assert('user', $app['twitter']['user'])
+    ->value('user', $app['twitter']['user'])
+;
+
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider);
 
 return $app;
