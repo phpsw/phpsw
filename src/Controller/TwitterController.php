@@ -10,15 +10,20 @@ class TwitterController
 {
     public function photoAction(Application $app, $user, $size = 'normal')
     {
-        $response = $app['guzzle']->get('https://twitter.com/api/users/profile_image/' . $user . '?size=' . $size)->send();
+        try {
+            $response = $app['guzzle']->get('https://twitter.com/api/users/profile_image/' . $user . '?size=' . $size)->send();
+        } catch (\Guzzle\Http\Exception\BadResponseException $e) {
+            $app->abort($e->getRequest()->getResponse()->getStatusCode());
+        }
 
         return new Response(
             $response->getBody(),
             $response->getStatusCode(),
-            array_merge(
-                $response->getHeaders()->toArray(),
-                ['Expires' => date('D, d M Y H:i:s T', strtotime('+2 weeks'))]
-            )
+            [
+                'Cache-Control' => 'public',
+                'Content-Type' => (string) $response->getHeader('Content-Type'),
+                'Expires' => (new \DateTime('+2 weeks'))->format('D, d M Y H:i:s T')
+            ]
         );
     }
 
