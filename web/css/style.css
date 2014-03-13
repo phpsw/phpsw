@@ -65,6 +65,7 @@ img {
     float: right;
     max-width: 40%;
     margin: 0 0 1em 1em;
+    border-radius: 2px;
 }
 
 @media (min-width: 600px) {
@@ -87,6 +88,7 @@ img {
 .box {
     background: white;
     background: rgba(255, 255, 255, .9);
+    border-radius: 4px;
     margin-bottom: 1em;
     padding: 1em;
     overflow: hidden;
@@ -104,6 +106,7 @@ img {
     height: 3em;
     margin-right: .25em;
     vertical-align: middle;
+    border-radius: 2px;
 }
 
 .avatar-mini {
@@ -111,11 +114,13 @@ img {
     height: 32px;
     margin-right: .25em;
     vertical-align: middle;
+    border-radius: 2px;
 }
 
 .btn {
     display: inline-block;
     background: #CA3838;
+    border-radius: 2px;
     margin: .5em 0;
     padding: .25em .75em;
     color: white;
@@ -193,6 +198,7 @@ img {
     background: -moz-linear-gradient(top, #fcfcfc 0%, #dad8d8 100%);
     background: -webkit-linear-gradient(top, #fcfcfc 0%,#dad8d8 100%);
     border: 1px solid #d2d2d2;
+    border-radius: 2px;
     font: 14px helvetica, arial, sans-serif;
     line-height: 1.4;
     color: #9e9e9e;
@@ -266,39 +272,44 @@ img {
 
 /* Lighbox */
 
-.lightbox {
-  /** Hide the lightbox */
-  display: none;
+.photo img {
+    border-radius: 2px;
+}
 
-  /** Apply basic lightbox styling */
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  top: 0;
-  left: 0;
-  background: black;
-  background: rgba(0,0,0,0.8);
+.lightbox {
+    /** Hide the lightbox */
+    display: none;
+
+    /** Apply basic lightbox styling */
+    background: black;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
 }
 
 .lightbox img {
-  /** Pad the lightbox image */
-  background: rgba(0, 0, 0, .5);
-  max-width: 90%;
-  max-height: 80%;
-  margin-top: 2.5%;
-  -moz-box-shadow: 0 0 200px rgba(0, 0, 0, .5);
-  -webkit-box-shadow: 0 0 200px rgba(0, 0, 0, .5);
-  box-shadow: 0 0 200px rgba(0, 0, 0, .5);
+    /** Pad the lightbox image */
+    background: rgba(0, 0, 0, .5);
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2.5%;
+    -moz-box-shadow: 0 0 200px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 200px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 200px rgba(0, 0, 0, .5);
+    border-radius: 4px;
 }
 
 .lightbox:target {
-  /** Show lightbox when it is target */
-  display: block;
+    /** Show lightbox when it is target */
+    display: block;
 
-  /** Remove default browser outline style */
-  outline: none;
+    /** Remove default browser outline style */
+    outline: none;
 }
 
 /* JS */
@@ -321,17 +332,17 @@ img {
 /* For modern browsers */
 .group:before,
 .group:after {
-        display: table;
-        content: "";
+    display: table;
+    content: "";
 }
 
 .group:after {
-        clear: both;
+    clear: both;
 }
 
 /* For IE 6/7 (trigger hasLayout) */
 .group {
-        zoom: 1;
+    zoom: 1;
 }
 
 /* Misc */

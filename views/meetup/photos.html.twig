@@ -7,12 +7,12 @@
         <ul class="list list--inline">
             {% for photo in photos %}
                 <li>
-                    <a href="#photo-{{ photo.photo_id }}">
+                    <a href="#photo-{{ photo.photo_id }}" class="photo">
                       <img src="{{ photo.thumb_link }}" alt="">
                     </a>
 
                     <!-- lightbox container hidden with CSS -->
-                    <a href="#photos" class="lightbox" id="photo-{{ photo.photo_id }}">
+                    <a href="#photos" id="photo-{{ photo.photo_id }}" class="lightbox photo">
                       <img src="{{ photo.highres_link }}" alt="">
                     </a>
                 </li>
