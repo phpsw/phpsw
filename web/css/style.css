@@ -121,6 +121,15 @@ img {
     color: white;
 }
 
+.btn:hover, .btn:focus {
+    background: #D84E4E;
+    text-decoration: none;
+}
+
+.btn:active {
+    background: #B93D30;
+}
+
 .genericon-time:before {
     line-height: 18px;
     width: 18px;
