@@ -6,10 +6,12 @@
             </a>
         </h3>
 
-        <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
-            {{ event.date.format('j') }}
-            <span>{{ event.date.format('M') }}</span>
-        </time>
+        <a href="#event-{{ event.id }}" class="event-date">
+            <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
+                {{ event.date.format('j') }}
+                <span>{{ event.date.format('M') }}</span>
+            </time>
+        </a>
     </header>
 
     <div class="event__description">
