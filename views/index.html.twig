@@ -18,7 +18,7 @@
 
                 <img src="/images/php-elephant.jpg" class="logo" alt="{{ app.name }}">
 
-                {{ meetup.group.description | raw }}
+                {{ meetup.group.description | default | raw }}
 
                 <ul class="list list--icons">
                     <li>
@@ -39,11 +39,13 @@
                 </ul>
 
                 <div class="box__footer">
-                    <a href="{{ app.meetup.url }}/members" class="genericon genericon-user">
-                        {{- meetup.group.members }} {{ meetup.group.who | lower -}}
-                    </a>
+                    {% if meetup.group.members is defined %}
+                        <a href="{{ app.meetup.url }}/members" class="genericon genericon-user">
+                            {{- meetup.group.members }} {{ meetup.group.who | lower -}}
+                        </a>
+                    {% endif %}
 
-                    {% if meetup.group.rating is defined and meetup.group.rating.average > 3 %}
+                    {% if meetup.group.rating.average | default > 3 %}
                         <span class="genericon genericon-digg">
                             {{ meetup.group.rating.average | round(1) }}/5 from {{ meetup.group.rating.count }} ratings
                         </span>

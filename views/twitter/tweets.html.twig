@@ -1,12 +1,14 @@
-<section id="tweets" class="tweets">
-    <h2>
-        Twitter
-        <a href="https://twitter.com/{{ app.twitter.user }}">
-            @{{ app.twitter.user }}
-        </a>
-    </h2>
+{% if tweets %}
+    <section id="tweets" class="tweets">
+        <h2>
+            Twitter
+            <a href="https://twitter.com/{{ app.twitter.user }}">
+                @{{ app.twitter.user }}
+            </a>
+        </h2>
 
-    {% for tweet in tweets %}
-        {{ include('twitter/tweet.html.twig') }}
-    {% endfor %}
-</section>
+        {% for tweet in tweets %}
+            {{ include('twitter/tweet.html.twig') }}
+        {% endfor %}
+    </section>
+{% endif %}

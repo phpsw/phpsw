@@ -1,4 +1,4 @@
-{% for status in statuses %}
+{% for status in statuses if attribute(_context, status ~ '_events') or status == 'upcoming' %}
     <section id="{{ status }}-events" class="events events--{{ status }}">
         <h2>{{ status | title }} events</h2>
 

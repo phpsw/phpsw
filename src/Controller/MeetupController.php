@@ -32,8 +32,10 @@ class MeetupController
 
     public function photosAction(Request $request, Application $app)
     {
+        $group = $app['meetup.client']->getGroup();
+
         return $app['twig']->render('meetup/photos.html.twig', [
-            'photos' => $app['meetup.client']->getGroup()->photos
+            'photos' => $group ? $group->photos : []
         ]);
     }
 
