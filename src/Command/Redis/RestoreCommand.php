@@ -44,8 +44,12 @@ class RestoreCommand extends Command
         }
     }
 
-    protected function parse($json)
+    protected function parse($value)
     {
-        return json_encode(json_decode($json));
+        if (preg_match('#^\{|\[.*\]|\}$#', $value)) {
+            $value = json_encode(json_decode($value));
+        }
+
+        return $value;
     }
 }

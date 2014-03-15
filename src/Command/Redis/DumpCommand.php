@@ -52,7 +52,11 @@ class DumpCommand extends Command
 
     protected function write($key, $value)
     {
-        $this->fs->dumpFile($key, json_encode(json_decode($value), JSON_PRETTY_PRINT));
+        if (preg_match('#^\{|\[.*\]|\}$#', $value)) {
+            $value = json_encode(json_decode($value), JSON_PRETTY_PRINT);
+        }
+
+        $this->fs->dumpFile($key, $value);
 
         echo '.';
     }
