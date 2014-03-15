@@ -67,19 +67,19 @@
         </div>
     {% endif %}
 
-    {% if event.status == 'upcoming' %}
-        {% if event.venue %}
-            <p
-                class="event__venue"
-                {% if (event.venue.lat) %}data-latitude="{{ event.venue.lat }}"{% endif %}
-                {% if (event.venue.lon) %}data-longitude="{{ event.venue.lon }}"{% endif %}
-            >
-                <span class="event__venue__name">{{ event.venue.name }}</span>,
-                {{ event.venue.address_1 }},
-                {{ event.venue.city }}
-            </p>
-        {% endif %}
+    {% if event.venue %}
+        <p
+            class="event__venue"
+            {% if (event.venue.lat) %}data-latitude="{{ event.venue.lat }}"{% endif %}
+            {% if (event.venue.lon) %}data-longitude="{{ event.venue.lon }}"{% endif %}
+        >
+            <span class="event__venue__name">{{ event.venue.name }}</span>,
+            {{ event.venue.address_1 }},
+            {{ event.venue.city }}
+        </p>
+    {% endif %}
 
+    {% if event.status == 'upcoming' %}
         {% if event.rsvps is defined %}
             <ul class="event__attendees list list--inline">
                 {% for rsvp in event.rsvps if rsvp.response == 'yes' %}
