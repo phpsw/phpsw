@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/113052502\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/8\/member_148952392.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/e\/8\/8\/member_148952392.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/e\/8\/8\/thumb_148952392.jpeg",
+        "photo_id": 148952392
+    },
+    "member_id": 113052502,
+    "visited": 1380209966000,
+    "bio": "PHP & MySQL developer \/ web application architect, back from a 2 year secondment in Bangalore. Experienced with CakePHP MVC framework and client-side Javascript.",
+    "updated": 1380210104000,
+    "created": 1380209966000,
+    "name": "Hamish Atkinson",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2013-09-26 15:39:26",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

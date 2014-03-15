@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/20932961\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/7\/1\/8\/member_27323912.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/d\/6\/8\/member_27323912.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/d\/6\/8\/thumb_27323912.jpeg",
+        "photo_id": 27323912
+    },
+    "member_id": 20932961,
+    "visited": 1390133763000,
+    "bio": "I'm a Bristol based web developer. I use mostly use LAMP, Expression Engine, Wordpress.",
+    "updated": 1332242733000,
+    "created": 1332242732000,
+    "name": "Patrick",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-01-19 12:16:03",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

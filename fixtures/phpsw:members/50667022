@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/50667022\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/c\/member_85682732.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/c\/member_85682732.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/c\/thumb_85682732.jpeg",
+        "photo_id": 85682732
+    },
+    "member_id": 50667022,
+    "visited": 1355232479000,
+    "bio": "Recently moved to the Bristol area and work as a software engineer at Surevine. Interested in all things web\/mobile development.",
+    "updated": 1355131580000,
+    "created": 1355131579000,
+    "name": "Jonny Heavey",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2012-12-11 13:27:59",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

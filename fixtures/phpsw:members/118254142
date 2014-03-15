@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/118254142\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/b\/c\/member_156326492.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/7\/7\/c\/member_156326492.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/7\/7\/c\/thumb_156326492.jpeg",
+        "photo_id": 156326492
+    },
+    "member_id": 118254142,
+    "visited": 1391096300000,
+    "bio": "My name is John Ukhueleigbe am a currently doing my Msc in Information Technology at UWE, am currently working on software development program and am using scala. I hope to meet people in the IT industry to learn more by participating in IT project",
+    "updated": 1383398549000,
+    "created": 1383397720000,
+    "name": "john ukhueleigbe",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-01-30 15:38:20",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

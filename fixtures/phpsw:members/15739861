@@ -1,0 +1,34 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/15739861\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/3\/6\/1\/member_13918961.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/6\/5\/1\/member_13918961.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/6\/5\/1\/highres_13918961.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/6\/5\/1\/thumb_13918961.jpeg",
+        "photo_id": 13918961
+    },
+    "member_id": 15739861,
+    "visited": 1394468942000,
+    "bio": ".",
+    "updated": 1392328232000,
+    "created": 1392328227000,
+    "name": "Frank West",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-03-10 16:29:02",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

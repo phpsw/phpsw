@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/82136452\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/5\/6\/member_147134902.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/3\/a\/3\/6\/member_147134902.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/3\/a\/3\/6\/thumb_147134902.jpeg",
+        "photo_id": 147134902
+    },
+    "member_id": 82136452,
+    "visited": 1379448503000,
+    "bio": "Developer working at Bristol University, interested in all things web and mobile related.",
+    "updated": 1379448526000,
+    "created": 1379448503000,
+    "name": "Mark van Rossum",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2013-09-17 20:08:23",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

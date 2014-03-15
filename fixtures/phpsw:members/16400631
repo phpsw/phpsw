@@ -1,0 +1,34 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/16400631\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/b\/member_14628171.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/c\/2\/b\/member_14628171.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/b\/c\/2\/b\/highres_14628171.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/b\/c\/2\/b\/thumb_14628171.jpeg",
+        "photo_id": 14628171
+    },
+    "member_id": 16400631,
+    "visited": 1368186256000,
+    "bio": "Hi, Dan Course. Technical Director at Thought Den in Bristol UK",
+    "updated": 1346340942000,
+    "created": 1346340941000,
+    "name": "Dan Course",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2013-05-10 11:44:16",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

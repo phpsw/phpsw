@@ -1,0 +1,26 @@
+{
+    "id": 34745872,
+    "board": {
+        "id": 2827512
+    },
+    "created": 1369295348000,
+    "updated": 1369295348000,
+    "started_by": {
+        "name": "Adrian Slade"
+    },
+    "subject": "Bristol ITMegaMeet on 1st June\ufeff",
+    "body": "[url=http:\/\/bristol.itmegameet.co.uk\/]http:\/\/bristol.itmegameet.co.uk\/[\/url]\r\r\n\"All of the major IT & Developer community groups in and around Bristol are coming together for an event at the UWE. Essentially the event is one big meet up, open to the public. Each group will be doing a presentation on themselves, what they are about, and what they offer the local community. Several groups will be putting on a technical presentation in their chosen area. How-to workshops will be running alongside the main presentations. The event concludes with 5 minute lightning talks on a variety of subjects.\"\r\r\nI'll be talking about PHPSW and giving a technical presentation.\r\r\nWas a really good event last year and it's free!\r\r\nAde",
+    "last_post": {
+        "created": 1369295348000,
+        "member": {
+            "name": "Adrian Slade"
+        },
+        "created_date": {
+            "date": "2013-05-23 07:49:08",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "reply_count": 0,
+    "url": "http:\/\/www.meetup.com\/php-sw\/messages\/boards\/thread\/34745872"
+}

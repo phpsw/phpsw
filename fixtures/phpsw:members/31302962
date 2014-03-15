@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/31302962\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/4\/5\/c\/member_31601212.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/a\/0\/f\/c\/member_31601212.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/a\/0\/f\/c\/thumb_31601212.jpeg",
+        "photo_id": 31601212
+    },
+    "member_id": 31302962,
+    "visited": 1325707754000,
+    "bio": "From Devon. ",
+    "updated": 1321957100000,
+    "created": 1321957100000,
+    "name": "Chris Acky",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2012-01-04 20:09:14",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

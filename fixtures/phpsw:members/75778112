@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/75778112\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/7\/7\/8\/member_90673912.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/6\/5\/8\/member_90673912.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/6\/5\/8\/thumb_90673912.jpeg",
+        "photo_id": 90673912
+    },
+    "member_id": 75778112,
+    "visited": 1381784871000,
+    "bio": "Postgres Developer At Large",
+    "updated": 1381784884000,
+    "created": 1381784871000,
+    "name": "Greg Stark",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2013-10-14 21:07:51",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

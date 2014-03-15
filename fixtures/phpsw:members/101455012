@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/101455012\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/1\/8\/member_162132792.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/1\/f\/8\/member_162132792.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/1\/f\/8\/thumb_162132792.jpeg",
+        "photo_id": 162132792
+    },
+    "member_id": 101455012,
+    "visited": 1386081394000,
+    "bio": "Never know what to write here ...",
+    "updated": 1386081420000,
+    "created": 1386081394000,
+    "name": "Adrian Groves",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2013-12-03 14:36:34",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

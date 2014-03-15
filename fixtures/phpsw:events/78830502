@@ -1,0 +1,326 @@
+{
+    "status": "past",
+    "visibility": "public",
+    "maybe_rsvp_count": 0,
+    "venue": {
+        "id": 4494242,
+        "lon": -2.593088,
+        "repinned": false,
+        "name": "The Golden Guinea",
+        "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+        "lat": 51.447449,
+        "country": "gb",
+        "city": "Bristol"
+    },
+    "id": "78830502",
+    "utc_offset": 3600000,
+    "time": 1346868000000,
+    "waitlist_count": 0,
+    "updated": 1346921304000,
+    "yes_rsvp_count": 6,
+    "created": 1345625572000,
+    "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/78830502\/",
+    "description": "<\/p>",
+    "name": "Talks on Composer and Silverstripe",
+    "headcount": 0,
+    "rating": {
+        "count": 2,
+        "average": 4.5
+    },
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "rsvps": [
+        {
+            "response": "yes",
+            "member": {
+                "name": "Barry Swaisland",
+                "member_id": 12703641
+            },
+            "member_photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/f\/b\/6\/member_35644022.jpeg",
+                "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/f\/b\/6\/highres_35644022.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/f\/b\/6\/thumb_35644022.jpeg",
+                "photo_id": 35644022
+            },
+            "created": 1346865043000,
+            "event": {
+                "id": "78830502",
+                "time": 1346868000000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/78830502\/",
+                "name": "Talks on Composer and Silverstripe"
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1346865043000,
+            "guests": 0,
+            "rsvp_id": 514872592,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "response": "yes",
+            "member": {
+                "name": "Andrew Martin",
+                "member_id": 14280628
+            },
+            "member_photo": {
+                "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/d\/4\/7\/member_16331591.jpeg",
+                "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/4\/7\/highres_16331591.jpeg",
+                "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/4\/7\/thumb_16331591.jpeg",
+                "photo_id": 16331591
+            },
+            "created": 1345628956000,
+            "event": {
+                "id": "78830502",
+                "time": 1346868000000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/78830502\/",
+                "name": "Talks on Composer and Silverstripe"
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1345628956000,
+            "guests": 0,
+            "rsvp_id": 500283132,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "response": "yes",
+            "member": {
+                "name": "Mark Wales",
+                "member_id": 29291902
+            },
+            "member_photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/member_28924262.jpeg",
+                "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/highres_28924262.jpeg",
+                "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/thumb_28924262.jpeg",
+                "photo_id": 28924262
+            },
+            "created": 1345631688000,
+            "event": {
+                "id": "78830502",
+                "time": 1346868000000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/78830502\/",
+                "name": "Talks on Composer and Silverstripe"
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1345631688000,
+            "guests": 0,
+            "rsvp_id": 500295932,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "response": "yes",
+            "member": {
+                "name": "Adrian Slade",
+                "member_id": 31030432
+            },
+            "member_photo": {
+                "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/d\/e\/0\/member_36884512.jpeg",
+                "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/d\/e\/0\/highres_36884512.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/d\/e\/0\/thumb_36884512.jpeg",
+                "photo_id": 36884512
+            },
+            "created": 1345625572000,
+            "event": {
+                "id": "78830502",
+                "time": 1346868000000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/78830502\/",
+                "name": "Talks on Composer and Silverstripe"
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1345625572000,
+            "guests": 0,
+            "rsvp_id": 500270962,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "response": "yes",
+            "member": {
+                "name": "Henry Smith",
+                "member_id": 40261632
+            },
+            "member_photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/member_176920012.jpeg",
+                "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/highres_176920012.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/thumb_176920012.jpeg",
+                "photo_id": 176920012
+            },
+            "created": 1346661492000,
+            "event": {
+                "id": "78830502",
+                "time": 1346868000000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/78830502\/",
+                "name": "Talks on Composer and Silverstripe"
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1346661492000,
+            "guests": 0,
+            "rsvp_id": 512188742,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "response": "yes",
+            "member": {
+                "name": "Benjamin White",
+                "member_id": 54634602
+            },
+            "member_photo": {
+                "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/6\/0\/4\/member_62529732.jpeg",
+                "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/6\/0\/4\/highres_62529732.jpeg",
+                "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/6\/0\/4\/thumb_62529732.jpeg",
+                "photo_id": 62529732
+            },
+            "created": 1346399363000,
+            "event": {
+                "id": "78830502",
+                "time": 1346868000000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/78830502\/",
+                "name": "Talks on Composer and Silverstripe"
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1346399363000,
+            "guests": 0,
+            "rsvp_id": 509607162,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        }
+    ],
+    "talks": [
+
+    ],
+    "url": "http:\/\/www.meetup.com\/php-sw\/events\/78830502\/",
+    "date": {
+        "date": "2012-09-05 18:00:00",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

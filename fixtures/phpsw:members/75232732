@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/75232732\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/1\/0\/member_89894832.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/9\/f\/0\/member_89894832.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/9\/f\/0\/thumb_89894832.jpeg",
+        "photo_id": 89894832
+    },
+    "member_id": 75232732,
+    "visited": 1358789836000,
+    "bio": "Coder from Cheltenham, looking to meet new likeminded people :)",
+    "updated": 1358789837000,
+    "created": 1358789836000,
+    "name": "Tim Stamp",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2013-01-21 17:37:16",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

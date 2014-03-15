@@ -1,0 +1,35 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/34784532\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/5\/0\/member_85713152.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/1\/8\/0\/member_85713152.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/1\/8\/0\/highres_85713152.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/1\/8\/0\/thumb_85713152.jpeg",
+        "photo_id": 85713152
+    },
+    "member_id": 34784532,
+    "visited": 1393282680000,
+    "bio": "Hi, my name is Marti and i love lamp x",
+    "created": 1355152696000,
+    "updated": 1385682167000,
+    "name": "Marti",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "comment": "I find it nice to catch up with others from different companies and discuss PHP in general so for me it's a great social environment as well as gathering knowledge\/networking",
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-02-24 22:58:00",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

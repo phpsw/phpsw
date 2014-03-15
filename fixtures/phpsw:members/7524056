@@ -1,0 +1,34 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/7524056\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/4\/1\/2\/member_5279138.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/7\/0\/2\/member_5279138.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/7\/0\/2\/highres_5279138.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/7\/0\/2\/thumb_5279138.jpeg",
+        "photo_id": 5279138
+    },
+    "member_id": 7524056,
+    "visited": 1394645714000,
+    "bio": "Developer based near Bristol...",
+    "updated": 1394637438000,
+    "created": 1394637423000,
+    "name": "Jonathan Holloway",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-03-12 17:35:14",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

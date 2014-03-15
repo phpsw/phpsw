@@ -1,0 +1,34 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/79543062\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/6\/2\/member_119876402.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/c\/5\/2\/member_119876402.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/c\/5\/2\/highres_119876402.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/c\/5\/2\/thumb_119876402.jpeg",
+        "photo_id": 119876402
+    },
+    "member_id": 79543062,
+    "visited": 1394737201000,
+    "bio": "UX Designer at WebStart Bristol, Engine Shed Incubator. Enthusiasm\/experience in usability\/ux design inc.user testing. MSc research, Persuasive Design; usability\/older adults-UWE MOBISERV research project. Do freelance design\/code\/build in addition.",
+    "updated": 1387129603000,
+    "created": 1362074761000,
+    "name": "Indu Kaila",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-03-13 19:00:01",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

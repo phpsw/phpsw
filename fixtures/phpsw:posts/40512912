@@ -1,0 +1,26 @@
+{
+    "id": 40512912,
+    "board": {
+        "id": 2827512
+    },
+    "created": 1387726226000,
+    "updated": 1393762806000,
+    "started_by": {
+        "name": "Steve Lacey"
+    },
+    "subject": "Topics for 2014",
+    "body": "A few of you guys at the last meetup suggested starting a conversation to gauge what sort of topics everyone is interested in hearing about and\/or volunteering to speak about, so here it is!\n\nA couple of thoughts from me:\n\n[b]Testing[\/b]\nI'd be quite interested in hearing about various technologies in use for testing in PHP, I have limited experience outside of PHPUnit and RSpec (in Ruby-land). Would be quite good to hear from anyone with experience with Behat, PHPSpec or other alternatives I haven't heard of.\n\n[b]Scaling[\/b]\nA few of you are scaling stuff way above the majority, ci, multi-server architectures, and the likes, any talks regarding how you do this yourself\/at your organisation I think would go down well, in fact &quot;Scaling Night&quot; is what I contemplating as the meetup for February.\n\nDo please throw your thoughts down if you have any, and if you're interested in talking on anything, do make yourself known!",
+    "last_post": {
+        "created": 1393762806000,
+        "member": {
+            "name": "Steve Lacey"
+        },
+        "created_date": {
+            "date": "2014-03-02 12:20:06",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "reply_count": 3,
+    "url": "http:\/\/www.meetup.com\/php-sw\/messages\/boards\/thread\/40512912"
+}

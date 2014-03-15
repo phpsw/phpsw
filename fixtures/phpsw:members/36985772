@@ -1,0 +1,34 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/36985772\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/7\/d\/c\/member_39692012.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/d\/0\/c\/member_39692012.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/d\/0\/c\/highres_39692012.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/d\/0\/c\/thumb_39692012.jpeg",
+        "photo_id": 39692012
+    },
+    "member_id": 36985772,
+    "visited": 1334938081000,
+    "bio": "Senior application developer, Lover of Zend Framework, PHPUnit, Linux, jQuery and Sencha touch, passionate about anything new and opensource.",
+    "updated": 1328026705000,
+    "created": 1328026705000,
+    "name": "Ed Weld",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2012-04-20 16:08:01",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

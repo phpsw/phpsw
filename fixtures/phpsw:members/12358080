@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/12358080\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/4\/8\/a\/member_36253162.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/3\/6\/a\/member_36253162.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/3\/6\/a\/thumb_36253162.jpeg",
+        "photo_id": 36253162
+    },
+    "member_id": 12358080,
+    "visited": 1394791518000,
+    "bio": "Tech director at Simpleweb",
+    "updated": 1394791518000,
+    "created": 1394791518000,
+    "name": "Tom Holder",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-03-14 10:05:18",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/13538427\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/1\/1\/3\/member_16996371.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/3\/f\/f\/3\/member_16996371.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/3\/f\/f\/3\/highres_16996371.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/3\/f\/f\/3\/thumb_16996371.jpeg",
+        "photo_id": 16996371
+    },
+    "member_id": 13538427,
+    "visited": 1394139618000,
+    "bio": "Web and mobile applications developer, at the moment into or expanding into node, meteor, mongodb, coffeescript, less, html5 etc",
+    "updated": 1344328495000,
+    "created": 1344328495000,
+    "name": "Christos",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-03-06 21:00:18",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

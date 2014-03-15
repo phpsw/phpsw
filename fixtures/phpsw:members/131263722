@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/131263722\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/1\/d\/2\/member_174688562.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/f\/9\/2\/member_174688562.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/f\/9\/2\/thumb_174688562.jpeg",
+        "photo_id": 174688562
+    },
+    "member_id": 131263722,
+    "visited": 1391369117000,
+    "bio": "Senior Web Developer, Contractor. Previous roles at BBC & Oracle, currently at Future Publishing.",
+    "updated": 1391369166000,
+    "created": 1391369117000,
+    "name": "Jae Task",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-02-02 19:25:17",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/13134416\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/2\/b\/member_10951579.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/b\/5\/b\/member_10951579.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/b\/5\/b\/thumb_10951579.jpeg",
+        "photo_id": 10951579
+    },
+    "member_id": 13134416,
+    "visited": 1392226007000,
+    "bio": "I mash out PHP and web pages come out the other side.",
+    "updated": 1392226229000,
+    "created": 1392226007000,
+    "name": "Piers Roberts",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-02-12 17:26:47",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

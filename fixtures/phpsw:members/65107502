@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/65107502\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/5\/f\/6\/member_76043622.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/c\/4\/6\/member_76043622.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/c\/4\/6\/thumb_76043622.jpeg",
+        "photo_id": 76043622
+    },
+    "member_id": 65107502,
+    "visited": 1349526255000,
+    "bio": "Entrepreneur\/Student\/Pilot\/Hardcore programmer.... Founder at collegestall.com\/ Co-founder at Deals2have.com\/ Developer at fourerr.com",
+    "updated": 1349526259000,
+    "created": 1349526255000,
+    "name": "Tommy D. Adey",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2012-10-06 12:24:15",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

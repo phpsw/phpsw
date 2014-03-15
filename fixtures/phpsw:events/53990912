@@ -1,0 +1,295 @@
+{
+    "status": "past",
+    "visibility": "public",
+    "maybe_rsvp_count": 0,
+    "venue": {
+        "id": 4494242,
+        "lon": -2.593088,
+        "repinned": false,
+        "name": "The Golden Guinea",
+        "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+        "lat": 51.447449,
+        "country": "gb",
+        "city": "Bristol"
+    },
+    "id": "53990912",
+    "utc_offset": 0,
+    "time": 1331751600000,
+    "waitlist_count": 0,
+    "updated": 1331835434000,
+    "yes_rsvp_count": 6,
+    "created": 1330337848000,
+    "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/53990912\/",
+    "description": "<\/p>",
+    "name": "Talk on unit testing and one other TBA",
+    "headcount": 8,
+    "rating": {
+        "count": 3,
+        "average": 4
+    },
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "rsvps": [
+        {
+            "member": {
+                "name": "Andrew Martin",
+                "member_id": 14280628
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1330337896000,
+            "answers": [
+                ""
+            ],
+            "guests": 0,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "response": "yes",
+            "member_photo": {
+                "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/d\/4\/7\/member_16331591.jpeg",
+                "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/4\/7\/highres_16331591.jpeg",
+                "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/4\/7\/thumb_16331591.jpeg",
+                "photo_id": 16331591
+            },
+            "created": 1330337896000,
+            "event": {
+                "id": "53990912",
+                "time": 1331751600000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/53990912\/",
+                "name": "Talk on unit testing and one other TBA"
+            },
+            "rsvp_id": 324680752,
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "member": {
+                "name": "Mark Wales",
+                "member_id": 29291902
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1331240381000,
+            "answers": [
+                ""
+            ],
+            "guests": 0,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "response": "yes",
+            "member_photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/member_28924262.jpeg",
+                "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/highres_28924262.jpeg",
+                "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/thumb_28924262.jpeg",
+                "photo_id": 28924262
+            },
+            "created": 1331240381000,
+            "event": {
+                "id": "53990912",
+                "time": 1331751600000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/53990912\/",
+                "name": "Talk on unit testing and one other TBA"
+            },
+            "rsvp_id": 335267032,
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "member": {
+                "name": "Adrian Slade",
+                "member_id": 31030432
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1330337896000,
+            "answers": [
+                ""
+            ],
+            "guests": 0,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "response": "yes",
+            "member_photo": {
+                "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/d\/e\/0\/member_36884512.jpeg",
+                "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/d\/e\/0\/highres_36884512.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/d\/e\/0\/thumb_36884512.jpeg",
+                "photo_id": 36884512
+            },
+            "created": 1330337896000,
+            "event": {
+                "id": "53990912",
+                "time": 1331751600000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/53990912\/",
+                "name": "Talk on unit testing and one other TBA"
+            },
+            "rsvp_id": 324680762,
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "member": {
+                "name": "Juan Antonio",
+                "member_id": 37120882
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1331237469000,
+            "answers": [
+                ""
+            ],
+            "guests": 0,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "response": "yes",
+            "member_photo": {
+                "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/a\/2\/0\/member_39863072.jpeg",
+                "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/a\/2\/0\/highres_39863072.jpeg",
+                "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/a\/2\/0\/thumb_39863072.jpeg",
+                "photo_id": 39863072
+            },
+            "created": 1331237469000,
+            "event": {
+                "id": "53990912",
+                "time": 1331751600000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/53990912\/",
+                "name": "Talk on unit testing and one other TBA"
+            },
+            "rsvp_id": 335221382,
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "member": {
+                "name": "Henry Smith",
+                "member_id": 40261632
+            },
+            "tallies": {
+                "yes": 6,
+                "maybe": 0,
+                "no": 0,
+                "waitlist": 0
+            },
+            "mtime": 1330674285000,
+            "answers": [
+                "The topics are already good. The more immediately-useful-to-me meetings have been to do with things like testing tools (eg dbunit). From a selfish point of view the main PHP thing I've been looking into lately is automated deployment, so maybe that."
+            ],
+            "guests": 0,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "response": "yes",
+            "member_photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/member_176920012.jpeg",
+                "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/highres_176920012.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/thumb_176920012.jpeg",
+                "photo_id": 176920012
+            },
+            "created": 1330674285000,
+            "event": {
+                "id": "53990912",
+                "time": 1331751600000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/53990912\/",
+                "name": "Talk on unit testing and one other TBA"
+            },
+            "rsvp_id": 328884422,
+            "group": {
+                "id": 2833232,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        }
+    ],
+    "talks": [
+
+    ],
+    "url": "http:\/\/www.meetup.com\/php-sw\/events\/53990912\/",
+    "date": {
+        "date": "2012-03-14 19:00:00",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/48502732\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/0\/b\/a\/member_175696282.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/f\/9\/a\/member_175696282.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/f\/9\/a\/thumb_175696282.jpeg",
+        "photo_id": 175696282
+    },
+    "member_id": 48502732,
+    "visited": 1394788863000,
+    "bio": "I'm a Web Developer in the Bristol area, I currently work full-time for Goram + Vincent as PHP programmer.",
+    "updated": 1391719598000,
+    "created": 1337532859000,
+    "name": "Adam Nicholls",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-03-14 09:21:03",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/50495\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/0\/6\/member_5853078.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/8\/1\/3\/6\/member_5853078.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/8\/1\/3\/6\/highres_5853078.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/8\/1\/3\/6\/thumb_5853078.jpeg",
+        "photo_id": 5853078
+    },
+    "member_id": 50495,
+    "visited": 1332865629000,
+    "bio": "-",
+    "updated": 1332865630000,
+    "created": 1332865629000,
+    "name": "Darwin Peltan",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2012-03-27 16:27:09",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

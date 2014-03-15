@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/122490702\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/b\/e\/member_164667262.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/a\/7\/e\/member_164667262.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/a\/7\/e\/thumb_164667262.jpeg",
+        "photo_id": 164667262
+    },
+    "member_id": 122490702,
+    "visited": 1388998915000,
+    "bio": "A (pitifully) non-techie Community Co-ordinator who ironically helps to coordinate techie minded people.",
+    "updated": 1387382877000,
+    "created": 1387382860000,
+    "name": "Sam Meek-Welsh",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-01-06 09:01:55",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

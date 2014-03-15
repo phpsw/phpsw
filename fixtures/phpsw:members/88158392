@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/88158392\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/7\/f\/0\/member_108986032.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/5\/b\/0\/member_108986032.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/5\/b\/0\/thumb_108986032.jpeg",
+        "photo_id": 108986032
+    },
+    "member_id": 88158392,
+    "visited": 1394867744000,
+    "bio": "PHP Amateur looking to learn some things",
+    "updated": 1367264061000,
+    "created": 1367264060000,
+    "name": "Huw Angle",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-03-15 07:15:44",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

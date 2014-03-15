@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/14022540\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/4\/5\/c\/member_69599212.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/7\/4\/c\/member_69599212.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/e\/7\/4\/c\/thumb_69599212.jpeg",
+        "photo_id": 69599212
+    },
+    "member_id": 14022540,
+    "visited": 1388879210000,
+    "bio": "Hi,\r\nI would like to join the group.",
+    "updated": 1346076919000,
+    "created": 1346076918000,
+    "name": "James Salisbury",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-01-04 23:46:50",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

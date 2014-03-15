@@ -1,0 +1,26 @@
+{
+    "id": 34912542,
+    "board": {
+        "id": 2827512
+    },
+    "created": 1369818972000,
+    "updated": 1369818972000,
+    "started_by": {
+        "name": "Darren"
+    },
+    "subject": "Drupal Global Training Day",
+    "body": "Hi All,\r\n\r\nJust thought I would inform you all about a Drupal training day my company Microserve are hosting on the 14th of June, more information can be found [url=http:\/\/www.microserveltd.co.uk\/blogs\/microserve\/drupal-global-training-day-bristol-uk-june-14th]here[\/url]. If your interested or you know someone who is please share the link.\r\n\r\nThanks\r\n\r\nDarren",
+    "last_post": {
+        "created": 1369818972000,
+        "member": {
+            "name": "Darren"
+        },
+        "created_date": {
+            "date": "2013-05-29 09:16:12",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "reply_count": 0,
+    "url": "http:\/\/www.meetup.com\/php-sw\/messages\/boards\/thread\/34912542"
+}

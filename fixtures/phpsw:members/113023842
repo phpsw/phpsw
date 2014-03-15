@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/113023842\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/2\/2\/c\/member_173716652.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/1\/0\/c\/member_173716652.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/1\/0\/c\/thumb_173716652.jpeg",
+        "photo_id": 173716652
+    },
+    "member_id": 113023842,
+    "visited": 1393433314000,
+    "bio": "Systems develop for Future Publishing",
+    "updated": 1390994785000,
+    "created": 1390994705000,
+    "name": "Jon Bennett",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-02-26 16:48:34",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

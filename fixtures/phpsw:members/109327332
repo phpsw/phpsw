@@ -1,0 +1,28 @@
+{
+    "visited": 1379269069000,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/109327332\/",
+    "bio": "I'm a Senior Recruitment Consultant with Opus who has built a hot desk placing PHP Developers in Bristol and the M4 corridor. I'm interested in learning more about the applications of PHP and to network in the community.",
+    "updated": 1378068004000,
+    "status": "active",
+    "created": 1378067658000,
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/7\/a\/member_145340682.jpeg",
+    "name": "Patrick Grimshaw",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "member_id": 109327332,
+    "visited_date": {
+        "date": "2013-09-15 18:17:49",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

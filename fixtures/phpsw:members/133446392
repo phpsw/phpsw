@@ -1,0 +1,34 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/133446392\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/5\/2\/member_177896642.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/2\/member_177896642.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/2\/highres_177896642.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/2\/thumb_177896642.jpeg",
+        "photo_id": 177896642
+    },
+    "member_id": 133446392,
+    "visited": 1394571976000,
+    "bio": "Mostly a Java and Android dev, new to working with PHP for the day job and side projects.",
+    "updated": 1392557149000,
+    "created": 1392557081000,
+    "name": "Dave Morrissey",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2014-03-11 21:06:16",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

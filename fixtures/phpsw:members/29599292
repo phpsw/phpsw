@@ -1,0 +1,33 @@
+{
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/29599292\/",
+    "status": "active",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/a\/e\/member_29348222.jpeg",
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/0\/1\/e\/member_29348222.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/0\/1\/e\/thumb_29348222.jpeg",
+        "photo_id": 29348222
+    },
+    "member_id": 29599292,
+    "visited": 1359058671000,
+    "bio": "I'm a PHP webdev, working mainly with Symfony!",
+    "updated": 1322079346000,
+    "created": 1322079345000,
+    "name": "Matt Loyd",
+    "group": {
+        "id": 2833232,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "other_services": [
+
+    ],
+    "visited_date": {
+        "date": "2013-01-24 20:17:51",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "lon": -2.5899999141693,
+    "visibility": "public",
+    "organizer": {
+        "name": "Adrian Slade",
+        "member_id": 31030432
+    },
+    "link": "http:\/\/www.meetup.com\/php-sw\/",
+    "state": "B7",
+    "join_mode": "open",
+    "who": "Members",
+    "country": "GB",
+    "city": "Bristol",
+    "id": 2833232,
+    "photos": [
+        {
+            "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/1\/9\/3\/e\/600_333006462.jpeg",
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/1\/9\/3\/e\/highres_333006462.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/1\/9\/3\/e\/thumb_333006462.jpeg",
+            "photo_id": 333006462
+        },
+        {
+            "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/1\/9\/8\/4\/600_333006532.jpeg",
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/1\/9\/8\/4\/highres_333006532.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/1\/9\/8\/4\/thumb_333006532.jpeg",
+            "photo_id": 333006532
+        },
+        {
+            "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/4\/1\/a\/2\/600_341596802.jpeg",
+            "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/4\/1\/a\/2\/highres_341596802.jpeg",
+            "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/4\/1\/a\/2\/thumb_341596802.jpeg",
+            "photo_id": 341596802
+        },
+        {
+            "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/4\/1\/a\/c\/600_341596812.jpeg",
+            "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/4\/1\/a\/c\/highres_341596812.jpeg",
+            "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/4\/1\/a\/c\/thumb_341596812.jpeg",
+            "photo_id": 341596812
+        }
+    ],
+    "category": {
+        "id": 34,
+        "name": "tech",
+        "shortname": "tech"
+    },
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 10164,
+            "urlkey": "lampsoftware",
+            "name": "LAMP"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 100119,
+            "urlkey": "php-framework",
+            "name": "PHP Framework"
+        }
+    ],
+    "timezone": "Europe\/London",
+    "group_photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/d\/d\/e\/c\/600_99716812.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/d\/d\/e\/c\/highres_99716812.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/d\/d\/e\/c\/thumb_99716812.jpeg",
+        "photo_id": 99716812
+    },
+    "created": 1321635579000,
+    "description": "<p>PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.\u00a0We typically have a 2 or 3 speakers each month, and cover topics like debugging, frameworks, packages, scaling &amp; testing. Anyone of any skill level is welcome to attend and speak, we usually have beer, pizza and a projector available.<\/p>",
+    "sponsors": [
+        {
+            "details": "Beautiful websites for small businesses.\r\nThe world's fastest growing website editor.",
+            "image_url": "http:\/\/photos1.meetupstatic.com\/photos\/sponsor\/7\/9\/5\/6\/iab120x90_2071062.jpeg",
+            "name": "BaseKit",
+            "url": "http:\/\/www.basekit.com",
+            "info": "Beer, pizza & venue!"
+        }
+    ],
+    "name": "PHPSW",
+    "rating": {
+        "average": 4.68,
+        "count": 40
+    },
+    "urlname": "php-sw",
+    "lat": 51.459999084473,
+    "members": 130
+}
