@@ -18,4 +18,10 @@ $app->register(new Knp\Provider\ConsoleServiceProvider, array(
 $console = $app['console'];
 $console->add(new PHPSW\Command\MeetupCommand);
 $console->add(new PHPSW\Command\TwitterCommand);
+
+if ($app['env'] == 'dev') {
+    $console->add(new PHPSW\Command\Redis\DumpCommand);
+    $console->add(new PHPSW\Command\Redis\RestoreCommand);
+}
+
 $console->run();
