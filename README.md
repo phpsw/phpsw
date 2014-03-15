@@ -16,12 +16,13 @@ Setup
 git clone https://github.com/phpsw/phpsw.git
 cd phpsw
 composer install
+app/console redis:restore-fixtures
 ```
 
 Config
 ------
 
-You'll need you set up your own `secrets.yml`:
+If you're forking this for your own meetup, you'll need you set up your own `secrets.yml` to pull in your own content from Meetup & Twitter:
 
 ```yaml
 # config/secrets.yml
@@ -38,21 +39,30 @@ twitter:
         secret: changeme
 ```
 
+Fixtures
+--------
+
+If you're want to test against PHPSW event data, you can simply load the fixtures into Redis:
+
+```bash
+app/console redis:restore-fixtures
+```
+
 Tasks
 -----
 
-A good portion of the content is grabbed from Meetup & Twitter, and stored in Redis, a couple of tasks manage it all, you'll need to run these to get started.
+Almost all of our content is stored in [Meetup](http://www.meetup.com/php-sw), but we cache it in Redis to save on API requests, and we also pull in tweets from our Twitter account.
+
+If you're forking this project for your own use, you'll need to run these tasks to pull in the content from your own accounts, and you'll probably want to set them up as cron jobs in production.
 
 ```bash
 app/console meetup:import:all
 app/console twitter:import:all
 ```
 
-Meetup
-------
+Data
+----
 
-Almost all of our data resides in [Meetup](http://www.meetup.com/php-sw), when we grab event descriptions we try to derive what talks feature in them so that they can be highlighted in the templates, mapped to members or Twitter profiles, and so that slides can be attached.
+Almost all of the data we store in Redis can be considered disposable, the tasks overwrite it all on every run. This is true of everything except the hash `phpsw:slides`, where Redis is the primary store for this data (Meetup has no way concept of talks or slides).
 
-Slide URL's are stored in a Redis hash called `phpsw:slides` and reside on key based on the talk ID for which they represent.
-
-All Redis data other than the slides is disposable, the tasks overwrite everything on each run.
+If in the dev env, we parse event descriptions on the fly, based on a common syntax we use across our events, this is so we can derive talks, speakers and assosciated social profiles, as well as link in any slides. If in production we do this parsing when the `meetup:import:all` task is ran, so that the parsed data is cached in Redis and simply read when serving requests.
