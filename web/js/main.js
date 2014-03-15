@@ -23,7 +23,7 @@ $(function() {
         );
     })
 
-    $('.event--upcoming:first').each(function() {
+    $('.event--upcoming').each(function() {
         $venue = $(this).find('.event__venue');
 
         if ($venue.data('latitude') && $venue.data('longitude')) {
