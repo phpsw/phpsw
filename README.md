@@ -42,7 +42,7 @@ twitter:
 Fixtures
 --------
 
-If you're want to test against PHPSW event data, you can simply load the fixtures into Redis:
+If you want to test against PHPSW event data, you can simply load the fixtures into Redis:
 
 ```bash
 app/console redis:restore-fixtures
@@ -51,9 +51,9 @@ app/console redis:restore-fixtures
 Tasks
 -----
 
-Almost all of our content is stored in [Meetup](http://www.meetup.com/php-sw), but we cache it in Redis to save on API requests, and we also pull in tweets from our Twitter account.
+Almost all of our content is stored in [Meetup](http://www.meetup.com/php-sw), but we cache it in Redis to save on API requests, and also pull in tweets from our Twitter account.
 
-If you're forking this project for your own use, you'll need to run these tasks to pull in the content from your own accounts, and you'll probably want to set them up as cron jobs in production.
+If you're forking this project for your own use, you'll need to run these tasks to pull in the content from your own accounts, and you'll probably also want to set them up as cron jobs in production.
 
 ```bash
 app/console meetup:import:all
@@ -63,6 +63,8 @@ app/console twitter:import:all
 Data
 ----
 
-Almost all of the data we store in Redis can be considered disposable, the tasks overwrite it all on every run. This is true of everything except the hash `phpsw:slides`, where Redis is the primary store for this data (Meetup has no way concept of talks or slides).
+Almost all of the data we store in Redis can be considered disposable, the tasks overwrite most of it on each run. This is true of everything except the hash `phpsw:slides`, where Redis is the primary store for this data (Meetup has no way concept of talks or slides).
 
-If in the dev env, we parse event descriptions on the fly, based on a common syntax we use across our events, this is so we can derive talks, speakers and assosciated social profiles, as well as link in any slides. If in production we do this parsing when the `meetup:import:all` task is ran, so that the parsed data is cached in Redis and simply read when serving requests.
+As part of processing the data pulled in, we parse event descriptions based on a common syntax used across PHPSW events in order to derive talks, speakers and associated social profiles for each event (or at least the recent ones), and link in any slides we have stored.
+
+If in the dev environment, this parsing is done on-the-fly when rendering the page, in production we do it when the `meetup:import:all` task is ran, so that the parsed data is cached in Redis and simply read when serving requests.
