@@ -26,7 +26,9 @@ $app['twitter.client'] = function ($app) {
 };
 
 foreach (['app', $app['env'], 'secrets'] as $config) {
-    $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__ . '/../config/' . $config . '.yml'));
+    if (file_exists(__DIR__ . '/../config/' . $config . '.yml')) {
+        $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__ . '/../config/' . $config . '.yml'));
+    }
 }
 
 $app->get('/', 'PHPSW\Controller\AppController::indexAction')->bind('home');
