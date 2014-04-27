@@ -24,7 +24,7 @@ end
 namespace :mod_pagespeed do
   task :flush do
     on roles :all do
-      execute "touch /var/cache/mod_pagespeed/cache.flush"
+      execute "sudo touch /var/cache/mod_pagespeed/cache.flush"
     end
   end
 end
