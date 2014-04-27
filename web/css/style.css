@@ -314,6 +314,12 @@ img {
     outline: none;
 }
 
+.lightbox-x {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 /* JS */
 
 .read-less {
