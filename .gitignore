@@ -1,2 +1,8 @@
 /config/secrets.yml
+/node_modules
 /vendor
+/web/css
+/web/fonts
+/web/images
+/web/js
+/web/vendor

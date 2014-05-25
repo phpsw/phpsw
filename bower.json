@@ -1,0 +1,15 @@
+{
+  "name": "phpsw",
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "gmaps": "~0.4.12",
+    "jquery-expander": "~1.4.8",
+    "jquery-timeago": "~1.4.1"
+  },
+  "overrides": {
+    "jquery": {
+      "main": "dist/jquery.min.js"
+    }
+  },
+  "private": true
+}

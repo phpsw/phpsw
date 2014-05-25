@@ -10,10 +10,8 @@ body {
     font: 16px helvetica neue, arial;
     line-height: 1.6;
     color: #8A7F70;
-}
 
-@media (min-width: 600px) {
-    body {
+    @media (min-width: 600px) {
         padding: 2em 4em;
     }
 }
