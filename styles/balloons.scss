@@ -1,0 +1,43 @@
+.balloons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 200px;
+}
+
+.balloon {
+  background: {
+    image: url("/images/php-balloon.svg");
+    size: contain;
+    position: center;
+    repeat: no-repeat;
+  }
+  position: absolute;
+}
+
+.balloon--small {
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 175px;
+
+  path { fill: #dedede }
+}
+
+.balloon--large {
+  width: 75px;
+  height: 75px;
+  top: 40px;
+  right: 75px;
+
+  path { fill: #bbb }
+}
+
+.balloon--medium {
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 10px;
+
+  path { fill: #cdcdcd }
+}
