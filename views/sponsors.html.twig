@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-sm-8">
+      {{ render(path('meetup_sponsors')) }}
+    </div>
+
+    <div class="col-sm-4">
+      Interested in sponsoring PHPSW?
+      <a href="{{ app.meetup.url }}" class="btn btn-primary navbar-btn" style="margin: 8px">
+        Become a sponsor
+      </a>
+    </div>
+  </div>
+{% endblock %}

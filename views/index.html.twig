@@ -1,76 +1,50 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ app.title }}</title>
-    <meta name="description" content="{{ app.description }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/vendor.css">
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body>
-    <header class="page-header">
-      <h1>{{ app.name }}</h1>
+{% extends 'base.html.twig' %}
 
-      <img src="/images/php-elephant.jpg" class="logo" alt="{{ app.name }}">
-
-      {{ meetup.group.description | default | raw }}
-    </header>
-
-    {{ include('nav.html.twig') }}
-
-    <div class="row">
-      <div class="col-sm-8">
-        {{ render(path('events')) }}
-        {{ render(path('speakers')) }}
-        <!-- {{ render(path('posts')) }} -->
-      </div>
-
-      <div class="col-sm-4">
-
-        <a href="{{ app.meetup.url }}" class="btn btn-primary navbar-btn" style="margin: 8px">
-          Join group
-        </a>
-
-        {{ render(path('sponsors')) }}
-        <!-- {{ render(path('tweets')) }} -->
-        {{ render(path('photos')) }}
-        <!-- {{ render(path('reviews')) }} -->
-      </div>
+{% block content %}
+  <div class="row">
+    <div class="col-sm-8">
+      {{ render(path('meetup_events')) }}
+      <!-- {{ render(path('meetup_posts')) }} -->
     </div>
 
-    <section class="contact">
-      <header class="box__header">
-        <h2>Get in touch</h2>
-      </header>
+    <div class="col-sm-4">
 
-      <ul class="list">
-        {% for organiser in app.organisers %}
-          <li>
-            <img src="{{ organiser.photo }}" class="avatar" alt="{{ organiser.name }}">
+      <a href="{{ app.meetup.url }}" class="btn btn-primary navbar-btn" style="margin: 8px">
+        Join group
+      </a>
 
-            <a href="{{ organiser.url }}">
-              {{ organiser.name }}
-            </a>
+      {{ render(path('meetup_sponsors')) }}
+      <!-- {{ render(path('tweets')) }} -->
+      {{ render(path('meetup_photos')) }}
+      <!-- {{ render(path('meetup_reviews')) }} -->
+    </div>
+  </div>
 
-            <a href="https://twitter.com/{{ organiser.twitter }}">
-              @{{ organiser.twitter }}
-            </a>
+  <section class="contact">
+    <header class="box__header">
+      <h2>Get in touch</h2>
+    </header>
 
-            {#
-            <span>{{ organiser.email | replace({'@': ' at ', '.': ' dot '}) }}</span>
-            #}
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
+    <ul class="list">
+      {% for organiser in app.organisers %}
+        <li>
+          <img src="{{ organiser.photo }}" class="avatar" alt="{{ organiser.name }}">
 
-    <div id="x" class="lightbox-x"></div>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="/js/vendor.js"></script>
-    <script src="/js/main.js"></script>
-  </body>
-</html>
+          <a href="{{ organiser.url }}">
+            {{ organiser.name }}
+          </a>
+
+          <a href="https://twitter.com/{{ organiser.twitter }}">
+            @{{ organiser.twitter }}
+          </a>
+
+          {#
+          <span>{{ organiser.email | replace({'@': ' at ', '.': ' dot '}) }}</span>
+          #}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <div id="x" class="lightbox-x"></div>
+{% endblock %}

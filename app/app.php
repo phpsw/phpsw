@@ -32,12 +32,14 @@ foreach (['app', $app['env'], 'secrets'] as $config) {
 }
 
 $app->get('/', 'PHPSW\Controller\AppController::indexAction')->bind('home');
-$app->get('/meetup/events', 'PHPSW\Controller\MeetupController::eventsAction')->bind('events');
-$app->get('/meetup/photos', 'PHPSW\Controller\MeetupController::photosAction')->bind('photos');
-$app->get('/meetup/posts', 'PHPSW\Controller\MeetupController::postsAction')->bind('posts');
-$app->get('/meetup/reviews', 'PHPSW\Controller\MeetupController::reviewsAction')->bind('reviews');
-$app->get('/meetup/speakers', 'PHPSW\Controller\MeetupController::speakersAction')->bind('speakers');
-$app->get('/meetup/sponsors', 'PHPSW\Controller\MeetupController::sponsorsAction')->bind('sponsors');
+$app->get('/speakers', 'PHPSW\Controller\AppController::speakersAction')->bind('speakers');
+$app->get('/sponsors', 'PHPSW\Controller\AppController::sponsorsAction')->bind('sponsors');
+$app->get('/meetup/events', 'PHPSW\Controller\MeetupController::eventsAction')->bind('meetup_events');
+$app->get('/meetup/photos', 'PHPSW\Controller\MeetupController::photosAction')->bind('meetup_photos');
+$app->get('/meetup/posts', 'PHPSW\Controller\MeetupController::postsAction')->bind('meetup_posts');
+$app->get('/meetup/reviews', 'PHPSW\Controller\MeetupController::reviewsAction')->bind('meetup_reviews');
+$app->get('/meetup/speakers', 'PHPSW\Controller\MeetupController::speakersAction')->bind('meetup_speakers');
+$app->get('/meetup/sponsors', 'PHPSW\Controller\MeetupController::sponsorsAction')->bind('meetup_sponsors');
 $app
     ->get('/twitter/{user}-{size}', 'PHPSW\Controller\TwitterController::photoAction')
     ->bind('twitter_photo')

@@ -1,4 +1,6 @@
 <div id="events">
+    {{ meetup.group.description | default | raw }}
+
     {% if next_event %}
         <h2>Next event</h2>
         {{ include('meetup/event.html.twig', {'event': next_event}) }}
