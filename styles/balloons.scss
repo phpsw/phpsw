@@ -3,6 +3,20 @@
   top: 0;
   right: 0;
   height: 200px;
+
+  &:hover {
+    .balloon {
+      transform: translateY(-.5em)
+    }
+
+    .balloon--small {
+      transform: translateY(.25em)
+    }
+
+    .balloon--medium {
+      transform: translateY(.5em)
+    }
+  }
 }
 
 .balloon {
@@ -13,6 +27,7 @@
     repeat: no-repeat;
   }
   position: absolute;
+  transition: 1s ease-in-out;
 }
 
 .balloon--small {
