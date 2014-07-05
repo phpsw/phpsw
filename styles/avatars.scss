@@ -1,16 +1,17 @@
 .avatar {
+    border-radius: 1.5em;
     width: 3em;
     height: 3em;
     margin-right: .25em;
     vertical-align: middle;
-    border-radius: 2px;
 
     &.avatar-small {
-        width: 32px;
-        height: 32px;
+        width: 3em;
+        height: 3em;
     }
 
     &.avatar-large {
+        border-radius: 3em;
         width: 6em;
         height: 6em;
     }

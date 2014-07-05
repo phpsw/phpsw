@@ -1,65 +1,92 @@
 .event {
-    position: relative;
+  position: relative;
 
-    h3 {
-        padding-right: 2em;
-    }
+  &:before {
+    display: block;
+    width: 1px;
+    height: 100%;
+    content: '';
+    border-left: 2px dashed #ccc;
+    position: absolute;
+    left: -2.5em;
+    top: 0;
+  }
 
-    &.event--upcoming {
-        background: white;
-    }
+  h3 {
+    padding-right: 2em;
+  }
+
+  &.event--upcoming {
+    background: white;
+  }
 }
 
 .event__attendees {
-    font-size: 0;
+  font-size: 0;
 
-    li {
-        margin: 0 2px 4px;
-    }
+  li {
+    margin: 0 2px 4px;
+  }
 }
 
-
 .event__map {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
 
-    * {
-        color: #44403A;
-    }
+  * {
+    color: #44403A;
+  }
 
-    img {
-        max-width: inherit;
+  img {
+    max-width: inherit;
+  }
+}
+
+.event__talks {
+  padding: 1em 0;
+
+  ul {
+    li {
+      position: relative;
     }
+  }
+
+  .avatar {
+    position: absolute;
+    top: 50%;
+    left: -4em;
+    margin-top: -1.5em;
+  }
 }
 
 .event-date {
-    position: absolute;
-    top: .75em;
-    right: .75em;
+  position: absolute;
+  top: -0.35em;
+  left: -3.75em;
+  display: block;
+  width: 36px;
+  background: #fcfcfc;
+  background: linear-gradient(top, #fcfcfc 0%,#dad8d8 100%);
+  background: -moz-linear-gradient(top, #fcfcfc 0%, #dad8d8 100%);
+  background: -webkit-linear-gradient(top, #fcfcfc 0%,#dad8d8 100%);
+  border: 1px solid #d2d2d2;
+  border-radius: 2px;
+  font: 14px helvetica, arial, sans-serif;
+  line-height: 1.4;
+  color: #9e9e9e;
+  text-align: center;
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
+  span {
     display: block;
-    width: 36px;
-    background: #fcfcfc;
-    background: linear-gradient(top, #fcfcfc 0%,#dad8d8 100%);
-    background: -moz-linear-gradient(top, #fcfcfc 0%, #dad8d8 100%);
-    background: -webkit-linear-gradient(top, #fcfcfc 0%,#dad8d8 100%);
-    border: 1px solid #d2d2d2;
-    border-radius: 2px;
-    font: 14px helvetica, arial, sans-serif;
-    line-height: 1.4;
-    color: #9e9e9e;
-    text-align: center;
-
-    &:hover, &:focus {
-        text-decoration: none;
-    }
-
-    span {
-        display: block;
-        background: #d10000;
-        font-size: 10px;
-        font-weight: bold;
-        color: #fff;
-        text-transform: uppercase;
-        padding: 2px 0;
-    }
+    background: #d10000;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2px 0;
+  }
 }
