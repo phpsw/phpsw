@@ -9,22 +9,16 @@ use DMS\Service\Meetup\MeetupKeyAuthClient,
 class Meetup
 {
     protected $cli;
-
     protected $client;
-
     protected $config;
-
     protected $debug;
-
     protected $events;
-
     protected $group;
-
     protected $members;
-
     protected $posts;
-
     protected $reviews;
+    protected $speakers;
+    protected $talks;
 
     public function __construct($app, array $config, $cli, $debug = false)
     {
@@ -49,6 +43,18 @@ class Meetup
                 ]);
 
                 $this->group = (object) current($response->getData());
+
+                $this->group->photos = array_filter(
+                    $this->client
+                        ->getPhotos([
+                            'group_urlname' => $this->config['urlname']
+                        ])
+                        ->getData()
+                    ,
+                    function ($photo) {
+                        return $photo['photo_id'] != '99716812';
+                    }
+                );
 
                 $this->group->rating = (object) [
                     'average' => $this->group->rating,
@@ -255,6 +261,49 @@ class Meetup
         }
 
         return $this->reviews;
+    }
+
+    public function getSpeakers()
+    {
+        if ($this->speakers === null) {
+            $this->speakers = array_map(
+                function ($speaker) {
+                    $speaker = json_decode($speaker);
+
+                    $speaker->talks = array_filter(
+                        $this->getTalks(),
+                        function ($talk) use ($speaker) {
+                            return $talk->speaker->id == $speaker->id;
+                        }
+                    );
+
+                    return $speaker;
+                },
+                $this->redis->hgetall('phpsw:speakers')
+            );
+
+            usort($this->speakers, function ($a, $b) {
+                return $a->name > $b->name ? 1 : -1;
+            });
+        }
+
+        return $this->speakers;
+    }
+
+    public function getTalks()
+    {
+        if ($this->talks === null) {
+            $this->talks = array_map(
+                function ($talk) {
+                    $talk = json_decode($talk);
+
+                    return $talk;
+                },
+                $this->redis->hgetall('phpsw:talks')
+            );
+        }
+
+        return $this->talks;
     }
 
     protected function getEventsFromApi()

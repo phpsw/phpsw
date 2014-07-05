@@ -10,10 +10,10 @@ $ ->
   $("section[id]").each ->
     $section = $(this)
 
-    $section.find(".box:gt(2)").addClass("js-hide").first().after(
+    $section.find("article:gt(2)").addClass("js-hide").first().after(
       $("<button>",
         text: "See more " + $section.attr("id").replace("-", " ")
-        class: "box"
+        class: "btn"
       ).click(->
         $(this).siblings().removeClass "js-hide"
         $(this).remove()
@@ -41,4 +41,4 @@ $ ->
         infoWindow:
           content: $venue.html()
 
-  $(".box footer time").timeago()
+  $("footer time").timeago()

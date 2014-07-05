@@ -15,11 +15,16 @@ class MeetupController
             array_unshift($statuses, 'draft');
         }
 
+        $draftEvents = $app['meetup.client']->getDraftEvents();
+        $pastEvents = $app['meetup.client']->getPastEvents();
+        $upcomingEvents = $app['meetup.client']->getUpcomingEvents();
+
         return $app['twig']->render('meetup/events.html.twig', [
+            'next_event' => array_shift($upcomingEvents),
             'statuses' => $statuses,
-            'draft_events' => $app['meetup.client']->getDraftEvents(),
-            'past_events' => $app['meetup.client']->getPastEvents(),
-            'upcoming_events' => $app['meetup.client']->getUpcomingEvents()
+            'draft_events' => $draftEvents,
+            'past_events' => $pastEvents,
+            'upcoming_events' => $upcomingEvents
         ]);
     }
 
@@ -43,6 +48,13 @@ class MeetupController
     {
         return $app['twig']->render('meetup/reviews.html.twig', [
             'reviews' => $app['meetup.client']->getReviews()
+        ]);
+    }
+
+    public function speakersAction(Request $request, Application $app)
+    {
+        return $app['twig']->render('meetup/speakers.html.twig', [
+            'speakers' => $app['meetup.client']->getSpeakers()
         ]);
     }
 

@@ -36,6 +36,7 @@ $app->get('/meetup/events', 'PHPSW\Controller\MeetupController::eventsAction')->
 $app->get('/meetup/photos', 'PHPSW\Controller\MeetupController::photosAction')->bind('photos');
 $app->get('/meetup/posts', 'PHPSW\Controller\MeetupController::postsAction')->bind('posts');
 $app->get('/meetup/reviews', 'PHPSW\Controller\MeetupController::reviewsAction')->bind('reviews');
+$app->get('/meetup/speakers', 'PHPSW\Controller\MeetupController::speakersAction')->bind('speakers');
 $app->get('/meetup/sponsors', 'PHPSW\Controller\MeetupController::sponsorsAction')->bind('sponsors');
 $app
     ->get('/twitter/{user}-{size}', 'PHPSW\Controller\TwitterController::photoAction')

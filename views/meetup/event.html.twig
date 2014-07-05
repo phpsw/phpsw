@@ -1,9 +1,13 @@
-<article id="event-{{ event.id }}" class="event event--{{ event.status }} box">
-    <header class="box__header">
+<article id="event-{{ event.id }}" class="event event--{{ event.status }}">
+    <header class="event__header">
         <h3>
             <a href="{{ event.url }}">
                 {{ event.name }}
             </a>
+
+            <small>
+                {{ event.date.format('F Y') }}
+            </small>
         </h3>
 
         <a href="#event-{{ event.id }}" class="event-date">
@@ -14,92 +18,95 @@
         </a>
     </header>
 
-    <div class="event__description">
-        {{ event.description | raw }}
-    </div>
-
-    {% if event.talks %}
-        <div class="event__talks">
-            <h4 class="sr-only">Talks</h4>
-
-            <ul class="list">
-                {% for talk in event.talks %}
-                    <li id="talk-{{ talk.id }}">
-                        <p>
-                            <strong>
-                                {% if talk.slides %}
-                                    <a href="{{ talk.slides }}">
-                                        {{ talk.title }}
-                                    </a>
-                                {% else %}
-                                    {{ talk.title }}
-                                {% endif %}
-                            </strong>
-
-                            <br>
-
-                            {% if talk.speaker.url is defined %}
-                                <a
-                                    href="{{ talk.speaker.url }}"
-                                    {% if talk.speaker.member.bio is defined %}
-                                        title="{{ talk.speaker.member.bio }}"
-                                    {% endif %}
-                                >
-                                    {%- if talk.speaker.photo is defined -%}
-                                        <img src="{{ talk.speaker.photo.thumb_link }}" class="avatar-mini" alt="{{ talk.speaker.name }}">
-                                    {%- endif -%}
-
-                                    {%- spaceless -%}
-                                        <span class="fn">{{ talk.speaker.name }}</span>
-                                    {%- endspaceless -%}
-                                </a>
-                            {%- else -%}
-                                {{ talk.speaker.name }}
-                            {%- endif -%}
-
-                            {%- if talk.speaker.bio is defined -%}
-                                , {{ talk.speaker.bio | raw }}
-                            {% endif %}
-                        </p>
-                    </li>
-                {% endfor %}
-            </ul>
+    <div class="event__body">
+        <div class="event__description">
+            {{ event.description | raw }}
         </div>
-    {% endif %}
 
-    {% if event.venue %}
-        <p
-            class="event__venue"
-            {% if (event.venue.lat) %}data-latitude="{{ event.venue.lat }}"{% endif %}
-            {% if (event.venue.lon) %}data-longitude="{{ event.venue.lon }}"{% endif %}
-        >
-            <span class="event__venue__name">{{ event.venue.name }}</span>,
-            {{ event.venue.address_1 }},
-            {{ event.venue.city }}
-        </p>
-    {% endif %}
+        {% if event.talks %}
+            <div class="event__talks">
+                <h4 class="sr-only">Talks</h4>
 
-    {% if event.status == 'upcoming' %}
-        {% if event.rsvps is defined %}
-            <ul class="event__attendees list list--inline">
-                {% for rsvp in event.rsvps if rsvp.response == 'yes' %}
-                    <li>
-                        <a href="{{ app.meetup.url }}/members/{{ rsvp.member.member_id }}" class="event__attendee" title="{{ rsvp.member.name }}">
-                            <img src="{{ rsvp.member_photo.thumb_link }}" class="avatar-mini" alt="{{ rsvp.member.name }}">
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
+                <ul class="list">
+                    {% for talk in event.talks %}
+                        <li id="talk-{{ talk.id }}">
+                            <p>
+                                <strong>
+                                    {% if talk.slides %}
+                                        <a href="{{ talk.slides }}">
+                                            {{ talk.title }}
+                                        </a>
+                                    {% else %}
+                                        {{ talk.title }}
+                                    {% endif %}
+                                </strong>
+
+                                <br>
+
+                                {% if talk.speaker.url is defined %}
+                                    <a
+                                        href="{{ talk.speaker.url }}"
+                                        {% if talk.speaker.member.bio is defined %}
+                                            title="{{ talk.speaker.member.bio }}"
+                                        {% endif %}
+                                    >
+                                        {%- if talk.speaker.photo is defined -%}
+                                            <img src="{{ talk.speaker.photo.thumb_link }}" class="avatar avatar-small" alt="{{ talk.speaker.name }}">
+                                        {%- endif -%}
+
+                                        {%- spaceless -%}
+                                            <span class="fn">{{ talk.speaker.name }}</span>
+                                        {%- endspaceless -%}
+                                    </a>
+                                {%- else -%}
+                                    {{ talk.speaker.name }}
+                                {%- endif -%}
+
+                                {%- if talk.speaker.bio is defined -%}
+                                    , {{ talk.speaker.bio | raw }}
+                                {% endif %}
+                            </p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         {% endif %}
 
-        <a href="{{ event.url }}" class="btn">
-            RSVP
-        </a>
-    {% endif %}
+        {% if event.venue %}
+            <p
+                class="event__venue"
+                {% if (event.venue.lat) %}data-latitude="{{ event.venue.lat }}"{% endif %}
+                {% if (event.venue.lon) %}data-longitude="{{ event.venue.lon }}"{% endif %}
+            >
+                <span class="event__venue__name">{{ event.venue.name }}</span>,
+                {{ event.venue.address_1 }},
+                {{ event.venue.city }}
+            </p>
+        {% endif %}
 
-    <footer class="box__footer">
+        {% if event.status == 'upcoming' %}
+            {% if event.rsvps is defined %}
+                <ul class="event__attendees list list--inline">
+                    {% for rsvp in event.rsvps if rsvp.response == 'yes' %}
+                        <li>
+                            <a href="{{ app.meetup.url }}/members/{{ rsvp.member.member_id }}" class="event__attendee" title="{{ rsvp.member.name }}">
+                                <img src="{{ rsvp.member_photo.thumb_link }}" class="avatar avatar-small" alt="{{ rsvp.member.name }}">
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            <a href="{{ event.url }}" class="btn btn-primary">
+                RSVP
+            </a>
+        {% endif %}
+    </div>
+
+    <footer class="event__footer">
         {% if event.yes_rsvp_count > 0 %}
-            <span class="genericon genericon-user">
+            <span>
+                <span class="glyphicon glyphicon-user"></span>
                 {{ event.yes_rsvp_count }}
 
                 {% if event.status == 'upcoming' %}
@@ -111,7 +118,8 @@
         {% endif %}
 
         {% if event.rating is defined and event.rating.average > 3 %}
-            <span class="genericon genericon-digg">
+            <span>
+                <span class="glyphicon glyphicon-thumbs-up"></span>
                 {{ event.rating.average | round(1) }}/5 by {{ event.rating.count }} {{ event.group.who | lower }}
             </span>
         {% endif %}

@@ -9,4 +9,4 @@ g.task "watch", ->
     g.watch "images/**/*", ["images"]
     g.watch "scripts/**/*.coffee", ["scripts"]
     g.watch "styles/**/*.scss", ["styles"]
-    g.watch "views/**/*", ["views"]
+    g.watch "{app,config,views}/**/*", ["views"]

@@ -1,0 +1,20 @@
+.contact ul li {
+    position: relative;
+    margin-bottom: 1em;
+    padding-left: 3.5em;
+}
+
+.contact ul li:last-child {
+    margin-bottom: 0;
+}
+
+.contact ul li a {
+    display: block;
+    max-width: 100px;
+}
+
+.contact ul li .avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
