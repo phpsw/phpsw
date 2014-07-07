@@ -320,11 +320,15 @@ class Meetup
             function ($event) {
                 $event = (object) $event;
 
-                $event->description = preg_replace(
-                    '#<a href="mailto:.*">(.*)@(.*)</a>#',
-                    '\1 at \2',
-                    $event->description
-                );
+                if (isset($event->description)) {
+                    $event->description = preg_replace(
+                        '#<a href="mailto:.*">(.*)@(.*)\.(.*)</a>#',
+                        '<a href="mailto:\1 at \2 dot \3" class="email">\1 at \2 dot \3</a>',
+                        $event->description
+                    );
+                } else {
+                    $event->description = null;
+                }
 
                 $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));
                 $event->talks = [];
