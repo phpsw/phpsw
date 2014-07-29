@@ -1,6 +1,7 @@
 /config/secrets.yml
 /node_modules
 /vendor
+/views/*.svg.twig
 /web/css
 /web/fonts
 /web/images
