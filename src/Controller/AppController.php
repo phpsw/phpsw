@@ -46,6 +46,7 @@ class AppController
         if ($event) {
             $response = new Response(
                 $app['twig']->render('event.html.twig', [
+                    'meetup' => $app['meetup.client'],
                     'event' => $event
                 ]),
                 200,
