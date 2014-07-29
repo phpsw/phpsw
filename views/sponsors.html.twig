@@ -1,14 +1,62 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
+  <h1>Sponsors</h1>
+
   <div class="row">
     <div class="col-sm-8">
-      {{ render(path('meetup_sponsors')) }}
+      <h2>Meetup sponsors</h2>
+
+      <div class="sponsors row">
+        <div class="sponsor col-sm-6">
+          <a href="http://www.ents24.com">
+            <img src="/images/ents24.png" alt="Ents24">
+          </a>
+          <br><br>
+          <p>
+            The UK's biggest entertainment guide, covering live music, comedy, theatre, shows and days out
+          </p>
+        </div>
+
+        <div class="sponsor col-sm-6">
+          <a href="http://www.redrockconsulting.co.uk">
+            <img src="/images/redrock.png" alt="Redrock Consulting">
+          </a>
+          <br><br>
+          <p>
+            Redrock Consulting&mdash;Ethical and transparent recruiters reaching out to Software Developers in the South-West&mdash;Firm believers in Long-Term relationships
+          </p>
+        </div>
+      </div>
+
+      <h2>Event sponsors</h2>
+
+      <div class="sponsors row">
+        <div class="sponsor col-sm-6">
+          <a href="http://www.basekit.com">
+            <img src="/images/basekit.png" alt="BaseKit">
+          </a>
+          <br><br>
+          <p>
+            Beautiful websites for small businesses. The world's fastest growing website editor
+          </p>
+        </div>
+
+        <div class="sponsor col-sm-6">
+          <a href="https://www.brightpearl.com">
+            <img src="/images/brightpearl.png" alt="Brightpearl">
+          </a>
+          <br><br>
+          <p>
+            Brightpearl handles the scale and complexity of a growing multi-channel retail business
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="col-sm-4">
-      Interested in sponsoring PHPSW?
-      <a href="{{ app.meetup.url }}" class="btn btn-primary navbar-btn" style="margin: 8px">
+      <h2>Interested in sponsoring?</h2>
+      <a href="{{ app.meetup.url }}" class="btn btn-primary">
         Become a sponsor
       </a>
     </div>

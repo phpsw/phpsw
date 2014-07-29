@@ -1,0 +1,14 @@
+$phpsw-blue: #2A8EBD;
+
+.logo {
+  width: 140px;
+  height: 70px;
+}
+
+.logo__sw__rhomboid {
+  fill: $phpsw-blue;
+
+  .logo:hover &, .logo:focus & {
+    fill: darken($phpsw-blue, 10%);
+  }
+}

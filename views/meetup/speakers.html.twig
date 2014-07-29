@@ -1,13 +1,9 @@
 {% if speakers %}
     <section id="speakers" class="speakers">
-        <header class="box__header">
-            <h2>Speakers</h2>
-        </header>
-
         <div class="row">
         <ul class="list">
             {% for speaker in speakers %}
-                <li class="col-xs-4 col-sm-2">
+                <li class="col-xs-4 col-sm-2" style="margin: 20px 0; text-align: center">
                     {% if speaker.url is defined %}
                         <a
                             href="{{ speaker.url }}"
@@ -16,11 +12,13 @@
                             {% endif %}
                         >
                             {% if speaker.photo is defined %}
-                                <img src="{{ speaker.photo.highres_link | default(speaker.photo.thumb_link) }}" class="avatar avatar-large" alt="{{ speaker.name }}">
+                                <img src="{{ speaker.photo.highres_link | default(speaker.photo.thumb_link) }}" class="avatar avatar--large" alt="{{ speaker.name }}">
                             {% endif %}
 
                             {% spaceless %}
-                                <span class="fn">{{ speaker.name }}</span>
+                                <span class="fn" style="display: block; margin: 10px">
+                                    {{ speaker.name }}
+                                </span>
                             {% endspaceless %}
                         </a>
                     {% else %}
@@ -28,7 +26,7 @@
                     {% endif %}
 
                     {% if speaker.bio is defined %}
-                        <p>{{ speaker.bio | raw }}</p>
+                        <!-- <p>{{ speaker.bio | raw }}</p> -->
                     {% endif %}
 
                     <!-- <ul>

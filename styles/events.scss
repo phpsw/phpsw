@@ -1,17 +1,6 @@
 .event {
   position: relative;
 
-  &:before {
-    display: block;
-    width: 1px;
-    height: 100%;
-    content: '';
-    border-left: 2px dashed #ccc;
-    position: absolute;
-    left: -2.5em;
-    top: 0;
-  }
-
   h3 {
     padding-right: 2em;
   }
@@ -22,16 +11,33 @@
 }
 
 .event__attendees {
-  font-size: 0;
-
   li {
     margin: 0 2px 4px;
   }
 }
 
+.event__location {
+  position: relative;
+  width: 100%;
+  height: 400px;
+
+  .event__location__venue {
+    background: white;
+    position: absolute;
+    top: 4em;
+    left: 6em;
+    padding: 1em;
+    box-shadow: 2px 2px 10px rgba(black, .25);
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
+
 .event__map {
   width: 100%;
-  height: 200px;
+  height: 400px;
 
   * {
     color: #44403A;
@@ -46,6 +52,7 @@
   padding: 1em 0;
 
   ul {
+      padding: 1em 0 1em 4em;
     li {
       position: relative;
     }

@@ -3,40 +3,48 @@
 {% block content %}
   <div class="row">
     <div class="col-sm-8">
-      {{ render(path('meetup_events')) }}
-      <!-- {{ render(path('meetup_posts')) }} -->
+      {{ meetup.group.description | raw }}
+      <!-- {{ render(path('tweets')) }} -->
+      <!-- {{ render(path('meetup_reviews')) }} -->
     </div>
 
     <div class="col-sm-4">
-
       <a href="{{ app.meetup.url }}" class="btn btn-primary navbar-btn" style="margin: 8px">
         Join group
       </a>
 
       {{ render(path('meetup_sponsors')) }}
-      <!-- {{ render(path('tweets')) }} -->
-      {{ render(path('meetup_photos')) }}
-      <!-- {{ render(path('meetup_reviews')) }} -->
     </div>
   </div>
 
   <section class="contact">
-    <header class="box__header">
-      <h2>Get in touch</h2>
-    </header>
+    <h2 class="sr-only">Get in touch</h2>
 
-    <ul class="list">
+    <ul class="organisers list">
       {% for organiser in app.organisers %}
-        <li>
-          <img src="{{ organiser.photo }}" class="avatar" alt="{{ organiser.name }}">
-
+        <li class="organiser organiser--{{ organiser.first_name | lower }}">
           <a href="{{ organiser.url }}">
-            {{ organiser.name }}
+            <img src="{{ organiser.photo }}" class="avatar avatar--large" alt="{{ organiser.name }}">
+            <span class="organiser__name">{{ organiser.name }}</span>
           </a>
 
-          <a href="https://twitter.com/{{ organiser.twitter }}">
-            @{{ organiser.twitter }}
-          </a>
+          <ul class="organiser__social list list--inline">
+            <li>
+              <a href="{{ organiser.url }}">
+                <span class="glyphicon glyphicon-globe"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/{{ organiser.twitter }}">
+                <span class="genericon genericon-twitter"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/{{ organiser.github }}">
+                <span class="genericon genericon-github"></span>
+              </a>
+            </li>
+          </ul>
 
           {#
           <span>{{ organiser.email | replace({'@': ' at ', '.': ' dot '}) }}</span>

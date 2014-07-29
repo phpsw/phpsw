@@ -12,20 +12,112 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <header class="page-header">
-      <h1><a href="{{ path('home') }}">{{ app.name }}</a></h1>
-      <div class="balloons">
-        {{ include('balloon.svg.twig', {size: 'small'}) }}
-        {{ include('balloon.svg.twig', {size: 'large'}) }}
-        {{ include('balloon.svg.twig', {size: 'medium'}) }}
+    <header class="header">
+      <div class="container">
+        <h1>
+          <a href="{{ path('home') }}">
+            <span class="sr-only">{{ app.name }}</span>
+            {{ include('logo.svg.twig') }}
+          </a>
+        </h1>
+        <div class="balloons">
+          {{ include('balloon.svg.twig', {size: 'small'}) }}
+          {{ include('balloon.svg.twig', {size: 'large'}) }}
+          {{ include('balloon.svg.twig', {size: 'medium'}) }}
+        </div>
       </div>
     </header>
 
     <main>
       {{ include('nav.html.twig') }}
 
-      {{ block('content') }}
+      {% block main %}
+        <div class="container">
+          {{ block('content') }}
+        </div>
+      {% endblock %}
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <nav>
+          <ul class="list col-xs-3">
+            <li>
+              <a href="{{ path('home') }}">
+                <span class="glyphicon glyphicon-home"></span>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="{{ path('events') }}">
+                <span class="glyphicon glyphicon-calendar"></span>
+                Events
+              </a>
+            </li>
+            <li>
+              <a href="{{ path('speakers') }}">
+                <span class="glyphicon glyphicon-comment"></span>
+                Speakers
+              </a>
+            </li>
+            <li>
+              <a href="{{ path('sponsors') }}">
+                <span class="glyphicon glyphicon-briefcase"></span>
+                Sponsors
+              </a>
+            </li>
+          </ul>
+
+          <ul class="list col-xs-3">
+            <li>
+              <a href="mailto:steve at stevelacey dot net">
+                <span class="glyphicon glyphicon-envelope"></span>
+                Get in touch
+              </a>
+            </li>
+            <li>
+              <a href="mailto:steve at stevelacey dot net">
+                <span class="glyphicon glyphicon-comment"></span>
+                Submit a talk
+              </a>
+            </li>
+            <li>
+              <a href="mailto:steve at stevelacey dot net">
+                <span class="glyphicon glyphicon-briefcase"></span>
+                Sponsor us
+              </a>
+            </li>
+            <li>
+              <a href="{{ path('brand') }}">
+                <span class="glyphicon glyphicon-picture"></span>
+                Brand
+              </a>
+            </li>
+          </ul>
+
+          <ul class="list col-xs-3">
+            <li>
+              <a href="{{ app.meetup.url }}" class="genericon genericon-month">
+                Find us on Meetup
+              </a>
+            </li>
+            <li>
+              <a href="{{ app.twitter.url }}" class="genericon genericon-twitter">
+                Tweet us at @{{ app.twitter.user }}
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="{{ app.github.url }}" class="genericon genericon-github">
+                Fork this on GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        {{ include('balloon.svg.twig', {size: 'large'}) }}
+      </div>
+    </footer>
 
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="/js/vendor.js"></script>

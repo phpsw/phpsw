@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<svg class="balloon {%- if size is defined %} balloon--{{ size }} {%- endif %}" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<svg class="balloon" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
   <g transform="translate(0,1268) scale(0.1,-0.1)" fill="#1E1E1E" stroke="none">
     <path d="M2895 12494 c-190 -42 -326 -131 -629 -412 l-130 -119 -70 -13 c-124
     -22 -337 -77 -461 -120 -242 -84 -433 -192 -579 -331 -216 -204 -329 -446

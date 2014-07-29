@@ -105,6 +105,15 @@ class Meetup
         return $this->events;
     }
 
+    public function getEvent($id)
+    {
+        $events = $this->getEvents();
+
+        if (array_key_exists($id, $events)) {
+            return $events[$id];
+        }
+    }
+
     public function getDraftEvents()
     {
         return array_reverse(

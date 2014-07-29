@@ -1,9 +1,7 @@
 <div id="events">
-    {{ meetup.group.description | default | raw }}
-
     {% if next_event %}
         <h2>Next event</h2>
-        {{ include('meetup/event.html.twig', {'event': next_event}) }}
+        {{ include('meetup/event-list-item.html.twig', {'event': next_event}) }}
     {% endif %}
 
     {% for status in statuses if attribute(_context, status ~ '_events') or status == 'upcoming' %}
@@ -12,7 +10,7 @@
                 <h2>{{ status | title }} events</h2>
 
                 {% for event in attribute(_context, status ~ '_events') %}
-                    {{ include('meetup/event.html.twig') }}
+                    {{ include('meetup/event-list-item.html.twig') }}
                 {% else %}
                     {% if status == 'upcoming' %}
                         <div class="box box--empty">
