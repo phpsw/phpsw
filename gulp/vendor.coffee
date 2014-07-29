@@ -3,10 +3,7 @@ g = module.parent.exports
 g.task "vendor", -> g.start "vendor-css", "vendor-js"
 
 g.task "vendor-css", ["bower"], ->
-  g.src [
-    "web/vendor/**/*.css"
-    "web/vendor/**/*.css"
-  ]
+  g.src ["styles/vendor.scss", "web/vendor/**/*.css"]
     .pipe g.css()
     .pipe g.p.concat "vendor.css"
     .pipe g.dest "web/css"
