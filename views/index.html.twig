@@ -1,18 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
+
   <div class="row">
     <div class="col-sm-8">
+  <div class="page-header">
+    <h1>PHP meetups in the south west, UK</h1>
+  </div>
       {{ meetup.group.description | raw }}
       <!-- {{ render(path('tweets')) }} -->
       <!-- {{ render(path('meetup_reviews')) }} -->
     </div>
 
     <div class="col-sm-4">
-      <a href="{{ app.meetup.url }}" class="btn btn-primary navbar-btn" style="margin: 8px">
-        Join group
-      </a>
-
       {{ render(path('meetup_sponsors')) }}
     </div>
   </div>
