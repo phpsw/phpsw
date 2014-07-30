@@ -10,6 +10,52 @@
   }
 }
 
+.event__stats {
+  margin: -20px 0 20px;
+  font-size: 0;
+  overflow: hidden;
+
+  .event__stats__stat {
+    display: inline-block;
+    position: relative;
+    background: #eee;
+    padding: 2px 8px;
+    font-size: $font-size-base;
+    color: inherit;
+
+    &:first-child {
+      border-bottom-left-radius: 1em;
+      padding-left: 16px;
+
+      &:before, &:after {
+        position: absolute;
+        display: block;
+        top: 0;
+        content: '';
+      }
+
+      &:before {
+        background: #eee;
+        left: -1em;
+        width: 1em;
+        height: 1em;
+      }
+
+      &:after {
+        background: white;
+        border-radius: 1.5em;
+        left: -3em;
+        width: 3em;
+        height: 3em;
+      }
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 4px;
+    }
+  }
+}
+
 .event__attendees {
   li {
     margin: 0 2px 4px;

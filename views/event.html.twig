@@ -3,33 +3,31 @@
 {% block main %}
   <article id="event-{{ event.id }}" class="event event--{{ event.status }}">
     <div class="container">
-      <header class="event__header">
-        <h1>
-          {{ event.name }}
+      <header class="page-header event__header">
+        <div class="row">
+          <div class="col-xs-9">
+            <h1>
+              {{ event.name }}
 
-          <small>
-            {{ event.date.format('F Y') }}
-          </small>
-        </h1>
+              <small>
+                {{ event.date.format('F Y') }}
+              </small>
+            </h1>
+          </div>
 
-        <a href="{{ event.url }}" class="btn btn-primary">
-          {% if event.status == 'upcoming' %}
-            RSVP
-          {% else %}
-            View on Meetup
-          {% endif %}
-        </a>
+          <div class="col-xs-3 text-right">
+            <time class="calendar-date" datetime="{{ event.date.format(constant('DATE_W3C')) }}">
+               <span class="calendar-date__month">{{ event.date.format('M') }}</span>
+               <span class="calendar-data__day">{{ event.date.format('d') }}</span>
+            </time>
+          </div>
+        </div>
+      </header>
 
-        <a href="#event-{{ event.id }}" class="event-date">
-          <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
-            {{ event.date.format('j') }}
-            <span>{{ event.date.format('M') }}</span>
-          </time>
-        </a>
-
-        <div>
+      {% if event.yes_rsvp_count > 0 or event.rating is defined and event.rating.average > 3 %}
+        <div class="event__stats text-right">
           {% if event.yes_rsvp_count > 0 %}
-            <span>
+            <a href="#attendees" class="event__stats__stat">
               <span class="glyphicon glyphicon-user"></span>
               {{ event.yes_rsvp_count }}
 
@@ -38,21 +36,34 @@
               {% else %}
                 attended
               {% endif %}
-            </span>
+            </a>
           {% endif %}
 
           {% if event.rating is defined and event.rating.average > 3 %}
-            <span>
+            <span class="event__stats__stat">
               <span class="glyphicon glyphicon-thumbs-up"></span>
               {{ event.rating.average | round(1) }}/5 by {{ event.rating.count }} {{ event.group.who | lower }}
             </span>
           {% endif %}
         </div>
-      </header>
+      {% endif %}
 
       <div class="event__body">
-        <div class="event__description">
-          {{ event.description | raw }}
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="event__description">
+              {{ event.description | raw }}
+            </div>
+          </div>
+          <div class="col-sm-3 text-right">
+            <a href="{{ event.url }}" class="btn btn-primary">
+              {% if event.status == 'upcoming' %}
+                RSVP
+              {% else %}
+                View on Meetup
+              {% endif %}
+            </a>
+          </div>
         </div>
 
         {% if event.talks %}
@@ -124,7 +135,7 @@
       </div>
     {% endif %}
 
-    <div class="container">
+    <div id="attendees" class="container">
       {% if event.rsvps is defined %}
         <h2>Attendees</h2>
 

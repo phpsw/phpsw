@@ -9,12 +9,5 @@
                 {{ event.date.format('F Y') }}
             </small>
         </h3>
-
-        <a href="#event-{{ event.id }}" class="event-date">
-            <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
-                {{ event.date.format('j') }}
-                <span>{{ event.date.format('M') }}</span>
-            </time>
-        </a>
     </header>
 </article>
