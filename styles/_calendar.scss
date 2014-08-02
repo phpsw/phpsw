@@ -1,31 +1,31 @@
 $size: 60px;
 
 .calendar-date {
-    display: inline-block;
-    width: $size;
-    height: $size;
-    text-align: center;
-    font-weight: bold;
+  display: inline-block;
+  width: $size;
+  height: $size;
+  text-align: center;
+  font-weight: bold;
 }
 
 .calendar-date__month {
-    background: rgb(224, 57, 62);
-    border-radius: 3px 3px 0 0;
-    display: block;
-    height: $size / 2.5;
-    font-size: $size / 4.25;
-    line-height: $size / 2.25;
-    color: white;
-    text-transform: uppercase;
+  background: rgb(224, 57, 62);
+  border-radius: 3px 3px 0 0;
+  display: block;
+  height: $size / 2.5;
+  font-size: $size / 4.25;
+  line-height: $size / 2.25;
+  color: white;
+  text-transform: uppercase;
 }
 
 .calendar-data__day {
-    background: white;
-    border: $size / 40 solid rgb(221, 221, 221);
-    border-top: 0;
-    display: block;
-    height: $size / 1.75;
-    font-size: $size / 2.5;
-    line-height: $size / 1.75;
-    color: rgb(85, 85, 85);
+  background: white;
+  border: $size / 40 solid rgb(221, 221, 221);
+  border-top: 0;
+  display: block;
+  height: $size / 1.75;
+  font-size: $size / 2.5;
+  line-height: $size / 1.75;
+  color: rgb(85, 85, 85);
 }
