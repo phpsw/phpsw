@@ -1,3 +1,5 @@
+$color: desaturate($brand-primary, 30%);
+
 .balloons {
   position: absolute;
   top: 0;
@@ -30,7 +32,7 @@
   top: 10px;
   right: 175px;
 
-  path { fill: #dedede }
+  path { fill: lighten($color, 45%); }
 }
 
 .balloon--medium {
@@ -39,7 +41,7 @@
   top: 10px;
   right: 10px;
 
-  path { fill: #cdcdcd }
+  path { fill: lighten($color, 40%); }
 }
 
 .balloon--large {
@@ -48,5 +50,5 @@
   top: 30px;
   right: 75px;
 
-  path { fill: #bbb }
+  path { fill: lighten($color, 30%); }
 }
