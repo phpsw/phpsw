@@ -71,7 +71,7 @@
         </div>
 
         {% if event.talks %}
-          <div class="event__talks">
+          <div id="talks" class="event__talks">
             <h2>Talks</h2>
 
             <ul class="list">
@@ -166,7 +166,7 @@
 
     <div id="attendees" class="container">
       {% if event.rsvps is defined %}
-        <h2>Attendees</h2>
+        <h2 id="attendees">Attendees</h2>
 
         <ul class="event__attendees list list--images list--inline">
           {% for rsvp in event.rsvps if rsvp.response == 'yes' %}
@@ -186,7 +186,7 @@
             event.date > date('2014-08-01')
       %}
         <footer class="event__footer">
-          <h2>Sponsors</h2>
+          <h2 id="sponsors">Sponsors</h2>
 
           <div class="sponsors row">
             {% if 'basekit' in event.venue.name | lower %}
