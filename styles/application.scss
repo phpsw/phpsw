@@ -10,18 +10,20 @@ img {
 }
 
 @import "variables";
+
+@import "layout";
+@import "hero";
+@import "js";
+@import "lightbox";
+@import "lists";
+@import "logo";
+@import "nav";
+
 @import "avatars";
 @import "balloons";
 @import "calendar";
 @import "contact";
 @import "events";
-@import "hero";
-@import "js";
-@import "layout";
-@import "lightbox";
-@import "lists";
-@import "logo";
-@import "nav";
 @import "organisers";
 @import "progress";
 @import "speakers";

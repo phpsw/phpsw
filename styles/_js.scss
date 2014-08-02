@@ -1,6 +1,13 @@
-.read-less {
-    display: block;
-    margin: 1em 0;
+@mixin js {
+    .js & {
+        @content;
+    }
+}
+
+@mixin no-js {
+    .js & {
+        @content;
+    }
 }
 
 .js-hide {

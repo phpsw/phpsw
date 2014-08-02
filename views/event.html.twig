@@ -142,15 +142,20 @@
 
     {% if event.venue %}
       <div
-        class="event__location"
+        id="venue" class="event__venue"
         {% if (event.venue.lat) %}data-latitude="{{ event.venue.lat }}"{% endif %}
         {% if (event.venue.lon) %}data-longitude="{{ event.venue.lon }}"{% endif %}
+        style="background-image: url('{{
+            'http://maps.googleapis.com/maps/api/staticmap?markers='
+            ~ event.venue.lat ~ ',' ~ event.venue.lon ~
+            '&scale=2&size=640x320&zoom=16'
+        }}')"
       >
-        <div class="event__location__venue">
+        <div class="event__venue__overlay">
           <h2>Venue</h2>
 
-          <p>
-            <strong class="event__location__venue__name">{{ event.venue.name }}</strong>,<br>
+          <p class="event__venue__address">
+            <strong class="event__venue__name">{{ event.venue.name }}</strong>,<br>
             {{ event.venue.address_1 | trim }},<br>
             {{ event.venue.city }}
           </p>
