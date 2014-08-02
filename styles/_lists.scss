@@ -4,33 +4,21 @@
   padding: 0;
 }
 
-.list--icons li {
-    margin-bottom: .5em;
-}
-
-.list--icons li:last-child {
-    margin-bottom: 0;
-}
-
-.list--icons li a {
-    line-height: 32px;
-}
-
-.list--icons li .genericon:before {
-    width: 32px;
-    height: 32px;
-    font-size: 32px;
-}
-
-.list--inline li {
-    display: inline-block;
-}
-
 .list--images {
   font-size: 0;
 
   li {
     font-size: $font-size-base;
     margin: 0 5px 5px 0;
+
+    img {
+      border-radius: 2px;
+    }
+  }
+}
+
+.list--inline {
+  li {
+    display: inline-block;
   }
 }
