@@ -3,10 +3,33 @@
   height: 70px;
 }
 
+.logo__sw {
+  animation: kaboom 2s linear;
+  transform-origin: 50% 50%;
+  transform: scale(1.0);
+  transition: transform .25s linear;
+
+  .logo:hover &, .logo:focus & {
+    transform: scale(1.05);
+  }
+}
+
 .logo__sw__rhomboid {
   fill: $brand-primary;
 
   .logo:hover &, .logo:focus & {
     fill: darken($brand-primary, 10%);
+  }
+}
+
+@keyframes kaboom {
+  0% {
+    transform: scale(1.0);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1.0);
   }
 }
