@@ -31,15 +31,15 @@
     {{ include('nav.html.twig') }}
 
     <main>
-      {% block main %}
-        {% if block('hero') %}
-          <div class="hero">
-            <div class="hero__image" style="background-image: url('{{ block('hero') | trim }}')">
-            </div>
-            <div class="hero__overlay"></div>
+      {% if block('hero') | trim %}
+        <div class="hero">
+          <div class="hero__image" style="background-image: url('{{ block('hero') | trim }}')">
           </div>
-        {% endif %}
+          <div class="hero__overlay"></div>
+        </div>
+      {% endif %}
 
+      {% block main %}
         <div class="container">
           {{ block('content') }}
         </div>
