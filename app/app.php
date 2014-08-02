@@ -56,6 +56,6 @@ $app
     ->value('user', $app['twitter']['user'])
 ;
 
-$app->register(new Silex\Provider\UrlGeneratorServiceProvider);
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
 return $app;
