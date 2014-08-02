@@ -13,5 +13,30 @@
     <h1>Events</h1>
   </div>
 
-  {{ render(path('meetup_events')) }}
+  {% if next_event %}
+    <h2>Next event</h2>
+    {{ include('meetup/event-list-item.html.twig', {'event': next_event}) }}
+  {% endif %}
+
+  {% for status in statuses if attribute(_context, status ~ '_events') or status == 'upcoming' %}
+    {% if not loop.first or status != 'upcoming' %}
+      <section id="{{ status }}-events" class="events events--{{ status }}">
+        <h2>{{ status | title }} events</h2>
+
+        {% for event in attribute(_context, status ~ '_events') %}
+          {{ include('meetup/event-list-item.html.twig') }}
+        {% else %}
+          {% if status == 'upcoming' %}
+            <div class="box box--empty">
+              Nothing to announce right now,
+              <a href="{{ app.twitter.url }}">
+                follow us on Twitter
+              </a>
+              for updates.
+            </div>
+          {% endif %}
+        {% endfor %}
+      </section>
+    {% endif %}
+  {% endfor %}
 {% endblock %}
