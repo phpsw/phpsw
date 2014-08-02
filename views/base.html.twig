@@ -28,17 +28,17 @@
       </div>
     </header>
 
-    <main>
-      {{ include('nav.html.twig') }}
+    {{ include('nav.html.twig') }}
 
-      {% if block('hero') %}
-        <div class="hero">
-          <div class="hero__image" style="background-image: url('{{ block('hero') | trim }}')">
-          </div>
-          <div class="hero__overlay"></div>
+    {% if block('hero') %}
+      <div class="hero">
+        <div class="hero__image" style="background-image: url('{{ block('hero') | trim }}')">
         </div>
-      {% endif %}
+        <div class="hero__overlay"></div>
+      </div>
+    {% endif %}
 
+    <main>
       {% block main %}
         <div class="container">
           {{ block('content') }}
