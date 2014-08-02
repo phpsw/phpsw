@@ -18,7 +18,7 @@
       <h2>Communities</h2>
 
       <ul class="list list--inline list--images">
-        {% for community in communities %}
+        {% for community in app.communities %}
           <li>
             <a href="{{ community.url }}" title="{{ community.name }}">
               <img src="/images/community/{{ community.logo }}.png" alt="{{ community.name }}" width="80" height="60">
