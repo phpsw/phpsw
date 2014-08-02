@@ -11,7 +11,7 @@ phpsw =
 
   pjax: ->
     $(document)
-      .pjax 'a', 'main', fragment: 'main'
+      .pjax 'a', 'main', fragment: 'main', timeout: 10000
       .on 'pjax:success', => @modules()
 
   nprogress: ->
