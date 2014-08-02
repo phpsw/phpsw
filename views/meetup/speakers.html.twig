@@ -1,9 +1,10 @@
 {% if speakers %}
     <section id="speakers" class="speakers">
-        <div class="row">
-        <ul class="list">
+        <h2>Alumni</h2>
+
+        <ul class="list list--inline">
             {% for speaker in speakers %}
-                <li class="col-xs-4 col-sm-2" style="margin: 20px 0; text-align: center">
+                <li>
                     {% if speaker.url is defined %}
                         <a
                             href="{{ speaker.url }}"
@@ -45,6 +46,5 @@
                 </li>
             {% endfor %}
         </ul>
-        </div>
     </section>
 {% endif %}
