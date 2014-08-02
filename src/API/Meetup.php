@@ -88,6 +88,13 @@ class Meetup
                 function ($event) {
                     $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
 
+                    // TODO: remove once updated in Redis
+                    if (!isset($event->slug)) {
+                        $event->slug = $this->app['slugify']->slugify(
+                            preg_replace('#\s*&\s#', ' and ', $event->name)
+                        );
+                    }
+
                     if ($this->cli && !$this->debug || !$this->cli && $this->debug) {
                         $event = $this->parse($event);
                     }
@@ -338,6 +345,10 @@ class Meetup
                 } else {
                     $event->description = null;
                 }
+
+                $event->slug = $this->app['slugify']->slugify(
+                    preg_replace('#\s*&\s#', ' and ', $event->name)
+                );
 
                 $event->photos = iterator_to_array($this->client->getPhotos(['event_id' => $event->id]));
                 $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));

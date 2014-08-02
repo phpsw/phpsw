@@ -4,6 +4,7 @@ namespace PHPSW\Controller;
 
 use Silex\Application,
     Symfony\Component\HttpFoundation\Request,
+    Symfony\Component\HttpFoundation\RedirectResponse,
     Symfony\Component\HttpFoundation\Response;
 
 class AppController
@@ -39,17 +40,24 @@ class AppController
         ]);
     }
 
-    public function eventAction(Application $app, Request $request, $id)
+    public function eventAction(Application $app, Request $request, $id, $slug)
     {
         $event = $app['meetup.client']->getEvent($id);
 
         if (!$event) {
             throw new \Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+        } elseif ($slug != $event->slug) {
+            $response = new RedirectResponse(
+                $app->path('event', ['id' => $id, 'slug' => $event->slug]),
+                301
+            );
+        } else {
+            $response = $this->render($app, 'event.html.twig', [
+                'event' => $event
+            ]);
         }
 
-        return $this->render($app, 'event.html.twig', [
-            'event' => $event
-        ]);
+        return $response;
     }
 
     public function speakersAction(Application $app, Request $request)

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4ae11825b4cbe9e0c465876c7226d4ef",
+    "hash": "8896678fa0b674f3888e1d5f2ce01318",
     "packages": [
         {
             "name": "borisguery/inflexible",
@@ -55,6 +55,62 @@
                 "utility"
             ],
             "time": "2013-06-17 12:50:41"
+        },
+        {
+            "name": "cocur/slugify",
+            "version": "v0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/slugify.git",
+                "reference": "a5a64066d6857174225ac857e615cfc3c308091a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/a5a64066d6857174225ac857e615cfc3c308091a",
+                "reference": "a5a64066d6857174225ac857e615cfc3c308091a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~3.7",
+                "sami/sami": "~1.3",
+                "satooshi/php-coveralls": "dev-master",
+                "silex/silex": "~1.2",
+                "symfony/dependency-injection": "~2.4",
+                "symfony/http-kernel": "~2.4",
+                "twig/twig": "~1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\Slugify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
+                },
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "http://florian.ec",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Converts a string into a slug.",
+            "keywords": [
+                "slug",
+                "slugify"
+            ],
+            "time": "2014-05-29 09:51:57"
         },
         {
             "name": "dg/twitter-php",
@@ -1512,6 +1568,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "borisguery/inflexible": 20,
+        "cocur/slugify": 0,
         "doctrine/inflector": 20,
         "knplabs/console-service-provider": 20
     },

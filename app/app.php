@@ -34,7 +34,7 @@ foreach (['app', $app['env'], 'secrets'] as $config) {
 $app->get('/', 'PHPSW\Controller\AppController::indexAction')->bind('home');
 $app->get('/brand', 'PHPSW\Controller\AppController::brandAction')->bind('brand');
 $app->get('/events', 'PHPSW\Controller\AppController::eventsAction')->bind('events');
-$app->get('/events/{id}', 'PHPSW\Controller\AppController::eventAction')->bind('event');
+$app->get('/events/{id}-{slug}', 'PHPSW\Controller\AppController::eventAction')->bind('event');
 $app->get('/speakers', 'PHPSW\Controller\AppController::speakersAction')->bind('speakers');
 $app->get('/sponsors', 'PHPSW\Controller\AppController::sponsorsAction')->bind('sponsors');
 $app->get('/meetup/events', 'PHPSW\Controller\MeetupController::eventsAction')->bind('meetup_events');
@@ -56,6 +56,7 @@ $app
     ->value('user', $app['twitter']['user'])
 ;
 
+$app->register(new Cocur\Slugify\Bridge\Silex\SlugifyServiceProvider());
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
 return $app;

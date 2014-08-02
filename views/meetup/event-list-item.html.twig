@@ -1,7 +1,7 @@
 <article id="event-{{ event.id }}" class="event event--{{ event.status }}">
     <header class="event__header">
         <h3>
-            <a href="{{ path('event', {id: event.id}) }}">
+            <a href="{{ path('event', {id: event.id, slug: event.slug}) }}">
                 {{- event.name -}}
             </a>
 
