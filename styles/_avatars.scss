@@ -1,18 +1,40 @@
 .avatar {
-    border-radius: 20px;
+  transform: translateZ(0);
+  overflow: hidden;
+
+  img {
     width: 40px;
     height: 40px;
-    margin-right: 5px;
-    vertical-align: middle;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform .25s ease-in-out;
+  }
 
-    &.avatar--small {
-        width: 40px;
-        height: 40px;
-    }
+  &.avatar--small {
+    border-radius: 20px;
 
-    &.avatar--large {
-        border-radius: 40px;
-        width: 80px;
-        height: 80px;
+    img {
+      width: 40px;
+      height: 40px;
     }
+  }
+
+  &.avatar--large {
+    border-radius: 40px;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+a {
+  &:hover, &:focus {
+    .avatar {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
 }

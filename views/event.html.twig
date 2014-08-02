@@ -72,43 +72,41 @@
 
             <ul class="list">
               {% for talk in event.talks %}
-                <li id="talk-{{ talk.id }}">
-                  <p>
-                    <strong>
-                      {% if talk.slides %}
-                        <a href="{{ talk.slides }}">
-                          {{ talk.title }}
-                        </a>
-                      {% else %}
+                <li id="talk-{{ talk.id }}" class="talk">
+                  <h3>
+                    {% if talk.slides %}
+                      <a href="{{ talk.slides }}">
                         {{ talk.title }}
-                      {% endif %}
-                    </strong>
-
-                    <br>
-
-                    {% if talk.speaker.url is defined %}
-                      <a
-                        href="{{ talk.speaker.url }}"
-                        {% if talk.speaker.member.bio is defined %}
-                          title="{{ talk.speaker.member.bio }}"
-                        {% endif %}
-                      >
-                        {%- if talk.speaker.photo is defined -%}
-                          <img src="{{ talk.speaker.photo.thumb_link }}" class="avatar avatar--small" alt="{{ talk.speaker.name }}">
-                        {%- endif -%}
-
-                        {%- spaceless -%}
-                          <span class="fn">{{ talk.speaker.name }}</span>
-                        {%- endspaceless -%}
                       </a>
-                    {%- else -%}
-                      {{ talk.speaker.name }}
-                    {%- endif -%}
-
-                    {%- if talk.speaker.bio is defined -%}
-                      , {{ talk.speaker.bio | raw }}
+                    {% else %}
+                      {{ talk.title }}
                     {% endif %}
-                  </p>
+                  </h3>
+
+                  {% if talk.speaker.url is defined %}
+                    <a
+                      href="{{ talk.speaker.url }}"
+                      {% if talk.speaker.member.bio is defined %}
+                        title="{{ talk.speaker.member.bio }}"
+                      {% endif %}
+                    >
+                      {%- if talk.speaker.photo is defined -%}
+                        <div class="avatar avatar--small">
+                          <img src="{{ talk.speaker.photo.thumb_link }}" alt="{{ talk.speaker.name }}">
+                        </div>
+                      {%- endif -%}
+
+                      {%- spaceless -%}
+                        <span class="fn">{{ talk.speaker.name }}</span>
+                      {%- endspaceless -%}
+                    </a>
+                  {%- else -%}
+                    {{ talk.speaker.name }}
+                  {%- endif -%}
+
+                  {%- if talk.speaker.bio is defined -%}
+                    , {{ talk.speaker.bio | raw }}
+                  {% endif %}
                 </li>
               {% endfor %}
             </ul>
@@ -139,11 +137,13 @@
       {% if event.rsvps is defined %}
         <h2>Attendees</h2>
 
-        <ul class="event__attendees list list--inline">
+        <ul class="event__attendees list list--images list--inline">
           {% for rsvp in event.rsvps if rsvp.response == 'yes' %}
             <li>
               <a href="{{ app.meetup.url }}/members/{{ rsvp.member.member_id }}" class="event__attendee" title="{{ rsvp.member.name }}">
-                <img src="{{ rsvp.member_photo.thumb_link }}" class="avatar avatar--small" alt="{{ rsvp.member.name }}">
+                <div class="avatar avatar--small">
+                  <img src="{{ rsvp.member_photo.thumb_link }}" alt="{{ rsvp.member.name }}">
+                </div>
               </a>
             </li>
           {% endfor %}

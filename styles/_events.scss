@@ -1,10 +1,6 @@
 .event {
   position: relative;
 
-  h3 {
-    padding-right: 2em;
-  }
-
   &.event--upcoming {
     background: white;
   }
@@ -97,10 +93,16 @@
 .event__talks {
   padding: 1em 0;
 
+  h3 {
+    margin: 0;
+  }
+
   ul {
-      padding: 1em 0 1em 4em;
+    padding-left: 4em;
+
     li {
       position: relative;
+      margin: 1em 0;
     }
   }
 
