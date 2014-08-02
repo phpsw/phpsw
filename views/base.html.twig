@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ app.title }}</title>
+    <title>{{ block('title') ? block('title') ~ ' · ' }}{{ app.title }}</title>
     <meta name="description" content="{{ app.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -31,6 +31,14 @@
     <main>
       {{ include('nav.html.twig') }}
 
+      {% if block('hero') %}
+        <div class="hero">
+          <div class="hero__image" style="background-image: url('{{ block('hero') | trim }}')">
+          </div>
+          <div class="hero__overlay"></div>
+        </div>
+      {% endif %}
+
       {% block main %}
         <div class="container">
           {{ block('content') }}
@@ -42,47 +50,36 @@
       <div class="container">
         <nav>
           <ul class="list col-xs-3">
-            <li>
-              <a href="{{ path('home') }}">
-                <span class="glyphicon glyphicon-home"></span>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="{{ path('events') }}">
-                <span class="glyphicon glyphicon-calendar"></span>
-                Events
-              </a>
-            </li>
-            <li>
-              <a href="{{ path('speakers') }}">
-                <span class="glyphicon glyphicon-comment"></span>
-                Speakers
-              </a>
-            </li>
-            <li>
-              <a href="{{ path('sponsors') }}">
-                <span class="glyphicon glyphicon-briefcase"></span>
-                Sponsors
-              </a>
-            </li>
+            <li><a href="{{ path('home') }}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="{{ path('events') }}"><span class="glyphicon glyphicon-calendar"></span> Events</a></li>
+            <li><a href="{{ path('speakers') }}"><span class="glyphicon glyphicon-comment"></span> Speakers</a></li>
+            <li><a href="{{ path('sponsors') }}"><span class="glyphicon glyphicon-briefcase"></span> Sponsors</a></li>
           </ul>
 
           <ul class="list col-xs-3">
             <li>
-              <a href="mailto:steve at stevelacey dot net">
+              <a
+                href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}"
+                class="email"
+              >
                 <span class="glyphicon glyphicon-envelope"></span>
                 Get in touch
               </a>
             </li>
             <li>
-              <a href="mailto:steve at stevelacey dot net">
+              <a
+                href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
+                class="email"
+              >
                 <span class="glyphicon glyphicon-comment"></span>
                 Submit a talk
               </a>
             </li>
             <li>
-              <a href="mailto:steve at stevelacey dot net">
+              <a
+                href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=PHPSW sponsorship"
+                class="email"
+              >
                 <span class="glyphicon glyphicon-briefcase"></span>
                 Sponsor us
               </a>

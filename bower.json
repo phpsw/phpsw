@@ -4,11 +4,12 @@
     "bootstrap-sass-official": "~3.1.1",
     "gmaps": "~0.4.12",
     "jquery-expander": "~1.4.8",
-    "jquery-timeago": "~1.4.1"
+    "jquery-timeago": "~1.4.1",
+    "modernizr": "~2.8.3"
   },
   "overrides": {
-    "jquery": {
-      "main": "dist/jquery.min.js"
+    "modernizr": {
+      "main": "modernizr.js"
     }
   },
   "private": true

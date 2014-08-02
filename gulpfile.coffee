@@ -1,4 +1,5 @@
 g = module.exports = require("gulp")
+g.b = require("main-bower-files");
 g.e = process.env.NODE_ENV || "dev"
 g.p = require("gulp-load-plugins")()
 g.q = require("q")

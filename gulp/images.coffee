@@ -3,8 +3,25 @@ g = module.parent.exports
 g.task "images", ->
   deferred = g.q.defer()
 
-  g.src "images/**/*.png"
-    .pipe g.p.imagemin().on 'end', -> deferred.resolve()
+  community = g.p.filter "**/community/*"
+  sponsors = g.p.filter "**/sponsors/*"
+
+  g.src "images/**/*.{gif,jpg,jpeg,png}"
+    .pipe community
+    .pipe g.p.gm (gm) ->
+      gm
+        .background 'transparent'
+        .gravity 'Center'
+        .resize 80, 60
+        .extent 80, 60
+        .transparent 'white'
+        .setFormat 'png'
+    .pipe community.restore()
+
+    .pipe g.p.imagemin()
+      .on 'end', -> deferred.resolve()
+      .on 'error', g.p.util.log
+
     .pipe g.dest "web/images"
     .pipe g.reload()
 

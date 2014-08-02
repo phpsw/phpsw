@@ -11,6 +11,7 @@ g.task "vendor-css", ["bower"], ->
 
 g.task "vendor-js", ["bower"], ->
   g.src [
+      "web/vendor/modernizr/**/*.js",
       "web/vendor/jquery/**/*.js",
       "web/vendor/jquery-*/**/*.js",
       "web/vendor/**/bootstrap/**/affix.js",

@@ -63,7 +63,10 @@
             </a>
           </li>
           <li>
-            <a href="mailto:steve at stevelacey dot net" class="genericon genericon-comment">
+            <a
+              href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
+              class="genericon genericon-comment email"
+            >
               <span>Submit a talk</span>
             </a>
           </li>

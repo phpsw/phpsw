@@ -4,11 +4,11 @@
             <h2>Photos</h2>
         </header>
 
-        <ul class="list list--inline">
+        <ul class="list list--inline list--images">
             {% for photo in photos %}
                 <li>
                     <a href="#photo-{{ photo.photo_id }}" class="photo">
-                      <img src="{{ photo.thumb_link }}" alt="">
+                      <img src="{{ photo.thumb_link }}" alt="" width="80" height="60">
                     </a>
 
                     <!-- lightbox container hidden with CSS -->

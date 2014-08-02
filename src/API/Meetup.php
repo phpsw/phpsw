@@ -339,6 +339,7 @@ class Meetup
                     $event->description = null;
                 }
 
+                $event->photos = iterator_to_array($this->client->getPhotos(['event_id' => $event->id]));
                 $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));
                 $event->talks = [];
                 $event->url = $event->event_url;

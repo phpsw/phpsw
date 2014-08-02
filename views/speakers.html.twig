@@ -1,5 +1,13 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}
+  Speakers
+{% endblock %}
+
+{% block hero %}
+  http://photos1.meetupstatic.com/photos/event/8/4/8/c/highres_366333932.jpeg
+{% endblock %}
+
 {% block content %}
   <div class="page-header">
     <h1>Speakers</h1>
@@ -13,7 +21,10 @@
     <div class="col-sm-4">
       <h2>Interested in speaking?</h2>
 
-      <a href="{{ app.meetup.url }}" class="btn btn-primary">
+      <a
+        href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
+        class="btn btn-primary email"
+      >
         Submit a talk
       </a>
     </div>

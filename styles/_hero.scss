@@ -1,0 +1,33 @@
+.hero {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+
+    @media (min-width: $screen-sm-min) {
+        height: 350px;
+    }
+}
+
+.hero__image {
+    background: {
+      position: 50% 50%;
+      size: cover;
+    }
+    box-shadow: inset 0 -20px 100px rgba(black, .25);
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    top: -20%;
+    left: 0;
+}
+
+.hero__overlay {
+    background: rgba(black, 0);
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

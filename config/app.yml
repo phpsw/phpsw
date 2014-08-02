@@ -1,9 +1,9 @@
 name: PHPSW
-title: PHPSW - South West UK PHP User Group
+title: PHPSW · South West UK PHP User Group
 description: PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.
 
 organisers:
-    -
+    ade:
         name: Ade Slade
         first_name: Ade
         email: adeslade@gmail.com
@@ -11,7 +11,7 @@ organisers:
         github: adeslade
         twitter: adeslade
         url: http://adeslade.co.uk
-    -
+    steve:
         name: Steve Lacey
         first_name: Steve
         email: steve@stevelacey.net
