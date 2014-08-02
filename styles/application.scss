@@ -9,14 +9,6 @@ img {
   max-width: 100%;
 }
 
-.photo img {
-  border-radius: 2px;
-}
-
-#nprogress .bar {
-  background: $brand-primary;
-}
-
 @import "variables";
 @import "avatars";
 @import "balloons";
@@ -31,5 +23,6 @@ img {
 @import "logo";
 @import "nav";
 @import "organisers";
+@import "progress";
 @import "speakers";
 @import "sponsors";
