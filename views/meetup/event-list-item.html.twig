@@ -12,6 +12,6 @@
       </small>
     </h3>
 
-    {{ event.description | striptags | raw | truncate(200) }}
+    {{ event.description | striptags | truncate(200) | raw }}
   </header>
 </article>
