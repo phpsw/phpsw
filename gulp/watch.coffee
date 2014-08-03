@@ -10,3 +10,4 @@ g.task "watch", ->
     g.watch "scripts/**/*.coffee", ["scripts"]
     g.watch "styles/**/*.scss", ["styles"]
     g.watch "{app,config,views}/**/*", ["views"]
+    g.watch "styles/_variables.scss", ["vendor-css"]
