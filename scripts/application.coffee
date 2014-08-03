@@ -15,7 +15,9 @@ phpsw =
       .pjax 'a:not([href*="images"])', '.content',
         fragment: '.content',
         timeout: 10000
-      .on 'pjax:success', => @modules()
+      .on 'pjax:success', =>
+          $('.navbar-toggle').addClass('collapsed')
+          @modules()
 
   nprogress: ->
     NProgress.configure

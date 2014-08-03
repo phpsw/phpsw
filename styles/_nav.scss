@@ -8,33 +8,85 @@
 }
 
 .navbar-toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-base / 1.75;
+  transition: .25s;
 
-    .genericon {
+  .lines {
+    background: transparent;
+    position: relative;
+
+    &, &:before, &:after {
+      display: inline-block;
+      width: 4em;
+      height: .6em;
+      border-radius: .25em;
+      transition: .25s;
+    }
+
+    &:before, &:after {
+      background: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      transform-origin: 50% 50%;
+    }
+
+    &:before {
+      transform: rotate3d(0, 0, 1, 45deg);
+    }
+
+    &:after {
+      transform: rotate3d(0, 0, 1, -45deg);
+    }
+  }
+
+  &.collapsed {
+    transform: none;
+
+    .lines {
+      background: black;
+
+      &:before, &:after {
+        transform-origin: .25em center;
+      }
+
+      &:before {
+        top: 1em;
+        transform: none;
+      }
+
+      &:after {
+        top: -1em;
+        transform: none;
+      }
+    }
+
+    &:hover, &:focus {
+      opacity: 1;
+
+      .lines {
         &:before {
-            font-size: $font-size-base * 1.5;
-        }
-    }
-
-    .genericon-menu {
-        display: none;
-    }
-
-    .genericon-close-alt {
-        display: block;
-    }
-
-    &.collapsed {
-        .genericon-menu {
-            display: block;
+          top: 1.14286em;
         }
 
-        .genericon-close-alt {
-            display: none;
+        &:after {
+          top: -1.14286em;
         }
+      }
     }
+
+    &:active {
+      transition: 0;
+    }
+  }
 }
+
+
