@@ -1,0 +1,29 @@
+<header class="header">
+  <div class="container">
+    <h1>
+      <a href="{{ path('home') }}">
+        <span class="sr-only">{{ app.name }}</span>
+        {{ include('logo.svg.twig') }}
+      </a>
+    </h1>
+
+    <div class="balloons">
+      {{ include('balloon.svg.twig', {size: 'small'}) }}
+      {{ include('balloon.svg.twig', {size: 'large'}) }}
+      {{ include('balloon.svg.twig', {size: 'medium'}) }}
+    </div>
+
+    <div class="js-nav-toggle js-shown">
+      <button
+        class="navbar-toggle collapsed"
+        aria-label="Toggle Navigation"
+        data-target="#nav"
+        data-toggle="collapse"
+        type="button"
+        role="button"
+      >
+        <span class="lines"></span>
+      </button>
+    </div>
+  </div>
+</header>

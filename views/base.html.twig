@@ -12,35 +12,7 @@
     <link rel="stylesheet" href="/rev/{{ 'now' | date('YmdHi') }}/css/main.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <h1>
-          <a href="{{ path('home') }}">
-            <span class="sr-only">{{ app.name }}</span>
-            {{ include('logo.svg.twig') }}
-          </a>
-        </h1>
-
-        <div class="balloons">
-          {{ include('balloon.svg.twig', {size: 'small'}) }}
-          {{ include('balloon.svg.twig', {size: 'large'}) }}
-          {{ include('balloon.svg.twig', {size: 'medium'}) }}
-        </div>
-
-        <div class="js-nav-toggle js-shown">
-          <button
-            class="navbar-toggle collapsed"
-            aria-label="Toggle Navigation"
-            data-target="#nav"
-            data-toggle="collapse"
-            type="button"
-            role="button"
-          >
-            <span class="lines"></span>
-          </button>
-        </div>
-      </div>
-    </header>
+    {{ include('header.html.twig') }}
 
     <div class="content">
       {{ include('nav.html.twig') }}
@@ -68,100 +40,7 @@
       </main>
     </div>
 
-    <footer class="footer">
-      <div class="container">
-        <nav>
-          <ul class="list col-xs-4 col-sm-3">
-            <li>
-              <a href="{{ path('home') }}">
-                <i class="fa fa-home"></i>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="{{ path('events') }}">
-                <i class="fa fa-calendar"></i>
-                Events
-              </a>
-            </li>
-            <li>
-              <a href="{{ path('speakers') }}">
-                <i class="fa fa-bullhorn"></i>
-                Speakers
-              </a>
-            </li>
-            <li>
-              <a href="{{ path('sponsors') }}">
-                <i class="fa fa-briefcase"></i>
-                Sponsors
-              </a>
-            </li>
-          </ul>
-
-          <ul class="list col-xs-4 col-sm-3">
-            <li>
-              <a
-                href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}"
-                class="email"
-              >
-                <i class="fa fa-paper-plane-o"></i>
-                Get in touch
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
-                class="email"
-              >
-                <i class="fa fa-comments-o"></i>
-                Submit a talk
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=PHPSW sponsorship"
-                class="email"
-              >
-                <i class="fa fa-money"></i>
-                Sponsor us
-              </a>
-            </li>
-            <li>
-              <a href="{{ path('brand') }}">
-                <i class="fa fa-picture-o"></i>
-                Brand assets
-              </a>
-            </li>
-          </ul>
-
-          <ul class="list col-xs-4 col-sm-3">
-            <li>
-              <a href="{{ app.meetup.url }}">
-                <i class="fa fa-calendar"></i>
-                <span class="hidden-xs">Find us on</span> Meetup
-              </a>
-            </li>
-            <li>
-              <a href="{{ app.twitter.url }}">
-                <i class="fa fa-twitter"></i>
-                <span class="hidden-xs">Follow us on Twitter</span>
-              </a>
-            </li>
-            <li class="divider"></li>
-            <li>
-              <a href="{{ app.github.url }}">
-                <i class="fa fa-github"></i>
-                <span class="hidden-xs">Fork this on</span> GitHub
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="hidden-xs">
-          {{ include('balloon.svg.twig', {size: 'large'}) }}
-        </div>
-      </div>
-    </footer>
+    {{ include('footer.html.twig') }}
 
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="/rev/{{ 'now' | date('YmdHi') }}/js/vendor.js"></script>
