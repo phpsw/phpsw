@@ -1,10 +1,12 @@
+$lightbox: darken($brand-primary, 40%);
+
 .lightbox {
   /** Hide the lightbox */
   display: none;
 
   /** Apply basic lightbox styling */
   background: black;
-  background: rgba(0,0,0,0.8);
+  background: rgba($lightbox, .75);
   position: fixed;
   z-index: 9999;
   width: 100%;
@@ -16,14 +18,14 @@
 
 .lightbox img {
   /** Pad the lightbox image */
-  background: rgba(0, 0, 0, .5);
+  background: rgba($lightbox, .5);
   max-width: 90%;
   max-height: 80%;
-  margin-top: 2.5%;
-  -moz-box-shadow: 0 0 200px rgba(0, 0, 0, .5);
-  -webkit-box-shadow: 0 0 200px rgba(0, 0, 0, .5);
-  box-shadow: 0 0 200px rgba(0, 0, 0, .5);
+  margin-top: -35%;
   border-radius: 4px;
+  position: relative;
+  top: 50%;
+  box-shadow: 0 0 100px rgba($lightbox, .75);
 }
 
 .lightbox:target {

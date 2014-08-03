@@ -31,7 +31,7 @@
     }
 
     &:before, &:after {
-      background: black;
+      background: $text-color;
       position: absolute;
       top: 0;
       left: 0;
@@ -52,7 +52,7 @@
     transform: none;
 
     .lines {
-      background: black;
+      background: $text-color;
 
       &:before, &:after {
         transform-origin: .25em center;
