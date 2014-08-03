@@ -13,30 +13,53 @@
     <h1>Events</h1>
   </div>
 
-  {% if next_event %}
-    <h2>Next event</h2>
-    {{ include('meetup/event-list-item.html.twig', {'event': next_event}) }}
-  {% endif %}
+  <div class="events row">
+    <div class="col-sm-8">
+      {% if next_event %}
+        <h2>Next event</h2>
+        {{ include('meetup/event-list-item.html.twig', {'event': next_event}) }}
+      {% endif %}
 
-  {% for status in statuses if attribute(_context, status ~ '_events') or status == 'upcoming' %}
-    {% if not loop.first or status != 'upcoming' %}
-      <section id="{{ status }}-events" class="events events--{{ status }}">
-        <h2>{{ status | title }} events</h2>
+      {% for status in statuses if attribute(_context, status ~ '_events') or status == 'upcoming' %}
+        {% if not loop.first or status != 'upcoming' %}
+          <section id="{{ status }}-events" class="events__{{ status }}">
+            <h2>{{ status | title }} events</h2>
 
-        {% for event in attribute(_context, status ~ '_events') %}
-          {{ include('meetup/event-list-item.html.twig') }}
-        {% else %}
-          {% if status == 'upcoming' %}
-            <div class="box box--empty">
-              Nothing to announce right now,
-              <a href="{{ app.twitter.url }}">
-                follow us on Twitter
-              </a>
-              for updates.
-            </div>
-          {% endif %}
-        {% endfor %}
-      </section>
-    {% endif %}
-  {% endfor %}
+            {% for event in attribute(_context, status ~ '_events') %}
+              {% if prev is not defined or event.date.format('Y') != prev.date.format('Y') %}
+                <h3>{{ event.date.format('Y') }}</h3>
+              {% endif %}
+
+              {{ include('meetup/event-list-item.html.twig') }}
+
+              {% set prev = event %}
+            {% else %}
+              {% if status == 'upcoming' %}
+                <div class="box box--empty">
+                  Nothing to announce right now,
+                  <a href="{{ app.twitter.url }}">
+                    follow us on Twitter
+                  </a>
+                  for updates.
+                </div>
+              {% endif %}
+            {% endfor %}
+          </section>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="col-sm-4">
+      <div class="events-calendar"></div>
+
+      <h2>Interested in speaking?</h2>
+
+      <a
+        href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
+        class="btn btn-primary email"
+      >
+        Submit a talk
+      </a>
+    </div>
+  </div>
 {% endblock %}

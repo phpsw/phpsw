@@ -1,13 +1,17 @@
 <article id="event-{{ event.id }}" class="event event--{{ event.status }}">
-    <header class="event__header">
-        <h3>
-            <a href="{{ path('event', {id: event.id, slug: event.slug}) }}">
-                {{- event.name -}}
-            </a>
+  <header class="event__header">
+    <h3>
+      <a href="{{ path('event', {id: event.id, slug: event.slug}) }}">
+        {{- event.name -}}
+      </a>
 
-            <small>
-                {{ event.date.format('F Y') }}
-            </small>
-        </h3>
-    </header>
+      <small>
+        <time datetime="{{ event.date.format(constant('DATE_W3C')) }}">
+          {{ event.date.format('F Y') }}
+        </time>
+      </small>
+    </h3>
+
+    {{ event.description | striptags | raw | truncate(200) }}
+  </header>
 </article>

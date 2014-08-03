@@ -7,6 +7,7 @@ phpsw =
   modules: ->
     @email.init()
     @event.init()
+    @events.init()
     @hero.init()
 
   pjax: ->

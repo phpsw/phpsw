@@ -10,4 +10,10 @@ $app->register(new Silex\Provider\TwigServiceProvider, [
     'twig.path' => __DIR__ . '/../views'
 ]);
 
+$app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
+    $twig->addExtension(new Twig_Extensions_Extension_Text($app));
+
+    return $twig;
+}));
+
 $app->run();
