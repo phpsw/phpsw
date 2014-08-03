@@ -13,6 +13,14 @@
     <div class="col-sm-8">
       {{ meetup.group.description | raw }}
 
+      {% if events %}
+        <h2>Upcoming events</h2>
+
+        {% for event in events %}
+          {{ include('meetup/event-list-item.html.twig') }}
+        {% endfor %}
+      {% endif %}
+
       {{ render(path('meetup_photos')) }}
 
       <h2>Communities</h2>
@@ -32,8 +40,45 @@
     </div>
 
     <div class="col-sm-4">
-      {{ render(path('meetup_sponsors')) }}
-    </div>
+      <h2>Sponsors</h2>
+
+      <h3>Meetup sponsors</h3>
+
+      <div class="sponsors row">
+        <div class="sponsor col-sm-6">
+          <a href="http://www.ents24.com">
+            <img src="/images/sponsors/ents24.png" alt="Ents24">
+          </a>
+        </div>
+
+        <div class="sponsor col-sm-6">
+          <a href="http://www.redrockconsulting.co.uk">
+            <img src="/images/sponsors/redrock.png" alt="Redrock Consulting">
+          </a>
+        </div>
+      </div>
+
+      <h3>Event sponsors</h3>
+
+      <div class="sponsors row">
+        <div class="sponsor col-sm-6">
+          <a href="http://www.basekit.com">
+            <img src="/images/sponsors/basekit.png" alt="BaseKit">
+          </a>
+        </div>
+
+        <div class="sponsor col-sm-6">
+          <a href="https://www.brightpearl.com">
+            <img src="/images/sponsors/brightpearl.png" alt="Brightpearl">
+          </a>
+        </div>
+      </div>
+
+      <br>
+
+      <a href="{{ path('sponsors') }}" class="btn btn-primary">
+        Find out more
+      </a>
   </div>
 
   <!-- <section class="contact">

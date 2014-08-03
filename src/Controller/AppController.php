@@ -11,7 +11,11 @@ class AppController
 {
     public function indexAction(Application $app, Request $request)
     {
-        return $this->render($app, 'index.html.twig');
+        $events = $app['meetup.client']->getUpcomingEvents();
+
+        return $this->render($app, 'index.html.twig', [
+            'events' => $events
+        ]);
     }
 
     public function brandAction(Application $app, Request $request)
