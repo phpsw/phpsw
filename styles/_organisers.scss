@@ -1,50 +1,11 @@
-.organisers {
-  position: relative;
-  font-size: 0;
-  text-align: center;
-
-  &:before {
-    content: '';
-    display: block;
-    height: 1px;
-    background: #ccc;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    z-index: -1;
-  }
-}
-
 .organiser {
-  background: white;
-  position: relative;
-  display: inline-block;
-  height: 80px;
-  margin: 0;
-  padding: 20px;
-  font-size: 14px;
+    position: relative;
+    min-height: 60px;
+    padding: 2px 0 2px 60px;
 
-  img {
-    position: absolute;
-    top: 0;
-  }
-}
-
-.organiser--ade {
-  padding-right: 110px;
-  text-align: right;
-
-  img {
-    right: 10px;
-  }
-}
-
-.organiser--steve {
-  padding-left: 110px;
-  text-align: left;
-
-  img {
-    left: 10px;
-  }
+    .avatar {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }

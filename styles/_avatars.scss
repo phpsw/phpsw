@@ -24,6 +24,8 @@
 
   &.avatar--small {
     border-width: 2px;
+    width: 40px;
+    height: 40px;
 
     img {
       width: 36px;
@@ -35,8 +37,25 @@
     }
   }
 
+  &.avatar--medium {
+    border-width: 2px;
+    width: 50px;
+    height: 50px;
+
+    img {
+      width: 46px;
+      height: 46px;
+    }
+
+    a:hover &, a:focus & {
+      box-shadow: 0 0 10px rgba($shadow, .125);
+    }
+  }
+
   &.avatar--large {
     border-width: 4px;
+    width: 80px;
+    height: 80px;
 
     img {
       width: 72px;

@@ -11,7 +11,7 @@
   transform: scale(1.0);
   transition: transform .25s linear;
 
-  .logo:hover &, .logo:focus & {
+  .logo--global:hover &, .logo--global:focus & {
     transform: scale(1.05);
   }
 }
@@ -19,8 +19,21 @@
 .logo__sw__rhomboid {
   fill: $brand-primary;
 
-  .logo:hover &, .logo:focus & {
+  .logo--global:hover &, .logo--global:focus & {
     fill: darken($brand-primary, 10%);
+  }
+}
+
+.logo--greyscale {
+  width: 100px;
+  height: 50px;
+
+  .logo__php {
+    fill: desaturate(lighten($brand-primary, 20%), 30%);
+  }
+
+  .logo__sw__rhomboid {
+    fill: desaturate(lighten($brand-primary, 10%), 30%);
   }
 }
 

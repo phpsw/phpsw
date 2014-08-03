@@ -3,14 +3,14 @@
     <h1>
       <a href="{{ path('home') }}">
         <span class="sr-only">{{ app.name }}</span>
-        {{ include('logo.svg.twig') }}
+        {{ include('logo.svg.twig', {modifier: 'global'}) }}
       </a>
     </h1>
 
     <div class="balloons">
-      {{ include('balloon.svg.twig', {size: 'small'}) }}
-      {{ include('balloon.svg.twig', {size: 'large'}) }}
-      {{ include('balloon.svg.twig', {size: 'medium'}) }}
+      {{ include('balloon.svg.twig', {modifier: 'small'}) }}
+      {{ include('balloon.svg.twig', {modifier: 'large'}) }}
+      {{ include('balloon.svg.twig', {modifier: 'medium'}) }}
     </div>
 
     <div class="js-nav-toggle js-shown">

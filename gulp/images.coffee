@@ -31,7 +31,7 @@ g.task "images", ->
       file.contents = new Buffer(file.contents.toString()
         .replace(
           /class="([^"]+)"/,
-          'class="$1 {%- if size is defined %} $1--{{ size }} {%- endif %}"'
+          'class="$1 {%- if modifier is defined %} $1--{{ modifier }} {%- endif %}"'
         )
       )
     .pipe g.p.rename extname: ".svg.twig"
