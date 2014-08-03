@@ -20,10 +20,19 @@
             {{ include('logo.svg.twig') }}
           </a>
         </h1>
+
         <div class="balloons">
           {{ include('balloon.svg.twig', {size: 'small'}) }}
           {{ include('balloon.svg.twig', {size: 'large'}) }}
           {{ include('balloon.svg.twig', {size: 'medium'}) }}
+        </div>
+
+        <div class="js-nav-toggle js-shown">
+          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" type="button">
+            <span class="sr-only">Menu</span>
+            <span class="genericon genericon-menu"></span>
+            <span class="genericon genericon-close-alt"></span>
+          </button>
         </div>
       </div>
     </header>

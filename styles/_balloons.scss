@@ -5,28 +5,17 @@ $color: desaturate($brand-primary, 30%);
   top: 0;
   right: 0;
   height: 200px;
-
-  .header:hover & {
-    .balloon {
-      transform: translateY(-.5em)
-    }
-
-    .balloon--small {
-      transform: translateY(.25em)
-    }
-
-    .balloon--medium {
-      transform: translateY(.5em)
-    }
-  }
 }
 
 .balloon {
   position: absolute;
-  animation: launch 2s ease-in-out;
   transform: translateY(0);
   transform-origin: 50% 50%;
   transition: 1s ease-in-out;
+
+  .header & {
+    animation: launch 2s ease-in-out;
+  }
 }
 
 .balloon--small {
@@ -35,6 +24,10 @@ $color: desaturate($brand-primary, 30%);
   top: 10px;
   right: 175px;
   fill: lighten($color, 45%);
+
+  .header:hover & {
+    transform: translateY(.25em)
+  }
 }
 
 .balloon--medium {
@@ -43,14 +36,22 @@ $color: desaturate($brand-primary, 30%);
   top: 10px;
   right: 10px;
   fill: lighten($color, 40%);
+
+  .header:hover & {
+    transform: translateY(.5em)
+  }
 }
 
 .balloon--large {
   width: 75px;
   height: 75px;
-  top: 30px;
+  top: 22.5px;
   right: 75px;
   fill: lighten($color, 30%);
+
+  .header:hover & {
+    transform: translateY(-.5em)
+  }
 }
 
 @keyframes launch {

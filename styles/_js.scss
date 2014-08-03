@@ -10,10 +10,12 @@
     }
 }
 
-.js-hide {
-    display: none;
+.js-hidden {
+    .js & { display: none; }
+    .no-js & { display: block; }
 }
 
-.js-show {
-    display: block;
+.js-shown {
+    .js & { display: block; }
+    .no-js & { display: none; }
 }
