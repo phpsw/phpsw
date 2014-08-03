@@ -26,24 +26,6 @@
         {% else %}
           {{ speaker.name }}
         {% endif %}
-
-        {% if speaker.bio is defined %}
-          <!-- <p>{{ speaker.bio | raw }}</p> -->
-        {% endif %}
-
-        <!-- <ul>
-          {% for talk in speaker.talks %}
-            <li>
-              {% if talk.slides %}
-                <a href="{{ talk.slides }}">
-                  {{ talk.title }}
-                </a>
-              {% else %}
-                {{ talk.title }}
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul> -->
       </li>
     {% endfor %}
   </ul>
