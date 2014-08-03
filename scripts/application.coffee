@@ -12,7 +12,9 @@ phpsw =
 
   pjax: ->
     $(document)
-      .pjax 'a', '.content', fragment: '.content', timeout: 10000
+      .pjax 'a:not([href*="images"])', '.content',
+        fragment: '.content',
+        timeout: 10000
       .on 'pjax:success', => @modules()
 
   nprogress: ->
