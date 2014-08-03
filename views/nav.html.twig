@@ -1,10 +1,18 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <ul class="nav navbar-nav">
-      <li><a href="{{ path('home') }}">Home</a></li>
-      <li><a href="{{ path('events') }}">Events</a></li>
-      <li><a href="{{ path('speakers') }}">Speakers</a></li>
-      <li><a href="{{ path('sponsors') }}">Sponsors</a></li>
+      <li class="{{ url('home') == app.request.uri or url('home') ~ '?' in app.request.uri ? 'active' }}">
+        <a href="{{ url('home') }}">Home</a>
+      </li>
+      <li class="{{ url('events') in app.request.uri ? 'active' }}">
+        <a href="{{ url('events') }}">Events</a>
+      </li>
+      <li class="{{ url('speakers') in app.request.uri ? 'active' }}">
+        <a href="{{ url('speakers') }}">Speakers</a>
+      </li>
+      <li class="{{ url('sponsors') in app.request.uri ? 'active' }}">
+        <a href="{{ url('sponsors') }}">Sponsors</a>
+      </li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">

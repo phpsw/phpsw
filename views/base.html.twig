@@ -28,9 +28,9 @@
       </div>
     </header>
 
-    {{ include('nav.html.twig') }}
+    <div class="content">
+      {{ include('nav.html.twig') }}
 
-    <main>
       {% if block('hero') | trim %}
         <div class="hero">
           <div class="hero__image" style="background-image: url('{{ block('hero') | trim }}')">
@@ -39,12 +39,14 @@
         </div>
       {% endif %}
 
-      {% block main %}
-        <div class="container">
-          {{ block('content') }}
-        </div>
-      {% endblock %}
-    </main>
+      <main>
+        {% block main %}
+          <div class="container">
+            {{ block('content') }}
+          </div>
+        {% endblock %}
+      </main>
+    </div>
 
     <footer class="footer">
       <div class="container">
