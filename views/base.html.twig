@@ -65,14 +65,14 @@
     <footer class="footer">
       <div class="container">
         <nav>
-          <ul class="list col-xs-3">
+          <ul class="list col-xs-4 col-sm-3">
             <li><a href="{{ path('home') }}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="{{ path('events') }}"><span class="glyphicon glyphicon-calendar"></span> Events</a></li>
             <li><a href="{{ path('speakers') }}"><span class="glyphicon glyphicon-comment"></span> Speakers</a></li>
             <li><a href="{{ path('sponsors') }}"><span class="glyphicon glyphicon-briefcase"></span> Sponsors</a></li>
           </ul>
 
-          <ul class="list col-xs-3">
+          <ul class="list col-xs-4 col-sm-3">
             <li>
               <a
                 href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}"
@@ -108,27 +108,29 @@
             </li>
           </ul>
 
-          <ul class="list col-xs-3">
+          <ul class="list col-xs-4 col-sm-3">
             <li>
               <a href="{{ app.meetup.url }}" class="genericon genericon-month">
-                Find us on Meetup
+                <span class="hidden-xs">Find us on</span> Meetup
               </a>
             </li>
             <li>
               <a href="{{ app.twitter.url }}" class="genericon genericon-twitter">
-                Tweet us at @{{ app.twitter.user }}
+                <span class="hidden-xs">Tweet us at</span> @{{ app.twitter.user }}
               </a>
             </li>
             <li class="divider"></li>
             <li>
               <a href="{{ app.github.url }}" class="genericon genericon-github">
-                Fork this on GitHub
+                <span class="hidden-xs">Fork this on</span> GitHub
               </a>
             </li>
           </ul>
         </nav>
 
-        {{ include('balloon.svg.twig', {size: 'large'}) }}
+        <div class="hidden-xs">
+          {{ include('balloon.svg.twig', {size: 'large'}) }}
+        </div>
       </div>
     </footer>
 
