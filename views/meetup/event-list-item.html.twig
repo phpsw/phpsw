@@ -12,6 +12,19 @@
       </small>
     </h3>
 
-    {{ event.description | striptags | truncate(200) | raw }}
+    <div class="row">
+      <div class="col-xs-8 col-sm-9">
+        {{ event.description | striptags | truncate(200) | raw }}
+      </div>
+
+      {% if event.photos %}
+        <div class="col-xs-4 col-sm-3">
+          <a href="{{ path('event', {id: event.id, slug: event.slug}) }}">
+            <div style="background-image: url('{{ random(event.photos).highres_link }}'); background-size: cover; height: 65px; background-position: 50% 50%;">
+            </div>
+          </a>
+        </div>
+      {% endif %}
+    </div>
   </header>
 </article>
