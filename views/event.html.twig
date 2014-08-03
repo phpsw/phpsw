@@ -4,35 +4,43 @@
   {{ event.photos ? random(event.photos).highres_link }}
 {% endblock %}
 
+{% block title %}
+  {{ event.name }}
+{% endblock %}
+
+{% block page_header %}
+  <div class="row">
+    <div class="col-xs-9">
+      <h1>
+        {{ block('title') }}
+
+        <small>
+          {{ event.date.format('F Y') }}
+        </small>
+      </h1>
+    </div>
+
+    <div class="col-xs-3 text-right">
+      <time class="calendar-date" datetime="{{ event.date.format(constant('DATE_W3C')) }}">
+         <span class="calendar-date__month">{{ event.date.format('M') }}</span>
+         <span class="calendar-data__day">{{ event.date.format('d') }}</span>
+      </time>
+    </div>
+  </div>
+{% endblock %}
+
 {% block main %}
-  <article id="event-{{ event.id }}" class="event event--{{ event.status }}">
+  <div id="event-{{ event.id }}" class="event event--{{ event.status }}">
     <div class="container">
       <header class="page-header event__header">
-        <div class="row">
-          <div class="col-xs-9">
-            <h1>
-              {{ event.name }}
-
-              <small>
-                {{ event.date.format('F Y') }}
-              </small>
-            </h1>
-          </div>
-
-          <div class="col-xs-3 text-right">
-            <time class="calendar-date" datetime="{{ event.date.format(constant('DATE_W3C')) }}">
-               <span class="calendar-date__month">{{ event.date.format('M') }}</span>
-               <span class="calendar-data__day">{{ event.date.format('d') }}</span>
-            </time>
-          </div>
-        </div>
+        {{ block('page_header') }}
       </header>
 
       {% if event.yes_rsvp_count > 0 or event.rating is defined and event.rating.average > 3 %}
         <div class="event__stats text-right">
           {% if event.yes_rsvp_count > 0 %}
             <a href="#attendees" class="event__stats__stat">
-              <span class="glyphicon glyphicon-user"></span>
+              <i class="fa fa-group"></i>
               {{ event.yes_rsvp_count }}
 
               {% if event.status == 'upcoming' %}
@@ -45,7 +53,7 @@
 
           {% if event.rating is defined and event.rating.average > 3 %}
             <span class="event__stats__stat">
-              <span class="glyphicon glyphicon-thumbs-up"></span>
+              <i class="fa fa-thumbs-o-up"></i>
               {{ event.rating.average | round(1) }}/5 by {{ event.rating.count }} {{ event.group.who | lower }}
             </span>
           {% endif %}
@@ -81,7 +89,7 @@
                     {% if talk.slides %}
                       <a href="{{ talk.slides }}">
                         {{ talk.title }}
-                        <span class="glyphicon glyphicon-link"></span>
+                        <i class="fa fa-external-link"></i>
                       </a>
                     {% else %}
                       {{ talk.title }}
@@ -222,5 +230,5 @@
         </footer>
       {% endif %}
     </div>
-  </article>
+  </div>
 {% endblock %}

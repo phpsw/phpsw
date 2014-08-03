@@ -3,6 +3,7 @@
   "dependencies": {
     "bootstrap-datepicker": "~1.3.0",
     "bootstrap-sass-official": "~3.1.1",
+    "font-awesome": "~4.1.0",
     "gmaps": "~0.4.12",
     "jquery-expander": "~1.4.8",
     "jquery-pjax": "~1.9.2",

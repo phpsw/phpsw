@@ -19,82 +19,30 @@
       {% if meetup.group.members is defined %}
         <li class="hidden-xs hidden-sm">
           <a href="{{ app.meetup.url }}/members">
-            <span class="glyphicon glyphicon-user"></span>
-            {{- meetup.group.members }} {{ meetup.group.who | lower -}}
+            <i class="fa fa-group"></i>
+            {{ meetup.group.members }} {{ meetup.group.who | lower }}
           </a>
         </li>
       {% endif %}
 
       {% if meetup.group.rating.average | default > 3 %}
         <li class="hidden-xs hidden-sm">
-          <span class="navbar-text">
-            <span class="glyphicon glyphicon-thumbs-up"></span>
+          <a href="{{ app.meetup.url }}/about/comments/?op=all">
+            <i class="fa fa-thumbs-o-up"></i>
             {{ meetup.group.rating.average | round(1) }}/5 from {{ meetup.group.rating.count }} ratings
-          </span>
+          </a>
         </li>
       {% endif %}
 
-  <!--
       <li>
-        <a href="{{ app.meetup.url }}"
-          class="genericon genericon-month"
-          title="Find us on Meetup"
-        >
+        <a href="{{ app.twitter.url }}" title="Follow us on Twitter (@{{ app.twitter.user }})">
+          <i class="fa fa-twitter"></i>
         </a>
-      </li>
-      <li>
-        <a href="{{ app.twitter.url }}"
-          class="genericon genericon-twitter"
-          title="Tweet us at @{{ app.twitter.user }}"
-        >
-        </a>
-      </li>
-      <li>
-        <a href="{{ app.github.url }}"
-          class="genericon genericon-github"
-          title="Fork this on GitHub"
-        >
-        </a>
-      </li>
-  -->
-
-      <li class="dropdown hidden-xs hidden-sm">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          Meetup
-          <b class="caret"></b>
-        </a>
-
-        <ul class="dropdown-menu">
-          <li>
-            <a href="{{ app.meetup.url }}" class="genericon genericon-month">
-              <span>Find us on Meetup</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
-              class="genericon genericon-comment email"
-            >
-              <span>Submit a talk</span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ app.twitter.url }}" class="genericon genericon-twitter">
-              <span>Tweet us at @{{ app.twitter.user }}</span>
-            </a>
-          </li>
-          <li class="divider"></li>
-          <li>
-            <a href="{{ app.github.url }}" class="genericon genericon-github">
-              <span>Fork this on GitHub</span>
-            </a>
-          </li>
-        </ul>
       </li>
 
       <li>
         <div>
-          <a href="{{ app.meetup.url }}" class="btn btn-primary navbar-btn" style="margin: 8px">
+          <a href="{{ app.meetup.url }}" class="btn btn-primary navbar-btn" style="margin: 8px" title="Find us on Meetup">
             Join group
           </a>
         </div>

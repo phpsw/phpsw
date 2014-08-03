@@ -1,21 +1,21 @@
 {% if sponsors %}
-    <section id="sponsors" class="sponsors">
-        <header class="box__header">
-            <h2>Sponsors</h2>
-        </header>
+  <section id="sponsors" class="sponsors">
+    <header class="box__header">
+      <h2>Sponsors</h2>
+    </header>
 
-        <ul class="list">
-            {% for sponsor in sponsors %}
-                <li>
-                    <a href="{{ sponsor.url }}" title="{{ sponsor.name }} - {{ sponsor.details }}">
-                        {% if sponsor.image_url is not defined %}
-                                {{ sponsor.name }}
-                        {% else %}
-                            <img src="{{ sponsor.image_url }}" alt="{{ sponsor.name }} - {{ sponsor.details }}">
-                        {% endif %}
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
-    </section>
+    <ul class="list">
+      {% for sponsor in sponsors %}
+        <li>
+          <a href="{{ sponsor.url }}" title="{{ sponsor.name }} - {{ sponsor.details }}">
+            {% if sponsor.image_url is not defined %}
+                {{ sponsor.name }}
+            {% else %}
+              <img src="{{ sponsor.image_url }}" alt="{{ sponsor.name }} - {{ sponsor.details }}">
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 {% endif %}

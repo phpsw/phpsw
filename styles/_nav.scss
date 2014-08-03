@@ -5,6 +5,33 @@
   .no-js &.collapse {
       display: block; // fuck bootstrap, nav should work without js
   }
+
+  .nav > li > a {
+    padding: {
+      left: 13px;
+      right: 13px;
+    }
+  }
+
+  .fa-twitter {
+    position: relative;
+    top: .125em;
+    font-size: 1.25em;
+  }
+}
+
+.navbar-collapse {
+  padding: {
+    left: 0;
+    right: 0;
+  }
+}
+
+.navbar-nav {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
 }
 
 .navbar-toggle {

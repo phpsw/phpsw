@@ -5,6 +5,10 @@ g.task "vendor", -> g.start "vendor-css", "vendor-js"
 g.task "vendor-css", ["bower"], ->
   g.src ["styles/vendor.scss", "web/vendor/**/*.css"]
     .pipe g.css()
+    .pipe g.p.tap (file, t) ->
+      file.contents = new Buffer(file.contents.toString()
+        .replace /..\/fonts\//g, '/fonts/' # fix font awesome paths
+      )
     .pipe g.p.concat "vendor.css"
     .pipe g.dest "web/css"
     .pipe g.reload()

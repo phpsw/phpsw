@@ -4,11 +4,11 @@
   http://photos1.meetupstatic.com/photos/event/8/8/9/2/highres_366334962.jpeg
 {% endblock %}
 
-{% block content %}
-  <div class="page-header">
-    <h1>PHP meetups in the south west, UK</h1>
-  </div>
+{% block page_header %}
+  <h1>PHP meetups in the south west, UK</h1>
+{% endblock %}
 
+{% block content %}
   <div class="row">
     <div class="col-sm-8">
       {{ meetup.group.description | raw }}
@@ -93,17 +93,17 @@
           <ul class="organiser__social list list--inline">
             <li>
               <a href="{{ organiser.url }}">
-                <span class="glyphicon glyphicon-globe"></span>
+                <i class="fa fa-globe"></i>
               </a>
             </li>
             <li>
               <a href="https://twitter.com/{{ organiser.twitter }}">
-                <span class="genericon genericon-twitter"></span>
+                <i class="fa fa-twitter"></i>
               </a>
             </li>
             <li>
               <a href="https://github.com/{{ organiser.github }}">
-                <span class="genericon genericon-github"></span>
+                <i class="fa fa-github"></i>
               </a>
             </li>
           </ul>

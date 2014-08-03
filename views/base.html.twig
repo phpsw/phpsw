@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ block('title') ? block('title') ~ ' · ' }}{{ app.title }}</title>
+    <title>{{ block('title') ? (block('title') ~ ' · ') | raw }}{{ app.title }}</title>
     <meta name="description" content="{{ app.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -56,6 +56,12 @@
       <main>
         {% block main %}
           <div class="container">
+            <header class="page-header">
+              {% block page_header %}
+                <h1>{{ block('title') }}</h1>
+              {% endblock %}
+            </header>
+
             {{ block('content') }}
           </div>
         {% endblock %}
@@ -66,10 +72,30 @@
       <div class="container">
         <nav>
           <ul class="list col-xs-4 col-sm-3">
-            <li><a href="{{ path('home') }}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="{{ path('events') }}"><span class="glyphicon glyphicon-calendar"></span> Events</a></li>
-            <li><a href="{{ path('speakers') }}"><span class="glyphicon glyphicon-comment"></span> Speakers</a></li>
-            <li><a href="{{ path('sponsors') }}"><span class="glyphicon glyphicon-briefcase"></span> Sponsors</a></li>
+            <li>
+              <a href="{{ path('home') }}">
+                <i class="fa fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="{{ path('events') }}">
+                <i class="fa fa-calendar"></i>
+                Events
+              </a>
+            </li>
+            <li>
+              <a href="{{ path('speakers') }}">
+                <i class="fa fa-bullhorn"></i>
+                Speakers
+              </a>
+            </li>
+            <li>
+              <a href="{{ path('sponsors') }}">
+                <i class="fa fa-briefcase"></i>
+                Sponsors
+              </a>
+            </li>
           </ul>
 
           <ul class="list col-xs-4 col-sm-3">
@@ -78,7 +104,7 @@
                 href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}"
                 class="email"
               >
-                <span class="glyphicon glyphicon-envelope"></span>
+                <i class="fa fa-paper-plane-o"></i>
                 Get in touch
               </a>
             </li>
@@ -87,7 +113,7 @@
                 href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
                 class="email"
               >
-                <span class="glyphicon glyphicon-comment"></span>
+                <i class="fa fa-comments-o"></i>
                 Submit a talk
               </a>
             </li>
@@ -96,32 +122,35 @@
                 href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=PHPSW sponsorship"
                 class="email"
               >
-                <span class="glyphicon glyphicon-briefcase"></span>
+                <i class="fa fa-money"></i>
                 Sponsor us
               </a>
             </li>
             <li>
               <a href="{{ path('brand') }}">
-                <span class="glyphicon glyphicon-picture"></span>
-                Brand
+                <i class="fa fa-picture-o"></i>
+                Brand assets
               </a>
             </li>
           </ul>
 
           <ul class="list col-xs-4 col-sm-3">
             <li>
-              <a href="{{ app.meetup.url }}" class="genericon genericon-month">
+              <a href="{{ app.meetup.url }}">
+                <i class="fa fa-calendar"></i>
                 <span class="hidden-xs">Find us on</span> Meetup
               </a>
             </li>
             <li>
-              <a href="{{ app.twitter.url }}" class="genericon genericon-twitter">
-                <span class="hidden-xs">Tweet us at</span> @{{ app.twitter.user }}
+              <a href="{{ app.twitter.url }}">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden-xs">Follow us on Twitter</span>
               </a>
             </li>
             <li class="divider"></li>
             <li>
-              <a href="{{ app.github.url }}" class="genericon genericon-github">
+              <a href="{{ app.github.url }}">
+                <i class="fa fa-github"></i>
                 <span class="hidden-xs">Fork this on</span> GitHub
               </a>
             </li>

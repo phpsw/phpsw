@@ -5,7 +5,7 @@ phpsw.email =
 
       $email
         .attr "href", @dehumanize $email.attr("href")
-        .text @dehumanize $email.text()
+        .html @dehumanize $email.html()
 
   dehumanize: (string) ->
     string

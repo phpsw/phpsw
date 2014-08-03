@@ -1,52 +1,52 @@
 {% if speakers %}
-    <section id="speakers" class="speakers">
-        <h2>Alumni</h2>
+  <section id="speakers" class="speakers">
+    <h2>Alumni</h2>
 
-        <ul class="list list--inline">
-            {% for speaker in speakers %}
-                <li>
-                    {% if speaker.url is defined %}
-                        <a
-                            href="{{ speaker.url }}"
-                            {% if speaker.member.bio is defined %}
-                                title="{{ speaker.member.bio }}"
-                            {% endif %}
-                        >
-                            {% if speaker.photo is defined %}
-                                <div class="avatar avatar--large">
-                                    <img src="{{ speaker.photo.highres_link | default(speaker.photo.thumb_link) }}" alt="{{ speaker.name }}">
-                                </div>
-                            {% endif %}
+    <ul class="list list--inline">
+      {% for speaker in speakers %}
+        <li>
+          {% if speaker.url is defined %}
+            <a
+              href="{{ speaker.url }}"
+              {% if speaker.member.bio is defined %}
+                title="{{ speaker.member.bio }}"
+              {% endif %}
+            >
+              {% if speaker.photo is defined %}
+                <div class="avatar avatar--large">
+                  <img src="{{ speaker.photo.highres_link | default(speaker.photo.thumb_link) }}" alt="{{ speaker.name }}">
+                </div>
+              {% endif %}
 
-                            {% spaceless %}
-                                <span class="fn" style="display: block; margin: 10px">
-                                    {{ speaker.name }}
-                                </span>
-                            {% endspaceless %}
-                        </a>
-                    {% else %}
-                        {{ speaker.name }}
-                    {% endif %}
+              {% spaceless %}
+                <span class="fn" style="display: block; margin: 10px">
+                  {{ speaker.name }}
+                </span>
+              {% endspaceless %}
+            </a>
+          {% else %}
+            {{ speaker.name }}
+          {% endif %}
 
-                    {% if speaker.bio is defined %}
-                        <!-- <p>{{ speaker.bio | raw }}</p> -->
-                    {% endif %}
+          {% if speaker.bio is defined %}
+            <!-- <p>{{ speaker.bio | raw }}</p> -->
+          {% endif %}
 
-                    <!-- <ul>
-                        {% for talk in speaker.talks %}
-                            <li>
-                                {% if talk.slides %}
-                                    <a href="{{ talk.slides }}">
-                                        {{ talk.title }}
-                                    </a>
-                                {% else %}
-                                    {{ talk.title }}
-                                {% endif %}
-                            </li>
-                        {% endfor %}
-                    </ul> -->
-                </li>
+          <!-- <ul>
+            {% for talk in speaker.talks %}
+              <li>
+                {% if talk.slides %}
+                  <a href="{{ talk.slides }}">
+                    {{ talk.title }}
+                  </a>
+                {% else %}
+                  {{ talk.title }}
+                {% endif %}
+              </li>
             {% endfor %}
-        </ul>
-    </section>
+          </ul> -->
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 {% endif %}

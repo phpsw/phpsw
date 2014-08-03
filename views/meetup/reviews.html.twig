@@ -1,23 +1,23 @@
 {% if reviews %}
-    <section id="reviews" class="reviews">
-        <header class="box__header">
-            <h2>Reviews</h2>
-        </header>
+  <section id="reviews" class="reviews">
+    <header class="box__header">
+      <h2>Reviews</h2>
+    </header>
 
-        <ul class="list">
-            {% for review in reviews %}
-                <li>
-                    <a href="{{ review.link }}">
-                        {%- if review.photo_url -%}
-                            <img src="{{ review.photo_url }}" class="avatar" alt="{{ review.name }}">
-                        {%- endif -%}
+    <ul class="list">
+      {% for review in reviews %}
+        <li>
+          <a href="{{ review.link }}">
+            {%- if review.photo_url -%}
+              <img src="{{ review.photo_url }}" class="avatar" alt="{{ review.name }}">
+            {%- endif -%}
 
-                        {{- review.name -}}
-                    </a>
+            {{- review.name -}}
+          </a>
 
-                    <p>{{ review.comment }}</p>
-                </li>
-            {% endfor %}
-        </ul>
-    </section>
+          <p>{{ review.comment }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 {% endif %}
