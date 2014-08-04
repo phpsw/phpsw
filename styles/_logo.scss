@@ -5,7 +5,8 @@
   z-index: 1;
 }
 
-.logo__sw {
+.logo__sw__rhomboid,
+.logo__sw__text {
   animation: kaboom 2s linear;
   transform-origin: 50% 50%;
   transform: scale(1.0);
