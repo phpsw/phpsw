@@ -5,7 +5,7 @@
     </header>
 
     <ul class="list list--inline list--images">
-      {% for photo in photos %}
+      {% for photo in photos if photo.photo_album.event_id | default %}
         <li>
           <a href="#photo-{{ photo.photo_id }}" class="photo">
             <img src="{{ photo.thumb_link }}" alt="" width="80" height="60">

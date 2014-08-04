@@ -15,6 +15,7 @@ class Meetup
     protected $events;
     protected $group;
     protected $members;
+    protected $photos;
     protected $posts;
     protected $reviews;
     protected $speakers;
@@ -44,17 +45,7 @@ class Meetup
 
                 $this->group = (object) current($response->getData());
 
-                $this->group->photos = array_filter(
-                    $this->client
-                        ->getPhotos([
-                            'group_urlname' => $this->config['urlname']
-                        ])
-                        ->getData()
-                    ,
-                    function ($photo) {
-                        return $photo['photo_id'] != '99716812';
-                    }
-                );
+                $this->group->photos = $this->getPhotosFromApi();
 
                 $this->group->rating = (object) [
                     'average' => $this->group->rating,
@@ -350,7 +341,14 @@ class Meetup
                     preg_replace('#\s*&\s#', ' and ', $event->name)
                 );
 
-                $event->photos = iterator_to_array($this->client->getPhotos(['event_id' => $event->id]));
+                $event->photos = array_values(
+                    array_filter($this->getGroup()->photos, function ($photo) use ($event) {
+                        $album = $photo->photo_album;
+
+                        return isset($album->event_id) && $album->event_id == $event->id;
+                    })
+                );
+
                 $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));
                 $event->talks = [];
                 $event->url = $event->event_url;
@@ -372,6 +370,25 @@ class Meetup
             },
             $this->redis->hgetall('phpsw:events')
         );
+    }
+
+    protected function getPhotosFromApi()
+    {
+        if ($this->photos === null) {
+            $this->photos = array_map(
+                function ($photo) {
+                    $photo = (object) $photo;
+
+                    $photo->member = (object) $photo->member;
+                    $photo->photo_album = (object) $photo->photo_album;
+
+                    return $photo;
+                },
+                $this->client->getPhotos(['group_urlname' => $this->config['urlname']])->getData()
+            );
+        }
+
+        return $this->photos;
     }
 
     protected function getPostsFromApi($board = null)
