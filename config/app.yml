@@ -89,6 +89,31 @@ organisers:
         twitter: stevelacey
         url: http://stevelacey.net
 
+sponsors:
+    meetup:
+        -
+            name: Ents24
+            description: The UK's biggest entertainment guide, covering live music, comedy, theatre, shows and days out
+            url: http://www.ents24.com
+            logo: /images/sponsors/ents24.png
+        -
+            name: Redrock Consulting
+            description: Redrock Consulting—Ethical and transparent recruiters reaching out to Software Developers in the South-West—Firm believers in Long-Term relationships
+            url: http://www.redrockconsulting.co.uk
+            logo: /images/sponsors/redrock.png
+
+    event:
+        -
+            name: BaseKit
+            description: Beautiful websites for small businesses. The world's fastest growing website editor
+            url: http://www.basekit.com
+            logo: /images/sponsors/basekit.png
+        -
+            name: Brightpearl
+            description: Brightpearl handles the scale and complexity of a growing multi-channel retail business
+            url: https://www.brightpearl.com
+            logo: /images/sponsors/brightpearl.png
+
 twitter:
     url: http://twitter.com/phpsw
     user: phpsw
