@@ -12,10 +12,14 @@
     <link rel="stylesheet" href="/rev/{{ 'now' | date('YmdHi') }}/css/main.css">
   </head>
   <body>
-    {{ include('header.html.twig') }}
+    {% block header %}
+      {{ include('header.html.twig') }}
+    {% endblock %}
 
     <div class="content">
-      {{ include('nav.html.twig') }}
+      {% block nav %}
+        {{ include('nav.html.twig') }}
+      {% endblock %}
 
       {% if block('hero') | trim %}
         <div class="hero">
@@ -40,7 +44,9 @@
       </main>
     </div>
 
-    {{ include('footer.html.twig') }}
+    {% block footer %}
+      {{ include('footer.html.twig') }}
+    {% endblock %}
 
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="/rev/{{ 'now' | date('YmdHi') }}/js/vendor.js"></script>

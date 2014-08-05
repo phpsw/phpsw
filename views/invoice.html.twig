@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Invoice
+{% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block main %}
+  <div id="wrapper" class="container">
+    <div id="header">
+      <div id="envelope" style="padding:60px 0 0 0">
+        <table cellspacing="0" cellpadding="0" style="padding: 0 0px;width: 100%;">
+          <tbody>
+            <tr>
+              <td style="text-align:left;vertical-align:bottom;" id="company-info-holder">
+                <h2>PHPSW</h2>
+                <p>
+                  Steve Lacey<br>
+                </p>
+              </td>
+
+              <td style="text-align:right; vertical-align:top;" class="tight" id="invoice-details-holder">
+                <div id="details-wrap">
+                  <h2>Invoice</h2>
+
+                  <br>
+
+                  <p>Due: {{ 'first day of this month' | date('d/m/Y') }}</p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="clientInfo">
+        <div id="billing-info">
+          <table cellspacing="0" cellpadding="0" id="billing-table">
+            <tbody><tr>
+                <td width="240px" style="vertical-align: top">
+                  <h2>{{ sponsor }}</h2>
+                </td>
+                <td width="560px" style="vertical-align:top;">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <table style="width: 100%" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Time/Quantity</th>
+            <th></th>
+            <th>Total</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>PHPSW sponsorship - {{ 'now' | date('F') }}</td>
+            <td>1 month</td>
+            <td></td>
+            <td>&pound;{{ amount }}.00</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="2" rowspan="8" class="invoice-notes" style=" vertical-align:top;">
+            </td>
+            <th>Subtotal:</th>
+            <td colspan="2">&pound;{{ amount }}.00</td>
+          </tr>
+
+          <tr dontbreak="true">
+            <th>Total:</th>
+            <td colspan="2">&pound;{{ amount }}.00</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

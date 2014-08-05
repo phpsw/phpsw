@@ -23,6 +23,15 @@ class AppController
         return $this->render($app, 'brand.html.twig');
     }
 
+    public function invoiceAction(Application $app, Request $request, $id)
+    {
+        return $this->render($app, 'invoice.html.twig', [
+            'id' => $id,
+            'amount' => $request->get('amount'),
+            'sponsor' => $request->get('sponsor')
+        ]);
+    }
+
     public function eventsAction(Application $app, Request $request)
     {
         $statuses = ['upcoming', 'past'];
