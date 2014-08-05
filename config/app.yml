@@ -3,85 +3,85 @@ title: PHPSW · South West UK PHP User Group
 description: PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.
 
 communities:
-    - { name: Bristol Web Folk,  logo: bristol-web-folk, url:  http://bristolwebfolk.github.io }
-    - { name: Bristol Drupal,    logo: drupal-bristol,   url:  https://groups.drupal.org/bristol-and-west-uk }
-    - { name: BrightonPHP,       logo: brighton-php,     url:  http://brightonphp.org }
-    - { name: PHP Dorset,        logo: php-dorset,       url:  http://www.phpdorset.co.uk }
-    - { name: PHP London,        logo: php-london,       url:  http://phplondon.org }
-    - { name: PHP Hampshire,     logo: php-hampshire,    url:  http://phphants.co.uk }
-    - { name: PHP Women,         logo: php-women,        url:  http://phpwomen.org }
-    - { name: PHP Cambridge,     logo: php-cambridge,    url:  http://www.meetup.com/phpcambridge }
-    - { name: Leeds PHP,         logo: leed-php,         url:  http://leedsphp.org }
-    - { name: PHP East Midlands, logo: phpem,            url:  http://phpem.info }
-    - { name: PHP North East,    logo: phpne,            url:  http://phpne.org.uk }
-    - { name: PHP North West,    logo: phpnw,            url:  http://conference.phpnw.org.uk }
-    - { name: PHP West Midlands, logo: phpwm,            url:  http://phpwm.org.uk }
-    - { name: PHP UK,            logo: php-uk,           url:  http://phpconference.co.uk }
+  - { name: Bristol Web Folk,  logo: bristol-web-folk, url:  http://bristolwebfolk.github.io }
+  - { name: Bristol Drupal,    logo: drupal-bristol,   url:  https://groups.drupal.org/bristol-and-west-uk }
+  - { name: BrightonPHP,       logo: brighton-php,     url:  http://brightonphp.org }
+  - { name: PHP Dorset,        logo: php-dorset,       url:  http://www.phpdorset.co.uk }
+  - { name: PHP London,        logo: php-london,       url:  http://phplondon.org }
+  - { name: PHP Hampshire,     logo: php-hampshire,    url:  http://phphants.co.uk }
+  - { name: PHP Women,         logo: php-women,        url:  http://phpwomen.org }
+  - { name: PHP Cambridge,     logo: php-cambridge,    url:  http://www.meetup.com/phpcambridge }
+  - { name: Leeds PHP,         logo: leed-php,         url:  http://leedsphp.org }
+  - { name: PHP East Midlands, logo: phpem,            url:  http://phpem.info }
+  - { name: PHP North East,    logo: phpne,            url:  http://phpne.org.uk }
+  - { name: PHP North West,    logo: phpnw,            url:  http://conference.phpnw.org.uk }
+  - { name: PHP West Midlands, logo: phpwm,            url:  http://phpwm.org.uk }
+  - { name: PHP UK,            logo: php-uk,           url:  http://phpconference.co.uk }
 
 github:
-    url: https://github.com/phpsw/phpsw
+  url: https://github.com/phpsw/phpsw
 
 invoice:
-    payable_to: |
-        1 Fake Street
-        Bristol
-        BS1 1AB
+  payable_to: |
+    1 Fake Street
+    Bristol
+    BS1 1AB
 
-    account_name: PHPSW
-    account_number: 12345678
-    sort_code: 12-23-45
+  account_name: PHPSW
+  account_number: 12345678
+  sort_code: 12-23-45
 
 meetup:
-    name: PHPSW
-    url: http://www.meetup.com/php-sw
-    urlname: php-sw
-    api:
-        key: ~
+  name: PHPSW
+  url: http://www.meetup.com/php-sw
+  urlname: php-sw
+  api:
+    key: ~
 
 organisers:
-    ade:
-        name: Ade Slade
-        first_name: Ade
-        email: adeslade@gmail.com
-        photo: http://photos1.meetupstatic.com/photos/member/a/d/e/0/thumb_36884512.jpeg
-        github: adeslade
-        twitter: adeslade
-        url: http://adeslade.co.uk
+  ade:
+    name: Ade Slade
+    first_name: Ade
+    email: adeslade@gmail.com
+    photo: http://photos1.meetupstatic.com/photos/member/a/d/e/0/thumb_36884512.jpeg
+    github: adeslade
+    twitter: adeslade
+    url: http://adeslade.co.uk
 
-    steve:
-        name: Steve Lacey
-        first_name: Steve
-        email: steve@stevelacey.net
-        photo: http://photos2.meetupstatic.com/photos/member/6/e/3/4/thumb_155008212.jpeg
-        github: stevelacey
-        twitter: stevelacey
-        url: http://stevelacey.net
+  steve:
+    name: Steve Lacey
+    first_name: Steve
+    email: steve@stevelacey.net
+    photo: http://photos2.meetupstatic.com/photos/member/6/e/3/4/thumb_155008212.jpeg
+    github: stevelacey
+    twitter: stevelacey
+    url: http://stevelacey.net
 
 sponsors:
-    meetup:
-        -
-            name: Ents24
-            description: The UK's biggest entertainment guide, covering live music, comedy, theatre, shows and days out
-            url: http://www.ents24.com
-            logo: /images/sponsors/ents24.png
-        -
-            name: Redrock Consulting
-            description: Redrock Consulting—Ethical and transparent recruiters reaching out to Software Developers in the South-West—Firm believers in Long-Term relationships
-            url: http://www.redrockconsulting.co.uk
-            logo: /images/sponsors/redrock.png
+  meetup:
+    -
+      name: Ents24
+      description: The UK's biggest entertainment guide, covering live music, comedy, theatre, shows and days out
+      url: http://www.ents24.com
+      logo: /images/sponsors/ents24.png
+    -
+      name: Redrock Consulting
+      description: Redrock Consulting—Ethical and transparent recruiters reaching out to Software Developers in the South-West—Firm believers in Long-Term relationships
+      url: http://www.redrockconsulting.co.uk
+      logo: /images/sponsors/redrock.png
 
-    event:
-        -
-            name: BaseKit
-            description: Beautiful websites for small businesses. The world's fastest growing website editor
-            url: http://www.basekit.com
-            logo: /images/sponsors/basekit.png
-        -
-            name: Brightpearl
-            description: Brightpearl handles the scale and complexity of a growing multi-channel retail business
-            url: https://www.brightpearl.com
-            logo: /images/sponsors/brightpearl.png
+  event:
+    -
+      name: BaseKit
+      description: Beautiful websites for small businesses. The world's fastest growing website editor
+      url: http://www.basekit.com
+      logo: /images/sponsors/basekit.png
+    -
+      name: Brightpearl
+      description: Brightpearl handles the scale and complexity of a growing multi-channel retail business
+      url: https://www.brightpearl.com
+      logo: /images/sponsors/brightpearl.png
 
 twitter:
-    url: http://twitter.com/phpsw
-    user: phpsw
+  url: http://twitter.com/phpsw
+  user: phpsw

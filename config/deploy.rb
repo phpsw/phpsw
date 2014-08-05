@@ -11,12 +11,12 @@ namespace :composer do
     end
   end
 
-  before :install, :copy do
-    on roles :all, reject: lambda { |h| h.properties.no_release } do
-      last_release = releases_path.join(capture(:ls, '-xr', releases_path).split[1])
-      execute "if [ -d #{last_release}/vendor ]; then cp -a #{last_release}/vendor #{release_path}/vendor; fi"
-    end
-  end
+  # before :install, :copy do
+  #   on roles :all, reject: lambda { |h| h.properties.no_release } do
+  #     last_release = releases_path.join(capture(:ls, '-xr', releases_path).split[1])
+  #     execute "if [ -d #{last_release}/vendor ]; then cp -a #{last_release}/vendor #{release_path}/vendor; fi"
+  #   end
+  # end
 
   after "deploy:updating", :install
 end
