@@ -25,9 +25,13 @@ class AppController
 
     public function invoiceAction(Application $app, Request $request)
     {
+        $amount = $request->get('amount');
+        $sponsor = $request->get('sponsor');
+
         return $this->render($app, 'invoice.html.twig', [
-            'amount' => $request->get('amount'),
-            'sponsor' => $request->get('sponsor')
+            'amount' => $amount,
+            'ref' => strtoupper(current(explode(' ', $sponsor)) . date('My')),
+            'sponsor' => $sponsor
         ]);
     }
 

@@ -30,12 +30,15 @@
                   <strong>Sort code:</strong>
                   {{ app.invoice.sort_code }}
                 </p>
-                <p>Please include the invoice reference of #{{ (sponsor ~ 'now' | date('My')) | upper }}</p>
+                <p>
+                  Please include the invoice reference of
+                  #{{ ref }}
+                </p>
               </td>
 
               <td style="text-align:right; vertical-align:top;" class="tight" id="invoice-details-holder">
                 <div id="details-wrap">
-                  <h1>Invoice<br><small>#{{ (sponsor ~ 'now' | date('My')) | upper }}</small></h1>
+                  <h1>Invoice<br><small>#{{ ref }}</small></h1>
 
                   <br>
 
