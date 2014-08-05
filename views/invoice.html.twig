@@ -79,7 +79,7 @@
             <td>PHPSW Sponsorship</td>
             <td>1 month</td>
             <td></td>
-            <td>&pound;{{ amount }}.00</td>
+            <td>&pound;{{ amount | number_format(2) }}</td>
           </tr>
         </tbody>
 
@@ -88,12 +88,12 @@
             <td colspan="2" rowspan="8" class="invoice-notes" style=" vertical-align:top;">
             </td>
             <th>Subtotal:</th>
-            <td colspan="2">&pound;{{ amount }}.00</td>
+            <td colspan="2">&pound;{{ amount | number_format(2) }}</td>
           </tr>
 
           <tr dontbreak="true">
             <th>Total:</th>
-            <td colspan="2">&pound;{{ amount }}.00</td>
+            <td colspan="2">&pound;{{ amount | number_format(2) }}</td>
           </tr>
         </tfoot>
       </table>
