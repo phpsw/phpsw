@@ -63,6 +63,16 @@ communities:
 github:
     url: https://github.com/phpsw/phpsw
 
+invoice:
+    payable_to: |
+        1 Fake Street
+        Bristol
+        BS1 1AB
+
+    account_name: PHPSW
+    account_number: 12345678
+    sort_code: 12-23-45
+
 meetup:
     name: PHPSW
     url: http://www.meetup.com/php-sw
