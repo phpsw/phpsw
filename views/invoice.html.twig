@@ -16,14 +16,26 @@
             <tr>
               <td style="text-align:left;vertical-align:bottom;" id="company-info-holder">
                 <h2>PHPSW</h2>
+                <h3>Payable to:</h3>
+                <p>{{ app.invoice.payable_to | nl2br }}</p>
                 <p>
-                  Steve Lacey<br>
+                  <strong>Account name:</strong>
+                  {{ app.invoice.account_name }}
                 </p>
+                <p>
+                  <strong>Account number:</strong>
+                  {{ app.invoice.account_number }}
+                </p>
+                <p>
+                  <strong>Sort code:</strong>
+                  {{ app.invoice.sort_code }}
+                </p>
+                <p>Please include the invoice reference of #{{ (sponsor ~ 'now' | date('My')) | upper }}</p>
               </td>
 
               <td style="text-align:right; vertical-align:top;" class="tight" id="invoice-details-holder">
                 <div id="details-wrap">
-                  <h2>Invoice</h2>
+                  <h1>Invoice<br><small>#{{ (sponsor ~ 'now' | date('My')) | upper }}</small></h1>
 
                   <br>
 
@@ -64,7 +76,7 @@
 
         <tbody>
           <tr>
-            <td>PHPSW sponsorship - {{ 'now' | date('F') }}</td>
+            <td>PHPSW Sponsorship</td>
             <td>1 month</td>
             <td></td>
             <td>&pound;{{ amount }}.00</td>

@@ -23,10 +23,9 @@ class AppController
         return $this->render($app, 'brand.html.twig');
     }
 
-    public function invoiceAction(Application $app, Request $request, $id)
+    public function invoiceAction(Application $app, Request $request)
     {
         return $this->render($app, 'invoice.html.twig', [
-            'id' => $id,
             'amount' => $request->get('amount'),
             'sponsor' => $request->get('sponsor')
         ]);
