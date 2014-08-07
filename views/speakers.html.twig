@@ -11,7 +11,34 @@
 {% block content %}
   <div class="row">
     <div class="col-sm-8">
-      {{ render(path('meetup_speakers')) }}
+      {% if speakers %}
+        <h2>Alumni</h2>
+
+        <ul class="speakers list list--inline">
+          {% for speaker in speakers %}
+            <li>
+              <a
+                href="{{ path('speaker', {slug: speaker.slug}) }}"
+                {% if speaker.member.bio is defined %}
+                  title="{{ speaker.member.bio }}"
+                {% endif %}
+              >
+                {% if speaker.photo is defined %}
+                  <div class="avatar avatar--large">
+                    <img src="{{ speaker.photo.highres_link | default(speaker.photo.thumb_link) }}" alt="{{ speaker.name }}">
+                  </div>
+                {% endif %}
+
+                {% spaceless %}
+                  <span class="fn" style="display: block; margin: 10px">
+                    {{ speaker.name }}
+                  </span>
+                {% endspaceless %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
 
     <div class="col-sm-4">

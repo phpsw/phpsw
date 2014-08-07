@@ -53,7 +53,7 @@ class MeetupCommand extends Command
             },
             'members' => function ($callback) use ($meetup, $redis) {
                 foreach ($meetup->getMembers() as $member) {
-                    $redis->hset('phpsw:members', $member->member_id, json_encode($member));
+                    $redis->hset('phpsw:members', $member->id, json_encode($member));
 
                     $callback();
                 }
@@ -61,7 +61,18 @@ class MeetupCommand extends Command
             'speakers' => function ($callback) use ($meetup, $redis) {
                 foreach ($meetup->getEvents() as $event) {
                     foreach ($event->talks as $talk) {
-                        $redis->hset('phpsw:speakers', $talk->speaker->id, json_encode($talk->speaker));
+                        $a = json_decode($redis->hget('phpsw:speakers', $talk->speaker->slug));
+                        $b = $talk->speaker;
+
+                        if (isset($a->member) && !isset($b->member)) {
+                            $speaker = (object) array_replace_recursive((array) $b, (array) $a);
+                        } elseif (!isset($a->member) && isset($b->member)) {
+                            $speaker = (object) array_replace_recursive((array) $a, (array) $b);
+                        } else {
+                            $speaker = $b;
+                        }
+
+                        $redis->hset('phpsw:speakers', $talk->speaker->slug, json_encode($speaker));
 
                         $callback();
                     }

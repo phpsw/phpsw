@@ -191,7 +191,10 @@ class Meetup
     {
         if ($this->members === null) {
             if ($this->cli) {
-                $this->members = $this->client->getGroupProfiles(['group_urlname' => $this->config['urlname']])->getData();
+                $this->members = array_replace_recursive(
+                    $this->client->getMembers(['group_urlname' => $this->config['urlname'], 'order' => 'name'])->getData(),
+                    $this->client->getGroupProfiles(['group_urlname' => $this->config['urlname'], 'order' => 'name'])->getData()
+                );
             } else {
                 $this->members = array_map(
                     function ($member) {
@@ -208,7 +211,7 @@ class Meetup
                     function ($member) {
                         $member = (object) $member;
 
-                        return $member->member_id;
+                        return $member->id;
                     },
                     $this->members
                 ),
@@ -284,6 +287,10 @@ class Meetup
                         }
                     );
 
+                    uasort($speaker->talks, function($a, $b) {
+                        return $a->event->date < $b->event->date;
+                    });
+
                     return $speaker;
                 },
                 $this->redis->hgetall('phpsw:speakers')
@@ -297,12 +304,23 @@ class Meetup
         return $this->speakers;
     }
 
+    public function getSpeaker($slug)
+    {
+        foreach ($this->getSpeakers() as $speaker) {
+            if ($speaker->slug == $slug) {
+                return $speaker;
+            }
+        }
+    }
+
     public function getTalks()
     {
         if ($this->talks === null) {
             $this->talks = array_map(
                 function ($talk) {
                     $talk = json_decode($talk);
+
+                    $talk->event = $this->getEvent($talk->event);
 
                     return $talk;
                 },
@@ -337,9 +355,7 @@ class Meetup
                     $event->description = null;
                 }
 
-                $event->slug = $this->app['slugify']->slugify(
-                    preg_replace('#\s*&\s#', ' and ', $event->name)
-                );
+                $event->slug = $this->slugify($event->name);
 
                 $event->photos = array_values(
                     array_filter($this->getGroup()->photos, function ($photo) use ($event) {
@@ -461,14 +477,16 @@ class Meetup
 
                 if ($titleNode->count()) {
                     $talk->title = preg_replace('#\s+#u', ' ', $titleNode->text());
-                    $talk->id = $event->id . '-' . Inflexible::slugify($talk->title);
+                    $talk->id = $event->id . '-' . $this->slugify($talk->title);
+                    $talk->event = $event->id;
 
                     $speakerAndOrg = explode(',', preg_replace('#-\s*' . preg_quote($titleNode->text()) . '#u', '', $node->text()), 2);
                     $speakerAndOrg = preg_replace('#^\s*(.*)\s*$#u', '\1', $speakerAndOrg);
 
                     $talk->speaker = (object) [
-                        'id' => Inflexible::slugify($speakerAndOrg[0]),
-                        'name' => $speakerAndOrg[0]
+                        'id' => $this->slugify($speakerAndOrg[0]),
+                        'name' => $speakerAndOrg[0],
+                        'slug' => $this->slugify($speakerAndOrg[0])
                     ];
 
                     /* bio */
@@ -494,20 +512,19 @@ class Meetup
                         $talk->speaker->url = $speakerNode->attr('href');
 
                         if (preg_match('#http://www.meetup.com/php-sw/members/([^\/]+)#', $talk->speaker->url, $matches)) {
-                            $talk->speaker->id = $matches[1];
-                            $talk->speaker->member = $this->getMember($talk->speaker->id);
+                            $talk->speaker->member = $this->getMember($matches[1]);
 
                             if (isset($talk->speaker->member->photo)) {
                                 $talk->speaker->photo = $talk->speaker->member->photo;
                             }
 
                             foreach ($talk->speaker->member->other_services as $key => $service) {
-                                $talk->speaker->$key = $service->identifier;
+                                $talk->speaker->$key = preg_replace('#^@#', '', basename($service->identifier));
                             }
                         }
 
                         if (preg_match('#https://twitter.com/([^\/]+)#', $talk->speaker->url, $matches)) {
-                            $talk->speaker->id = $talk->speaker->twitter = $matches[1];
+                            $talk->speaker->twitter = $matches[1];
 
                             $talk->speaker->photo = (object) [
                                 'thumb_link' => $this->app->path('twitter_photo', ['user' => $talk->speaker->twitter]),
@@ -553,5 +570,12 @@ class Meetup
         }
 
         return $event;
+    }
+
+    protected function slugify($string)
+    {
+        return $this->app['slugify']->slugify(
+            preg_replace(['#\'#', '#\s*&\s#'], ['', ' and '], $string)
+        );
     }
 }

@@ -8,9 +8,25 @@
   }
 }
 
+.hero--speaker {
+  .hero__image {
+    @media (min-width: $screen-xs-min) {
+      background: {
+        position: 75% 50%;
+        size: auto 150%;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      background-size: auto 120%;
+    }
+  }
+}
+
 .hero__image {
   background: {
     position: 50% 50%;
+    repeat: no-repeat;
     size: cover;
   }
   box-shadow: inset 0 -20px 100px rgba($gray-dark, .25);

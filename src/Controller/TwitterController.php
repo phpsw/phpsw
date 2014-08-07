@@ -3,10 +3,9 @@
 namespace PHPSW\Controller;
 
 use Silex\Application,
-    Symfony\Component\HttpFoundation\Request,
     Symfony\Component\HttpFoundation\Response;
 
-class TwitterController
+class TwitterController extends AbstractController
 {
     public function photoAction(Application $app, $user, $size = 'normal')
     {

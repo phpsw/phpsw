@@ -1,0 +1,118 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  {{ speaker.name }}
+{% endblock %}
+
+{% block hero %}
+  {% if speaker.photo is defined %}
+    {{ speaker.photo.highres_link | default(speaker.photo.photo_link) }}
+  {% endif %}
+{% endblock %}
+
+{% block hero_modifier %}
+  speaker
+{% endblock %}
+
+{% block page_header %}
+  <h1>
+    {{ speaker.name }}
+
+    {% if speaker.bio | default %}
+      <br><small>{{ speaker.bio | default | raw }}</small>
+    {% endif %}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-sm-8">
+      {% if speaker.twitter | default or speaker.facebook | default or speaker.flickr | default %}
+        <ul class="list">
+          {% if speaker.twitter | default %}
+            <li>
+              <a href="https://twitter.com/{{ speaker.twitter }}">
+                <i class="fa fa-twitter"></i> Twitter: @{{ speaker.twitter }}
+              </a>
+            </li>
+          {% endif %}
+          {% if speaker.facebook | default %}
+            <li>
+              <a href="https://www.facebook.com/{{ speaker.facebook }}">
+                <i class="fa fa-facebook"></i> Facebook: {{ speaker.facebook }}
+              </a>
+            </li>
+          {% endif %}
+          {% if speaker.flickr | default %}
+            <li>
+              <a href="https://www.flickr.com/photos/{{ speaker.flickr }}">
+                <i class="fa fa-flickr"></i> Flickr: {{ speaker.flickr }}
+              </a>
+            </li>
+          {% endif %}
+          {% if speaker.member.id | default %}
+            <li>
+              <a href="{{ app.meetup.url }}/members/{{ speaker.member.id }}">
+                <i class="fa fa-calendar"></i> Meetup
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+
+      {% if speaker.talks %}
+        <div id="talks">
+          <h2>Talks</h2>
+
+          <ul class="list">
+            {% for talk in speaker.talks %}
+              <li id="talk-{{ talk.id }}" class="talk">
+                <h3>
+                  {% if talk.slides %}
+                    <a href="{{ talk.slides }}">
+                      {{ talk.title }}
+                      <i class="fa fa-external-link"></i>
+                    </a>
+                  {% else %}
+                    {{ talk.title }}
+                  {% endif %}
+                </h3>
+
+                <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
+                  {{ talk.event.name }}
+                </a>
+
+                <small>
+                  {{ talk.event.date.format('F Y') }}
+                </small>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="col-sm-4">
+      <h2>Interested in speaking?</h2>
+
+      <p>We're always looking for speakers, so do drop us a line, regardless of your experience, we're all about first time speakers.</p>
+
+      <p>If you're looking for ideas, a few of the topics we're keen to hear about are:</p>
+
+      <ul>
+        <li>Debugging &amp; profiling</li>
+        <li>Frameworks</li>
+        <li>Lightning talks</li>
+        <li>PHP7, PHPNG</li>
+        <li>Support tools (e.g. phplint, boris, phpsh)</li>
+      </ul>
+
+      <a
+        href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
+        class="btn btn-primary email"
+      >
+        Submit a talk
+      </a>
+    </div>
+  </div>
+{% endblock %}

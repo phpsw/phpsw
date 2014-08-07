@@ -31,19 +31,18 @@ foreach (['app', $app['env'], 'secrets'] as $config) {
     }
 }
 
-$app->get('/', 'PHPSW\Controller\AppController::indexAction')->bind('home');
-$app->get('/brand', 'PHPSW\Controller\AppController::brandAction')->bind('brand');
-$app->get('/events', 'PHPSW\Controller\AppController::eventsAction')->bind('events');
-$app->get('/events/{id}-{slug}', 'PHPSW\Controller\AppController::eventAction')->bind('event');
-$app->get('/invoice', 'PHPSW\Controller\AppController::invoiceAction')->bind('invoice');
-$app->get('/speakers', 'PHPSW\Controller\AppController::speakersAction')->bind('speakers');
-$app->get('/sponsors', 'PHPSW\Controller\AppController::sponsorsAction')->bind('sponsors');
-$app->get('/meetup/events', 'PHPSW\Controller\MeetupController::eventsAction')->bind('meetup_events');
-$app->get('/meetup/photos', 'PHPSW\Controller\MeetupController::photosAction')->bind('meetup_photos');
-$app->get('/meetup/posts', 'PHPSW\Controller\MeetupController::postsAction')->bind('meetup_posts');
-$app->get('/meetup/reviews', 'PHPSW\Controller\MeetupController::reviewsAction')->bind('meetup_reviews');
-$app->get('/meetup/speakers', 'PHPSW\Controller\MeetupController::speakersAction')->bind('meetup_speakers');
-$app->get('/meetup/sponsors', 'PHPSW\Controller\MeetupController::sponsorsAction')->bind('meetup_sponsors');
+$app->get('/',                   'PHPSW\Controller\AppController::indexAction')->bind('home');
+$app->get('/brand',              'PHPSW\Controller\AppController::brandAction')->bind('brand');
+$app->get('/events',             'PHPSW\Controller\EventController::indexAction')->bind('events');
+$app->get('/events/{id}-{slug}', 'PHPSW\Controller\EventController::showAction')->bind('event');
+$app->get('/invoice',            'PHPSW\Controller\AppController::invoiceAction')->bind('invoice');
+$app->get('/speakers',           'PHPSW\Controller\SpeakerController::indexAction')->bind('speakers');
+$app->get('/speakers/{slug}',    'PHPSW\Controller\SpeakerController::showAction')->bind('speaker');
+$app->get('/sponsors',           'PHPSW\Controller\AppController::sponsorsAction')->bind('sponsors');
+$app->get('/meetup/photos',      'PHPSW\Controller\MeetupController::photosAction')->bind('meetup_photos');
+$app->get('/meetup/posts',       'PHPSW\Controller\MeetupController::postsAction')->bind('meetup_posts');
+$app->get('/meetup/reviews',     'PHPSW\Controller\MeetupController::reviewsAction')->bind('meetup_reviews');
+$app->get('/meetup/sponsors',    'PHPSW\Controller\MeetupController::sponsorsAction')->bind('meetup_sponsors');
 $app
     ->get('/twitter/{user}-{size}', 'PHPSW\Controller\TwitterController::photoAction')
     ->bind('twitter_photo')
