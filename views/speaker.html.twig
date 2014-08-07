@@ -27,38 +27,36 @@
 {% block content %}
   <div class="row">
     <div class="col-sm-8">
-      {% if speaker.twitter | default or speaker.facebook | default or speaker.flickr | default %}
-        <ul class="list">
-          {% if speaker.twitter | default %}
-            <li>
-              <a href="https://twitter.com/{{ speaker.twitter }}">
-                <i class="fa fa-twitter"></i> Twitter: @{{ speaker.twitter }}
-              </a>
-            </li>
-          {% endif %}
-          {% if speaker.facebook | default %}
-            <li>
-              <a href="https://www.facebook.com/{{ speaker.facebook }}">
-                <i class="fa fa-facebook"></i> Facebook: {{ speaker.facebook }}
-              </a>
-            </li>
-          {% endif %}
-          {% if speaker.flickr | default %}
-            <li>
-              <a href="https://www.flickr.com/photos/{{ speaker.flickr }}">
-                <i class="fa fa-flickr"></i> Flickr: {{ speaker.flickr }}
-              </a>
-            </li>
-          {% endif %}
-          {% if speaker.member.id | default %}
-            <li>
-              <a href="{{ app.meetup.url }}/members/{{ speaker.member.id }}">
-                <i class="fa fa-calendar"></i> Meetup
-              </a>
-            </li>
-          {% endif %}
-        </ul>
-      {% endif %}
+      <ul class="list">
+        {% if speaker.twitter | default %}
+          <li>
+            <a href="https://twitter.com/{{ speaker.twitter }}">
+              <i class="fa fa-twitter"></i> Twitter: @{{ speaker.twitter }}
+            </a>
+          </li>
+        {% endif %}
+        {% if speaker.facebook | default %}
+          <li>
+            <a href="https://www.facebook.com/{{ speaker.facebook }}">
+              <i class="fa fa-facebook"></i> Facebook: {{ speaker.facebook }}
+            </a>
+          </li>
+        {% endif %}
+        {% if speaker.flickr | default %}
+          <li>
+            <a href="https://www.flickr.com/photos/{{ speaker.flickr }}">
+              <i class="fa fa-flickr"></i> Flickr: {{ speaker.flickr }}
+            </a>
+          </li>
+        {% endif %}
+        {% if speaker.member.id | default %}
+          <li>
+            <a href="{{ app.meetup.url }}/members/{{ speaker.member.id }}">
+              <i class="fa fa-calendar"></i> Meetup profile
+            </a>
+          </li>
+        {% endif %}
+      </ul>
 
       {% if speaker.talks %}
         <div id="talks">
