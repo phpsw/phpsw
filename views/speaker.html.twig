@@ -93,26 +93,7 @@
     </div>
 
     <div class="col-sm-4">
-      <h2>Interested in speaking?</h2>
-
-      <p>We're always looking for speakers, so do drop us a line, regardless of your experience, we're all about first time speakers.</p>
-
-      <p>If you're looking for ideas, a few of the topics we're keen to hear about are:</p>
-
-      <ul>
-        <li>Debugging &amp; profiling</li>
-        <li>Frameworks</li>
-        <li>Lightning talks</li>
-        <li>PHP7, PHPNG</li>
-        <li>Support tools (e.g. phplint, boris, phpsh)</li>
-      </ul>
-
-      <a
-        href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
-        class="btn btn-primary email"
-      >
-        Submit a talk
-      </a>
+      {{ include('speaking.html.twig') }}
     </div>
   </div>
 {% endblock %}
