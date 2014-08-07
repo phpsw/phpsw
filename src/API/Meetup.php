@@ -79,13 +79,6 @@ class Meetup
                 function ($event) {
                     $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
 
-                    // TODO: remove once updated in Redis
-                    if (!isset($event->slug)) {
-                        $event->slug = $this->app['slugify']->slugify(
-                            preg_replace('#\s*&\s#', ' and ', $event->name)
-                        );
-                    }
-
                     if ($this->cli && !$this->debug || !$this->cli && $this->debug) {
                         $event = $this->parse($event);
                     }
