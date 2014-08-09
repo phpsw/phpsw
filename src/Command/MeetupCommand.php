@@ -19,58 +19,59 @@ class MeetupCommand extends Command
     {
         $app = $this->getSilexApplication();
 
-        $redis = $app['redis'];
-        $meetup = $app['meetup.client'];
+        $this->meetup = $app['meetup.client'];
+        $this->redis = $app['redis'];
+        $this->ns = 'phpsw';
 
         $tasks = [
-            'group' => function ($callback) use ($meetup, $redis) {
-                if ($meetup->getGroup()) {
-                    $redis->set('phpsw:group', json_encode($meetup->getGroup()));
+            'group' => function ($callback) {
+                if ($this->meetup->getGroup()) {
+                    $this->set('group', $this->meetup->getGroup());
 
                     $callback();
                 }
             },
-            'events' => function ($callback) use ($meetup, $redis) {
-                foreach ($meetup->getEvents() as $event) {
-                    $redis->hset('phpsw:events', $event->id, json_encode($event));
+            'events' => function ($callback) {
+                foreach ($this->meetup->getEvents() as $event) {
+                    $this->hset('events', $event->id, $event);
 
                     $callback();
                 }
             },
-            'photos' => function ($callback) use ($meetup, $redis) {
-                foreach ($meetup->getEvents() as $event) {
+            'photos' => function ($callback) {
+                foreach ($this->meetup->getEvents() as $event) {
                     foreach ($event->photos as $photo) {
-                        $redis->hset('phpsw:photos', $photo->id, json_encode($photo));
+                        $this->hset('photos', $photo->id, $photo);
 
                         $callback();
                     }
                 }
             },
-            'posts' => function ($callback) use ($meetup, $redis) {
-                foreach ($meetup->getPosts() as $post) {
-                    $redis->hset('phpsw:posts', $post->id, json_encode($post));
+            'posts' => function ($callback) {
+                foreach ($this->meetup->getPosts() as $post) {
+                    $this->hset('posts', $post->id, $post);
 
                     $callback();
                 }
             },
-            'reviews' => function ($callback) use ($meetup, $redis) {
-                foreach ($meetup->getReviews() as $review) {
-                    $redis->hset('phpsw:reviews', $review->member_id, json_encode($review));
+            'reviews' => function ($callback) {
+                foreach ($this->meetup->getReviews() as $review) {
+                    $this->hset('reviews', $review->member_id, $review);
 
                     $callback();
                 }
             },
-            'members' => function ($callback) use ($meetup, $redis) {
-                foreach ($meetup->getMembers() as $member) {
-                    $redis->hset('phpsw:members', $member->id, json_encode($member));
+            'members' => function ($callback) {
+                foreach ($this->meetup->getMembers() as $member) {
+                    $this->hset('members', $member->id, $member);
 
                     $callback();
                 }
             },
-            'speakers' => function ($callback) use ($meetup, $redis) {
-                foreach ($meetup->getEvents() as $event) {
+            'speakers' => function ($callback) {
+                foreach ($this->meetup->getEvents() as $event) {
                     foreach ($event->talks as $talk) {
-                        $a = json_decode($redis->hget('phpsw:speakers', $talk->speaker->slug));
+                        $a = $this->hget('speakers', $talk->speaker->slug);
                         $b = $talk->speaker;
 
                         if (isset($a->member) && !isset($b->member)) {
@@ -81,16 +82,16 @@ class MeetupCommand extends Command
                             $speaker = $b;
                         }
 
-                        $redis->hset('phpsw:speakers', $talk->speaker->slug, json_encode($speaker));
+                        $this->hset('speakers', $talk->speaker->slug, $speaker);
 
                         $callback();
                     }
                 }
             },
-            'talks' => function ($callback) use ($meetup, $redis) {
-                foreach ($meetup->getEvents() as $event) {
+            'talks' => function ($callback) {
+                foreach ($this->meetup->getEvents() as $event) {
                     foreach ($event->talks as $talk) {
-                        $redis->hset('phpsw:talks', $talk->id, json_encode($talk));
+                        $this->hset('talks', $talk->id, $talk);
 
                         $callback();
                     }
@@ -107,5 +108,25 @@ class MeetupCommand extends Command
 
             echo PHP_EOL;
         }
+    }
+
+    protected function get($key)
+    {
+        return json_decode($this->redis->get("{$this->ns}:{$key}"));
+    }
+
+    protected function set($key, $value)
+    {
+        return $this->redis->set("{$this->ns}:{$key}", json_encode($value, JSON_PRETTY_PRINT));
+    }
+
+    protected function hget($key, $hkey)
+    {
+        return json_decode($this->redis->hget("{$this->ns}:{$key}", $hkey));
+    }
+
+    protected function hset($key, $hkey, $hvalue)
+    {
+        return $this->redis->hset("{$this->ns}:{$key}", $hkey, json_encode($hvalue, JSON_PRETTY_PRINT));
     }
 }
