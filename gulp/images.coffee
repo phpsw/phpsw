@@ -12,8 +12,8 @@ g.task "images", ->
       gm
         .background 'transparent'
         .gravity 'Center'
-        .resize 80, 60
-        .extent 80, 60
+        .resize 160, 120
+        .extent 160, 120
         .transparent 'white'
         .setFormat 'png'
     .pipe community.restore()
