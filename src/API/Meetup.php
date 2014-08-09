@@ -3,7 +3,6 @@
 namespace PHPSW\API;
 
 use DMS\Service\Meetup\MeetupKeyAuthClient,
-    Inflexible\Inflexible,
     Symfony\Component\DomCrawler\Crawler;
 
 class Meetup

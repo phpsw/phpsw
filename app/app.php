@@ -8,9 +8,9 @@ if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
     $app['env'] = 'dev';
 }
 
-$app['guzzle'] = new Guzzle\Http\Client;
+$app['guzzle'] = new GuzzleHttp\Client();
 
-$app['redis'] = new Predis\Client;
+$app['redis'] = new Predis\Client();
 
 $app['meetup.client'] = function ($app) {
     return new PHPSW\API\Meetup($app, $app['meetup'], $app['cli'], $app['debug']);
