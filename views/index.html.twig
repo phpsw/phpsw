@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block hero %}
-  http://photos1.meetupstatic.com/photos/event/8/8/9/2/highres_366334962.jpeg
+  {{ path('meetup_photo', {id: 366334962, size: 'highres'}) }}
 {% endblock %}
 
 {% block page_header %}

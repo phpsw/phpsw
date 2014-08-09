@@ -20,7 +20,7 @@
       {% if event.photos %}
         <div class="col-xs-4 col-sm-3">
           <a href="{{ path('event', {id: event.id, slug: event.slug}) }}">
-            <div style="background-image: url('{{ random(event.photos).highres_link }}'); background-size: cover; height: 65px; background-position: 50% 50%;">
+            <div style="background-image: url('{{ event.photos ? path('meetup_photo', {id: random(event.photos).id}) }}'); background-size: cover; height: 65px; background-position: 50% 50%;">
             </div>
           </a>
         </div>

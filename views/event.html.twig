@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block hero %}
-  {{ event.photos ? random(event.photos).highres_link }}
+  {{ event.photos ? path('meetup_photo', {id: random(event.photos).id, size: 'highres'}) }}
 {% endblock %}
 
 {% block title %}
@@ -128,12 +128,12 @@
               {% for photo in event.photos %}
                 <li>
                   <a href="#photo-{{ photo.photo_id }}" class="photo">
-                    <img src="{{ photo.thumb_link }}" alt="" width="80" height="60">
+                    <img src="{{ path('meetup_photo', {id: photo.id, size: 'thumb'}) }}" alt="" width="80" height="60">
                   </a>
 
                   <!-- lightbox container hidden with CSS -->
                   <a href="#x" id="photo-{{ photo.photo_id }}" class="lightbox photo">
-                    <img src="{{ photo.highres_link }}" alt="">
+                    <img src="{{ path('meetup_photo', {id: photo.id}) }}" alt="">
                   </a>
                 </li>
               {% endfor %}

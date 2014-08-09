@@ -387,6 +387,7 @@ class Meetup
                 function ($photo) {
                     $photo = (object) $photo;
 
+                    $photo->id = $photo->photo_id;
                     $photo->member = (object) $photo->member;
                     $photo->photo_album = (object) $photo->photo_album;
 

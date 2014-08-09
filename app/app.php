@@ -43,6 +43,13 @@ $app->get('/meetup/photos',      'PHPSW\Controller\MeetupController::photosActio
 $app->get('/meetup/posts',       'PHPSW\Controller\MeetupController::postsAction')->bind('meetup_posts');
 $app->get('/meetup/reviews',     'PHPSW\Controller\MeetupController::reviewsAction')->bind('meetup_reviews');
 $app->get('/meetup/sponsors',    'PHPSW\Controller\MeetupController::sponsorsAction')->bind('meetup_sponsors');
+
+$app->get('/meetup/photo/{id}/{size}', 'PHPSW\Controller\MeetupController::photoAction')
+    ->bind('meetup_photo')
+    ->assert('size', implode('|', ['highres', 'photo', 'thumb']))
+    ->value('size', 'photo')
+;
+
 $app
     ->get('/twitter/{user}-{size}', 'PHPSW\Controller\TwitterController::photoAction')
     ->bind('twitter_photo')

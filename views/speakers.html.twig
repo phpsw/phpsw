@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block hero %}
-  http://photos3.meetupstatic.com/photos/event/8/4/7/8/highres_366333912.jpeg
+  {{ path('meetup_photo', {id: 366333912, size: 'highres'}) }}
 {% endblock %}
 
 {% block content %}

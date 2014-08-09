@@ -37,6 +37,15 @@ class MeetupCommand extends Command
                     $callback();
                 }
             },
+            'photos' => function ($callback) use ($meetup, $redis) {
+                foreach ($meetup->getEvents() as $event) {
+                    foreach ($event->photos as $photo) {
+                        $redis->hset('phpsw:photos', $photo->id, json_encode($photo));
+
+                        $callback();
+                    }
+                }
+            },
             'posts' => function ($callback) use ($meetup, $redis) {
                 foreach ($meetup->getPosts() as $post) {
                     $redis->hset('phpsw:posts', $post->id, json_encode($post));
