@@ -44,18 +44,24 @@ $app->get('/meetup/posts',       'PHPSW\Controller\MeetupController::postsAction
 $app->get('/meetup/reviews',     'PHPSW\Controller\MeetupController::reviewsAction')->bind('meetup_reviews');
 $app->get('/meetup/sponsors',    'PHPSW\Controller\MeetupController::sponsorsAction')->bind('meetup_sponsors');
 
-$app->get('/meetup/photo/{id}/{size}', 'PHPSW\Controller\MeetupController::photoAction')
+$app->get('/photos/{id}/{size}.jpg', 'PHPSW\Controller\MeetupController::photoAction')
     ->bind('meetup_photo')
     ->assert('size', implode('|', ['highres', 'photo', 'thumb']))
     ->value('size', 'photo')
 ;
 
-$app
-    ->get('/twitter/{user}-{size}', 'PHPSW\Controller\TwitterController::photoAction')
-    ->bind('twitter_photo')
-    ->assert('size', implode('|', ['bigger', 'normal', 'mini', 'original']))
-    ->value('size', 'normal')
+$app->get('/members/{id}/{size}.jpg', 'PHPSW\Controller\MemberController::photoAction')
+    ->bind('member_photo')
+    ->assert('size', implode('|', ['highres', 'photo', 'thumb']))
+    ->value('size', 'photo')
 ;
+
+$app->get('/speakers/{slug}/{size}.jpg', 'PHPSW\Controller\SpeakerController::photoAction')
+    ->bind('speaker_photo')
+    ->assert('size', implode('|', ['highres', 'photo', 'thumb']))
+    ->value('size', 'photo')
+;
+
 $app
     ->get('/twitter/{user}/tweets', 'PHPSW\Controller\TwitterController::tweetsAction')
     ->bind('tweets')

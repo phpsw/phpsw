@@ -215,11 +215,11 @@ class Meetup
                             $member->photo = (object) $member->photo;
                         }
 
-                        $member->other_services = array_map(
+                        $member->other_services = (object) array_map(
                             function ($service) {
                                 return (object) $service;
                             },
-                            $member->other_services
+                            (array) $member->other_services
                         );
 
                         $member->visited_date = \DateTime::createFromFormat('U', ($member->visited / 1000));
@@ -520,9 +520,9 @@ class Meetup
                             $talk->speaker->twitter = $matches[1];
 
                             $talk->speaker->photo = (object) [
-                                'thumb_link' => $this->app->path('twitter_photo', ['user' => $talk->speaker->twitter]),
-                                'photo_link' => $this->app->path('twitter_photo', ['user' => $talk->speaker->twitter, 'size' => 'bigger']),
-                                'highres_link' => $this->app->path('twitter_photo', ['user' => $talk->speaker->twitter, 'size' => 'original'])
+                                'thumb_link' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=bigger",
+                                'photo_link' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=original",
+                                'highres_link' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=original"
                             ];
                         }
                     }

@@ -104,7 +104,7 @@
                   >
                     {%- if talk.speaker.photo is defined -%}
                       <div class="avatar avatar--small">
-                        <img src="{{ talk.speaker.photo.thumb_link }}" alt="{{ talk.speaker.name }}">
+                        <img src="{{ path('speaker_photo', {slug: talk.speaker.slug}) }}" alt="{{ talk.speaker.name }}">
                       </div>
                     {%- endif -%}
 
@@ -175,7 +175,7 @@
             <li>
               <a href="{{ app.meetup.url }}/members/{{ rsvp.member.member_id }}" class="event__attendee" title="{{ rsvp.member.name }}">
                 <div class="avatar avatar--small">
-                  <img src="{{ rsvp.member_photo.thumb_link }}" alt="{{ rsvp.member.name }}">
+                  <img src="{{ path('member_photo', {id: rsvp.member.member_id, size: 'thumb'}) }}" alt="{{ rsvp.member.name }}">
                 </div>
               </a>
             </li>

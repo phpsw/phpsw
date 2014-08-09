@@ -5,37 +5,17 @@ namespace PHPSW\Controller;
 use Silex\Application,
     Symfony\Component\HttpFoundation\Response;
 
-class SpeakerController extends AbstractController
+class MemberController extends AbstractController
 {
-    public function indexAction(Application $app)
+    public function photoAction(Application $app, $id, $size)
     {
-        return $this->render($app, 'speakers.html.twig', [
-            'speakers' => $app['meetup.client']->getSpeakers()
-        ]);
-    }
+        $member = $app['meetup.client']->getMember($id);
 
-    public function showAction(Application $app, $slug)
-    {
-        $speaker = $app['meetup.client']->getSpeaker($slug);
-
-        if (!$speaker) {
+        if (!$member) {
             throw new \Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
         }
 
-        return $this->render($app, 'speaker.html.twig', [
-            'speaker' => $speaker
-        ]);
-    }
-
-    public function photoAction(Application $app, $slug, $size)
-    {
-        $speaker = $app['meetup.client']->getSpeaker($slug);
-
-        if (!$speaker) {
-            throw new \Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-        }
-
-        $photo = $speaker->photo;
+        $photo = $member->photo;
 
         switch ($size) {
             case 'highres':
@@ -53,7 +33,7 @@ class SpeakerController extends AbstractController
         }
 
         try {
-            $response = $app['guzzle']->get($photo->{"${size}_link"});
+            $response = $app['guzzle']->get($member->photo->{"${size}_link"});
         } catch (\GuzzleHttp\Exception\BadResponseException $e) {
             $app->abort($e->getResponse()->getStatusCode());
         }

@@ -7,21 +7,6 @@ use Silex\Application,
 
 class TwitterController extends AbstractController
 {
-    public function photoAction(Application $app, $user, $size = 'normal')
-    {
-        try {
-            $response = $app['guzzle']->get("https://twitter.com/api/users/profile_image/${user}?size=${size}");
-        } catch (\GuzzleHttp\Exception\BadResponseException $e) {
-            $app->abort($e->getResponse()->getStatusCode());
-        }
-
-        return new Response($response->getBody(), $response->getStatusCode(), [
-            'Cache-Control' => 'public',
-            'Content-Type' => (string) $response->getHeader('Content-Type'),
-            'Expires' => (new \DateTime('+2 weeks'))->format('D, d M Y H:i:s T')
-        ]);
-    }
-
     public function tweetsAction(Application $app)
     {
         $tweets = array_map(

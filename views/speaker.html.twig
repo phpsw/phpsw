@@ -6,7 +6,7 @@
 
 {% block hero %}
   {% if speaker.photo is defined %}
-    {{ speaker.photo.highres_link | default(speaker.photo.photo_link) }}
+    {{ path('speaker_photo', {slug: speaker.slug, size: 'highres'}) }}
   {% endif %}
 {% endblock %}
 
