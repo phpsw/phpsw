@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Members
+{% endblock %}
+
+{% block content %}
+  <table class="table table-striped">
+    <thead>
+      <th width="5%"></th>
+
+      <th width="10%">
+        <a href="{{ path('members', app.request.query.all | merge({'sort_by': 'name_' ~ (sort_by != 'name_asc' ? 'asc' : 'desc')})) }}">
+          Name
+          {% if sort_by == 'name_asc' %}
+            <i class="fa fa-sort-alpha-asc"></i>
+          {% elseif sort_by == 'name_desc' %}
+            <i class="fa fa-sort-alpha-desc"></i>
+          {% endif %}
+        </a>
+      </th>
+
+      <th width="20%">Bio</th>
+      <th width="10%">Social</th>
+
+      {% for question in (members | first).answers %}
+        <th width="20%">
+          <a href="{{ path('members', app.request.query.all | merge({('question_' ~ question.question_id ~ '_positive'): not app.request.get('question_' ~ question.question_id ~ '_positive') ? 'true'})) }}">
+            {{ question.question | default }}
+
+            {% if app.request.get('question_' ~ question.question_id ~ '_positive') %}
+              <i class="fa fa-check"></i>
+            {% endif %}
+          </a>
+        </th>
+      {% endfor %}
+
+      <th width="15%">
+        <a href="{{ path('members', app.request.query.all | merge({'sort_by': 'date_joined_' ~ (sort_by == 'date_joined_desc' ? 'asc' : 'desc')})) }}">
+          Date joined
+          {% if sort_by == 'date_joined_asc' %}
+            <i class="fa fa-sort-asc"></i>
+          {% elseif sort_by == 'date_joined_desc' %}
+            <i class="fa fa-sort-desc"></i>
+          {% endif %}
+        </a>
+      </th>
+    </thead>
+    <tbody>
+      {% for member in members %}
+        <tr>
+          <td width="5%">
+            {% if member.photo is defined %}
+              <a href="{{ app.meetup.url }}/members/{{ member.id }}" title="{{ member.name }}">
+                <div class="avatar avatar--small">
+                  <img src="{{ path('member_photo', {id: member.id}) }}" alt="{{ member.name }}">
+                </div>
+              </a>
+            {% endif %}
+          </td>
+
+          <td width="10%">
+            <a href="{{ app.meetup.url }}/members/{{ member.id }}" title="{{ member.name }}">
+              {{ member.name }}
+            </a>
+          </td>
+          <td width="20%">{{ member.bio | default }}</td>
+
+          <td width="10%">
+            {% for service, account in member.other_services %}
+              <a href="{{ account.identifier | replace({'@': 'https://www.twitter.com/'}) }}">
+                <i class="fa fa-{{ service }}"></i>
+              </a>
+            {% endfor %}
+          </td>
+
+          {% for question in member.answers %}
+            <td width="20%">{{ question.answer | default }}</td>
+          {% endfor %}
+
+          <td width="15%">{{ member.joined | date('d/m/Y H:i')}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

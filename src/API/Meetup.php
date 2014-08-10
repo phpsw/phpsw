@@ -192,6 +192,8 @@ class Meetup
                     function ($member) {
                         $member = json_decode($member);
 
+                        $member->joined = \DateTime::createFromFormat('U', $member->joined / 1000);
+
                         return $member;
                     },
                     $this->redis->hgetall('phpsw:members')
@@ -215,7 +217,7 @@ class Meetup
                             $member->photo = (object) $member->photo;
                         }
 
-                        $member->other_services = (object) array_map(
+                        $member->other_services = array_map(
                             function ($service) {
                                 return (object) $service;
                             },

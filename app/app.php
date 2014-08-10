@@ -36,6 +36,7 @@ $app->get('/brand',              'PHPSW\Controller\AppController::brandAction')-
 $app->get('/events',             'PHPSW\Controller\EventController::indexAction')->bind('events');
 $app->get('/events/{id}-{slug}', 'PHPSW\Controller\EventController::showAction')->bind('event');
 $app->get('/invoice',            'PHPSW\Controller\AppController::invoiceAction')->bind('invoice');
+$app->get('/members',            'PHPSW\Controller\MemberController::indexAction')->bind('members');
 $app->get('/speakers',           'PHPSW\Controller\SpeakerController::indexAction')->bind('speakers');
 $app->get('/speakers/{slug}',    'PHPSW\Controller\SpeakerController::showAction')->bind('speaker');
 $app->get('/sponsors',           'PHPSW\Controller\AppController::sponsorsAction')->bind('sponsors');
