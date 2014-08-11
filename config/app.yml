@@ -82,6 +82,10 @@ sponsors:
       url: https://www.brightpearl.com
       logo: /images/sponsors/brightpearl.png
 
+thumbor:
+  server: ~
+  security_key: ~
+
 twitter:
   url: http://twitter.com/phpsw
   user: phpsw

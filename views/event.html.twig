@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block hero %}
-  {{ event.photos ? path('meetup_photo', {id: random(event.photos).id, size: 'highres'}) }}
+  {{ event.photos ? hero(random(event.photos).highres_link) }}
 {% endblock %}
 
 {% block title %}
@@ -104,7 +104,7 @@
                   >
                     {%- if talk.speaker.photo is defined -%}
                       <div class="avatar avatar--small">
-                        <img src="{{ path('speaker_photo', {slug: talk.speaker.slug}) }}" alt="{{ talk.speaker.name }}">
+                        <img src="{{ avatar(talk.speaker.photo.url) }}" alt="{{ talk.speaker.name }}">
                       </div>
                     {%- endif -%}
 
@@ -128,12 +128,12 @@
               {% for photo in event.photos %}
                 <li>
                   <a href="#photo-{{ photo.photo_id }}" class="photo">
-                    <img src="{{ path('meetup_photo', {id: photo.id, size: 'thumb'}) }}" alt="" width="80" height="60">
+                    <img src="{{ thumbnail(photo.thumb_link) }}" alt="" width="80" height="60">
                   </a>
 
                   <!-- lightbox container hidden with CSS -->
                   <a href="#x" id="photo-{{ photo.photo_id }}" class="lightbox photo">
-                    <img src="{{ path('meetup_photo', {id: photo.id}) }}" alt="">
+                    <img src="{{ photo(photo.highres_link) }}" alt="" width="800" height="600">
                   </a>
                 </li>
               {% endfor %}
@@ -175,7 +175,7 @@
             <li>
               <a href="{{ app.meetup.url }}/members/{{ rsvp.member.member_id }}" class="event__attendee" title="{{ rsvp.member.name }}">
                 <div class="avatar avatar--small">
-                  <img src="{{ path('member_photo', {id: rsvp.member.member_id, size: 'thumb'}) }}" alt="{{ rsvp.member.name }}">
+                  <img src="{{ avatar(rsvp.member_photo.photo_link) }}" alt="{{ rsvp.member.name }}">
                 </div>
               </a>
             </li>

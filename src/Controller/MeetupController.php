@@ -14,23 +14,6 @@ class MeetupController extends AbstractController
         ]);
     }
 
-    public function photoAction(Application $app, $id, $size)
-    {
-        $photo = json_decode($app['redis']->hget('phpsw:photos', $id));
-
-        try {
-            $response = $app['guzzle']->get($photo->{"${size}_link"});
-        } catch (\GuzzleHttp\Exception\BadResponseException $e) {
-            $app->abort($e->getResponse()->getStatusCode());
-        }
-
-        return new Response($response->getBody(), $response->getStatusCode(), [
-            'Cache-Control' => 'public',
-            'Content-Type' => (string) $response->getHeader('Content-Type'),
-            'Expires' => (new \DateTime('+2 weeks'))->format('D, d M Y H:i:s T')
-        ]);
-    }
-
     public function photosAction(Application $app)
     {
         $group = $app['meetup.client']->getGroup();

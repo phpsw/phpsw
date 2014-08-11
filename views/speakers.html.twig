@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block hero %}
-  {{ path('meetup_photo', {id: 366333912, size: 'highres'}) }}
+  {{ hero('http://photos3.meetupstatic.com/photos/event/8/4/7/8/highres_366333912.jpeg') }}
 {% endblock %}
 
 {% block content %}
@@ -25,7 +25,7 @@
               >
                 {% if speaker.photo is defined %}
                   <div class="avatar avatar--large">
-                    <img src="{{ path('speaker_photo', {slug: speaker.slug}) }}" alt="{{ speaker.name }}">
+                    <img src="{{ avatar(speaker.photo.url, 'medium') }}" alt="{{ speaker.name }}">
                   </div>
                 {% endif %}
 

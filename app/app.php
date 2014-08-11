@@ -10,10 +10,14 @@ if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
 
 $app['guzzle'] = new GuzzleHttp\Client();
 
-$app['redis'] = new Predis\Client();
-
 $app['meetup.client'] = function ($app) {
     return new PHPSW\API\Meetup($app, $app['meetup'], $app['cli'], $app['debug']);
+};
+
+$app['redis'] = new Predis\Client();
+
+$app['thumbor.builder'] = function ($app) {
+    return Thumbor\Url\BuilderFactory::construct($app['thumbor']['server'], $app['thumbor']['security_key']);
 };
 
 $app['twitter.client'] = function ($app) {
@@ -44,24 +48,6 @@ $app->get('/meetup/photos',      'PHPSW\Controller\MeetupController::photosActio
 $app->get('/meetup/posts',       'PHPSW\Controller\MeetupController::postsAction')->bind('meetup_posts');
 $app->get('/meetup/reviews',     'PHPSW\Controller\MeetupController::reviewsAction')->bind('meetup_reviews');
 $app->get('/meetup/sponsors',    'PHPSW\Controller\MeetupController::sponsorsAction')->bind('meetup_sponsors');
-
-$app->get('/photos/{id}/{size}.jpg', 'PHPSW\Controller\MeetupController::photoAction')
-    ->bind('meetup_photo')
-    ->assert('size', implode('|', ['highres', 'photo', 'thumb']))
-    ->value('size', 'photo')
-;
-
-$app->get('/members/{id}/{size}.jpg', 'PHPSW\Controller\MemberController::photoAction')
-    ->bind('member_photo')
-    ->assert('size', implode('|', ['highres', 'photo', 'thumb']))
-    ->value('size', 'photo')
-;
-
-$app->get('/speakers/{slug}/{size}.jpg', 'PHPSW\Controller\SpeakerController::photoAction')
-    ->bind('speaker_photo')
-    ->assert('size', implode('|', ['highres', 'photo', 'thumb']))
-    ->value('size', 'photo')
-;
 
 $app
     ->get('/twitter/{user}/tweets', 'PHPSW\Controller\TwitterController::tweetsAction')

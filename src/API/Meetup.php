@@ -214,7 +214,15 @@ class Meetup
                         $member = (object) $member;
 
                         if (isset($member->photo)) {
-                            $member->photo = (object) $member->photo;
+                            $photo = $member->photo = (object) $member->photo;
+
+                            if (isset($photo->highres_link)) {
+                                $member->photo->url = $photo->highres_link;
+                            } elseif (isset($photo->photo_link)) {
+                                $member->photo->url = $photo->photo_link;
+                            } elseif (isset($photo->thumb_link)) {
+                                $member->photo->url = $photo->thumb_link;
+                            }
                         }
 
                         $member->other_services = array_map(
@@ -510,7 +518,15 @@ class Meetup
                             $talk->speaker->member = $this->getMember($matches[1]);
 
                             if (isset($talk->speaker->member->photo)) {
-                                $talk->speaker->photo = $talk->speaker->member->photo;
+                                $photo = $talk->speaker->photo = $talk->speaker->member->photo;
+
+                                if (isset($photo->highres_link)) {
+                                    $talk->speaker->url = $photo->highres_link;
+                                } elseif (isset($photo->photo_link)) {
+                                    $talk->speaker->url = $photo->photo_link;
+                                } elseif (isset($photo->thumb_link)) {
+                                    $talk->speaker->url = $photo->thumb_link;
+                                }
                             }
 
                             foreach ($talk->speaker->member->other_services as $key => $service) {
@@ -524,7 +540,8 @@ class Meetup
                             $talk->speaker->photo = (object) [
                                 'thumb_link' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=bigger",
                                 'photo_link' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=original",
-                                'highres_link' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=original"
+                                'highres_link' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=original",
+                                'url' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=original"
                             ];
                         }
                     }

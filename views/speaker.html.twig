@@ -6,7 +6,7 @@
 
 {% block hero %}
   {% if speaker.photo is defined %}
-    {{ path('speaker_photo', {slug: speaker.slug, size: 'highres'}) }}
+    {{ avatar(speaker.photo.url, 'large') }}
   {% endif %}
 {% endblock %}
 

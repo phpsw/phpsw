@@ -53,7 +53,7 @@
             {% if member.photo is defined %}
               <a href="{{ app.meetup.url }}/members/{{ member.id }}" title="{{ member.name }}">
                 <div class="avatar avatar--small">
-                  <img src="{{ path('member_photo', {id: member.id}) }}" alt="{{ member.name }}">
+                  <img src="{{ avatar(member.photo.url) }}" alt="{{ member.name }}">
                 </div>
               </a>
             {% endif %}

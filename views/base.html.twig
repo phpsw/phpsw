@@ -23,9 +23,7 @@
 
       {% if block('hero') | trim %}
         <div class="hero hero--{{ block('hero_modifier') | trim | default('default') }}">
-          <div class="hero__image" style="background-image: url('{{ block('hero') | trim }}')">
-            {{ block('hero__image') }}
-          </div>
+          <div class="hero__image" style="background-image: url('{{ block('hero') | trim }}')"></div>
           <div class="hero__overlay"></div>
         </div>
       {% endif %}

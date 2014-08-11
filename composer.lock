@@ -4,8 +4,51 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "45fd47ed5c3dcccb54520469f51d23fd",
+    "hash": "346bd8557cac066351d39537d06335d4",
     "packages": [
+        {
+            "name": "99designs/phumbor",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/99designs/phumbor.git",
+                "reference": "5b1d495743a13faaeaddc4d3b86a2bfce4559f02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/99designs/phumbor/zipball/5b1d495743a13faaeaddc4d3b86a2bfce4559f02",
+                "reference": "5b1d495743a13faaeaddc4d3b86a2bfce4559f02",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Thumbor": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stuart Campbell",
+                    "email": "stuart.campbell@99designs.com"
+                }
+            ],
+            "description": "A minimal Thumbor library for PHP",
+            "homepage": "https://github.com/99designs/phumbor",
+            "keywords": [
+                "99designs",
+                "Thumbnails",
+                "php",
+                "thumbor"
+            ],
+            "time": "2014-08-04 17:33:02"
+        },
         {
             "name": "cocur/slugify",
             "version": "v0.9",
@@ -156,16 +199,16 @@
         },
         {
             "name": "guzzle/guzzle",
-            "version": "v3.9.1",
+            "version": "v3.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "92d9934f2fca1da15178c91239576ae26e505e60"
+                "reference": "54991459675c1a2924122afbb0e5609ade581155"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/92d9934f2fca1da15178c91239576ae26e505e60",
-                "reference": "92d9934f2fca1da15178c91239576ae26e505e60",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/54991459675c1a2924122afbb0e5609ade581155",
+                "reference": "54991459675c1a2924122afbb0e5609ade581155",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +252,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.8-dev"
+                    "dev-master": "3.9-dev"
                 }
             },
             "autoload": {
@@ -244,7 +287,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-05-07 17:04:22"
+            "time": "2014-08-11 04:32:36"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -313,16 +356,16 @@
         },
         {
             "name": "guzzlehttp/streams",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/streams.git",
-                "reference": "78f73ec74a87d5c6c29279119773693cc732789e"
+                "reference": "fb0d1ee29987c2bdc59867bffaade6fc88c2675f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/streams/zipball/78f73ec74a87d5c6c29279119773693cc732789e",
-                "reference": "78f73ec74a87d5c6c29279119773693cc732789e",
+                "url": "https://api.github.com/repos/guzzle/streams/zipball/fb0d1ee29987c2bdc59867bffaade6fc88c2675f",
+                "reference": "fb0d1ee29987c2bdc59867bffaade6fc88c2675f",
                 "shasum": ""
             },
             "require": {
@@ -362,7 +405,7 @@
                 "Guzzle",
                 "stream"
             ],
-            "time": "2014-08-08 01:24:01"
+            "time": "2014-08-10 23:57:01"
         },
         {
             "name": "igorw/config-service-provider",
@@ -1585,6 +1628,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "99designs/phumbor": 20,
         "cocur/slugify": 0,
         "knplabs/console-service-provider": 20
     },
