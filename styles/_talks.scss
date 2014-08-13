@@ -1,0 +1,39 @@
+.talks {
+  padding: 1em 0;
+
+  h3 {
+    margin: 0;
+  }
+
+  ul {
+    li {
+      margin: 1em 0;
+    }
+  }
+
+  .avatar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1.5em;
+  }
+}
+
+.talk {
+  .talks--event & {
+    .talk__section {
+      position: relative;
+      padding-left: 4em;
+    }
+  }
+
+  .talk__slides {
+    margin-top: 1em;
+
+    iframe {
+      width: 320px !important;
+      min-height: 200px !important;
+      margin: 0 !important;
+    }
+  }
+}

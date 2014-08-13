@@ -19,3 +19,6 @@
     .js & { display: block; }
     .no-js & { display: none; }
 }
+
+.no-js i.js-hidden { display: inline; }
+.js i.js-shown { display: inline; }

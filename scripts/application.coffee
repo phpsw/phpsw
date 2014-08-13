@@ -16,8 +16,8 @@ phpsw =
         fragment: '.content',
         timeout: 10000
       .on 'pjax:success', =>
-          $('.navbar-toggle').addClass('collapsed')
-          @modules()
+        $('.navbar-toggle').addClass('collapsed')
+        @modules()
 
   nprogress: ->
     NProgress.configure

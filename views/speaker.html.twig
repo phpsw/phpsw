@@ -59,34 +59,7 @@
       </ul>
 
       {% if speaker.talks %}
-        <div id="talks">
-          <h2>Talks</h2>
-
-          <ul class="list">
-            {% for talk in speaker.talks %}
-              <li id="talk-{{ talk.id }}" class="talk">
-                <h3>
-                  {% if talk.slides %}
-                    <a href="{{ talk.slides }}">
-                      {{ talk.title }}
-                      <i class="fa fa-external-link"></i>
-                    </a>
-                  {% else %}
-                    {{ talk.title }}
-                  {% endif %}
-                </h3>
-
-                <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
-                  {{ talk.event.name }}
-                </a>
-
-                <small>
-                  {{ talk.event.date.format('F Y') }}
-                </small>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+        {{ include('talks.html.twig', {talks: speaker.talks}) }}
       {% endif %}
     </div>
 

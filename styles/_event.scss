@@ -94,27 +94,3 @@
     max-width: inherit;
   }
 }
-
-.event__talks {
-  padding: 1em 0;
-
-  h3 {
-    margin: 0;
-  }
-
-  ul {
-    padding-left: 4em;
-
-    li {
-      position: relative;
-      margin: 1em 0;
-    }
-  }
-
-  .avatar {
-    position: absolute;
-    top: 50%;
-    left: -4em;
-    margin-top: -1.5em;
-  }
-}

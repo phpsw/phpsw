@@ -1,3 +1,5 @@
+@import "variables";
+
 body {
   min-width: 320px;
   margin: 0;
@@ -6,16 +8,30 @@ body {
 }
 
 h1, h2, h3 {
-    time {
-        white-space: nowrap;
+  time {
+    white-space: nowrap;
+  }
+}
+
+a {
+  cursor: pointer;
+
+  svg {
+    fill: $link-color;
+    width: 1em;
+    height: 1em;
+  }
+
+  &:hover, &:focus {
+    svg {
+      fill: $link-hover-color;
     }
+  }
 }
 
 img, svg {
   max-width: 100%;
 }
-
-@import "variables";
 
 @import "layout";
 @import "hero";
@@ -34,3 +50,4 @@ img, svg {
 @import "organisers";
 @import "progress";
 @import "speakers";
+@import "talks";

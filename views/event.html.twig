@@ -79,45 +79,7 @@
         </div>
 
         {% if event.talks %}
-          <div id="talks" class="event__talks">
-            <h2>Talks</h2>
-
-            <ul class="list">
-              {% for talk in event.talks %}
-                <li id="talk-{{ talk.id }}" class="talk">
-                  <h3>
-                    {% if talk.slides %}
-                      <a href="{{ talk.slides }}">
-                        {{ talk.title }}
-                        <i class="fa fa-external-link"></i>
-                      </a>
-                    {% else %}
-                      {{ talk.title }}
-                    {% endif %}
-                  </h3>
-
-                  <a
-                    href="{{ path('speaker', {slug: talk.speaker.slug}) }}"
-                    {% if talk.speaker.member.bio is defined %}
-                      title="{{ talk.speaker.member.bio }}"
-                    {% endif %}
-                  >
-                    {%- if talk.speaker.photo is defined -%}
-                      <div class="avatar avatar--small">
-                        <img src="{{ avatar(talk.speaker.photo.url) }}" alt="{{ talk.speaker.name }}">
-                      </div>
-                    {%- endif -%}
-
-                    <span class="fn">{{ talk.speaker.name }}</span>
-                  </a>
-
-                  {%- if talk.speaker.bio is defined -%}
-                    , {{ talk.speaker.bio | raw }}
-                  {% endif %}
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
+          {{ include('talks.html.twig', {talks: event.talks}) }}
         {% endif %}
 
         {% if event.photos %}

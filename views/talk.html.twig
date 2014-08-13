@@ -1,0 +1,75 @@
+{% set iframe = 'google.com' in talk.slides or 'slides.com' in talk.slides or 'slid.es' in talk.slides %}
+{% set embedly = 'slideshare' in talk.slides or 'speakerdeck' in talk.slides %}
+{% set embeddable = iframe or embedly %}
+
+<div id="talk-{{ talk.id }}" class="talk">
+  <div class="talk__details talk__section">
+    <h3>
+      {% if talk.slides %}
+        <a href="{{ talk.slides }}"
+          {% if embeddable %}
+            data-target="#slides-{{ talk.id }}"
+            data-toggle="collapse"
+          {% endif %}
+        >
+          {{ talk.title }}
+
+          {% if embeddable %}
+            <i class="js-shown">{{ include('slides.svg.twig') }}</i>
+            <i class="fa fa-external-link js-hidden"></i>
+          {% else %}
+            <i class="fa fa-external-link"></i>
+          {% endif %}
+        </a>
+      {% else %}
+        {{ talk.title }}
+      {% endif %}
+    </h3>
+
+    {% if event is defined %}
+      <a
+        href="{{ path('speaker', {slug: talk.speaker.slug}) }}"
+        {% if talk.speaker.member.bio is defined %}
+          title="{{ talk.speaker.member.bio }}"
+        {% endif %}
+      >
+        {%- if talk.speaker.photo is defined -%}
+          <div class="avatar avatar--small">
+            <img src="{{ avatar(talk.speaker.photo.url) }}" alt="{{ talk.speaker.name }}">
+          </div>
+        {%- endif -%}
+
+        <span class="fn">{{ talk.speaker.name }}</span> {#--#}
+      </a>
+
+      {%- if talk.speaker.bio is defined -%}
+        , {{ talk.speaker.bio | raw }}
+      {% endif %}
+    {% elseif speaker is defined %}
+      <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
+        {{ talk.event.name }}
+      </a>
+
+      <small>
+        {{ talk.event.date.format('F Y') }}
+      </small>
+    {% endif %}
+  </div>
+
+  {% if embeddable %}
+    <div id="slides-{{ talk.id }}" class="talk__slides talk__section collapse">
+      {% if iframe %}
+          <iframe
+            src="{{ talk.slides | replace({'/pub': ''}) }}/embed"
+            frameborder="0" scrolling="no"
+            allowfullscreen mozallowfullscreen webkitallowfullscreen
+          >
+          </iframe>
+      {% elseif embedly %}
+          <a href="{{ talk.slides }}" class="embedly-card" data-card-chrome="0">
+            {{ talk.title }}
+          </a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
