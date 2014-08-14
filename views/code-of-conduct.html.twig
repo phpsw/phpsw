@@ -4,6 +4,10 @@
   Code of conduct
 {% endblock %}
 
+{% block hero %}
+  {{ hero('http://photos2.meetupstatic.com/photos/event/1/8/9/4/highres_333006292.jpeg') }}
+{% endblock %}
+
 {% block content %}
   {{ include('code-of-conduct.md.twig') | markdown }}
 {% endblock %}

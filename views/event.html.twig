@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block hero %}
-  {{ event.photos ? hero(random(event.photos).highres_link) }}
-{% endblock %}
-
 {% block title %}
   {{ event.name }}
+{% endblock %}
+
+{% block hero %}
+  {{ event.photos ? hero(random(event.photos).highres_link) }}
 {% endblock %}
 
 {% block page_header %}
