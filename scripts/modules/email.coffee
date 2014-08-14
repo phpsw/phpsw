@@ -1,11 +1,10 @@
 phpsw.email =
   init: ->
-    $(".email").each (i, el) =>
-      $email = $(el)
-
-      $email
-        .attr "href", @dehumanize $email.attr("href")
-        .html @dehumanize $email.html()
+    $(".email").filter(':not(.dehumanized)').each (i, el) =>
+      $(el)
+        .addClass 'dehumanized'
+        .attr "href", @dehumanize $(el).attr("href")
+        .html @dehumanize $(el).html()
 
   dehumanize: (string) ->
     string
