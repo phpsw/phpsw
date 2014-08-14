@@ -44,7 +44,7 @@
       <div id="sponsors">
         <h2>Sponsors</h2>
 
-        {% for type, sponsors in app.sponsors %}
+        {% for type, sponsors in sponsors() %}
           <h3>{{ type | capitalize }} sponsors</h3>
 
           <div class="row">

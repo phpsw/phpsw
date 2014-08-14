@@ -11,7 +11,7 @@
 {% block content %}
   <div class="row">
     <div class="col-sm-8">
-      {% for type, sponsors in app.sponsors %}
+      {% for type, sponsors in sponsors() %}
         <h2>{{ type | capitalize }} sponsors</h2>
 
         <div class="row">

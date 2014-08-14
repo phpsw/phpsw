@@ -153,35 +153,15 @@
           <h2 id="sponsors">Sponsors</h2>
 
           <div class="row">
-            {% if 'basekit' in event.venue.name | lower %}
-              <div class="col-xs-4 col-sm-3">
-                <a href="http://www.basekit.com">
-                  <img src="/images/sponsors/basekit.png" alt="BaseKit">
-                </a>
-              </div>
-            {% endif %}
-
-            {% if 'brightpearl' in event.venue.name | lower %}
-              <div class="col-xs-4 col-sm-3">
-                <a href="https://www.brightpearl.com">
-                  <img src="/images/sponsors/brightpearl.png" alt="Brightpearl">
-                </a>
-              </div>
-            {% endif %}
-
-            {% if event.date > date('2014-08-01') %}
-              <div class="col-xs-4 col-sm-3">
-                <a href="http://www.ents24.com">
-                  <img src="/images/sponsors/ents24.png" alt="Ents24">
-                </a>
-              </div>
-
-              <div class="col-xs-4 col-sm-3">
-                <a href="http://www.redrockconsulting.co.uk">
-                  <img src="/images/sponsors/redrock.png" alt="Redrock Consulting">
-                </a>
-              </div>
-            {% endif %}
+            {% for type, sponsors in sponsors(event) | reverse %}
+              {% for sponsor in sponsors %}
+                <div class="col-xs-4 col-sm-3">
+                  <a href="{{ sponsor.url }}" title="{{ sponsor.description }}">
+                    <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                  </a>
+                </div>
+              {% endfor %}
+            {% endfor %}
           </div>
         </footer>
       {% endif %}

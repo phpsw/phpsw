@@ -64,16 +64,22 @@ sponsors:
       description: The UK's busiest live entertainment guide, helping millions of fans discover live shows and buy tickets every year. Made in Bristol with PHP since 1999
       url: http://www.ents24.com
       logo: /images/sponsors/ents24.png
+      start: 2014-08-01
+      end: ~
     -
       name: Just Eat
       description: Just Eat are expanding their technology development with the opening of a new specialist hub in Bristol
       url: http://tech.just-eat.com
       logo: /images/sponsors/just-eat.png
+      start: 2014-08-01
+      end: ~
     -
       name: Redrock Consulting
       description: Redrock Consulting—Ethical and transparent recruiters reaching out to Software Developers in the South-West
       url: http://www.redrockconsulting.co.uk
       logo: /images/sponsors/redrock.png
+      start: 2014-08-01
+      end: ~
 
   event:
     -
@@ -81,11 +87,15 @@ sponsors:
       description: Beautiful websites for small businesses. The world's fastest growing website editor
       url: http://www.basekit.com
       logo: /images/sponsors/basekit.png
+      start: ~
+      end: ~
     -
       name: Brightpearl
       description: Brightpearl handles the scale and complexity of a growing multi-channel retail business
       url: https://www.brightpearl.com
       logo: /images/sponsors/brightpearl.png
+      start: ~
+      end: ~
 
 thumbor:
   server: ~

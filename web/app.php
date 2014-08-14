@@ -11,6 +11,7 @@ $app->register(new Silex\Provider\TwigServiceProvider, [
 ]);
 
 $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
+    $twig->addExtension(new PHPSW\Twig\SponsorExtension($app['sponsors']));
     $twig->addExtension(new PHPSW\Twig\ThumborExtension($app['thumbor.builder']));
     $twig->addExtension(new Twig_Extensions_Extension_Text($app));
 
