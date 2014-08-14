@@ -49,8 +49,8 @@
 
           <div class="row">
             {% for sponsor in sponsors %}
-              <div class="col-xs-6">
-                <a href="{{ sponsor.url }}">
+              <div class="col-xs-{{ sponsors | length % 2 == 0 ? 6 : 4 }}">
+                <a href="{{ sponsor.url }}" title="{{ sponsor.description }}">
                   <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
                 </a>
               </div>
