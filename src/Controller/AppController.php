@@ -22,6 +22,11 @@ class AppController extends AbstractController
         return $this->render($app, 'brand.html.twig');
     }
 
+    public function conductAction(Application $app)
+    {
+        return $this->render($app, 'code-of-conduct.html.twig');
+    }
+
     public function invoiceAction(Application $app, Request $request)
     {
         $sponsor = $request->get('sponsor');

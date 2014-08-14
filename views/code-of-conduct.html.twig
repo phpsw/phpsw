@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Code of conduct
+{% endblock %}
+
+{% block content %}
+  {{ include('code-of-conduct.md.twig') | markdown }}
+{% endblock %}

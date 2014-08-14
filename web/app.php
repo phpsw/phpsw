@@ -6,6 +6,8 @@ $app = require_once __DIR__ . '/../app/app.php';
 
 $app['cli'] = false;
 
+$app->register(new Nicl\Silex\MarkdownServiceProvider());
+
 $app->register(new Silex\Provider\TwigServiceProvider, [
     'twig.path' => __DIR__ . '/../views'
 ]);

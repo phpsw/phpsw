@@ -11,6 +11,7 @@
         "guzzlehttp/guzzle": "~4",
         "knplabs/console-service-provider": "dev-master",
         "igorw/config-service-provider": "~1.2",
+        "nicl/silex-markdown": "~1.0",
         "predis/predis": "~0.8",
         "silex/silex": "~1.1",
         "symfony/console": "~2.4",

@@ -37,6 +37,7 @@ foreach (['app', $app['env'], 'secrets'] as $config) {
 
 $app->get('/',                   'PHPSW\Controller\AppController::indexAction')->bind('home');
 $app->get('/brand',              'PHPSW\Controller\AppController::brandAction')->bind('brand');
+$app->get('/code-of-conduct',    'PHPSW\Controller\AppController::conductAction')->bind('conduct');
 $app->get('/events',             'PHPSW\Controller\EventController::indexAction')->bind('events');
 $app->get('/events/{id}-{slug}', 'PHPSW\Controller\EventController::showAction')->bind('event');
 $app->get('/invoice',            'PHPSW\Controller\AppController::invoiceAction')->bind('invoice');

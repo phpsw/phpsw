@@ -43,6 +43,18 @@
 
             <ul class="list">
               <li>
+                <a href="{{ path('brand') }}">
+                  <i class="fa fa-picture-o"></i>
+                  Brand assets
+                </a>
+              </li>
+              <li>
+                <a href="{{ path('conduct') }}">
+                  <i class="fa fa-file-text-o"></i>
+                  Code of conduct
+                </a>
+              </li>
+              <li>
                 <a
                   href="mailto:{{ app.organisers.steve.email | replace({'@': ' at ', '.': ' dot '}) }}"
                   class="email"
@@ -67,12 +79,6 @@
                 >
                   <i class="fa fa-money"></i>
                   Sponsor us
-                </a>
-              </li>
-              <li>
-                <a href="{{ path('brand') }}">
-                  <i class="fa fa-picture-o"></i>
-                  Brand assets
                 </a>
               </li>
             </ul>
