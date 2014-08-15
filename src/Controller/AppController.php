@@ -29,11 +29,24 @@ class AppController extends AbstractController
 
     public function invoiceAction(Application $app, Request $request)
     {
-        $sponsor = $request->get('sponsor');
+        $sponsors = $app['sponsors'];
+
+        $slug = $request->get('sponsor');
+
+        if (isset($sponsors['event'][$slug])) {
+            $sponsor = $sponsors['event'][$slug];
+        } elseif (isset($sponsors['meetup'][$slug])) {
+            $sponsor = $sponsors['meetup'][$slug];
+        } else {
+            $sponsor = (object) [
+                'name'    => $request->get('name'),
+                'company' => $request->get('company')
+            ];
+        }
 
         return $this->render($app, 'invoice.html.twig', [
             'amount' => $request->get('amount'),
-            'ref' => strtoupper(current(explode(' ', $sponsor)) . date('My')),
+            'ref' => strtoupper($slug . date('My')),
             'sponsor' => $sponsor
         ]);
     }

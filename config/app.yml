@@ -59,22 +59,27 @@ organisers:
 
 sponsors:
   meetup:
-    -
+    ents24:
       name: Ents24
+      company: Ents24
       description: The UK's busiest live entertainment guide, helping millions of fans discover live shows and buy tickets every year. Made in Bristol with PHP since 1999
       url: http://www.ents24.com
       logo: /images/sponsors/ents24.png
       start: 2014-08-01
       end: ~
-    -
+
+    justeat:
       name: Just Eat
+      company: Just Eat Holding Ltd
       description: Just Eat are expanding their technology development with the opening of a new specialist hub in Bristol
       url: http://tech.just-eat.com
       logo: /images/sponsors/just-eat.png
       start: 2014-08-01
       end: ~
-    -
+
+    redrock:
       name: Redrock Consulting
+      company: Redrock Consulting
       description: Redrock Consulting—Ethical and transparent recruiters reaching out to Software Developers in the South-West
       url: http://www.redrockconsulting.co.uk
       logo: /images/sponsors/redrock.png
@@ -82,15 +87,18 @@ sponsors:
       end: ~
 
   event:
-    -
+    basekit:
       name: BaseKit
+      company: BaseKit
       description: Beautiful websites for small businesses. The world's fastest growing website editor
       url: http://www.basekit.com
       logo: /images/sponsors/basekit.png
       start: ~
       end: ~
-    -
+
+    brightpearl:
       name: Brightpearl
+      company: Brightpearl
       description: Brightpearl handles the scale and complexity of a growing multi-channel retail business
       url: https://www.brightpearl.com
       logo: /images/sponsors/brightpearl.png
