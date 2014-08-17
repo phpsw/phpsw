@@ -27,6 +27,11 @@
     }
   }
 
+  .talk__description {
+    margin-top: .5em;
+    color: lighten($text-color, 20%);
+  }
+
   .talk__slides {
     margin-top: 1em;
 
