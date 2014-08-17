@@ -56,6 +56,12 @@
     {% endif %}
   </div>
 
+  {% if talk.description %}
+    <div class="talk__description talk__section">
+      {{ talk.description | raw }}
+    </div>
+  {% endif %}
+
   {% if embeddable %}
     <div id="slides-{{ talk.id }}" class="talk__slides talk__section collapse">
       {% if iframe %}

@@ -474,7 +474,9 @@ class Meetup
             foreach ($crawler as $i => $node) {
                 $node = new Crawler($node);
 
-                $talk = (object) [];
+                $talk = (object) [
+                    'description' => null
+                ];
 
                 $titleNode = $node->filter('b')->first();
 
@@ -554,6 +556,21 @@ class Meetup
                             'url' => $orgNode->attr('href')
                         ];
                     }
+
+                    $parsed = false;
+
+                    $talkDescriptionNode = $speakerNode->parents()->first()->nextAll()->filter('p');
+
+                    $talkDescriptionNode->each(function ($node) use ($event, $talk, &$parsed) {
+                        if (preg_match('#^\s*\-#', $node->text())) $parsed = true; # break if is next speaker or hr
+                        if (strpos($node->html(), '<a') !== false) $parsed = true; # break if has links
+                        if (preg_match('#BaseKit|Brightpearl|Doors#', $node->text())) $parsed = true; # sad hacks to fix some edge cases
+
+                        if (!$parsed) {
+                            $event->description = str_replace('<p>' . $node->html() . '</p>', '', $event->description);
+                            $talk->description .= '<p>' . preg_replace('#^\s*<br>#', '', preg_replace('#<br>\s*$#', '', $node->html())) . '</p>' . PHP_EOL;
+                        }
+                    });
 
                     $talk->slides = $this->redis->hget('phpsw:slides', $talk->id);
 
