@@ -579,14 +579,14 @@ class Meetup
                 }
             }
 
-            // hr up any dashes
-            $event->description = preg_replace('#<p>--</p>#', '<hr>', $event->description);
-
             // strip blank p's
             $event->description = preg_replace('#<p>\s*</p>#u', '', $event->description);
 
             // strip leading and trailings br's and whitespace in p's
             $event->description = preg_replace(['#<p>\s*(<br>)*#u', '#(<br>)*\s*</p>#u'], ['<p>', '</p>'], $event->description);
+
+            // hr up any dashes
+            $event->description = preg_replace('#<p>--</p>#', '<hr>', $event->description);
 
             // html entityify everything
             $event->description = htmlentities($event->description, ENT_NOQUOTES, 'UTF-8', false);
