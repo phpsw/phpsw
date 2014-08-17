@@ -13,35 +13,36 @@
     <div class="col-sm-8">
       {% if next_event %}
         <h2>Next event</h2>
+
         {{ include('meetup/event-list-item.html.twig', {'event': next_event}) }}
       {% endif %}
 
-      {% for status in statuses if attribute(_context, status ~ '_events') or status == 'upcoming' %}
-        {% if not loop.first or status != 'upcoming' %}
-          <section id="{{ status }}-events" class="events__{{ status }}">
-            <h2>{{ status | title }} events</h2>
+      {% for status in statuses if attribute(_context, status ~ '_events') %}
+        <section id="{{ status }}-events" class="events__{{ status }}">
+          <h2>{{ status | title }} events</h2>
 
-            {% for event in attribute(_context, status ~ '_events') %}
+          {% for event in attribute(_context, status ~ '_events') %}
+            {% if not loop.first or status == 'past' %}
               {% if prev is not defined or event.date.format('Y') != prev.date.format('Y') %}
                 <h3>{{ event.date.format('Y') }}</h3>
               {% endif %}
+            {% endif %}
 
-              {{ include('meetup/event-list-item.html.twig') }}
+            {{ include('meetup/event-list-item.html.twig') }}
 
-              {% set prev = event %}
-            {% else %}
-              {% if status == 'upcoming' %}
-                <div class="box box--empty">
-                  Nothing to announce right now,
-                  <a href="{{ app.twitter.url }}">
-                    follow us on Twitter
-                  </a>
-                  for updates.
-                </div>
-              {% endif %}
-            {% endfor %}
-          </section>
-        {% endif %}
+            {% set prev = event %}
+          {% else %}
+            {% if status == 'upcoming' %}
+              <div class="box box--empty">
+                Nothing to announce right now,
+                <a href="{{ app.twitter.url }}">
+                  follow us on Twitter
+                </a>
+                for updates.
+              </div>
+            {% endif %}
+          {% endfor %}
+        </section>
       {% endfor %}
     </div>
 
