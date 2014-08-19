@@ -45,6 +45,7 @@ $app->get('/members',            'PHPSW\Controller\MemberController::indexAction
 $app->get('/speakers',           'PHPSW\Controller\SpeakerController::indexAction')->bind('speakers');
 $app->get('/speakers/{slug}',    'PHPSW\Controller\SpeakerController::showAction')->bind('speaker');
 $app->get('/sponsors',           'PHPSW\Controller\AppController::sponsorsAction')->bind('sponsors');
+$app->get('/stats',              'PHPSW\Controller\EventController::statsAction')->bind('stats');
 $app->get('/meetup/photos',      'PHPSW\Controller\MeetupController::photosAction')->bind('meetup_photos');
 $app->get('/meetup/posts',       'PHPSW\Controller\MeetupController::postsAction')->bind('meetup_posts');
 $app->get('/meetup/reviews',     'PHPSW\Controller\MeetupController::reviewsAction')->bind('meetup_reviews');

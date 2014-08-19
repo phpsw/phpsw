@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Stats
+{% endblock %}
+
+{% block content %}
+  <h1>Stats</h1>
+
+  <h2>Attendance</h2>
+
+  <a href="{{ block('attendance') }}">
+    <img src="{{ block('attendance') }}">
+  </a>
+
+  <h2>Ratings</h2>
+
+  <a href="{{ block('ratings') }}">
+    <img src="{{ block('ratings') }}">
+  </a>
+{% endblock %}
+
+{%- block attendance -%}
+  http://charts.brace.io/line.svg?Attendance=
+  {{- block('attendance_values') | trim(',') -}}
+  &amp;_labels=
+  {{- block('attendance_labels') | trim(',') -}}
+  &amp;_show_legend=false&amp;_width=1600px&amp;_height=600px&amp;_fill=true
+{%- endblock -%}
+
+{% block attendance_labels %}
+  {%- for event in events | reverse -%}
+    {{ event.date | date('M y') }},
+  {%- endfor -%}
+{% endblock %}
+
+{% block attendance_values %}
+  {%- for event in events | reverse -%}
+    {{ event.yes_rsvp_count }},
+  {%- endfor -%}
+{% endblock %}
+
+{%- block ratings -%}
+  http://charts.brace.io/line.svg?Ratings=
+  {{- block('ratings_values') | trim(',') -}}
+  &amp;_labels=
+  {{- block('ratings_labels') | trim(',') -}}
+  &amp;_show_legend=false&amp;_width=1600px&amp;_height=600px&amp;_fill=true
+{%- endblock -%}
+
+{% block ratings_labels %}
+  {%- for event in events | reverse -%}
+    {%- if event.rating.average | default -%}
+      {{ event.date | date('M y') }},
+    {%- endif -%}
+  {%- endfor -%}
+{% endblock %}
+
+{% block ratings_values %}
+  {%- for event in events | reverse -%}
+    {%- if event.rating.average | default -%}
+      {{ event.rating.average }},
+    {%- endif -%}
+  {%- endfor -%}
+{% endblock %}

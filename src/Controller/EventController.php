@@ -15,6 +15,7 @@ class EventController extends AbstractController
             array_unshift($statuses, 'draft');
         }
 
+        $events = $app['meetup.client']->getEvents();
         $draftEvents = $app['meetup.client']->getDraftEvents();
         $pastEvents = $app['meetup.client']->getPastEvents();
         $upcomingEvents = $app['meetup.client']->getUpcomingEvents();
@@ -22,6 +23,7 @@ class EventController extends AbstractController
         return $this->render($app, 'events.html.twig', [
             'next_event' => array_shift($upcomingEvents),
             'statuses' => $statuses,
+            'events' => $events,
             'draft_events' => $draftEvents,
             'past_events' => $pastEvents,
             'upcoming_events' => $upcomingEvents
@@ -46,5 +48,14 @@ class EventController extends AbstractController
         }
 
         return $response;
+    }
+
+    public function statsAction(Application $app)
+    {
+        $events = $app['meetup.client']->getEvents();
+
+        return $this->render($app, 'stats.html.twig', [
+            'events' => $events
+        ]);
     }
 }
