@@ -6,3 +6,5 @@ g.task "styles", ->
     .pipe g.p.concat "main.css"
     .pipe g.dest "web/css"
     .pipe g.reload()
+
+  return

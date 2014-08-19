@@ -17,7 +17,7 @@ g.task "vendor-js", ["bower"], ->
   g.src [
       "web/vendor/modernizr/**/*.js",
       "web/vendor/jquery/**/*.js",
-      "web/vendor/jquery-*/**/*.js",
+      "web/vendor/jquery{.,-}*/**/*.js",
       "web/vendor/**/bootstrap/**/affix.js",
       "web/vendor/**/bootstrap/**/alert.js",
       "web/vendor/**/bootstrap/**/button.js",
@@ -26,7 +26,7 @@ g.task "vendor-js", ["bower"], ->
       "web/vendor/**/bootstrap/**/dropdown.js",
       "web/vendor/**/bootstrap/**/tab.js",
       "web/vendor/**/bootstrap/**/transition.js",
-      "web/vendor/**/bootstrap/**/scrollspy.js",
+      # "web/vendor/**/bootstrap/**/scrollspy.js",
       # "web/vendor/**/bootstrap/**/modal.js",
       "web/vendor/**/bootstrap/**/tooltip.js",
       "web/vendor/**/bootstrap/**/popover.js",
