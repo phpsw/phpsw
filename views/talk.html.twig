@@ -1,4 +1,4 @@
-{% set iframe = 'google.com' in talk.slides or 'slides.com' in talk.slides or 'slid.es' in talk.slides %}
+{% set iframe = 'google.com/presentation' in talk.slides or 'slides.com' in talk.slides or 'slid.es' in talk.slides %}
 {% set embedly = 'slideshare' in talk.slides or 'speakerdeck' in talk.slides %}
 {% set embeddable = iframe or embedly %}
 
