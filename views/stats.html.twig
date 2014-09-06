@@ -13,6 +13,12 @@
     <img src="{{ block('attendance') }}">
   </a>
 
+  <h2>Members</h2>
+
+  <a href="{{ block('members') }}">
+    <img src="{{ block('members') }}">
+  </a>
+
   <h2>Ratings</h2>
 
   <a href="{{ block('ratings') }}">
@@ -30,13 +36,33 @@
 
 {% block attendance_labels %}
   {%- for event in events | reverse -%}
-    {{ event.date | date('M y') }},
+    {{ event.date | date('M') | first ~ event.date | date('y') }},
   {%- endfor -%}
 {% endblock %}
 
 {% block attendance_values %}
   {%- for event in events | reverse -%}
     {{ event.yes_rsvp_count }},
+  {%- endfor -%}
+{% endblock %}
+
+{%- block members -%}
+  http://charts.brace.io/line.svg?members=
+  {{- block('members_values') | trim(',') -}}
+  &amp;_labels=
+  {{- block('members_labels') | trim(',') -}}
+  &amp;_show_legend=false&amp;_width=1600px&amp;_height=600px&amp;_fill=true
+{%- endblock -%}
+
+{% block members_labels %}
+  {%- for date, total in members -%}
+    {{ date | date('M') | first ~ date | date('y') }},
+  {%- endfor -%}
+{% endblock %}
+
+{% block members_values %}
+  {%- for date, total in members -%}
+    {{ total }},
   {%- endfor -%}
 {% endblock %}
 
@@ -51,7 +77,7 @@
 {% block ratings_labels %}
   {%- for event in events | reverse -%}
     {%- if event.rating.average | default -%}
-      {{ event.date | date('M y') }},
+      {{ event.date | date('M') | first ~ event.date | date('y') }},
     {%- endif -%}
   {%- endfor -%}
 {% endblock %}

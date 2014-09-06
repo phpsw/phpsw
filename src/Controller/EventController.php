@@ -53,9 +53,50 @@ class EventController extends AbstractController
     public function statsAction(Application $app)
     {
         $events = $app['meetup.client']->getEvents();
+        $members = $app['meetup.client']->getMembers();
+
+        $totals = [];
+
+        foreach ($members as $member) {
+            $date = $member->joined->format('Y-m');
+
+            if (array_key_exists($date, $totals)) {
+                $totals[$date]++;
+            } else {
+                $totals[$date] = 1;
+            }
+        }
+
+        ksort($totals);
+
+        $dates = array_keys($totals);
+
+        $begin = new \DateTime(current($dates));
+        $end   = new \DateTime(end($dates));
+
+        $begin->setTime(0,0); $end->setTime(12,0);
+
+        $interval = \DateInterval::createFromDateString('1 month');
+        $period = new \DatePeriod($begin, $interval, $end);
+
+        $dates = [];
+        $total = 0;
+
+        foreach ($period as $date) {
+            $date = $date->format('Y-m');
+
+            if (array_key_exists($date, $totals)) {
+                $count = $totals[$date];
+            } else {
+                $count = 0;
+            }
+
+            $dates[$date] = $total += $count;
+        }
 
         return $this->render($app, 'stats.html.twig', [
-            'events' => $events
+            'events' => $events,
+            'members' => $dates
         ]);
     }
 }
