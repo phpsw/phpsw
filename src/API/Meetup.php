@@ -540,10 +540,10 @@ class Meetup
                             $talk->speaker->twitter = $matches[1];
 
                             $talk->speaker->photo = (object) [
-                                'thumb_link' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=bigger",
-                                'photo_link' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=original",
-                                'highres_link' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=original",
-                                'url' => "https://twitter.com/api/users/profile_image/{$talk->speaker->twitter}?size=original"
+                                'thumb_link' => "http://avatars.phpsw.org.uk/twitter/{$talk->speaker->twitter}?size=bigger",
+                                'photo_link' => "http://avatars.phpsw.org.uk/twitter/{$talk->speaker->twitter}?size=original",
+                                'highres_link' => "http://avatars.phpsw.org.uk/twitter/{$talk->speaker->twitter}?size=original",
+                                'url' => "http://avatars.phpsw.org.uk/twitter/{$talk->speaker->twitter}?size=original"
                             ];
                         }
                     }
