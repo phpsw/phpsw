@@ -19,9 +19,12 @@
             <li>
               <a
                 href="{{ path('speaker', {slug: speaker.slug}) }}"
-                {% if speaker.member.bio is defined %}
-                  title="{{ speaker.member.bio }}"
-                {% endif %}
+                title="
+                  {{- speaker.name -}}
+                  {%- if speaker.bio | default -%}
+                    , {{ speaker.bio | striptags | raw }}
+                  {%- endif -%}
+                "
               >
                 {% if speaker.photo is defined %}
                   <div class="avatar avatar--large">
