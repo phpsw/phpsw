@@ -8,7 +8,7 @@
     "gulp-clean": "^0.2.4",
     "gulp-coffee": "^1.4.1",
     "gulp-concat": "^2.2.0",
-    "gulp-css-url-adjuster": "^0.1.0",
+    "gulp-css-url-adjuster": "git+https://github.com/casualrelaxation/gulp-css-url-adjuster.git",
     "gulp-filter": "^1.0.0",
     "gulp-flatten": "0.0.2",
     "gulp-gm": "0.0.6",
@@ -27,7 +27,7 @@
     "gulp-util": "^2.2.14",
     "lazypipe": "^0.2.1",
     "main-bower-files": "^1.0.2",
-    "node-sass": "^0.8.4",
+    "node-sass": "^0.9.3",
     "q": "^1.0.1",
     "tiny-lr": "^0.0.7"
   },
