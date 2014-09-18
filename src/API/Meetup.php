@@ -502,7 +502,7 @@ class Meetup
                 $titleNode = $node->filter('b')->first();
 
                 if ($titleNode->count()) {
-                    $talk->title = preg_replace('#\s+#u', ' ', $titleNode->text());
+                    $talk->title = preg_replace('#\s+#u', ' ', $titleNode->html());
                     $talk->id = $event->id . '-' . $this->slugify($talk->title);
                     $talk->event = $event->id;
 

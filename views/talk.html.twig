@@ -12,7 +12,7 @@
             data-toggle="collapse"
           {% endif %}
         >
-          {{ talk.title }}
+          {{ talk.title | striptags | raw }}
 
           {% if embeddable %}
             <i class="js-shown">{{ include('slides.svg.twig') }}</i>
@@ -22,7 +22,7 @@
           {% endif %}
         </a>
       {% else %}
-        {{ talk.title }}
+        {{ talk.title | raw }}
       {% endif %}
     </h3>
 
@@ -56,12 +56,6 @@
     {% endif %}
   </div>
 
-  {% if talk.description %}
-    <div class="talk__description talk__section">
-      {{ talk.description | raw }}
-    </div>
-  {% endif %}
-
   {% if embeddable %}
     <div id="slides-{{ talk.id }}" class="talk__slides talk__section collapse">
       {% if iframe %}
@@ -76,6 +70,24 @@
             {{ talk.title }}
           </a>
       {% endif %}
+
+      <div class="talk__slides__link">
+        <a href="{{ talk.slides }}">
+          View on
+          {{ 'google.com/presentation' in talk.slides ? 'Google Docs' }}
+          {{ 'slides.com' in talk.slides ? 'slides.com' }}
+          {{ 'slid.es' in talk.slides ? 'slid.es' }}
+          {{ 'slideshare' in talk.slides ? 'SlideShare' }}
+          {{ 'speakerdeck' in talk.slides ? 'Speaker Deck' }}
+          <i class="fa fa-external-link"></i>
+        </a>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if talk.description %}
+    <div class="talk__description talk__section">
+      {{ talk.description | raw }}
     </div>
   {% endif %}
 </div>

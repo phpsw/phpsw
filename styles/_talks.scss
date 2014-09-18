@@ -21,25 +21,29 @@
 
 .talk {
   .talks--event & {
-    .talk__section {
+    &__section {
       position: relative;
       padding-left: 4em;
     }
   }
 
-  .talk__description {
+  &__description {
     margin-top: .5em;
     color: lighten($text-color, 20%);
   }
 
-  .talk__slides {
-    margin-top: 1em;
+  &__slides {
+    margin: 1em 0;
 
     iframe {
       width: 320px !important;
       max-width: 100%;
       min-height: 200px !important;
       margin: 0 !important;
+    }
+
+    &__link {
+      margin: .5em 0;
     }
   }
 }

@@ -3,38 +3,38 @@
   width: 140px;
   height: 70px;
   z-index: 1;
-}
 
-.logo__sw__rhomboid,
-.logo__sw__text {
-  animation: kaboom 2s linear;
-  transform-origin: 50% 50%;
-  transform: scale(1.0);
-  transition: transform .25s linear;
+  &__sw__rhomboid,
+  &__sw__text {
+    animation: kaboom 2s linear;
+    transform-origin: 50% 50%;
+    transform: scale(1.0);
+    transition: transform .25s linear;
 
-  .logo--global:hover &, .logo--global:focus & {
-    transform: scale(1.05);
-  }
-}
-
-.logo__sw__rhomboid {
-  fill: $brand-primary;
-
-  .logo--global:hover &, .logo--global:focus & {
-    fill: darken($brand-primary, 10%);
-  }
-}
-
-.logo--greyscale {
-  width: 100px;
-  height: 50px;
-
-  .logo__php {
-    fill: desaturate(lighten($brand-primary, 20%), 30%);
+    .logo--global:hover &, .logo--global:focus & {
+      transform: scale(1.05);
+    }
   }
 
-  .logo__sw__rhomboid {
-    fill: desaturate(lighten($brand-primary, 10%), 30%);
+  &__sw__rhomboid {
+    fill: $brand-primary;
+
+    .logo--global:hover &, .logo--global:focus & {
+      fill: darken($brand-primary, 10%);
+    }
+  }
+
+  &--greyscale {
+    width: 100px;
+    height: 50px;
+
+    .logo__php {
+      fill: desaturate(lighten($brand-primary, 20%), 30%);
+    }
+
+    .logo__sw__rhomboid {
+      fill: desaturate(lighten($brand-primary, 10%), 30%);
+    }
   }
 }
 
