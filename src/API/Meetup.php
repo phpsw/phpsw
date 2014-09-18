@@ -183,10 +183,31 @@ class Meetup
     {
         if ($this->members === null) {
             if ($this->cli) {
-                $this->members = array_replace_recursive(
-                    $this->client->getMembers(['group_urlname' => $this->config['urlname'], 'order' => 'name'])->getData(),
-                    $this->client->getGroupProfiles(['group_urlname' => $this->config['urlname'], 'order' => 'name'])->getData()
-                );
+                $this->members = [];
+
+                $params = [
+                    'group_urlname' => $this->config['urlname'],
+                    'page' => 200,
+                    'offset' => 0,
+                    'order' => 'name'
+                ];
+
+                do {
+                    $members = $this->client->getMembers($params);
+                    $profiles = $this->client->getGroupProfiles($params);
+
+                    $this->members = array_merge(
+                        $this->members,
+                        array_replace_recursive(
+                            $members->getData(),
+                            $profiles->getData()
+                        )
+                    );
+
+                    $meta = $members->getMetadata();
+
+                    $params['offset']++;
+                } while ($params['page'] * $params['offset'] < $meta['total_count']);
             } else {
                 $this->members = array_map(
                     function ($member) {
