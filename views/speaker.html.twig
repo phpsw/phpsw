@@ -5,16 +5,11 @@
 {% endblock %}
 
 {% block hero %}
-  url('{{ avatar(speaker.photo.url, 'large') }}'),
-  url('{{ speaker.photos ? speaker(random(speaker.photos).highres_link) }}')
-{% endblock %}
+  url('{{ avatar(speaker.photo.url, 'large') }}')
 
-{% block herfddfo %}
-  {% if speaker.photos %}
-    {{ speaker.photos ? hero(random(speaker.photos).highres_link) }}
-  {% elseif speaker.photo | default %}
-    {{ avatar(speaker.photo.url, 'large') }}
-  {% endif %}
+  {%- if speaker.photos -%}
+    , url('{{ speaker.photos ? speaker(random(speaker.photos).highres_link) }}')
+  {%- endif -%}
 {% endblock %}
 
 {% block hero_modifier %}
