@@ -5,7 +5,14 @@
 {% endblock %}
 
 {% block hero %}
-  {% if speaker.photo is defined %}
+  url('{{ avatar(speaker.photo.url, 'large') }}'),
+  url('{{ speaker.photos ? speaker(random(speaker.photos).highres_link) }}')
+{% endblock %}
+
+{% block herfddfo %}
+  {% if speaker.photos %}
+    {{ speaker.photos ? hero(random(speaker.photos).highres_link) }}
+  {% elseif speaker.photo | default %}
     {{ avatar(speaker.photo.url, 'large') }}
   {% endif %}
 {% endblock %}
@@ -60,6 +67,10 @@
 
       {% if speaker.talks %}
         {{ include('talks.html.twig', {talks: speaker.talks}) }}
+      {% endif %}
+
+      {% if speaker.photos %}
+        {{ include('photos.html.twig', {photos: speaker.photos}) }}
       {% endif %}
     </div>
 

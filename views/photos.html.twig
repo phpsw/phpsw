@@ -1,0 +1,18 @@
+<div id="photos" class="photos">
+  <h2>Photos</h2>
+
+  <ul class="list list--inline list--images">
+    {% for photo in photos %}
+      <li>
+        <a href="#photo-{{ photo.photo_id }}" class="photo">
+          <img src="{{ thumbnail(photo.thumb_link) }}" alt="" width="80" height="60">
+        </a>
+
+        <!-- lightbox container hidden with CSS -->
+        <a href="#x" id="photo-{{ photo.photo_id }}" class="lightbox photo">
+          <img src="{{ photo(photo.highres_link) }}" alt="" width="800" height="600">
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

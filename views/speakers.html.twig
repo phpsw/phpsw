@@ -26,7 +26,7 @@
                   {%- endif -%}
                 "
               >
-                {% if speaker.photo is defined %}
+                {% if speaker.photo | default %}
                   <div class="avatar avatar--large">
                     <img src="{{ avatar(speaker.photo.url, 'medium') }}" alt="{{ speaker.name }}">
                   </div>

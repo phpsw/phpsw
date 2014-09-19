@@ -336,6 +336,27 @@ class Meetup
         }
     }
 
+    public function getTaggedPhotos($id)
+    {
+        $params = [
+            'group_urlname' => $this->config['urlname'],
+            'tagged' => $id
+        ];
+
+        return array_map(
+            function ($photo) {
+                $photo = (object) $photo;
+
+                $photo->id = $photo->photo_id;
+                $photo->member = (object) $photo->member;
+                $photo->photo_album = (object) $photo->photo_album;
+
+                return $photo;
+            },
+            $this->client->getPhotos($params)->getData()
+        );
+    }
+
     public function getTalks()
     {
         if ($this->talks === null) {

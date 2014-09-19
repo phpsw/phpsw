@@ -15,6 +15,7 @@ class ThumborExtension extends \Twig_Extension
             'avatar'    => new \Twig_Function_Method($this, 'avatar'),
             'hero'      => new \Twig_Function_Method($this, 'hero'),
             'photo'     => new \Twig_Function_Method($this, 'photo'),
+            'speaker'   => new \Twig_Function_Method($this, 'speaker'),
             'thumbnail' => new \Twig_Function_Method($this, 'thumbnail'),
             'thumbor'   => new \Twig_Function_Method($this, 'thumbor')
         ];
@@ -39,6 +40,17 @@ class ThumborExtension extends \Twig_Extension
     public function photo($url)
     {
         return $this->thumbor($url)->resize(1000, 800);
+    }
+
+    public function speaker($url)
+    {
+        return $this->hero($url)
+            ->addFilter('brightness', 30)
+            ->addFilter('grayscale')
+            ->addFilter('contrast', 20)
+            ->addFilter('rgb', 6, 10, 15)
+            ->smartCrop(true)
+        ;
     }
 
     public function thumbnail($url)

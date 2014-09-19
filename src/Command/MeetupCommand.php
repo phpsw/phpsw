@@ -82,6 +82,12 @@ class MeetupCommand extends Command
                             $speaker = $b;
                         }
 
+                        if (isset($speaker->member)) {
+                            $speaker->photos = $this->meetup->getTaggedPhotos($speaker->member->member_id);
+                        } else {
+                            $speaker->photos = [];
+                        }
+
                         $this->hset('speakers', $talk->speaker->slug, $speaker);
 
                         $callback();
