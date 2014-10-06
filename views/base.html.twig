@@ -25,7 +25,11 @@
         <div class="hero hero--{{ block('hero_modifier') | trim | default('default') }}">
           <div class="hero__image" style="background-image: {{ 'url' in block('hero') ? block('hero') | trim : ("url('" ~ block('hero') | trim ~ "')") }}"></div>
           <div class="hero__overlay"></div>
+
+          {{ include('bar.html.twig') }}
         </div>
+      {% else %}
+        {{ include('bar.html.twig') }}
       {% endif %}
 
       <main>

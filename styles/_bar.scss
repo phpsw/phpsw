@@ -1,0 +1,16 @@
+.bar {
+    a {
+        display: block;
+        background: rgba(#ECA63D, .75);
+        padding: .5em;
+        color: white;
+        text-align: center;
+
+        .hero & {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}
