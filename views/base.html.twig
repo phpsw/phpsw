@@ -26,10 +26,10 @@
           <div class="hero__image" style="background-image: {{ 'url' in block('hero') ? block('hero') | trim : ("url('" ~ block('hero') | trim ~ "')") }}"></div>
           <div class="hero__overlay"></div>
 
-          {{ include('bar.html.twig') }}
+          {# include('bar.html.twig') #}
         </div>
       {% else %}
-        {{ include('bar.html.twig') }}
+        {# include('bar.html.twig') #}
       {% endif %}
 
       <main>
