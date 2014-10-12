@@ -5,7 +5,7 @@ g.task "watch", ->
     return console.log(err) if err
 
     g.watch "bower.json", ["vendor"]
-    g.watch ["fonts/**/*", "web/vendor/**/fonts/*"], ["fonts"]
+    g.watch ["fonts/**/*", "vendor/bower/files/**/fonts/*"], ["fonts"]
     g.watch "images/**/*", ["images"]
     g.watch "scripts/**/*.coffee", ["scripts"]
     g.watch "styles/**/*.scss", ["styles"]

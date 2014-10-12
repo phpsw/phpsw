@@ -9,6 +9,7 @@ phpsw =
     @event.init()
     @events.init()
     @hero.init()
+    @photos.init()
 
   pjax: ->
     $(document)

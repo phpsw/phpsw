@@ -9,7 +9,9 @@
     "jquery-pjax": "~1.9.2",
     "jquery-timeago": "~1.4.1",
     "modernizr": "~2.8.3",
-    "nprogress": "~0.1.6"
+    "nprogress": "~0.1.6",
+    "owlcarousel": "~1.3.2",
+    "swipebox": "~1.2.9"
   },
   "overrides": {
     "bootstrap-datepicker": {
@@ -21,6 +23,23 @@
     },
     "modernizr": {
       "main": "modernizr.js"
+    },
+    "owlcarousel": {
+      "main": [
+        "AjaxLoader.gif",
+        "grabbing.png",
+        "owl-carousel/owl.carousel.css",
+        "owl-carousel/owl.theme.css",
+        "owl-carousel/owl.transitions.css",
+        "owl-carousel/owl.carousel.js"
+      ]
+    },
+    "swipebox": {
+      "main": [
+        "src/css/swipebox.css",
+        "src/js/jquery.swipebox.js",
+        "src/img/*"
+      ]
     }
   },
   "private": true

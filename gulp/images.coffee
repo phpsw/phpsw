@@ -10,28 +10,28 @@ g.task "images", ->
     .pipe community
     .pipe g.p.gm (gm) ->
       gm
-        .background 'transparent'
-        .gravity 'Center'
+        .background "transparent"
+        .gravity "Center"
         .resize 160, 120
         .extent 160, 120
-        .transparent 'white'
-        .setFormat 'png'
+        .transparent "white"
+        .setFormat "png"
     .pipe community.restore()
 
     .pipe sponsors
     .pipe g.p.gm (gm) ->
       gm
-        .background 'transparent'
-        .gravity 'Center'
+        .background "transparent"
+        .gravity "Center"
         .resize 400, 300
         .extent 400, 300
-        .transparent 'white'
-        .setFormat 'png'
+        .transparent "white"
+        .setFormat "png"
     .pipe sponsors.restore()
 
     .pipe g.p.imagemin()
-      .on 'end', -> deferred.resolve()
-      .on 'error', g.p.util.log
+      .on "end", -> deferred.resolve()
+      .on "error", g.p.util.log
 
     .pipe g.dest "web/images"
     .pipe g.reload()

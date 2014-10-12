@@ -18,8 +18,16 @@ class MeetupController extends AbstractController
     {
         $group = $app['meetup.client']->getGroup();
 
+        if ($group->photos) {
+            $photos = array_filter($group->photos, function ($photo) {
+                return isset($photo->photo_album->event_id);
+            });
+        } else {
+            $photos = [];
+        }
+
         return $app['twig']->render('meetup/photos.html.twig', [
-            'photos' => $group ? $group->photos : []
+            'photos' => $photos
         ]);
     }
 
