@@ -18,7 +18,7 @@
           {% for sponsor in sponsors %}
             <div class="col-xs-{{ sponsors | length % 2 == 0 ? 6 : 4 }}">
               <a href="{{ sponsor.url }}">
-                <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" width="400">
               </a>
               <p>{{ sponsor.description }}</p>
             </div>
