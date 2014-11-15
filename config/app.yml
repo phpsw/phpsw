@@ -105,6 +105,25 @@ sponsors:
       start: ~
       end: ~
 
+  community:
+    jetbrains:
+      name: JetBrains
+      company: JetBrains
+      description: JetBrains, creator of PhpStorm - is a technology-leading software development firm specializing in the creation of intelligent development tools
+      url: https://www.jetbrains.com
+      logo: /images/sponsors/jetbrains.png
+      start: ~
+      end: ~
+
+    zend:
+      name: Zend
+      company: Zend
+      description: Zend is the leading provider of software and services for developing, deploying and scaling mobile and web apps written in PHP
+      url: https://www.zend.com
+      logo: /images/sponsors/zend.png
+      start: ~
+      end: ~
+
 thumbor:
   server: ~
   security_key: ~
