@@ -5,6 +5,7 @@ g.task "images", ->
 
   community = g.p.filter "**/community/*"
   sponsors = g.p.filter "**/sponsors/*"
+  root = g.p.filter "*"
 
   g.src "images/**/*.{gif,jpg,jpeg,png}"
     .pipe community
@@ -38,6 +39,7 @@ g.task "images", ->
 
   g.src "images/**/*.svg"
     .pipe g.dest "web/images"
+    .pipe root
     .pipe g.p.tap (file, t) ->
       file.contents = new Buffer(file.contents.toString()
         .replace(
@@ -47,6 +49,7 @@ g.task "images", ->
       )
     .pipe g.p.rename extname: ".svg.twig"
     .pipe g.dest "views"
+    .pipe root.restore()
     .pipe g.reload()
 
   deferred.promise
