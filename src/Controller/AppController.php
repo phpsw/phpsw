@@ -46,7 +46,7 @@ class AppController extends AbstractController
 
         return $this->render($app, 'invoice.html.twig', [
             'amount' => $request->get('amount'),
-            'ref' => strtoupper($slug . date('My')),
+            'ref' => strtoupper($slug . date('My', strtotime('next month'))),
             'sponsor' => $sponsor
         ]);
     }
