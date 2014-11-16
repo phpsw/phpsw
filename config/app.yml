@@ -2,6 +2,10 @@ name: PHPSW
 title: PHPSW · South West UK PHP User Group
 description: PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.
 
+bugsnag:
+  api:
+    key: ~
+
 communities:
   - { name: Bristol Web Folk,  logo: bristol-web-folk.png, url:  http://bristolwebfolk.github.io }
   - { name: Bristol Drupal,    logo: drupal-bristol.png,   url:  https://groups.drupal.org/bristol-and-west-uk }

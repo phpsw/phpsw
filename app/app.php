@@ -58,6 +58,14 @@ $app
     ->value('user', $app['twitter']['user'])
 ;
 
+if ($app['bugsnag']['api']['key'] && $app['env'] == 'prod') {
+    $app->register(new Bugsnag\Silex\Provider\BugsnagServiceProvider, [
+        'bugsnag.options' => [
+            'apiKey' => $app['bugsnag']['api']['key']
+        ]
+    ]);
+}
+
 $app->register(new Cocur\Slugify\Bridge\Silex\SlugifyServiceProvider());
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
