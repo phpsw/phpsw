@@ -7,6 +7,7 @@ use DMS\Service\Meetup\MeetupKeyAuthClient,
 
 class Meetup
 {
+    protected $albums;
     protected $cli;
     protected $client;
     protected $config;
@@ -403,9 +404,9 @@ class Meetup
 
                 $event->photos = array_values(
                     array_filter($this->getGroup()->photos, function ($photo) use ($event) {
-                        $album = $photo->photo_album;
+                        $album = $photo->album;
 
-                        return isset($album->event_id) && $album->event_id == $event->id;
+                        return isset($album->event_id) && $album->event_id == $event->id || $album->title == $event->name;
                     })
                 );
 
@@ -432,6 +433,34 @@ class Meetup
         );
     }
 
+    protected function getPhotoAlbum($id)
+    {
+        foreach ($this->getPhotoAlbumsFromApi() as $album) {
+            if ($album->photo_album_id == $id) {
+                return $album;
+            }
+        }
+    }
+
+    protected function getPhotoAlbumsFromApi()
+    {
+        if ($this->albums === null) {
+            $this->albums = array_map(
+                function ($album) {
+                    $album = (object) $album;
+
+                    $album->id = $album->photo_album_id;
+                    $album->album_photo = (object) $album->album_photo;
+
+                    return $album;
+                },
+                $this->client->getPhotoAlbums(['group_id' => $this->getGroup()->id])->getData()
+            );
+        }
+
+        return $this->albums;
+    }
+
     protected function getPhotosFromApi()
     {
         if ($this->photos === null) {
@@ -441,7 +470,7 @@ class Meetup
 
                     $photo->id = $photo->photo_id;
                     $photo->member = (object) $photo->member;
-                    $photo->photo_album = (object) $photo->photo_album;
+                    $photo->album = $this->getPhotoAlbum($photo->photo_album['photo_album_id']);
 
                     return $photo;
                 },
