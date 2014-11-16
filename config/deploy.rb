@@ -61,6 +61,22 @@ namespace :gulp do
   after "bower:install", :build
 end
 
+namespace :meetup do
+  task :import do
+    on roles :app do
+      execute "#{release_path}/app/console meetup:import:all"
+    end
+  end
+end
+
+namespace :twitter do
+  task :import do
+    on roles :app do
+      execute "#{release_path}/app/console twitter:import:all"
+    end
+  end
+end
+
 namespace :mod_pagespeed do
   task :flush do
     on roles :all do
