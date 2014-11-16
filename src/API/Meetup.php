@@ -664,6 +664,13 @@ class Meetup
 
             // html de-entityify tags
             $event->description = str_replace(['&lt;', '&gt;'], ['<', '>'], $event->description);
+
+            // switch website links for meetup links
+            $event->description = preg_replace(
+                '#(<a href=")[^"]+(">View on )the PHPSW website(</a>)#',
+                sprintf('\1%s\2%s\3', $event->url, 'Meetup'),
+                $event->description
+            );
         } else {
             // strip crazy </p> descriptions meetup returns
             $event->description = null;
