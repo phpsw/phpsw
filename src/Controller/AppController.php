@@ -55,4 +55,11 @@ class AppController extends AbstractController
     {
         return $this->render($app, 'sponsors.html.twig');
     }
+
+    public function vouchersAction(Application $app)
+    {
+        return $this->render($app, 'vouchers.html.twig', [
+            'prizes' => $app['vouchers']
+        ]);
+    }
 }

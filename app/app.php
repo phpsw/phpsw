@@ -50,6 +50,7 @@ $app->get('/meetup/photos',      'PHPSW\Controller\MeetupController::photosActio
 $app->get('/meetup/posts',       'PHPSW\Controller\MeetupController::postsAction')->bind('meetup_posts');
 $app->get('/meetup/reviews',     'PHPSW\Controller\MeetupController::reviewsAction')->bind('meetup_reviews');
 $app->get('/meetup/sponsors',    'PHPSW\Controller\MeetupController::sponsorsAction')->bind('meetup_sponsors');
+$app->get('/vouchers',           'PHPSW\Controller\AppController::vouchersAction')->bind('vouchers');
 
 $app
     ->get('/twitter/{user}/tweets', 'PHPSW\Controller\TwitterController::tweetsAction')

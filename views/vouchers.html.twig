@@ -1,0 +1,58 @@
+{% extends 'basic.html.twig' %}
+
+{% block title %}
+  Vouchers
+{% endblock %}
+
+{% block main %}
+  <div class="container">
+    {{ block('content') }}
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="vouchers clearfix">
+    {% for type, sponsors in prizes %}
+      {% for sponsor, vouchers in sponsors %}
+        {% for voucher in vouchers %}
+          {% for i in range(1, voucher.quantity | default(1)) %}
+            <article
+              class="voucher voucher--{{ type }} voucher--{{ sponsor }}"
+              {% if voucher.image | default %}
+                style="background-image: url('{{ voucher.image }}') !important"
+              {% endif %}
+            >
+              <header class="voucher__header clearfix">
+                <span class="voucher__header__left">
+                {% if sponsor != 'jqueryuk' %}
+                  <img src="/images/logo.svg" height="20"> PHPub Quiz</span>
+                {% else %}
+                  <img src="/images/logo-inverted.svg" height="20"> PHPub Quiz</span>
+                {% endif %}
+                <span class="voucher__header__right">{{ type | capitalize }} prize</span>
+              </header>
+
+              <div class="voucher__body">
+                <h2 class="voucher__title">{{ voucher.title }}</h2>
+
+                {% if voucher.subtitle | default %}
+                  <p class="voucher__subtitle">{{ voucher.subtitle | nl2br }}</p>
+                {% endif %}
+              </div>
+
+              <footer class="voucher__footer">
+                {% if voucher.code | default %}
+                  Use code <strong class="voucher__code">{{ voucher.code }}</strong> to redeem or email <a href="mailto:{{ app.organisers.steve.email }}">{{ app.organisers.steve.email }}</a> for help
+                {% elseif voucher.url | default %}
+                  Visit <a href="{{ voucher.url | bitly }}">{{ voucher.url | bitly }}</a> to redeem or email <a href="mailto:{{ app.organisers.steve.email }}">{{ app.organisers.steve.email }}</a> for help
+                {% else %}
+                  Drop us a line at <a href="mailto:{{ app.organisers.steve.email }}">{{ app.organisers.steve.email }}</a> to redeem
+                {% endif %}
+              </footer>
+            </article>
+          {% endfor %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+{% endblock %}

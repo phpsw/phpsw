@@ -2,6 +2,11 @@ name: PHPSW
 title: PHPSW · South West UK PHP User Group
 description: PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.
 
+bitly:
+  api:
+    login: ~
+    key: ~
+
 bugsnag:
   api:
     key: ~
@@ -135,3 +140,5 @@ thumbor:
 twitter:
   url: http://twitter.com/phpsw
   user: phpsw
+
+vouchers: []
