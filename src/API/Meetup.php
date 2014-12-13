@@ -410,6 +410,12 @@ class Meetup
                     })
                 );
 
+                usort($event->photos, function ($a, $b) {
+                    if (isset($a->album->ordering, $b->album->ordering)) {
+                        return array_search($a->id, $a->album->ordering) > array_search($b->id, $b->album->ordering) ? 1 : -1;
+                    }
+                });
+
                 $event->rsvps = iterator_to_array($this->client->getRSVPs(['event_id' => $event->id]));
                 $event->talks = [];
                 $event->url = $event->event_url;
