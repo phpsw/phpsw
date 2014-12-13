@@ -44,6 +44,7 @@ meetup:
   name: PHPSW
   url: http://www.meetup.com/php-sw
   urlname: php-sw
+  urlshort: meetup.com/php-sw
   api:
     key: ~
 
@@ -142,3 +143,7 @@ twitter:
   user: phpsw
 
 vouchers: []
+
+website:
+  url: http://phpsw.org.uk
+  urlshort: phpsw.org.uk
