@@ -30,6 +30,16 @@
                   <strong>Sort code:</strong>
                   {{ app.invoice.sort_code }}
                 </p>
+                {% if currency != '£' %}
+                  <p>
+                    <strong>IBAN:</strong>
+                    {{ app.invoice.iban }}
+                  </p>
+                  <p>
+                    <strong>BIC:</strong>
+                    {{ app.invoice.bic }}
+                  </p>
+                {% endif %}
                 <p>
                   Please include the invoice reference of
                   #{{ ref }}
@@ -42,7 +52,8 @@
 
                   <br>
 
-                  <p>Due: {{ 'last day of this month' | date('d/m/Y') }}</p>
+                  <p>Invoice date: {{ 'now' | date('d/m/Y') }}</p>
+                  <p>Due date: {{ 'last day of this month' | date('d/m/Y') }}</p>
                 </div>
               </td>
             </tr>
@@ -81,7 +92,7 @@
             <td>PHPSW Sponsorship</td>
             <td>1 month</td>
             <td></td>
-            <td>&pound;{{ amount | number_format(2) }}</td>
+            <td>{{ currency }}{{ amount | number_format(2) }}</td>
           </tr>
         </tbody>
 
@@ -90,12 +101,12 @@
             <td colspan="2" rowspan="8" class="invoice-notes" style=" vertical-align:top;">
             </td>
             <th>Subtotal:</th>
-            <td colspan="2">&pound;{{ amount | number_format(2) }}</td>
+            <td colspan="2">{{ currency }}{{ amount | number_format(2) }}</td>
           </tr>
 
           <tr dontbreak="true">
             <th>Total:</th>
-            <td colspan="2">&pound;{{ amount | number_format(2) }}</td>
+            <td colspan="2">{{ currency }}{{ amount | number_format(2) }}</td>
           </tr>
         </tfoot>
       </table>

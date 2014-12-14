@@ -38,6 +38,8 @@ invoice:
 
   account_name: PHPSW
   account_number: 12345678
+  bic: ~
+  iban: ~
   sort_code: 12-23-45
 
 meetup:
