@@ -10,9 +10,17 @@ class AppController extends AbstractController
 {
     public function indexAction(Application $app)
     {
-        $events = $app['meetup.client']->getUpcomingEvents();
+        $meetup = $app['meetup.client'];
+        $events = $meetup->getUpcomingEvents();
+
+        $description = $meetup->getGroup()->description;
+
+        $description = str_replace($app['website']['url'], $app['meetup']['url'], $description);
+        $description = str_replace($app['website']['urlshort'], $app['meetup']['urlshort'], $description);
+        $description = str_replace($app['meetup']['url'] . '/code-of-conduct', $app['website']['url'] . '/code-of-conduct', $description);
 
         return $this->render($app, 'index.html.twig', [
+            'description' => $description,
             'events' => $events
         ]);
     }

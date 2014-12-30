@@ -11,10 +11,7 @@
 {% block content %}
   <div class="row">
     <div class="col-sm-8">
-      {{ meetup.group.description | replace({
-        (app.website.url): app.meetup.url,
-        (app.website.urlshort): app.meetup.urlshort
-      }) | raw }}
+      {{ description | raw }}
 
       {% if events %}
         <section>
