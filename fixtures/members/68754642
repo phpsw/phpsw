@@ -1,0 +1,284 @@
+{
+    "lon": -2.29,
+    "hometown": "Beckington",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/68754642",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/9\/b\/6\/member_106127542.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/b\/9\/b\/6\/highres_106127542.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/b\/9\/b\/6\/thumb_106127542.jpeg",
+        "photo_id": 106127542,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/b\/9\/b\/6\/highres_106127542.jpeg"
+    },
+    "country": "gb",
+    "city": "Beckington",
+    "id": 68754642,
+    "visited": 1418146595000,
+    "topics": [
+        {
+            "id": 50954,
+            "urlkey": "competitive-tennis",
+            "name": "Competitive Tennis"
+        },
+        {
+            "id": 1998,
+            "urlkey": "travel",
+            "name": "Travel"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 20060,
+            "urlkey": "business-entrepreneur-networking",
+            "name": "Entrepreneur Networking"
+        },
+        {
+            "id": 15585,
+            "urlkey": "online-marketing",
+            "name": "Online Marketing"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 19243,
+            "urlkey": "user-experience",
+            "name": "User Experience"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 23836,
+            "urlkey": "web-application",
+            "name": "Web Application"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 100479,
+            "urlkey": "front-end-development",
+            "name": "Front-end Development"
+        },
+        {
+            "id": 632142,
+            "urlkey": "ember-js",
+            "name": "Ember JS"
+        },
+        {
+            "id": 100119,
+            "urlkey": "php-framework",
+            "name": "PHP Framework"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 1433232,
+            "urlkey": "laravel",
+            "name": "Laravel"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 18060,
+            "urlkey": "hadoop",
+            "name": "Hadoop"
+        },
+        {
+            "id": 30928,
+            "urlkey": "data-analytics",
+            "name": "Data Analytics"
+        },
+        {
+            "id": 102811,
+            "urlkey": "data-science",
+            "name": "Data Science"
+        },
+        {
+            "id": 17703,
+            "urlkey": "london",
+            "name": "London"
+        },
+        {
+            "id": 38660,
+            "urlkey": "lean-startup",
+            "name": "Lean Startup"
+        },
+        {
+            "id": 10110,
+            "urlkey": "ixd",
+            "name": "Interaction Design"
+        },
+        {
+            "id": 437352,
+            "urlkey": "lean-ux",
+            "name": "Lean UX"
+        },
+        {
+            "id": 1369,
+            "urlkey": "ia",
+            "name": "Information Architecture"
+        },
+        {
+            "id": 26938,
+            "urlkey": "usability",
+            "name": "Usability"
+        }
+    ],
+    "joined": 1415899444000,
+    "bio": "Web developer for 15 years mainly PHP\nLooking to resource my start up based in Frome",
+    "name": "Robert Franks",
+    "other_services": [],
+    "lat": 51.27,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/68754642\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/9\/b\/6\/member_106127542.jpeg",
+    "answers": [
+        {
+            "answer": "Laravel, ORMs, Restful APIs and Testing",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 68754642,
+    "created": 1415899444000,
+    "updated": 1417010587000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-09 17:36:35.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "lon": -2.58,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/123102172",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/8\/e\/a\/member_163183242.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/8\/e\/a\/thumb_163183242.jpeg",
+        "photo_id": 163183242,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/8\/e\/a\/member_163183242.jpeg"
+    },
+    "city": "Temple Meads",
+    "country": "gb",
+    "id": 123102172,
+    "visited": 1420212751000,
+    "topics": [
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        }
+    ],
+    "joined": 1386603829000,
+    "bio": "PHP developer based in Bristol",
+    "name": "Rob Mills",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/123102172\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/8\/e\/a\/member_163183242.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 123102172,
+    "created": 1386603829000,
+    "updated": 1386603944000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 15:32:31.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

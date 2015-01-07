@@ -1,0 +1,70 @@
+{
+    "lon": -6.27,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/75778112",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/6\/5\/8\/member_90673912.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/6\/5\/8\/thumb_90673912.jpeg",
+        "photo_id": 90673912,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/6\/5\/8\/member_90673912.jpeg"
+    },
+    "city": "Dublin",
+    "country": "ie",
+    "id": 75778112,
+    "visited": 1381784871000,
+    "topics": [
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        }
+    ],
+    "joined": 1381784871000,
+    "bio": "Postgres Developer At Large",
+    "name": "Greg Stark",
+    "other_services": [],
+    "lat": 53.34,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/75778112\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/6\/5\/8\/member_90673912.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 75778112,
+    "created": 1381784871000,
+    "updated": 1381784884000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2013-10-14 21:07:51.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "lon": -2.59,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/162724562",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/a\/c\/member_220363692.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/a\/c\/highres_220363692.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/a\/c\/thumb_220363692.jpeg",
+        "photo_id": 220363692,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/a\/c\/highres_220363692.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 162724562,
+    "visited": 1417007345000,
+    "topics": [
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 827,
+            "urlkey": "dotnet",
+            "name": ".NET"
+        },
+        {
+            "id": 52276,
+            "urlkey": "sitecore-cms",
+            "name": "Sitecore CMS"
+        },
+        {
+            "id": 32743,
+            "urlkey": "information-security",
+            "name": "Information Security"
+        }
+    ],
+    "joined": 1408634138000,
+    "bio": "Principal Consultant at Adlib, helping digital agencies and software houses find talented developers and techies. Always keen to learn more about PHP, JS, .Net and Mobile having played about with Java.",
+    "name": "Mike Harley",
+    "other_services": {
+        "twitter": {
+            "identifier": "@mikeadlib"
+        }
+    },
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/162724562\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/a\/c\/member_220363692.jpeg",
+    "answers": [
+        {
+            "answer": "PHP, Drupal, Magento, Laravel",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "No",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 162724562,
+    "created": 1408634138000,
+    "updated": 1408634278000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-26 13:09:05.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

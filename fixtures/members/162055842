@@ -1,0 +1,117 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/162055842",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/9\/e\/1\/a\/member_242560474.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/9\/e\/1\/a\/highres_242560474.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/9\/e\/1\/a\/thumb_242560474.jpeg",
+        "photo_id": 242560474,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/9\/e\/1\/a\/highres_242560474.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 162055842,
+    "visited": 1420218031000,
+    "topics": [
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        }
+    ],
+    "joined": 1408310004000,
+    "bio": "Student and hobbyist web developer.",
+    "name": "Zia Grosvenor",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/162055842\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/9\/e\/1\/a\/member_242560474.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 162055842,
+    "created": 1408310004000,
+    "updated": 1420218373000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 17:00:31.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/136606292",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/8\/3\/c\/member_182718492.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/4\/8\/3\/c\/highres_182718492.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/8\/3\/c\/thumb_182718492.jpeg",
+        "photo_id": 182718492,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/4\/8\/3\/c\/highres_182718492.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 136606292,
+    "visited": 1420476355000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 8304,
+            "urlkey": "wordpress",
+            "name": "WordPress"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        }
+    ],
+    "joined": 1394467167000,
+    "bio": "PHP dev - currently working in Bath",
+    "name": "Simon Pollard",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/136606292\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/8\/3\/c\/member_182718492.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 136606292,
+    "created": 1394467167000,
+    "updated": 1394467189000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-05 16:45:55.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

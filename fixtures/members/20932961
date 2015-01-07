@@ -1,0 +1,96 @@
+{
+    "lon": -2.58,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/20932961",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/d\/6\/8\/member_27323912.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/d\/6\/8\/thumb_27323912.jpeg",
+        "photo_id": 27323912,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/d\/6\/8\/member_27323912.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 20932961,
+    "visited": 1415971611000,
+    "topics": [
+        {
+            "id": 638,
+            "urlkey": "hiking",
+            "name": "Hiking"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 496,
+            "urlkey": "gamedev",
+            "name": "Game Development"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 15799,
+            "urlkey": "expressionengine",
+            "name": "ExpressionEngine"
+        }
+    ],
+    "joined": 1332242732000,
+    "bio": "I'm a Bristol based web developer. I use mostly use LAMP, Expression Engine, Wordpress.",
+    "name": "Patrick",
+    "other_services": [],
+    "lat": 51.44,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/20932961\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/d\/6\/8\/member_27323912.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 20932961,
+    "created": 1332242732000,
+    "updated": 1332242733000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-14 13:26:51.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,161 @@
+{
+    "lon": -3.49,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/121872572",
+    "state": "D4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/5\/a\/2\/member_229182402.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/5\/a\/2\/highres_229182402.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/5\/a\/2\/thumb_229182402.jpeg",
+        "photo_id": 229182402,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/5\/a\/2\/highres_229182402.jpeg"
+    },
+    "city": "Exeter",
+    "country": "gb",
+    "id": 121872572,
+    "visited": 1415031950000,
+    "topics": [
+        {
+            "id": 17188,
+            "urlkey": "digital-media",
+            "name": "Digital Media"
+        },
+        {
+            "id": 15401,
+            "urlkey": "social-media",
+            "name": "Social Media"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 590,
+            "urlkey": "kayaking",
+            "name": "Kayaking"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 374,
+            "urlkey": "camping",
+            "name": "Camping"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 18617,
+            "urlkey": "cycling",
+            "name": "Cycling"
+        },
+        {
+            "id": 17437,
+            "urlkey": "water-sports",
+            "name": "Water Sports"
+        },
+        {
+            "id": 681,
+            "urlkey": "martial",
+            "name": "Martial Arts"
+        },
+        {
+            "id": 131178,
+            "urlkey": "recreational-sports",
+            "name": "Recreational Sports"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 19243,
+            "urlkey": "user-experience",
+            "name": "User Experience"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        }
+    ],
+    "joined": 1412241364000,
+    "name": "Laura Tejada",
+    "other_services": [],
+    "lat": 50.71,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/121872572\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/5\/a\/2\/member_229182402.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 121872572,
+    "updated": 1412241364000,
+    "created": 1412241364000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-03 16:25:50.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

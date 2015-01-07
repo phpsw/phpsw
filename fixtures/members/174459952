@@ -1,0 +1,67 @@
+{
+    "lon": -2.5,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/174459952",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/7\/5\/4\/member_230686932.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/7\/5\/4\/highres_230686932.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/7\/5\/4\/thumb_230686932.jpeg",
+        "photo_id": 230686932,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/7\/5\/4\/highres_230686932.jpeg"
+    },
+    "city": "Keynsham",
+    "country": "gb",
+    "id": 174459952,
+    "visited": 1412330659000,
+    "topics": [],
+    "joined": 1412066554000,
+    "bio": "Passion for programming in a love hate relationship. PHP is the first coding language I picked up and want to learn more about it.",
+    "name": "Summy",
+    "other_services": {
+        "twitter": {
+            "identifier": "@crummysummy"
+        },
+        "linkedin": {
+            "identifier": "https:\/\/www.linkedin.com\/in\/sumear"
+        },
+        "facebook": {
+            "identifier": "https:\/\/www.facebook.com\/profile.php?id=100006019698477"
+        }
+    },
+    "lat": 51.41,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/174459952\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/7\/5\/4\/member_230686932.jpeg",
+    "answers": [
+        {
+            "answer": "Programming techniques, good coding practice",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 174459952,
+    "created": 1412066554000,
+    "updated": 1412066647000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-10-03 10:04:19.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

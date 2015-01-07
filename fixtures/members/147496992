@@ -1,0 +1,97 @@
+{
+    "lon": -2.51,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/147496992",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/2\/1\/8\/member_70864632.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/2\/1\/8\/highres_70864632.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/2\/1\/8\/thumb_70864632.jpeg",
+        "photo_id": 70864632,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/2\/1\/8\/highres_70864632.jpeg"
+    },
+    "city": "Keynsham",
+    "country": "gb",
+    "id": 147496992,
+    "visited": 1416095920000,
+    "topics": [
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 38660,
+            "urlkey": "lean-startup",
+            "name": "Lean Startup"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        }
+    ],
+    "joined": 1400600849000,
+    "bio": "Software Developer at Mayden",
+    "name": "Matt",
+    "other_services": [],
+    "lat": 51.41,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/48744542\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/2\/1\/8\/member_70864632.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 48744542,
+    "created": 1368523849000,
+    "updated": 1368523906000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-15 23:58:40.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

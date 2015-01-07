@@ -1,0 +1,74 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/162145512",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 162145512,
+    "visited": 1420210647000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        }
+    ],
+    "joined": 1408356363000,
+    "bio": "Software Developer currently based in Swindon. Working with technologies such as ZF2 and Doctrine 2.",
+    "name": "Dan Messenger",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/162145512\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/7\/d\/6\/member_219506582.jpeg",
+    "answers": [
+        {
+            "answer": "MVC, Testing, CI, Design Patterns, Deployment, Security, Web Services, AWS",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "No",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/7\/d\/6\/member_219506582.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/7\/d\/6\/highres_219506582.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/7\/d\/6\/thumb_219506582.jpeg",
+        "photo_id": 219506582,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/7\/d\/6\/highres_219506582.jpeg"
+    },
+    "member_id": 162145512,
+    "created": 1408356363000,
+    "updated": 1408356848000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 14:57:27.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

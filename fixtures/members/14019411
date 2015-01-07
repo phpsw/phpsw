@@ -1,0 +1,89 @@
+{
+    "lon": -2.36,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/14019411",
+    "state": "A4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/3\/5\/2\/member_80709042.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/5\/f\/c\/highres_12050684.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/3\/5\/2\/thumb_80709042.jpeg",
+        "photo_id": 80709042,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/5\/f\/c\/highres_12050684.jpeg"
+    },
+    "city": "Bath",
+    "country": "gb",
+    "id": 14019411,
+    "visited": 1368442640000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        }
+    ],
+    "joined": 1368442640000,
+    "bio": "Dev since '98. PHP since '03.",
+    "name": "mike karthauser",
+    "other_services": {
+        "twitter": {
+            "identifier": "@iammikek"
+        },
+        "tumblr": {
+            "identifier": "http:\/\/iammikek.tumblr.com"
+        }
+    },
+    "lat": 51.39,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/14019411\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/3\/5\/2\/member_80709042.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 14019411,
+    "created": 1368442640000,
+    "updated": 1368442701000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2013-05-13 10:57:20.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

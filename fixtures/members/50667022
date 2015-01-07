@@ -1,0 +1,59 @@
+{
+    "lon": -2.51,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/50667022",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/c\/member_85682732.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/c\/thumb_85682732.jpeg",
+        "photo_id": 85682732,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/c\/member_85682732.jpeg"
+    },
+    "city": "Kingswood",
+    "country": "gb",
+    "id": 50667022,
+    "visited": 1355232479000,
+    "topics": [],
+    "joined": 1355131579000,
+    "bio": "Recently moved to the Bristol area and work as a software engineer at Surevine. Interested in all things web\/mobile development.",
+    "name": "Jonny Heavey",
+    "other_services": {
+        "twitter": {
+            "identifier": "@JonnyHeavey"
+        }
+    },
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/50667022\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/a\/c\/member_85682732.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 50667022,
+    "created": 1355131579000,
+    "updated": 1355131580000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2012-12-11 13:27:59.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

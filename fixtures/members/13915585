@@ -1,0 +1,317 @@
+{
+    "lon": -2.5899999141693,
+    "hometown": "Nottingham",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/13915585",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/e\/3\/4\/member_155008212.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/e\/3\/4\/highres_155008212.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/e\/3\/4\/thumb_155008212.jpeg",
+        "photo_id": 155008212,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/e\/3\/4\/highres_155008212.jpeg"
+    },
+    "lang": "en_US",
+    "country": "gb",
+    "city": "Bristol",
+    "id": 13915585,
+    "visited": 1420668793000,
+    "topics": [
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 405512,
+            "urlkey": "backbone-js",
+            "name": "Backbone.js"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 101961,
+            "urlkey": "coffeescript",
+            "name": "CoffeeScript"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 21123,
+            "urlkey": "hacking",
+            "name": "Hacking"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 23718,
+            "urlkey": "symfony",
+            "name": "Symfony"
+        },
+        {
+            "id": 308411,
+            "urlkey": "symfony2",
+            "name": "Symfony2"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 5938,
+            "urlkey": "xp",
+            "name": "Extreme Programming"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 15616,
+            "urlkey": "iphone",
+            "name": "iPhone"
+        },
+        {
+            "id": 127567,
+            "urlkey": "ios-development",
+            "name": "iOS Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 87614,
+            "urlkey": "devops",
+            "name": "DevOps"
+        },
+        {
+            "id": 148303,
+            "urlkey": "puppet",
+            "name": "puppet"
+        },
+        {
+            "id": 8304,
+            "urlkey": "wordpress",
+            "name": "WordPress"
+        },
+        {
+            "id": 101960,
+            "urlkey": "nodejs",
+            "name": "nodeJS"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 100479,
+            "urlkey": "front-end-development",
+            "name": "Front-end Development"
+        },
+        {
+            "id": 78566,
+            "urlkey": "css3",
+            "name": "css3"
+        },
+        {
+            "id": 188,
+            "urlkey": "linux",
+            "name": "Linux"
+        },
+        {
+            "id": 25435,
+            "urlkey": "test-driven-development",
+            "name": "Test Driven Development"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 37381,
+            "urlkey": "data-visualization",
+            "name": "Data Visualization"
+        },
+        {
+            "id": 905302,
+            "urlkey": "behaviour-driven-development",
+            "name": "Behaviour Driven Development"
+        },
+        {
+            "id": 122934,
+            "urlkey": "behaviour-driven-testing",
+            "name": "Behaviour Driven Testing"
+        },
+        {
+            "id": 186991,
+            "urlkey": "cucumber",
+            "name": "Cucumber"
+        },
+        {
+            "id": 82416,
+            "urlkey": "rspec-and-cucumber",
+            "name": "RSpec and Cucumber"
+        },
+        {
+            "id": 1040,
+            "urlkey": "ruby",
+            "name": "Ruby"
+        },
+        {
+            "id": 383851,
+            "urlkey": "rspec",
+            "name": "rspec"
+        }
+    ],
+    "joined": 1341956240000,
+    "bio": "Developer at Simpleweb",
+    "name": "Steve Lacey",
+    "other_services": {
+        "twitter": {
+            "identifier": "@stevelacey"
+        },
+        "flickr": {
+            "identifier": "http:\/\/www.flickr.com\/photos\/stevelacey"
+        }
+    },
+    "lat": 51.5,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/13915585\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/e\/3\/4\/member_155008212.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 13915585,
+    "created": 1341956240000,
+    "updated": 1417382755000,
+    "role": "Co-Organizer",
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-07 22:13:13.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

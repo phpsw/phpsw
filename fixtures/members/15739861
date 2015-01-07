@@ -1,0 +1,308 @@
+{
+    "lon": -2.59,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/15739861",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/6\/5\/1\/member_13918961.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/6\/5\/1\/highres_13918961.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/6\/5\/1\/thumb_13918961.jpeg",
+        "photo_id": 13918961,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/6\/5\/1\/highres_13918961.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 15739861,
+    "visited": 1396909894000,
+    "topics": [
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 15585,
+            "urlkey": "online-marketing",
+            "name": "Online Marketing"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 10164,
+            "urlkey": "lampsoftware",
+            "name": "LAMP"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 78566,
+            "urlkey": "css3",
+            "name": "css3"
+        },
+        {
+            "id": 101960,
+            "urlkey": "nodejs",
+            "name": "nodeJS"
+        },
+        {
+            "id": 15401,
+            "urlkey": "social-media",
+            "name": "Social Media"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 23199,
+            "urlkey": "seo-search-engine-optimization",
+            "name": "SEO (Search Engine Optimization)"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 1954,
+            "urlkey": "innovation",
+            "name": "Innovation"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 235,
+            "urlkey": "coffee",
+            "name": "Coffee"
+        },
+        {
+            "id": 10493,
+            "urlkey": "geek",
+            "name": "Geek Culture"
+        },
+        {
+            "id": 16425,
+            "urlkey": "roleplaying-games-rpgs",
+            "name": "Roleplaying Games (RPGs)"
+        },
+        {
+            "id": 18071,
+            "urlkey": "gaming",
+            "name": "Gaming"
+        },
+        {
+            "id": 4471,
+            "urlkey": "videogame",
+            "name": "Video Games"
+        },
+        {
+            "id": 32623,
+            "urlkey": "geeks-nerds",
+            "name": "Geeks & Nerds"
+        },
+        {
+            "id": 19585,
+            "urlkey": "board-games",
+            "name": "Board Games"
+        },
+        {
+            "id": 23778,
+            "urlkey": "dinner-and-a-movie",
+            "name": "Dinner and a Movie"
+        },
+        {
+            "id": 317,
+            "urlkey": "scifi",
+            "name": "Sci-Fi\/Fantasy"
+        },
+        {
+            "id": 15992,
+            "urlkey": "games",
+            "name": "Games"
+        },
+        {
+            "id": 18864,
+            "urlkey": "science-fiction",
+            "name": "Science Fiction"
+        },
+        {
+            "id": 9792,
+            "urlkey": "cardgame",
+            "name": "Card Games"
+        },
+        {
+            "id": 40126,
+            "urlkey": "game-night",
+            "name": "Game Night"
+        },
+        {
+            "id": 7319,
+            "urlkey": "museum",
+            "name": "Museum"
+        },
+        {
+            "id": 17785,
+            "urlkey": "strategy-games",
+            "name": "Strategy Games"
+        },
+        {
+            "id": 23274,
+            "urlkey": "live-theatre",
+            "name": "Theater"
+        },
+        {
+            "id": 15940,
+            "urlkey": "movie-nights",
+            "name": "Movie Nights"
+        },
+        {
+            "id": 261,
+            "urlkey": "startrek",
+            "name": "Star Trek"
+        },
+        {
+            "id": 28990,
+            "urlkey": "cms",
+            "name": "CMS (Content Management Systems)"
+        },
+        {
+            "id": 79401,
+            "urlkey": "umbraco",
+            "name": "Umbraco"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        }
+    ],
+    "joined": 1392328227000,
+    "bio": ".",
+    "name": "Frank West",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/15739861\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/6\/5\/1\/member_13918961.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 15739861,
+    "created": 1392328227000,
+    "updated": 1392328232000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-04-07 22:31:34.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

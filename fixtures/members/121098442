@@ -1,0 +1,71 @@
+{
+    "lon": -3.17,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/121098442",
+    "state": "X5",
+    "self": {
+        "common": []
+    },
+    "city": "Cardiff",
+    "country": "gb",
+    "visited": 1420217571000,
+    "id": 121098442,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        }
+    ],
+    "joined": 1414400758000,
+    "name": "Jack Hannigan Popp",
+    "other_services": [],
+    "lat": 51.47,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/121098442\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/2\/0\/8\/member_237908712.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/2\/0\/8\/member_237908712.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/2\/0\/8\/highres_237908712.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/2\/0\/8\/thumb_237908712.jpeg",
+        "photo_id": 237908712,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/2\/0\/8\/highres_237908712.jpeg"
+    },
+    "member_id": 121098442,
+    "updated": 1414400780000,
+    "created": 1414400758000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 16:52:51.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

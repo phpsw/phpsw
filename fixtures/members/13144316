@@ -1,0 +1,113 @@
+{
+    "lon": -2.59,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/13144316",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/c\/4\/0\/member_10964096.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/c\/4\/0\/highres_10964096.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/c\/4\/0\/thumb_10964096.jpeg",
+        "photo_id": 10964096,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/c\/4\/0\/highres_10964096.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 13144316,
+    "visited": 1418236397000,
+    "topics": [
+        {
+            "id": 65172,
+            "urlkey": "test-automation",
+            "name": "Test Automation"
+        },
+        {
+            "id": 42277,
+            "urlkey": "software-qa-and-testing",
+            "name": "Software QA and Testing"
+        },
+        {
+            "id": 72376,
+            "urlkey": "testing-web-site-performance",
+            "name": "Testing Web Site Performance"
+        },
+        {
+            "id": 27921,
+            "urlkey": "selenium",
+            "name": "Selenium"
+        },
+        {
+            "id": 85524,
+            "urlkey": "webdriver",
+            "name": "Webdriver"
+        },
+        {
+            "id": 72378,
+            "urlkey": "load-testing-and-performance",
+            "name": "Load Testing and Performance"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 80644,
+            "urlkey": "testing-tools",
+            "name": "Testing Tools"
+        },
+        {
+            "id": 122934,
+            "urlkey": "behaviour-driven-testing",
+            "name": "Behaviour Driven Testing"
+        },
+        {
+            "id": 30996,
+            "urlkey": "agile-testing",
+            "name": "agile testing"
+        },
+        {
+            "id": 1040,
+            "urlkey": "ruby",
+            "name": "Ruby"
+        }
+    ],
+    "joined": 1399904611000,
+    "bio": "Colleague of Kat's at Brightpearl.",
+    "name": "Anna Baik",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/13144316\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/c\/4\/0\/member_10964096.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 13144316,
+    "created": 1399904611000,
+    "updated": 1399904611000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-10 18:33:17.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

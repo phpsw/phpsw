@@ -1,0 +1,86 @@
+{
+    "lon": -1.78,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/37100992",
+    "state": "P8",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/1\/9\/6\/member_39844502.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/1\/9\/6\/highres_39844502.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/1\/9\/6\/thumb_39844502.jpeg",
+        "photo_id": 39844502,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/1\/9\/6\/highres_39844502.jpeg"
+    },
+    "city": "Swindon",
+    "country": "gb",
+    "id": 37100992,
+    "visited": 1420461777000,
+    "topics": [
+        {
+            "id": 33089,
+            "urlkey": "saas-software-as-a-service",
+            "name": "SaaS (Software as a Service)"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 389,
+            "urlkey": "smallbiz",
+            "name": "Small Business"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        }
+    ],
+    "joined": 1417784862000,
+    "name": "Keiron Skillett",
+    "other_services": [],
+    "lat": 51.55,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/37100992\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/1\/9\/6\/member_39844502.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 37100992,
+    "updated": 1417784862000,
+    "created": 1417784862000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-05 12:42:57.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

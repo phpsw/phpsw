@@ -1,0 +1,201 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/91773092",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/f\/1\/a\/member_114787962.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/f\/1\/a\/thumb_114787962.jpeg",
+        "photo_id": 114787962,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/f\/1\/a\/member_114787962.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 91773092,
+    "visited": 1418294000000,
+    "topics": [
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 121802,
+            "urlkey": "mongodb",
+            "name": "mongoDB"
+        },
+        {
+            "id": 17936,
+            "urlkey": "scala",
+            "name": "Scala"
+        },
+        {
+            "id": 21506,
+            "urlkey": "database-development",
+            "name": "Database Development"
+        },
+        {
+            "id": 33167,
+            "urlkey": "sql",
+            "name": "SQL"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 87614,
+            "urlkey": "devops",
+            "name": "DevOps"
+        }
+    ],
+    "joined": 1367504113000,
+    "bio": "Coder working in PHP\/JavaScript and all sorts of other gubbins. Co-organiser of Unified Diff and organiser of Cardiff Dev Workshop. Author of \"Deal With It: Attitude for Coders\".",
+    "name": "Gavin Davies",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/91773092\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/f\/1\/a\/member_114787962.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 91773092,
+    "created": 1367504113000,
+    "updated": 1367504181000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-11 10:33:20.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

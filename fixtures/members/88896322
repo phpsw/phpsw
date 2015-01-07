@@ -1,0 +1,81 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/88896322",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/7\/3\/8\/member_110138712.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/7\/3\/8\/highres_110138712.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/7\/3\/8\/thumb_110138712.jpeg",
+        "photo_id": 110138712,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/7\/3\/8\/highres_110138712.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 88896322,
+    "visited": 1402421615000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        }
+    ],
+    "joined": 1365779765000,
+    "bio": "Freelance php, drupal, html developer",
+    "name": "Ian Smith",
+    "other_services": {
+        "twitter": {
+            "identifier": "@ismithuk"
+        }
+    },
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/88896322\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/7\/3\/8\/member_110138712.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 88896322,
+    "created": 1365779765000,
+    "updated": 1365779766000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-06-10 17:33:35.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/47499862",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/d\/b\/6\/member_53711702.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/b\/6\/highres_53711702.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/b\/6\/thumb_53711702.jpeg",
+        "photo_id": 53711702,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/b\/6\/highres_53711702.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 47499862,
+    "visited": 1418204998000,
+    "topics": [
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 206,
+            "urlkey": "digcam",
+            "name": "Digital Photography"
+        },
+        {
+            "id": 22268,
+            "urlkey": "landscape-photography",
+            "name": "Landscape Photography"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 309,
+            "urlkey": "vegetarian",
+            "name": "Vegetarian"
+        },
+        {
+            "id": 21512,
+            "urlkey": "vegetarian-cooking",
+            "name": "Vegetarian cooking"
+        },
+        {
+            "id": 321351,
+            "urlkey": "meet-new-people-in-bristol",
+            "name": "meet new people in Bristol"
+        }
+    ],
+    "joined": 1336683054000,
+    "bio": "I run a small web company in Bristol called Siteclick.  I have developed various CMS\/E-Commerce systems, and usually turn to CodeIgniter and Doctrine2 as frameworks.  Other interests include photography, music cooking...",
+    "name": "James Carmichael",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/47499862\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/d\/b\/6\/member_53711702.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 47499862,
+    "created": 1336683054000,
+    "updated": 1336683054000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-10 09:49:58.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

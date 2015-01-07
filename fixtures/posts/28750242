@@ -1,0 +1,26 @@
+{
+    "id": 28750242,
+    "board": {
+        "id": 2827512
+    },
+    "created": 1352891193000,
+    "updated": 1352891193000,
+    "started_by": {
+        "name": "Andrew Martin"
+    },
+    "subject": "Tonight's Meetup Cancelled",
+    "body": "I'm sorry to announce that due to illness November's PHPSW booze-up\/meeting has been cancelled.\r\r\nTo make amends, December's meeting will be something special - the prospect of free drink and pizza looms large. Details to follow.\r",
+    "last_post": {
+        "created": 1352891193000,
+        "member": {
+            "name": "Andrew Martin"
+        },
+        "created_date": {
+            "date": "2012-11-14 11:06:33.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "reply_count": 0,
+    "url": "http:\/\/www.meetup.com\/php-sw\/messages\/boards\/thread\/28750242"
+}

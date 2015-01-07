@@ -1,0 +1,162 @@
+{
+    "lon": -0.12,
+    "hometown": "London",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/12883060",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/c\/4\/f\/6\/member_148730422.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/c\/4\/f\/6\/highres_148730422.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/c\/4\/f\/6\/thumb_148730422.jpeg",
+        "photo_id": 148730422,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/c\/4\/f\/6\/highres_148730422.jpeg"
+    },
+    "city": "London",
+    "country": "gb",
+    "id": 12883060,
+    "visited": 1418256797000,
+    "topics": [
+        {
+            "id": 10164,
+            "urlkey": "lampsoftware",
+            "name": "LAMP"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 9886,
+            "urlkey": "ria",
+            "name": "Rich Internet Applications"
+        },
+        {
+            "id": 46507,
+            "urlkey": "jquery-ui",
+            "name": "jQuery UI"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 25435,
+            "urlkey": "test-driven-development",
+            "name": "Test Driven Development"
+        },
+        {
+            "id": 10043,
+            "urlkey": "scrum",
+            "name": "Scrum"
+        },
+        {
+            "id": 44602,
+            "urlkey": "coding-dojos",
+            "name": "Coding Dojos"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 112355,
+            "urlkey": "riak",
+            "name": "Riak"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 16390,
+            "urlkey": "magento",
+            "name": "Magento"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        }
+    ],
+    "joined": 1415873302000,
+    "name": "Marco De Bortoli",
+    "other_services": [],
+    "lat": 51.61,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/12883060\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/c\/4\/f\/6\/member_148730422.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 12883060,
+    "updated": 1415873302000,
+    "created": 1415873302000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-11 00:13:17.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

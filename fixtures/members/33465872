@@ -1,0 +1,168 @@
+{
+    "lon": -2.61,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/33465872",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/6\/5\/4\/member_90150292.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/6\/5\/4\/highres_90150292.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/6\/5\/4\/thumb_90150292.jpeg",
+        "photo_id": 90150292,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/6\/5\/4\/highres_90150292.jpeg"
+    },
+    "country": "gb",
+    "city": "Clifton",
+    "id": 33465872,
+    "visited": 1396978558000,
+    "topics": [
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 15117,
+            "urlkey": "fun-times",
+            "name": "Fun Times"
+        },
+        {
+            "id": 25375,
+            "urlkey": "excercise",
+            "name": "Exercise"
+        },
+        {
+            "id": 3336,
+            "urlkey": "self-improvement",
+            "name": "Self-Improvement"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        }
+    ],
+    "joined": 1357684048000,
+    "bio": "Hi,\r\nI am from Argentina but I'm living in Bristol since November.\r\nI've been using PHP for one year, so I'm pretty new, but would like to hear your experiences and learn a bit more.",
+    "name": "Federico",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/33465872\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/6\/5\/4\/member_90150292.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 33465872,
+    "created": 1357684048000,
+    "updated": 1357684049000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-04-08 17:35:58.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "lon": -2.58,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/52878902",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/e\/7\/4\/member_202532372.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/7\/e\/7\/4\/highres_202532372.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/7\/e\/7\/4\/thumb_202532372.jpeg",
+        "photo_id": 202532372,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/7\/e\/7\/4\/highres_202532372.jpeg"
+    },
+    "country": "gb",
+    "city": "Temple Meads",
+    "id": 52878902,
+    "visited": 1411050016000,
+    "topics": [
+        {
+            "id": 25544,
+            "urlkey": "japanese-language",
+            "name": "Japanese Language"
+        },
+        {
+            "id": 15940,
+            "urlkey": "movie-nights",
+            "name": "Movie Nights"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 22816,
+            "urlkey": "crowdfunding",
+            "name": "Crowdfunding"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 1201,
+            "urlkey": "movies",
+            "name": "Watching Movies"
+        },
+        {
+            "id": 10454,
+            "urlkey": "language",
+            "name": "Language & Culture"
+        },
+        {
+            "id": 30366,
+            "urlkey": "japanese-culture",
+            "name": "Japanese Culture"
+        }
+    ],
+    "joined": 1402434090000,
+    "bio": "Drupal\/PHP\/node.js developer in Bristol. Cofounder at Fundsurfer",
+    "name": "Derek Ahmedzai",
+    "other_services": {
+        "twitter": {
+            "identifier": "@derekahmedzai"
+        }
+    },
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/52878902\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/e\/7\/4\/member_202532372.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 52878902,
+    "created": 1402434090000,
+    "updated": 1402434103000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-09-18 14:20:16.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

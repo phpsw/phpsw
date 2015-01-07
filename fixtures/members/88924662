@@ -1,0 +1,102 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/88924662",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 88924662,
+    "visited": 1365790644000,
+    "topics": [
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        }
+    ],
+    "joined": 1365790644000,
+    "bio": "Web Developer, Football Fanatic, Audiophile, Drummer",
+    "name": "Aaron Burtnyk",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/88924662\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/4\/6\/f\/c\/member_110178172.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/4\/6\/f\/c\/member_110178172.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/4\/6\/f\/c\/highres_110178172.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/4\/6\/f\/c\/thumb_110178172.jpeg",
+        "photo_id": 110178172,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/4\/6\/f\/c\/highres_110178172.jpeg"
+    },
+    "member_id": 88924662,
+    "created": 1365790644000,
+    "updated": 1365792256000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2013-04-12 18:17:24.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

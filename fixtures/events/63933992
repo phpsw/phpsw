@@ -1,0 +1,431 @@
+{
+    "status": "past",
+    "visibility": "public",
+    "maybe_rsvp_count": 0,
+    "venue": {
+        "id": 4494242,
+        "lon": -2.593088,
+        "repinned": false,
+        "name": "The Golden Guinea",
+        "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+        "lat": 51.447449,
+        "country": "gb",
+        "city": "Bristol"
+    },
+    "id": "63933992",
+    "utc_offset": 3600000,
+    "time": 1337191200000,
+    "waitlist_count": 0,
+    "announced": true,
+    "updated": 1337203524000,
+    "yes_rsvp_count": 3,
+    "created": 1336495015000,
+    "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/63933992\/",
+    "description": "<p>Sorry for the late notice on this one - due to various excuses it's now next week (3rd Wednesday) instead of tomorrow.<\/p> <p>\u00a0<\/p> <p>These talks will be lightning-quick\/pithy and open to feedback\/excoriation:<\/p> <p>\u00a0<\/p> <p><b>Instant APIs<\/b><\/p> <p>Rapid application development from lightweight PHP frameworks to\u00a0provide a REST API with little effort.<\/p> <p>\u00a0<\/p> <p><b>Write Better Software with TDD<\/b><\/p> <p>Test driven development. Write test, test fails, write code, test\u00a0passes ... rinse and repeat.<\/p> <p><br\/><b>HipHop: Facebook's Secret Sauce<\/b><\/p> <p>Transform PHP into C++ and compile with g++. Execute this rather than\u00a0PHP. On average Facebook reduced the CPU usage on their web servers by\u00a0fifty percent.<\/p> <p>\u00a0<\/p> <p>As usual, Beer and Chilli are the order of the day!<\/p>",
+    "name": "Lightning Talks: Instant APIs, Victorious TDD, HipHop: Secret Sauce",
+    "headcount": 0,
+    "rating": {
+        "count": 0,
+        "average": 0
+    },
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "slug": "lightning-talks-instant-apis-victorious-tdd-hiphop-secret-sauce",
+    "photos": [],
+    "rsvps": [
+        {
+            "response": "yes",
+            "member": {
+                "name": "Andrew Martin",
+                "member_id": 14280628
+            },
+            "member_photo": {
+                "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/d\/4\/7\/member_16331591.jpeg",
+                "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/4\/7\/highres_16331591.jpeg",
+                "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/4\/7\/thumb_16331591.jpeg",
+                "photo_id": 16331591
+            },
+            "created": 1336495015000,
+            "event": {
+                "id": "63933992",
+                "time": 1337191200000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/63933992\/",
+                "name": "Lightning Talks: Instant APIs, Victorious TDD, HipHop: Secret Sauce"
+            },
+            "tallies": {
+                "yes": 3,
+                "maybe": 0,
+                "no": 5,
+                "waitlist": 0
+            },
+            "mtime": 1336495015000,
+            "guests": 0,
+            "rsvp_id": 394203392,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "group": {
+                "id": 2833232,
+                "created": 1420670741980,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "member": {
+                "name": "James Carmichael",
+                "member_id": 47499862
+            },
+            "tallies": {
+                "yes": 3,
+                "maybe": 0,
+                "no": 5,
+                "waitlist": 0
+            },
+            "mtime": 1337181744000,
+            "guests": 0,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "response": "no",
+            "member_photo": {
+                "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/d\/b\/6\/member_53711702.jpeg",
+                "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/b\/6\/highres_53711702.jpeg",
+                "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/d\/b\/6\/thumb_53711702.jpeg",
+                "photo_id": 53711702
+            },
+            "created": 1336683160000,
+            "event": {
+                "id": "63933992",
+                "time": 1337191200000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/63933992\/",
+                "name": "Lightning Talks: Instant APIs, Victorious TDD, HipHop: Secret Sauce"
+            },
+            "rsvp_id": 396580882,
+            "group": {
+                "id": 2833232,
+                "created": 1420670741980,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            },
+            "comments": "Hope I can make it, depends on another event earlier on.  Not been before so look forward to meeting you!\r\n"
+        },
+        {
+            "member": {
+                "name": "Darren",
+                "member_id": 46569042
+            },
+            "tallies": {
+                "yes": 3,
+                "maybe": 0,
+                "no": 5,
+                "waitlist": 0
+            },
+            "mtime": 1336571391000,
+            "guests": 0,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "response": "no",
+            "member_photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/e\/2\/6\/member_52544582.jpeg",
+                "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/e\/2\/6\/thumb_52544582.jpeg",
+                "photo_id": 52544582
+            },
+            "created": 1336571225000,
+            "event": {
+                "id": "63933992",
+                "time": 1337191200000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/63933992\/",
+                "name": "Lightning Talks: Instant APIs, Victorious TDD, HipHop: Secret Sauce"
+            },
+            "rsvp_id": 395106122,
+            "group": {
+                "id": 2833232,
+                "created": 1420670741980,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            },
+            "comments": "Just noticed its clashing Grrr maybe next time"
+        },
+        {
+            "member": {
+                "name": "Mark Wales",
+                "member_id": 29291902
+            },
+            "tallies": {
+                "yes": 3,
+                "maybe": 0,
+                "no": 5,
+                "waitlist": 0
+            },
+            "mtime": 1336496004000,
+            "guests": 0,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "response": "no",
+            "member_photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/member_28924262.jpeg",
+                "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/highres_28924262.jpeg",
+                "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/thumb_28924262.jpeg",
+                "photo_id": 28924262
+            },
+            "created": 1336495973000,
+            "event": {
+                "id": "63933992",
+                "time": 1337191200000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/63933992\/",
+                "name": "Lightning Talks: Instant APIs, Victorious TDD, HipHop: Secret Sauce"
+            },
+            "rsvp_id": 394219882,
+            "group": {
+                "id": 2833232,
+                "created": 1420670741980,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            },
+            "comments": "Sorry, clashes with the SouthvilleJS meetup."
+        },
+        {
+            "response": "yes",
+            "member": {
+                "name": "Dom Udall",
+                "member_id": 36230692
+            },
+            "member_photo": {
+                "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/e\/c\/8\/member_38637032.jpeg",
+                "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/e\/c\/8\/thumb_38637032.jpeg",
+                "photo_id": 38637032
+            },
+            "created": 1336495779000,
+            "event": {
+                "id": "63933992",
+                "time": 1337191200000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/63933992\/",
+                "name": "Lightning Talks: Instant APIs, Victorious TDD, HipHop: Secret Sauce"
+            },
+            "tallies": {
+                "yes": 3,
+                "maybe": 0,
+                "no": 5,
+                "waitlist": 0
+            },
+            "mtime": 1336495779000,
+            "guests": 0,
+            "rsvp_id": 394216622,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "group": {
+                "id": 2833232,
+                "created": 1420670741980,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "member": {
+                "name": "Duncan Wilkie",
+                "member_id": 33474332
+            },
+            "tallies": {
+                "yes": 3,
+                "maybe": 0,
+                "no": 5,
+                "waitlist": 0
+            },
+            "mtime": 1337185103000,
+            "guests": 0,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "response": "no",
+            "member_photo": {
+                "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/c\/e\/8\/member_35996552.jpeg",
+                "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/c\/e\/8\/highres_35996552.jpeg",
+                "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/c\/e\/8\/thumb_35996552.jpeg",
+                "photo_id": 35996552
+            },
+            "created": 1337185103000,
+            "event": {
+                "id": "63933992",
+                "time": 1337191200000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/63933992\/",
+                "name": "Lightning Talks: Instant APIs, Victorious TDD, HipHop: Secret Sauce"
+            },
+            "rsvp_id": 402016722,
+            "group": {
+                "id": 2833232,
+                "created": 1420670741980,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            },
+            "comments": "HackNight"
+        },
+        {
+            "response": "yes",
+            "member": {
+                "name": "Warren Seymour",
+                "member_id": 14077610
+            },
+            "member_photo": {
+                "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/member_12391178.jpeg",
+                "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/highres_12391178.jpeg",
+                "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/thumb_12391178.jpeg",
+                "photo_id": 12391178
+            },
+            "created": 1336678346000,
+            "event": {
+                "id": "63933992",
+                "time": 1337191200000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/63933992\/",
+                "name": "Lightning Talks: Instant APIs, Victorious TDD, HipHop: Secret Sauce"
+            },
+            "tallies": {
+                "yes": 3,
+                "maybe": 0,
+                "no": 5,
+                "waitlist": 0
+            },
+            "mtime": 1336678346000,
+            "guests": 0,
+            "rsvp_id": 396503772,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "group": {
+                "id": 2833232,
+                "created": 1420670741980,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            }
+        },
+        {
+            "member": {
+                "name": "Henry Smith",
+                "member_id": 40261632
+            },
+            "tallies": {
+                "yes": 3,
+                "maybe": 0,
+                "no": 5,
+                "waitlist": 0
+            },
+            "mtime": 1337188682000,
+            "guests": 0,
+            "venue": {
+                "id": 4494242,
+                "lon": -2.593088,
+                "repinned": false,
+                "name": "The Golden Guinea",
+                "address_1": "19 Guinea Street, Bristol, BS1 6SX",
+                "lat": 51.447449,
+                "country": "gb",
+                "city": "Bristol"
+            },
+            "response": "no",
+            "member_photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/member_176920012.jpeg",
+                "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/highres_176920012.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/thumb_176920012.jpeg",
+                "photo_id": 176920012
+            },
+            "created": 1336925027000,
+            "event": {
+                "id": "63933992",
+                "time": 1337191200000,
+                "event_url": "http:\/\/www.meetup.com\/php-sw\/events\/63933992\/",
+                "name": "Lightning Talks: Instant APIs, Victorious TDD, HipHop: Secret Sauce"
+            },
+            "rsvp_id": 398862322,
+            "group": {
+                "id": 2833232,
+                "created": 1420670741980,
+                "group_lat": 51.459999084473,
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw"
+            },
+            "comments": "sick :("
+        }
+    ],
+    "talks": [],
+    "url": "http:\/\/www.meetup.com\/php-sw\/events\/63933992\/",
+    "date": {
+        "date": "2012-05-16 18:00:00.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

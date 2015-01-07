@@ -1,0 +1,158 @@
+{
+    "lon": -2.08,
+    "hometown": "Cheltenham",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/13569210",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/8\/9\/member_11740329.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/8\/9\/highres_11740329.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/8\/9\/thumb_11740329.jpeg",
+        "photo_id": 11740329,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/8\/9\/highres_11740329.jpeg"
+    },
+    "country": "gb",
+    "city": "Cheltenham",
+    "id": 13569210,
+    "visited": 1396971078000,
+    "topics": [
+        {
+            "id": 58259,
+            "urlkey": "young-professional-singles",
+            "name": "Young Professional Singles"
+        },
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 16660,
+            "urlkey": "singles-30s-50s",
+            "name": "Singles 30's-50's"
+        },
+        {
+            "id": 1998,
+            "urlkey": "travel",
+            "name": "Travel"
+        },
+        {
+            "id": 933,
+            "urlkey": "walkers",
+            "name": "Walking"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 638,
+            "urlkey": "hiking",
+            "name": "Hiking"
+        },
+        {
+            "id": 21184,
+            "urlkey": "european-culture",
+            "name": "European Culture"
+        },
+        {
+            "id": 22889,
+            "urlkey": "cultural-diversity",
+            "name": "Cultural Diversity"
+        },
+        {
+            "id": 53670,
+            "urlkey": "deutsch",
+            "name": "Deutsch"
+        },
+        {
+            "id": 644,
+            "urlkey": "german",
+            "name": "German Language"
+        },
+        {
+            "id": 51942,
+            "urlkey": "german-conversation",
+            "name": "German Conversation"
+        },
+        {
+            "id": 20737,
+            "urlkey": "deutsches-essen-german-food",
+            "name": "Deutsches Essen\/German Food"
+        },
+        {
+            "id": 23707,
+            "urlkey": "german-culture",
+            "name": "German Culture"
+        },
+        {
+            "id": 1502,
+            "urlkey": "art",
+            "name": "Art"
+        },
+        {
+            "id": 10454,
+            "urlkey": "language",
+            "name": "Language & Culture"
+        },
+        {
+            "id": 15892,
+            "urlkey": "adventure",
+            "name": "Adventure"
+        },
+        {
+            "id": 15018,
+            "urlkey": "music",
+            "name": "Music"
+        },
+        {
+            "id": 24711,
+            "urlkey": "playing-music",
+            "name": "Playing Music"
+        },
+        {
+            "id": 37631,
+            "urlkey": "amateur-musicians",
+            "name": "Amateur Musicians"
+        }
+    ],
+    "joined": 1323953495000,
+    "bio": "Hi - I live in Cheltenham but get to Bristol often. Keen to expand my tech knowledge & skills including PHP.",
+    "name": "Hamm",
+    "other_services": [],
+    "lat": 51.88,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/13569210\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/8\/9\/member_11740329.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 13569210,
+    "created": 1323953495000,
+    "updated": 1323953496000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-04-08 15:31:18.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

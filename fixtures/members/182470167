@@ -1,0 +1,72 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/182470167",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 182470167,
+    "visited": 1420465540000,
+    "topics": [
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        }
+    ],
+    "joined": 1415628347000,
+    "bio": "I'm the MD of Evergreen, a web development company in Charfield (just off the M5 at Junction 14).",
+    "name": "Andrew Cope",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/182470167\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/6\/d\/a\/member_241402234.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/6\/d\/a\/member_241402234.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/6\/d\/a\/highres_241402234.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/6\/d\/a\/thumb_241402234.jpeg",
+        "photo_id": 241402234,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/6\/d\/a\/highres_241402234.jpeg"
+    },
+    "member_id": 182470167,
+    "created": 1415628347000,
+    "updated": 1418231124000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-05 13:45:40.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

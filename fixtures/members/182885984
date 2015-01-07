@@ -1,0 +1,131 @@
+{
+    "lon": -2.54,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/182885984",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/8\/5\/7\/member_242054423.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/8\/5\/7\/highres_242054423.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/8\/5\/7\/thumb_242054423.jpeg",
+        "photo_id": 242054423,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/8\/5\/7\/highres_242054423.jpeg"
+    },
+    "city": "Stoke Gifford",
+    "country": "gb",
+    "id": 182885984,
+    "visited": 1420221589000,
+    "topics": [
+        {
+            "id": 10538,
+            "urlkey": "businessintell",
+            "name": "Business Intelligence"
+        },
+        {
+            "id": 15121,
+            "urlkey": "leadership",
+            "name": "Leadership"
+        },
+        {
+            "id": 3880,
+            "urlkey": "prodev",
+            "name": "Professional Development"
+        },
+        {
+            "id": 15231,
+            "urlkey": "young-professionals",
+            "name": "Young Professionals"
+        },
+        {
+            "id": 16310,
+            "urlkey": "motorcycle-touring",
+            "name": "Motorcycle Touring"
+        },
+        {
+            "id": 19666,
+            "urlkey": "nature-walks",
+            "name": "Nature Walks"
+        },
+        {
+            "id": 16967,
+            "urlkey": "outdoor-adventures",
+            "name": "Outdoor Adventures"
+        },
+        {
+            "id": 206,
+            "urlkey": "digcam",
+            "name": "Digital Photography"
+        },
+        {
+            "id": 223,
+            "urlkey": "photo",
+            "name": "Photography"
+        },
+        {
+            "id": 15043,
+            "urlkey": "photography-classes",
+            "name": "Photography Classes"
+        },
+        {
+            "id": 21067,
+            "urlkey": "collaboration",
+            "name": "Collaboration"
+        },
+        {
+            "id": 37381,
+            "urlkey": "data-visualization",
+            "name": "Data Visualization"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        }
+    ],
+    "joined": 1420119262000,
+    "name": "Peter Allen",
+    "other_services": [],
+    "lat": 51.52,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/182885984\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/8\/5\/7\/member_242054423.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 182885984,
+    "updated": 1420119262000,
+    "created": 1420119262000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 17:59:49.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

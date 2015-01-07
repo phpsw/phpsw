@@ -1,0 +1,142 @@
+{
+    "lon": -2.59,
+    "hometown": "Bristol, UK",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/372691",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/3\/c\/5\/2\/member_29475442.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/3\/c\/5\/2\/highres_29475442.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/3\/c\/5\/2\/thumb_29475442.jpeg",
+        "photo_id": 29475442,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/3\/c\/5\/2\/highres_29475442.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 372691,
+    "visited": 1415635863000,
+    "topics": [
+        {
+            "id": 57848,
+            "urlkey": "conversazione-in-italiano",
+            "name": "Italiano"
+        },
+        {
+            "id": 127567,
+            "urlkey": "ios-development",
+            "name": "iOS Development"
+        },
+        {
+            "id": 134762,
+            "urlkey": "lua-programming",
+            "name": "Lua Programming"
+        },
+        {
+            "id": 325071,
+            "urlkey": "corona-sdk",
+            "name": "Corona SDK"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 29000,
+            "urlkey": "angel-investors",
+            "name": "Angel Investors"
+        },
+        {
+            "id": 11042,
+            "urlkey": "lingua-italiana",
+            "name": "Lingua Italiana"
+        },
+        {
+            "id": 184,
+            "urlkey": "italian",
+            "name": "Italian Language"
+        },
+        {
+            "id": 173,
+            "urlkey": "musicians",
+            "name": "Musicians"
+        },
+        {
+            "id": 37631,
+            "urlkey": "amateur-musicians",
+            "name": "Amateur Musicians"
+        },
+        {
+            "id": 24711,
+            "urlkey": "playing-music",
+            "name": "Playing Music"
+        },
+        {
+            "id": 933,
+            "urlkey": "walkers",
+            "name": "Walking"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 40464,
+            "urlkey": "acoustic-jams",
+            "name": "Acoustic Jams"
+        },
+        {
+            "id": 15028,
+            "urlkey": "italian-culture",
+            "name": "Italian Culture"
+        }
+    ],
+    "joined": 1411563389000,
+    "bio": "Been a PHPer since 2002; these days I'm a project manager but I like to stay up to date",
+    "name": "Paul Masri",
+    "other_services": {
+        "twitter": {
+            "identifier": "@paulmasri"
+        }
+    },
+    "lat": 51.47,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/372691\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/3\/c\/5\/2\/member_29475442.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 372691,
+    "created": 1411563389000,
+    "updated": 1411563449000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-10 16:11:03.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

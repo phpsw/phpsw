@@ -1,0 +1,142 @@
+{
+    "lon": -2.58,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/48744542",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/1\/8\/2\/member_198924962.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/1\/8\/2\/highres_198924962.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/1\/8\/2\/thumb_198924962.jpeg",
+        "photo_id": 198924962,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/1\/8\/2\/highres_198924962.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 48744542,
+    "visited": 1416919789000,
+    "topics": [
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 62946,
+            "urlkey": "new-product-development-software-tech",
+            "name": "New Product Development: Software & Tech"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 15029,
+            "urlkey": "film",
+            "name": "Film"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 1998,
+            "urlkey": "travel",
+            "name": "Travel"
+        }
+    ],
+    "joined": 1368523849000,
+    "bio": "Hello I'm a developer",
+    "name": "Matt",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/147496992\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/1\/8\/2\/member_198924962.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 147496992,
+    "created": 1400600849000,
+    "updated": 1400600867000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-25 12:49:49.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/172376742",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 172376742,
+    "visited": 1420236332000,
+    "topics": [
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 496,
+            "urlkey": "gamedev",
+            "name": "Game Development"
+        }
+    ],
+    "joined": 1411237835000,
+    "bio": "PHP & JavaScript Developer",
+    "name": "Michael Czolko",
+    "other_services": [],
+    "lat": 51.47,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/172376742\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/d\/c\/3\/4\/member_228236372.jpeg",
+    "answers": [
+        {
+            "answer": "PHP, JavaScript, Symfony2, Cassandra, DynamoDB, ReactJS, Google Closure Compiler, Unreal Engine 4",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/d\/c\/3\/4\/member_228236372.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/d\/c\/3\/4\/highres_228236372.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/d\/c\/3\/4\/thumb_228236372.jpeg",
+        "photo_id": 228236372,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/d\/c\/3\/4\/highres_228236372.jpeg"
+    },
+    "member_id": 172376742,
+    "created": 1411237835000,
+    "updated": 1412785675000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 22:05:32.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

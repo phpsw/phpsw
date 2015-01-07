@@ -1,0 +1,90 @@
+{
+    "lon": -3.19,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/65835842",
+    "state": "D4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/8\/d\/4\/member_76990452.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/8\/d\/4\/thumb_76990452.jpeg",
+        "photo_id": 76990452,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/8\/d\/4\/member_76990452.jpeg"
+    },
+    "city": "Honiton",
+    "country": "gb",
+    "id": 65835842,
+    "visited": 1354123133000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        }
+    ],
+    "joined": 1350038151000,
+    "bio": "Web Developer\/Designer, Aleck & Tasha's Dad. Twitter Lover, Cyclist & Skittles player. Working hard to be HTML5 & PHP Ninja. I am tough. I refuse to explode... ",
+    "name": "Daniel H Pavey",
+    "other_services": {
+        "twitter": {
+            "identifier": "@danielhpavey"
+        }
+    },
+    "lat": 50.79,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/65835842\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/8\/d\/4\/member_76990452.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 65835842,
+    "created": 1350038151000,
+    "updated": 1350038151000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2012-11-28 17:18:53.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

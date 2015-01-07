@@ -1,0 +1,241 @@
+{
+    "lon": -2.36,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/59457302",
+    "state": "A4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/d\/c\/e\/member_68895822.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/d\/c\/e\/thumb_68895822.jpeg",
+        "photo_id": 68895822,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/d\/c\/e\/member_68895822.jpeg"
+    },
+    "city": "Bath",
+    "country": "gb",
+    "id": 59457302,
+    "visited": 1418292057000,
+    "topics": [
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 5938,
+            "urlkey": "xp",
+            "name": "Extreme Programming"
+        },
+        {
+            "id": 10043,
+            "urlkey": "scrum",
+            "name": "Scrum"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 25435,
+            "urlkey": "test-driven-development",
+            "name": "Test Driven Development"
+        },
+        {
+            "id": 122939,
+            "urlkey": "agile-coaching",
+            "name": "Agile Coaching"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 1040,
+            "urlkey": "ruby",
+            "name": "Ruby"
+        },
+        {
+            "id": 127567,
+            "urlkey": "ios-development",
+            "name": "iOS Development"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 15616,
+            "urlkey": "iphone",
+            "name": "iPhone"
+        },
+        {
+            "id": 16967,
+            "urlkey": "outdoor-adventures",
+            "name": "Outdoor Adventures"
+        },
+        {
+            "id": 96080,
+            "urlkey": "indoor-climbing",
+            "name": "Indoor Climbing"
+        },
+        {
+            "id": 20837,
+            "urlkey": "ruby-on-rails",
+            "name": "Ruby On Rails"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 1566,
+            "urlkey": "rockclimbing",
+            "name": "Rock Climbing"
+        },
+        {
+            "id": 15892,
+            "urlkey": "adventure",
+            "name": "Adventure"
+        },
+        {
+            "id": 17121,
+            "urlkey": "expeditions",
+            "name": "Expeditions"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 602,
+            "urlkey": "bornagain",
+            "name": "Born Again Christian"
+        },
+        {
+            "id": 26637,
+            "urlkey": "kitesurfing",
+            "name": "Kitesurfing"
+        },
+        {
+            "id": 1428,
+            "urlkey": "surfing",
+            "name": "Surfing"
+        },
+        {
+            "id": 6481,
+            "urlkey": "kiteboarding",
+            "name": "Kiteboarding"
+        },
+        {
+            "id": 7367,
+            "urlkey": "windsurfing",
+            "name": "Windsurfing"
+        },
+        {
+            "id": 480092,
+            "urlkey": "windsurfing-and-kiteboarding",
+            "name": "Windsurfing and Kiteboarding"
+        },
+        {
+            "id": 18488,
+            "urlkey": "stand-up-paddle-boarding",
+            "name": "Stand Up Paddle Boarding"
+        },
+        {
+            "id": 17437,
+            "urlkey": "water-sports",
+            "name": "Water Sports"
+        },
+        {
+            "id": 638,
+            "urlkey": "hiking",
+            "name": "Hiking"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        }
+    ],
+    "joined": 1345668083000,
+    "bio": "Senior Developer \/ lead on innovation & productivity at www.mayden.co.uk.",
+    "name": "Luke Sturgess-Durden",
+    "other_services": [],
+    "lat": 51.38,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/59457302\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/d\/c\/e\/member_68895822.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 59457302,
+    "created": 1345668083000,
+    "updated": 1345668085000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-11 10:00:57.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

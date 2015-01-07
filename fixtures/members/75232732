@@ -1,0 +1,147 @@
+{
+    "lon": -2.12,
+    "hometown": "Cheltenham",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/75232732",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/9\/f\/0\/member_89894832.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/9\/f\/0\/thumb_89894832.jpeg",
+        "photo_id": 89894832,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/9\/f\/0\/member_89894832.jpeg"
+    },
+    "country": "gb",
+    "city": "Cheltenham",
+    "id": 75232732,
+    "visited": 1358789836000,
+    "topics": [
+        {
+            "id": 235,
+            "urlkey": "coffee",
+            "name": "Coffee"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 15940,
+            "urlkey": "movie-nights",
+            "name": "Movie Nights"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 223,
+            "urlkey": "photo",
+            "name": "Photography"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 19130,
+            "urlkey": "eating-drinking-talking-laughing-etc",
+            "name": "Eating, Drinking, Talking, Laughing, Etc"
+        },
+        {
+            "id": 19146,
+            "urlkey": "dance-lessons",
+            "name": "Dance Lessons"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 498,
+            "urlkey": "singles",
+            "name": "Singles"
+        },
+        {
+            "id": 20246,
+            "urlkey": "dating-and-relationships",
+            "name": "Dating and Relationships"
+        },
+        {
+            "id": 18216,
+            "urlkey": "professional-singles",
+            "name": "Single Professionals"
+        },
+        {
+            "id": 58259,
+            "urlkey": "young-professional-singles",
+            "name": "Young Professional Singles"
+        }
+    ],
+    "joined": 1358789836000,
+    "bio": "Coder from Cheltenham, looking to meet new likeminded people :)",
+    "name": "Tim Stamp",
+    "other_services": [],
+    "lat": 51.9,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/75232732\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/9\/f\/0\/member_89894832.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 75232732,
+    "created": 1358789836000,
+    "updated": 1358789837000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2013-01-21 17:37:16.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

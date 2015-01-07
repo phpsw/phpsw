@@ -1,0 +1,223 @@
+{
+    "lon": -2.39,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/7524056",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/7\/0\/2\/member_5279138.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/7\/0\/2\/highres_5279138.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/7\/0\/2\/thumb_5279138.jpeg",
+        "photo_id": 5279138,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/7\/0\/2\/highres_5279138.jpeg"
+    },
+    "country": "gb",
+    "city": "Chipping Sodbury",
+    "id": 7524056,
+    "visited": 1418224718000,
+    "topics": [
+        {
+            "id": 189,
+            "urlkey": "java",
+            "name": "Java"
+        },
+        {
+            "id": 1040,
+            "urlkey": "ruby",
+            "name": "Ruby"
+        },
+        {
+            "id": 10366,
+            "urlkey": "eclipseplugin",
+            "name": "Eclipse Plugin Development"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 1372,
+            "urlkey": "semweb",
+            "name": "Semantic Web"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 121802,
+            "urlkey": "mongodb",
+            "name": "mongoDB"
+        },
+        {
+            "id": 77842,
+            "urlkey": "cassandra",
+            "name": "Cassandra"
+        },
+        {
+            "id": 173,
+            "urlkey": "musicians",
+            "name": "Musicians"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 10553,
+            "urlkey": "django",
+            "name": "Django"
+        },
+        {
+            "id": 1064,
+            "urlkey": "python",
+            "name": "Python"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 38458,
+            "urlkey": "predictive-analytics",
+            "name": "Predictive Analytics"
+        },
+        {
+            "id": 29971,
+            "urlkey": "machine-learning",
+            "name": "Machine Learning"
+        },
+        {
+            "id": 30928,
+            "urlkey": "data-analytics",
+            "name": "Data Analytics"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 638,
+            "urlkey": "hiking",
+            "name": "Hiking"
+        },
+        {
+            "id": 16967,
+            "urlkey": "outdoor-adventures",
+            "name": "Outdoor Adventures"
+        },
+        {
+            "id": 496,
+            "urlkey": "gamedev",
+            "name": "Game Development"
+        },
+        {
+            "id": 4471,
+            "urlkey": "videogame",
+            "name": "Video Games"
+        },
+        {
+            "id": 15992,
+            "urlkey": "games",
+            "name": "Games"
+        },
+        {
+            "id": 19585,
+            "urlkey": "board-games",
+            "name": "Board Games"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        }
+    ],
+    "joined": 1394637423000,
+    "bio": "Developer based near Bristol...",
+    "name": "Jonathan Holloway",
+    "other_services": [],
+    "lat": 51.54,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/7524056\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/e\/7\/0\/2\/member_5279138.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 7524056,
+    "created": 1394637423000,
+    "updated": 1394637438000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-10 15:18:38.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

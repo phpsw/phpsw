@@ -1,0 +1,57 @@
+{
+    "lon": -2.38,
+    "hometown": "Clifton",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/32155192",
+    "state": "A4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/2\/1\/e\/member_241473310.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/2\/1\/e\/thumb_241473310.jpeg",
+        "photo_id": 241473310,
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/2\/1\/e\/highres_241473310.jpeg",
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/2\/1\/e\/highres_241473310.jpeg"
+    },
+    "country": "gb",
+    "city": "Bath",
+    "id": 32155192,
+    "visited": 1415885873000,
+    "topics": [],
+    "joined": 1386423227000,
+    "bio": "Lots of IT. Based in Bath & Bristol.",
+    "name": "Harvey West",
+    "other_services": [],
+    "lat": 51.39,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/32155192\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/2\/1\/e\/member_241473310.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 32155192,
+    "created": 1386423227000,
+    "updated": 1415829987000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-13 13:37:53.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

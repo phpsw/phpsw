@@ -1,0 +1,26 @@
+{
+    "id": 48509566,
+    "board": {
+        "id": 2827512
+    },
+    "created": 1416083969000,
+    "updated": 1416083969000,
+    "started_by": {
+        "name": "Steve Lacey"
+    },
+    "subject": "jQuery UK",
+    "body": "Just a quick plug for jQuery UK, who have kindly donated a ticket as a prize for our [url=http:\/\/www.meetup.com\/php-sw\/events\/215370812]PHPub quiz in December[\/url], if you don't fancy your chances of grabbing the ticket at the quiz, early bird tickets are on sale now at [url=http:\/\/jqueryuk.com\/2015]http:\/\/jqueryuk.com\/2015[\/url].\r\njQuery UK is the UK\u2019s largest front-end developer conference, happening in Oxford on 6 March 2015. Two packed tracks will feature the biggest names in front-end development delivering practical sessions with plenty of useful takeaways.",
+    "last_post": {
+        "created": 1416083969000,
+        "member": {
+            "name": "Steve Lacey"
+        },
+        "created_date": {
+            "date": "2014-11-15 20:39:29.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "reply_count": 0,
+    "url": "http:\/\/www.meetup.com\/php-sw\/messages\/boards\/thread\/48509566"
+}

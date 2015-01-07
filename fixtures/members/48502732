@@ -1,0 +1,254 @@
+{
+    "lon": 0,
+    "hometown": "London",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/48502732",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/f\/9\/a\/member_175696282.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/f\/9\/a\/thumb_175696282.jpeg",
+        "photo_id": 175696282,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/f\/9\/a\/member_175696282.jpeg"
+    },
+    "country": "gb",
+    "city": "London",
+    "id": 48502732,
+    "visited": 1397085420000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 10164,
+            "urlkey": "lampsoftware",
+            "name": "LAMP"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 10102,
+            "urlkey": "internetpro",
+            "name": "Internet Professionals"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 101961,
+            "urlkey": "coffeescript",
+            "name": "CoffeeScript"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 405512,
+            "urlkey": "backbone-js",
+            "name": "Backbone.js"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 921432,
+            "urlkey": "meteor",
+            "name": "Meteor"
+        },
+        {
+            "id": 921262,
+            "urlkey": "d3-js",
+            "name": "d3.js"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 37381,
+            "urlkey": "data-visualization",
+            "name": "Data Visualization"
+        },
+        {
+            "id": 77842,
+            "urlkey": "cassandra",
+            "name": "Cassandra"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 121802,
+            "urlkey": "mongodb",
+            "name": "mongoDB"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 55324,
+            "urlkey": "data-mining",
+            "name": "Data Mining"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 148303,
+            "urlkey": "puppet",
+            "name": "puppet"
+        },
+        {
+            "id": 94779,
+            "urlkey": "systems-administration",
+            "name": "Systems Administration"
+        },
+        {
+            "id": 431622,
+            "urlkey": "opscode-chef",
+            "name": "Opscode Chef"
+        },
+        {
+            "id": 87614,
+            "urlkey": "devops",
+            "name": "DevOps"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        }
+    ],
+    "joined": 1337532859000,
+    "bio": "I'm a Web Developer in the Bristol area, I currently work full-time for Goram + Vincent as PHP programmer.",
+    "name": "Adam Nicholls",
+    "other_services": {
+        "twitter": {
+            "identifier": "@inkysplat"
+        },
+        "facebook": {
+            "identifier": "https:\/\/www.facebook.com\/inkysplat"
+        }
+    },
+    "lat": 51.56,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/48502732\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/f\/9\/a\/member_175696282.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 48502732,
+    "created": 1337532859000,
+    "updated": 1391719598000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-04-09 23:17:00.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

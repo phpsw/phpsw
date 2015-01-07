@@ -1,0 +1,95 @@
+{
+    "lon": -3.54,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/155495792",
+    "state": "D4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/2\/b\/c\/member_210008892.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/2\/2\/b\/c\/thumb_210008892.jpeg",
+        "photo_id": 210008892,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/2\/b\/c\/member_210008892.jpeg"
+    },
+    "city": "Exeter",
+    "country": "gb",
+    "id": 155495792,
+    "visited": 1412017023000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        }
+    ],
+    "joined": 1409064000000,
+    "bio": "Technical Architect at Crowdcube. Working with Laravel on a migration from legacy PHP4 codebase.",
+    "name": "John Blackmore",
+    "other_services": {
+        "twitter": {
+            "identifier": "@johnblackmore"
+        },
+        "tumblr": {
+            "identifier": "http:\/\/johnblackmore.com"
+        }
+    },
+    "lat": 50.73,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/155495792\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/2\/b\/c\/member_210008892.jpeg",
+    "answers": [
+        {
+            "answer": "More design patterns with applied real world examples, introductions to automated testing, continuous deployment in the real world.",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "Currently working on a Laravel talk to show how we are migrating our legacy codebase. Would be happy to share once it's done. We also use Laravel quite a bit, so would be happy to do a primer\/intro to that?",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 155495792,
+    "created": 1409064000000,
+    "updated": 1409064227000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-09-29 18:57:03.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

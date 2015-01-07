@@ -1,0 +1,78 @@
+{
+    "lon": -3.18,
+    "hometown": "Cardiff",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/17581761",
+    "state": "X5",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/9\/8\/1\/member_15875201.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/9\/8\/1\/thumb_15875201.jpeg",
+        "photo_id": 15875201,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/9\/8\/1\/member_15875201.jpeg"
+    },
+    "city": "Cardiff",
+    "country": "gb",
+    "id": 17581761,
+    "visited": 1420469345000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        }
+    ],
+    "joined": 1416936162000,
+    "name": "Ian Jenkins",
+    "other_services": {
+        "twitter": {
+            "identifier": "@jenko"
+        },
+        "tumblr": {
+            "identifier": "http:\/\/jenkoian.tumblr.com"
+        }
+    },
+    "lat": 51.48,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/17581761\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/9\/8\/1\/member_15875201.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 17581761,
+    "updated": 1416936162000,
+    "created": 1416936162000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-05 14:49:05.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

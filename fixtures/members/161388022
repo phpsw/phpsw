@@ -1,0 +1,85 @@
+{
+    "lon": -1.6,
+    "hometown": "Leeds",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/161388022",
+    "state": "45",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/a\/e\/member_218342222.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/a\/e\/highres_218342222.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/a\/e\/thumb_218342222.jpeg",
+        "photo_id": 218342222,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/a\/e\/highres_218342222.jpeg"
+    },
+    "country": "gb",
+    "city": "Leeds",
+    "id": 161388022,
+    "visited": 1407947630000,
+    "topics": [
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        }
+    ],
+    "joined": 1407947630000,
+    "bio": "Director and developer of Instantiate, a web development company",
+    "name": "Tom",
+    "other_services": [],
+    "lat": 53.82,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/161388022\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/a\/e\/member_218342222.jpeg",
+    "answers": [
+        {
+            "answer": "PHP",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "No",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 161388022,
+    "created": 1407947630000,
+    "updated": 1407947714000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-08-13 16:33:50.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

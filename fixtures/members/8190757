@@ -1,0 +1,197 @@
+{
+    "lon": -2.59,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/8190757",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/c\/3\/9\/6\/member_11750070.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/3\/9\/6\/highres_11750070.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/c\/3\/9\/6\/thumb_11750070.jpeg",
+        "photo_id": 11750070,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/3\/9\/6\/highres_11750070.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 8190757,
+    "visited": 1418233607000,
+    "topics": [
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 10102,
+            "urlkey": "internetpro",
+            "name": "Internet Professionals"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 28990,
+            "urlkey": "cms",
+            "name": "CMS (Content Management Systems)"
+        },
+        {
+            "id": 121802,
+            "urlkey": "mongodb",
+            "name": "mongoDB"
+        },
+        {
+            "id": 163659,
+            "urlkey": "document-databases",
+            "name": "document databases"
+        },
+        {
+            "id": 183,
+            "urlkey": "spanish",
+            "name": "Spanish Language"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        }
+    ],
+    "joined": 1321955435000,
+    "bio": "Lead Developer of BaseKit",
+    "name": "richard.healy",
+    "other_services": {
+        "twitter": {
+            "identifier": "@richardhealy"
+        }
+    },
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/8190757\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/c\/3\/9\/6\/member_11750070.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 8190757,
+    "created": 1321955435000,
+    "updated": 1321955435000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-10 17:46:47.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

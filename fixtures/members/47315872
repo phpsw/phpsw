@@ -1,0 +1,72 @@
+{
+    "lon": -2.61,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/47315872",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 47315872,
+    "visited": 1420450815000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        }
+    ],
+    "joined": 1404293417000,
+    "bio": "Web Developer @ Ents24",
+    "name": "Doug Fitzmaurice",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/47315872\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/a\/9\/c\/member_208467292.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/a\/9\/c\/member_208467292.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/a\/9\/c\/highres_208467292.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/a\/9\/c\/thumb_208467292.jpeg",
+        "photo_id": 208467292,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/a\/9\/c\/highres_208467292.jpeg"
+    },
+    "member_id": 47315872,
+    "created": 1404293417000,
+    "updated": 1404293477000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-05 09:40:15.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

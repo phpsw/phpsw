@@ -1,0 +1,121 @@
+{
+    "lon": -0.21,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/46350202",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/6\/a\/0\/member_183605792.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/6\/a\/0\/thumb_183605792.jpeg",
+        "photo_id": 183605792,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/6\/a\/0\/member_183605792.jpeg"
+    },
+    "city": "London",
+    "country": "gb",
+    "id": 46350202,
+    "visited": 1417731373000,
+    "topics": [
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 10164,
+            "urlkey": "lampsoftware",
+            "name": "LAMP"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 23199,
+            "urlkey": "seo-search-engine-optimization",
+            "name": "SEO (Search Engine Optimization)"
+        },
+        {
+            "id": 127567,
+            "urlkey": "ios-development",
+            "name": "iOS Development"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        }
+    ],
+    "joined": 1394792535000,
+    "bio": "10 yr php, polish, basen in London, currently on contract in Bristol.",
+    "name": "Dominik",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/46350202\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/6\/a\/0\/member_183605792.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 46350202,
+    "created": 1394792535000,
+    "updated": 1394792597000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-04 22:16:13.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

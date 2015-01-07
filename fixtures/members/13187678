@@ -1,0 +1,83 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/13187678",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/9\/1\/4\/6\/member_11017190.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/9\/1\/4\/6\/thumb_11017190.jpeg",
+        "photo_id": 11017190,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/9\/1\/4\/6\/member_11017190.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 13187678,
+    "visited": 1410348354000,
+    "topics": [
+        {
+            "id": 182,
+            "urlkey": "esl",
+            "name": "English as a Second Language"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        }
+    ],
+    "joined": 1394471340000,
+    "bio": "Drupal and ExpressionEngine developer, with a previous history in Java, Perl and little Python, broadening PHP horizons since involvement with upcoming Drupal 8.",
+    "name": "Chris Hall",
+    "other_services": {
+        "twitter": {
+            "identifier": "@chris_mandarin"
+        },
+        "facebook": {
+            "identifier": 619382873
+        }
+    },
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/13187678\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/9\/1\/4\/6\/member_11017190.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 13187678,
+    "created": 1394471340000,
+    "updated": 1394471471000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-09-10 11:25:54.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

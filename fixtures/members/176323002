@@ -1,0 +1,71 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/176323002",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/6\/8\/2\/member_232625762.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/6\/8\/2\/highres_232625762.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/6\/8\/2\/thumb_232625762.jpeg",
+        "photo_id": 232625762,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/6\/8\/2\/highres_232625762.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 176323002,
+    "visited": 1420219725000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        }
+    ],
+    "joined": 1412677409000,
+    "name": "Jason Barrows",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/176323002\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/6\/8\/2\/member_232625762.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 176323002,
+    "updated": 1412677843000,
+    "created": 1412677409000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 17:28:45.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

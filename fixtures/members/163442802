@@ -1,0 +1,216 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/163442802",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "city": "St Andrews",
+    "country": "gb",
+    "visited": 1415358963000,
+    "id": 163442802,
+    "topics": [
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 15236,
+            "urlkey": "business-networking",
+            "name": "professional-networking"
+        },
+        {
+            "id": 10099,
+            "urlkey": "craftswap",
+            "name": "Crafts"
+        },
+        {
+            "id": 15992,
+            "urlkey": "games",
+            "name": "Games"
+        },
+        {
+            "id": 10454,
+            "urlkey": "language",
+            "name": "Language & Culture"
+        },
+        {
+            "id": 15018,
+            "urlkey": "music",
+            "name": "Music"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 223,
+            "urlkey": "photo",
+            "name": "Photography"
+        },
+        {
+            "id": 10451,
+            "urlkey": "sports",
+            "name": "Sports and Recreation"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 7848,
+            "urlkey": "electronics",
+            "name": "Electronics"
+        },
+        {
+            "id": 682,
+            "urlkey": "robotics",
+            "name": "Robotics"
+        },
+        {
+            "id": 456,
+            "urlkey": "ai",
+            "name": "Artificial Intelligence"
+        },
+        {
+            "id": 72762,
+            "urlkey": "robots",
+            "name": "Robots"
+        },
+        {
+            "id": 9903,
+            "urlkey": "microcontroller",
+            "name": "Microcontrollers"
+        },
+        {
+            "id": 113888,
+            "urlkey": "personal-robots",
+            "name": "Personal Robots"
+        },
+        {
+            "id": 43887,
+            "urlkey": "makers",
+            "name": "Makers"
+        },
+        {
+            "id": 101438,
+            "urlkey": "makerspaces",
+            "name": "Makerspaces"
+        },
+        {
+            "id": 10009,
+            "urlkey": "whitehat",
+            "name": "White Hat Hacking"
+        },
+        {
+            "id": 15471,
+            "urlkey": "web-security",
+            "name": "Web Security"
+        },
+        {
+            "id": 85499,
+            "urlkey": "cyber-security",
+            "name": "Cyber Security"
+        },
+        {
+            "id": 79814,
+            "urlkey": "it-security",
+            "name": "IT Security"
+        }
+    ],
+    "joined": 1413904065000,
+    "name": "Leon",
+    "other_services": [],
+    "lat": 51.47,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/163442802\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/4\/d\/b\/4\/member_236419892.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/4\/d\/b\/4\/member_236419892.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/d\/b\/4\/highres_236419892.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/d\/b\/4\/thumb_236419892.jpeg",
+        "photo_id": 236419892,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/d\/b\/4\/highres_236419892.jpeg"
+    },
+    "member_id": 163442802,
+    "updated": 1413904080000,
+    "created": 1413904065000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-07 11:16:03.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

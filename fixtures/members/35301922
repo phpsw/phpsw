@@ -1,0 +1,176 @@
+{
+    "lon": -2.57,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/35301922",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/b\/1\/c\/member_196676092.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/b\/1\/c\/highres_196676092.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/b\/1\/c\/thumb_196676092.jpeg",
+        "photo_id": 196676092,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/b\/1\/c\/highres_196676092.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 35301922,
+    "visited": 1420628957000,
+    "topics": [
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 781,
+            "urlkey": "graphicdesign",
+            "name": "Graphic Design"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 186,
+            "urlkey": "photoshop",
+            "name": "Photoshop"
+        },
+        {
+            "id": 1040,
+            "urlkey": "ruby",
+            "name": "Ruby"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 20837,
+            "urlkey": "ruby-on-rails",
+            "name": "Ruby On Rails"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        }
+    ],
+    "joined": 1399732899000,
+    "bio": "Developer at cxpartners. Into webperf, scalable front-end architecture, PHP, WordPress, and cider.",
+    "name": "Alexander Jegtnes",
+    "other_services": {
+        "twitter": {
+            "identifier": "@jegtnes"
+        }
+    },
+    "lat": 51.51,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/35301922\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/b\/1\/c\/member_196676092.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 35301922,
+    "created": 1399732899000,
+    "updated": 1404284879000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-07 11:09:17.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

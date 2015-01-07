@@ -1,0 +1,120 @@
+{
+    "lon": -3.18,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/13935532",
+    "state": "Z3",
+    "self": {
+        "common": []
+    },
+    "city": "Penarth",
+    "country": "gb",
+    "visited": 1418039708000,
+    "id": 13935532,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        }
+    ],
+    "joined": 1418039708000,
+    "name": "Steve Halford",
+    "other_services": {
+        "twitter": {
+            "identifier": "@Inknpixel"
+        }
+    },
+    "lat": 51.43,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/13935532\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/a\/b\/7\/member_242067319.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/a\/b\/7\/member_242067319.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/a\/b\/7\/highres_242067319.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/a\/b\/7\/thumb_242067319.jpeg",
+        "photo_id": 242067319,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/a\/b\/7\/highres_242067319.jpeg"
+    },
+    "member_id": 13935532,
+    "updated": 1418039717000,
+    "created": 1418039708000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-08 11:55:08.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

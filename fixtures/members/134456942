@@ -1,0 +1,56 @@
+{
+    "lon": -0.06,
+    "hometown": "London",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/134456942",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "city": "London",
+    "country": "gb",
+    "id": 134456942,
+    "visited": 1412786147000,
+    "topics": [],
+    "joined": 1411995894000,
+    "bio": "Long time PHP dev, back in Bristol for a bit!",
+    "name": "Rob G",
+    "other_services": [],
+    "lat": 51.49,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/134456942\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/d\/3\/4\/member_179392532.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/d\/3\/4\/member_179392532.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/d\/3\/4\/thumb_179392532.jpeg",
+        "photo_id": 179392532,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/d\/3\/4\/member_179392532.jpeg"
+    },
+    "member_id": 134456942,
+    "created": 1411995894000,
+    "updated": 1411995938000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-10-08 16:35:47.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

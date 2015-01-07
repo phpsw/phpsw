@@ -1,0 +1,177 @@
+{
+    "lon": -2.38,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/95112142",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/1\/f\/a\/member_120364602.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/1\/f\/a\/highres_120364602.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/1\/f\/a\/thumb_120364602.jpeg",
+        "photo_id": 120364602,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/1\/f\/a\/highres_120364602.jpeg"
+    },
+    "city": "Bath",
+    "country": "gb",
+    "id": 95112142,
+    "visited": 1420192619000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 15083,
+            "urlkey": "intellectual-discussion",
+            "name": "Intellectual Discussion"
+        },
+        {
+            "id": 244,
+            "urlkey": "yoga",
+            "name": "Yoga"
+        },
+        {
+            "id": 933,
+            "urlkey": "walkers",
+            "name": "Walking"
+        },
+        {
+            "id": 10290,
+            "urlkey": "spirituality",
+            "name": "Spirituality"
+        },
+        {
+            "id": 15029,
+            "urlkey": "film",
+            "name": "Film"
+        },
+        {
+            "id": 125467,
+            "urlkey": "chinese-language",
+            "name": "Chinese language"
+        },
+        {
+            "id": 1244,
+            "urlkey": "indian",
+            "name": "Expat Indian"
+        },
+        {
+            "id": 27904,
+            "urlkey": "indian-culture",
+            "name": "Indian Culture"
+        },
+        {
+            "id": 1378452,
+            "urlkey": "badminton-after-work",
+            "name": "Badminton after work"
+        },
+        {
+            "id": 53225,
+            "urlkey": "badminton-social-and-singles",
+            "name": "Badminton Social and Singles"
+        },
+        {
+            "id": 2906,
+            "urlkey": "badminton",
+            "name": "Badminton"
+        },
+        {
+            "id": 828622,
+            "urlkey": "casual-badminton",
+            "name": "casual badminton"
+        },
+        {
+            "id": 33004,
+            "urlkey": "chinese-culture",
+            "name": "Chinese Culture"
+        }
+    ],
+    "joined": 1369592312000,
+    "bio": "Working as a Educational Software Developer on Moodle. Experience in PHP and MySQL",
+    "name": "Hittesh",
+    "other_services": [],
+    "lat": 51.38,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/95112142\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/1\/1\/f\/a\/member_120364602.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 95112142,
+    "created": 1369592312000,
+    "updated": 1369592415000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 09:56:59.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

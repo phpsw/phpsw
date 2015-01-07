@@ -1,0 +1,151 @@
+{
+    "lon": -2.61,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/88158392",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/5\/b\/0\/member_108986032.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/5\/b\/0\/thumb_108986032.jpeg",
+        "photo_id": 108986032,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/5\/b\/0\/member_108986032.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 88158392,
+    "visited": 1394867744000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 8304,
+            "urlkey": "wordpress",
+            "name": "WordPress"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 33167,
+            "urlkey": "sql",
+            "name": "SQL"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 235,
+            "urlkey": "coffee",
+            "name": "Coffee"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 933,
+            "urlkey": "walkers",
+            "name": "Walking"
+        }
+    ],
+    "joined": 1367264060000,
+    "bio": "PHP Amateur looking to learn some things",
+    "name": "Huw Angle",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/88158392\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/5\/b\/0\/member_108986032.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 88158392,
+    "created": 1367264060000,
+    "updated": 1367264061000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-03-15 07:15:44.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

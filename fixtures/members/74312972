@@ -1,0 +1,132 @@
+{
+    "lon": -2.61,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/74312972",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/9\/c\/a\/member_88467082.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/9\/c\/a\/highres_88467082.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/9\/c\/a\/thumb_88467082.jpeg",
+        "photo_id": 88467082,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/9\/c\/a\/highres_88467082.jpeg"
+    },
+    "city": "Clifton",
+    "country": "gb",
+    "id": 74312972,
+    "visited": 1410379840000,
+    "topics": [
+        {
+            "id": 23274,
+            "urlkey": "live-theatre",
+            "name": "Theater"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 15029,
+            "urlkey": "film",
+            "name": "Film"
+        },
+        {
+            "id": 1502,
+            "urlkey": "art",
+            "name": "Art"
+        },
+        {
+            "id": 18909,
+            "urlkey": "concerts",
+            "name": "Concerts"
+        },
+        {
+            "id": 43256,
+            "urlkey": "cooking-any-and-all-kinds-of-cooking",
+            "name": "Cooking"
+        },
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 16728,
+            "urlkey": "writing",
+            "name": "Writing"
+        },
+        {
+            "id": 19130,
+            "urlkey": "eating-drinking-talking-laughing-etc",
+            "name": "Eating, Drinking, Talking, Laughing, Etc"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 36229,
+            "urlkey": "creative",
+            "name": "Creativity"
+        },
+        {
+            "id": 50709,
+            "urlkey": "recipes",
+            "name": "Recipes"
+        },
+        {
+            "id": 16573,
+            "urlkey": "boston-artists",
+            "name": "Artists"
+        },
+        {
+            "id": 173,
+            "urlkey": "musicians",
+            "name": "Musicians"
+        }
+    ],
+    "joined": 1388842205000,
+    "bio": "Former PHP coder and web developer",
+    "name": "David Graves",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/74312972\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/9\/c\/a\/member_88467082.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 74312972,
+    "created": 1388842205000,
+    "updated": 1388842251000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-09-10 20:10:40.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}
