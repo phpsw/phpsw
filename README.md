@@ -16,6 +16,8 @@ Setup
 git clone https://github.com/phpsw/phpsw.git
 cd phpsw
 composer install
+npm install
+gulp build
 app/console redis:restore-fixtures
 ```
 
