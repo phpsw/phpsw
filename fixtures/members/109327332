@@ -1,0 +1,116 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/109327332",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/9\/5\/c\/member_207806972.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/9\/5\/c\/thumb_207806972.jpeg",
+        "photo_id": 207806972,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/9\/5\/c\/member_207806972.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 109327332,
+    "visited": 1379269069000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        }
+    ],
+    "joined": 1378067658000,
+    "bio": "I'm a Senior Recruitment Consultant with Opus who has built a hot desk placing PHP Developers in Bristol and the M4 corridor. I'm interested in learning more about the applications of PHP and to network in the community.",
+    "name": "Patrick Grimshaw",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/109327332\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/9\/5\/c\/member_207806972.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 109327332,
+    "updated": 1378068004000,
+    "created": 1378067658000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2013-09-15 18:17:49.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

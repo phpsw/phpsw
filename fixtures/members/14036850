@@ -1,0 +1,304 @@
+{
+    "lon": -2.36,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/14036850",
+    "state": "A4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/3\/9\/c\/member_117273692.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/3\/9\/c\/highres_117273692.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/3\/9\/c\/thumb_117273692.jpeg",
+        "photo_id": 117273692,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/3\/9\/c\/highres_117273692.jpeg"
+    },
+    "city": "Bath",
+    "country": "gb",
+    "id": 14036850,
+    "visited": 1420325983000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 10043,
+            "urlkey": "scrum",
+            "name": "Scrum"
+        },
+        {
+            "id": 5938,
+            "urlkey": "xp",
+            "name": "Extreme Programming"
+        },
+        {
+            "id": 65172,
+            "urlkey": "test-automation",
+            "name": "Test Automation"
+        },
+        {
+            "id": 25435,
+            "urlkey": "test-driven-development",
+            "name": "Test Driven Development"
+        },
+        {
+            "id": 38660,
+            "urlkey": "lean-startup",
+            "name": "Lean Startup"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 46616,
+            "urlkey": "founders",
+            "name": "Founders"
+        },
+        {
+            "id": 15401,
+            "urlkey": "social-media",
+            "name": "Social Media"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 121802,
+            "urlkey": "mongodb",
+            "name": "mongoDB"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 10102,
+            "urlkey": "internetpro",
+            "name": "Internet Professionals"
+        },
+        {
+            "id": 189,
+            "urlkey": "java",
+            "name": "Java"
+        },
+        {
+            "id": 30928,
+            "urlkey": "data-analytics",
+            "name": "Data Analytics"
+        },
+        {
+            "id": 37381,
+            "urlkey": "data-visualization",
+            "name": "Data Visualization"
+        },
+        {
+            "id": 122994,
+            "urlkey": "high-tech-startups",
+            "name": "High-Tech Startups"
+        },
+        {
+            "id": 62946,
+            "urlkey": "new-product-development-software-tech",
+            "name": "New Product Development: Software & Tech"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 60043,
+            "urlkey": "open-data",
+            "name": "Open Data"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 87614,
+            "urlkey": "devops",
+            "name": "DevOps"
+        }
+    ],
+    "joined": 1368460699000,
+    "bio": "Web developer based in Bath, UK. Freelance contractor. I am interested in machine-learning & pattern-recognition.",
+    "name": "Thomas Fletcher",
+    "other_services": {
+        "twitter": {
+            "identifier": "@thomasfletcher"
+        },
+        "facebook": {
+            "identifier": "https:\/\/www.facebook.com\/thomasfletcher"
+        }
+    },
+    "lat": 51.39,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/14036850\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/3\/9\/c\/member_117273692.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 14036850,
+    "created": 1368460699000,
+    "updated": 1368460875000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-03 22:59:43.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

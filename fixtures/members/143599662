@@ -1,0 +1,101 @@
+{
+    "lon": -3.52,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/143599662",
+    "state": "D4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/7\/d\/a\/member_193131162.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/c\/7\/d\/a\/thumb_193131162.jpeg",
+        "photo_id": 193131162,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/7\/d\/a\/member_193131162.jpeg"
+    },
+    "city": "Exeter",
+    "country": "gb",
+    "id": 143599662,
+    "visited": 1415346526000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        }
+    ],
+    "joined": 1413749887000,
+    "bio": "I am an italian php team leader living in Exeter. I am in love with symfony 2.",
+    "name": "eugenio pombi",
+    "other_services": [],
+    "lat": 50.73,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/143599662\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/7\/d\/a\/member_193131162.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 143599662,
+    "created": 1413749887000,
+    "updated": 1413749887000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-07 07:48:46.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

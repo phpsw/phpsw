@@ -1,0 +1,267 @@
+{
+    "lon": -2.58,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/73096282",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/4\/8\/d\/2\/member_86778642.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/8\/d\/2\/highres_86778642.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/4\/8\/d\/2\/thumb_86778642.jpeg",
+        "photo_id": 86778642,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/8\/d\/2\/highres_86778642.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 73096282,
+    "visited": 1411055692000,
+    "topics": [
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 15585,
+            "urlkey": "online-marketing",
+            "name": "Online Marketing"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 37381,
+            "urlkey": "data-visualization",
+            "name": "Data Visualization"
+        },
+        {
+            "id": 55324,
+            "urlkey": "data-mining",
+            "name": "Data Mining"
+        },
+        {
+            "id": 27591,
+            "urlkey": "mapreduce",
+            "name": "MapReduce"
+        },
+        {
+            "id": 16728,
+            "urlkey": "writing",
+            "name": "Writing"
+        },
+        {
+            "id": 44508,
+            "urlkey": "blogs",
+            "name": "Blogging"
+        },
+        {
+            "id": 24417,
+            "urlkey": "content-strategy",
+            "name": "Content Strategy"
+        },
+        {
+            "id": 15322,
+            "urlkey": "creative-writing",
+            "name": "Creative Writing"
+        },
+        {
+            "id": 17188,
+            "urlkey": "digital-media",
+            "name": "Digital Media"
+        },
+        {
+            "id": 25681,
+            "urlkey": "digital-publishing",
+            "name": "Digital Publishing"
+        },
+        {
+            "id": 8304,
+            "urlkey": "wordpress",
+            "name": "WordPress"
+        },
+        {
+            "id": 15401,
+            "urlkey": "social-media",
+            "name": "Social Media"
+        },
+        {
+            "id": 44584,
+            "urlkey": "journalism",
+            "name": "Journalism"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 23199,
+            "urlkey": "seo-search-engine-optimization",
+            "name": "SEO (Search Engine Optimization)"
+        },
+        {
+            "id": 17601,
+            "urlkey": "search-engine-marketing",
+            "name": "Search Engine Marketing"
+        },
+        {
+            "id": 17742,
+            "urlkey": "social-media-marketing",
+            "name": "Social Media Marketing"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 6490,
+            "urlkey": "google",
+            "name": "Google"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 62946,
+            "urlkey": "new-product-development-software-tech",
+            "name": "New Product Development: Software & Tech"
+        },
+        {
+            "id": 122994,
+            "urlkey": "high-tech-startups",
+            "name": "High-Tech Startups"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 60043,
+            "urlkey": "open-data",
+            "name": "Open Data"
+        }
+    ],
+    "joined": 1359306806000,
+    "bio": "I don't get a chance to do a lot of development these days, but remain excited about PHP and related technologies.",
+    "name": "Martin Bysh",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/73096282\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/4\/8\/d\/2\/member_86778642.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 73096282,
+    "created": 1359306806000,
+    "updated": 1359306807000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-09-18 15:54:52.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,307 @@
+{
+    "lon": -2.6,
+    "hometown": "London",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/9857131",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/6\/2\/5\/member_13813861.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/6\/2\/5\/highres_13813861.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/6\/2\/5\/thumb_13813861.jpeg",
+        "photo_id": 13813861,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/6\/2\/5\/highres_13813861.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 9857131,
+    "visited": 1420286040000,
+    "topics": [
+        {
+            "id": 17635,
+            "urlkey": "business-strategy",
+            "name": "Business Strategy"
+        },
+        {
+            "id": 235,
+            "urlkey": "coffee",
+            "name": "Coffee"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 1998,
+            "urlkey": "travel",
+            "name": "Travel"
+        },
+        {
+            "id": 611,
+            "urlkey": "wine",
+            "name": "Wine"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 10102,
+            "urlkey": "internetpro",
+            "name": "Internet Professionals"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 28990,
+            "urlkey": "cms",
+            "name": "CMS (Content Management Systems)"
+        },
+        {
+            "id": 15585,
+            "urlkey": "online-marketing",
+            "name": "Online Marketing"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 20060,
+            "urlkey": "business-entrepreneur-networking",
+            "name": "Entrepreneur Networking"
+        },
+        {
+            "id": 1330,
+            "urlkey": "ebizowners",
+            "name": "E-Business Owners"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 131233,
+            "urlkey": "mobile-apps",
+            "name": "Mobile Apps"
+        },
+        {
+            "id": 389,
+            "urlkey": "smallbiz",
+            "name": "Small Business"
+        },
+        {
+            "id": 19724,
+            "urlkey": "android",
+            "name": "Android"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 1724,
+            "urlkey": "classicfilms",
+            "name": "Classic Films"
+        },
+        {
+            "id": 1201,
+            "urlkey": "movies",
+            "name": "Watching Movies"
+        },
+        {
+            "id": 914,
+            "urlkey": "indiefilm",
+            "name": "Indie Films"
+        },
+        {
+            "id": 144617,
+            "urlkey": "cult-films",
+            "name": "Cult Films"
+        },
+        {
+            "id": 4422,
+            "urlkey": "socialnetwork",
+            "name": "Social Networking"
+        },
+        {
+            "id": 498,
+            "urlkey": "singles",
+            "name": "Singles"
+        },
+        {
+            "id": 3336,
+            "urlkey": "self-improvement",
+            "name": "Self-Improvement"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 1273,
+            "urlkey": "newintown",
+            "name": "New In Town"
+        },
+        {
+            "id": 17571,
+            "urlkey": "dancing",
+            "name": "Dancing"
+        },
+        {
+            "id": 15117,
+            "urlkey": "fun-times",
+            "name": "Fun Times"
+        },
+        {
+            "id": 4392,
+            "urlkey": "nightlife",
+            "name": "Nightlife"
+        },
+        {
+            "id": 25375,
+            "urlkey": "excercise",
+            "name": "Exercise"
+        },
+        {
+            "id": 933,
+            "urlkey": "walkers",
+            "name": "Walking"
+        },
+        {
+            "id": 411,
+            "urlkey": "electronicmusic",
+            "name": "Electronic Music"
+        },
+        {
+            "id": 173,
+            "urlkey": "musicians",
+            "name": "Musicians"
+        },
+        {
+            "id": 21048,
+            "urlkey": "rock-music",
+            "name": "Rock Music"
+        },
+        {
+            "id": 223,
+            "urlkey": "photo",
+            "name": "Photography"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 15018,
+            "urlkey": "music",
+            "name": "Music"
+        },
+        {
+            "id": 1502,
+            "urlkey": "art",
+            "name": "Art"
+        },
+        {
+            "id": 131,
+            "urlkey": "jazz",
+            "name": "Jazz"
+        },
+        {
+            "id": 20169,
+            "urlkey": "culture",
+            "name": "Culture"
+        },
+        {
+            "id": 23274,
+            "urlkey": "live-theatre",
+            "name": "Theater"
+        }
+    ],
+    "joined": 1420286040000,
+    "name": "Richard Atkinson",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/9857131\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/6\/2\/5\/member_13813861.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 9857131,
+    "updated": 1420286040000,
+    "created": 1420286040000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-03 11:54:00.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

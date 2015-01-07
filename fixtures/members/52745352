@@ -1,0 +1,116 @@
+{
+    "lon": -2.6,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/52745352",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/b\/a\/2\/member_60159842.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/b\/a\/2\/thumb_60159842.jpeg",
+        "photo_id": 60159842,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/b\/a\/2\/member_60159842.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 52745352,
+    "visited": 1403069992000,
+    "topics": [
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 37381,
+            "urlkey": "data-visualization",
+            "name": "Data Visualization"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        }
+    ],
+    "joined": 1403069992000,
+    "bio": "cape townian web developer living and working in Bristol.\r\nI started freelance web development in SA in 2004 and then came to UK in 2008 where I then started working at XMOS.\r\nI mostly work in PHP, but am familar with many programming languages.",
+    "name": "Miguel Dos Santos",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/52745352\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/b\/a\/2\/member_60159842.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 52745352,
+    "created": 1403069992000,
+    "updated": 1403069992000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-06-18 05:39:52.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

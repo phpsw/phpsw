@@ -1,0 +1,241 @@
+{
+    "lon": -2.6,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/133446392",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/2\/member_177896642.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/2\/highres_177896642.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/2\/thumb_177896642.jpeg",
+        "photo_id": 177896642,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/2\/highres_177896642.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 133446392,
+    "visited": 1420281199000,
+    "topics": [
+        {
+            "id": 223,
+            "urlkey": "photo",
+            "name": "Photography"
+        },
+        {
+            "id": 206,
+            "urlkey": "digcam",
+            "name": "Digital Photography"
+        },
+        {
+            "id": 15029,
+            "urlkey": "film",
+            "name": "Film"
+        },
+        {
+            "id": 69309,
+            "urlkey": "photography-bristol",
+            "name": "Photography Bristol"
+        },
+        {
+            "id": 53510,
+            "urlkey": "digital-slr-photography",
+            "name": "Digital SLR Photography"
+        },
+        {
+            "id": 16600,
+            "urlkey": "nature-photography",
+            "name": "Nature Photography"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 20473,
+            "urlkey": "digital-photography-from-novice-to-pro",
+            "name": "Digital Photography from Novice to Pro"
+        },
+        {
+            "id": 28062,
+            "urlkey": "photography-workshop",
+            "name": "Photography Workshop"
+        },
+        {
+            "id": 16613,
+            "urlkey": "portrait-photography",
+            "name": "Portrait Photography"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 189,
+            "urlkey": "java",
+            "name": "Java"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 101960,
+            "urlkey": "nodejs",
+            "name": "nodeJS"
+        },
+        {
+            "id": 179941,
+            "urlkey": "neo4j",
+            "name": "Neo4j"
+        },
+        {
+            "id": 193021,
+            "urlkey": "graph-databases",
+            "name": "Graph Databases"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 431622,
+            "urlkey": "opscode-chef",
+            "name": "Opscode Chef"
+        },
+        {
+            "id": 87614,
+            "urlkey": "devops",
+            "name": "DevOps"
+        },
+        {
+            "id": 94779,
+            "urlkey": "systems-administration",
+            "name": "Systems Administration"
+        },
+        {
+            "id": 188,
+            "urlkey": "linux",
+            "name": "Linux"
+        }
+    ],
+    "joined": 1416327395000,
+    "name": "Dave Morrissey",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/133446392\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/2\/member_177896642.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 133446392,
+    "updated": 1416327405000,
+    "created": 1416327395000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-03 10:33:19.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "lon": -0.09,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/12703641",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/f\/b\/6\/member_35644022.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/f\/b\/6\/highres_35644022.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/f\/b\/6\/thumb_35644022.jpeg",
+        "photo_id": 35644022,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/f\/b\/6\/highres_35644022.jpeg"
+    },
+    "city": "London",
+    "country": "gb",
+    "id": 12703641,
+    "visited": 1390989612000,
+    "topics": [],
+    "joined": 1325687878000,
+    "bio": "I'm a PHP developer so am intrested in this group",
+    "name": "Barry Swaisland",
+    "other_services": [],
+    "lat": 51.52,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/12703641\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/f\/b\/6\/member_35644022.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 12703641,
+    "created": 1325687878000,
+    "updated": 1325687879000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-01-29 10:00:12.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "lon": -2.57,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/138307662",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/7\/8\/8\/member_185238312.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/7\/8\/8\/thumb_185238312.jpeg",
+        "photo_id": 185238312,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/7\/8\/8\/member_185238312.jpeg"
+    },
+    "country": "gb",
+    "city": "St Werburghs",
+    "id": 138307662,
+    "visited": 1415608931000,
+    "topics": [
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 8304,
+            "urlkey": "wordpress",
+            "name": "WordPress"
+        },
+        {
+            "id": 21506,
+            "urlkey": "database-development",
+            "name": "Database Development"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        }
+    ],
+    "joined": 1406278178000,
+    "bio": "I'm a freelance musician and ex-software developer. Currently studying web development, building sites and looking to move back to full time work this year.",
+    "name": "Dorian Sutton",
+    "other_services": [],
+    "lat": 51.47,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/138307662\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/7\/8\/8\/member_185238312.jpeg",
+    "answers": [
+        {
+            "answer": "I'm interested in anything to do with PHP or general web development.",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "No thanks.",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 138307662,
+    "created": 1406278178000,
+    "updated": 1406278305000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-10 08:42:11.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

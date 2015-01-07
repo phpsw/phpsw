@@ -1,0 +1,181 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/94963292",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/9\/9\/7\/c\/member_120099292.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/9\/9\/7\/c\/thumb_120099292.jpeg",
+        "photo_id": 120099292,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/9\/9\/7\/c\/member_120099292.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 94963292,
+    "visited": 1415737521000,
+    "topics": [
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 317,
+            "urlkey": "scifi",
+            "name": "Sci-Fi\/Fantasy"
+        },
+        {
+            "id": 18071,
+            "urlkey": "gaming",
+            "name": "Gaming"
+        },
+        {
+            "id": 4471,
+            "urlkey": "videogame",
+            "name": "Video Games"
+        },
+        {
+            "id": 15992,
+            "urlkey": "games",
+            "name": "Games"
+        },
+        {
+            "id": 19585,
+            "urlkey": "board-games",
+            "name": "Board Games"
+        },
+        {
+            "id": 321351,
+            "urlkey": "meet-new-people-in-bristol",
+            "name": "meet new people in Bristol"
+        },
+        {
+            "id": 15029,
+            "urlkey": "film",
+            "name": "Film"
+        },
+        {
+            "id": 40126,
+            "urlkey": "game-night",
+            "name": "Game Night"
+        }
+    ],
+    "joined": 1369486313000,
+    "bio": "novice employed PHP developer based in Bristol",
+    "name": "Adrian Smith",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/94963292\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/9\/9\/7\/c\/member_120099292.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 94963292,
+    "created": 1369486313000,
+    "updated": 1369486387000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-11 20:25:21.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

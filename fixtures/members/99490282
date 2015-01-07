@@ -1,0 +1,81 @@
+{
+    "lon": -2.6,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/99490282",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/b\/f\/e\/c\/member_152989132.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/b\/f\/e\/c\/thumb_152989132.jpeg",
+        "photo_id": 152989132,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/b\/f\/e\/c\/member_152989132.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 99490282,
+    "visited": 1417946938000,
+    "topics": [
+        {
+            "id": 20837,
+            "urlkey": "ruby-on-rails",
+            "name": "Ruby On Rails"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 83827,
+            "urlkey": "steam-engines",
+            "name": "Steam Engines"
+        },
+        {
+            "id": 2471,
+            "urlkey": "formula1",
+            "name": "Formula 1"
+        }
+    ],
+    "joined": 1394277773000,
+    "bio": "Developer at Simpleweb",
+    "name": "Tom Coates",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/99490282\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/b\/f\/e\/c\/member_152989132.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 99490282,
+    "created": 1394277773000,
+    "updated": 1394277774000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-07 10:08:58.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

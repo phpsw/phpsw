@@ -1,0 +1,191 @@
+{
+    "lon": -2.36,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/131263722",
+    "state": "A4",
+    "self": {
+        "common": []
+    },
+    "city": "Bath",
+    "country": "gb",
+    "id": 131263722,
+    "visited": 1391369117000,
+    "topics": [
+        {
+            "id": 15029,
+            "urlkey": "film",
+            "name": "Film"
+        },
+        {
+            "id": 20246,
+            "urlkey": "dating-and-relationships",
+            "name": "Dating and Relationships"
+        },
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 17571,
+            "urlkey": "dancing",
+            "name": "Dancing"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 63753,
+            "urlkey": "confidence-and-self-esteem",
+            "name": "Confidence and Self-Esteem"
+        },
+        {
+            "id": 58682,
+            "urlkey": "meeting-and-attracting-women",
+            "name": "Meeting and Attracting Women"
+        },
+        {
+            "id": 17304,
+            "urlkey": "pick-up-artist",
+            "name": "Pick-Up Artist"
+        },
+        {
+            "id": 27324,
+            "urlkey": "pickup",
+            "name": "Pickup"
+        },
+        {
+            "id": 9217,
+            "urlkey": "wingman",
+            "name": "Wingman"
+        },
+        {
+            "id": 58681,
+            "urlkey": "seduction-and-social-arts",
+            "name": "Seduction"
+        },
+        {
+            "id": 59670,
+            "urlkey": "pick-up-artists-wingman-pua-the-game-men-pick-up",
+            "name": "Pick-Up Artists Wingman PUA The Game men Pick Up"
+        },
+        {
+            "id": 75318,
+            "urlkey": "pickup-artist",
+            "name": "Pickup Artist"
+        },
+        {
+            "id": 15238,
+            "urlkey": "pua",
+            "name": "Pua"
+        },
+        {
+            "id": 244,
+            "urlkey": "yoga",
+            "name": "Yoga"
+        },
+        {
+            "id": 1322,
+            "urlkey": "meditation",
+            "name": "Meditation"
+        }
+    ],
+    "joined": 1391369117000,
+    "bio": "Senior Web Developer, Contractor. Previous roles at BBC & Oracle, currently at Future Publishing.",
+    "name": "Jae Task",
+    "other_services": [],
+    "lat": 51.38,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/131263722\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/f\/9\/2\/member_174688562.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/f\/9\/2\/member_174688562.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/f\/9\/2\/thumb_174688562.jpeg",
+        "photo_id": 174688562,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/f\/9\/2\/member_174688562.jpeg"
+    },
+    "member_id": 131263722,
+    "created": 1391369117000,
+    "updated": 1391369166000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-02-02 19:25:17.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

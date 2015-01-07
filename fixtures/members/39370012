@@ -1,0 +1,150 @@
+{
+    "lon": -2.64,
+    "hometown": "Sydney",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/39370012",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/6\/e\/e\/member_103154062.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/6\/e\/e\/highres_103154062.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/6\/e\/e\/thumb_103154062.jpeg",
+        "photo_id": 103154062,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/6\/e\/e\/highres_103154062.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 39370012,
+    "visited": 1418230728000,
+    "topics": [
+        {
+            "id": 124,
+            "urlkey": "birds",
+            "name": "Birds"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 10358,
+            "urlkey": "drupal",
+            "name": "Drupal"
+        },
+        {
+            "id": 16615,
+            "urlkey": "model-photography",
+            "name": "Model Photography"
+        },
+        {
+            "id": 223,
+            "urlkey": "photo",
+            "name": "Photography"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 24410,
+            "urlkey": "high-scalability-computing",
+            "name": "High Scalability Computing"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        }
+    ],
+    "joined": 1366464170000,
+    "bio": "Dan Ackroyd, coder, photographer, cake-baker.",
+    "name": "Dan Ackroyd",
+    "other_services": {
+        "twitter": {
+            "identifier": "@Danack57"
+        },
+        "flickr": {
+            "identifier": "http:\/\/www.flickr.com\/photos\/danack"
+        }
+    },
+    "lat": 51.49,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/39370012\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/6\/e\/e\/member_103154062.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 39370012,
+    "created": 1366464170000,
+    "updated": 1406140159000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-10 16:58:48.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

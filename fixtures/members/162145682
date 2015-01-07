@@ -1,0 +1,84 @@
+{
+    "lon": -2.54,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/162145682",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/7\/4\/a\/member_219506442.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/7\/4\/a\/highres_219506442.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/7\/4\/a\/thumb_219506442.jpeg",
+        "photo_id": 219506442,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/7\/4\/a\/highres_219506442.jpeg"
+    },
+    "city": "Bradley Stoke",
+    "country": "gb",
+    "id": 162145682,
+    "visited": 1420540969000,
+    "topics": [
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        }
+    ],
+    "joined": 1408356562000,
+    "bio": "Johnny Choudhury-Lucas, Software Developer & C|EH from Bristol, UK",
+    "name": "jchlu",
+    "other_services": [],
+    "lat": 51.53,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/162145682\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/7\/4\/a\/member_219506442.jpeg",
+    "answers": [
+        {
+            "answer": "PHP, Zend Framework, Doctrine, Security, Design Patterns, Database Optimisation",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "No",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 162145682,
+    "created": 1408356562000,
+    "updated": 1408357074000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-06 10:42:49.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

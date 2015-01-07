@@ -1,0 +1,60 @@
+{
+    "lon": -2.61,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/64741312",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/c\/member_76436652.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/c\/highres_76436652.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/d\/4\/c\/thumb_76436652.jpeg",
+        "photo_id": 76436652,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/c\/highres_76436652.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 64741312,
+    "visited": 1415706759000,
+    "topics": [],
+    "joined": 1384522146000,
+    "bio": ".",
+    "name": "Mikey Clarke",
+    "other_services": {
+        "twitter": {
+            "identifier": "@mikey_clarke"
+        }
+    },
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/64741312\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/d\/4\/c\/member_76436652.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 64741312,
+    "created": 1384522146000,
+    "updated": 1384522157000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-11 11:52:39.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

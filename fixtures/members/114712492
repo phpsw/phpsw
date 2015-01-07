@@ -1,0 +1,107 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/114712492",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/8\/b\/f\/8\/member_237395832.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/8\/b\/f\/8\/highres_237395832.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/8\/b\/f\/8\/thumb_237395832.jpeg",
+        "photo_id": 237395832,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/8\/b\/f\/8\/highres_237395832.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 114712492,
+    "visited": 1415703752000,
+    "topics": [
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 188,
+            "urlkey": "linux",
+            "name": "Linux"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 8304,
+            "urlkey": "wordpress",
+            "name": "WordPress"
+        }
+    ],
+    "joined": 1381231718000,
+    "bio": "Backend service integration + jQuery\/PHP\/MySql",
+    "name": "AG",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/114712492\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/8\/b\/f\/8\/member_237395832.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 114712492,
+    "created": 1381231718000,
+    "updated": 1414233819000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-11 11:02:32.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

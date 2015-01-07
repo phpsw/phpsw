@@ -1,0 +1,239 @@
+{
+    "lon": -2.61,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/29291902",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/member_28924262.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/highres_28924262.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/thumb_28924262.jpeg",
+        "photo_id": 28924262,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/highres_28924262.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 29291902,
+    "visited": 1420227300000,
+    "topics": [
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 21751,
+            "urlkey": "computer-science",
+            "name": "Computer Science"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 15616,
+            "urlkey": "iphone",
+            "name": "iPhone"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 1040,
+            "urlkey": "ruby",
+            "name": "Ruby"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 17279,
+            "urlkey": "apple",
+            "name": "Apple"
+        },
+        {
+            "id": 33876,
+            "urlkey": "mathematics",
+            "name": "Mathematics"
+        },
+        {
+            "id": 20837,
+            "urlkey": "ruby-on-rails",
+            "name": "Ruby On Rails"
+        },
+        {
+            "id": 15029,
+            "urlkey": "film",
+            "name": "Film"
+        },
+        {
+            "id": 100479,
+            "urlkey": "front-end-development",
+            "name": "Front-end Development"
+        },
+        {
+            "id": 154011,
+            "urlkey": "html-and-css",
+            "name": "HTML and CSS"
+        },
+        {
+            "id": 1081,
+            "urlkey": "gui",
+            "name": "Graphical User Interfaces"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 28990,
+            "urlkey": "cms",
+            "name": "CMS (Content Management Systems)"
+        },
+        {
+            "id": 601332,
+            "urlkey": "html-5-css3",
+            "name": "HTML 5\/CSS3"
+        },
+        {
+            "id": 496,
+            "urlkey": "gamedev",
+            "name": "Game Development"
+        },
+        {
+            "id": 4471,
+            "urlkey": "videogame",
+            "name": "Video Games"
+        },
+        {
+            "id": 1201,
+            "urlkey": "movies",
+            "name": "Watching Movies"
+        }
+    ],
+    "joined": 1322090112000,
+    "bio": "Hello, I'm a freelance web-developer based in Bristol. Use PHP for much of my work.",
+    "name": "Mark Wales",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/29291902\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/1\/0\/a\/6\/member_28924262.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 29291902,
+    "created": 1322090112000,
+    "updated": 1322090113000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "comment": "Bristol's best PHP user group!",
+    "visited_date": {
+        "date": "2015-01-02 19:35:00.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

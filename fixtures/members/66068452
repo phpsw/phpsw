@@ -1,0 +1,172 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/66068452",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/3\/3\/8\/member_77293112.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/3\/3\/8\/highres_77293112.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/3\/3\/8\/thumb_77293112.jpeg",
+        "photo_id": 77293112,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/3\/3\/8\/highres_77293112.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 66068452,
+    "visited": 1418583410000,
+    "topics": [
+        {
+            "id": 849,
+            "urlkey": "philosophy",
+            "name": "Philosophy"
+        },
+        {
+            "id": 107569,
+            "urlkey": "philosophy-discussions",
+            "name": "Philosophy Discussions"
+        },
+        {
+            "id": 833952,
+            "urlkey": "debates",
+            "name": "Debate"
+        },
+        {
+            "id": 15360,
+            "urlkey": "reading",
+            "name": "Reading"
+        },
+        {
+            "id": 2383,
+            "urlkey": "book-swap",
+            "name": "Book Swap"
+        },
+        {
+            "id": 1201,
+            "urlkey": "movies",
+            "name": "Watching Movies"
+        },
+        {
+            "id": 2767,
+            "urlkey": "bookclub",
+            "name": "Book Club"
+        },
+        {
+            "id": 15940,
+            "urlkey": "movie-nights",
+            "name": "Movie Nights"
+        },
+        {
+            "id": 7319,
+            "urlkey": "museum",
+            "name": "Museum"
+        },
+        {
+            "id": 23778,
+            "urlkey": "dinner-and-a-movie",
+            "name": "Dinner and a Movie"
+        },
+        {
+            "id": 15018,
+            "urlkey": "music",
+            "name": "Music"
+        },
+        {
+            "id": 15083,
+            "urlkey": "intellectual-discussion",
+            "name": "Intellectual Discussion"
+        },
+        {
+            "id": 1789,
+            "urlkey": "humanism",
+            "name": "Humanism"
+        },
+        {
+            "id": 871,
+            "urlkey": "skeptics",
+            "name": "Skeptics"
+        },
+        {
+            "id": 15321,
+            "urlkey": "literature",
+            "name": "Literature"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 1502,
+            "urlkey": "art",
+            "name": "Art"
+        },
+        {
+            "id": 19195,
+            "urlkey": "pubs-bars",
+            "name": "Pubs and Bars"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        }
+    ],
+    "joined": 1386771749000,
+    "bio": "Freelance web developer",
+    "name": "carl",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/66068452\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/3\/3\/8\/member_77293112.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 66068452,
+    "created": 1386771749000,
+    "updated": 1412766038000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-14 18:56:50.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

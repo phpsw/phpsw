@@ -1,0 +1,306 @@
+{
+    "lon": -2.07,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/181351812",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "city": "Cheltenham",
+    "country": "gb",
+    "visited": 1420211454000,
+    "id": 181351812,
+    "topics": [
+        {
+            "id": 10290,
+            "urlkey": "spirituality",
+            "name": "Spirituality"
+        },
+        {
+            "id": 4417,
+            "urlkey": "consciousness",
+            "name": "Consciousness"
+        },
+        {
+            "id": 30103,
+            "urlkey": "science-of-mind",
+            "name": "Science of Mind"
+        },
+        {
+            "id": 29158,
+            "urlkey": "self-exploration",
+            "name": "Self Exploration"
+        },
+        {
+            "id": 3927,
+            "urlkey": "carljung",
+            "name": "Carl Jung"
+        },
+        {
+            "id": 43763,
+            "urlkey": "nlp-neurolinguistic-programming",
+            "name": "NLP (Neuro-Linguistic Programming)"
+        },
+        {
+            "id": 2540,
+            "urlkey": "awareness",
+            "name": "Awareness"
+        },
+        {
+            "id": 21591,
+            "urlkey": "transformation",
+            "name": "Transformation"
+        },
+        {
+            "id": 16212,
+            "urlkey": "positive-thinking",
+            "name": "Positive Thinking"
+        },
+        {
+            "id": 36229,
+            "urlkey": "creative",
+            "name": "Creativity"
+        },
+        {
+            "id": 781,
+            "urlkey": "graphicdesign",
+            "name": "Graphic Design"
+        },
+        {
+            "id": 542,
+            "urlkey": "arthouse",
+            "name": "Arthouse"
+        },
+        {
+            "id": 29526,
+            "urlkey": "collaboration-between-creative-minds",
+            "name": "Collaboration between Creative Minds"
+        },
+        {
+            "id": 7319,
+            "urlkey": "museum",
+            "name": "Museum"
+        },
+        {
+            "id": 6144,
+            "urlkey": "modeling",
+            "name": "Modeling"
+        },
+        {
+            "id": 261,
+            "urlkey": "startrek",
+            "name": "Star Trek"
+        },
+        {
+            "id": 32623,
+            "urlkey": "geeks-nerds",
+            "name": "Geeks & Nerds"
+        },
+        {
+            "id": 74771,
+            "urlkey": "community-gardening",
+            "name": "Community Gardening"
+        },
+        {
+            "id": 89,
+            "urlkey": "environment",
+            "name": "Environment"
+        },
+        {
+            "id": 4377,
+            "urlkey": "politics",
+            "name": "Politics"
+        },
+        {
+            "id": 3135,
+            "urlkey": "newurbanism",
+            "name": "New Urbanism"
+        },
+        {
+            "id": 6613,
+            "urlkey": "sealliance",
+            "name": "Social Enterprise"
+        },
+        {
+            "id": 17986,
+            "urlkey": "social-justice",
+            "name": "Social Justice"
+        },
+        {
+            "id": 20274,
+            "urlkey": "people-helping-people",
+            "name": "People Helping People"
+        },
+        {
+            "id": 10485,
+            "urlkey": "communityorg",
+            "name": "Community Organizations"
+        },
+        {
+            "id": 18866,
+            "urlkey": "community-service",
+            "name": "Community Service"
+        },
+        {
+            "id": 25598,
+            "urlkey": "charity",
+            "name": "Charity"
+        },
+        {
+            "id": 21808,
+            "urlkey": "social-innovation",
+            "name": "Social Innovation"
+        },
+        {
+            "id": 21129,
+            "urlkey": "locals-new-in-town",
+            "name": "Locals & New in Town"
+        },
+        {
+            "id": 206,
+            "urlkey": "digcam",
+            "name": "Digital Photography"
+        },
+        {
+            "id": 223,
+            "urlkey": "photo",
+            "name": "Photography"
+        },
+        {
+            "id": 16613,
+            "urlkey": "portrait-photography",
+            "name": "Portrait Photography"
+        },
+        {
+            "id": 15731,
+            "urlkey": "group-photo-shoots",
+            "name": "Group Photo Shoots"
+        },
+        {
+            "id": 914,
+            "urlkey": "indiefilm",
+            "name": "Indie Films"
+        },
+        {
+            "id": 10306,
+            "urlkey": "wellness",
+            "name": "Wellness"
+        },
+        {
+            "id": 3336,
+            "urlkey": "self-improvement",
+            "name": "Self-Improvement"
+        },
+        {
+            "id": 1322,
+            "urlkey": "meditation",
+            "name": "Meditation"
+        },
+        {
+            "id": 18692,
+            "urlkey": "life-coaching",
+            "name": "Life Coaching"
+        },
+        {
+            "id": 1570,
+            "urlkey": "divorcesupport",
+            "name": "Divorce Support"
+        },
+        {
+            "id": 45308,
+            "urlkey": "hypnosis-and-hypnotherapy",
+            "name": "Hypnotherapy"
+        },
+        {
+            "id": 38757,
+            "urlkey": "self-empowerment",
+            "name": "Self-Empowerment"
+        },
+        {
+            "id": 892,
+            "urlkey": "bipolar",
+            "name": "Bipolar Disorder"
+        },
+        {
+            "id": 49581,
+            "urlkey": "relationship-building",
+            "name": "Relationship Building"
+        },
+        {
+            "id": 18921,
+            "urlkey": "relaxation",
+            "name": "Relaxation"
+        },
+        {
+            "id": 30170,
+            "urlkey": "nightclubbing",
+            "name": "Night Clubbing"
+        },
+        {
+            "id": 18717,
+            "urlkey": "conscious-movement",
+            "name": "Conscious Movement"
+        },
+        {
+            "id": 10493,
+            "urlkey": "geek",
+            "name": "Geek Culture"
+        },
+        {
+            "id": 23570,
+            "urlkey": "emergency-preparedness",
+            "name": "Emergency Preparedness"
+        },
+        {
+            "id": 5930,
+            "urlkey": "naturism",
+            "name": "Naturism"
+        },
+        {
+            "id": 15018,
+            "urlkey": "music",
+            "name": "Music"
+        }
+    ],
+    "joined": 1414970773000,
+    "name": "David L Neuman",
+    "other_services": [],
+    "lat": 51.9,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/181351812\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/9\/d\/2\/member_239635762.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/9\/d\/2\/member_239635762.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/9\/d\/2\/highres_239635762.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/9\/d\/2\/thumb_239635762.jpeg",
+        "photo_id": 239635762,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/9\/d\/2\/highres_239635762.jpeg"
+    },
+    "member_id": 181351812,
+    "updated": 1414970851000,
+    "created": 1414970773000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 15:10:54.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

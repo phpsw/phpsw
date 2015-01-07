@@ -1,0 +1,74 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/181708602",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/d\/c\/6\/member_240208102.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/d\/c\/6\/highres_240208102.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/d\/c\/6\/thumb_240208102.jpeg",
+        "photo_id": 240208102,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/d\/c\/6\/highres_240208102.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 181708602,
+    "visited": 1415907463000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        }
+    ],
+    "joined": 1415133589000,
+    "bio": "I have recently moved to Bristol, working at Brightpearl as PHP\/Java developer.",
+    "name": "Jan V.",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/181708602\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/6\/d\/c\/6\/member_240208102.jpeg",
+    "answers": [
+        {
+            "answer": "I would like to hear about any tools that can be used with PHP (have PHP extension or library)",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "After few sessions I might have my idea what to talk about but not yet.",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 181708602,
+    "created": 1415133589000,
+    "updated": 1415138941000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-13 19:37:43.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

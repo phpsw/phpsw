@@ -1,0 +1,308 @@
+{
+    "lon": -0.08,
+    "hometown": "Enfield",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/93711372",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "city": "London",
+    "country": "gb",
+    "id": 93711372,
+    "visited": 1368739890000,
+    "topics": [
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 30928,
+            "urlkey": "data-analytics",
+            "name": "Data Analytics"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 29971,
+            "urlkey": "machine-learning",
+            "name": "Machine Learning"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 74535,
+            "urlkey": "coding",
+            "name": "Coding"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 1064,
+            "urlkey": "python",
+            "name": "Python"
+        },
+        {
+            "id": 77687,
+            "urlkey": "high-performance-computing",
+            "name": "High Performance Computing"
+        },
+        {
+            "id": 189,
+            "urlkey": "java",
+            "name": "Java"
+        },
+        {
+            "id": 188,
+            "urlkey": "linux",
+            "name": "Linux"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 122994,
+            "urlkey": "high-tech-startups",
+            "name": "High-Tech Startups"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 496,
+            "urlkey": "gamedev",
+            "name": "Game Development"
+        },
+        {
+            "id": 41896,
+            "urlkey": "independent-game-development",
+            "name": "Independent Game Development"
+        },
+        {
+            "id": 83899,
+            "urlkey": "video-game-design",
+            "name": "Video Game Design"
+        },
+        {
+            "id": 120388,
+            "urlkey": "mobile-and-handheld-game-development",
+            "name": "Mobile and Handheld game development"
+        },
+        {
+            "id": 138175,
+            "urlkey": "mobile-game-development",
+            "name": "Mobile Game Development"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 42010,
+            "urlkey": "indie-games",
+            "name": "Indie Games"
+        },
+        {
+            "id": 3287,
+            "urlkey": "gameprog",
+            "name": "Game Programming"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 15401,
+            "urlkey": "social-media",
+            "name": "Social Media"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 127567,
+            "urlkey": "ios-development",
+            "name": "iOS Development"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1040,
+            "urlkey": "ruby",
+            "name": "Ruby"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 17188,
+            "urlkey": "digital-media",
+            "name": "Digital Media"
+        },
+        {
+            "id": 55324,
+            "urlkey": "data-mining",
+            "name": "Data Mining"
+        }
+    ],
+    "joined": 1368739890000,
+    "bio": "\"Just moved to the area, own an IT company will be Hosting regular Hackathons to build new web and mobile services revolving around satellite data for Satellite Applications Catapult\"",
+    "name": "David Mills",
+    "other_services": [],
+    "lat": 51.64,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/93711372\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/8\/d\/e\/member_117990942.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/8\/d\/e\/member_117990942.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/8\/d\/e\/highres_117990942.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/8\/d\/e\/thumb_117990942.jpeg",
+        "photo_id": 117990942,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/8\/d\/e\/highres_117990942.jpeg"
+    },
+    "member_id": 93711372,
+    "created": 1368739890000,
+    "updated": 1368739929000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2013-05-16 21:31:30.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "lon": -0.09,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/91452542",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/b\/8\/c\/member_118188012.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/b\/b\/8\/c\/thumb_118188012.jpeg",
+        "photo_id": 118188012,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/b\/8\/c\/member_118188012.jpeg"
+    },
+    "city": "London",
+    "country": "gb",
+    "id": 91452542,
+    "visited": 1412790072000,
+    "topics": [
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 102811,
+            "urlkey": "data-science",
+            "name": "Data Science"
+        },
+        {
+            "id": 38458,
+            "urlkey": "predictive-analytics",
+            "name": "Predictive Analytics"
+        },
+        {
+            "id": 30928,
+            "urlkey": "data-analytics",
+            "name": "Data Analytics"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 10538,
+            "urlkey": "businessintell",
+            "name": "Business Intelligence"
+        },
+        {
+            "id": 37381,
+            "urlkey": "data-visualization",
+            "name": "Data Visualization"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 10296,
+            "urlkey": "witi",
+            "name": "Women in Technology"
+        },
+        {
+            "id": 17933,
+            "urlkey": "womens-empowerment",
+            "name": "Women's Empowerment"
+        },
+        {
+            "id": 3880,
+            "urlkey": "prodev",
+            "name": "Professional Development"
+        }
+    ],
+    "joined": 1412084175000,
+    "bio": "Principal Architect for Kainos Software, currently delivering a PHP based digital service for an organisation in Bristol",
+    "name": "Lorna Hermin",
+    "other_services": [],
+    "lat": 51.51,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/91452542\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/b\/b\/8\/c\/member_118188012.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 91452542,
+    "created": 1412084175000,
+    "updated": 1412084175000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-10-08 17:41:12.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

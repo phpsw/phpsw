@@ -1,0 +1,180 @@
+{
+    "lon": -2.6,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/159363102",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/6\/8\/6\/member_215349862.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/6\/8\/6\/highres_215349862.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/6\/8\/6\/thumb_215349862.jpeg",
+        "photo_id": 215349862,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/6\/8\/6\/highres_215349862.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 159363102,
+    "visited": 1420462939000,
+    "topics": [
+        {
+            "id": 242,
+            "urlkey": "fitness",
+            "name": "Fitness"
+        },
+        {
+            "id": 10451,
+            "urlkey": "sports",
+            "name": "Sports and Recreation"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 15401,
+            "urlkey": "social-media",
+            "name": "Social Media"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 141733,
+            "urlkey": "java-server-side",
+            "name": "Java Server Side"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 57877,
+            "urlkey": "java-programming",
+            "name": "Java Programming"
+        },
+        {
+            "id": 189,
+            "urlkey": "java",
+            "name": "Java"
+        },
+        {
+            "id": 254,
+            "urlkey": "poker",
+            "name": "Poker"
+        },
+        {
+            "id": 16947,
+            "urlkey": "texas-hold-em",
+            "name": "Texas Hold 'em"
+        },
+        {
+            "id": 24471,
+            "urlkey": "poker-tournaments",
+            "name": "Poker Tournaments"
+        },
+        {
+            "id": 37206,
+            "urlkey": "no-limit-texas-hold-em",
+            "name": "No Limit Texas Hold 'em"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        }
+    ],
+    "joined": 1410465516000,
+    "bio": "Hi there I am Graduate Software Developer freshly compiled.",
+    "name": "Anurag Ajwani",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/159363102\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/6\/8\/6\/member_215349862.jpeg",
+    "answers": [
+        {
+            "answer": "No specifics, I need to have a more knowledge and global overview of PHP before I can answer that!",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "Not yet, as I have no experience",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 159363102,
+    "created": 1410465516000,
+    "updated": 1410465516000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "comment": "It was my first meetup from this group that I attended and I plan to attend many more",
+    "visited_date": {
+        "date": "2015-01-05 13:02:19.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

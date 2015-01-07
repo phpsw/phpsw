@@ -1,0 +1,99 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/166452002",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 166452002,
+    "visited": 1420447227000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        }
+    ],
+    "joined": 1409828855000,
+    "bio": "Developer at BaseKit",
+    "name": "Mark Jeffries",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/166452002\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/7\/3\/2\/member_224022802.jpeg",
+    "answers": [
+        {
+            "answer": "Design patterns",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "No",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/7\/3\/2\/member_224022802.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/7\/3\/2\/highres_224022802.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/7\/3\/2\/thumb_224022802.jpeg",
+        "photo_id": 224022802,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/7\/3\/2\/highres_224022802.jpeg"
+    },
+    "member_id": 166452002,
+    "created": 1409828855000,
+    "updated": 1409828957000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-05 08:40:27.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

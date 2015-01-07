@@ -1,0 +1,311 @@
+{
+    "lon": -2.6,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/79543062",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/a\/d\/1\/7\/member_241544311.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/a\/d\/1\/7\/highres_241544311.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/a\/d\/1\/7\/thumb_241544311.jpeg",
+        "photo_id": 241544311,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/a\/d\/1\/7\/highres_241544311.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 79543062,
+    "visited": 1420217221000,
+    "topics": [
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 37381,
+            "urlkey": "data-visualization",
+            "name": "Data Visualization"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 189,
+            "urlkey": "java",
+            "name": "Java"
+        },
+        {
+            "id": 26938,
+            "urlkey": "usability",
+            "name": "Usability"
+        },
+        {
+            "id": 1346892,
+            "urlkey": "usability-testing",
+            "name": "Usability testing"
+        },
+        {
+            "id": 83544,
+            "urlkey": "usability-and-standards",
+            "name": "Usability and Standards"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 781,
+            "urlkey": "graphicdesign",
+            "name": "Graphic Design"
+        },
+        {
+            "id": 19243,
+            "urlkey": "user-experience",
+            "name": "User Experience"
+        },
+        {
+            "id": 30996,
+            "urlkey": "agile-testing",
+            "name": "agile testing"
+        },
+        {
+            "id": 25435,
+            "urlkey": "test-driven-development",
+            "name": "Test Driven Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 206,
+            "urlkey": "digcam",
+            "name": "Digital Photography"
+        },
+        {
+            "id": 223,
+            "urlkey": "photo",
+            "name": "Photography"
+        },
+        {
+            "id": 32868,
+            "urlkey": "ux",
+            "name": "UX"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 1245,
+            "urlkey": "databasepro",
+            "name": "Database Professionals"
+        },
+        {
+            "id": 33167,
+            "urlkey": "sql",
+            "name": "SQL"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 102811,
+            "urlkey": "data-science",
+            "name": "Data Science"
+        },
+        {
+            "id": 38457,
+            "urlkey": "r-users-group",
+            "name": "R Users Group"
+        },
+        {
+            "id": 29526,
+            "urlkey": "collaboration-between-creative-minds",
+            "name": "Collaboration between Creative Minds"
+        },
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 20473,
+            "urlkey": "digital-photography-from-novice-to-pro",
+            "name": "Digital Photography from Novice to Pro"
+        },
+        {
+            "id": 49861,
+            "urlkey": "slr-photography",
+            "name": "SLR Photography"
+        },
+        {
+            "id": 3485,
+            "urlkey": "psychology",
+            "name": "Psychology"
+        },
+        {
+            "id": 43256,
+            "urlkey": "cooking-any-and-all-kinds-of-cooking",
+            "name": "Cooking"
+        },
+        {
+            "id": 321331,
+            "urlkey": "bristol-socialising",
+            "name": "bristol socialising"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 611,
+            "urlkey": "wine",
+            "name": "Wine"
+        },
+        {
+            "id": 18528,
+            "urlkey": "foodie",
+            "name": "Foodie"
+        },
+        {
+            "id": 188,
+            "urlkey": "linux",
+            "name": "Linux"
+        },
+        {
+            "id": 38660,
+            "urlkey": "lean-startup",
+            "name": "Lean Startup"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 89,
+            "urlkey": "environment",
+            "name": "Environment"
+        },
+        {
+            "id": 60043,
+            "urlkey": "open-data",
+            "name": "Open Data"
+        }
+    ],
+    "joined": 1362074761000,
+    "bio": "UX Designer in Bristol. Enthusiasm\/experience in usability\/ux design inc.user testing. MSc research, Persuasive Design; usability\/older adults-UWE MOBISERV research project. Do freelance design\/code\/build in addition. http:\/\/www.indukai.la\/",
+    "name": "Indu Kaila",
+    "other_services": {
+        "twitter": {
+            "identifier": "@PinnyPinschen"
+        }
+    },
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/79543062\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/a\/d\/1\/7\/member_241544311.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 79543062,
+    "created": 1362074761000,
+    "updated": 1420217239000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 16:47:01.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

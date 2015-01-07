@@ -1,0 +1,148 @@
+{
+    "lon": -2.22,
+    "hometown": "Worcester",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/151037292",
+    "state": "Q4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/b\/b\/e\/member_226267102.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/b\/b\/e\/highres_226267102.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/b\/b\/e\/thumb_226267102.jpeg",
+        "photo_id": 226267102,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/b\/b\/e\/highres_226267102.jpeg"
+    },
+    "country": "gb",
+    "city": "Worcester",
+    "id": 151037292,
+    "visited": 1413269750000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 188,
+            "urlkey": "linux",
+            "name": "Linux"
+        },
+        {
+            "id": 190,
+            "urlkey": "apache",
+            "name": "Apache"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 383401,
+            "urlkey": "mainframe-computing",
+            "name": "Mainframe computing"
+        },
+        {
+            "id": 10488,
+            "urlkey": "cobol",
+            "name": "Cobol"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 30928,
+            "urlkey": "data-analytics",
+            "name": "Data Analytics"
+        }
+    ],
+    "joined": 1402490572000,
+    "bio": "PHP \/ MySQL Developer with a background in eCommerce and previously IBM mainframes!",
+    "name": "Martin Lloyd",
+    "other_services": [],
+    "lat": 52.2,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/151037292\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/b\/b\/e\/member_226267102.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 151037292,
+    "created": 1402490572000,
+    "updated": 1410560137000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-10-14 06:55:50.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

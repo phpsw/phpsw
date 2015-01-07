@@ -1,0 +1,116 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/182738943",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/2\/4\/9\/member_241829257.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/2\/4\/9\/highres_241829257.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/2\/4\/9\/thumb_241829257.jpeg",
+        "photo_id": 241829257,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/2\/4\/9\/highres_241829257.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 182738943,
+    "visited": 1418212549000,
+    "topics": [
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 496,
+            "urlkey": "gamedev",
+            "name": "Game Development"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 6639,
+            "urlkey": "unity",
+            "name": "Unity"
+        },
+        {
+            "id": 33089,
+            "urlkey": "saas-software-as-a-service",
+            "name": "SaaS (Software as a Service)"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 19225,
+            "urlkey": "game-design",
+            "name": "Game Design"
+        },
+        {
+            "id": 18071,
+            "urlkey": "gaming",
+            "name": "Gaming"
+        },
+        {
+            "id": 21123,
+            "urlkey": "hacking",
+            "name": "Hacking"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        }
+    ],
+    "joined": 1417086913000,
+    "name": "Lewis Clark",
+    "other_services": [],
+    "lat": 51.49,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/182738943\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/2\/4\/9\/member_241829257.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 182738943,
+    "updated": 1417086913000,
+    "created": 1417086913000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-10 11:55:49.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

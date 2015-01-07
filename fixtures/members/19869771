@@ -1,0 +1,299 @@
+{
+    "lon": -0.15,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/19869771",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "city": "London",
+    "country": "gb",
+    "id": 19869771,
+    "visited": 1335994063000,
+    "topics": [
+        {
+            "id": 2494,
+            "urlkey": "blackbiz",
+            "name": "Black Professionals"
+        },
+        {
+            "id": 61801,
+            "urlkey": "wordpress-themes",
+            "name": "Wordpress Themes"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 28990,
+            "urlkey": "cms",
+            "name": "CMS (Content Management Systems)"
+        },
+        {
+            "id": 15720,
+            "urlkey": "professional-networking",
+            "name": "Professional Networking"
+        },
+        {
+            "id": 4422,
+            "urlkey": "socialnetwork",
+            "name": "Social Networking"
+        },
+        {
+            "id": 389,
+            "urlkey": "smallbiz",
+            "name": "Small Business"
+        },
+        {
+            "id": 20060,
+            "urlkey": "business-entrepreneur-networking",
+            "name": "Entrepreneur Networking"
+        },
+        {
+            "id": 15405,
+            "urlkey": "business-referral-networking",
+            "name": "Business Referral Networking"
+        },
+        {
+            "id": 17635,
+            "urlkey": "business-strategy",
+            "name": "Business Strategy"
+        },
+        {
+            "id": 17703,
+            "urlkey": "london",
+            "name": "London"
+        },
+        {
+            "id": 1307,
+            "urlkey": "investing",
+            "name": "Investing"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 38757,
+            "urlkey": "self-empowerment",
+            "name": "Self-Empowerment"
+        },
+        {
+            "id": 44453,
+            "urlkey": "business-mentoring",
+            "name": "Business Mentoring"
+        },
+        {
+            "id": 6419,
+            "urlkey": "mentor",
+            "name": "Mentor"
+        },
+        {
+            "id": 17325,
+            "urlkey": "small-business-marketing-strategy",
+            "name": "Small Business Marketing Strategy"
+        },
+        {
+            "id": 15121,
+            "urlkey": "leadership",
+            "name": "Leadership"
+        },
+        {
+            "id": 20743,
+            "urlkey": "small-business-owners",
+            "name": "Small Business Owners"
+        },
+        {
+            "id": 1273,
+            "urlkey": "newintown",
+            "name": "New In Town"
+        },
+        {
+            "id": 18216,
+            "urlkey": "professional-singles",
+            "name": "Single Professionals"
+        },
+        {
+            "id": 4392,
+            "urlkey": "nightlife",
+            "name": "Nightlife"
+        },
+        {
+            "id": 58259,
+            "urlkey": "young-professional-singles",
+            "name": "Young Professional Singles"
+        },
+        {
+            "id": 15117,
+            "urlkey": "fun-times",
+            "name": "Fun Times"
+        },
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 17522,
+            "urlkey": "exploring",
+            "name": "Exploring"
+        },
+        {
+            "id": 16438,
+            "urlkey": "weekend-adventures",
+            "name": "Weekend Adventures"
+        },
+        {
+            "id": 15892,
+            "urlkey": "adventure",
+            "name": "Adventure"
+        },
+        {
+            "id": 10451,
+            "urlkey": "sports",
+            "name": "Sports and Recreation"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 80636,
+            "urlkey": "sushi-lovers",
+            "name": "Sushi Lovers"
+        },
+        {
+            "id": 15583,
+            "urlkey": "building-an-online-business",
+            "name": "Building an Online Business"
+        },
+        {
+            "id": 60398,
+            "urlkey": "internet-entrepreneurs",
+            "name": "Internet Entrepreneurs"
+        },
+        {
+            "id": 10102,
+            "urlkey": "internetpro",
+            "name": "Internet Professionals"
+        },
+        {
+            "id": 23394,
+            "urlkey": "marketing-on-the-internet",
+            "name": "Marketing on the Internet"
+        },
+        {
+            "id": 26183,
+            "urlkey": "wine-and-foodie",
+            "name": "Wine and Foodie"
+        },
+        {
+            "id": 15635,
+            "urlkey": "wine-and-food-pairing",
+            "name": "Wine and Food Pairing"
+        },
+        {
+            "id": 16660,
+            "urlkey": "singles-30s-50s",
+            "name": "Singles 30's-50's"
+        },
+        {
+            "id": 16800,
+            "urlkey": "happy-hours",
+            "name": "Happy Hour"
+        },
+        {
+            "id": 23884,
+            "urlkey": "cultural-activities",
+            "name": "Cultural Activities"
+        },
+        {
+            "id": 611,
+            "urlkey": "wine",
+            "name": "Wine"
+        },
+        {
+            "id": 15139,
+            "urlkey": "wine-tasting",
+            "name": "Wine Tasting"
+        },
+        {
+            "id": 1998,
+            "urlkey": "travel",
+            "name": "Travel"
+        },
+        {
+            "id": 10475,
+            "urlkey": "cocktails",
+            "name": "Cocktails"
+        },
+        {
+            "id": 3451,
+            "urlkey": "exchangestud",
+            "name": "International and Exchange Students"
+        },
+        {
+            "id": 43256,
+            "urlkey": "cooking-any-and-all-kinds-of-cooking",
+            "name": "Cooking"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 781,
+            "urlkey": "graphicdesign",
+            "name": "Graphic Design"
+        },
+        {
+            "id": 22467,
+            "urlkey": "finance",
+            "name": "Finance"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        }
+    ],
+    "joined": 1332532161000,
+    "bio": "I have started coding again",
+    "name": "MAX",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/19869771\/",
+    "updated": 1375735400000,
+    "created": 1332532161000,
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "member_id": 19869771,
+    "visited_date": {
+        "date": "2012-05-02 21:27:43.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

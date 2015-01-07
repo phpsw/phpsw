@@ -1,0 +1,26 @@
+{
+    "id": 48534707,
+    "board": {
+        "id": 2827512
+    },
+    "created": 1416998074000,
+    "updated": 1418140116000,
+    "started_by": {
+        "name": "Cole Henley"
+    },
+    "subject": "Short-term PHP opportunity in Bath",
+    "body": "Hey all\n\nI'm the technical director at [url=http:\/\/ournameismud.co.uk\/]Mud[\/url], a small (but perfectly formed) digital agency based in Bath. We're potentially looking to offer a six-month position working on-site at our office in the centre of Bath providing back-end assistance (PHP\/ExpressionEngine\/Craft\/CodeIgniter). This may lead to a permanent role but we cannot guarantee at this early stage.\n\nJust looking to see if anybody wants to discuss this role before we formally advertise.  Hoping to make it over to the PHP SW Christmas meet-up but failing that happy to meet and chat over coffee (or something stronger).\n\nCheers,\n\nCole",
+    "last_post": {
+        "created": 1418140116000,
+        "member": {
+            "name": "Cole Henley"
+        },
+        "created_date": {
+            "date": "2014-12-09 15:48:36.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "reply_count": 1,
+    "url": "http:\/\/www.meetup.com\/php-sw\/messages\/boards\/thread\/48534707"
+}

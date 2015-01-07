@@ -1,0 +1,124 @@
+{
+    "lon": -2.58,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/113727902",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 113727902,
+    "visited": 1420646887000,
+    "topics": [
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 46616,
+            "urlkey": "founders",
+            "name": "Founders"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 20060,
+            "urlkey": "business-entrepreneur-networking",
+            "name": "Entrepreneur Networking"
+        },
+        {
+            "id": 38660,
+            "urlkey": "lean-startup",
+            "name": "Lean Startup"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        }
+    ],
+    "joined": 1407939738000,
+    "bio": "Director & Developer at Lamp Bristol",
+    "name": "Ian Smith",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/113727902\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/4\/1\/a\/member_149930202.jpeg",
+    "answers": [
+        {
+            "answer": "new PHP frameworks & cms', testing & development environments",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "Not at the moment, but would love to in the future.",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/4\/1\/a\/member_149930202.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/4\/1\/a\/highres_149930202.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/4\/1\/a\/thumb_149930202.jpeg",
+        "photo_id": 149930202,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/4\/1\/a\/highres_149930202.jpeg"
+    },
+    "member_id": 113727902,
+    "created": 1407939738000,
+    "updated": 1407940109000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-07 16:08:07.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

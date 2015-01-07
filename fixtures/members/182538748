@@ -1,0 +1,146 @@
+{
+    "lon": -2.61,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/182538748",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "visited": 1417987055000,
+    "id": 182538748,
+    "topics": [
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 19195,
+            "urlkey": "pubs-bars",
+            "name": "Pubs and Bars"
+        },
+        {
+            "id": 21114,
+            "urlkey": "sustainable-food",
+            "name": "Sustainable Food"
+        },
+        {
+            "id": 18528,
+            "urlkey": "foodie",
+            "name": "Foodie"
+        },
+        {
+            "id": 235,
+            "urlkey": "coffee",
+            "name": "Coffee"
+        },
+        {
+            "id": 15546,
+            "urlkey": "drinking",
+            "name": "Drinking"
+        },
+        {
+            "id": 43256,
+            "urlkey": "cooking-any-and-all-kinds-of-cooking",
+            "name": "Cooking"
+        },
+        {
+            "id": 19130,
+            "urlkey": "eating-drinking-talking-laughing-etc",
+            "name": "Eating, Drinking, Talking, Laughing, Etc"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 1201,
+            "urlkey": "movies",
+            "name": "Watching Movies"
+        },
+        {
+            "id": 15018,
+            "urlkey": "music",
+            "name": "Music"
+        },
+        {
+            "id": 23778,
+            "urlkey": "dinner-and-a-movie",
+            "name": "Dinner and a Movie"
+        },
+        {
+            "id": 15029,
+            "urlkey": "film",
+            "name": "Film"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 321351,
+            "urlkey": "meet-new-people-in-bristol",
+            "name": "meet new people in Bristol"
+        }
+    ],
+    "joined": 1416156873000,
+    "name": "Chloe",
+    "other_services": [],
+    "lat": 51.44,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/182538748\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/3\/0\/1\/d\/member_241512317.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/3\/0\/1\/d\/member_241512317.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/3\/0\/1\/d\/highres_241512317.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/3\/0\/1\/d\/thumb_241512317.jpeg",
+        "photo_id": 241512317,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/3\/0\/1\/d\/highres_241512317.jpeg"
+    },
+    "member_id": 182538748,
+    "updated": 1417987064000,
+    "created": 1416156873000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-07 21:17:35.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

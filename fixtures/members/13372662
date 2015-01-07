@@ -1,0 +1,266 @@
+{
+    "lon": -2.58,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/13372662",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/5\/d\/c\/member_77030652.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/5\/d\/c\/highres_77030652.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/5\/d\/c\/thumb_77030652.jpeg",
+        "photo_id": 77030652,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/c\/5\/d\/c\/highres_77030652.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 13372662,
+    "visited": 1367245757000,
+    "topics": [
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 1064,
+            "urlkey": "python",
+            "name": "Python"
+        },
+        {
+            "id": 9886,
+            "urlkey": "ria",
+            "name": "Rich Internet Applications"
+        },
+        {
+            "id": 10553,
+            "urlkey": "django",
+            "name": "Django"
+        },
+        {
+            "id": 127567,
+            "urlkey": "ios-development",
+            "name": "iOS Development"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 28990,
+            "urlkey": "cms",
+            "name": "CMS (Content Management Systems)"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 1040,
+            "urlkey": "ruby",
+            "name": "Ruby"
+        },
+        {
+            "id": 20837,
+            "urlkey": "ruby-on-rails",
+            "name": "Ruby On Rails"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 121802,
+            "urlkey": "mongodb",
+            "name": "mongoDB"
+        },
+        {
+            "id": 27591,
+            "urlkey": "mapreduce",
+            "name": "MapReduce"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 997062,
+            "urlkey": "apex-development",
+            "name": "Apex Development"
+        },
+        {
+            "id": 164165,
+            "urlkey": "force-com",
+            "name": "Force.com"
+        },
+        {
+            "id": 37581,
+            "urlkey": "apex",
+            "name": "Apex"
+        },
+        {
+            "id": 10464,
+            "urlkey": "salesforce",
+            "name": "Salesforce.com"
+        },
+        {
+            "id": 158427,
+            "urlkey": "salesforce-com-developers",
+            "name": "Salesforce.com Developers"
+        },
+        {
+            "id": 33089,
+            "urlkey": "saas-software-as-a-service",
+            "name": "SaaS (Software as a Service)"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 122994,
+            "urlkey": "high-tech-startups",
+            "name": "High-Tech Startups"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 193021,
+            "urlkey": "graph-databases",
+            "name": "Graph Databases"
+        },
+        {
+            "id": 179941,
+            "urlkey": "neo4j",
+            "name": "Neo4j"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        }
+    ],
+    "joined": 1350062583000,
+    "bio": "I'm a product manager by day, and by night I have been known to code a bit in PHP, CodeIgniter, ZeroMQ (very nice messaging library), Perl, etc.",
+    "name": "Richard Donkin",
+    "other_services": {
+        "twitter": {
+            "identifier": "@rdonkin"
+        }
+    },
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/13372662\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/5\/d\/c\/member_77030652.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 13372662,
+    "created": 1350062583000,
+    "updated": 1350062583000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2013-04-29 14:29:17.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

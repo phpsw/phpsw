@@ -1,0 +1,96 @@
+{
+    "lon": -2.35,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/129248282",
+    "state": "A4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/5\/2\/e\/member_220345902.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/5\/2\/e\/highres_220345902.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/5\/2\/e\/thumb_220345902.jpeg",
+        "photo_id": 220345902,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/5\/2\/e\/highres_220345902.jpeg"
+    },
+    "city": "Bath",
+    "country": "gb",
+    "id": 129248282,
+    "visited": 1416418850000,
+    "topics": [
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 18617,
+            "urlkey": "cycling",
+            "name": "Cycling"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        }
+    ],
+    "joined": 1390994164000,
+    "bio": "I like PHP",
+    "name": "Sam George",
+    "other_services": {
+        "twitter": {
+            "identifier": "@sam_george"
+        }
+    },
+    "lat": 51.39,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/129248282\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/5\/2\/e\/member_220345902.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 129248282,
+    "created": 1390994164000,
+    "updated": 1408628803000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-19 17:40:50.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

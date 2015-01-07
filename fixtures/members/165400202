@@ -1,0 +1,126 @@
+{
+    "lon": -0.14,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/165400202",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "city": "London",
+    "country": "gb",
+    "visited": 1417096001000,
+    "id": 165400202,
+    "topics": [
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 37381,
+            "urlkey": "data-visualization",
+            "name": "Data Visualization"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 661702,
+            "urlkey": "aws-design-implementation-and-servicing",
+            "name": "AWS design implementation and servicing"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 42277,
+            "urlkey": "software-qa-and-testing",
+            "name": "Software QA and Testing"
+        },
+        {
+            "id": 122934,
+            "urlkey": "behaviour-driven-testing",
+            "name": "Behaviour Driven Testing"
+        },
+        {
+            "id": 80644,
+            "urlkey": "testing-tools",
+            "name": "Testing Tools"
+        }
+    ],
+    "joined": 1415875447000,
+    "name": "Lee Summerfield",
+    "other_services": [],
+    "lat": 51.52,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/165400202\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/f\/1\/4\/member_225893012.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/f\/1\/4\/member_225893012.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/f\/1\/4\/highres_225893012.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/c\/f\/1\/4\/thumb_225893012.jpeg",
+        "photo_id": 225893012,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/f\/1\/4\/highres_225893012.jpeg"
+    },
+    "member_id": 165400202,
+    "updated": 1415875455000,
+    "created": 1415875447000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-27 13:46:41.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "lon": -2.36,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/138615412",
+    "state": "A4",
+    "self": {
+        "common": []
+    },
+    "city": "Bath",
+    "country": "gb",
+    "id": 138615412,
+    "visited": 1410270751000,
+    "topics": [
+        {
+            "id": 10043,
+            "urlkey": "scrum",
+            "name": "Scrum"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        }
+    ],
+    "joined": 1398103796000,
+    "bio": "Senior Software Engineer @ Kainos",
+    "name": "psempruch",
+    "other_services": [],
+    "lat": 51.38,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/138615412\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/b\/4\/c\/member_185702892.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/b\/4\/c\/member_185702892.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/b\/4\/c\/highres_185702892.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/b\/4\/c\/thumb_185702892.jpeg",
+        "photo_id": 185702892,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/b\/4\/c\/highres_185702892.jpeg"
+    },
+    "member_id": 138615412,
+    "created": 1398103796000,
+    "updated": 1398103860000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-09-09 13:52:31.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

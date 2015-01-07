@@ -1,0 +1,34 @@
+{
+    "member": {
+        "name": "Steve Lacey",
+        "member_id": 13915585
+    },
+    "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/b\/e\/a\/600_383071722.jpeg",
+    "created": 1404551160000,
+    "updated": 1409000324000,
+    "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/7\/b\/e\/a\/highres_383071722.jpeg",
+    "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/b\/e\/a\/thumb_383071722.jpeg",
+    "photo_album": {
+        "group_id": 2833232,
+        "event_id": "190401062",
+        "photo_album_id": 22986372
+    },
+    "photo_id": 383071722,
+    "id": 383071722,
+    "album": {
+        "title": "Building great APIs",
+        "album_photo": {
+            "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/b\/e\/a\/600_383071722.jpeg",
+            "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/7\/b\/e\/a\/highres_383071722.jpeg",
+            "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/b\/e\/a\/thumb_383071722.jpeg",
+            "photo_id": 383071722
+        },
+        "created": 1404551160000,
+        "updated": 1409000324000,
+        "group_id": 2833232,
+        "event_id": "190401062",
+        "photo_album_id": 22986372,
+        "photo_count": 3,
+        "id": 22986372
+    }
+}

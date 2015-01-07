@@ -1,0 +1,173 @@
+{
+    "lon": -2.6,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/48391642",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/f\/f\/2\/member_59224082.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/f\/f\/2\/thumb_59224082.jpeg",
+        "photo_id": 59224082,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/f\/f\/2\/member_59224082.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 48391642,
+    "visited": 1354633895000,
+    "topics": [
+        {
+            "id": 496,
+            "urlkey": "gamedev",
+            "name": "Game Development"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 15616,
+            "urlkey": "iphone",
+            "name": "iPhone"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 127567,
+            "urlkey": "ios-development",
+            "name": "iOS Development"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 4471,
+            "urlkey": "videogame",
+            "name": "Video Games"
+        },
+        {
+            "id": 19585,
+            "urlkey": "board-games",
+            "name": "Board Games"
+        },
+        {
+            "id": 15992,
+            "urlkey": "games",
+            "name": "Games"
+        },
+        {
+            "id": 10493,
+            "urlkey": "geek",
+            "name": "Geek Culture"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 317,
+            "urlkey": "scifi",
+            "name": "Sci-Fi\/Fantasy"
+        },
+        {
+            "id": 18071,
+            "urlkey": "gaming",
+            "name": "Gaming"
+        }
+    ],
+    "joined": 1340231845000,
+    "bio": "PHP \/ Mobile developer in Bedminster",
+    "name": "Nathan Wong",
+    "other_services": {
+        "twitter": {
+            "identifier": "@esteluk"
+        },
+        "facebook": {
+            "identifier": "https:\/\/www.facebook.com\/nwonguk"
+        }
+    },
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/48391642\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/f\/f\/2\/member_59224082.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 48391642,
+    "created": 1340231845000,
+    "updated": 1340231846000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2012-12-04 15:11:35.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,261 @@
+{
+    "lon": -0.17,
+    "hometown": "Shanghai",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/68547812",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/b\/e\/2\/member_80564002.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/b\/e\/2\/thumb_80564002.jpeg",
+        "photo_id": 80564002,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/b\/e\/2\/member_80564002.jpeg"
+    },
+    "country": "gb",
+    "city": "London",
+    "id": 68547812,
+    "visited": 1417042343000,
+    "topics": [
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 7203,
+            "urlkey": "edtech",
+            "name": "Education & Technology"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 15139,
+            "urlkey": "wine-tasting",
+            "name": "Wine Tasting"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 19195,
+            "urlkey": "pubs-bars",
+            "name": "Pubs and Bars"
+        },
+        {
+            "id": 18528,
+            "urlkey": "foodie",
+            "name": "Foodie"
+        },
+        {
+            "id": 43256,
+            "urlkey": "cooking-any-and-all-kinds-of-cooking",
+            "name": "Cooking"
+        },
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 15720,
+            "urlkey": "professional-networking",
+            "name": "Professional Networking"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 10043,
+            "urlkey": "scrum",
+            "name": "Scrum"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 38660,
+            "urlkey": "lean-startup",
+            "name": "Lean Startup"
+        },
+        {
+            "id": 25435,
+            "urlkey": "test-driven-development",
+            "name": "Test Driven Development"
+        },
+        {
+            "id": 65172,
+            "urlkey": "test-automation",
+            "name": "Test Automation"
+        },
+        {
+            "id": 19243,
+            "urlkey": "user-experience",
+            "name": "User Experience"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 189,
+            "urlkey": "java",
+            "name": "Java"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 17703,
+            "urlkey": "london",
+            "name": "London"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 1998,
+            "urlkey": "travel",
+            "name": "Travel"
+        },
+        {
+            "id": 23274,
+            "urlkey": "live-theatre",
+            "name": "Theater"
+        },
+        {
+            "id": 1201,
+            "urlkey": "movies",
+            "name": "Watching Movies"
+        },
+        {
+            "id": 933,
+            "urlkey": "walkers",
+            "name": "Walking"
+        },
+        {
+            "id": 17558,
+            "urlkey": "performing-arts",
+            "name": "Performing Arts"
+        },
+        {
+            "id": 50709,
+            "urlkey": "recipes",
+            "name": "Recipes"
+        }
+    ],
+    "joined": 1370214120000,
+    "bio": "I have been working as a web developer for more than 6 years. PHP, MySQL, Zend Framework 2, Doctrine 2, Backbone, RequireJS are what I use the most these days.",
+    "name": "Richard He",
+    "other_services": {
+        "twitter": {
+            "identifier": "@shenghuahe"
+        }
+    },
+    "lat": 51.49,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/68547812\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/b\/e\/2\/member_80564002.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 68547812,
+    "created": 1370214120000,
+    "updated": 1417042364000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-26 22:52:23.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

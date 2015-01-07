@@ -1,0 +1,120 @@
+{
+    "lon": -2.61,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/6076812",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/5\/1\/3\/member_3549491.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/5\/1\/3\/highres_3549491.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/5\/1\/3\/thumb_3549491.jpeg",
+        "photo_id": 3549491,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/5\/1\/3\/highres_3549491.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 6076812,
+    "visited": 1418498393000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 100119,
+            "urlkey": "php-framework",
+            "name": "PHP Framework"
+        }
+    ],
+    "joined": 1388078854000,
+    "bio": "Developer on Perch CMS",
+    "name": "drewm",
+    "other_services": {
+        "twitter": {
+            "identifier": "@drewm"
+        },
+        "flickr": {
+            "identifier": "http:\/\/flickr.com\/drewm"
+        }
+    },
+    "lat": 51.44,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/6076812\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/5\/1\/3\/member_3549491.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 6076812,
+    "created": 1388078854000,
+    "updated": 1388078881000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-13 19:19:53.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

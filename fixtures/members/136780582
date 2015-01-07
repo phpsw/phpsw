@@ -1,0 +1,87 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/136780582",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 136780582,
+    "visited": 1394614757000,
+    "topics": [
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 1998,
+            "urlkey": "travel",
+            "name": "Travel"
+        },
+        {
+            "id": 24711,
+            "urlkey": "playing-music",
+            "name": "Playing Music"
+        }
+    ],
+    "joined": 1394555869000,
+    "bio": "Drupal developer.",
+    "name": "Saemie C",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/136780582\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/0\/e\/c\/member_182964812.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/0\/e\/c\/member_182964812.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/0\/e\/c\/highres_182964812.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/0\/e\/c\/thumb_182964812.jpeg",
+        "photo_id": 182964812,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/0\/e\/c\/highres_182964812.jpeg"
+    },
+    "member_id": 136780582,
+    "created": 1394555869000,
+    "updated": 1394555927000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-03-12 08:59:17.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,307 @@
+{
+    "lon": -2.56,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/10711998",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/2\/b\/2\/member_86888882.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/2\/b\/2\/thumb_86888882.jpeg",
+        "photo_id": 86888882,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/2\/b\/2\/member_86888882.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 10711998,
+    "visited": 1405497850000,
+    "topics": [
+        {
+            "id": 1204,
+            "urlkey": "reiki",
+            "name": "Reiki"
+        },
+        {
+            "id": 3146,
+            "urlkey": "aromatherapy",
+            "name": "Aromatherapy"
+        },
+        {
+            "id": 1322,
+            "urlkey": "meditation",
+            "name": "Meditation"
+        },
+        {
+            "id": 1948,
+            "urlkey": "spiritualism",
+            "name": "Spiritualism"
+        },
+        {
+            "id": 128602,
+            "urlkey": "buddhist",
+            "name": "Buddhist"
+        },
+        {
+            "id": 10290,
+            "urlkey": "spirituality",
+            "name": "Spirituality"
+        },
+        {
+            "id": 992,
+            "urlkey": "distanthealing",
+            "name": "Distant Healing"
+        },
+        {
+            "id": 71205,
+            "urlkey": "gay-tantra",
+            "name": "Gay Tantra"
+        },
+        {
+            "id": 17150,
+            "urlkey": "alternative-medicine",
+            "name": "Alternative Medicine"
+        },
+        {
+            "id": 309,
+            "urlkey": "vegetarian",
+            "name": "Vegetarian"
+        },
+        {
+            "id": 1254,
+            "urlkey": "shamanism",
+            "name": "Shamanism"
+        },
+        {
+            "id": 16769,
+            "urlkey": "sacred-sexuality",
+            "name": "Sacred Sexuality"
+        },
+        {
+            "id": 71204,
+            "urlkey": "tantric-massage",
+            "name": "Tantric Massage"
+        },
+        {
+            "id": 206,
+            "urlkey": "digcam",
+            "name": "Digital Photography"
+        },
+        {
+            "id": 20779,
+            "urlkey": "reiki-share",
+            "name": "Reiki Share"
+        },
+        {
+            "id": 1266,
+            "urlkey": "simplicity",
+            "name": "Simplicity"
+        },
+        {
+            "id": 36550,
+            "urlkey": "male-spirituality",
+            "name": "Male Spirituality"
+        },
+        {
+            "id": 408,
+            "urlkey": "vegan",
+            "name": "Vegan"
+        },
+        {
+            "id": 43950,
+            "urlkey": "male-massage",
+            "name": "Male Massage"
+        },
+        {
+            "id": 71203,
+            "urlkey": "tantra-for-men",
+            "name": "Tantra for Men"
+        },
+        {
+            "id": 57710,
+            "urlkey": "taoist-practices",
+            "name": "Taoist Practices"
+        },
+        {
+            "id": 130416,
+            "urlkey": "gay-spirituality",
+            "name": "Gay Spirituality"
+        },
+        {
+            "id": 136892,
+            "urlkey": "gay-tantric-sex",
+            "name": "Gay Tantric Sex"
+        },
+        {
+            "id": 15665,
+            "urlkey": "taoist-tantra",
+            "name": "Taoist Tantra"
+        },
+        {
+            "id": 140366,
+            "urlkey": "to-share-thoughts-and-may-be-more",
+            "name": "to share thoughts and may be more"
+        },
+        {
+            "id": 44168,
+            "urlkey": "photographer-and-model-workshops",
+            "name": "Photographer and Model Workshops"
+        },
+        {
+            "id": 6144,
+            "urlkey": "modeling",
+            "name": "Modeling"
+        },
+        {
+            "id": 16615,
+            "urlkey": "model-photography",
+            "name": "Model Photography"
+        },
+        {
+            "id": 18371,
+            "urlkey": "intuition",
+            "name": "Intuition"
+        },
+        {
+            "id": 73693,
+            "urlkey": "active-meditation",
+            "name": "Active Meditation"
+        },
+        {
+            "id": 242,
+            "urlkey": "fitness",
+            "name": "Fitness"
+        },
+        {
+            "id": 15738,
+            "urlkey": "energy-healing",
+            "name": "Energy Healing"
+        },
+        {
+            "id": 86009,
+            "urlkey": "tantric-buddhism",
+            "name": "Tantric Buddhism"
+        },
+        {
+            "id": 82258,
+            "urlkey": "meditation-and-chanting",
+            "name": "Meditation and Chanting"
+        },
+        {
+            "id": 88395,
+            "urlkey": "osho-workshops",
+            "name": "Osho Workshops"
+        },
+        {
+            "id": 10146,
+            "urlkey": "tantric",
+            "name": "Tantra"
+        },
+        {
+            "id": 3336,
+            "urlkey": "self-improvement",
+            "name": "Self-Improvement"
+        },
+        {
+            "id": 17658,
+            "urlkey": "spiritual-growth",
+            "name": "Spiritual Growth"
+        },
+        {
+            "id": 10306,
+            "urlkey": "wellness",
+            "name": "Wellness"
+        },
+        {
+            "id": 15822,
+            "urlkey": "inner-peace",
+            "name": "Inner peace"
+        },
+        {
+            "id": 161703,
+            "urlkey": "tantra-workshops",
+            "name": "tantra workshops"
+        },
+        {
+            "id": 666912,
+            "urlkey": "tantra-courses",
+            "name": "tantra courses"
+        },
+        {
+            "id": 666932,
+            "urlkey": "tantra-school",
+            "name": "tantra school"
+        },
+        {
+            "id": 1302662,
+            "urlkey": "personal-growth-and-creativity",
+            "name": "Personal Growth and Creativity"
+        },
+        {
+            "id": 1586,
+            "urlkey": "dreams",
+            "name": "Dreams"
+        },
+        {
+            "id": 28062,
+            "urlkey": "photography-workshop",
+            "name": "Photography Workshop"
+        },
+        {
+            "id": 16242,
+            "urlkey": "joomla",
+            "name": "Joomla"
+        },
+        {
+            "id": 20221,
+            "urlkey": "healthy-living",
+            "name": "Healthy Living"
+        },
+        {
+            "id": 1502,
+            "urlkey": "art",
+            "name": "Art"
+        },
+        {
+            "id": 49861,
+            "urlkey": "slr-photography",
+            "name": "SLR Photography"
+        }
+    ],
+    "joined": 1400071498000,
+    "bio": "I'm a mix of spiritual and techy and just starting to use that to work creating websites for people. I'm a Joomla bod that would like to start developing my own stuff rather than relying on others so now learning PHP and sql'ly stuff.",
+    "name": "Buzzy Dandelion",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/10711998\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/2\/b\/2\/member_86888882.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 10711998,
+    "created": 1400071498000,
+    "updated": 1400071605000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-07-16 08:04:10.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

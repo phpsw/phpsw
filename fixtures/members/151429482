@@ -1,0 +1,277 @@
+{
+    "lon": -3.4,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/151429482",
+    "state": "D4",
+    "self": {
+        "common": []
+    },
+    "city": "Woodbury Salterton",
+    "country": "gb",
+    "id": 151429482,
+    "visited": 1414421694000,
+    "topics": [
+        {
+            "id": 19585,
+            "urlkey": "board-games",
+            "name": "Board Games"
+        },
+        {
+            "id": 10493,
+            "urlkey": "geek",
+            "name": "Geek Culture"
+        },
+        {
+            "id": 3430,
+            "urlkey": "britcoms",
+            "name": "British Comedies"
+        },
+        {
+            "id": 206,
+            "urlkey": "digcam",
+            "name": "Digital Photography"
+        },
+        {
+            "id": 1001,
+            "urlkey": "comedy",
+            "name": "Comedy"
+        },
+        {
+            "id": 85,
+            "urlkey": "science",
+            "name": "Science"
+        },
+        {
+            "id": 3485,
+            "urlkey": "psychology",
+            "name": "Psychology"
+        },
+        {
+            "id": 21067,
+            "urlkey": "collaboration",
+            "name": "Collaboration"
+        },
+        {
+            "id": 63863,
+            "urlkey": "cognitive-science",
+            "name": "Cognitive Science"
+        },
+        {
+            "id": 15083,
+            "urlkey": "intellectual-discussion",
+            "name": "Intellectual Discussion"
+        },
+        {
+            "id": 16433,
+            "urlkey": "motivation",
+            "name": "Motivation"
+        },
+        {
+            "id": 20923,
+            "urlkey": "communication-skills",
+            "name": "Communication Skills"
+        },
+        {
+            "id": 7203,
+            "urlkey": "edtech",
+            "name": "Education & Technology"
+        },
+        {
+            "id": 19666,
+            "urlkey": "nature-walks",
+            "name": "Nature Walks"
+        },
+        {
+            "id": 933,
+            "urlkey": "walkers",
+            "name": "Walking"
+        },
+        {
+            "id": 25375,
+            "urlkey": "excercise",
+            "name": "Exercise"
+        },
+        {
+            "id": 1954,
+            "urlkey": "innovation",
+            "name": "Innovation"
+        },
+        {
+            "id": 19539,
+            "urlkey": "leadership-development",
+            "name": "Leadership Development"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 19130,
+            "urlkey": "eating-drinking-talking-laughing-etc",
+            "name": "Eating, Drinking, Talking, Laughing, Etc"
+        },
+        {
+            "id": 16024,
+            "urlkey": "families",
+            "name": "Family"
+        },
+        {
+            "id": 22233,
+            "urlkey": "family-friendly",
+            "name": "Family Friendly"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 15401,
+            "urlkey": "social-media",
+            "name": "Social Media"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 68802,
+            "urlkey": "wordpress-customization",
+            "name": "Wordpress Customization"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 24087,
+            "urlkey": "freethinker",
+            "name": "Free thinker"
+        },
+        {
+            "id": 1789,
+            "urlkey": "humanism",
+            "name": "Humanism"
+        },
+        {
+            "id": 16481,
+            "urlkey": "happiness",
+            "name": "Happiness"
+        },
+        {
+            "id": 871,
+            "urlkey": "skeptics",
+            "name": "Skeptics"
+        },
+        {
+            "id": 28990,
+            "urlkey": "cms",
+            "name": "CMS (Content Management Systems)"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 638,
+            "urlkey": "hiking",
+            "name": "Hiking"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 65780,
+            "urlkey": "knowledge-sharing",
+            "name": "Knowledge Sharing"
+        }
+    ],
+    "joined": 1402696847000,
+    "bio": "Mostly concerned with the security of other people's PHP",
+    "name": "Simon Waters",
+    "other_services": [],
+    "lat": 50.69,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/151429482\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/7\/f\/2\/member_204295282.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/7\/f\/2\/member_204295282.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/d\/7\/f\/2\/highres_204295282.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/d\/7\/f\/2\/thumb_204295282.jpeg",
+        "photo_id": 204295282,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/d\/7\/f\/2\/highres_204295282.jpeg"
+    },
+    "member_id": 151429482,
+    "created": 1402696847000,
+    "updated": 1402914241000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-10-27 14:54:54.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

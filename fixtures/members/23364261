@@ -1,0 +1,133 @@
+{
+    "lon": -122.44,
+    "hometown": "San Francisco",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/23364261",
+    "state": "CA",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/b\/e\/1\/member_22403521.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/b\/e\/1\/highres_22403521.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/b\/e\/1\/thumb_22403521.jpeg",
+        "photo_id": 22403521,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/b\/e\/1\/highres_22403521.jpeg"
+    },
+    "country": "us",
+    "city": "San Francisco",
+    "id": 23364261,
+    "visited": 1341530547000,
+    "topics": [
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 101960,
+            "urlkey": "nodejs",
+            "name": "nodeJS"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 9886,
+            "urlkey": "ria",
+            "name": "Rich Internet Applications"
+        },
+        {
+            "id": 100479,
+            "urlkey": "front-end-development",
+            "name": "Front-end Development"
+        },
+        {
+            "id": 85953,
+            "urlkey": "serversidejs",
+            "name": "ServerSideJS"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 22791,
+            "urlkey": "haskell",
+            "name": "Haskell"
+        }
+    ],
+    "joined": 1327416442000,
+    "bio": "SW meetup guy, keeping an eye open for other meetups.",
+    "name": "Jake Verbaten",
+    "other_services": [],
+    "lat": 37.78,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/23364261\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/b\/e\/1\/member_22403521.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 23364261,
+    "created": 1327416442000,
+    "updated": 1327416443000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2012-07-05 23:22:27.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

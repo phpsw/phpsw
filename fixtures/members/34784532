@@ -1,0 +1,288 @@
+{
+    "lon": -2.61,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/34784532",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/1\/8\/0\/member_85713152.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/1\/8\/0\/highres_85713152.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/1\/8\/0\/thumb_85713152.jpeg",
+        "photo_id": 85713152,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/1\/8\/0\/highres_85713152.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 34784532,
+    "visited": 1420490011000,
+    "topics": [
+        {
+            "id": 15123,
+            "urlkey": "womens-fitness",
+            "name": "Women's Fitness"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 16967,
+            "urlkey": "outdoor-adventures",
+            "name": "Outdoor Adventures"
+        },
+        {
+            "id": 638,
+            "urlkey": "hiking",
+            "name": "Hiking"
+        },
+        {
+            "id": 933,
+            "urlkey": "walkers",
+            "name": "Walking"
+        },
+        {
+            "id": 374,
+            "urlkey": "camping",
+            "name": "Camping"
+        },
+        {
+            "id": 15672,
+            "urlkey": "outdoor-fitness",
+            "name": "Outdoor  Fitness"
+        },
+        {
+            "id": 16438,
+            "urlkey": "weekend-adventures",
+            "name": "Weekend Adventures"
+        },
+        {
+            "id": 16179,
+            "urlkey": "international-travel",
+            "name": "International Travel"
+        },
+        {
+            "id": 15394,
+            "urlkey": "group-fitness-training",
+            "name": "Group Fitness Training"
+        },
+        {
+            "id": 1566,
+            "urlkey": "rockclimbing",
+            "name": "Rock Climbing"
+        },
+        {
+            "id": 1998,
+            "urlkey": "travel",
+            "name": "Travel"
+        },
+        {
+            "id": 18988,
+            "urlkey": "backpacking",
+            "name": "Backpacking"
+        },
+        {
+            "id": 25375,
+            "urlkey": "excercise",
+            "name": "Exercise"
+        },
+        {
+            "id": 2294,
+            "urlkey": "skiing",
+            "name": "Skiing"
+        },
+        {
+            "id": 590,
+            "urlkey": "kayaking",
+            "name": "Kayaking"
+        },
+        {
+            "id": 3425,
+            "urlkey": "snowboard",
+            "name": "Snowboarding"
+        },
+        {
+            "id": 611,
+            "urlkey": "wine",
+            "name": "Wine"
+        },
+        {
+            "id": 15139,
+            "urlkey": "wine-tasting",
+            "name": "Wine Tasting"
+        },
+        {
+            "id": 20221,
+            "urlkey": "healthy-living",
+            "name": "Healthy Living"
+        },
+        {
+            "id": 43256,
+            "urlkey": "cooking-any-and-all-kinds-of-cooking",
+            "name": "Cooking"
+        },
+        {
+            "id": 235,
+            "urlkey": "coffee",
+            "name": "Coffee"
+        },
+        {
+            "id": 18528,
+            "urlkey": "foodie",
+            "name": "Foodie"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 1502,
+            "urlkey": "art",
+            "name": "Art"
+        },
+        {
+            "id": 7319,
+            "urlkey": "museum",
+            "name": "Museum"
+        },
+        {
+            "id": 23274,
+            "urlkey": "live-theatre",
+            "name": "Theater"
+        },
+        {
+            "id": 15018,
+            "urlkey": "music",
+            "name": "Music"
+        },
+        {
+            "id": 18773,
+            "urlkey": "wine-education",
+            "name": "Wine Education"
+        },
+        {
+            "id": 713,
+            "urlkey": "diningout",
+            "name": "Dining Out"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 10043,
+            "urlkey": "scrum",
+            "name": "Scrum"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 122939,
+            "urlkey": "agile-coaching",
+            "name": "Agile Coaching"
+        },
+        {
+            "id": 25435,
+            "urlkey": "test-driven-development",
+            "name": "Test Driven Development"
+        },
+        {
+            "id": 5938,
+            "urlkey": "xp",
+            "name": "Extreme Programming"
+        },
+        {
+            "id": 38660,
+            "urlkey": "lean-startup",
+            "name": "Lean Startup"
+        },
+        {
+            "id": 17558,
+            "urlkey": "performing-arts",
+            "name": "Performing Arts"
+        },
+        {
+            "id": 50709,
+            "urlkey": "recipes",
+            "name": "Recipes"
+        },
+        {
+            "id": 242,
+            "urlkey": "fitness",
+            "name": "Fitness"
+        },
+        {
+            "id": 10306,
+            "urlkey": "wellness",
+            "name": "Wellness"
+        }
+    ],
+    "joined": 1355152696000,
+    "bio": "Hi, my name is Marti and i love lamp x",
+    "name": "Marti",
+    "other_services": {
+        "twitter": {
+            "identifier": "@twattermb"
+        }
+    },
+    "lat": 51.44,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/34784532\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/1\/8\/0\/member_85713152.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 34784532,
+    "created": 1355152696000,
+    "updated": 1385682167000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "comment": "I find it nice to catch up with others from different companies and discuss PHP in general so for me it's a great social environment as well as gathering knowledge\/networking",
+    "visited_date": {
+        "date": "2015-01-05 20:33:31.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

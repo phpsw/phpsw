@@ -1,0 +1,118 @@
+{
+    "lon": -2.56,
+    "hometown": "Llantrisant",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/69090132",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/0\/1\/0\/member_178024112.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/0\/1\/0\/highres_178024112.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/0\/1\/0\/thumb_178024112.jpeg",
+        "photo_id": 178024112,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/0\/1\/0\/highres_178024112.jpeg"
+    },
+    "country": "gb",
+    "city": "Redfield",
+    "id": 69090132,
+    "visited": 1420330571000,
+    "topics": [
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 235,
+            "urlkey": "coffee",
+            "name": "Coffee"
+        },
+        {
+            "id": 15018,
+            "urlkey": "music",
+            "name": "Music"
+        },
+        {
+            "id": 19130,
+            "urlkey": "eating-drinking-talking-laughing-etc",
+            "name": "Eating, Drinking, Talking, Laughing, Etc"
+        },
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 15992,
+            "urlkey": "games",
+            "name": "Games"
+        },
+        {
+            "id": 19585,
+            "urlkey": "board-games",
+            "name": "Board Games"
+        },
+        {
+            "id": 87614,
+            "urlkey": "devops",
+            "name": "DevOps"
+        }
+    ],
+    "joined": 1403721240000,
+    "bio": "Programmer at Play Nicely",
+    "name": "Nick Read",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/69090132\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/0\/1\/0\/member_178024112.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 69090132,
+    "created": 1403721240000,
+    "updated": 1403721241000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-04 00:16:11.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

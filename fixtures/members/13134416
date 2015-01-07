@@ -1,0 +1,63 @@
+{
+    "lon": -5.05,
+    "hometown": "Truro",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/13134416",
+    "state": "C6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/b\/5\/b\/member_10951579.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/b\/5\/b\/thumb_10951579.jpeg",
+        "photo_id": 10951579,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/b\/5\/b\/member_10951579.jpeg"
+    },
+    "country": "gb",
+    "city": "Truro",
+    "id": 13134416,
+    "visited": 1392226007000,
+    "topics": [],
+    "joined": 1392226007000,
+    "bio": "I mash out PHP and web pages come out the other side.",
+    "name": "Piers Roberts",
+    "other_services": {
+        "twitter": {
+            "identifier": "@piersroberts"
+        },
+        "flickr": {
+            "identifier": "http:\/\/www.flickr.com\/photos\/wadebridge\/"
+        }
+    },
+    "lat": 50.26,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/13134416\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/7\/b\/5\/b\/member_10951579.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 13134416,
+    "created": 1392226007000,
+    "updated": 1392226229000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-02-12 17:26:47.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

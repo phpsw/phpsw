@@ -1,0 +1,134 @@
+{
+    "lon": -2.26,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/107379882",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/3\/e\/0\/member_238241952.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/3\/e\/0\/highres_238241952.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/3\/e\/0\/thumb_238241952.jpeg",
+        "photo_id": 238241952,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/a\/3\/e\/0\/highres_238241952.jpeg"
+    },
+    "city": "Quedgeley",
+    "country": "gb",
+    "id": 107379882,
+    "visited": 1414499884000,
+    "topics": [
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 102811,
+            "urlkey": "data-science",
+            "name": "Data Science"
+        },
+        {
+            "id": 1111,
+            "urlkey": "sewing",
+            "name": "Sewing"
+        },
+        {
+            "id": 242,
+            "urlkey": "fitness",
+            "name": "Fitness"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 15046,
+            "urlkey": "outdoors",
+            "name": "Outdoors"
+        },
+        {
+            "id": 16967,
+            "urlkey": "outdoor-adventures",
+            "name": "Outdoor Adventures"
+        },
+        {
+            "id": 16438,
+            "urlkey": "weekend-adventures",
+            "name": "Weekend Adventures"
+        },
+        {
+            "id": 933,
+            "urlkey": "walkers",
+            "name": "Walking"
+        },
+        {
+            "id": 15892,
+            "urlkey": "adventure",
+            "name": "Adventure"
+        },
+        {
+            "id": 638,
+            "urlkey": "hiking",
+            "name": "Hiking"
+        },
+        {
+            "id": 1998,
+            "urlkey": "travel",
+            "name": "Travel"
+        }
+    ],
+    "joined": 1414499884000,
+    "bio": "Hi, interested in delivering better",
+    "name": "Berney",
+    "other_services": [],
+    "lat": 51.82,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/107379882\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/3\/e\/0\/member_238241952.jpeg",
+    "answers": [
+        {
+            "answer": "Security, delivering complexity",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "No",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 107379882,
+    "created": 1414499884000,
+    "updated": 1414499884000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-10-28 12:38:04.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

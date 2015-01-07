@@ -1,0 +1,67 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/54634602",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/6\/0\/4\/member_62529732.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/6\/0\/4\/highres_62529732.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/6\/0\/4\/thumb_62529732.jpeg",
+        "photo_id": 62529732,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/6\/0\/4\/highres_62529732.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 54634602,
+    "visited": 1396551349000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        }
+    ],
+    "joined": 1342168432000,
+    "bio": "I am a Software Development Contractor based in Bristol\r\n\r\nBackground:\r\n* Electronics, Embedded dev\r\n* Linux & Unix applications\r\n\r\nCurrent interests:\r\n* Automated testing\r\n* SaaS\r\n\r\nOutside of work:\r\n* Ale\r\n* Gardening\r\n* Fires\r\n* Swing Dancing",
+    "name": "Benjamin White",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/54634602\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/6\/0\/4\/member_62529732.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 54634602,
+    "created": 1342168432000,
+    "updated": 1394747014000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-04-03 18:55:49.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

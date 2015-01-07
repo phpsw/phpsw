@@ -1,0 +1,120 @@
+{
+    "lon": -1.91,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/145733982",
+    "state": "43",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/f\/9\/a\/member_196317242.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/f\/9\/a\/thumb_196317242.jpeg",
+        "photo_id": 196317242,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/f\/9\/a\/member_196317242.jpeg"
+    },
+    "city": "Birmingham",
+    "country": "gb",
+    "id": 145733982,
+    "visited": 1399758783000,
+    "topics": [
+        {
+            "id": 223,
+            "urlkey": "photo",
+            "name": "Photography"
+        },
+        {
+            "id": 30928,
+            "urlkey": "data-analytics",
+            "name": "Data Analytics"
+        },
+        {
+            "id": 43256,
+            "urlkey": "cooking-any-and-all-kinds-of-cooking",
+            "name": "Cooking"
+        },
+        {
+            "id": 8867,
+            "urlkey": "localpolitics",
+            "name": "Local Politics"
+        },
+        {
+            "id": 1546,
+            "urlkey": "humanrights",
+            "name": "Human Rights"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 37381,
+            "urlkey": "data-visualization",
+            "name": "Data Visualization"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 50709,
+            "urlkey": "recipes",
+            "name": "Recipes"
+        },
+        {
+            "id": 112476,
+            "urlkey": "national-politics",
+            "name": "National Politics"
+        }
+    ],
+    "joined": 1399758783000,
+    "bio": "Currently working as a Health Intelligence Analyst, conducting data analysis and database searches.",
+    "name": "Joseph Rookes",
+    "other_services": {
+        "facebook": {
+            "identifier": "https:\/\/www.facebook.com\/joseph.rookes"
+        }
+    },
+    "lat": 52.48,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/145733982\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/f\/9\/a\/member_196317242.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 145733982,
+    "created": 1399758783000,
+    "updated": 1399758863000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-05-10 21:53:03.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

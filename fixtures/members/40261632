@@ -1,0 +1,62 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/40261632",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 40261632,
+    "visited": 1417784674000,
+    "topics": [
+        {
+            "id": 1040,
+            "urlkey": "ruby",
+            "name": "Ruby"
+        }
+    ],
+    "joined": 1330674284000,
+    "bio": "Dangerous idiot",
+    "name": "Henry Smith",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/40261632\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/member_176920012.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/member_176920012.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/highres_176920012.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/thumb_176920012.jpeg",
+        "photo_id": 176920012,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/c\/4\/c\/highres_176920012.jpeg"
+    },
+    "member_id": 40261632,
+    "created": 1330674284000,
+    "updated": 1400079048000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-05 13:04:34.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

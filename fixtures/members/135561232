@@ -1,0 +1,142 @@
+{
+    "lon": -2.61,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/135561232",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/a\/e\/6\/member_197571942.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/a\/e\/6\/highres_197571942.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/a\/e\/6\/thumb_197571942.jpeg",
+        "photo_id": 197571942,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/a\/e\/6\/highres_197571942.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 135561232,
+    "visited": 1400079517000,
+    "topics": [
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 42277,
+            "urlkey": "software-qa-and-testing",
+            "name": "Software QA and Testing"
+        },
+        {
+            "id": 70576,
+            "urlkey": "quality-assurance",
+            "name": "Quality Assurance"
+        },
+        {
+            "id": 25435,
+            "urlkey": "test-driven-development",
+            "name": "Test Driven Development"
+        },
+        {
+            "id": 80644,
+            "urlkey": "testing-tools",
+            "name": "Testing Tools"
+        },
+        {
+            "id": 65172,
+            "urlkey": "test-automation",
+            "name": "Test Automation"
+        },
+        {
+            "id": 9300,
+            "urlkey": "publicspeaking",
+            "name": "Public Speaking"
+        },
+        {
+            "id": 1322,
+            "urlkey": "meditation",
+            "name": "Meditation"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        }
+    ],
+    "joined": 1400079517000,
+    "bio": "Web developer and accessibility guy",
+    "name": "Jon Gibbins",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/135561232\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/c\/a\/e\/6\/member_197571942.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 135561232,
+    "created": 1400079517000,
+    "updated": 1400079781000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-05-14 14:58:37.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

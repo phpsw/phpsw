@@ -1,0 +1,62 @@
+{
+    "lon": -0.13,
+    "hometown": "London",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/69167152",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/5\/0\/2\/a\/member_81380522.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/5\/0\/2\/a\/thumb_81380522.jpeg",
+        "photo_id": 81380522,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/5\/0\/2\/a\/member_81380522.jpeg"
+    },
+    "country": "gb",
+    "city": "London",
+    "id": 69167152,
+    "visited": 1410774066000,
+    "topics": [],
+    "joined": 1410420008000,
+    "bio": "PHP Software Developer, but I do lots of other things as well, Java, NodeJS, or whatever else is cool!\nI'm a contractor, and you can hire me!",
+    "name": "Billie Thompson",
+    "other_services": {
+        "facebook": {
+            "identifier": "https:\/\/www.facebook.com\/billie.alice.thompson"
+        }
+    },
+    "lat": 51.55,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/69167152\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/5\/0\/2\/a\/member_81380522.jpeg",
+    "answers": [
+        {
+            "answer": "Advanced talks on PHP7, Opcode, High Availability, and Advanced Design Patterns",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "Gave one on CQRS, and I'd like to give another on on using AngularJS with Silex.",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 69167152,
+    "created": 1410420008000,
+    "updated": 1410420175000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-09-15 09:41:06.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

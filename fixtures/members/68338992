@@ -1,0 +1,152 @@
+{
+    "lon": -2.47,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/68338992",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/f\/7\/4\/member_182048052.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/f\/7\/4\/highres_182048052.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/f\/7\/4\/thumb_182048052.jpeg",
+        "photo_id": 182048052,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/f\/7\/4\/highres_182048052.jpeg"
+    },
+    "country": "gb",
+    "city": "Bristol",
+    "id": 68338992,
+    "visited": 1418204403000,
+    "topics": [
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 10164,
+            "urlkey": "lampsoftware",
+            "name": "LAMP"
+        },
+        {
+            "id": 188,
+            "urlkey": "linux",
+            "name": "Linux"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        }
+    ],
+    "joined": 1351894865000,
+    "bio": "I'm a web developer working for Deep Blue Sky.\r\n\r\nI love PHP, SQL, Linux, arduino, raspberry pi, APIs, web security, robotics, electronics\/hardware, geolocation and real-world integration. For my 10 minutes of fame, google \"foursquare clock\".",
+    "name": "Christopher McKirgan",
+    "other_services": {
+        "twitter": {
+            "identifier": "@ChrisMcKirgan"
+        }
+    },
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/68338992\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/f\/7\/4\/member_182048052.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 68338992,
+    "created": 1351894865000,
+    "updated": 1412594748000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-10 09:40:03.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

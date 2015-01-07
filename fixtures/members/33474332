@@ -1,0 +1,187 @@
+{
+    "lon": -2.61,
+    "hometown": "Bristol",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/33474332",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/c\/e\/8\/member_35996552.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/c\/e\/8\/highres_35996552.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/c\/e\/8\/thumb_35996552.jpeg",
+        "photo_id": 35996552,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/d\/c\/e\/8\/highres_35996552.jpeg"
+    },
+    "country": "gb",
+    "city": "Southville",
+    "id": 33474332,
+    "visited": 1403281741000,
+    "topics": [
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 101960,
+            "urlkey": "nodejs",
+            "name": "nodeJS"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 10102,
+            "urlkey": "internetpro",
+            "name": "Internet Professionals"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 389,
+            "urlkey": "smallbiz",
+            "name": "Small Business"
+        },
+        {
+            "id": 21123,
+            "urlkey": "hacking",
+            "name": "Hacking"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 121802,
+            "urlkey": "mongodb",
+            "name": "mongoDB"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 16673,
+            "urlkey": "couchdb",
+            "name": "couchdb"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 357491,
+            "urlkey": "southville",
+            "name": "Southville"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 10358,
+            "urlkey": "drupal",
+            "name": "Drupal"
+        }
+    ],
+    "joined": 1333963357000,
+    "bio": "Web Application Developer: .NET, ASP.NET, JavaScript front-end, Node.js and Systems Interfacing.  Currently working for North Bristol NHS Trust.\r\nStarted writing Canvas game.",
+    "name": "Duncan Wilkie",
+    "other_services": {
+        "twitter": {
+            "identifier": "@MRdNk"
+        }
+    },
+    "lat": 51.44,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/33474332\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/d\/c\/e\/8\/member_35996552.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 33474332,
+    "created": 1333963357000,
+    "updated": 1333963362000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-06-20 16:29:01.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

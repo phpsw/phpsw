@@ -1,0 +1,309 @@
+{
+    "lon": -0.14,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/13852172",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "city": "London",
+    "country": "gb",
+    "id": 13852172,
+    "visited": 1410036056000,
+    "topics": [
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 189,
+            "urlkey": "java",
+            "name": "Java"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        },
+        {
+            "id": 17703,
+            "urlkey": "london",
+            "name": "London"
+        },
+        {
+            "id": 19724,
+            "urlkey": "android",
+            "name": "Android"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1369,
+            "urlkey": "ia",
+            "name": "Information Architecture"
+        },
+        {
+            "id": 38593,
+            "urlkey": "silverstripe",
+            "name": "SilverStripe"
+        },
+        {
+            "id": 28990,
+            "urlkey": "cms",
+            "name": "CMS (Content Management Systems)"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 496,
+            "urlkey": "gamedev",
+            "name": "Game Development"
+        },
+        {
+            "id": 186,
+            "urlkey": "photoshop",
+            "name": "Photoshop"
+        },
+        {
+            "id": 1707,
+            "urlkey": "dreamweaver",
+            "name": "Dreamweaver"
+        },
+        {
+            "id": 52276,
+            "urlkey": "sitecore-cms",
+            "name": "Sitecore CMS"
+        },
+        {
+            "id": 53086,
+            "urlkey": "sitecore",
+            "name": "Sitecore"
+        },
+        {
+            "id": 827,
+            "urlkey": "dotnet",
+            "name": ".NET"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 2109,
+            "urlkey": "sysadmin",
+            "name": "System Administration"
+        },
+        {
+            "id": 15568,
+            "urlkey": "information-technology",
+            "name": "Information Technology"
+        },
+        {
+            "id": 10105,
+            "urlkey": "mswindows",
+            "name": "Microsoft Windows"
+        },
+        {
+            "id": 26802,
+            "urlkey": "microsoft-windows-server",
+            "name": "Microsoft Windows Server"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 9886,
+            "urlkey": "ria",
+            "name": "Rich Internet Applications"
+        },
+        {
+            "id": 78566,
+            "urlkey": "css3",
+            "name": "css3"
+        },
+        {
+            "id": 10464,
+            "urlkey": "salesforce",
+            "name": "Salesforce.com"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 127567,
+            "urlkey": "ios-development",
+            "name": "iOS Development"
+        },
+        {
+            "id": 2260,
+            "urlkey": "csharp",
+            "name": "C#"
+        },
+        {
+            "id": 25435,
+            "urlkey": "test-driven-development",
+            "name": "Test Driven Development"
+        },
+        {
+            "id": 20243,
+            "urlkey": "episerver",
+            "name": "EPiServer"
+        },
+        {
+            "id": 101960,
+            "urlkey": "nodejs",
+            "name": "nodeJS"
+        },
+        {
+            "id": 17936,
+            "urlkey": "scala",
+            "name": "Scala"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        }
+    ],
+    "joined": 1405967760000,
+    "bio": "developer",
+    "name": "Tahina",
+    "other_services": [],
+    "lat": 51.52,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/13852172\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/c\/2\/6\/member_147671302.jpeg",
+    "answers": [
+        {
+            "answer": "debugging",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "not proficient enough",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/c\/2\/6\/member_147671302.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/c\/2\/6\/highres_147671302.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/c\/2\/6\/thumb_147671302.jpeg",
+        "photo_id": 147671302,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/c\/2\/6\/highres_147671302.jpeg"
+    },
+    "member_id": 13852172,
+    "created": 1405967760000,
+    "updated": 1405967803000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-09-06 20:40:56.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

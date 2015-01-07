@@ -1,0 +1,34 @@
+{
+    "member": {
+        "name": "Steve Lacey",
+        "member_id": 13915585
+    },
+    "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/6\/0\/6\/a\/600_419064682.jpeg",
+    "created": 1412844296000,
+    "updated": 1412869937000,
+    "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/6\/0\/6\/a\/highres_419064682.jpeg",
+    "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/6\/0\/6\/a\/thumb_419064682.jpeg",
+    "photo_album": {
+        "group_id": 2833232,
+        "event_id": "208017562",
+        "photo_album_id": 25037452
+    },
+    "photo_id": 419064682,
+    "id": 419064682,
+    "album": {
+        "title": "Lightning talks",
+        "album_photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/5\/f\/d\/4\/600_419064532.jpeg",
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/5\/f\/d\/4\/highres_419064532.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/5\/f\/d\/4\/thumb_419064532.jpeg",
+            "photo_id": 419064532
+        },
+        "created": 1412844226000,
+        "updated": 1412870081000,
+        "group_id": 2833232,
+        "event_id": "208017562",
+        "photo_album_id": 25037452,
+        "photo_count": 23,
+        "id": 25037452
+    }
+}

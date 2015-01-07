@@ -1,0 +1,34 @@
+{
+    "member": {
+        "name": "Steve Lacey",
+        "member_id": 13915585
+    },
+    "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/a\/b\/2\/4\/600_408523812.jpeg",
+    "created": 1410444907000,
+    "updated": 1410452244000,
+    "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/a\/b\/2\/4\/highres_408523812.jpeg",
+    "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/a\/b\/2\/4\/thumb_408523812.jpeg",
+    "photo_album": {
+        "group_id": 2833232,
+        "event_id": "201441732",
+        "photo_album_id": 24429552
+    },
+    "photo_id": 408523812,
+    "id": 408523812,
+    "album": {
+        "title": "Design patterns",
+        "album_photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/a\/9\/2\/6\/600_408523302.jpeg",
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/a\/9\/2\/6\/highres_408523302.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/a\/9\/2\/6\/thumb_408523302.jpeg",
+            "photo_id": 408523302
+        },
+        "created": 1410444848000,
+        "updated": 1410615626000,
+        "group_id": 2833232,
+        "event_id": "201441732",
+        "photo_album_id": 24429552,
+        "photo_count": 16,
+        "id": 24429552
+    }
+}

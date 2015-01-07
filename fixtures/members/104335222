@@ -1,0 +1,81 @@
+{
+    "lon": -2.36,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/104335222",
+    "state": "A4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/6\/0\/a\/member_241809738.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/2\/6\/0\/a\/highres_241809738.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/2\/6\/0\/a\/thumb_241809738.jpeg",
+        "photo_id": 241809738,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/2\/6\/0\/a\/highres_241809738.jpeg"
+    },
+    "city": "Bath",
+    "country": "gb",
+    "id": 104335222,
+    "visited": 1420459935000,
+    "topics": [
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 60043,
+            "urlkey": "open-data",
+            "name": "Open Data"
+        }
+    ],
+    "joined": 1416997625000,
+    "name": "Cole Henley",
+    "other_services": [],
+    "lat": 51.39,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/104335222\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/6\/0\/a\/member_241809738.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 104335222,
+    "updated": 1416997645000,
+    "created": 1416997625000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-05 12:12:15.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

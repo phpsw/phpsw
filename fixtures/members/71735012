@@ -1,0 +1,97 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/71735012",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/9\/d\/6\/member_84899862.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/e\/9\/d\/6\/highres_84899862.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/e\/9\/d\/6\/thumb_84899862.jpeg",
+        "photo_id": 84899862,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/e\/9\/d\/6\/highres_84899862.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 71735012,
+    "visited": 1411052579000,
+    "topics": [
+        {
+            "id": 15940,
+            "urlkey": "movie-nights",
+            "name": "Movie Nights"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        }
+    ],
+    "joined": 1354637028000,
+    "bio": "Hi",
+    "name": "Tom Radcliffe",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/71735012\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/9\/d\/6\/member_84899862.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 71735012,
+    "created": 1354637028000,
+    "updated": 1354637029000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-09-18 15:02:59.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

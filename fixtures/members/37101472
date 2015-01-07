@@ -1,0 +1,115 @@
+{
+    "lon": -1.78,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/37101472",
+    "state": "P8",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/5\/c\/e\/member_39845582.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/5\/c\/e\/highres_39845582.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/1\/5\/c\/e\/thumb_39845582.jpeg",
+        "photo_id": 39845582,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/5\/c\/e\/highres_39845582.jpeg"
+    },
+    "city": "Swindon",
+    "country": "gb",
+    "id": 37101472,
+    "visited": 1418052575000,
+    "topics": [
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 33089,
+            "urlkey": "saas-software-as-a-service",
+            "name": "SaaS (Software as a Service)"
+        },
+        {
+            "id": 19882,
+            "urlkey": "entrepreneurship",
+            "name": "Entrepreneurship"
+        },
+        {
+            "id": 543782,
+            "urlkey": "phone-pad-tablet-development",
+            "name": "Phone - Pad - Tablet Development"
+        },
+        {
+            "id": 389,
+            "urlkey": "smallbiz",
+            "name": "Small Business"
+        },
+        {
+            "id": 76136,
+            "urlkey": "non-profit-organizations",
+            "name": "Non Profit Organizations"
+        },
+        {
+            "id": 25598,
+            "urlkey": "charity",
+            "name": "Charity"
+        },
+        {
+            "id": 7203,
+            "urlkey": "edtech",
+            "name": "Education & Technology"
+        },
+        {
+            "id": 735342,
+            "urlkey": "not-for-profits",
+            "name": "not for profits"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        }
+    ],
+    "joined": 1418052575000,
+    "name": "Ross Wintle",
+    "other_services": {
+        "twitter": {
+            "identifier": "@magicroundabout"
+        }
+    },
+    "lat": 51.55,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/37101472\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/1\/5\/c\/e\/member_39845582.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 37101472,
+    "updated": 1418052575000,
+    "created": 1418052575000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-08 15:29:35.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

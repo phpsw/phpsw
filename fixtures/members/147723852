@@ -1,0 +1,112 @@
+{
+    "lon": -2.58,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/147723852",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/9\/e\/8\/member_199167112.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/9\/e\/8\/highres_199167112.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/9\/e\/8\/thumb_199167112.jpeg",
+        "photo_id": 199167112,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/9\/e\/8\/highres_199167112.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 147723852,
+    "visited": 1402506440000,
+    "topics": [
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 18371,
+            "urlkey": "intuition",
+            "name": "Intuition"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        }
+    ],
+    "joined": 1402344444000,
+    "bio": "Student web developer at UWE",
+    "name": "Nichole Dwight",
+    "other_services": [],
+    "lat": 51.5,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/147723852\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/9\/e\/8\/member_199167112.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 147723852,
+    "created": 1402344444000,
+    "updated": 1402344570000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-06-11 17:07:20.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

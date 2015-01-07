@@ -1,0 +1,71 @@
+{
+    "lon": -2.59,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/182509050",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "visited": 1418228273000,
+    "id": 182509050,
+    "topics": [
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        }
+    ],
+    "joined": 1415808437000,
+    "name": "Ollie",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/182509050\/",
+    "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/1\/0\/c\/member_241464844.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/1\/0\/c\/member_241464844.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/1\/0\/c\/highres_241464844.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/1\/0\/c\/thumb_241464844.jpeg",
+        "photo_id": 241464844,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/6\/1\/0\/c\/highres_241464844.jpeg"
+    },
+    "member_id": 182509050,
+    "updated": 1415808452000,
+    "created": 1415808437000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-12-10 16:17:53.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

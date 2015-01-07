@@ -1,0 +1,251 @@
+{
+    "lon": -2.12,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/19058221",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/7\/1\/7\/member_22046391.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/7\/1\/7\/highres_22046391.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/7\/1\/7\/thumb_22046391.jpeg",
+        "photo_id": 22046391,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/7\/1\/7\/highres_22046391.jpeg"
+    },
+    "city": "Up Hatherley",
+    "country": "gb",
+    "id": 19058221,
+    "visited": 1420466198000,
+    "topics": [
+        {
+            "id": 235,
+            "urlkey": "coffee",
+            "name": "Coffee"
+        },
+        {
+            "id": 15029,
+            "urlkey": "film",
+            "name": "Film"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 21123,
+            "urlkey": "hacking",
+            "name": "Hacking"
+        },
+        {
+            "id": 134115,
+            "urlkey": "hackathon",
+            "name": "hackathon"
+        },
+        {
+            "id": 128595,
+            "urlkey": "internet-startups",
+            "name": "Internet Startups"
+        },
+        {
+            "id": 18062,
+            "urlkey": "big-data",
+            "name": "Big Data"
+        },
+        {
+            "id": 58162,
+            "urlkey": "nosql",
+            "name": "NoSQL"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 5938,
+            "urlkey": "xp",
+            "name": "Extreme Programming"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 55324,
+            "urlkey": "data-mining",
+            "name": "Data Mining"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 317,
+            "urlkey": "scifi",
+            "name": "Sci-Fi\/Fantasy"
+        },
+        {
+            "id": 15018,
+            "urlkey": "music",
+            "name": "Music"
+        },
+        {
+            "id": 4471,
+            "urlkey": "videogame",
+            "name": "Video Games"
+        },
+        {
+            "id": 40126,
+            "urlkey": "game-night",
+            "name": "Game Night"
+        },
+        {
+            "id": 10581,
+            "urlkey": "social",
+            "name": "Social"
+        },
+        {
+            "id": 8652,
+            "urlkey": "livemusic",
+            "name": "Live Music"
+        },
+        {
+            "id": 18071,
+            "urlkey": "gaming",
+            "name": "Gaming"
+        },
+        {
+            "id": 1201,
+            "urlkey": "movies",
+            "name": "Watching Movies"
+        },
+        {
+            "id": 15992,
+            "urlkey": "games",
+            "name": "Games"
+        },
+        {
+            "id": 19585,
+            "urlkey": "board-games",
+            "name": "Board Games"
+        },
+        {
+            "id": 321351,
+            "urlkey": "meet-new-people-in-bristol",
+            "name": "meet new people in Bristol"
+        },
+        {
+            "id": 80749,
+            "urlkey": "apis",
+            "name": "APIs"
+        },
+        {
+            "id": 197221,
+            "urlkey": "developer-evangelism",
+            "name": "Developer Evangelism"
+        }
+    ],
+    "joined": 1399988870000,
+    "bio": "PHP dev at BluBolt in Bath. Love's building things that have no point in existing beyond because.",
+    "name": "Mike Elsmore",
+    "other_services": {
+        "twitter": {
+            "identifier": "@ukmadlz"
+        }
+    },
+    "lat": 51.88,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/19058221\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/6\/7\/1\/7\/member_22046391.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 19058221,
+    "created": 1399988870000,
+    "updated": 1399988903000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-05 13:56:38.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

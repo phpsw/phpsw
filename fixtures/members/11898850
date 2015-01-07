@@ -1,0 +1,151 @@
+{
+    "lon": -2.58,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/11898850",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/2\/c\/0\/member_237153472.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/2\/c\/0\/highres_237153472.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/2\/c\/0\/thumb_237153472.jpeg",
+        "photo_id": 237153472,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/2\/c\/0\/highres_237153472.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 11898850,
+    "visited": 1414144230000,
+    "topics": [
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 921262,
+            "urlkey": "d3-js",
+            "name": "d3.js"
+        },
+        {
+            "id": 16137,
+            "urlkey": "jquery",
+            "name": "JQuery"
+        },
+        {
+            "id": 128575,
+            "urlkey": "node-js",
+            "name": "node.js"
+        },
+        {
+            "id": 405512,
+            "urlkey": "backbone-js",
+            "name": "Backbone.js"
+        },
+        {
+            "id": 17628,
+            "urlkey": "programming-languages",
+            "name": "Programming Languages"
+        },
+        {
+            "id": 357491,
+            "urlkey": "southville",
+            "name": "Southville"
+        },
+        {
+            "id": 56555,
+            "urlkey": "javascript-libraries",
+            "name": "JavaScript Libraries"
+        },
+        {
+            "id": 921432,
+            "urlkey": "meteor",
+            "name": "Meteor"
+        },
+        {
+            "id": 632142,
+            "urlkey": "ember-js",
+            "name": "Ember JS"
+        },
+        {
+            "id": 71135,
+            "urlkey": "bristol",
+            "name": "Bristol"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 85951,
+            "urlkey": "javascript-frameworks",
+            "name": "JavaScript Frameworks"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 9876,
+            "urlkey": "freelance",
+            "name": "Freelance"
+        },
+        {
+            "id": 473312,
+            "urlkey": "freelance-in-bristol",
+            "name": "freelance in Bristol"
+        },
+        {
+            "id": 1064,
+            "urlkey": "python",
+            "name": "Python"
+        },
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        }
+    ],
+    "joined": 1414144230000,
+    "name": "Rick Hurst",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/11898850\/",
+    "updated": 1414144491000,
+    "created": 1414144230000,
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/2\/c\/0\/member_237153472.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "member_id": 11898850,
+    "visited_date": {
+        "date": "2014-10-24 09:50:30.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "lon": -2.6,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/125749712",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "city": "Southville",
+    "country": "gb",
+    "id": 125749712,
+    "visited": 1420460717000,
+    "topics": [
+        {
+            "id": 1502,
+            "urlkey": "art",
+            "name": "Art"
+        },
+        {
+            "id": 15720,
+            "urlkey": "professional-networking",
+            "name": "Professional Networking"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        }
+    ],
+    "joined": 1391536208000,
+    "bio": "Web developer",
+    "name": "Bridie Dibble",
+    "other_services": [],
+    "lat": 51.44,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/125749712\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/5\/c\/4\/member_171386052.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/5\/c\/4\/member_171386052.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/5\/c\/4\/highres_171386052.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/5\/c\/4\/thumb_171386052.jpeg",
+        "photo_id": 171386052,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/6\/5\/c\/4\/highres_171386052.jpeg"
+    },
+    "member_id": 125749712,
+    "created": 1391536208000,
+    "updated": 1408967378000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-05 12:25:17.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

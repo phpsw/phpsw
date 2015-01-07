@@ -1,0 +1,124 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/64646142",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/1\/7\/2\/member_75449042.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/1\/7\/2\/highres_75449042.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/1\/7\/2\/thumb_75449042.jpeg",
+        "photo_id": 75449042,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/1\/7\/2\/highres_75449042.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 64646142,
+    "visited": 1420207822000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 18071,
+            "urlkey": "gaming",
+            "name": "Gaming"
+        }
+    ],
+    "joined": 1400586372000,
+    "bio": "Senior Software Engineer \/ Workflow @ Helastel",
+    "name": "Jon Hazan",
+    "other_services": {
+        "twitter": {
+            "identifier": "@hazanjon"
+        },
+        "facebook": {
+            "identifier": "https:\/\/www.facebook.com\/hazanjon"
+        }
+    },
+    "lat": 51.43,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/64646142\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/1\/7\/2\/member_75449042.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 64646142,
+    "created": 1400586372000,
+    "updated": 1400586478000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-02 14:10:22.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

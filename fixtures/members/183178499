@@ -1,0 +1,72 @@
+{
+    "lon": -2.6,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/183178499",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/d\/9\/c\/member_242475772.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/d\/9\/c\/highres_242475772.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/d\/9\/c\/thumb_242475772.jpeg",
+        "photo_id": 242475772,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/d\/9\/c\/highres_242475772.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 183178499,
+    "visited": 1420117356000,
+    "topics": [
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 21681,
+            "urlkey": "startup-businesses",
+            "name": "Startup Businesses"
+        }
+    ],
+    "joined": 1420069785000,
+    "bio": "After a varied career as a Networking Engineer, Technical Instructor, Ethical Hacker and Software Developer; I have now setup my own business aimed at helping SME organizations develop new and existing products through technology.",
+    "name": "Lee Watts",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/183178499\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/d\/9\/c\/member_242475772.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 183178499,
+    "created": 1420069785000,
+    "updated": 1420117384000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2015-01-01 13:02:36.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

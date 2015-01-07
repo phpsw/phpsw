@@ -1,0 +1,75 @@
+{
+    "lon": -2.58,
+    "hometown": "Honolulu",
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/170891602",
+    "state": "E6",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/0\/0\/0\/member_241433248.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/0\/0\/0\/highres_241433248.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/0\/0\/0\/thumb_241433248.jpeg",
+        "photo_id": 241433248,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/0\/0\/0\/highres_241433248.jpeg"
+    },
+    "country": "gb",
+    "city": "Horfield",
+    "id": 170891602,
+    "visited": 1416133846000,
+    "topics": [
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        }
+    ],
+    "joined": 1410701213000,
+    "bio": "Software Engineer @ Brightpearl.",
+    "name": "Albert Rannetsperger",
+    "other_services": [],
+    "lat": 51.48,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/170891602\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/0\/0\/0\/member_241433248.jpeg",
+    "answers": [
+        {
+            "answer": "PHP",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "No",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 170891602,
+    "created": 1410701213000,
+    "updated": 1415713969000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-16 10:30:46.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

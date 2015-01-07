@@ -1,0 +1,75 @@
+{
+    "lon": -2.36,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/123358302",
+    "state": "A4",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/8\/9\/a\/0\/member_163535232.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/8\/9\/a\/0\/thumb_163535232.jpeg",
+        "photo_id": 163535232,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/8\/9\/a\/0\/member_163535232.jpeg"
+    },
+    "city": "Bath",
+    "country": "gb",
+    "id": 123358302,
+    "visited": 1415970034000,
+    "topics": [
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        }
+    ],
+    "joined": 1415970034000,
+    "name": "Rhys Laval",
+    "other_services": [],
+    "lat": 51.38,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/123358302\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/8\/9\/a\/0\/member_163535232.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 123358302,
+    "updated": 1415970034000,
+    "created": 1415970034000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-14 13:00:34.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "lon": -0.09,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/141310072",
+    "state": "17",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/5\/a\/4\/member_223494692.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/5\/a\/4\/highres_223494692.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/5\/a\/4\/thumb_223494692.jpeg",
+        "photo_id": 223494692,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/5\/a\/4\/highres_223494692.jpeg"
+    },
+    "city": "London",
+    "country": "gb",
+    "id": 141310072,
+    "visited": 1414409134000,
+    "topics": [
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 789,
+            "urlkey": "mysql",
+            "name": "MySQL"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        }
+    ],
+    "joined": 1409661645000,
+    "bio": "Senior Dev. at Just Eat. Working with EPOS systems.",
+    "name": "bartosz bibersztajn",
+    "other_services": [],
+    "lat": 51.52,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/141310072\/",
+    "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/d\/5\/a\/4\/member_223494692.jpeg",
+    "answers": [
+        {
+            "answer": "PHP,JS",
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "answer": "-",
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 141310072,
+    "created": 1409661645000,
+    "updated": 1409662524000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-10-27 11:25:34.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

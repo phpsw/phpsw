@@ -1,0 +1,307 @@
+{
+    "lon": -2.61,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/52583812",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/9\/4\/4\/member_59962852.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/9\/4\/4\/highres_59962852.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/5\/9\/4\/4\/thumb_59962852.jpeg",
+        "photo_id": 59962852,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/9\/4\/4\/highres_59962852.jpeg"
+    },
+    "city": "Clifton",
+    "country": "gb",
+    "id": 52583812,
+    "visited": 1415848615000,
+    "topics": [
+        {
+            "id": 107569,
+            "urlkey": "philosophy-discussions",
+            "name": "Philosophy Discussions"
+        },
+        {
+            "id": 17919,
+            "urlkey": "free-thinking",
+            "name": "Free Thinking"
+        },
+        {
+            "id": 15083,
+            "urlkey": "intellectual-discussion",
+            "name": "Intellectual Discussion"
+        },
+        {
+            "id": 849,
+            "urlkey": "philosophy",
+            "name": "Philosophy"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 10209,
+            "urlkey": "web",
+            "name": "Web Technology"
+        },
+        {
+            "id": 53518,
+            "urlkey": "html",
+            "name": "HTML"
+        },
+        {
+            "id": 781,
+            "urlkey": "graphicdesign",
+            "name": "Graphic Design"
+        },
+        {
+            "id": 417,
+            "urlkey": "webstandards",
+            "name": "Web Standards"
+        },
+        {
+            "id": 78565,
+            "urlkey": "html5",
+            "name": "HTML5"
+        },
+        {
+            "id": 1973,
+            "urlkey": "css",
+            "name": "CSS"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        },
+        {
+            "id": 455,
+            "urlkey": "php",
+            "name": "PHP"
+        },
+        {
+            "id": 7029,
+            "urlkey": "javascript",
+            "name": "JavaScript"
+        },
+        {
+            "id": 10102,
+            "urlkey": "internetpro",
+            "name": "Internet Professionals"
+        },
+        {
+            "id": 10579,
+            "urlkey": "technology",
+            "name": "Technology"
+        },
+        {
+            "id": 19243,
+            "urlkey": "user-experience",
+            "name": "User Experience"
+        },
+        {
+            "id": 65172,
+            "urlkey": "test-automation",
+            "name": "Test Automation"
+        },
+        {
+            "id": 38660,
+            "urlkey": "lean-startup",
+            "name": "Lean Startup"
+        },
+        {
+            "id": 25435,
+            "urlkey": "test-driven-development",
+            "name": "Test Driven Development"
+        },
+        {
+            "id": 10043,
+            "urlkey": "scrum",
+            "name": "Scrum"
+        },
+        {
+            "id": 15585,
+            "urlkey": "online-marketing",
+            "name": "Online Marketing"
+        },
+        {
+            "id": 1369,
+            "urlkey": "ia",
+            "name": "Information Architecture"
+        },
+        {
+            "id": 15708,
+            "urlkey": "corporate-communications",
+            "name": "Corporate Communications"
+        },
+        {
+            "id": 24417,
+            "urlkey": "content-strategy",
+            "name": "Content Strategy"
+        },
+        {
+            "id": 26910,
+            "urlkey": "content-management",
+            "name": "Content Management"
+        },
+        {
+            "id": 64890,
+            "urlkey": "content-marketing",
+            "name": "Content Marketing"
+        },
+        {
+            "id": 3833,
+            "urlkey": "softwaredev",
+            "name": "Software Development"
+        },
+        {
+            "id": 20346,
+            "urlkey": "android-developers",
+            "name": "Android Development"
+        },
+        {
+            "id": 172430,
+            "urlkey": "cross-mobile-development",
+            "name": "Cross Mobile Development"
+        },
+        {
+            "id": 16216,
+            "urlkey": "mobile-technology",
+            "name": "Mobile Technology"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 15616,
+            "urlkey": "iphone",
+            "name": "iPhone"
+        },
+        {
+            "id": 127567,
+            "urlkey": "ios-development",
+            "name": "iOS Development"
+        },
+        {
+            "id": 15167,
+            "urlkey": "cloud-computing",
+            "name": "Cloud Computing"
+        },
+        {
+            "id": 9696,
+            "urlkey": "newtech",
+            "name": "New Technology"
+        },
+        {
+            "id": 142180,
+            "urlkey": "openstack",
+            "name": "OpenStack"
+        },
+        {
+            "id": 88996,
+            "urlkey": "iaas-and-cloud-computing",
+            "name": "IAAS and Cloud Computing"
+        },
+        {
+            "id": 21549,
+            "urlkey": "agile-project-management",
+            "name": "Agile Project Management"
+        },
+        {
+            "id": 20479,
+            "urlkey": "virtualization",
+            "name": "Virtualization"
+        },
+        {
+            "id": 111904,
+            "urlkey": "virtualization-and-cloud-computing",
+            "name": "Virtualization and Cloud Computing"
+        },
+        {
+            "id": 103090,
+            "urlkey": "paas-and-cloud-computing",
+            "name": "PaaS and Cloud Computing"
+        },
+        {
+            "id": 107634,
+            "urlkey": "paas-platform-as-a-service",
+            "name": "PaaS: Platform as a Service"
+        },
+        {
+            "id": 946612,
+            "urlkey": "open-paas",
+            "name": "Open PaaS"
+        },
+        {
+            "id": 107633,
+            "urlkey": "iaas-infrastructure-as-a-service",
+            "name": "IaaS: Infrastructure as a Service"
+        },
+        {
+            "id": 134043,
+            "urlkey": "cloud",
+            "name": "Cloud"
+        },
+        {
+            "id": 291351,
+            "urlkey": "cloud-storage",
+            "name": "Cloud Storage"
+        },
+        {
+            "id": 8304,
+            "urlkey": "wordpress",
+            "name": "WordPress"
+        },
+        {
+            "id": 1480,
+            "urlkey": "acappella",
+            "name": "A Cappella"
+        }
+    ],
+    "joined": 1370078369000,
+    "bio": "Musician, photographer and IT\/web specialist in Bristol",
+    "name": "Iain",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/52583812\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/5\/9\/4\/4\/member_59962852.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 52583812,
+    "created": 1370078369000,
+    "updated": 1415848664000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-13 03:16:55.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

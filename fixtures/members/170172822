@@ -1,0 +1,77 @@
+{
+    "lon": -2.58,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/170172822",
+    "state": "B7",
+    "self": {
+        "common": []
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 170172822,
+    "visited": 1415802013000,
+    "topics": [
+        {
+            "id": 659,
+            "urlkey": "webdesign",
+            "name": "Web Design"
+        },
+        {
+            "id": 108403,
+            "urlkey": "technology-startups",
+            "name": "Technology Startups"
+        },
+        {
+            "id": 15582,
+            "urlkey": "web-development",
+            "name": "Web Development"
+        },
+        {
+            "id": 20629,
+            "urlkey": "courses-and-workshops",
+            "name": "Courses and Workshops"
+        }
+    ],
+    "joined": 1414398487000,
+    "bio": "Web developer currently using PHP",
+    "name": "Christina Daly",
+    "other_services": [],
+    "lat": 51.45,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/170172822\/",
+    "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/4\/3\/4\/6\/member_236417222.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "photo": {
+        "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/4\/3\/4\/6\/member_236417222.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/3\/4\/6\/highres_236417222.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/4\/3\/4\/6\/thumb_236417222.jpeg",
+        "photo_id": 236417222,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/3\/4\/6\/highres_236417222.jpeg"
+    },
+    "member_id": 170172822,
+    "created": 1414398487000,
+    "updated": 1414398487000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2014-11-12 14:20:13.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

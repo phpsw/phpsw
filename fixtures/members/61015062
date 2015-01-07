@@ -1,0 +1,77 @@
+{
+    "lon": -2.62,
+    "status": "active",
+    "link": "http:\/\/www.meetup.com\/members\/61015062",
+    "state": "M3",
+    "self": {
+        "common": []
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/e\/1\/a\/member_70871802.jpeg",
+        "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/e\/1\/a\/highres_70871802.jpeg",
+        "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/e\/1\/a\/thumb_70871802.jpeg",
+        "photo_id": 70871802,
+        "url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/2\/e\/1\/a\/highres_70871802.jpeg"
+    },
+    "city": "Bristol",
+    "country": "gb",
+    "id": 61015062,
+    "visited": 1354834266000,
+    "topics": [
+        {
+            "id": 563,
+            "urlkey": "opensource",
+            "name": "Open Source"
+        },
+        {
+            "id": 17627,
+            "urlkey": "programming",
+            "name": "Programming"
+        },
+        {
+            "id": 23837,
+            "urlkey": "php-application-development",
+            "name": "PHP Application Development"
+        },
+        {
+            "id": 21441,
+            "urlkey": "mobile-development",
+            "name": "Mobile Development"
+        }
+    ],
+    "joined": 1346760295000,
+    "bio": "Hi, I've recently retired from work and I'm looking forward to improving my PHP knowledge.",
+    "name": "Robert Morley",
+    "other_services": [],
+    "lat": 51.46,
+    "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/61015062\/",
+    "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/2\/e\/1\/a\/member_70871802.jpeg",
+    "answers": [
+        {
+            "question": "What topics would you be interested in seeing talks about?",
+            "question_id": 7642622
+        },
+        {
+            "question": "Would you be interested in giving a talk? If so, what on?",
+            "question_id": 7642612
+        }
+    ],
+    "member_id": 61015062,
+    "created": 1346760295000,
+    "updated": 1346760296000,
+    "group": {
+        "id": 2833232,
+        "created": 1321635579000,
+        "group_lat": 51.459999084473,
+        "name": "PHPSW",
+        "group_lon": -2.5899999141693,
+        "join_mode": "open",
+        "urlname": "php-sw",
+        "who": "Members"
+    },
+    "visited_date": {
+        "date": "2012-12-06 22:51:06.000000",
+        "timezone_type": 1,
+        "timezone": "+00:00"
+    }
+}

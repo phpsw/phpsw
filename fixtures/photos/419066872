@@ -1,0 +1,34 @@
+{
+    "member": {
+        "name": "Matt Webley",
+        "member_id": 159981312
+    },
+    "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/6\/8\/f\/8\/600_419066872.jpeg",
+    "created": 1412846750000,
+    "updated": 1412870030000,
+    "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/6\/8\/f\/8\/highres_419066872.jpeg",
+    "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/6\/8\/f\/8\/thumb_419066872.jpeg",
+    "photo_album": {
+        "group_id": 2833232,
+        "event_id": "208017562",
+        "photo_album_id": 25037452
+    },
+    "photo_id": 419066872,
+    "id": 419066872,
+    "album": {
+        "title": "Lightning talks",
+        "album_photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/5\/f\/d\/4\/600_419064532.jpeg",
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/5\/f\/d\/4\/highres_419064532.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/5\/f\/d\/4\/thumb_419064532.jpeg",
+            "photo_id": 419064532
+        },
+        "created": 1412844226000,
+        "updated": 1412870081000,
+        "group_id": 2833232,
+        "event_id": "208017562",
+        "photo_album_id": 25037452,
+        "photo_count": 23,
+        "id": 25037452
+    }
+}

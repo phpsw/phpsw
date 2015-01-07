@@ -1,0 +1,20 @@
+{
+    "zip": "BS7 0SL",
+    "lon": "-2.5799999237060547",
+    "photo_url": "",
+    "link": "http:\/\/www.meetup.com\/members\/166128312",
+    "state": "E6",
+    "country": "gb",
+    "city": "Bristol",
+    "member_id": "166128312",
+    "created": "Thu Sep 11 11:06:49 EDT 2014",
+    "name": "Tim Corkerton",
+    "rating": "",
+    "comment": "This was my first visit to PHPSW and I'll definitely be coming again. I desperately need to get better with more modern PHP thinking. Thanks for the talks, beer and pizza.",
+    "lat": "51.5",
+    "created_date": {
+        "date": "2014-09-11 11:06:49.000000",
+        "timezone_type": 2,
+        "timezone": "EDT"
+    }
+}
