@@ -1,0 +1,22 @@
+{
+    "description": null,
+    "title": "Scaling wild LAMP for managed hosting<br>",
+    "id": "158749832-scaling-wild-lamp-for-managed-hosting",
+    "event": "158749832",
+    "speaker": {
+        "id": "clement-debiaune",
+        "name": "Cl\u00e9ment Debiaune",
+        "slug": "clement-debiaune",
+        "bio": "Freelance",
+        "url": "https:\/\/twitter.com\/EUnibozu",
+        "twitter": "EUnibozu",
+        "photo": {
+            "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/EUnibozu?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/EUnibozu?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/EUnibozu?size=original",
+            "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/EUnibozu?size=original"
+        },
+        "photos": []
+    },
+    "slides": "http:\/\/slid.es\/clementdebiaune\/scaling-wild-lamp-for-managed-hosting"
+}

@@ -1,0 +1,26 @@
+{
+    "description": null,
+    "title": "Sensu at Brightpearl",
+    "id": "183215072-sensu-at-brightpearl",
+    "event": "183215072",
+    "speaker": {
+        "id": "dave-tibbs",
+        "name": "Dave Tibbs",
+        "slug": "dave-tibbs",
+        "bio": "Systems Administrator at <a href=\"http:\/\/www.brightpearl.com\">Brightpearl<\/a> US",
+        "url": "https:\/\/twitter.com\/LowlySysAdm1n",
+        "twitter": "LowlySysAdm1n",
+        "photo": {
+            "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/LowlySysAdm1n?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/LowlySysAdm1n?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/LowlySysAdm1n?size=original",
+            "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/LowlySysAdm1n?size=original"
+        },
+        "organisation": {
+            "name": "Brightpearl",
+            "url": "http:\/\/www.brightpearl.com"
+        },
+        "photos": []
+    },
+    "slides": "http:\/\/www.slideshare.net\/davetibbs\/sensu-at-brightpearl-36142201"
+}

@@ -1,0 +1,15 @@
+{
+    "id": "phil-sturgeon",
+    "name": "Phil Sturgeon",
+    "slug": "phil-sturgeon",
+    "bio": "Englishman temporarily not in New York. PHP Town Crier. Charity Biker. Cider Drinker. Troll Slayer.",
+    "url": "https:\/\/twitter.com\/philsturgeon",
+    "twitter": "philsturgeon",
+    "photo": {
+        "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/philsturgeon?size=bigger",
+        "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/philsturgeon?size=original",
+        "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/philsturgeon?size=original",
+        "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/philsturgeon?size=original"
+    },
+    "photos": []
+}

@@ -1,0 +1,182 @@
+{
+    "description": null,
+    "title": "<a href=\"http:\/\/www.terraform.io\">Terraform<\/a>",
+    "id": "208017562-terraform",
+    "event": "208017562",
+    "speaker": {
+        "id": "andy-gale",
+        "name": "Andy Gale",
+        "slug": "andy-gale",
+        "bio": "Web Consultant at <a href=\"http:\/\/hellofutu.re\">Hello Future<\/a>",
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/d\/5\/2\/highres_172312562.jpeg",
+        "member": {
+            "lon": -2.6,
+            "status": "active",
+            "link": "http:\/\/www.meetup.com\/members\/17672291",
+            "state": "B7",
+            "self": {
+                "common": []
+            },
+            "photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/d\/5\/2\/member_172312562.jpeg",
+                "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/d\/5\/2\/highres_172312562.jpeg",
+                "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/d\/5\/2\/thumb_172312562.jpeg",
+                "photo_id": 172312562,
+                "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/d\/5\/2\/highres_172312562.jpeg"
+            },
+            "city": "Bristol",
+            "country": "gb",
+            "id": 17672291,
+            "visited": 1420545043000,
+            "topics": [
+                {
+                    "id": 473312,
+                    "urlkey": "freelance-in-bristol",
+                    "name": "freelance in Bristol"
+                },
+                {
+                    "id": 17627,
+                    "urlkey": "programming",
+                    "name": "Programming"
+                },
+                {
+                    "id": 15582,
+                    "urlkey": "web-development",
+                    "name": "Web Development"
+                },
+                {
+                    "id": 71135,
+                    "urlkey": "bristol",
+                    "name": "Bristol"
+                },
+                {
+                    "id": 9696,
+                    "urlkey": "newtech",
+                    "name": "New Technology"
+                },
+                {
+                    "id": 21441,
+                    "urlkey": "mobile-development",
+                    "name": "Mobile Development"
+                },
+                {
+                    "id": 10579,
+                    "urlkey": "technology",
+                    "name": "Technology"
+                },
+                {
+                    "id": 7029,
+                    "urlkey": "javascript",
+                    "name": "JavaScript"
+                },
+                {
+                    "id": 455,
+                    "urlkey": "php",
+                    "name": "PHP"
+                },
+                {
+                    "id": 563,
+                    "urlkey": "opensource",
+                    "name": "Open Source"
+                },
+                {
+                    "id": 78565,
+                    "urlkey": "html5",
+                    "name": "HTML5"
+                },
+                {
+                    "id": 431622,
+                    "urlkey": "opscode-chef",
+                    "name": "Opscode Chef"
+                },
+                {
+                    "id": 789,
+                    "urlkey": "mysql",
+                    "name": "MySQL"
+                },
+                {
+                    "id": 58162,
+                    "urlkey": "nosql",
+                    "name": "NoSQL"
+                },
+                {
+                    "id": 3833,
+                    "urlkey": "softwaredev",
+                    "name": "Software Development"
+                },
+                {
+                    "id": 1973,
+                    "urlkey": "css",
+                    "name": "CSS"
+                },
+                {
+                    "id": 18062,
+                    "urlkey": "big-data",
+                    "name": "Big Data"
+                },
+                {
+                    "id": 25435,
+                    "urlkey": "test-driven-development",
+                    "name": "Test Driven Development"
+                },
+                {
+                    "id": 27922,
+                    "urlkey": "continuous-integration",
+                    "name": "Continuous Integration"
+                },
+                {
+                    "id": 15167,
+                    "urlkey": "cloud-computing",
+                    "name": "Cloud Computing"
+                }
+            ],
+            "joined": 1347315437000,
+            "bio": "DevOps Consultant at Hello Future.",
+            "name": "Andy Gale",
+            "other_services": [],
+            "lat": 51.45,
+            "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/17672291\/",
+            "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/d\/5\/2\/member_172312562.jpeg",
+            "answers": [
+                {
+                    "question": "What topics would you be interested in seeing talks about?",
+                    "question_id": 7642622
+                },
+                {
+                    "question": "Would you be interested in giving a talk? If so, what on?",
+                    "question_id": 7642612
+                }
+            ],
+            "member_id": 17672291,
+            "created": 1347315437000,
+            "updated": 1415813939000,
+            "group": {
+                "id": 2833232,
+                "created": 1321635579000,
+                "group_lat": 51.459999084473,
+                "name": "PHPSW",
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw",
+                "who": "Members"
+            },
+            "visited_date": {
+                "date": "2015-01-06 11:50:43.000000",
+                "timezone_type": 1,
+                "timezone": "+00:00"
+            }
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/d\/5\/2\/member_172312562.jpeg",
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/d\/5\/2\/highres_172312562.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/d\/5\/2\/thumb_172312562.jpeg",
+            "photo_id": 172312562,
+            "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/c\/d\/5\/2\/highres_172312562.jpeg"
+        },
+        "organisation": {
+            "name": "Hello Future",
+            "url": "http:\/\/hellofutu.re"
+        }
+    },
+    "slides": "https:\/\/speakerdeck.com\/andygale\/terraform"
+}

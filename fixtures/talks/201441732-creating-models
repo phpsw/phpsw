@@ -1,0 +1,101 @@
+{
+    "description": "<p>How are you supposed to organise your models in an MVC application? What goes where? What is a service class, a mapper or an entity? This talk will look at the components of the model layer and the options you have when creating your models. We\u2019ll look at the different schools of thought in this area and compare and contrast their strengths and weaknesses with an eye to flexibility and testability. We'll discuss the terminology and also take a look at what a service layer is and see how you use service classes to provide the business logic for your application and hide your persistence code from your controllers. By the end of this session you will be equipped to create excellent, maintainable models in your projects.<\/p>\n",
+    "title": "Creating models<br>",
+    "id": "201441732-creating-models",
+    "event": "201441732",
+    "speaker": {
+        "id": "rob-allen",
+        "name": "Rob Allen",
+        "slug": "rob-allen",
+        "bio": "Software Engineer, ZF contributor and author of <a href=\"http:\/\/www.manning.com\/allen\">Zend Framework in Action<\/a>",
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/highres_190778222.jpeg",
+        "member": {
+            "lon": -2.23,
+            "status": "active",
+            "link": "http:\/\/www.meetup.com\/members\/56661222",
+            "state": "Q4",
+            "self": {
+                "common": []
+            },
+            "photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/member_190778222.jpeg",
+                "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/highres_190778222.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/thumb_190778222.jpeg",
+                "photo_id": 190778222,
+                "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/highres_190778222.jpeg"
+            },
+            "city": "Worcester",
+            "country": "gb",
+            "id": 56661222,
+            "visited": 1420321811000,
+            "topics": [
+                {
+                    "id": 15582,
+                    "urlkey": "web-development",
+                    "name": "Web Development"
+                },
+                {
+                    "id": 35062,
+                    "urlkey": "best-practices-in-it-web-solutions-design-and-dev",
+                    "name": "Best Practices in IT\/Web Solutions Design and Dev"
+                }
+            ],
+            "joined": 1399836819000,
+            "bio": "PHP developer from Worcester.",
+            "name": "Rob Allen",
+            "other_services": {
+                "twitter": {
+                    "identifier": "@akrabat"
+                },
+                "flickr": {
+                    "identifier": "http:\/\/www.flickr.com\/photos\/akrabat\/"
+                }
+            },
+            "lat": 52.19,
+            "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/56661222\/",
+            "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/member_190778222.jpeg",
+            "answers": [
+                {
+                    "question": "What topics would you be interested in seeing talks about?",
+                    "question_id": 7642622
+                },
+                {
+                    "question": "Would you be interested in giving a talk? If so, what on?",
+                    "question_id": 7642612
+                }
+            ],
+            "member_id": 56661222,
+            "created": 1399836819000,
+            "updated": 1399836820000,
+            "group": {
+                "id": 2833232,
+                "created": 1321635579000,
+                "group_lat": 51.459999084473,
+                "name": "PHPSW",
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw",
+                "who": "Members"
+            },
+            "visited_date": {
+                "date": "2015-01-03 21:50:11.000000",
+                "timezone_type": 1,
+                "timezone": "+00:00"
+            }
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/member_190778222.jpeg",
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/highres_190778222.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/thumb_190778222.jpeg",
+            "photo_id": 190778222,
+            "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/highres_190778222.jpeg"
+        },
+        "twitter": "akrabat",
+        "flickr": "akrabat",
+        "organisation": {
+            "name": "Zend Framework in Action",
+            "url": "http:\/\/www.manning.com\/allen"
+        }
+    },
+    "slides": "http:\/\/akrabat.com\/talks\/#cm"
+}

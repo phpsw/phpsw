@@ -1,0 +1,191 @@
+{
+    "id": "philip-manavopoulos",
+    "name": "Philip Manavopoulos",
+    "slug": "philip-manavopoulos",
+    "bio": "Developer at <a href=\"http:\/\/coull.com\">Coull<\/a>, builder of <a href=\"https:\/\/doorbell.io\">Doorbell.io<\/a>",
+    "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/8\/0\/highres_177303712.jpeg",
+    "member": {
+        "lon": -2.59,
+        "hometown": "Athens, Greece",
+        "status": "active",
+        "link": "http:\/\/www.meetup.com\/members\/9816357",
+        "state": "B7",
+        "self": {
+            "common": []
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/8\/0\/member_177303712.jpeg",
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/8\/0\/highres_177303712.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/8\/0\/thumb_177303712.jpeg",
+            "photo_id": 177303712,
+            "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/8\/0\/highres_177303712.jpeg"
+        },
+        "country": "gb",
+        "city": "Bristol",
+        "id": 9816357,
+        "visited": 1420235407000,
+        "topics": [
+            {
+                "id": 53518,
+                "urlkey": "html",
+                "name": "HTML"
+            },
+            {
+                "id": 78565,
+                "urlkey": "html5",
+                "name": "HTML5"
+            },
+            {
+                "id": 7029,
+                "urlkey": "javascript",
+                "name": "JavaScript"
+            },
+            {
+                "id": 128575,
+                "urlkey": "node-js",
+                "name": "node.js"
+            },
+            {
+                "id": 455,
+                "urlkey": "php",
+                "name": "PHP"
+            },
+            {
+                "id": 1973,
+                "urlkey": "css",
+                "name": "CSS"
+            },
+            {
+                "id": 10209,
+                "urlkey": "web",
+                "name": "Web Technology"
+            },
+            {
+                "id": 15582,
+                "urlkey": "web-development",
+                "name": "Web Development"
+            },
+            {
+                "id": 417,
+                "urlkey": "webstandards",
+                "name": "Web Standards"
+            },
+            {
+                "id": 21441,
+                "urlkey": "mobile-development",
+                "name": "Mobile Development"
+            },
+            {
+                "id": 1040,
+                "urlkey": "ruby",
+                "name": "Ruby"
+            },
+            {
+                "id": 10579,
+                "urlkey": "technology",
+                "name": "Technology"
+            },
+            {
+                "id": 1433232,
+                "urlkey": "laravel",
+                "name": "Laravel"
+            },
+            {
+                "id": 563,
+                "urlkey": "opensource",
+                "name": "Open Source"
+            },
+            {
+                "id": 789,
+                "urlkey": "mysql",
+                "name": "MySQL"
+            },
+            {
+                "id": 16137,
+                "urlkey": "jquery",
+                "name": "JQuery"
+            },
+            {
+                "id": 100479,
+                "urlkey": "front-end-development",
+                "name": "Front-end Development"
+            },
+            {
+                "id": 78566,
+                "urlkey": "css3",
+                "name": "css3"
+            },
+            {
+                "id": 17627,
+                "urlkey": "programming",
+                "name": "Programming"
+            },
+            {
+                "id": 140381,
+                "urlkey": "web-mobile-development",
+                "name": "Web & Mobile development"
+            }
+        ],
+        "joined": 1354650036000,
+        "bio": "I've been working as a PHP web developer for the past 5 years.",
+        "name": "Philip Manavopoulos",
+        "other_services": {
+            "flickr": {
+                "identifier": "http:\/\/www.flickr.com\/photos\/manavo\/"
+            },
+            "twitter": {
+                "identifier": "@manavo"
+            },
+            "tumblr": {
+                "identifier": "http:\/\/manavo.tumblr.com\/"
+            }
+        },
+        "lat": 51.46,
+        "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/9816357\/",
+        "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/8\/0\/member_177303712.jpeg",
+        "answers": [
+            {
+                "question": "What topics would you be interested in seeing talks about?",
+                "question_id": 7642622
+            },
+            {
+                "question": "Would you be interested in giving a talk? If so, what on?",
+                "question_id": 7642612
+            }
+        ],
+        "member_id": 9816357,
+        "created": 1354650036000,
+        "updated": 1393620393000,
+        "group": {
+            "id": 2833232,
+            "created": 1321635579000,
+            "group_lat": 51.459999084473,
+            "name": "PHPSW",
+            "group_lon": -2.5899999141693,
+            "join_mode": "open",
+            "urlname": "php-sw",
+            "who": "Members"
+        },
+        "comment": "AWESOME!",
+        "visited_date": {
+            "date": "2015-01-02 21:50:07.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/8\/0\/member_177303712.jpeg",
+        "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/8\/0\/highres_177303712.jpeg",
+        "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/8\/0\/thumb_177303712.jpeg",
+        "photo_id": 177303712,
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/e\/8\/0\/highres_177303712.jpeg"
+    },
+    "flickr": "manavo",
+    "twitter": "manavo",
+    "tumblr": "manavo.tumblr.com",
+    "organisation": {
+        "name": "Coull",
+        "url": "http:\/\/coull.com"
+    },
+    "photos": []
+}

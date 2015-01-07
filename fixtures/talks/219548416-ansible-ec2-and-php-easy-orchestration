@@ -1,0 +1,26 @@
+{
+    "description": null,
+    "title": "Ansible, EC2 and PHP: easy orchestration",
+    "id": "219548416-ansible-ec2-and-php-easy-orchestration",
+    "event": "219548416",
+    "speaker": {
+        "id": "craig-marvelley",
+        "name": "Craig Marvelley",
+        "slug": "craig-marvelley",
+        "bio": "Head of Platform at <a href=\"https:\/\/www.bipsync.com\">Bipsync<\/a>",
+        "url": "https:\/\/twitter.com\/craigmarvelley",
+        "twitter": "craigmarvelley",
+        "photo": {
+            "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/craigmarvelley?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/craigmarvelley?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/craigmarvelley?size=original",
+            "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/craigmarvelley?size=original"
+        },
+        "organisation": {
+            "name": "Bipsync",
+            "url": "https:\/\/www.bipsync.com"
+        },
+        "photos": []
+    },
+    "slides": null
+}

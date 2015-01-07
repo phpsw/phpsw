@@ -1,0 +1,81 @@
+{
+    "description": null,
+    "title": "<a href=\"https:\/\/www.varnish-cache.org\">Varnish<\/a> &amp; <a href=\"http:\/\/en.wikipedia.org\/wiki\/Edge_Side_Includes\">ESI<\/a>",
+    "id": "208017562-varnish-and-esi",
+    "event": "208017562",
+    "speaker": {
+        "id": "ade-slade",
+        "name": "Ade Slade",
+        "slug": "ade-slade",
+        "bio": "PHP Developer at <a href=\"http:\/\/www.basekit.com\">BaseKit<\/a>",
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/highres_241511253.jpeg",
+        "member": {
+            "lon": -2.62,
+            "status": "active",
+            "link": "http:\/\/www.meetup.com\/members\/31030432",
+            "state": "M3",
+            "self": {
+                "common": []
+            },
+            "photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/member_241511253.jpeg",
+                "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/highres_241511253.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/thumb_241511253.jpeg",
+                "photo_id": 241511253,
+                "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/highres_241511253.jpeg"
+            },
+            "city": "Bristol",
+            "country": "gb",
+            "id": 31030432,
+            "visited": 1417456823000,
+            "topics": [],
+            "joined": 1321635579000,
+            "name": "Adrian Slade",
+            "other_services": [],
+            "lat": 51.46,
+            "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/31030432\/",
+            "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/member_241511253.jpeg",
+            "answers": [
+                {
+                    "question": "What topics would you be interested in seeing talks about?",
+                    "question_id": 7642622
+                },
+                {
+                    "question": "Would you be interested in giving a talk? If so, what on?",
+                    "question_id": 7642612
+                }
+            ],
+            "member_id": 31030432,
+            "created": 1321635579000,
+            "updated": 1415955274000,
+            "role": "Organizer",
+            "group": {
+                "id": 2833232,
+                "created": 1321635579000,
+                "group_lat": 51.459999084473,
+                "name": "PHPSW",
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw",
+                "who": "Members"
+            },
+            "visited_date": {
+                "date": "2014-12-01 18:00:23.000000",
+                "timezone_type": 1,
+                "timezone": "+00:00"
+            }
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/member_241511253.jpeg",
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/highres_241511253.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/thumb_241511253.jpeg",
+            "photo_id": 241511253,
+            "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/highres_241511253.jpeg"
+        },
+        "organisation": {
+            "name": "BaseKit",
+            "url": "http:\/\/www.basekit.com"
+        }
+    },
+    "slides": null
+}

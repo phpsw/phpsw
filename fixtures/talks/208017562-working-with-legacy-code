@@ -1,0 +1,82 @@
+{
+    "description": null,
+    "title": "Working with legacy code",
+    "id": "208017562-working-with-legacy-code",
+    "event": "208017562",
+    "speaker": {
+        "id": "gareth-jones",
+        "name": "Gareth Jones",
+        "slug": "gareth-jones",
+        "bio": "Software Developer at Brightpearl",
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/5\/9\/4\/highres_84898772.jpeg",
+        "member": {
+            "lon": -2.62,
+            "status": "active",
+            "link": "http:\/\/www.meetup.com\/members\/71733642",
+            "state": "M3",
+            "self": {
+                "common": []
+            },
+            "photo": {
+                "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/5\/9\/4\/member_84898772.jpeg",
+                "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/5\/9\/4\/highres_84898772.jpeg",
+                "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/5\/9\/4\/thumb_84898772.jpeg",
+                "photo_id": 84898772,
+                "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/5\/9\/4\/highres_84898772.jpeg"
+            },
+            "city": "Bristol",
+            "country": "gb",
+            "id": 71733642,
+            "visited": 1418232618000,
+            "topics": [],
+            "joined": 1354636346000,
+            "bio": "Java & PHP dev @ Brightpearl",
+            "name": "Gareth Jones",
+            "other_services": {
+                "facebook": {
+                    "identifier": "https:\/\/www.facebook.com\/garethsjones84"
+                }
+            },
+            "lat": 51.46,
+            "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/71733642\/",
+            "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/5\/9\/4\/member_84898772.jpeg",
+            "answers": [
+                {
+                    "question": "What topics would you be interested in seeing talks about?",
+                    "question_id": 7642622
+                },
+                {
+                    "question": "Would you be interested in giving a talk? If so, what on?",
+                    "question_id": 7642612
+                }
+            ],
+            "member_id": 71733642,
+            "created": 1354636346000,
+            "updated": 1400602974000,
+            "group": {
+                "id": 2833232,
+                "created": 1321635579000,
+                "group_lat": 51.459999084473,
+                "name": "PHPSW",
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw",
+                "who": "Members"
+            },
+            "visited_date": {
+                "date": "2014-12-10 17:30:18.000000",
+                "timezone_type": 1,
+                "timezone": "+00:00"
+            }
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/5\/9\/4\/member_84898772.jpeg",
+            "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/5\/9\/4\/highres_84898772.jpeg",
+            "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/5\/9\/4\/thumb_84898772.jpeg",
+            "photo_id": 84898772,
+            "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/e\/5\/9\/4\/highres_84898772.jpeg"
+        },
+        "facebook": "garethsjones84"
+    },
+    "slides": "https:\/\/docs.google.com\/presentation\/d\/1LAi4BLvkt8tM-ZwM001txYzIM0BLualauqnydmh-reQ\/pub"
+}

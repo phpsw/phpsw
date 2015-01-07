@@ -1,0 +1,25 @@
+{
+    "description": null,
+    "title": "Auto-scaling PHP Applications using Chef and AWS<br>",
+    "id": "158749832-auto-scaling-php-applications-using-chef-and-aws",
+    "event": "158749832",
+    "speaker": {
+        "id": "andy-gale",
+        "name": "Andy Gale",
+        "slug": "andy-gale",
+        "bio": "<a href=\"http:\/\/hellofutu.re\">Hello Future<\/a>",
+        "url": "https:\/\/twitter.com\/andygale",
+        "twitter": "andygale",
+        "photo": {
+            "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/andygale?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/andygale?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/andygale?size=original",
+            "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/andygale?size=original"
+        },
+        "organisation": {
+            "name": "Hello Future",
+            "url": "http:\/\/hellofutu.re"
+        }
+    },
+    "slides": "http:\/\/andy-gale.com\/auto-scaling-php-applications-using-chef-and-aws.html"
+}

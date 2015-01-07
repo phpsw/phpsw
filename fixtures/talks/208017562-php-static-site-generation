@@ -1,0 +1,187 @@
+{
+    "description": null,
+    "title": "PHP static site generation",
+    "id": "208017562-php-static-site-generation",
+    "event": "208017562",
+    "speaker": {
+        "id": "kiel-doyle",
+        "name": "Kiel Doyle",
+        "slug": "kiel-doyle",
+        "bio": "PHP Developer at <a href=\"http:\/\/www.asdan.org.uk\">ASDAN<\/a>",
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/b\/3\/0\/member_177035632.jpeg",
+        "member": {
+            "lon": -2.6,
+            "hometown": "Wakefield, England",
+            "status": "active",
+            "link": "http:\/\/www.meetup.com\/members\/132866502",
+            "state": "M3",
+            "self": {
+                "common": []
+            },
+            "photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/b\/3\/0\/member_177035632.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/b\/3\/0\/thumb_177035632.jpeg",
+                "photo_id": 177035632,
+                "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/b\/3\/0\/member_177035632.jpeg"
+            },
+            "country": "gb",
+            "city": "Bristol",
+            "id": 132866502,
+            "visited": 1420576785000,
+            "topics": [
+                {
+                    "id": 7319,
+                    "urlkey": "museum",
+                    "name": "Museum"
+                },
+                {
+                    "id": 21681,
+                    "urlkey": "startup-businesses",
+                    "name": "Startup Businesses"
+                },
+                {
+                    "id": 18909,
+                    "urlkey": "concerts",
+                    "name": "Concerts"
+                },
+                {
+                    "id": 411,
+                    "urlkey": "electronicmusic",
+                    "name": "Electronic Music"
+                },
+                {
+                    "id": 128,
+                    "urlkey": "hiphop",
+                    "name": "Hip Hop"
+                },
+                {
+                    "id": 8652,
+                    "urlkey": "livemusic",
+                    "name": "Live Music"
+                },
+                {
+                    "id": 15018,
+                    "urlkey": "music",
+                    "name": "Music"
+                },
+                {
+                    "id": 173,
+                    "urlkey": "musicians",
+                    "name": "Musicians"
+                },
+                {
+                    "id": 17301,
+                    "urlkey": "singers",
+                    "name": "Singing"
+                },
+                {
+                    "id": 15029,
+                    "urlkey": "film",
+                    "name": "Film"
+                },
+                {
+                    "id": 1201,
+                    "urlkey": "movies",
+                    "name": "Watching Movies"
+                },
+                {
+                    "id": 23778,
+                    "urlkey": "dinner-and-a-movie",
+                    "name": "Dinner and a Movie"
+                },
+                {
+                    "id": 223,
+                    "urlkey": "photo",
+                    "name": "Photography"
+                },
+                {
+                    "id": 21067,
+                    "urlkey": "collaboration",
+                    "name": "Collaboration"
+                },
+                {
+                    "id": 16216,
+                    "urlkey": "mobile-technology",
+                    "name": "Mobile Technology"
+                },
+                {
+                    "id": 9696,
+                    "urlkey": "newtech",
+                    "name": "New Technology"
+                },
+                {
+                    "id": 455,
+                    "urlkey": "php",
+                    "name": "PHP"
+                },
+                {
+                    "id": 17627,
+                    "urlkey": "programming",
+                    "name": "Programming"
+                },
+                {
+                    "id": 659,
+                    "urlkey": "webdesign",
+                    "name": "Web Design"
+                },
+                {
+                    "id": 10209,
+                    "urlkey": "web",
+                    "name": "Web Technology"
+                },
+                {
+                    "id": 72969,
+                    "urlkey": "song-writing",
+                    "name": "Songwriting"
+                }
+            ],
+            "joined": 1392203065000,
+            "bio": "PHP developer for the past 9 years and owner of a truly terrible profile photo, recently relocated to Bristol from Yorkshire. Passionate about Symfony\/Silex and currently tinkering with Phalcon and graph databases.",
+            "name": "Kiel Doyle",
+            "other_services": [],
+            "lat": 51.44,
+            "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/132866502\/",
+            "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/b\/3\/0\/member_177035632.jpeg",
+            "answers": [
+                {
+                    "question": "What topics would you be interested in seeing talks about?",
+                    "question_id": 7642622
+                },
+                {
+                    "question": "Would you be interested in giving a talk? If so, what on?",
+                    "question_id": 7642612
+                }
+            ],
+            "member_id": 132866502,
+            "created": 1392203065000,
+            "updated": 1420211806000,
+            "role": "Assistant Organizer",
+            "group": {
+                "id": 2833232,
+                "created": 1321635579000,
+                "group_lat": 51.459999084473,
+                "name": "PHPSW",
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw",
+                "who": "Members"
+            },
+            "visited_date": {
+                "date": "2015-01-06 20:39:45.000000",
+                "timezone_type": 1,
+                "timezone": "+00:00"
+            }
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/b\/3\/0\/member_177035632.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/8\/b\/3\/0\/thumb_177035632.jpeg",
+            "photo_id": 177035632,
+            "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/8\/b\/3\/0\/member_177035632.jpeg"
+        },
+        "organisation": {
+            "name": "ASDAN",
+            "url": "http:\/\/www.asdan.org.uk"
+        }
+    },
+    "slides": "https:\/\/docs.google.com\/presentation\/d\/18gkSYJuw5Z_K2QANBFly0Iti7lgBb1o0MMUKDTyVPp0\/pub"
+}

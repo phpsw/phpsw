@@ -1,0 +1,22 @@
+{
+    "description": "<p>I've been building APIs for a long time now and it is becoming ever more common for server-side developer thanks to the rise of front-end JavaScript frameworks, iPhone applications and generally API-centric architectures.<\/p>\n<p>On one hand you're just grabbing stuff from a data source and shoving it out as JSON, but creating useful conventions from the start, surviving changes in business logic, handling database schema updates, and managing the shifting landscape of features creation and deprecated can be insanely tough.<\/p>\n<p>This talk will outline some good the common pitfalls developers get trapped in when building APIs and give you some tools to make decisions about what you will do yourselves.<\/p>\n",
+    "title": "API Pain-Points",
+    "id": "190401062-api-pain-points",
+    "event": "190401062",
+    "speaker": {
+        "id": "phil-sturgeon",
+        "name": "Phil Sturgeon",
+        "slug": "phil-sturgeon",
+        "bio": "Englishman temporarily not in New York. PHP Town Crier. Charity Biker. Cider Drinker. Troll Slayer.",
+        "url": "https:\/\/twitter.com\/philsturgeon",
+        "twitter": "philsturgeon",
+        "photo": {
+            "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/philsturgeon?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/philsturgeon?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/philsturgeon?size=original",
+            "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/philsturgeon?size=original"
+        },
+        "photos": []
+    },
+    "slides": "http:\/\/www.slideshare.net\/philsturgeon\/api-pain-points-newcastle"
+}

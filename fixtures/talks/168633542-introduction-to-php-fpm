@@ -1,0 +1,145 @@
+{
+    "description": null,
+    "title": "Introduction to PHP-FPM<br>",
+    "id": "168633542-introduction-to-php-fpm",
+    "event": "168633542",
+    "speaker": {
+        "id": "tom-adam",
+        "name": "Tom Adam",
+        "slug": "tom-adam",
+        "bio": "<a href=\"http:\/\/www.instantiate.co.uk\">Instantiate<\/a>",
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/1\/b\/0\/member_122561392.jpeg",
+        "member": {
+            "lon": -2.61,
+            "status": "active",
+            "link": "http:\/\/www.meetup.com\/members\/96221542",
+            "state": "M3",
+            "self": {
+                "common": []
+            },
+            "city": "Bristol",
+            "country": "gb",
+            "id": 96221542,
+            "visited": 1420396241000,
+            "topics": [
+                {
+                    "id": 455,
+                    "urlkey": "php",
+                    "name": "PHP"
+                },
+                {
+                    "id": 7029,
+                    "urlkey": "javascript",
+                    "name": "JavaScript"
+                },
+                {
+                    "id": 15582,
+                    "urlkey": "web-development",
+                    "name": "Web Development"
+                },
+                {
+                    "id": 563,
+                    "urlkey": "opensource",
+                    "name": "Open Source"
+                },
+                {
+                    "id": 3833,
+                    "urlkey": "softwaredev",
+                    "name": "Software Development"
+                },
+                {
+                    "id": 17627,
+                    "urlkey": "programming",
+                    "name": "Programming"
+                },
+                {
+                    "id": 58162,
+                    "urlkey": "nosql",
+                    "name": "NoSQL"
+                },
+                {
+                    "id": 23837,
+                    "urlkey": "php-application-development",
+                    "name": "PHP Application Development"
+                },
+                {
+                    "id": 128575,
+                    "urlkey": "node-js",
+                    "name": "node.js"
+                },
+                {
+                    "id": 85951,
+                    "urlkey": "javascript-frameworks",
+                    "name": "JavaScript Frameworks"
+                },
+                {
+                    "id": 87614,
+                    "urlkey": "devops",
+                    "name": "DevOps"
+                },
+                {
+                    "id": 94779,
+                    "urlkey": "systems-administration",
+                    "name": "Systems Administration"
+                },
+                {
+                    "id": 126177,
+                    "urlkey": "infrastructure-as-code",
+                    "name": "Infrastructure as Code"
+                }
+            ],
+            "joined": 1370351832000,
+            "bio": "I run a small development company mainly focussing on PHP, but have been playing with Node.js and Python recently. My non-IT interests include things with two wheels, climbing, beer and self-building.",
+            "name": "Tom Adam",
+            "other_services": [],
+            "lat": 51.45,
+            "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/96221542\/",
+            "photo_url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/1\/b\/0\/member_122561392.jpeg",
+            "answers": [
+                {
+                    "question": "What topics would you be interested in seeing talks about?",
+                    "question_id": 7642622
+                },
+                {
+                    "question": "Would you be interested in giving a talk? If so, what on?",
+                    "question_id": 7642612
+                }
+            ],
+            "photo": {
+                "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/1\/b\/0\/member_122561392.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/1\/b\/0\/thumb_122561392.jpeg",
+                "photo_id": 122561392,
+                "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/1\/b\/0\/member_122561392.jpeg"
+            },
+            "member_id": 96221542,
+            "created": 1370351832000,
+            "updated": 1394673263000,
+            "group": {
+                "id": 2833232,
+                "created": 1321635579000,
+                "group_lat": 51.459999084473,
+                "name": "PHPSW",
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw",
+                "who": "Members"
+            },
+            "visited_date": {
+                "date": "2015-01-04 18:30:41.000000",
+                "timezone_type": 1,
+                "timezone": "+00:00"
+            }
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/1\/b\/0\/member_122561392.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/1\/b\/0\/thumb_122561392.jpeg",
+            "photo_id": 122561392,
+            "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/a\/1\/b\/0\/member_122561392.jpeg"
+        },
+        "organisation": {
+            "name": "Instantiate",
+            "url": "http:\/\/www.instantiate.co.uk"
+        }
+    },
+    "slides": "http:\/\/slid.es\/tomadam\/php-fpm--2"
+}

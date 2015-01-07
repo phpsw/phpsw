@@ -1,0 +1,148 @@
+{
+    "id": "james-titcumb",
+    "name": "James Titcumb",
+    "slug": "james-titcumb",
+    "bio": "founder of PHP Hampshire, Zend Certified Engineer and Development Manager at <a href=\"http:\/\/www.protected.co.uk\">Protected.co.uk<\/a>",
+    "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/highres_134740252.jpeg",
+    "member": {
+        "lon": -1.06,
+        "status": "active",
+        "link": "http:\/\/www.meetup.com\/members\/99787762",
+        "state": "F2",
+        "self": {
+            "common": []
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/member_134740252.jpeg",
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/highres_134740252.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/thumb_134740252.jpeg",
+            "photo_id": 134740252,
+            "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/highres_134740252.jpeg"
+        },
+        "city": "Portsmouth",
+        "country": "gb",
+        "id": 99787762,
+        "visited": 1417173438000,
+        "topics": [],
+        "joined": 1411280470000,
+        "bio": "James is the founder of the UK based PHP Hampshire user group, a Zend Certified Engineer and Development Manager at Protected.co.uk.",
+        "name": "James Titcumb",
+        "other_services": [],
+        "lat": 50.8,
+        "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/99787762\/",
+        "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/member_134740252.jpeg",
+        "answers": [
+            {
+                "question": "What topics would you be interested in seeing talks about?",
+                "question_id": 7642622
+            },
+            {
+                "question": "Would you be interested in giving a talk? If so, what on?",
+                "question_id": 7642612
+            }
+        ],
+        "member_id": 99787762,
+        "created": 1411280470000,
+        "updated": 1411280530000,
+        "group": {
+            "id": 2833232,
+            "created": 1321635579000,
+            "group_lat": 51.459999084473,
+            "name": "PHPSW",
+            "group_lon": -2.5899999141693,
+            "join_mode": "open",
+            "urlname": "php-sw",
+            "who": "Members"
+        },
+        "visited_date": {
+            "date": "2014-11-28 11:17:18.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/member_134740252.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/highres_134740252.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/thumb_134740252.jpeg",
+        "photo_id": 134740252,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/highres_134740252.jpeg"
+    },
+    "organisation": {
+        "name": "Protected.co.uk",
+        "url": "http:\/\/www.protected.co.uk"
+    },
+    "photos": [
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/7\/a\/a\/f\/600_431491407.jpeg",
+            "created": 1415896891000,
+            "updated": 1415897054000,
+            "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/7\/a\/a\/f\/highres_431491407.jpeg",
+            "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/a\/a\/f\/thumb_431491407.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "215366502",
+                "photo_album_id": 25736109
+            },
+            "photo_id": 431491407,
+            "id": 431491407
+        },
+        {
+            "member": {
+                "name": "Kat Zien",
+                "member_id": 67450042
+            },
+            "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/5\/b\/a\/600_431490138.jpeg",
+            "created": 1415891476000,
+            "updated": 1415896950000,
+            "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/5\/b\/a\/highres_431490138.jpeg",
+            "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/5\/b\/a\/thumb_431490138.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "215366502",
+                "photo_album_id": 25736109
+            },
+            "photo_id": 431490138,
+            "id": 431490138
+        },
+        {
+            "member": {
+                "name": "Kat Zien",
+                "member_id": 67450042
+            },
+            "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/5\/b\/1\/600_431490129.jpeg",
+            "created": 1415891436000,
+            "updated": 1415896936000,
+            "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/5\/b\/1\/highres_431490129.jpeg",
+            "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/5\/b\/1\/thumb_431490129.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "215366502",
+                "photo_album_id": 25736109
+            },
+            "photo_id": 431490129,
+            "id": 431490129
+        },
+        {
+            "member": {
+                "name": "Kat Zien",
+                "member_id": 67450042
+            },
+            "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/5\/a\/a\/600_431490122.jpeg",
+            "created": 1415891393000,
+            "updated": 1415896924000,
+            "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/7\/5\/a\/a\/highres_431490122.jpeg",
+            "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/7\/5\/a\/a\/thumb_431490122.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "215366502",
+                "photo_album_id": 25736109
+            },
+            "photo_id": 431490122,
+            "id": 431490122
+        }
+    ]
+}

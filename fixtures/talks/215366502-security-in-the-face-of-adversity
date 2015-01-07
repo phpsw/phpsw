@@ -1,0 +1,26 @@
+{
+    "description": null,
+    "title": "Security in the face of adversity",
+    "id": "215366502-security-in-the-face-of-adversity",
+    "event": "215366502",
+    "speaker": {
+        "id": "dave-tibbs",
+        "name": "Dave Tibbs",
+        "slug": "dave-tibbs",
+        "bio": "Systems Administrator at <a href=\"http:\/\/www.brightpearl.com\">Brightpearl<\/a> US, briefly in the UK!",
+        "url": "https:\/\/twitter.com\/lowlysysadm1n",
+        "twitter": "lowlysysadm1n",
+        "photo": {
+            "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/lowlysysadm1n?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/lowlysysadm1n?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/lowlysysadm1n?size=original",
+            "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/lowlysysadm1n?size=original"
+        },
+        "organisation": {
+            "name": "Brightpearl",
+            "url": "http:\/\/www.brightpearl.com"
+        },
+        "photos": []
+    },
+    "slides": "http:\/\/www.slideshare.net\/davetibbs\/security-in-the-face-of-adversity"
+}

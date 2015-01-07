@@ -1,0 +1,19 @@
+{
+    "id": "billie-thompson",
+    "name": "Billie Thompson",
+    "slug": "billie-thompson",
+    "bio": "Contracting Software Developer, currently working with <a href=\"http:\/\/www.transformuk.com\">Transform UK<\/a> at the <a href=\"https:\/\/www.gov.uk\/government\/organisations\/home-office\">Home Office<\/a>",
+    "url": "https:\/\/twitter.com\/BillieAThompson",
+    "twitter": "BillieAThompson",
+    "photo": {
+        "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/BillieAThompson?size=bigger",
+        "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/BillieAThompson?size=original",
+        "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/BillieAThompson?size=original",
+        "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/BillieAThompson?size=original"
+    },
+    "organisation": {
+        "name": "Transform UK",
+        "url": "http:\/\/www.transformuk.com"
+    },
+    "photos": []
+}

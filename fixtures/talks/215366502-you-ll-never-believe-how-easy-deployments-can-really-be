@@ -1,0 +1,81 @@
+{
+    "description": "<p>The deadline is looming: one week until we release the new version. Some features aren\u2019t going to make the cut, but the boss really wants to make sure these critical bugs are fixed. You can\u2019t wait for the release cycle to be over so you can relax.<\/p>\n<p>But what if I told you it didn\u2019t have to be that way? What if I could show you how to create a world where there is no release cycle? A world where weekend deployments are a rarity, not the norm?! In this talk we will cover the steps we took to achieve the coding utopia of releasing a feature as soon as it\u2019s ready - many times per day. You\u2019ll find out that by implementing a continuous deployment flow, you can empower your developers to take ownership and become more productive.<\/p>\n",
+    "title": "You\u2019ll Never Believe How Easy Deployments Can Really Be\u2026",
+    "id": "215366502-you-ll-never-believe-how-easy-deployments-can-really-be",
+    "event": "215366502",
+    "speaker": {
+        "id": "james-titcumb",
+        "name": "James Titcumb",
+        "slug": "james-titcumb",
+        "bio": "founder of PHP Hampshire, Zend Certified Engineer and Development Manager at <a href=\"http:\/\/www.protected.co.uk\">Protected.co.uk<\/a>",
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/highres_134740252.jpeg",
+        "member": {
+            "lon": -1.06,
+            "status": "active",
+            "link": "http:\/\/www.meetup.com\/members\/99787762",
+            "state": "F2",
+            "self": {
+                "common": []
+            },
+            "photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/member_134740252.jpeg",
+                "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/highres_134740252.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/thumb_134740252.jpeg",
+                "photo_id": 134740252,
+                "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/highres_134740252.jpeg"
+            },
+            "city": "Portsmouth",
+            "country": "gb",
+            "id": 99787762,
+            "visited": 1417173438000,
+            "topics": [],
+            "joined": 1411280470000,
+            "bio": "James is the founder of the UK based PHP Hampshire user group, a Zend Certified Engineer and Development Manager at Protected.co.uk.",
+            "name": "James Titcumb",
+            "other_services": [],
+            "lat": 50.8,
+            "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/99787762\/",
+            "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/member_134740252.jpeg",
+            "answers": [
+                {
+                    "question": "What topics would you be interested in seeing talks about?",
+                    "question_id": 7642622
+                },
+                {
+                    "question": "Would you be interested in giving a talk? If so, what on?",
+                    "question_id": 7642612
+                }
+            ],
+            "member_id": 99787762,
+            "created": 1411280470000,
+            "updated": 1411280530000,
+            "group": {
+                "id": 2833232,
+                "created": 1321635579000,
+                "group_lat": 51.459999084473,
+                "name": "PHPSW",
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw",
+                "who": "Members"
+            },
+            "visited_date": {
+                "date": "2014-11-28 11:17:18.000000",
+                "timezone_type": 1,
+                "timezone": "+00:00"
+            }
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/member_134740252.jpeg",
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/highres_134740252.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/thumb_134740252.jpeg",
+            "photo_id": 134740252,
+            "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/d\/3\/c\/highres_134740252.jpeg"
+        },
+        "organisation": {
+            "name": "Protected.co.uk",
+            "url": "http:\/\/www.protected.co.uk"
+        }
+    },
+    "slides": "http:\/\/www.slideshare.net\/asgrim1\/youll-never-believe-how-easy-deployments-can-really-be"
+}

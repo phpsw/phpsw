@@ -1,0 +1,26 @@
+{
+    "description": "<p>This talk will take you through the Event Sourcing design pattern, then go through how you'd implement it. From there we'll move on to CQRS, starting with what it is, then moving onto why it works well with event sourcing and how you'd implement it. Finally we'll wrap up with why it's probably not appropriate for most projects, and give some examples where it is appropriate.<\/p>\n",
+    "title": "CQRS &amp; Event Sourcing - The coolest design patterns you probably shouldn't be using",
+    "id": "201441732-cqrs-and-event-sourcing-the-coolest-design-patterns-you-probably-shouldnt-be-using",
+    "event": "201441732",
+    "speaker": {
+        "id": "billie-thompson",
+        "name": "Billie Thompson",
+        "slug": "billie-thompson",
+        "bio": "Contracting Software Developer, currently working with <a href=\"http:\/\/www.transformuk.com\">Transform UK<\/a> at the <a href=\"https:\/\/www.gov.uk\/government\/organisations\/home-office\">Home Office<\/a>",
+        "url": "https:\/\/twitter.com\/BillieAThompson",
+        "twitter": "BillieAThompson",
+        "photo": {
+            "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/BillieAThompson?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/BillieAThompson?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/BillieAThompson?size=original",
+            "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/BillieAThompson?size=original"
+        },
+        "organisation": {
+            "name": "Transform UK",
+            "url": "http:\/\/www.transformuk.com"
+        },
+        "photos": []
+    },
+    "slides": "https:\/\/docs.google.com\/presentation\/d\/1c9CvHULF__mVlDFrFv_1ESeM7ttMQ0j7_vXFXkggJpk"
+}

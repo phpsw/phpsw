@@ -1,0 +1,26 @@
+{
+    "description": null,
+    "title": "From SQL to noSQL",
+    "id": "170468612-from-sql-to-nosql",
+    "event": "170468612",
+    "speaker": {
+        "id": "derick-rethans",
+        "name": "Derick Rethans",
+        "slug": "derick-rethans",
+        "bio": "PHP Engineer\/Evangelist on <a href=\"http:\/\/www.mongodb.org\">MongoDB<\/a>, internals expert &amp; author of <a href=\"http:\/\/xdebug.org\">Xdebug<\/a>",
+        "url": "https:\/\/twitter.com\/derickr",
+        "twitter": "derickr",
+        "photo": {
+            "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/derickr?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/derickr?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/derickr?size=original",
+            "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/derickr?size=original"
+        },
+        "organisation": {
+            "name": "MongoDB",
+            "url": "http:\/\/www.mongodb.org"
+        },
+        "photos": []
+    },
+    "slides": "http:\/\/derickrethans.nl\/talks\/sql2nosql-mug-phpsw"
+}

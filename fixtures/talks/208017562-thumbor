@@ -1,0 +1,145 @@
+{
+    "description": null,
+    "title": "<a href=\"https:\/\/github.com\/thumbor\/thumbor\">Thumbor<\/a>",
+    "id": "208017562-thumbor",
+    "event": "208017562",
+    "speaker": {
+        "id": "tom-holder",
+        "name": "Tom Holder",
+        "slug": "tom-holder",
+        "bio": "Technical Director at <a href=\"http:\/\/simpleweb.co.uk\">Simpleweb<\/a>",
+        "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/3\/6\/a\/member_36253162.jpeg",
+        "member": {
+            "lon": -0.11,
+            "status": "active",
+            "link": "http:\/\/www.meetup.com\/members\/12358080",
+            "state": "17",
+            "self": {
+                "common": []
+            },
+            "photo": {
+                "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/3\/6\/a\/member_36253162.jpeg",
+                "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/3\/6\/a\/thumb_36253162.jpeg",
+                "photo_id": 36253162,
+                "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/3\/6\/a\/member_36253162.jpeg"
+            },
+            "city": "London",
+            "country": "gb",
+            "id": 12358080,
+            "visited": 1420416667000,
+            "topics": [
+                {
+                    "id": 321331,
+                    "urlkey": "bristol-socialising",
+                    "name": "bristol socialising"
+                },
+                {
+                    "id": 321321,
+                    "urlkey": "bristol-networking",
+                    "name": "Bristol networking"
+                },
+                {
+                    "id": 71135,
+                    "urlkey": "bristol",
+                    "name": "Bristol"
+                },
+                {
+                    "id": 16137,
+                    "urlkey": "jquery",
+                    "name": "JQuery"
+                },
+                {
+                    "id": 128575,
+                    "urlkey": "node-js",
+                    "name": "node.js"
+                },
+                {
+                    "id": 405512,
+                    "urlkey": "backbone-js",
+                    "name": "Backbone.js"
+                },
+                {
+                    "id": 7029,
+                    "urlkey": "javascript",
+                    "name": "JavaScript"
+                },
+                {
+                    "id": 17628,
+                    "urlkey": "programming-languages",
+                    "name": "Programming Languages"
+                },
+                {
+                    "id": 1973,
+                    "urlkey": "css",
+                    "name": "CSS"
+                },
+                {
+                    "id": 101961,
+                    "urlkey": "coffeescript",
+                    "name": "CoffeeScript"
+                },
+                {
+                    "id": 56555,
+                    "urlkey": "javascript-libraries",
+                    "name": "JavaScript Libraries"
+                },
+                {
+                    "id": 921432,
+                    "urlkey": "meteor",
+                    "name": "Meteor"
+                }
+            ],
+            "joined": 1394791518000,
+            "bio": "Tech director at Simpleweb",
+            "name": "Tom Holder",
+            "other_services": {
+                "twitter": {
+                    "identifier": "@tholder"
+                }
+            },
+            "lat": 51.57,
+            "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/12358080\/",
+            "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/3\/6\/a\/member_36253162.jpeg",
+            "answers": [
+                {
+                    "question": "What topics would you be interested in seeing talks about?",
+                    "question_id": 7642622
+                },
+                {
+                    "question": "Would you be interested in giving a talk? If so, what on?",
+                    "question_id": 7642612
+                }
+            ],
+            "member_id": 12358080,
+            "created": 1394791518000,
+            "updated": 1394791518000,
+            "group": {
+                "id": 2833232,
+                "created": 1321635579000,
+                "group_lat": 51.459999084473,
+                "name": "PHPSW",
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw",
+                "who": "Members"
+            },
+            "visited_date": {
+                "date": "2015-01-05 00:11:07.000000",
+                "timezone_type": 1,
+                "timezone": "+00:00"
+            }
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/3\/6\/a\/member_36253162.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/3\/3\/6\/a\/thumb_36253162.jpeg",
+            "photo_id": 36253162,
+            "url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/3\/3\/6\/a\/member_36253162.jpeg"
+        },
+        "twitter": "tholder",
+        "organisation": {
+            "name": "Simpleweb",
+            "url": "http:\/\/simpleweb.co.uk"
+        }
+    },
+    "slides": "http:\/\/slides.com\/tomholder\/thumbor"
+}

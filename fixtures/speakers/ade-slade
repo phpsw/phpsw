@@ -1,0 +1,239 @@
+{
+    "id": "ade-slade",
+    "name": "Ade Slade",
+    "slug": "ade-slade",
+    "bio": "PHP Developer at <a href=\"http:\/\/www.basekit.com\">BaseKit<\/a>",
+    "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/highres_241511253.jpeg",
+    "twitter": "adeslade",
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/member_241511253.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/highres_241511253.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/thumb_241511253.jpeg",
+        "photo_id": 241511253,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/highres_241511253.jpeg"
+    },
+    "organisation": {
+        "name": "BaseKit",
+        "url": "http:\/\/www.basekit.com"
+    },
+    "member": {
+        "lon": -2.62,
+        "status": "active",
+        "link": "http:\/\/www.meetup.com\/members\/31030432",
+        "state": "M3",
+        "self": {
+            "common": []
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/member_241511253.jpeg",
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/highres_241511253.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/thumb_241511253.jpeg",
+            "photo_id": 241511253,
+            "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/highres_241511253.jpeg"
+        },
+        "city": "Bristol",
+        "country": "gb",
+        "id": 31030432,
+        "visited": 1417456823000,
+        "topics": [],
+        "joined": 1321635579000,
+        "name": "Adrian Slade",
+        "other_services": [],
+        "lat": 51.46,
+        "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/31030432\/",
+        "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/2\/b\/f\/5\/member_241511253.jpeg",
+        "answers": [
+            {
+                "question": "What topics would you be interested in seeing talks about?",
+                "question_id": 7642622
+            },
+            {
+                "question": "Would you be interested in giving a talk? If so, what on?",
+                "question_id": 7642612
+            }
+        ],
+        "member_id": 31030432,
+        "created": 1321635579000,
+        "updated": 1415955274000,
+        "role": "Organizer",
+        "group": {
+            "id": 2833232,
+            "created": 1321635579000,
+            "group_lat": 51.459999084473,
+            "name": "PHPSW",
+            "group_lon": -2.5899999141693,
+            "join_mode": "open",
+            "urlname": "php-sw",
+            "who": "Members"
+        },
+        "visited_date": {
+            "date": "2014-12-01 18:00:23.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "photos": [
+        {
+            "member": {
+                "name": "Matt Webley",
+                "member_id": 159981312
+            },
+            "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/6\/9\/5\/c\/600_419066972.jpeg",
+            "created": 1412846775000,
+            "updated": 1412870060000,
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/6\/9\/5\/c\/highres_419066972.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/6\/9\/5\/c\/thumb_419066972.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "208017562",
+                "photo_album_id": 25037452
+            },
+            "photo_id": 419066972,
+            "id": 419066972
+        },
+        {
+            "member": {
+                "name": "Matt Webley",
+                "member_id": 159981312
+            },
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/6\/8\/d\/a\/600_419066842.jpeg",
+            "created": 1412846730000,
+            "updated": 1412870018000,
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/6\/8\/d\/a\/highres_419066842.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/6\/8\/d\/a\/thumb_419066842.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "208017562",
+                "photo_album_id": 25037452
+            },
+            "photo_id": 419066842,
+            "id": 419066842
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/6\/0\/c\/e\/600_419064782.jpeg",
+            "created": 1412844331000,
+            "updated": 1412870005000,
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/6\/0\/c\/e\/highres_419064782.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/6\/0\/c\/e\/thumb_419064782.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "208017562",
+                "photo_album_id": 25037452
+            },
+            "photo_id": 419064782,
+            "id": 419064782
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/6\/0\/c\/4\/600_419064772.jpeg",
+            "created": 1412844326000,
+            "updated": 1412869995000,
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/6\/0\/c\/4\/highres_419064772.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/6\/0\/c\/4\/thumb_419064772.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "208017562",
+                "photo_album_id": 25037452
+            },
+            "photo_id": 419064772,
+            "id": 419064772
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/6\/0\/b\/0\/600_419064752.jpeg",
+            "created": 1412844321000,
+            "updated": 1412869984000,
+            "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/6\/0\/b\/0\/highres_419064752.jpeg",
+            "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/6\/0\/b\/0\/thumb_419064752.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "208017562",
+                "photo_album_id": 25037452
+            },
+            "photo_id": 419064752,
+            "id": 419064752
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/a\/9\/c\/6\/600_408523462.jpeg",
+            "created": 1410444870000,
+            "updated": 1410610647000,
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/a\/9\/c\/6\/highres_408523462.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/a\/9\/c\/6\/thumb_408523462.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "201441732",
+                "photo_album_id": 24429552
+            },
+            "photo_id": 408523462,
+            "id": 408523462
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/a\/9\/9\/4\/600_408523412.jpeg",
+            "created": 1410444864000,
+            "updated": 1410610635000,
+            "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/a\/9\/9\/4\/highres_408523412.jpeg",
+            "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/a\/9\/9\/4\/thumb_408523412.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "201441732",
+                "photo_album_id": 24429552
+            },
+            "photo_id": 408523412,
+            "id": 408523412
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/7\/c\/8\/a\/600_383071882.jpeg",
+            "created": 1404551219000,
+            "updated": 1409000017000,
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/7\/c\/8\/a\/highres_383071882.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/7\/c\/8\/a\/thumb_383071882.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "190401062",
+                "photo_album_id": 22986372
+            },
+            "photo_id": 383071882,
+            "id": 383071882
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/1\/9\/3\/e\/600_333006462.jpeg",
+            "created": 1392308704000,
+            "updated": 1409000170000,
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/1\/9\/3\/e\/highres_333006462.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/1\/9\/3\/e\/thumb_333006462.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "158749832",
+                "photo_album_id": 20091032
+            },
+            "photo_id": 333006462,
+            "id": 333006462
+        }
+    ]
+}

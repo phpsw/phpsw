@@ -1,0 +1,150 @@
+{
+    "id": "rob-allen",
+    "name": "Rob Allen",
+    "slug": "rob-allen",
+    "bio": "Software Engineer, ZF contributor and author of <a href=\"http:\/\/www.manning.com\/allen\">Zend Framework in Action<\/a>",
+    "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/highres_190778222.jpeg",
+    "member": {
+        "lon": -2.23,
+        "status": "active",
+        "link": "http:\/\/www.meetup.com\/members\/56661222",
+        "state": "Q4",
+        "self": {
+            "common": []
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/member_190778222.jpeg",
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/highres_190778222.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/thumb_190778222.jpeg",
+            "photo_id": 190778222,
+            "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/highres_190778222.jpeg"
+        },
+        "city": "Worcester",
+        "country": "gb",
+        "id": 56661222,
+        "visited": 1420321811000,
+        "topics": [
+            {
+                "id": 15582,
+                "urlkey": "web-development",
+                "name": "Web Development"
+            },
+            {
+                "id": 35062,
+                "urlkey": "best-practices-in-it-web-solutions-design-and-dev",
+                "name": "Best Practices in IT\/Web Solutions Design and Dev"
+            }
+        ],
+        "joined": 1399836819000,
+        "bio": "PHP developer from Worcester.",
+        "name": "Rob Allen",
+        "other_services": {
+            "twitter": {
+                "identifier": "@akrabat"
+            },
+            "flickr": {
+                "identifier": "http:\/\/www.flickr.com\/photos\/akrabat\/"
+            }
+        },
+        "lat": 52.19,
+        "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/56661222\/",
+        "photo_url": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/member_190778222.jpeg",
+        "answers": [
+            {
+                "question": "What topics would you be interested in seeing talks about?",
+                "question_id": 7642622
+            },
+            {
+                "question": "Would you be interested in giving a talk? If so, what on?",
+                "question_id": 7642612
+            }
+        ],
+        "member_id": 56661222,
+        "created": 1399836819000,
+        "updated": 1399836820000,
+        "group": {
+            "id": 2833232,
+            "created": 1321635579000,
+            "group_lat": 51.459999084473,
+            "name": "PHPSW",
+            "group_lon": -2.5899999141693,
+            "join_mode": "open",
+            "urlname": "php-sw",
+            "who": "Members"
+        },
+        "visited_date": {
+            "date": "2015-01-03 21:50:11.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/member_190778222.jpeg",
+        "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/highres_190778222.jpeg",
+        "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/thumb_190778222.jpeg",
+        "photo_id": 190778222,
+        "url": "http:\/\/photos1.meetupstatic.com\/photos\/member\/9\/5\/4\/e\/highres_190778222.jpeg"
+    },
+    "twitter": "akrabat",
+    "flickr": "akrabat",
+    "organisation": {
+        "name": "Zend Framework in Action",
+        "url": "http:\/\/www.manning.com\/allen"
+    },
+    "photos": [
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/a\/b\/b\/a\/600_408523962.jpeg",
+            "created": 1410444925000,
+            "updated": 1410610726000,
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/a\/b\/b\/a\/highres_408523962.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/a\/b\/b\/a\/thumb_408523962.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "201441732",
+                "photo_album_id": 24429552
+            },
+            "photo_id": 408523962,
+            "id": 408523962
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/a\/b\/7\/e\/600_408523902.jpeg",
+            "created": 1410444920000,
+            "updated": 1410610716000,
+            "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/a\/b\/7\/e\/highres_408523902.jpeg",
+            "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/a\/b\/7\/e\/thumb_408523902.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "201441732",
+                "photo_album_id": 24429552
+            },
+            "photo_id": 408523902,
+            "id": 408523902
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/a\/b\/5\/6\/600_408523862.jpeg",
+            "created": 1410444914000,
+            "updated": 1410610704000,
+            "highres_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/a\/b\/5\/6\/highres_408523862.jpeg",
+            "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/a\/b\/5\/6\/thumb_408523862.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "201441732",
+                "photo_album_id": 24429552
+            },
+            "photo_id": 408523862,
+            "id": 408523862
+        }
+    ]
+}

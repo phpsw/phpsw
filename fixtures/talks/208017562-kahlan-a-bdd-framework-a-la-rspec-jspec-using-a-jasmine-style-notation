@@ -1,0 +1,218 @@
+{
+    "description": null,
+    "title": "<a href=\"https:\/\/github.com\/crysalead\/kahlan\">Kahlan<\/a>, a BDD Framework a la RSpec\/JSpec using a Jasmine style notation",
+    "id": "208017562-kahlan-a-bdd-framework-a-la-rspec-jspec-using-a-jasmine-style-notation",
+    "event": "208017562",
+    "speaker": {
+        "id": "warren-seymour",
+        "name": "Warren Seymour",
+        "slug": "warren-seymour",
+        "bio": "Software Developer at <a href=\"http:\/\/radify.io\">Radify<\/a>",
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/highres_12391178.jpeg",
+        "member": {
+            "lon": -3.17,
+            "hometown": "London",
+            "status": "active",
+            "link": "http:\/\/www.meetup.com\/members\/14077610",
+            "state": "Z3",
+            "self": {
+                "common": []
+            },
+            "photo": {
+                "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/member_12391178.jpeg",
+                "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/highres_12391178.jpeg",
+                "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/thumb_12391178.jpeg",
+                "photo_id": 12391178,
+                "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/highres_12391178.jpeg"
+            },
+            "country": "gb",
+            "city": "Penarth",
+            "id": 14077610,
+            "visited": 1416940972000,
+            "topics": [
+                {
+                    "id": 10209,
+                    "urlkey": "web",
+                    "name": "Web Technology"
+                },
+                {
+                    "id": 17627,
+                    "urlkey": "programming",
+                    "name": "Programming"
+                },
+                {
+                    "id": 58162,
+                    "urlkey": "nosql",
+                    "name": "NoSQL"
+                },
+                {
+                    "id": 10164,
+                    "urlkey": "lampsoftware",
+                    "name": "LAMP"
+                },
+                {
+                    "id": 3833,
+                    "urlkey": "softwaredev",
+                    "name": "Software Development"
+                },
+                {
+                    "id": 455,
+                    "urlkey": "php",
+                    "name": "PHP"
+                },
+                {
+                    "id": 15167,
+                    "urlkey": "cloud-computing",
+                    "name": "Cloud Computing"
+                },
+                {
+                    "id": 789,
+                    "urlkey": "mysql",
+                    "name": "MySQL"
+                },
+                {
+                    "id": 21549,
+                    "urlkey": "agile-project-management",
+                    "name": "Agile Project Management"
+                },
+                {
+                    "id": 5938,
+                    "urlkey": "xp",
+                    "name": "Extreme Programming"
+                },
+                {
+                    "id": 18062,
+                    "urlkey": "big-data",
+                    "name": "Big Data"
+                },
+                {
+                    "id": 10043,
+                    "urlkey": "scrum",
+                    "name": "Scrum"
+                },
+                {
+                    "id": 78565,
+                    "urlkey": "html5",
+                    "name": "HTML5"
+                },
+                {
+                    "id": 20398,
+                    "urlkey": "amazon-web-services",
+                    "name": "Amazon Web Services"
+                },
+                {
+                    "id": 563,
+                    "urlkey": "opensource",
+                    "name": "Open Source"
+                },
+                {
+                    "id": 15582,
+                    "urlkey": "web-development",
+                    "name": "Web Development"
+                },
+                {
+                    "id": 7029,
+                    "urlkey": "javascript",
+                    "name": "JavaScript"
+                },
+                {
+                    "id": 19688,
+                    "urlkey": "objectivism",
+                    "name": "Objectivism"
+                },
+                {
+                    "id": 823,
+                    "urlkey": "aynrand",
+                    "name": "Ayn Rand"
+                },
+                {
+                    "id": 16240,
+                    "urlkey": "liberty",
+                    "name": "Liberty"
+                },
+                {
+                    "id": 21989,
+                    "urlkey": "limited-government",
+                    "name": "Limited Government"
+                },
+                {
+                    "id": 26971,
+                    "urlkey": "free-market-economics",
+                    "name": "Free Market Economics"
+                },
+                {
+                    "id": 110396,
+                    "urlkey": "natural-rights",
+                    "name": "Natural Rights"
+                },
+                {
+                    "id": 496882,
+                    "urlkey": "bitcoins",
+                    "name": "Bitcoins"
+                },
+                {
+                    "id": 139517,
+                    "urlkey": "bitcoin",
+                    "name": "Bitcoin"
+                },
+                {
+                    "id": 15083,
+                    "urlkey": "intellectual-discussion",
+                    "name": "Intellectual Discussion"
+                }
+            ],
+            "joined": 1322067913000,
+            "bio": "I'm a freelance PHP developer who has been doing some awesome work with the Lithium framework, and I want to extol the virtues.",
+            "name": "Warren Seymour",
+            "other_services": {
+                "twitter": {
+                    "identifier": "@woogoose"
+                }
+            },
+            "lat": 51.44,
+            "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/14077610\/",
+            "photo_url": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/member_12391178.jpeg",
+            "answers": [
+                {
+                    "question": "What topics would you be interested in seeing talks about?",
+                    "question_id": 7642622
+                },
+                {
+                    "question": "Would you be interested in giving a talk? If so, what on?",
+                    "question_id": 7642612
+                }
+            ],
+            "member_id": 14077610,
+            "created": 1322067913000,
+            "updated": 1322067913000,
+            "group": {
+                "id": 2833232,
+                "created": 1321635579000,
+                "group_lat": 51.459999084473,
+                "name": "PHPSW",
+                "group_lon": -2.5899999141693,
+                "join_mode": "open",
+                "urlname": "php-sw",
+                "who": "Members"
+            },
+            "visited_date": {
+                "date": "2014-11-25 18:42:52.000000",
+                "timezone_type": 1,
+                "timezone": "+00:00"
+            }
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/member_12391178.jpeg",
+            "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/highres_12391178.jpeg",
+            "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/thumb_12391178.jpeg",
+            "photo_id": 12391178,
+            "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/7\/9\/c\/a\/highres_12391178.jpeg"
+        },
+        "twitter": "woogoose",
+        "organisation": {
+            "name": "Radify",
+            "url": "http:\/\/radify.io"
+        }
+    },
+    "slides": "http:\/\/slides.com\/warrenseymour\/kahlan"
+}

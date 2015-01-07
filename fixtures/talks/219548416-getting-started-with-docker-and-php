@@ -1,0 +1,26 @@
+{
+    "description": null,
+    "title": "Getting Started with Docker and PHP",
+    "id": "219548416-getting-started-with-docker-and-php",
+    "event": "219548416",
+    "speaker": {
+        "id": "rob-haswell",
+        "name": "Rob Haswell",
+        "slug": "rob-haswell",
+        "bio": "VP Engineering and Co-founder of <a href=\"https:\/\/clusterhq.com\">ClusterHQ<\/a>",
+        "url": "https:\/\/twitter.com\/robhaswell",
+        "twitter": "robhaswell",
+        "photo": {
+            "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/robhaswell?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/robhaswell?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/robhaswell?size=original",
+            "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/robhaswell?size=original"
+        },
+        "organisation": {
+            "name": "ClusterHQ",
+            "url": "https:\/\/clusterhq.com"
+        },
+        "photos": []
+    },
+    "slides": null
+}

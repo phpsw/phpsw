@@ -1,0 +1,212 @@
+{
+    "id": "kat-zien",
+    "name": "Kat Zien",
+    "slug": "kat-zien",
+    "bio": "Software Developer at <a href=\"http:\/\/www.brightpearl.com\">Brightpearl<\/a>",
+    "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/4\/1\/8\/highres_219497432.jpeg",
+    "member": {
+        "lon": -2.6,
+        "status": "active",
+        "link": "http:\/\/www.meetup.com\/members\/67450042",
+        "state": "B7",
+        "self": {
+            "common": []
+        },
+        "photo": {
+            "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/4\/1\/8\/member_219497432.jpeg",
+            "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/4\/1\/8\/highres_219497432.jpeg",
+            "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/4\/1\/8\/thumb_219497432.jpeg",
+            "photo_id": 219497432,
+            "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/4\/1\/8\/highres_219497432.jpeg"
+        },
+        "city": "Bristol",
+        "country": "gb",
+        "id": 67450042,
+        "visited": 1420573490000,
+        "topics": [
+            {
+                "id": 10579,
+                "urlkey": "technology",
+                "name": "Technology"
+            },
+            {
+                "id": 3833,
+                "urlkey": "softwaredev",
+                "name": "Software Development"
+            },
+            {
+                "id": 17627,
+                "urlkey": "programming",
+                "name": "Programming"
+            },
+            {
+                "id": 15582,
+                "urlkey": "web-development",
+                "name": "Web Development"
+            },
+            {
+                "id": 87614,
+                "urlkey": "devops",
+                "name": "DevOps"
+            }
+        ],
+        "joined": 1354634721000,
+        "bio": "Hi, I'm working as a php\/java developer at Brightpearl.",
+        "name": "Kat Zien",
+        "other_services": [],
+        "lat": 51.46,
+        "profile_url": "http:\/\/www.meetup.com\/php-sw\/members\/67450042\/",
+        "photo_url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/4\/1\/8\/member_219497432.jpeg",
+        "answers": [
+            {
+                "question": "What topics would you be interested in seeing talks about?",
+                "question_id": 7642622
+            },
+            {
+                "question": "Would you be interested in giving a talk? If so, what on?",
+                "question_id": 7642612
+            }
+        ],
+        "member_id": 67450042,
+        "created": 1354634721000,
+        "updated": 1420211847000,
+        "role": "Assistant Organizer",
+        "group": {
+            "id": 2833232,
+            "created": 1321635579000,
+            "group_lat": 51.459999084473,
+            "name": "PHPSW",
+            "group_lon": -2.5899999141693,
+            "join_mode": "open",
+            "urlname": "php-sw",
+            "who": "Members"
+        },
+        "comment": "AWESOME!",
+        "visited_date": {
+            "date": "2015-01-06 19:44:50.000000",
+            "timezone_type": 1,
+            "timezone": "+00:00"
+        }
+    },
+    "photo": {
+        "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/4\/1\/8\/member_219497432.jpeg",
+        "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/4\/1\/8\/highres_219497432.jpeg",
+        "thumb_link": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/4\/1\/8\/thumb_219497432.jpeg",
+        "photo_id": 219497432,
+        "url": "http:\/\/photos2.meetupstatic.com\/photos\/member\/4\/4\/1\/8\/highres_219497432.jpeg"
+    },
+    "organisation": {
+        "name": "Brightpearl",
+        "url": "http:\/\/www.brightpearl.com"
+    },
+    "photos": [
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/3\/e\/a\/0\/600_400636032.jpeg",
+            "created": 1408606342000,
+            "updated": 1408999956000,
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/3\/e\/a\/0\/highres_400636032.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/3\/e\/a\/0\/thumb_400636032.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "195104522",
+                "photo_album_id": 23985622
+            },
+            "photo_id": 400636032,
+            "id": 400636032
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/3\/e\/6\/e\/600_400635982.jpeg",
+            "created": 1408606300000,
+            "updated": 1408999966000,
+            "highres_link": "http:\/\/photos2.meetupstatic.com\/photos\/event\/3\/e\/6\/e\/highres_400635982.jpeg",
+            "thumb_link": "http:\/\/photos4.meetupstatic.com\/photos\/event\/3\/e\/6\/e\/thumb_400635982.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "195104522",
+                "photo_album_id": 23985622
+            },
+            "photo_id": 400635982,
+            "id": 400635982
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/3\/d\/0\/6\/600_400635622.jpeg",
+            "created": 1408606202000,
+            "updated": 1408999976000,
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/3\/d\/0\/6\/highres_400635622.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/3\/d\/0\/6\/thumb_400635622.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "195104522",
+                "photo_album_id": 23985622
+            },
+            "photo_id": 400635622,
+            "id": 400635622
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/8\/8\/4\/c\/600_366334892.jpeg",
+            "created": 1400746523000,
+            "updated": 1409000106000,
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/8\/8\/4\/c\/highres_366334892.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/8\/8\/4\/c\/thumb_366334892.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "170468612",
+                "photo_album_id": 22052402
+            },
+            "photo_id": 366334892,
+            "id": 366334892
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/8\/4\/8\/c\/600_366333932.jpeg",
+            "created": 1400745942000,
+            "updated": 1409000084000,
+            "highres_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/8\/4\/8\/c\/highres_366333932.jpeg",
+            "thumb_link": "http:\/\/photos1.meetupstatic.com\/photos\/event\/8\/4\/8\/c\/thumb_366333932.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "170468612",
+                "photo_album_id": 22052402
+            },
+            "photo_id": 366333932,
+            "id": 366333932
+        },
+        {
+            "member": {
+                "name": "Steve Lacey",
+                "member_id": 13915585
+            },
+            "photo_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/8\/4\/7\/8\/600_366333912.jpeg",
+            "created": 1400745931000,
+            "updated": 1409000071000,
+            "highres_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/8\/4\/7\/8\/highres_366333912.jpeg",
+            "thumb_link": "http:\/\/photos3.meetupstatic.com\/photos\/event\/8\/4\/7\/8\/thumb_366333912.jpeg",
+            "photo_album": {
+                "group_id": 2833232,
+                "event_id": "170468612",
+                "photo_album_id": 22052402
+            },
+            "photo_id": 366333912,
+            "id": 366333912
+        }
+    ]
+}

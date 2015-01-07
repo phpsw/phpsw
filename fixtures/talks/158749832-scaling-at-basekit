@@ -1,0 +1,25 @@
+{
+    "description": null,
+    "title": "Scaling at BaseKit<br>",
+    "id": "158749832-scaling-at-basekit",
+    "event": "158749832",
+    "speaker": {
+        "id": "ade-slade",
+        "name": "Ade Slade",
+        "slug": "ade-slade",
+        "bio": "<a href=\"http:\/\/www.basekit.com\">BaseKit<\/a>",
+        "url": "https:\/\/twitter.com\/adeslade",
+        "twitter": "adeslade",
+        "photo": {
+            "thumb_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/adeslade?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/adeslade?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.org.uk\/twitter\/adeslade?size=original",
+            "url": "http:\/\/avatars.phpsw.org.uk\/twitter\/adeslade?size=original"
+        },
+        "organisation": {
+            "name": "BaseKit",
+            "url": "http:\/\/www.basekit.com"
+        }
+    },
+    "slides": "http:\/\/slid.es\/adeslade\/scaling-at-basekit"
+}
