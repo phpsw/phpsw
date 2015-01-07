@@ -19,14 +19,15 @@ class RestoreCommand extends Command
         $app = $this->getSilexApplication();
 
         $fixtures = $app['console.project_directory'] . '/fixtures';
+        $prefix = 'phpsw:';
         $redis = $app['redis'];
 
         foreach (Finder::create()->depth(0)->in($fixtures) as $node) {
-            echo $node->getFilename() . ': ';
+            $hash = $prefix . $node->getFilename();
+
+            echo $hash . ': ';
 
             if ($node->isDir()) {
-                $hash = $node->getFilename();
-
                 foreach (Finder::create()->files()->in($node->getPathname()) as $file) {
                     $key = $file->getFilename();
 
@@ -35,7 +36,7 @@ class RestoreCommand extends Command
                     echo '.';
                 }
             } else {
-                $redis->set($node->getFilename(), $this->parse($node->getContents()));
+                $redis->set($hash, $this->parse($node->getContents()));
 
                 echo '.';
             }
