@@ -12,20 +12,22 @@ bugsnag:
     key: ~
 
 communities:
-  - { name: Bristol Web Folk,  logo: bristol-web-folk.png, url:  http://bristolwebfolk.github.io }
-  - { name: Bristol Drupal,    logo: drupal-bristol.png,   url:  https://groups.drupal.org/bristol-and-west-uk }
-  - { name: BrightonPHP,       logo: brighton-php.png,     url:  http://brightonphp.org }
-  - { name: PHP Dorset,        logo: php-dorset.png,       url:  http://www.phpdorset.co.uk }
-  - { name: PHP London,        logo: php-london.png,       url:  http://phplondon.org }
-  - { name: PHP Hampshire,     logo: php-hampshire.png,    url:  http://phphants.co.uk }
-  - { name: PHP Women,         logo: php-women.png,        url:  http://phpwomen.org }
-  - { name: PHP Cambridge,     logo: php-cambridge.png,    url:  http://www.meetup.com/phpcambridge }
-  - { name: Leeds PHP,         logo: leed-php.png,         url:  http://leedsphp.org }
-  - { name: PHP East Midlands, logo: phpem.svg,            url:  http://phpem.info }
-  - { name: PHP North East,    logo: phpne.png,            url:  http://phpne.org.uk }
-  - { name: PHP North West,    logo: phpnw.png,            url:  http://conference.phpnw.org.uk }
-  - { name: PHP West Midlands, logo: phpwm.png,            url:  http://phpwm.org.uk }
-  - { name: PHP UK,            logo: php-uk.png,           url:  http://phpconference.co.uk }
+  - { name: Bristol Web Folk,         logo: bristol-web-folk.png,  url: http://bristolwebfolk.github.io }
+  - { name: Bristol Drupal,           logo: drupal-bristol.png,    url: https://groups.drupal.org/bristol-and-west-uk }
+  - { name: BrightonPHP,              logo: brighton-php.png,      url: http://brightonphp.org }
+  - { name: Bristol WordPress People, logo: bristol-wordpress.png, url: http://www.meetup.com/Bristol-WordPress-People }
+  - { name: edPUG,                    logo: edpug.png,             url: http://www.edpug.co.uk }
+  - { name: PHP Dorset,               logo: php-dorset.png,        url: http://www.phpdorset.co.uk }
+  - { name: PHP London,               logo: php-london.png,        url: http://phplondon.org }
+  - { name: PHP Hampshire,            logo: php-hampshire.png,     url: http://phphants.co.uk }
+  - { name: PHP Women,                logo: php-women.png,         url: http://phpwomen.org }
+  - { name: PHP Cambridge,            logo: php-cambridge.png,     url: http://www.meetup.com/phpcambridge }
+  - { name: Leeds PHP,                logo: leed-php.png,          url: http://leedsphp.org }
+  - { name: PHP East Midlands,        logo: phpem.svg,             url: http://phpem.info }
+  - { name: PHP North East,           logo: phpne.png,             url: http://phpne.org.uk }
+  - { name: PHP North West,           logo: phpnw.png,             url: http://conference.phpnw.org.uk }
+  - { name: PHP West Midlands,        logo: phpwm.png,             url: http://phpwm.org.uk }
+  - { name: PHP UK,                   logo: php-uk.png,            url: http://phpconference.co.uk }
 
 github:
   url: https://github.com/phpsw/phpsw
