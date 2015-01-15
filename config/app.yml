@@ -14,8 +14,8 @@ bugsnag:
 communities:
   - { name: Bristol Web Folk,         logo: bristol-web-folk.png,  url: http://bristolwebfolk.github.io }
   - { name: Bristol Drupal,           logo: drupal-bristol.png,    url: https://groups.drupal.org/bristol-and-west-uk }
-  - { name: BrightonPHP,              logo: brighton-php.png,      url: http://brightonphp.org }
   - { name: Bristol WordPress People, logo: bristol-wordpress.png, url: http://www.meetup.com/Bristol-WordPress-People }
+  - { name: BrightonPHP,              logo: brighton-php.png,      url: http://brightonphp.org }
   - { name: edPUG,                    logo: edpug.png,             url: http://www.edpug.co.uk }
   - { name: PHP Dorset,               logo: php-dorset.png,        url: http://www.phpdorset.co.uk }
   - { name: PHP London,               logo: php-london.png,        url: http://phplondon.org }
@@ -55,23 +55,26 @@ meetup:
     key: ~
 
 organisers:
-  ade:
-    name: Ade Slade
-    first_name: Ade
-    github: adeslade
-    twitter: adeslade
-    url: http://adeslade.co.uk
-
   steve:
     name: Steve Lacey
     first_name: Steve
+    slug: steve-lacey
     github: stevelacey
     twitter: stevelacey
     url: http://stevelacey.net
 
+  ade:
+    name: Ade Slade
+    first_name: Ade
+    slug: ade-slade
+    github: adeslade
+    twitter: adeslade
+    url: http://adeslade.co.uk
+
   kat:
     name: Kat Zien
     first_name: Kat
+    slug: kat-zien
     github: katzien
     twitter: kasiazien
     url: http://katzien.com
@@ -79,6 +82,7 @@ organisers:
   kiel:
     name: Kiel Doyle
     first_name: Kiel
+    slug: kiel-doyle
     github: kieldoyle
     twitter: kieldoyle
 

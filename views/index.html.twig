@@ -85,8 +85,8 @@
         <h2>Organisers</h2>
 
         {% for organiser in app.organisers %}
-          <div class="organiser organiser--{{ organiser.first_name | lower }}">
-            <a href="{{ organiser.url | default(organiser.twitter) }}">
+          <div class="organiser organiser--{{ organiser.first_name | lower }} col-xs-6">
+            <a href="{{ path('speaker', {slug: organiser.slug}) }}">
               <div class="avatar avatar--medium">
                 <img src="{{ avatar('http://avatars.phpsw.org.uk/twitter/' ~ organiser.twitter ~ '?size=400x400', 'medium') }}" alt="{{ organiser.name }}">
               </div>
@@ -118,9 +118,7 @@
             </ul>
           </div>
         {% endfor %}
-      </div>
+      </section>
     </div>
   </div>
-
-  <div id="x" class="lightbox-x"></div>
 {% endblock %}
