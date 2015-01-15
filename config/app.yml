@@ -29,6 +29,8 @@ communities:
   - { name: PHP West Midlands,        logo: phpwm.png,             url: http://phpwm.org.uk }
   - { name: PHP UK,                   logo: php-uk.png,            url: http://phpconference.co.uk }
 
+email: info@phpsw.org.uk
+
 github:
   url: https://github.com/phpsw/phpsw
 

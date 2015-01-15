@@ -41,11 +41,11 @@
 
             <footer class="voucher__footer">
               {% if voucher.code | default %}
-                Use code <strong class="voucher__code">{{ voucher.code }}</strong> to redeem or email <a href="mailto:{{ app.organisers.steve.email }}">{{ app.organisers.steve.email }}</a> for help
+                Use code <strong class="voucher__code">{{ voucher.code }}</strong> to redeem or email <a href="mailto:{{ app.email }}">{{ app.email }}</a> for help
               {% elseif voucher.url | default %}
-                Visit <a href="{{ voucher.url | bitly }}">{{ voucher.url | bitly }}</a> to redeem or email <a href="mailto:{{ app.organisers.steve.email }}">{{ app.organisers.steve.email }}</a> for help
+                Visit <a href="{{ voucher.url | bitly }}">{{ voucher.url | bitly }}</a> to redeem or email <a href="mailto:{{ app.email }}">{{ app.email }}</a> for help
               {% else %}
-                Drop us a line at <a href="mailto:{{ app.organisers.steve.email }}">{{ app.organisers.steve.email }}</a> to redeem
+                Drop us a line at <a href="mailto:{{ app.email }}">{{ app.email }}</a> to redeem
               {% endif %}
             </footer>
           </article>
