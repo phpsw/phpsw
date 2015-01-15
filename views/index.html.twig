@@ -86,36 +86,37 @@
 
         {% for organiser in app.organisers %}
           <div class="organiser organiser--{{ organiser.first_name | lower }}">
-            <a href="{{ organiser.url }}">
+            <a href="{{ organiser.url | default(organiser.twitter) }}">
               <div class="avatar avatar--medium">
-                <img src="{{ organiser.photo }}" alt="{{ organiser.name }}">
+                <img src="{{ avatar('http://avatars.phpsw.org.uk/twitter/' ~ organiser.twitter ~ '?size=400x400', 'medium') }}" alt="{{ organiser.name }}">
               </div>
               <span class="fn organiser__name">{{ organiser.name }}</span>
             </a>
 
             <ul class="organiser__social list list--inline">
-              <li>
-                <a href="{{ organiser.url }}">
-                  <i class="fa fa-globe"></i>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:{{ organiser.email | replace({'@': ' at ', '.': ' dot '}) }}" class="email">
-                  <i class="fa fa-paper-plane-o"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/{{ organiser.twitter }}">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/{{ organiser.github }}">
-                  <i class="fa fa-github"></i>
-                </a>
-              </li>
+              {% if organiser.url | default %}
+                <li>
+                  <a href="{{ organiser.url }}">
+                    <i class="fa fa-globe"></i>
+                  </a>
+                </li>
+              {% endif %}
+              {% if organiser.twitter | default %}
+                <li>
+                  <a href="https://twitter.com/{{ organiser.twitter }}">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+              {% endif %}
+              {% if organiser.github | default %}
+                <li>
+                  <a href="https://github.com/{{ organiser.github }}">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+              {% endif %}
             </ul>
-          </section>
+          </div>
         {% endfor %}
       </div>
     </div>

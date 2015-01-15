@@ -58,8 +58,6 @@ organisers:
   ade:
     name: Ade Slade
     first_name: Ade
-    email: info@phpsw.org.uk
-    photo: http://photos1.meetupstatic.com/photos/member/a/d/e/0/thumb_36884512.jpeg
     github: adeslade
     twitter: adeslade
     url: http://adeslade.co.uk
@@ -67,11 +65,22 @@ organisers:
   steve:
     name: Steve Lacey
     first_name: Steve
-    email: info@phpsw.org.uk
-    photo: http://photos2.meetupstatic.com/photos/member/6/e/3/4/thumb_155008212.jpeg
     github: stevelacey
     twitter: stevelacey
     url: http://stevelacey.net
+
+  kat:
+    name: Kat Zien
+    first_name: Kat
+    github: katzien
+    twitter: kasiazien
+    url: http://katzien.com
+
+  kiel:
+    name: Kiel Doyle
+    first_name: Kiel
+    github: kieldoyle
+    twitter: kieldoyle
 
 sponsors:
   meetup:
