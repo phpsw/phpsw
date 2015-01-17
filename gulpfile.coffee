@@ -18,6 +18,14 @@ g.css = lazy()
   .pipe g.p.cssUrlAdjuster, prepend: "/rev/#{rev(new Date)}/"
   .pipe g.p.autoprefixer, "last 2 version", "safari 5", "ie 8", "ie 9", "opera 12.1", "ios 6", "android 4"
 
+g.images = (deferred) ->
+  lazy().pipe(->
+    g.p.imagemin()
+      .on "end", -> deferred.resolve()
+      .on "error", g.p.util.log
+    , deferred
+  )()
+
 g.js = lazy()
   .pipe g.p.include
 

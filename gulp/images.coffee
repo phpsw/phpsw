@@ -18,7 +18,6 @@ g.task "images", ->
         .transparent "white"
         .setFormat "png"
     .pipe community.restore()
-
     .pipe sponsors
     .pipe g.p.gm (gm) ->
       gm
@@ -29,11 +28,7 @@ g.task "images", ->
         .transparent "white"
         .setFormat "png"
     .pipe sponsors.restore()
-
-    .pipe g.p.imagemin()
-      .on "end", -> deferred.resolve()
-      .on "error", g.p.util.log
-
+    .pipe g.p.if g.e != 'dev', g.images(deferred), deferred.resolve()
     .pipe g.dest "web/images"
     .pipe g.reload()
 
