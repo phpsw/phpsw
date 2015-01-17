@@ -28,7 +28,7 @@ g.task "images", ->
         .transparent "white"
         .setFormat "png"
     .pipe sponsors.restore()
-    .pipe g.p.if g.e != 'dev', g.images(deferred), deferred.resolve()
+    .pipe g.p.if g.e isnt 'dev', g.images(deferred), deferred.resolve()
     .pipe g.dest "web/images"
     .pipe g.reload()
 

@@ -18,7 +18,7 @@ g.task "vendor-images", ["bower"], ->
   deferred = g.q.defer()
 
   g.src "vendor/bower/files/**/*.{gif,jpg,jpeg,png,svg}"
-    .pipe g.p.if g.e != 'dev', g.images(deferred), deferred.resolve()
+    .pipe g.p.if g.e isnt 'dev', g.images(deferred), deferred.resolve()
     .pipe g.p.flatten()
     .pipe g.dest "web/images"
     .pipe g.reload()
