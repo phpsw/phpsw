@@ -17,8 +17,15 @@ git clone https://github.com/phpsw/phpsw.git
 cd phpsw
 composer install
 npm install
+bower install
 gulp build
 app/console redis:restore-fixtures
+```
+
+Note: if you do not have bower or gulp installed globally binaries can be found in
+
+```bash
+phpsw/node_modules/.bin/
 ```
 
 Config
