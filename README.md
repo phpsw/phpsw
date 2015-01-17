@@ -7,7 +7,9 @@ Prerequisites
 -------------
 
 - PHP >=5.4
+- Node.js
 - Redis
+- Graphicsmagick
 
 Setup
 -----
