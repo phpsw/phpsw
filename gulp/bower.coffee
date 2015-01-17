@@ -1,4 +1,4 @@
-g = module.parent.exports
+g = require "gulp"
 
 g.task "bower", ->
   g.src g.b(), base: "vendor/bower"

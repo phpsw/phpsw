@@ -1,4 +1,4 @@
-g = module.parent.exports
+g = require "gulp"
 
 g.task "fonts", ["bower"], ->
   g.src ["fonts/**/*.{#{g.types.fonts}}", "vendor/bower/files/**/*.{#{g.types.fonts}}"]

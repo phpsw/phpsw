@@ -1,4 +1,4 @@
-g = module.parent.exports
+g = require "gulp"
 
 g.task "styles", ->
   g.src "styles/application.scss"

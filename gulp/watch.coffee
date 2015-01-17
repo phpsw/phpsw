@@ -1,4 +1,4 @@
-g = module.parent.exports
+g = require "gulp"
 
 g.task "watch", ->
   g.s.listen 35729, (err) ->

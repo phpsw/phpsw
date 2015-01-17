@@ -1,4 +1,4 @@
-g = module.parent.exports
+g = require "gulp"
 
 g.task "vendor", -> g.start "vendor-css", "vendor-images", "vendor-js"
 

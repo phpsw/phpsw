@@ -1,4 +1,4 @@
-g = module.parent.exports
+g = require "gulp"
 
 g.task "clean", ->
   g.src ["vendor/bower/files", "web/{css,fonts,images,js}"], read: false

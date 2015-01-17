@@ -1,4 +1,4 @@
-g = module.parent.exports
+g = require "gulp"
 
 g.task "scripts", ->
   g.src "scripts/application.coffee"
