@@ -69,7 +69,7 @@ class MeetupCommand extends Command
                 }
             },
             'speakers' => function ($callback) {
-                foreach ($this->meetup->getEvents() as $event) {
+                foreach (array_reverse($this->meetup->getEvents()) as $event) {
                     foreach ($event->talks as $talk) {
                         $a = $this->hget('speakers', $talk->speaker->slug);
                         $b = $talk->speaker;
