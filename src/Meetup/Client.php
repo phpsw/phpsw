@@ -3,6 +3,7 @@
 namespace PHPSW\Meetup;
 
 use DMS\Service\Meetup\MeetupKeyAuthClient;
+use Guzzle\Http\Exception\ClientErrorResponseException;
 
 class Client
 {
@@ -15,17 +16,27 @@ class Client
 
     public function __call($method, $args)
     {
-        $response = call_user_func_array([$this->client, $method], $args);
+        do {
 
-        $limit     = (int) (string) $response->getHeader('x-ratelimit-limit');
-        $remaining = (int) (string) $response->getHeader('x-ratelimit-remaining');
-        $reset     = (int) (string) $response->getHeader('x-ratelimit-reset');
+            try {
+                $response = call_user_func_array([$this->client, $method], $args);
+            } catch (ClientErrorResponseException $e) {
+                $response = $e->getResponse();
 
-        if ($remaining / $limit < .2) {
-            sleep($reset);
-        } elseif ($remaining / $limit < .5) {
-            sleep($reset / 2);
-        }
+                if ($response->getStatusCode() != 429) throw $e;
+            }
+
+            $limit     = (int) (string) $response->getHeader('x-ratelimit-limit');
+            $remaining = (int) (string) $response->getHeader('x-ratelimit-remaining');
+            $reset     = (int) (string) $response->getHeader('x-ratelimit-reset');
+
+            if ($remaining / $limit < .2) {
+                sleep($reset);
+            } elseif ($remaining / $limit < .5) {
+                sleep($reset / 2);
+            }
+
+        } while ($response->getStatusCode() == 429);
 
         return $response;
     }
