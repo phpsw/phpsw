@@ -11,7 +11,7 @@ if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
 $app['guzzle'] = new GuzzleHttp\Client();
 
 $app['meetup.client'] = function ($app) {
-    return new PHPSW\API\Meetup($app, $app['meetup'], $app['cli'], $app['debug']);
+    return new PHPSW\Meetup\Client($app, $app['meetup'], $app['cli'], $app['debug']);
 };
 
 $app['redis'] = new Predis\Client();
