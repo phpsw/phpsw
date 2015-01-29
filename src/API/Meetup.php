@@ -2,7 +2,7 @@
 
 namespace PHPSW\API;
 
-use DMS\Service\Meetup\MeetupKeyAuthClient,
+use PHPSW\Meetup\Client,
     Symfony\Component\DomCrawler\Crawler;
 
 class Meetup
@@ -24,7 +24,7 @@ class Meetup
     public function __construct($app, array $config, $cli, $debug = false)
     {
         if ($cli) {
-            $this->client = MeetupKeyAuthClient::factory(['key' => $config['api']['key']]);
+            $this->client = new Client($config['api']['key']);
         }
 
         $this->app = $app;
