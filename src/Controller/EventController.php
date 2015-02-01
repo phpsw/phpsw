@@ -42,6 +42,30 @@ class EventController extends AbstractController
                 301
             );
         } else {
+            $segments = array_map('trim', explode('<hr>', $event->description));
+
+            $event->abstract = array_shift($segments);
+
+            $event->details = implode('<hr>', array_filter($segments, function ($segment) {
+                return !preg_match('#^<p><b>([^<]+)</b></p>#', $segment, $matches);
+            }));
+
+            $event->extras = array_map(
+                function ($segment) {
+                    preg_match('#^<p><b>([^<]+)</b></p>(.*)#', $segment, $matches);
+
+                    list($segment, $heading, $content) = $matches;
+
+                    return (object) [
+                        'heading' => $heading,
+                        'content' => $content
+                    ];
+                },
+                array_filter($segments, function ($segment) {
+                    return !!preg_match('#^<p><b>([^<]+)</b></p>#', $segment, $matches);
+                })
+            );
+
             $response = $this->render($app, 'event.html.twig', [
                 'event' => $event
             ]);

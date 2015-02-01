@@ -2,7 +2,7 @@
   {{ event is defined ? 'talks--event' }}
   {{ speaker is defined ? 'talks--speaker' }}
 ">
-  <h2>Talks</h2>
+  <h2{% if event is defined %} class="sr-only"{% endif %}>Talks</h2>
 
   <ul class="list">
     {% for talk in talks %}
