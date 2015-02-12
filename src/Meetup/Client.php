@@ -557,8 +557,14 @@ class Client
 
                 if ($titleNode->count()) {
                     $talk->title = preg_replace('#\s+#u', ' ', $titleNode->html());
-                    if ($event->id == 220161444) $talk->title = str_replace('Untitled', 'Boost your website by running PHP on Nginx', $talk->title);
-                    $talk->id = $event->id . '-' . $this->slugify(preg_replace('#\s+#u', ' ', $titleNode->text()));
+                    $talk->slug = $this->slugify(preg_replace('#\s+#u', ' ', $titleNode->text()));
+
+                    if ($event->id == 220161444) {
+                        $talk->title = str_replace('Untitled', 'Boost your website by running PHP on Nginx', $talk->title);
+                        $talk->slug = str_replace('untitled', 'boost-your-website-by-running-php-on-nginx', $talk->slug);
+                    }
+
+                    $talk->id = $event->id . '-' . $talk->slug;
                     $talk->event = $event->id;
 
                     $speakerAndOrg = explode(',', preg_replace('#-\s*' . preg_quote($titleNode->text()) . '#u', '', $node->text()), 2);
