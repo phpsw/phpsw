@@ -557,6 +557,7 @@ class Client
 
                 if ($titleNode->count()) {
                     $talk->title = preg_replace('#\s+#u', ' ', $titleNode->html());
+                    if ($event->id == 220161444) $talk->title = str_replace('Untitled', 'Boost your website by running PHP on Nginx', $talk->title);
                     $talk->id = $event->id . '-' . $this->slugify(preg_replace('#\s+#u', ' ', $titleNode->text()));
                     $talk->event = $event->id;
 
