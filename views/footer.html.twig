@@ -64,19 +64,13 @@
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:{{ app.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
-                  class="email"
-                >
+                <a href="{{ path('speakers') }}#speaking">
                   <i class="fa fa-comments-o"></i>
                   Submit a talk
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:{{ app.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=PHPSW sponsorship"
-                  class="email"
-                >
+                <a href="{{ path('sponsors') }}#sponsoring">
                   <i class="fa fa-money"></i>
                   Sponsor us
                 </a>

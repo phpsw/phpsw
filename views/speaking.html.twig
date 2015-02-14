@@ -1,4 +1,4 @@
-<h2>Interested in speaking?</h2>
+<h2 id="speaking">Interested in speaking?</h2>
 
 <p>We're always looking for speakers, so do drop us a line, regardless of your experience, we're all about first time speakers.</p>
 
@@ -12,9 +12,4 @@
   <li>Support tools (e.g. phplint, boris, phpsh)</li>
 </ul>
 
-<a
-  href="mailto:{{ app.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
-  class="btn btn-primary email"
->
-  Submit a talk
-</a>
+{{ include('message.html.twig', {subject: 'proposal'}) }}

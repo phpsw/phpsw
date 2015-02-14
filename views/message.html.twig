@@ -1,0 +1,24 @@
+<div id="{{ subject }}" class="message">
+  {% for message in app.session.getFlashBag.get('message_success') %}
+    <div class="alert alert-success" role="alert">
+      <i class="fa fa-check" aria-hidden="true"></i>
+      <span class="sr-only">Success:</span>
+      {{ message }}
+    </div>
+  {% endfor %}
+
+  {% for message in app.session.getFlashBag.get('message_fail') %}
+    <div class="alert alert-danger" role="alert">
+      <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+      <span class="sr-only">Error:</span>
+      {{ message }}
+    </div>
+  {% endfor %}
+
+  <form action="{{ url('message') }}" method="post">
+    <input name="name" style="display: none" value="human">
+    <input name="subject" type="hidden" value="{{ subject|default('message') }}">
+    <textarea name="message" required>{{ app.request.get('message') }}</textarea>
+    <input class="btn btn-primary" type="submit" value="{{ button | default('Submit a ' ~ subject | default('message')) }}">
+  </form>
+</div>

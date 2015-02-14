@@ -49,14 +49,7 @@
     <div class="col-sm-4">
       <div class="events-calendar"></div>
 
-      <h2>Interested in speaking?</h2>
-
-      <a
-        href="mailto:{{ app.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=Speaking at PHPSW"
-        class="btn btn-primary email"
-      >
-        Submit a talk
-      </a>
+      {{ include('speaking.html.twig') }}
     </div>
   </div>
 {% endblock %}

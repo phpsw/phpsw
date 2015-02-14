@@ -1,4 +1,4 @@
-<h2>Interested in sponsoring?</h2>
+<h2 id="sponsoring">Interested in sponsoring?</h2>
 
 <p>We're always on the look out for new sponsors, be that for individual events or as a meetup sponsor.</p>
 
@@ -13,9 +13,6 @@
   <li>Speaking and/or hosting opportunities</li>
 </ul>
 
-<a
-  href="mailto:{{ app.email | replace({'@': ' at ', '.': ' dot '}) }}?subject=PHPSW sponsorship"
-  class="btn btn-primary email"
->
-  Get in touch
-</a>
+<p>If you're interested in getting involved, drop us a line:</p>
+
+{{ include('message.html.twig', {subject: 'proposal'}) }}

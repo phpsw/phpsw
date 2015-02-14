@@ -90,17 +90,25 @@
               {% endif %}
             </div>
 
-            {% if event.extras %}
-              <div class="col-sm-4">
-                <h2 class="sr-only">Additional info</h2>
+            <div class="col-sm-4">
+              <h2 class="sr-only">Additional info</h2>
 
+              {% if event.extras %}
                 {% for extra in event.extras %}
                   <h3>{{ extra.heading }}</h3>
 
                   {{ extra.content | raw }}
                 {% endfor %}
-              </div>
-            {% endif %}
+              {% endif %}
+
+              <h3>Suggestion box</h3>
+              <p>
+                We're always looking for new ideas, if you have any suggestions
+                for talk nights, speakers or things you'd like to see at PHPSW,
+                drop us a line:
+              </p>
+              {{ include('message.html.twig', {subject: 'suggestion'}) }}
+            </div>
           </div>
         {% endif %}
 
