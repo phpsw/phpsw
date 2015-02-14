@@ -8,6 +8,25 @@ if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
     $app['env'] = 'dev';
 }
 
+foreach (['app', $app['env'], 'secrets'] as $config) {
+    if (file_exists(__DIR__ . '/../config/' . $config . '.yml')) {
+        $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__ . '/../config/' . $config . '.yml'));
+    }
+}
+
+if ($app['bugsnag']['api']['key'] && $app['env'] == 'prod') {
+    $app->register(new Bugsnag\Silex\Provider\BugsnagServiceProvider, [
+        'bugsnag.options' => [
+            'apiKey' => $app['bugsnag']['api']['key']
+        ]
+    ]);
+}
+
+$app->register(new Cocur\Slugify\Bridge\Silex\SlugifyServiceProvider());
+$app->register(new Silex\Provider\SessionServiceProvider());
+$app->register(new Silex\Provider\SwiftmailerServiceProvider());
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
+
 $app['guzzle'] = new GuzzleHttp\Client();
 
 $app['meetup.client'] = function ($app) {
@@ -15,6 +34,13 @@ $app['meetup.client'] = function ($app) {
 };
 
 $app['redis'] = new Predis\Client();
+
+$app['swiftmailer.options'] = [
+    'host' => 'smtp.mandrillapp.com',
+    'port' => '587',
+    'username' => $app['email'],
+    'password' => $app['mandrill']['api']['key']
+];
 
 $app['thumbor.builder'] = function ($app) {
     return Thumbor\Url\BuilderFactory::construct($app['thumbor']['server'], $app['thumbor']['security_key']);
@@ -28,12 +54,6 @@ $app['twitter.client'] = function ($app) {
         $app['twitter']['access_token_secret']
     );
 };
-
-foreach (['app', $app['env'], 'secrets'] as $config) {
-    if (file_exists(__DIR__ . '/../config/' . $config . '.yml')) {
-        $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__ . '/../config/' . $config . '.yml'));
-    }
-}
 
 $app->get('/',                   'PHPSW\Controller\AppController::indexAction')->bind('home');
 $app->get('/brand',              'PHPSW\Controller\AppController::brandAction')->bind('brand');
@@ -59,18 +79,5 @@ $app
     ->assert('user', $app['twitter']['user'])
     ->value('user', $app['twitter']['user'])
 ;
-
-if ($app['bugsnag']['api']['key'] && $app['env'] == 'prod') {
-    $app->register(new Bugsnag\Silex\Provider\BugsnagServiceProvider, [
-        'bugsnag.options' => [
-            'apiKey' => $app['bugsnag']['api']['key']
-        ]
-    ]);
-}
-
-$app->register(new Cocur\Slugify\Bridge\Silex\SlugifyServiceProvider());
-$app->register(new Silex\Provider\SessionServiceProvider());
-$app->register(new Silex\Provider\SwiftmailerServiceProvider());
-$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
 return $app;

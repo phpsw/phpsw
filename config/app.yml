@@ -46,6 +46,10 @@ invoice:
   iban: ~
   sort_code: 12-23-45
 
+mandrill:
+  api:
+    key: ~
+
 meetup:
   name: PHPSW
   url: http://www.meetup.com/php-sw

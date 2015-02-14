@@ -30,19 +30,25 @@ class MessageController extends AbstractController
             $data = (object) [
                 'subject'  => $subject,
                 'message'  => $message,
+                'referer'  => $referer,
                 'datetime' => date('c')
             ];
 
             $app['redis']->lpush("phpsw:messages", json_encode($data, JSON_PRETTY_PRINT));
 
             $email = $app['mailer']->createMessage()
-                ->setSubject("PHPSW {$subject}: $abstract…")
-                ->setFrom([$app['email']])
-                ->setTo([$app['email']])
-                ->setBody($message)
+                ->setSubject("PHPSW {$subject}: {$abstract}…")
+                ->setFrom($app['email'])
+                ->setTo($app['email'])
+                ->setBody("{$message}
+
+
+--
+
+Referrer: {$referer}")
             ;
 
-            if ($app['mailer']->send($email)) {
+            if ($app->mail($email)) {
                 if ($subject != 'complaint') {
                     $response = $this->success("Thank you for your {$subject}!");
                 } else {
