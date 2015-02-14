@@ -15,9 +15,17 @@
 
       {% if events %}
         <section>
-          <h2>Upcoming events</h2>
-
           {% for event in events %}
+            {% if loop.first %}
+              <h2>
+                {%- if event.status == 'upcoming' -%}
+                  Upcoming events
+                {%- else -%}
+                  Recent events
+                {%- endif -%}
+              </h2>
+            {% endif %}
+
             {{ include('meetup/event-list-item.html.twig') }}
           {% endfor %}
         </section>

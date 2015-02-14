@@ -11,17 +11,15 @@ class AppController extends AbstractController
     public function indexAction(Application $app)
     {
         $meetup = $app['meetup.client'];
-        $events = $meetup->getUpcomingEvents();
 
         $description = $meetup->getGroup()->description;
-
         $description = str_replace($app['website']['url'], $app['meetup']['url'], $description);
         $description = str_replace($app['website']['urlshort'], $app['meetup']['urlshort'], $description);
         $description = str_replace($app['meetup']['url'] . '/code-of-conduct', $app['website']['url'] . '/code-of-conduct', $description);
 
         return $this->render($app, 'index.html.twig', [
             'description' => $description,
-            'events' => $events
+            'events' => $meetup->getUpcomingEvents() ?: array_slice($meetup->getPastEvents(), 0, 1)
         ]);
     }
 
@@ -53,10 +51,10 @@ class AppController extends AbstractController
         }
 
         return $this->render($app, 'invoice.html.twig', [
-            'amount' => $request->get('amount'),
+            'amount'   => $request->get('amount'),
             'currency' => $request->get('currency', '£'),
-            'ref' => strtoupper($slug . date('My', strtotime('next month'))),
-            'sponsor' => $sponsor
+            'ref'      => strtoupper($slug . date('My', strtotime('next month'))),
+            'sponsor'  => $sponsor
         ]);
     }
 

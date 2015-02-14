@@ -9,24 +9,16 @@ class EventController extends AbstractController
 {
     public function indexAction(Application $app)
     {
-        $statuses = ['upcoming', 'past'];
-
-        if ($app['debug']) {
-            array_unshift($statuses, 'draft');
-        }
-
-        $events = $app['meetup.client']->getEvents();
-        $draftEvents = $app['meetup.client']->getDraftEvents();
-        $pastEvents = $app['meetup.client']->getPastEvents();
-        $upcomingEvents = $app['meetup.client']->getUpcomingEvents();
+        $drafts   = $app['meetup.client']->getDraftEvents();
+        $past     = $app['meetup.client']->getPastEvents();
+        $upcoming = $app['meetup.client']->getUpcomingEvents();
 
         return $this->render($app, 'events.html.twig', [
-            'next_event' => array_shift($upcomingEvents),
-            'statuses' => $statuses,
-            'events' => $events,
-            'draft_events' => $draftEvents,
-            'past_events' => $pastEvents,
-            'upcoming_events' => $upcomingEvents
+            'event'    => array_shift($upcoming) ?: array_shift($past),
+            'statuses' => array_merge(['upcoming', 'past'], ($app['debug'] ? ['draft'] : [])),
+            'draft'    => $drafts,
+            'past'     => $past,
+            'upcoming' => $upcoming
         ]);
     }
 

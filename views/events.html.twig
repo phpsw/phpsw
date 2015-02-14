@@ -11,17 +11,23 @@
 {% block content %}
   <div class="events row">
     <div class="col-sm-8">
-      {% if next_event %}
-        <h2>Next event</h2>
+      {% if event %}
+        <h2>
+          {% if event.status == 'upcoming' %}
+            Next event
+          {% else %}
+            Recent events
+          {% endif %}
+        </h2>
 
-        {{ include('meetup/event-list-item.html.twig', {'event': next_event}) }}
+        {{ include('meetup/event-list-item.html.twig') }}
       {% endif %}
 
-      {% for status in statuses if attribute(_context, status ~ '_events') %}
+      {% for status in statuses if attribute(_context, status) %}
         <section id="{{ status }}-events" class="events__{{ status }}">
           <h2>{{ status | title }} events</h2>
 
-          {% for event in attribute(_context, status ~ '_events') %}
+          {% for event in attribute(_context, status) %}
             {% if not loop.first or status == 'past' %}
               {% if prev is not defined or event.date.format('Y') != prev.date.format('Y') %}
                 <h3>{{ event.date.format('Y') }}</h3>
