@@ -3,6 +3,17 @@ PHP South West UK User Group
 
 A simple [Silex](http://silex.sensiolabs.org)-based website for the [PHP South West UK User Group](http://phpsw.org.uk).
 
+
+Branch CI build status
+----------------------
+
+Master
+[![Build Status](https://semaphoreapp.com/api/v1/projects/f86199d0-df53-49ee-bc4a-7aa64ada6702/329257/shields_badge.svg)](https://semaphoreapp.com/stevelacey/phpsw)
+
+Develop
+[![Build Status](https://semaphoreapp.com/api/v1/projects/f86199d0-df53-49ee-bc4a-7aa64ada6702/329255/shields_badge.svg)](https://semaphoreapp.com/stevelacey/phpsw)
+
+
 Prerequisites
 -------------
 
