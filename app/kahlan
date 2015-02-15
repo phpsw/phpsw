@@ -1,0 +1,33 @@
+#!/usr/bin/env php
+<?php
+
+$autoloader = require_once __DIR__ . '/../vendor/autoload.php';
+chdir(__DIR__ . '/..');
+
+$app = require_once __DIR__ . '/app.php';
+$app['cli'] = true;
+$meetup = $app['meetup.client'];
+
+$box = box('kahlan', new box\Box());
+
+$box->factory('matcher', function () {
+    return new kahlan\Matcher();
+});
+
+$box->factory('suite', function () {
+    return new kahlan\Suite(['matcher' => $this->get('matcher')]);
+});
+
+$box->service('suite.global', function () {
+    return $this->get('suite');
+});
+
+$specs = new kahlan\cli\Kahlan([
+    'autoloader' => $autoloader,
+    'suite' => $box->get('suite.global')
+]);
+
+$specs->loadConfig($argv);
+$specs->run();
+
+exit($specs->status());
