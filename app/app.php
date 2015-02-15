@@ -2,7 +2,9 @@
 
 $app = new PHPSW\Application;
 
-if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
+if (strpos($_SERVER['SCRIPT_NAME'], 'kahlan') !== false) {
+    $app['env'] = 'testing';
+} elseif (strpos(__DIR__, 'phpsw.org.uk') !== false) {
     $app['env'] = 'prod';
 } else {
     $app['env'] = 'dev';
