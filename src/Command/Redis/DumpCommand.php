@@ -24,19 +24,16 @@ class DumpCommand extends Command
         $this->fs = new Filesystem;
         $this->fs->exists($fixtures) or $this->fs->mkdir($fixtures);
 
-        $prefix = 'phpsw:';
-        $keys = $redis->keys($prefix . '*');
+        $keys = $redis->keys('*');
 
         sort($keys);
 
         foreach ($keys as $key) {
             echo $key . ': ';
 
-            $path = str_replace($prefix, '', $key);
-
             switch ($redis->type($key)) {
                 case 'hash':
-                    $dir = $fixtures . '/' . $path;
+                    $dir = $fixtures . '/' . $key;
 
                     $this->fs->exists($dir) or $this->fs->mkdir($dir);
 
@@ -47,7 +44,7 @@ class DumpCommand extends Command
                     break;
 
                 case 'string':
-                    $this->write($fixtures . '/' . $path, $redis->get($key));
+                    $this->write($fixtures . '/' . $key, $redis->get($key));
             }
 
             echo PHP_EOL;

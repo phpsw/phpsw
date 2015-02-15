@@ -21,7 +21,6 @@ class MeetupCommand extends Command
 
         $this->meetup = $app['meetup.client'];
         $this->redis = $app['redis'];
-        $this->ns = 'phpsw';
 
         $tasks = [
             'group' => function ($callback) {
@@ -120,21 +119,21 @@ class MeetupCommand extends Command
 
     protected function get($key)
     {
-        return json_decode($this->redis->get("{$this->ns}:{$key}"));
+        return json_decode($this->redis->get($key));
     }
 
     protected function set($key, $value)
     {
-        return $this->redis->set("{$this->ns}:{$key}", json_encode($value, JSON_PRETTY_PRINT));
+        return $this->redis->set($key, json_encode($value, JSON_PRETTY_PRINT));
     }
 
     protected function hget($key, $hkey)
     {
-        return json_decode($this->redis->hget("{$this->ns}:{$key}", $hkey));
+        return json_decode($this->redis->hget($key, $hkey));
     }
 
     protected function hset($key, $hkey, $hvalue)
     {
-        return $this->redis->hset("{$this->ns}:{$key}", $hkey, json_encode($hvalue, JSON_PRETTY_PRINT));
+        return $this->redis->hset($key, $hkey, json_encode($hvalue, JSON_PRETTY_PRINT));
     }
 }

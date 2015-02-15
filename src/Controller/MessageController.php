@@ -34,7 +34,7 @@ class MessageController extends AbstractController
                 'datetime' => date('c')
             ];
 
-            $app['redis']->lpush("phpsw:messages", json_encode($data, JSON_PRETTY_PRINT));
+            $app['redis']->lpush("messages", json_encode($data, JSON_PRETTY_PRINT));
 
             $email = $app['mailer']->createMessage()
                 ->setSubject("PHPSW {$subject}: {$abstract}…")

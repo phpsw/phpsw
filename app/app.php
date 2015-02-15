@@ -33,7 +33,9 @@ $app['meetup.client'] = function ($app) {
     return new PHPSW\Meetup\Client($app, $app['meetup'], $app['cli'], $app['debug']);
 };
 
-$app['redis'] = new Predis\Client();
+$app['redis'] = new Predis\Client(null, [
+    'prefix' => 'phpsw:' . ($app['env'] != 'prod' ? $app['env'] . ':' : '')
+]);
 
 $app['swiftmailer.options'] = [
     'host' => 'smtp.mandrillapp.com',
