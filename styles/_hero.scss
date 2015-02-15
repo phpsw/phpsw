@@ -1,7 +1,9 @@
 .hero {
+  background: white;
   position: relative;
   height: 200px;
   overflow: hidden;
+  z-index: 1;
 
   @media (min-width: $screen-sm-min) {
     height: 350px;
