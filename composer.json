@@ -26,6 +26,15 @@
         "twig/extensions": ">=1.1,<2.0-dev",
         "twig/twig": ">=1.8,<2.0-dev"
     },
+    "require-dev": {
+        "crysalead/box": "dev-master@dev",
+        "crysalead/dir": "dev-master@dev",
+        "crysalead/filter": "dev-master@dev",
+        "crysalead/jit": "dev-master@dev",
+        "crysalead/kahlan": "~1.0",
+        "crysalead/set": "dev-master@dev",
+        "crysalead/string": "dev-master@dev"
+    },
     "authors": [
         {
             "name": "Steve Lacey",
