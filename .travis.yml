@@ -7,5 +7,6 @@ php:
 
 before_script:
   - composer self-update && composer install
+  - echo $SECRETS > config/secrets.yml
 
 script: app/kahlan
