@@ -12,9 +12,8 @@ env:
 before_script:
   - composer self-update && composer install
   - openssl aes-256-cbc -K $encrypted_d40576457a66_key -iv $encrypted_d40576457a66_iv -in config/secrets.yml.enc -out config/secrets.yml -d
+  - sudo apt-get install -y graphicsmagick redis-server
   - app/console redis:restore-fixtures
-  - sudo apt-get update -y
-  - sudo apt-get install -y graphicsmagick
   - npm install -g npm@2.2.0
   - npm install
   - bower install
