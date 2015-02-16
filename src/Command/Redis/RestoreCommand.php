@@ -22,20 +22,20 @@ class RestoreCommand extends Command
         $redis = $app['redis'];
 
         foreach (Finder::create()->depth(0)->in($fixtures)->sortByName() as $node) {
-            $hash = $node->getFilename();
+            $key = $node->getFilename();
 
-            echo $hash . ': ';
+            echo $key . ': ';
 
             if ($node->isDir()) {
                 foreach (Finder::create()->files()->in($node->getPathname())->sortByName() as $file) {
-                    $key = $file->getFilename();
+                    $hkey = $file->getFilename();
 
-                    $redis->hset($hash, $key, $this->parse($file->getContents()));
+                    $redis->hset($key, $hkey, $this->parse($file->getContents()));
 
                     echo '.';
                 }
             } else {
-                $redis->set($hash, $this->parse($node->getContents()));
+                $redis->set($key, $this->parse($node->getContents()));
 
                 echo '.';
             }

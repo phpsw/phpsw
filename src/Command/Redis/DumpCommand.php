@@ -37,8 +37,8 @@ class DumpCommand extends Command
 
                     $this->fs->exists($dir) or $this->fs->mkdir($dir);
 
-                    foreach ($redis->hgetall($key) as $key => $value) {
-                        $this->write($dir . '/' . $key, $value);
+                    foreach ($redis->hgetall($key) as $hkey => $value) {
+                        $this->write($dir . '/' . $hkey, $value);
                     }
 
                     break;
