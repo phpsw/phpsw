@@ -15,6 +15,9 @@ install:
   - composer self-update && composer install
   - npm install && bower install && gulp build
 
+notifications:
+  email: false
+
 services:
   - redis-server
 
