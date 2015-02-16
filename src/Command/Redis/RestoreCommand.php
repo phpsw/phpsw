@@ -27,7 +27,7 @@ class RestoreCommand extends Command
             echo $hash . ': ';
 
             if ($node->isDir()) {
-                foreach (Finder::create()->files()->in($node->getPathname()) as $file) {
+                foreach (Finder::create()->files()->in($node->getPathname())->sortByName() as $file) {
                     $key = $file->getFilename();
 
                     $redis->hset($hash, $key, $this->parse($file->getContents()));
