@@ -21,7 +21,7 @@ class RestoreCommand extends Command
         $fixtures = $app['console.project_directory'] . '/fixtures';
         $redis = $app['redis'];
 
-        foreach (Finder::create()->depth(0)->in($fixtures) as $node) {
+        foreach (Finder::create()->depth(0)->in($fixtures)->sortByName() as $node) {
             $hash = $node->getFilename();
 
             echo $hash . ': ';
