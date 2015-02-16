@@ -2,7 +2,9 @@
 
 $app = new PHPSW\Application;
 
-if (strpos(__DIR__, 'phpsw.org.uk') !== false) {
+if (strpos($_SERVER['SCRIPT_NAME'], 'kahlan') !== false) {
+    $app['env'] = 'testing';
+} elseif (strpos(__DIR__, 'phpsw.org.uk') !== false) {
     $app['env'] = 'prod';
 } else {
     $app['env'] = 'dev';
@@ -33,7 +35,9 @@ $app['meetup.client'] = function ($app) {
     return new PHPSW\Meetup\Client($app, $app['meetup'], $app['cli'], $app['debug']);
 };
 
-$app['redis'] = new Predis\Client();
+$app['redis'] = new Predis\Client(null, [
+    'prefix' => 'phpsw:' . ($app['env'] != 'prod' ? $app['env'] . ':' : '')
+]);
 
 $app['swiftmailer.options'] = [
     'host' => 'smtp.mandrillapp.com',

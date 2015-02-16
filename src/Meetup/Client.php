@@ -57,7 +57,7 @@ class Client
                     )
                 ];
             } else {
-                $this->group = json_decode($this->redis->get('phpsw:group'));
+                $this->group = json_decode($this->redis->get('group'));
             }
         }
 
@@ -221,7 +221,7 @@ class Client
 
                         return $member;
                     },
-                    $this->redis->hgetall('phpsw:members')
+                    $this->redis->hgetall('members')
                 );
             }
 
@@ -281,7 +281,7 @@ class Client
 
                         return $review;
                     },
-                    $this->redis->hgetall('phpsw:reviews')
+                    $this->redis->hgetall('reviews')
                 );
             }
 
@@ -320,7 +320,7 @@ class Client
 
                     return $speaker;
                 },
-                $this->redis->hgetall('phpsw:speakers')
+                $this->redis->hgetall('speakers')
             );
 
             usort($this->speakers, function ($a, $b) {
@@ -372,7 +372,7 @@ class Client
 
                     return $talk;
                 },
-                $this->redis->hgetall('phpsw:talks')
+                $this->redis->hgetall('talks')
             );
         }
 
@@ -438,7 +438,7 @@ class Client
 
                 return $event;
             },
-            $this->redis->hgetall('phpsw:events')
+            $this->redis->hgetall('events')
         );
     }
 
@@ -522,7 +522,7 @@ class Client
 
                 return $post;
             },
-            $this->redis->hgetall('phpsw:posts')
+            $this->redis->hgetall('posts')
         );
     }
 
@@ -659,7 +659,7 @@ class Client
                         }
                     });
 
-                    $talk->slides = $this->redis->hget('phpsw:slides', $talk->id);
+                    $talk->slides = $this->redis->hget('slides', $talk->id);
 
                     $event->description = str_replace('<p>' . $node->html() . '</p>', '', $event->description);
                     $event->talks[] = $talk;

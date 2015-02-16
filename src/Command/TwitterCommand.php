@@ -72,7 +72,7 @@ class TwitterCommand extends Command
         echo 'Tweets: ';
 
         foreach ($tweets as $tweet) {
-            $app['redis']->hset('phpsw:tweets', $tweet->id, json_encode($tweet));
+            $app['redis']->hset('tweets', $tweet->id, json_encode($tweet));
 
             echo '.';
         }

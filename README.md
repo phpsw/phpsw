@@ -1,17 +1,9 @@
 PHP South West UK User Group
 ============================
 
+![Build Status](https://img.shields.io/badge/branch-master-blue.svg) [![Build Status](https://travis-ci.org/phpsw/phpsw.svg?branch=master)](https://travis-ci.org/phpsw/phpsw) ![Build Status](https://img.shields.io/badge/branch-develop-blue.svg) [![Build Status](https://travis-ci.org/phpsw/phpsw.svg?branch=develop)](https://travis-ci.org/phpsw/phpsw)
+
 A simple [Silex](http://silex.sensiolabs.org)-based website for the [PHP South West UK User Group](http://phpsw.org.uk).
-
-
-Branch CI build status
-----------------------
-
-Master
-[![Build Status](https://semaphoreapp.com/api/v1/projects/f86199d0-df53-49ee-bc4a-7aa64ada6702/329257/shields_badge.svg)](https://semaphoreapp.com/stevelacey/phpsw)
-
-Develop
-[![Build Status](https://semaphoreapp.com/api/v1/projects/f86199d0-df53-49ee-bc4a-7aa64ada6702/329255/shields_badge.svg)](https://semaphoreapp.com/stevelacey/phpsw)
 
 
 Prerequisites

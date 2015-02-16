@@ -2,11 +2,14 @@
 <?php
 
 $autoloader = require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../spec/helpers.php';
 chdir(__DIR__ . '/..');
 
-$app = require_once __DIR__ . '/app.php';
-$app['cli'] = true;
+$app = require_once __DIR__ . '/cli.php';
+$console = $app['console'];
+$console->setAutoExit(false);
 $meetup = $app['meetup.client'];
+$redis = $app['redis'];
 
 $box = box('kahlan', new box\Box());
 

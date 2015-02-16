@@ -17,7 +17,7 @@ class TwitterController extends AbstractController
 
                 return $tweet;
             },
-            $app['redis']->hgetall('phpsw:tweets')
+            $app['redis']->hgetall('tweets')
         );
 
         uasort($tweets, function($a, $b) {
