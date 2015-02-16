@@ -56,5 +56,6 @@ describe("Task", function () {
         $redis->del('slides');
         $redis->del('speakers');
         $redis->del('talks');
+        $redis->del('tweets');
     });
 });
