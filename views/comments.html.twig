@@ -1,0 +1,7 @@
+<ul class="comments">
+  {% for comment in comments %}
+    <li>
+      {{ include('comment.html.twig') }}
+    </li>
+  {% endfor %}
+</ul>

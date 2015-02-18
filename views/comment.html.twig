@@ -1,0 +1,36 @@
+<article class="comment">
+  <a href="{{ app.meetup.url }}/members/{{ comment.member.id }}">
+    <div class="avatar avatar--medium">
+      <img src="{{ avatar(comment.member.photo.url, 'medium') }}" alt="{{ comment.member.name }}">
+    </div>
+  </a>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>
+        <a href="{{ app.meetup.url }}/members/{{ comment.member.id }}">
+          {{ comment.member.name }}
+        </a>
+        {% if comment.member.organiser %}
+          <span class="badge">Organiser</span>
+        {% endif %}
+      </strong>
+      <span class="text-muted">
+        <time datetime="{{ comment.date | date(constant('DATE_W3C')) }}">
+          {%- if comment.date >= date('2 weeks ago') -%}
+            {{ comment.date | time_ago_in_words }}
+          {%- else -%}
+            {{ comment.date | date ('F jS Y') }}
+          {%- endif -%}
+        </time>
+      </span>
+    </div>
+    <div class="panel-body">
+      {{ comment.comment | linkify | markdown }}
+    </div>
+  </div>
+</article>
+
+{% if comment.replies|default %}
+  {{ include('comments.html.twig', {comments: comment.replies})}}
+{% endif %}

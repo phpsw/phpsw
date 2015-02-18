@@ -15,6 +15,7 @@ class Client
     protected $events;
     protected $group;
     protected $members;
+    protected $organisers;
     protected $photos;
     protected $posts;
     protected $reviews;
@@ -30,6 +31,7 @@ class Client
         $this->debug = $debug;
         $this->config = $config;
         $this->redis = $app['redis'];
+        $this->organisers = $app['organisers'];
     }
 
     public function getGroup()
@@ -76,6 +78,24 @@ class Client
             $this->events = array_map(
                 function ($event) {
                     $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
+
+                    $event->comments = array_map(
+                        function ($comment) {
+                            $comment->date = \DateTime::createFromFormat('U', $comment->time / 1000);
+
+                            $comment->replies = array_map(
+                                function ($reply) {
+                                    $reply->date = \DateTime::createFromFormat('U', $reply->time / 1000);
+
+                                    return $reply;
+                                },
+                                $comment->replies
+                            );
+
+                            return $comment;
+                        },
+                        $event->comments
+                    );
 
                     if ($this->cli && !$this->debug || !$this->cli && $this->debug) {
                         $event = $this->parse($event);
@@ -220,6 +240,13 @@ class Client
                 );
             }
 
+            $organisers = array_map(
+                function ($organiser) {
+                    return $organiser['meetup'];
+                },
+                $this->organisers
+            );
+
             $this->members = array_combine(
                 array_map(
                     function ($member) {
@@ -230,8 +257,10 @@ class Client
                     $this->members
                 ),
                 array_map(
-                    function ($member) {
+                    function ($member) use ($organisers) {
                         $member = (object) $member;
+
+                        $member->organiser = in_array($member->id, $organisers);
 
                         if (isset($member->photo)) {
                             $photo = $member->photo = (object) $member->photo;
@@ -382,10 +411,18 @@ class Client
                 'upcoming', 'draft', 'past', 'proposed', 'suggested', 'cancelled'
             ]),
             'desc' => 'true'
-        ]);
+        ])->getData();
+
+        $comments = $this->api->getEventComments([
+            'event_id' => implode(',', array_map(
+                function ($event) { return $event['id']; },
+                $events
+            )),
+            'fields' => 'member_photo'
+        ])->getData();
 
         return array_map(
-            function ($event) {
+            function ($event) use ($comments) {
                 $event = (object) $event;
 
                 if (isset($event->description)) {
@@ -399,6 +436,57 @@ class Client
                 }
 
                 $event->slug = $this->slugify($event->name);
+
+                $comments = array_filter(
+                    array_map(
+                        function ($comment) {
+                            $comment = (object) $comment;
+
+                            $comment->id = $comment->event_comment_id;
+
+                            if ($comment->member_id) {
+                                $comment->member = $this->getMember($comment->member_id);
+                            } else {
+                                $comment->member = null;;
+                            }
+
+                            $comment->url = $comment->comment_url;
+
+                            return $comment;
+                        },
+                        $comments
+                    ),
+                    function ($comment) use ($event) {
+                        return $comment->event_id == $event->id;
+                    }
+                );
+
+                $event->comments = array_values(
+                    array_filter(
+                        $comments,
+                        function ($comment) {
+                            return !isset($comment->in_reply_to);
+                        }
+                    )
+                );
+
+                $event->comments = array_map(
+                    function ($comment) use ($comments) {
+                        $comment->replies = array_reverse(
+                            array_values(
+                                array_filter(
+                                    $comments,
+                                    function ($reply) use ($comment) {
+                                        return isset($reply->in_reply_to) && $reply->in_reply_to == $comment->id;
+                                    }
+                                )
+                            )
+                        );
+
+                        return $comment;
+                    },
+                    $event->comments
+                );
 
                 $event->photos = array_values(
                     array_filter($this->getGroup()->photos, function ($photo) use ($event) {
@@ -414,14 +502,28 @@ class Client
                     }
                 });
 
-                $event->rsvps = iterator_to_array($this->api->getRSVPs(['event_id' => $event->id]));
+                $event->rsvps = array_map(
+                    function ($rsvp) {
+                        $rsvp = (object) $rsvp;
+
+                        if ($rsvp->member['member_id']) {
+                            $rsvp->member = $this->getMember($rsvp->member['member_id']);
+                        } else {
+                            $rsvp->member = null;;
+                        }
+
+                        return $rsvp;
+                    },
+                    $this->api->getRSVPs(['event_id' => $event->id])->getData()
+                );
+
                 $event->talks = [];
                 $event->url = $event->event_url;
                 $event->venue = (object) $event->venue;
 
                 return $event;
             },
-            iterator_to_array($events)
+            $events
         );
     }
 

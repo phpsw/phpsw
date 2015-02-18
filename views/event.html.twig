@@ -142,20 +142,26 @@
     {% endif %}
 
     <div id="attendees" class="container">
-      {% if event.rsvps is defined %}
+      {% if event.rsvps %}
         <h2 id="attendees">Attendees</h2>
 
         <ul class="event__attendees list list--images list--inline">
           {% for rsvp in event.rsvps if rsvp.response == 'yes' %}
             <li>
-              <a href="{{ app.meetup.url }}/members/{{ rsvp.member.member_id }}" class="event__attendee" title="{{ rsvp.member.name }}">
+              <a href="{{ app.meetup.url }}/members/{{ rsvp.member.id }}" class="event__attendee" title="{{ rsvp.member.name }}">
                 <div class="avatar avatar--small">
-                  <img src="{{ avatar(rsvp.member_photo.photo_link) }}" alt="{{ rsvp.member.name }}">
+                  <img src="{{ avatar(rsvp.member.photo.url) }}" alt="{{ rsvp.member.name }}">
                 </div>
               </a>
             </li>
           {% endfor %}
         </ul>
+      {% endif %}
+
+      {% if event.comments %}
+        <h2 id="comments">Comments</h2>
+
+        {{ include('comments.html.twig', {comments: event.comments}) }}
       {% endif %}
 
       {% if 'basekit' in event.venue.name | lower or
