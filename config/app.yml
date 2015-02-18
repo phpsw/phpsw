@@ -64,6 +64,7 @@ organisers:
     first_name: Steve
     slug: steve-lacey
     github: stevelacey
+    meetup: 13915585
     twitter: stevelacey
     url: http://stevelacey.net
 
@@ -72,6 +73,7 @@ organisers:
     first_name: Ade
     slug: ade-slade
     github: adeslade
+    meetup: 31030432
     twitter: adeslade
     url: http://adeslade.co.uk
 
@@ -80,6 +82,7 @@ organisers:
     first_name: Kat
     slug: kat-zien
     github: katzien
+    meetup: 67450042
     twitter: kasiazien
     url: http://katzien.com
 
@@ -88,6 +91,7 @@ organisers:
     first_name: Kiel
     slug: kiel-doyle
     github: kieldoyle
+    meetup: 132866502
     twitter: kieldoyle
 
 sponsors:
