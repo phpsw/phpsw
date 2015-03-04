@@ -1,6 +1,8 @@
 .navbar {
+  position: relative;
   min-height: 0;
   margin: 0;
+  z-index: 1;
 
   .no-js &.collapse {
       display: block; // fuck bootstrap, nav should work without js
