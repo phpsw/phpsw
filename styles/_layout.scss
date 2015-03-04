@@ -4,6 +4,10 @@ html {
 }
 
 .header {
+  background: white;
+  position: relative;
+  z-index: 1;
+
   .container {
     position: relative;
     padding: 15px;
@@ -30,9 +34,11 @@ section {
 
 .footer {
   background-color: #f5f5f5;
+  position: relative;
   margin-top: 60px;
   padding: 20px 20px 40px;
   color: desaturate(darken($brand-primary, 5%), 40%);
+  z-index: 1;
 
   nav {
     position: relative;

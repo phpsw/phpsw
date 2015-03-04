@@ -116,10 +116,15 @@ class Client
 
     public function getEvent($id)
     {
-        $events = $this->getEvents();
+        $events = array_values(array_reverse($this->getEvents()));
 
-        if (array_key_exists($id, $events)) {
-            return $events[$id];
+        foreach ($events as $i => $event) {
+            if ($event->id == $id) {
+                $event->prev = array_key_exists($i - 1, $events) ? $events[$i - 1] : null;
+                $event->next = array_key_exists($i + 1, $events) ? $events[$i + 1] : null;
+
+                return $event;
+            }
         }
     }
 
