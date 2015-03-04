@@ -22,7 +22,10 @@
           {{ comment.member.name }}
         {% endif %}
         {% if comment.member.organiser %}
-          <span class="badge">Organiser</span>
+          <span class="badge progress-bar-success">Organiser</span>
+        {% endif %}
+        {% if comment.speaker %}
+          <span class="badge progress-bar-warning">Speaker</span>
         {% endif %}
       </strong>
       <a href="#comment-{{ comment.id }}" class="text-muted">

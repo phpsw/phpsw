@@ -77,15 +77,30 @@ class Client
 
             $this->events = array_map(
                 function ($event) {
+                    if ($this->cli && !$this->debug || !$this->cli && $this->debug) {
+                        $event = $this->parse($event);
+                    }
+
                     $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
 
+                    $sids = array_map(
+                        function ($talk) {
+                            return isset($talk->speaker->member) ? $talk->speaker->member->id : $talk->speaker->name;
+                        },
+                        $event->talks
+                    );
+
                     $event->comments = array_map(
-                        function ($comment) {
+                        function ($comment) use ($event, $sids) {
                             $comment->date = \DateTime::createFromFormat('U', $comment->time / 1000);
 
+                            $comment->speaker = in_array($comment->member->id, $sids) || in_array($comment->member->name, $sids);
+
                             $comment->replies = array_map(
-                                function ($reply) {
+                                function ($reply) use ($event, $sids) {
                                     $reply->date = \DateTime::createFromFormat('U', $reply->time / 1000);
+
+                                    $reply->speaker = in_array($reply->member->id, $sids) || in_array($reply->member->name, $sids);
 
                                     return $reply;
                                 },
@@ -96,10 +111,6 @@ class Client
                         },
                         $event->comments
                     );
-
-                    if ($this->cli && !$this->debug || !$this->cli && $this->debug) {
-                        $event = $this->parse($event);
-                    }
 
                     return $event;
                 },
