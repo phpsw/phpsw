@@ -183,6 +183,10 @@
         <h2 id="comments">Comments</h2>
 
         {{ include('comments.html.twig', {comments: event.comments}) }}
+
+        <a href="{{ event.url }}#event-comments-section" class="btn btn-primary">
+          Comment on Meetup
+        </a>
       {% endif %}
 
       {% if 'basekit' in event.venue.name | lower or
