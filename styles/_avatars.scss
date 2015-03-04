@@ -1,12 +1,12 @@
 .avatar {
   $shadow: darken($brand-primary, 25%);
 
+  background: #eee;
   border: {
     color: white;
     radius: 50%;
     style: solid;
   }
-
   box-shadow: 0 0 0 rgba($shadow, .25);
   transform: translateZ(0);
   transition: box-shadow .25s ease-in-out;

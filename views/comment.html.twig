@@ -1,21 +1,31 @@
-<article class="comment">
-  <a href="{{ app.meetup.url }}/members/{{ comment.member.id }}">
+<article id="comment-{{ comment.id }}" class="comment">
+  {% if comment.member.url %}
+    <a href="{{ comment.member.url }}">
+      <div class="avatar avatar--medium">
+        <img src="{{ avatar(comment.member.photo.url, 'medium') }}" alt="{{ comment.member.name }}">
+      </div>
+    </a>
+  {% else %}
     <div class="avatar avatar--medium">
       <img src="{{ avatar(comment.member.photo.url, 'medium') }}" alt="{{ comment.member.name }}">
     </div>
-  </a>
+  {% endif %}
 
   <div class="panel panel-default">
     <div class="panel-heading">
       <strong>
-        <a href="{{ app.meetup.url }}/members/{{ comment.member.id }}">
+        {% if comment.member.url %}
+          <a href="{{ comment.member.url }}" title="{{ comment.member.bio }}">
+            {{- comment.member.name -}}
+          </a>
+        {% else %}
           {{ comment.member.name }}
-        </a>
+        {% endif %}
         {% if comment.member.organiser %}
           <span class="badge">Organiser</span>
         {% endif %}
       </strong>
-      <span class="text-muted">
+      <a href="#comment-{{ comment.id }}" class="text-muted">
         <time datetime="{{ comment.date | date(constant('DATE_W3C')) }}">
           {%- if comment.date >= date('2 weeks ago') -%}
             {{ comment.date | time_ago_in_words }}
@@ -23,7 +33,7 @@
             {{ comment.date | date ('F jS Y') }}
           {%- endif -%}
         </time>
-      </span>
+      </a>
     </div>
     <div class="panel-body">
       {{ comment.comment | linkify | markdown }}

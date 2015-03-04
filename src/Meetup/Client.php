@@ -200,7 +200,25 @@ class Client
 
     public function getMember($id)
     {
-        return $this->getMembers()[$id];
+        if (array_key_exists($id, $this->getMembers())) {
+            $member = $this->getMembers()[$id];
+        } else {
+            $member = (object) [
+                'id' => null,
+                'name' => 'A Former Member',
+                'bio' => '',
+                'url' => null,
+                'photo' => (object) [
+                    'highres_link' => 'http://img1.meetupstatic.com/img/501554713870081192606960/nobody_50.png',
+                    'photo_link'   => 'http://img1.meetupstatic.com/img/501554713870081192606960/nobody_50.png',
+                    'thumb_link'   => 'http://img1.meetupstatic.com/img/501554713870081192606960/nobody_50.png',
+                    'url'          => 'http://img1.meetupstatic.com/img/501554713870081192606960/nobody_50.png'
+                ],
+                'organiser' => false
+            ];
+        }
+
+        return $member;
     }
 
     public function getMembers()
@@ -285,6 +303,8 @@ class Client
                             },
                             (array) $member->other_services
                         );
+
+                        $member->url = $member->profile_url;
 
                         $member->visited_date = \DateTime::createFromFormat('U', ($member->visited / 1000));
 
@@ -448,13 +468,7 @@ class Client
                             $comment = (object) $comment;
 
                             $comment->id = $comment->event_comment_id;
-
-                            if ($comment->member_id) {
-                                $comment->member = $this->getMember($comment->member_id);
-                            } else {
-                                $comment->member = null;;
-                            }
-
+                            $comment->member = $this->getMember($comment->member_id);
                             $comment->url = $comment->comment_url;
 
                             return $comment;
@@ -511,11 +525,7 @@ class Client
                     function ($rsvp) {
                         $rsvp = (object) $rsvp;
 
-                        if ($rsvp->member['member_id']) {
-                            $rsvp->member = $this->getMember($rsvp->member['member_id']);
-                        } else {
-                            $rsvp->member = null;;
-                        }
+                        $rsvp->member = $this->getMember($rsvp->member['member_id']);
 
                         return $rsvp;
                     },
