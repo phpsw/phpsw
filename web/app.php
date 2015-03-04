@@ -18,6 +18,7 @@ $app->register(new Silex\Provider\TwigServiceProvider, [
 
 $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
     $twig->addExtension(new PHPSW\Twig\BitlyExtension($app['bitly']['api']));
+    $twig->addExtension(new PHPSW\Twig\EmojiExtension());
     $twig->addExtension(new PHPSW\Twig\SponsorExtension($app['sponsors']));
     $twig->addExtension(new PHPSW\Twig\ThumborExtension($app['thumbor.builder']));
     $twig->addExtension(new Salavert\Twig\Extension\TimeAgoExtension($app['translator']));

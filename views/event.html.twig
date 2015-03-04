@@ -63,7 +63,7 @@
       <div class="event__body">
         <div class="row">
           <div class="col-sm-8">
-            {{ event.abstract | raw }}
+            {{ event.abstract | emoji | raw }}
           </div>
           <div class="col-sm-4 text-right">
             <a href="{{ event.url }}" class="btn btn-primary">
@@ -86,7 +86,7 @@
               {% if event.details %}
                 <h2 class="sr-only">Details</h2>
 
-                {{ event.details | raw }}
+                {{ event.details | emoji | raw }}
               {% endif %}
             </div>
 

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6461a2378f20334316167976a3d17502",
+    "hash": "4a1ae5ff2dde02242befb6e021c3824e",
     "packages": [
         {
             "name": "99designs/phumbor",
@@ -51,16 +51,16 @@
         },
         {
             "name": "bugsnag/bugsnag",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bugsnag/bugsnag-php.git",
-                "reference": "332a94be2212e6dcf5d2ba09d9eaf1ccb75eddf7"
+                "reference": "cd734eeda4738f62b439550e27dc4507be93227a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bugsnag/bugsnag-php/zipball/332a94be2212e6dcf5d2ba09d9eaf1ccb75eddf7",
-                "reference": "332a94be2212e6dcf5d2ba09d9eaf1ccb75eddf7",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-php/zipball/cd734eeda4738f62b439550e27dc4507be93227a",
+                "reference": "cd734eeda4738f62b439550e27dc4507be93227a",
                 "shasum": ""
             },
             "require": {
@@ -95,7 +95,7 @@
                 "logging",
                 "tracking"
             ],
-            "time": "2014-12-19 23:57:40"
+            "time": "2015-02-20 02:21:00"
         },
         {
             "name": "bugsnag/bugsnag-silex",
@@ -530,6 +530,44 @@
                 "parser"
             ],
             "time": "2014-09-09 13:34:57"
+        },
+        {
+            "name": "emojione/emojione",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ranks/emojione.git",
+                "reference": "694c0ec4defdf64ce89b7359d46046d63c45f001"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ranks/emojione/zipball/694c0ec4defdf64ce89b7359d46046d63c45f001",
+                "reference": "694c0ec4defdf64ce89b7359d46046d63c45f001",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Emojione\\": "lib/php/src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
+            "homepage": "http://www.emojione.com",
+            "keywords": [
+                "Emoji One",
+                "emoji",
+                "emojione",
+                "emojis",
+                "emoticons",
+                "smileys",
+                "smilies",
+                "unicode"
+            ],
+            "time": "2015-02-04 02:19:33"
         },
         {
             "name": "guzzle/guzzle",
@@ -3585,12 +3623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/crysalead/box.git",
-                "reference": "d88c57da9091909c0109a679916cb9294f5e5eaa"
+                "reference": "08ba6cc873044326489eaef5638ee4d85354913a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crysalead/box/zipball/d88c57da9091909c0109a679916cb9294f5e5eaa",
-                "reference": "d88c57da9091909c0109a679916cb9294f5e5eaa",
+                "url": "https://api.github.com/repos/crysalead/box/zipball/08ba6cc873044326489eaef5638ee4d85354913a",
+                "reference": "08ba6cc873044326489eaef5638ee4d85354913a",
                 "shasum": ""
             },
             "require": {
@@ -3620,7 +3658,7 @@
                 "inversion of control",
                 "ioc"
             ],
-            "time": "2014-12-07 00:39:07"
+            "time": "2015-03-02 21:38:58"
         },
         {
             "name": "crysalead/dir",
@@ -3714,12 +3752,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/crysalead/jit.git",
-                "reference": "a4d3e722e2f512fe5c1a0069e3001a754e959ea6"
+                "reference": "8a6378918a432d260bb4d1b0713dbd954121caed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crysalead/jit/zipball/a4d3e722e2f512fe5c1a0069e3001a754e959ea6",
-                "reference": "a4d3e722e2f512fe5c1a0069e3001a754e959ea6",
+                "url": "https://api.github.com/repos/crysalead/jit/zipball/8a6378918a432d260bb4d1b0713dbd954121caed",
+                "reference": "8a6378918a432d260bb4d1b0713dbd954121caed",
                 "shasum": ""
             },
             "require": {
@@ -3744,20 +3782,20 @@
                 "Code Patcher",
                 "jit"
             ],
-            "time": "2015-02-14 13:49:58"
+            "time": "2015-03-02 21:56:03"
         },
         {
             "name": "crysalead/kahlan",
-            "version": "1.0.6",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/crysalead/kahlan.git",
-                "reference": "84706b0da19a92378876a349e132a206a6d1ddcb"
+                "reference": "5667810c94507a478fbed84a29adf0783bebb2fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crysalead/kahlan/zipball/84706b0da19a92378876a349e132a206a6d1ddcb",
-                "reference": "84706b0da19a92378876a349e132a206a6d1ddcb",
+                "url": "https://api.github.com/repos/crysalead/kahlan/zipball/5667810c94507a478fbed84a29adf0783bebb2fd",
+                "reference": "5667810c94507a478fbed84a29adf0783bebb2fd",
                 "shasum": ""
             },
             "require": {
@@ -3802,7 +3840,7 @@
                 "testing",
                 "unit test"
             ],
-            "time": "2015-02-11 15:25:13"
+            "time": "2015-02-25 18:38:56"
         },
         {
             "name": "crysalead/set",
@@ -3890,6 +3928,7 @@
     "stability-flags": {
         "99designs/phumbor": 20,
         "cocur/slugify": 0,
+        "emojione/emojione": 20,
         "knplabs/console-service-provider": 20,
         "crysalead/box": 20,
         "crysalead/dir": 20,

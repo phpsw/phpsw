@@ -9,6 +9,7 @@
         "cocur/slugify": "@stable",
         "dg/twitter-php": "~3.2",
         "dms/meetup-api-client": "~1.0",
+        "emojione/emojione": "dev-master",
         "guzzlehttp/guzzle": "~4",
         "igorw/config-service-provider": "~1.2",
         "knplabs/console-service-provider": "dev-master",
