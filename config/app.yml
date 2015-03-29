@@ -68,15 +68,6 @@ organisers:
     twitter: stevelacey
     url: http://stevelacey.net
 
-  ade:
-    name: Ade Slade
-    first_name: Ade
-    slug: ade-slade
-    github: adeslade
-    meetup: 31030432
-    twitter: adeslade
-    url: http://adeslade.co.uk
-
   kat:
     name: Kat Zien
     first_name: Kat
@@ -85,6 +76,15 @@ organisers:
     meetup: 67450042
     twitter: kasiazien
     url: http://katzien.com
+
+  ade:
+    name: Ade Slade
+    first_name: Ade
+    slug: ade-slade
+    github: adeslade
+    meetup: 31030432
+    twitter: adeslade
+    url: http://adeslade.co.uk
 
 sponsors:
   meetup:
