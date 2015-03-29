@@ -86,14 +86,6 @@ organisers:
     twitter: kasiazien
     url: http://katzien.com
 
-  kiel:
-    name: Kiel Doyle
-    first_name: Kiel
-    slug: kiel-doyle
-    github: kieldoyle
-    meetup: 132866502
-    twitter: kieldoyle
-
 sponsors:
   meetup:
     ents24:
