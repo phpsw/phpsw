@@ -51,7 +51,7 @@
       </div>
     {% elseif speaker is defined %}
       <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
-        {{ talk.event.name }}
+        {{- talk.event.name -}}
       </a>
 
       <small>
