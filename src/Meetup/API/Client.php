@@ -7,11 +7,11 @@ use Guzzle\Http\Exception\ClientErrorResponseException;
 
 class Client
 {
-    private $client;
+    public $guzzle;
 
     public function __construct($api_key)
     {
-        $this->client = MeetupKeyAuthClient::factory(['key' => $api_key]);
+        $this->guzzle = MeetupKeyAuthClient::factory(['key' => $api_key]);
     }
 
     public function __call($method, $args)
@@ -19,7 +19,7 @@ class Client
         do {
 
             try {
-                $response = call_user_func_array([$this->client, $method], $args);
+                $response = call_user_func_array([$this->guzzle, $method], $args);
             } catch (ClientErrorResponseException $e) {
                 $response = $e->getResponse();
 

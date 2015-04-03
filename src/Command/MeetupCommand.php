@@ -107,7 +107,7 @@ class MeetupCommand extends Command
         ];
 
         foreach ($tasks as $type => $task) {
-            echo ucfirst($type) . ': ';
+            echo ucfirst($type), ': ';
 
             $task(function () {
                 echo '.';

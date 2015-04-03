@@ -24,7 +24,15 @@ class Client
 
     public function __construct($app, array $config, $cli, $debug = false)
     {
-        if ($cli) $this->api = new API\Client($config['api']['key']);
+        if ($cli) {
+            $this->api = new API\Client($config['api']['key']);
+
+            if ($debug) {
+                $this->api->guzzle->getEventDispatcher()->addListener('request.sent', function ($event) {
+                    echo $event['request']->getUrl(), PHP_EOL;
+                });
+            }
+        }
 
         $this->app = $app;
         $this->cli = $cli;
