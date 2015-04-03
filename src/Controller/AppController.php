@@ -33,6 +33,11 @@ class AppController extends AbstractController
         return $this->render($app, 'code-of-conduct.html.twig');
     }
 
+    public function errorAction(Application $app)
+    {
+        throw new \Exception();
+    }
+
     public function invoiceAction(Application $app, Request $request)
     {
         $sponsors = $app['sponsors'];

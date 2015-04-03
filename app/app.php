@@ -60,6 +60,7 @@ $app['twitter.client'] = function ($app) {
 };
 
 $app->get('/',                   'PHPSW\Controller\AppController::indexAction')->bind('home');
+$app->get('/500',                'PHPSW\Controller\AppController::errorAction')->bind('error');
 $app->get('/brand',              'PHPSW\Controller\AppController::brandAction')->bind('brand');
 $app->get('/code-of-conduct',    'PHPSW\Controller\AppController::conductAction')->bind('conduct');
 $app->get('/events',             'PHPSW\Controller\EventController::indexAction')->bind('events');
@@ -83,5 +84,17 @@ $app
     ->assert('user', $app['twitter']['user'])
     ->value('user', $app['twitter']['user'])
 ;
+
+$app->error(function (Exception $e, $code) use ($app) {
+    switch ($code) {
+        case 404:
+            $message = $app['twig']->render('error/404.html.twig', ['e' => $e]);
+            break;
+        default:
+            $message = $app['twig']->render('error/500.html.twig', ['e' => $e]);
+    }
+
+    return new Symfony\Component\HttpFoundation\Response($message, $code);
+});
 
 return $app;

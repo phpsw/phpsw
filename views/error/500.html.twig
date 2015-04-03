@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block hero %}
+  {{ hero('https://pbs.twimg.com/media/B_uaK9PWEAE1452.jpg') }}
+{% endblock %}
+
+{% block title %}
+  Internal server error
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-sm-8">
+      {{ include('error/quote.html.twig') }}
+    </div>
+    <div class="col-sm-4">
+      <pre><code style="white-space: nowrap">
+        {{- e.getTraceAsString|replace({'/Users/steve/Sites/': ''})|nl2br -}}
+      </code></pre>
+    </div>
+  </div>
+{% endblock %}

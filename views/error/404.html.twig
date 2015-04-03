@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block hero %}
+  {{ hero('http://derickrethans.nl/images/content/elephpant-ice.jpg') }}
+{% endblock %}
+
+{% block title %}
+  Page not found
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-sm-8">
+      {{ include('error/quote.html.twig') }}
+    </div>
+  </div>
+{% endblock %}
