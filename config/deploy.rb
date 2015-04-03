@@ -67,6 +67,8 @@ namespace :meetup do
       execute "#{release_path}/app/console meetup:import:all"
     end
   end
+
+  after "deploy:finishing", :import
 end
 
 namespace :twitter do
@@ -75,6 +77,8 @@ namespace :twitter do
       execute "#{release_path}/app/console twitter:import:all"
     end
   end
+
+  after "deploy:finishing", :import
 end
 
 namespace :mod_pagespeed do
