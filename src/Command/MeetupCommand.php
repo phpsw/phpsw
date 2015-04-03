@@ -70,26 +70,28 @@ class MeetupCommand extends Command
             'speakers' => function ($callback) {
                 foreach (array_reverse($this->meetup->getEvents()) as $event) {
                     foreach ($event->talks as $talk) {
-                        $a = $this->hget('speakers', $talk->speaker->slug);
-                        $b = $talk->speaker;
+                        foreach ($talk->speakers as $speaker) {
+                            $a = $this->hget('speakers', $speaker->slug);
+                            $b = $speaker;
 
-                        if (isset($a->member) && !isset($b->member)) {
-                            $speaker = (object) array_replace_recursive((array) $b, (array) $a);
-                        } elseif (!isset($a->member) && isset($b->member)) {
-                            $speaker = (object) array_replace_recursive((array) $a, (array) $b);
-                        } else {
-                            $speaker = $b;
+                            if (isset($a->member) && !isset($b->member)) {
+                                $speaker = (object) array_replace_recursive((array) $b, (array) $a);
+                            } elseif (!isset($a->member) && isset($b->member)) {
+                                $speaker = (object) array_replace_recursive((array) $a, (array) $b);
+                            } else {
+                                $speaker = $b;
+                            }
+
+                            if (isset($speaker->member)) {
+                                $speaker->photos = $this->meetup->getTaggedPhotos($speaker->member->member_id);
+                            } else {
+                                $speaker->photos = [];
+                            }
+
+                            $this->hset('speakers', $speaker->slug, $speaker);
+
+                            $callback();
                         }
-
-                        if (isset($speaker->member)) {
-                            $speaker->photos = $this->meetup->getTaggedPhotos($speaker->member->member_id);
-                        } else {
-                            $speaker->photos = [];
-                        }
-
-                        $this->hset('speakers', $talk->speaker->slug, $speaker);
-
-                        $callback();
                     }
                 }
             },

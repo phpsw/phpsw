@@ -27,6 +27,25 @@
     }
   }
 
+  &__details {
+    &__speakers {
+      &__speaker {
+        &:first-child {
+          .talk__details__speakers--multiple & .avatar {
+            top: 40%;
+            left: -.75em;
+          }
+        }
+        &:last-child {
+          .talk__details__speakers--multiple & .avatar {
+            top: 60%;
+            left: .75em;
+          }
+        }
+      }
+    }
+  }
+
   &__description {
     margin-top: .5em;
     color: lighten($text-color, 20%);
