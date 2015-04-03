@@ -15,7 +15,7 @@ class EventController extends AbstractController
 
         return $this->render($app, 'events.html.twig', [
             'event'    => array_shift($upcoming) ?: array_shift($past),
-            'statuses' => array_merge(['upcoming', 'past'], ($app['debug'] ? ['draft'] : [])),
+            'statuses' => array_merge(($app['debug'] ? ['draft'] : []), ['upcoming', 'past']),
             'draft'    => $drafts,
             'past'     => $past,
             'upcoming' => $upcoming
