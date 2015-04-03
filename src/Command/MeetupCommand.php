@@ -113,8 +113,6 @@ class MeetupCommand extends Command
                 echo '.';
             });
 
-            sleep(1);
-
             echo PHP_EOL;
         }
     }
