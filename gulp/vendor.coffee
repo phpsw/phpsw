@@ -7,8 +7,13 @@ g.task "vendor-css", ["bower"], ->
     .pipe g.css()
     .pipe g.p.tap (file, t) ->
       file.contents = new Buffer(file.contents.toString()
-        .replace /..\/fonts\//g, "/fonts/" # fix font awesome paths
-        .replace /..\/img\//g, "/images/" # fix swipebox paths
+        .replace "blank.gif",               "/images/blank.gif"
+        .replace "fancybox_loading.gif",    "/images/fancybox_loading.gif"
+        .replace "fancybox_loading@2x.gif", "/images/fancybox_loading@2x.gif"
+        .replace "fancybox_overlay.png",    "/images/fancybox_overlay.png"
+        .replace "fancybox_sprite.png",     "/images/fancybox_sprite.png"
+        .replace "fancybox_sprite@2x.png",  "/images/fancybox_sprite@2x.png"
+        .replace /..\/fonts\//g, "/fonts/"  # fix font awesome paths
       )
     .pipe g.p.concat "vendor.css"
     .pipe g.dest "web/css"

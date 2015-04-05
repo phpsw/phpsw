@@ -4,7 +4,7 @@ phpsw.photos =
     @list = @photos.find(".list--photos")
 
     @hoot()
-    @swipe()
+    @fancy()
 
     if @list.length then @on() else @off()
 
@@ -50,7 +50,7 @@ phpsw.photos =
 
       @delay 500, => $(window).off("scroll", @x.scroll).on("scroll", @x.scroll)
 
-  swipe: -> $(".swipebox").swipebox()
+  fancy: -> $(".fancybox").fancybox()
 
   x:
     resize:     -> phpsw.photos.hoot()
