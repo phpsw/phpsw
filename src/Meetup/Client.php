@@ -40,6 +40,7 @@ class Client
         $this->config = $config;
         $this->redis = $app['redis'];
         $this->organisers = $app['organisers'];
+        $this->sponsors = $app['sponsors'];
     }
 
     public function getGroup()
@@ -83,33 +84,45 @@ class Client
                 $this->events = $this->getEventsFromCache();
             }
 
+            $sponsor_ids = [];
+
+            foreach ($this->sponsors as $type => $sponsors) {
+                foreach ($sponsors as $sponsor) {
+                    if (isset($sponsor['member'])) {
+                        $sponsor_ids[] = $sponsor['member'];
+                    }
+                }
+            }
+
             $this->events = array_map(
-                function ($event) {
+                function ($event) use ($sponsor_ids) {
                     if ($this->cli && !$this->debug || !$this->cli && $this->debug) {
                         $event = $this->parse($event);
                     }
 
                     $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
 
-                    $sids = [];
+                    $speaker_ids = [];
 
                     foreach ($event->talks as $talk) {
                         foreach ($talk->speakers as $speaker) {
-                            $sids[] = isset($speaker->member) ? $speaker->member->id : $speaker->name;
+                            $speaker_ids[] = isset($speaker->member) ? $speaker->member->id : $speaker->name;
                         }
                     }
 
                     $event->comments = array_map(
-                        function ($comment) use ($event, $sids) {
+                        function ($comment) use ($event, $speaker_ids, $sponsor_ids) {
                             $comment->date = \DateTime::createFromFormat('U', $comment->time / 1000);
 
-                            $comment->speaker = in_array($comment->member->id, $sids) || in_array($comment->member->name, $sids);
+                            $comment->speaker = in_array($comment->member->id, $speaker_ids) || in_array($comment->member->name, $speaker_ids);
+                            $comment->sponsor = in_array($comment->member->id, $sponsor_ids);
 
                             $comment->replies = array_map(
-                                function ($reply) use ($event, $sids) {
+                                function ($reply) use ($event, $speaker_ids, $sponsor_ids) {
                                     $reply->date = \DateTime::createFromFormat('U', $reply->time / 1000);
 
-                                    $reply->speaker = in_array($reply->member->id, $sids) || in_array($reply->member->name, $sids);
+                                    $reply->speaker = in_array($reply->member->id, $speaker_ids) || in_array($reply->member->name, $speaker_ids);
+                                    $reply->sponsor = in_array($reply->member->id, $sponsor_ids);
 
                                     return $reply;
                                 },

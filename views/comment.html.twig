@@ -27,6 +27,9 @@
         {% if comment.speaker %}
           <span class="badge progress-bar-warning">Speaker</span>
         {% endif %}
+        {% if comment.sponsor %}
+          <span class="badge progress-bar-danger">Sponsor</span>
+        {% endif %}
       </strong>
       <a href="#comment-{{ comment.id }}" class="text-muted">
         <time datetime="{{ comment.date | date(constant('DATE_W3C')) }}">
