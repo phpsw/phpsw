@@ -86,6 +86,8 @@ $app
 ;
 
 $app->error(function (Exception $e, $code) use ($app) {
+    if ($app['debug']) return;
+
     switch ($code) {
         case 404:
             $message = $app['twig']->render('error/404.html.twig', ['e' => $e]);
