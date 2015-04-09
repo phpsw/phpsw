@@ -1,11 +1,12 @@
 {% set iframe = 'google.com/presentation' in talk.slides or 'slides.com' in talk.slides or 'slid.es' in talk.slides %}
 {% set embedly = 'slideshare' in talk.slides or 'speakerdeck' in talk.slides %}
-{% set embeddable = iframe or embedly %}
+{% set youtube = 'youtube.com' in talk.video %}
+{% set embeddable = iframe or embedly or youtube %}
 
 <div id="talk-{{ talk.id }}" class="talk">
   <div class="talk__details talk__section">
     <h3>
-      {% if talk.slides %}
+      {% if talk.slides or talk.video %}
         <a href="{{ talk.slides }}"
           {% if embeddable %}
             data-target="#slides-{{ talk.id }}"
@@ -14,12 +15,15 @@
         >
           {{ talk.title | striptags | raw }}
 
-          {% if embeddable %}
-            <i class="js-shown">{{ include('slides.svg.twig') }}</i>
-            <i class="fa fa-external-link js-hidden"></i>
-          {% else %}
+          {%- if embeddable -%}
+            {% spaceless %}
+              <i class="fa fa-youtube-play" style="padding: 0 .25em"></i>
+              <i class="js-shown" style="position: relative; top: .025em;">{{ include('slides.svg.twig') }}</i>
+              <i class="fa fa-external-link js-hidden"></i>
+            {% endspaceless %}
+          {%- else -%}
             <i class="fa fa-external-link"></i>
-          {% endif %}
+          {%- endif -%}
         </a>
       {% else %}
         {{ talk.title | raw }}
@@ -62,29 +66,48 @@
 
   {% if embeddable %}
     <div id="slides-{{ talk.id }}" class="talk__slides talk__section collapse">
+      {% if youtube %}
+        <iframe
+          src="{{ talk.video }}"
+          frameborder="0" scrolling="no"
+          allowfullscreen mozallowfullscreen webkitallowfullscreen
+        >
+        </iframe>
+      {% endif %}
+
       {% if iframe %}
-          <iframe
-            src="{{ talk.slides | replace({'/pub': ''}) }}/embed"
-            frameborder="0" scrolling="no"
-            allowfullscreen mozallowfullscreen webkitallowfullscreen
-          >
-          </iframe>
+        <iframe
+          src="{{ talk.slides | replace({'/pub': ''}) }}/embed"
+          frameborder="0" scrolling="no"
+          allowfullscreen mozallowfullscreen webkitallowfullscreen
+        >
+        </iframe>
       {% elseif embedly %}
-          <a href="{{ talk.slides }}" class="embedly-card" data-card-chrome="0">
-            {{ talk.title }}
-          </a>
+        <a href="{{ talk.slides }}" class="embedly-card" data-card-chrome="0">
+          {{ talk.title }}
+        </a>
       {% endif %}
 
       <div class="talk__slides__link">
-        <a href="{{ talk.slides }}">
-          View on
-          {{ 'google.com/presentation' in talk.slides ? 'Google Docs' }}
-          {{ 'slides.com' in talk.slides ? 'slides.com' }}
-          {{ 'slid.es' in talk.slides ? 'slid.es' }}
-          {{ 'slideshare' in talk.slides ? 'SlideShare' }}
-          {{ 'speakerdeck' in talk.slides ? 'Speaker Deck' }}
-          <i class="fa fa-external-link"></i>
-        </a>
+        {% if talk.slides %}
+          <a href="{{ talk.slides }}">
+            View on
+            {{ 'google.com/presentation' in talk.slides ? 'Google Docs' }}
+            {{ 'slides.com' in talk.slides ? 'slides.com' }}
+            {{ 'slid.es' in talk.slides ? 'slid.es' }}
+            {{ 'slideshare' in talk.slides ? 'SlideShare' }}
+            {{ 'speakerdeck' in talk.slides ? 'Speaker Deck' }}
+            <i class="fa fa-external-link"></i>
+          </a>
+        {% endif %}
+
+        {% if talk.video %}
+          <a href="{{ talk.video }}">
+            View on
+            {{ 'youtube.com' in talk.video ? 'YouTube' }}
+            <i class="fa fa-external-link"></i>
+          </a>
+        {% endif %}
       </div>
     </div>
   {% endif %}

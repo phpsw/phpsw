@@ -819,6 +819,7 @@ class Client
                     });
 
                     $talk->slides = $this->redis->hget('slides', $talk->id);
+                    $talk->video = $this->redis->hget('videos', $talk->id);
 
                     $event->description = str_replace('<p>' . $node->html() . '</p>', '', $event->description);
                     $event->talks[] = $talk;
