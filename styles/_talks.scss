@@ -20,7 +20,14 @@
 }
 
 .talk {
-  .talks--event & {
+  iframe {
+    width: 100% !important;
+    max-width: 100%;
+    min-height: 320px !important;
+    margin: 0 !important;
+  }
+
+  .talks--event &, .talks--talks & {
     &__section {
       position: relative;
       padding-left: 4em;

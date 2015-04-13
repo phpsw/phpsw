@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Talks
+{% endblock %}
+
+{% block hero %}
+  {{ hero('http://photos3.meetupstatic.com/photos/event/8/4/7/8/highres_366333912.jpeg') }}
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    {% for talk in talks %}
+      {% if talk.video %}
+        <div class="col-sm-4">
+          {{ include('talk.html.twig') }}
+          {{ include('video.html.twig') }}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="row">
+    <div class="col-sm-8">
+      {{ include('talks.html.twig') }}
+    </div>
+
+    <div class="col-sm-4">
+      {{ include('speaking.html.twig') }}
+    </div>
+  </div>
+{% endblock %}

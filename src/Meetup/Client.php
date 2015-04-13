@@ -451,6 +451,52 @@ class Client
         );
     }
 
+    public function getTalk($slug)
+    {
+        $talks = [];
+
+        foreach ($this->getPastEvents() as $event) {
+            foreach ($event->talks as $talk) {
+                if ($talk->slides || $talk->video) {
+                    $talk->event = $event;
+                    $talks[] = $talk;
+                }
+            }
+        }
+
+        foreach ($talks as $i => $talk) {
+            if ($talk->slug == $slug) {
+                $talk->event->talks = array_values(array_filter(
+                    $talk->event->talks,
+                    function ($other) use ($talk) {
+                        return $other->slug != $talk->slug;
+                    }
+                ));
+
+                $talk->speakers = array_map(
+                    function ($speaker) use ($talk) {
+                        $speaker = $this->getSpeaker($speaker->slug);
+
+                        $speaker->talks = array_values(array_filter(
+                            $speaker->talks,
+                            function ($other) use ($talk) {
+                                return $other->slug != $talk->slug;
+                            }
+                        ));
+
+                        return $speaker;
+                    },
+                    $talk->speakers
+                );
+
+                $talk->prev = array_key_exists($i + 1, $talks) ? $talks[$i + 1] : null;
+                $talk->next = array_key_exists($i - 1, $talks) ? $talks[$i - 1] : null;
+
+                return $talk;
+            }
+        }
+    }
+
     public function getTalks()
     {
         if ($this->talks === null) {

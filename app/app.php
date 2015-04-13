@@ -76,6 +76,8 @@ $app->get('/meetup/posts',       'PHPSW\Controller\MeetupController::postsAction
 $app->get('/meetup/reviews',     'PHPSW\Controller\MeetupController::reviewsAction')->bind('meetup_reviews');
 $app->get('/meetup/sponsors',    'PHPSW\Controller\MeetupController::sponsorsAction')->bind('meetup_sponsors');
 $app->post('/message',           'PHPSW\Controller\MessageController::sendAction')->bind('message');
+$app->get('/talks',              'PHPSW\Controller\TalkController::indexAction')->bind('talks');
+$app->get('/talks/{slug}',       'PHPSW\Controller\TalkController::showAction')->bind('talk');
 $app->get('/vouchers',           'PHPSW\Controller\AppController::vouchersAction')->bind('vouchers');
 
 $app

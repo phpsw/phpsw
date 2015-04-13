@@ -1,0 +1,11 @@
+{% extends 'talk.html.twig' %}
+
+{% block speaker %}
+  <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
+    {{- talk.event.name -}}
+  </a>
+
+  <small>
+    {{ talk.event.date.format('F Y') }}
+  </small>
+{% endblock %}

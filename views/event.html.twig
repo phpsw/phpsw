@@ -120,7 +120,7 @@
       {% if event.prev %}
         <a
           href="{{ path('event', {id: event.prev.id, slug: event.prev.slug}) }}"
-          class="event__prev"
+          class="prev"
           title="{{ event.prev.name }} &middot; {{ event.prev.date.format('F Y') }}"
         >
           <i class="fa fa-chevron-left"></i>
@@ -130,7 +130,7 @@
       {% if event.next %}
         <a
           href="{{ path('event', {id: event.next.id, slug: event.next.slug}) }}"
-          class="event__next"
+          class="next"
           title="{{ event.next.name }} &middot; {{ event.next.date.format('F Y') }}"
         >
           <i class="fa fa-chevron-right"></i>

@@ -1,0 +1,14 @@
+{% if talk.video %}
+  <iframe
+    src="{{ talk.video }}"
+    frameborder="0" scrolling="no"
+    allowfullscreen mozallowfullscreen webkitallowfullscreen
+  >
+  </iframe>
+
+  <a href="{{ talk.video }}">
+    View on
+    {{ 'youtube.com' in talk.video ? 'YouTube' }}
+    <i class="fa fa-external-link"></i>
+  </a>
+{% endif %}
