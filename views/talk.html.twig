@@ -1,16 +1,11 @@
 <div id="talk-{{ talk.id }}" class="talk">
   <div class="talk__details talk__section">
     <h3>
-      {% if talk.slides or talk.video %}
-        <a href="{{ path('talk', {slug: talk.slug}) }}">
-          {{ talk.title | striptags | raw }}
-        </a>
-      {% else %}
-        {{ talk.title | raw }}
-      {% endif %}
+      <a href="{{ path('talk', {slug: talk.slug}) }}">
+        {{ talk.title | striptags | raw }}
+      </a>
     </h3>
 
-    {% block speaker %}
       <div class="
         talk__details__speakers
         {% if talk.speakers|length > 1 %}talk__details__speakers--multiple{% endif %}
@@ -33,12 +28,7 @@
           </div>
         {% endfor %}
       </div>
-    {% endblock %}
   </div>
-
-  {% if video | default %}
-    {{ include('video.html.twig') }}
-  {% endif %}
 
   {% if talk.description %}
     <div class="talk__description talk__section">

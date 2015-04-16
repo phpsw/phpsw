@@ -1,0 +1,34 @@
+<div id="talk-{{ talk.id }}" class="talk">
+  <div class="talk__details talk__section">
+    <h3>
+      <a href="{{ path('talk', {slug: talk.slug}) }}">
+        {{ talk.title | striptags | raw }}
+      </a>
+    </h3>
+
+    {{ include('video.html.twig') }}
+
+    <div class="
+      talk__details__speakers
+      {% if talk.speakers|length > 1 %}talk__details__speakers--multiple{% endif %}
+    ">
+      {% for speaker in talk.speakers %}
+        <div class="talk__details__speakers__speaker">
+          <a href="{{ path('speaker', {slug: speaker.slug}) }}">
+            {%- if speaker.photo is defined -%}
+              <div class="avatar avatar--small">
+                <img src="{{ avatar(speaker.photo.url) }}" alt="{{ speaker.name }}">
+              </div>
+            {%- endif -%}
+
+            <span class="fn">{{ speaker.name }}</span> {#--#}
+          </a>
+
+          {%- if speaker.bio is defined -%}
+            , {{ speaker.bio | raw }}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
