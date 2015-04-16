@@ -59,6 +59,12 @@ $app['twitter.client'] = function ($app) {
     );
 };
 
+$app['youtube.client'] = function ($app) {
+    return new Madcoda\Youtube([
+        'key' => $app['youtube']['api']['key']
+    ]);
+};
+
 $app->get('/',                   'PHPSW\Controller\AppController::indexAction')->bind('home');
 $app->get('/500',                'PHPSW\Controller\AppController::errorAction')->bind('error');
 $app->get('/brand',              'PHPSW\Controller\AppController::brandAction')->bind('brand');

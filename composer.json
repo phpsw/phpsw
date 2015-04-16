@@ -29,7 +29,8 @@
         "symfony/twig-bridge": "~2.4",
         "symfony/yaml": "~2.4",
         "twig/extensions": ">=1.1,<2.0-dev",
-        "twig/twig": ">=1.8,<2.0-dev"
+        "twig/twig": ">=1.8,<2.0-dev",
+        "madcoda/php-youtube-api": "~1.0"
     },
     "require-dev": {
         "crysalead/box": "dev-master@dev",
