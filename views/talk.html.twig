@@ -1,38 +1,112 @@
-<div id="talk-{{ talk.id }}" class="talk">
-  <div class="talk__details talk__section">
-    <h3>
-      <a href="{{ path('talk', {slug: talk.slug}) }}">
-        {{ talk.title | striptags | raw }}
-      </a>
-    </h3>
+{% extends 'base.html.twig' %}
 
-      <div class="
-        talk__details__speakers
-        {% if talk.speakers|length > 1 %}talk__details__speakers--multiple{% endif %}
-      ">
+{% set iframe = 'google.com/presentation' in talk.slides or 'slides.com' in talk.slides or 'slid.es' in talk.slides %}
+{% set embedly = 'slideshare' in talk.slides or 'speakerdeck' in talk.slides %}
+{% set youtube = 'youtube.com' in talk.video %}
+
+{% set slides = iframe or embedly %}
+{% set video = youtube %}
+
+{% block title %}
+  {{ talk.title | striptags | raw }}
+{% endblock %}
+
+{% block main %}
+  <div class="container">
+    <h1>
+      {{ block('title') }}
+
+      <small>
+        {{ talk.event.date.format('F Y') }}
+      </small>
+    </h1>
+
+    <div class="row">
+      <div class="col-sm-12">
+        {% if talk.description %}
+          <div class="talk__description talk__section">
+            {{ talk.description | raw }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if slides and video %}
+      <div class="row">
+        <div class="col-sm-8">
+          {{ include('partials/video.html.twig', {'size': 'large'}) }}
+        </div>
+
+        <div class="col-sm-4">
+          {{ include('partials/slides.html.twig') }}
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="row">
+      <div class="col-sm-8">
+        {% if slides and not video %}
+          {{ include('partials/slides.html.twig') }}
+        {% elseif video and not slides %}
+          {{ include('partials/video.html.twig') }}
+        {% endif %}
+
         {% for speaker in talk.speakers %}
-          <div class="talk__details__speakers__speaker">
+          <h2>
             <a href="{{ path('speaker', {slug: speaker.slug}) }}">
-              {%- if speaker.photo is defined -%}
-                <div class="avatar avatar--small">
-                  <img src="{{ avatar(speaker.photo.url) }}" alt="{{ speaker.name }}">
-                </div>
-              {%- endif -%}
-
-              <span class="fn">{{ speaker.name }}</span> {#--#}
+              {%- spaceless -%}
+                <span class="fn">{{ speaker.name }}</span>
+              {%- endspaceless -%}
             </a>
 
-            {%- if speaker.bio is defined -%}
-              , {{ speaker.bio | raw }}
+            {% if speaker.bio is defined %}
+              <br>
+              <small>{{ speaker.bio | raw }}</small>
             {% endif %}
-          </div>
+          </h2>
+        {% endfor %}
+
+        {% for speaker in talk.speakers %}
+          {% if speaker.talks %}
+            <hr>
+            <div id="talks" class="talks">
+              <h3>More from {{ speaker.name | split(' ') | first }}</h3>
+
+              <ul class="list">
+                {% for talk in speaker.talks %}
+                  <li>{{ include('partials/talk--with-event.html.twig') }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
         {% endfor %}
       </div>
-  </div>
 
-  {% if talk.description %}
-    <div class="talk__description talk__section">
-      {{ talk.description | raw }}
+      <div class="col-sm-4">
+        {{ include('partials/speaking.html.twig') }}
+      </div>
     </div>
-  {% endif %}
-</div>
+
+    {% if talk.prev %}
+      <a
+        href="{{ path('talk', {slug: talk.prev.slug}) }}"
+        class="prev"
+        title="{{ talk.prev.title }} - {{ talk.prev.event.name }}: {{ talk.prev.event.date.format('F Y') }}"
+      >
+        <i class="fa fa-chevron-left"></i>
+        <span class="sr-only">Prev</span>
+      </a>
+    {% endif %}
+
+    {% if talk.next %}
+      <a
+        href="{{ path('talk', {slug: talk.next.slug}) }}"
+        class="next"
+        title="{{ talk.next.title }} - {{ talk.prev.event.name }}: {{ talk.next.event.date.format('F Y') }}"
+      >
+        <i class="fa fa-chevron-right"></i>
+        <span class="sr-only">Next</span>
+      </a>
+    {% endif %}
+  </div>
+{% endblock %}

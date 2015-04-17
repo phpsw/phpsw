@@ -2,12 +2,12 @@
 
 {% block body %}
   {% block header %}
-    {{ include('header.html.twig') }}
+    {{ include('partials/header.html.twig') }}
   {% endblock %}
 
   <div class="content">
     {% block nav %}
-      {{ include('nav.html.twig') }}
+      {{ include('partials/nav.html.twig') }}
     {% endblock %}
 
     {% if block('hero') | trim %}
@@ -37,7 +37,7 @@
   </div>
 
   {% block footer %}
-    {{ include('footer.html.twig') }}
+    {{ include('partials/footer.html.twig') }}
   {% endblock %}
 
   <script src="//cdn.embedly.com/widgets/platform.js"></script>

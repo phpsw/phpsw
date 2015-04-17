@@ -1,0 +1,66 @@
+<div id="talk-{{ talk.id }}" class="{% block class %}talk{% endblock %}">
+  {% block title %}
+    <h3>
+      <a href="{{ path('talk', {slug: talk.slug}) }}" class="talk__title">
+        <span>{{ talk.title | striptags | raw }}</span>
+
+        {%- if talk.video -%}
+          <i class="talk__title__video fa fa-youtube-play"></i>
+        {%- endif -%}
+
+        {%- if talk.slides -%}
+          <i class="talk__title__slides">{{ include('slides.svg.twig') }}</i>
+        {%- endif -%}
+      </a>
+    </h3>
+  {% endblock %}
+
+  {% block video %}
+    <div class="talk__video">
+      {{ include('partials/video.html.twig', {'size': 'small'}) }}
+    </div>
+  {% endblock %}
+
+  {% block speaker %}
+    <div class="
+      talk__details__speakers
+      {% if talk.speakers|length > 1 %}talk__details__speakers--multiple{% endif %}
+    ">
+      {% for speaker in talk.speakers %}
+        <div class="talk__details__speakers__speaker">
+          <a href="{{ path('speaker', {slug: speaker.slug}) }}">
+            {%- block avatar -%}
+              {%- if speaker.photo is defined -%}
+                <div class="avatar avatar--small">
+                  <img src="{{ avatar(speaker.photo.url) }}" alt="{{ speaker.name }}">
+                </div>
+              {%- endif -%}
+            {%- endblock -%}
+
+            <span class="fn">{{ speaker.name }}</span> {#--#}
+          </a>
+
+          {%- if speaker.bio is defined -%}
+            , {{ speaker.bio | raw }}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endblock %}
+
+  {% block event %}
+    <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
+      {{- talk.event.name -}}
+    </a>
+
+    <small>
+      {{ talk.event.date.format('F Y') }}
+    </small>
+  {% endblock %}
+
+  {% block description %}
+    <div class="talk__description">
+      {{ talk.description | raw }}
+    </div>
+  {% endblock %}
+</div>

@@ -457,10 +457,8 @@ class Client
 
         foreach ($this->getPastEvents() as $event) {
             foreach ($event->talks as $talk) {
-                if ($talk->slides || $talk->video) {
-                    $talk->event = $event;
-                    $talks[] = $talk;
-                }
+                $talk->event = $event;
+                $talks[] = $talk;
             }
         }
 

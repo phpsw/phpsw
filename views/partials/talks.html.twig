@@ -1,0 +1,14 @@
+<div id="talks" class="talks
+  {{ event is defined ? 'talks--event' }}
+  {{ speaker is defined ? 'talks--speaker' }}
+  {{ talks is defined ? 'talks--talks' }}
+  {{ talk is defined ? 'talks--talk' }}
+">
+  <h2{% if event is defined %} class="sr-only"{% endif %}>Talks</h2>
+
+  <ul class="list">
+    {% for talk in talks %}
+      <li>{{ include('partials/' ~ (template | default('talk')) ~ '.html.twig') }}</li>
+    {% endfor %}
+  </ul>
+</div>

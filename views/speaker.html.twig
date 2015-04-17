@@ -61,16 +61,16 @@
       </ul>
 
       {% if speaker.talks %}
-        {{ include('talks.html.twig', {talks: speaker.talks}) }}
+        {{ include('partials/talks.html.twig', {talks: speaker.talks, 'template': 'talk--with-event'}) }}
       {% endif %}
 
       {% if speaker.photos %}
-        {{ include('photos.html.twig', {photos: speaker.photos}) }}
+        {{ include('partials/photos.html.twig', {photos: speaker.photos}) }}
       {% endif %}
     </div>
 
     <div class="col-sm-4">
-      {{ include('speaking.html.twig') }}
+      {{ include('partials/speaking.html.twig') }}
     </div>
   </div>
 {% endblock %}

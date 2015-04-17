@@ -48,5 +48,5 @@
 </article>
 
 {% if comment.replies|default %}
-  {{ include('comments.html.twig', {comments: comment.replies})}}
+  {{ include('partials/comments.html.twig', {comments: comment.replies})}}
 {% endif %}

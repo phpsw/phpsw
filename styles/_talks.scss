@@ -1,6 +1,4 @@
 .talks {
-  padding: 1em 0 1.5em;
-
   h3 {
     margin: 0;
   }
@@ -17,37 +15,52 @@
     left: 0;
     margin-top: -1.5em;
   }
+
+  &--event {
+    padding: 1em 0 1.5em;
+  }
+
+  &--talks {
+    &__talk {
+      margin-bottom: 2em;
+    }
+  }
 }
 
 .talk {
-  iframe {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-height: 320px !important;
-    margin: 0 !important;
+  position: relative;
+
+  &--padded {
+    padding-left: 4em;
   }
 
-  .talks--event &, .talks--talks & {
-    &__section {
+  &__title {
+    i, span {
+      padding-right: .4em;
+    }
+
+    &__slides {
       position: relative;
-      padding-left: 4em;
+      top: .025em;
     }
   }
 
-  &__details {
-    &__speakers {
-      &__speaker {
-        &:first-child {
-          .talk__details__speakers--multiple & .avatar {
-            top: 40%;
-            left: -.75em;
-          }
+  &__video {
+    margin: 1em 0 .5em;
+  }
+
+  &__speakers {
+    &__speaker {
+      &:first-child {
+        .talk__details__speakers--multiple & .avatar {
+          top: 40%;
+          left: -.75em;
         }
-        &:last-child {
-          .talk__details__speakers--multiple & .avatar {
-            top: 60%;
-            left: .75em;
-          }
+      }
+      &:last-child {
+        .talk__details__speakers--multiple & .avatar {
+          top: 60%;
+          left: .75em;
         }
       }
     }
@@ -57,19 +70,54 @@
     margin-top: .5em;
     color: lighten($text-color, 20%);
   }
+}
 
-  &__slides {
-    margin: 1em 0;
+.slides {
+  iframe {
+    width: 320px !important;
+    max-width: 100%;
+    min-height: 200px !important;
+    margin: 0 !important;
+  }
+}
 
+.video {
+  iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  &--small {
     iframe {
-      width: 320px !important;
-      max-width: 100%;
-      min-height: 200px !important;
-      margin: 0 !important;
-    }
+      min-height: 140px !important;
 
-    &__link {
-      margin: .5em 0;
+      @media (min-width: $screen-xs-min) {
+        min-height: 220px !important;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        min-height: 180px !important;
+      }
+
+      @media (min-width: $screen-md-min) {
+        min-height: 120px !important;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        min-height: 180px !important;
+      }
+    }
+  }
+
+  &--large {
+    iframe {
+      min-height: 200px !important;
+
+      @media (min-width: $screen-xs-min) {
+        min-height: 320px !important;
+      }
+
+      margin: 0 !important;
     }
   }
 }

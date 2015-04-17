@@ -17,11 +17,12 @@ class TalkController extends AbstractController
             foreach($event->talks as $talk) {
                 if ($talk->slides || $talk->video) {
                     $talks[] = $talk;
+                    $talk->event = $event;
                 }
             }
         }
 
-        return $this->render($app, 'talks_page.html.twig', [
+        return $this->render($app, 'talks.html.twig', [
             'talks' => $talks
         ]);
     }
@@ -30,8 +31,7 @@ class TalkController extends AbstractController
     {
         $talk = $app['meetup.client']->getTalk($slug);
 
-        return $this->render($app, 'talk_page.html.twig', [
-            'event' => $talk->event,
+        return $this->render($app, 'talk.html.twig', [
             'talk' => $talk
         ]);
     }

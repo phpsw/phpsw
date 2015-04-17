@@ -1,0 +1,20 @@
+<div id="slides-{{ talk.id }}" class="slides">
+  {% if iframe %}
+    <iframe
+      src="{{ talk.slides | replace({'/pub': ''}) }}/embed"
+      frameborder="0" scrolling="no"
+      allowfullscreen mozallowfullscreen webkitallowfullscreen
+    >
+    </iframe>
+  {% endif %}
+
+  <a href="{{ talk.slides }}" {%- if embedly %} class="embedly-card" data-card-chrome="0" {%- endif %}>
+    View slides on
+    {{ 'google.com/presentation' in talk.slides ? 'Google Docs' }}
+    {{ 'slides.com' in talk.slides ? 'slides.com' }}
+    {{ 'slid.es' in talk.slides ? 'slid.es' }}
+    {{ 'slideshare' in talk.slides ? 'SlideShare' }}
+    {{ 'speakerdeck' in talk.slides ? 'Speaker Deck' }}
+    <i class="fa fa-external-link"></i>
+  </a>
+</div>
