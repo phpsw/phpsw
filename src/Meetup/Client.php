@@ -862,7 +862,28 @@ class Client
                         }
                     });
 
-                    $talk->slides = $this->redis->hget('slides', $talk->id);
+                    $slides = $this->redis->hget('slides', $talk->id);
+
+                    if ($slides) {
+                        if (strpos($slides, 'google.com/presentation')) $type = 'Google Docs';
+                        elseif (strpos($slides, 'slides.com'))          $type = 'slides.com';
+                        elseif (strpos($slides, 'slid.es'))             $type = 'slid.es';
+                        elseif (strpos($slides, 'slideshare'))          $type = 'SlideShare';
+                        elseif (strpos($slides, 'speakerdeck'))         $type = 'Speaker Deck';
+                        else                                            $type = null;
+
+                        $embedly = in_array($type, ['SlideShare', 'Speaker Deck']);
+
+                        $talk->slides = (object) [
+                            'embed' => $type ? str_replace('/pub', '', $slides) . '/embed' : $slides,
+                            'embedly' => $embedly,
+                            'type' => $type,
+                            'url' => $slides,
+                        ];
+                    } else {
+                        $talk->slides = null;
+                    }
+
                     $talk->video = $this->redis->hget('videos', $talk->id);
 
                     $event->description = str_replace('<p>' . $node->html() . '</p>', '', $event->description);

@@ -5,10 +5,12 @@
 {% endblock %}
 
 {% block hero %}
-  {{ hero('http://photos3.meetupstatic.com/photos/event/8/4/7/8/highres_366333912.jpeg') }}
+  {{ hero('http://photos2.meetupstatic.com/photos/event/7/b/e/a/600_383071722.jpeg') }}
 {% endblock %}
 
 {% block content %}
+  <h2 class="sr-only">Featured</h2>
+
   <div class="talks talks--talks row">
     {% for talk in talks[0:6] %}
       <div class="talks--talks__talk col-sm-6 col-md-4">
@@ -27,7 +29,7 @@
 
   <div class="row">
     <div class="col-sm-8">
-      {{ include('partials/talks.html.twig', {'talks': talks[6:], 'template': 'talk--with-speaker'}) }}
+      {{ include('partials/talks.html.twig', {'heading': 'Further viewing', 'talks': talks[6:], 'template': 'talk--with-speaker'}) }}
     </div>
 
     <div class="col-sm-4">

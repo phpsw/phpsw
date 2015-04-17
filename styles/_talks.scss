@@ -46,7 +46,6 @@
   }
 
   &__video {
-    margin: 1em 0 .5em;
   }
 
   &__speakers {
@@ -76,8 +75,31 @@
   iframe {
     width: 320px !important;
     max-width: 100%;
-    min-height: 200px !important;
-    margin: 0 !important;
+    margin: 1em 0 .5em !important;
+  }
+
+  &--small {
+    iframe {
+      min-height: 240px !important;
+
+      @media (min-width: $screen-xs-min) {
+        min-height: 320px !important;
+      }
+    }
+  }
+
+  &--large {
+    iframe {
+      min-height: 240px !important;
+
+      @media (min-width: $screen-xs-min) {
+        min-height: 320px !important;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        min-height: 400px !important;
+      }
+    }
   }
 }
 
@@ -85,6 +107,7 @@
   iframe {
     width: 100% !important;
     max-width: 100% !important;
+    margin: 1em 0 .5em !important;
   }
 
   &--small {
@@ -116,8 +139,6 @@
       @media (min-width: $screen-xs-min) {
         min-height: 320px !important;
       }
-
-      margin: 0 !important;
     }
   }
 }

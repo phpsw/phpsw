@@ -1,12 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% set iframe = 'google.com/presentation' in talk.slides or 'slides.com' in talk.slides or 'slid.es' in talk.slides %}
-{% set embedly = 'slideshare' in talk.slides or 'speakerdeck' in talk.slides %}
-{% set youtube = 'youtube.com' in talk.video %}
-
-{% set slides = iframe or embedly %}
-{% set video = youtube %}
-
 {% block title %}
   {{ talk.title | striptags | raw }}
 {% endblock %}
@@ -21,34 +14,28 @@
       </small>
     </h1>
 
-    <div class="row">
-      <div class="col-sm-12">
-        {% if talk.description %}
-          <div class="talk__description talk__section">
-            {{ talk.description | raw }}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-
-    {% if slides and video %}
+    {% if talk.slides and talk.video %}
       <div class="row">
         <div class="col-sm-8">
           {{ include('partials/video.html.twig', {'size': 'large'}) }}
         </div>
 
         <div class="col-sm-4">
-          {{ include('partials/slides.html.twig') }}
+          {{ include('partials/slides.html.twig', {'size': 'small'}) }}
         </div>
       </div>
     {% endif %}
 
     <div class="row">
       <div class="col-sm-8">
-        {% if slides and not video %}
-          {{ include('partials/slides.html.twig') }}
-        {% elseif video and not slides %}
-          {{ include('partials/video.html.twig') }}
+        {% if talk.slides and not talk.video %}
+          {{ include('partials/slides.html.twig', {'size': 'large'}) }}
+        {% elseif talk.video and not talk.slides %}
+          {{ include('partials/video.html.twig', {'size': 'large'}) }}
+        {% endif %}
+
+        {% if talk.description %}
+          {{ talk.description | raw }}
         {% endif %}
 
         {% for speaker in talk.speakers %}
@@ -102,7 +89,7 @@
       <a
         href="{{ path('talk', {slug: talk.next.slug}) }}"
         class="next"
-        title="{{ talk.next.title }} - {{ talk.prev.event.name }}: {{ talk.next.event.date.format('F Y') }}"
+        title="{{ talk.next.title }} - {{ talk.next.event.name }}: {{ talk.next.event.date.format('F Y') }}"
       >
         <i class="fa fa-chevron-right"></i>
         <span class="sr-only">Next</span>

@@ -1,20 +1,30 @@
-<div id="slides-{{ talk.id }}" class="slides">
-  {% if iframe %}
+<div id="slides-{{ talk.id }}" class="slides {%- if size is defined %} slides--{{ size }} {%- endif %}">
+  {% if not talk.slides.embedly %}
     <iframe
-      src="{{ talk.slides | replace({'/pub': ''}) }}/embed"
-      frameborder="0" scrolling="no"
+      src="{{ talk.slides.embed }}"
+      frameborder="0"
       allowfullscreen mozallowfullscreen webkitallowfullscreen
     >
     </iframe>
+  {% else %}
+    <div class="embedly-card" data-card-chrome="0"></div>
   {% endif %}
 
-  <a href="{{ talk.slides }}" {%- if embedly %} class="embedly-card" data-card-chrome="0" {%- endif %}>
-    View slides on
-    {{ 'google.com/presentation' in talk.slides ? 'Google Docs' }}
-    {{ 'slides.com' in talk.slides ? 'slides.com' }}
-    {{ 'slid.es' in talk.slides ? 'slid.es' }}
-    {{ 'slideshare' in talk.slides ? 'SlideShare' }}
-    {{ 'speakerdeck' in talk.slides ? 'Speaker Deck' }}
-    <i class="fa fa-external-link"></i>
-  </a>
+  <div class="row">
+    <div class="col-xs-6">
+      <a href="{{ talk.slides.url }}">
+        View slides {{ talk.slides.type ? 'on ' ~ talk.slides.type }}
+        <i class="fa fa-external-link"></i>
+      </a>
+    </div>
+    <div class="col-xs-6 text-right">
+      <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
+        {{- talk.event.name -}}
+      </a>
+
+      <small>
+        {{ talk.event.date.format('F Y') }}
+      </small>
+    </div>
+  </div>
 </div>
