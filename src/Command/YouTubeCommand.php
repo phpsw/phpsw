@@ -9,8 +9,6 @@ use Knp\Command\Command,
     Symfony\Component\Console\Input\InputOption,
     Symfony\Component\Console\Output\OutputInterface;
 
-
-
 class YouTubeCommand extends Command
 {
     protected function configure()
@@ -22,14 +20,14 @@ class YouTubeCommand extends Command
     {
         $app = $this->getSilexApplication();
 
-        $this->meetup = $app['meetup.client'];
         $this->youtube = $app['youtube.client'];
         $this->redis = $app['redis'];
 
         $events = $this->hgetall('events');
+        $talks = $this->hgetall('talks');
 
         $tasks = [
-            'videos' => function ($callback) use ($app, $events) {
+            'videos' => function ($success, $fail) use ($app, $events, $talks) {
                 $playlists = $this->youtube->getPlaylistsByChannelId($app['youtube']['channel']['id']);
 
                 foreach ($playlists as $playlist) {
@@ -42,6 +40,13 @@ class YouTubeCommand extends Command
                         }
                     ));
 
+                    $event->talks = array_filter(
+                        $talks,
+                        function ($talk) use ($event) {
+                            return $talk->event == $event->id;
+                        }
+                    );
+
                     $videos = $this->youtube->getPlaylistItemsByPlaylistId($playlist->id);
 
                     foreach ($videos as $video) {
@@ -52,9 +57,13 @@ class YouTubeCommand extends Command
                             }
                         ));
 
-                        $this->hset('videos', $talk->id, "https://www.youtube.com/embed/{$video->contentDetails->videoId}");
+                        if ($talk) {
+                            $this->hset('videos', $talk->id, "https://www.youtube.com/watch?v={$video->contentDetails->videoId}");
+                            $success();
+                        } else {
+                            $fail();
+                        }
 
-                        $callback();
                     }
                 }
             }
@@ -63,9 +72,10 @@ class YouTubeCommand extends Command
         foreach ($tasks as $type => $task) {
             echo ucfirst($type), ': ';
 
-            $task(function () {
-                echo '.';
-            });
+            $task(
+                function () { echo '.'; },
+                function () { echo 'x'; }
+            );
 
             echo PHP_EOL;
         }
@@ -79,6 +89,11 @@ class YouTubeCommand extends Command
             },
             $this->redis->hgetall($key)
         );
+    }
+
+    protected function hget($key, $hkey)
+    {
+        return $this->redis->hget($key, $hkey);
     }
 
     protected function hset($key, $hkey, $hvalue)

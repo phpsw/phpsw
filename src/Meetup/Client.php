@@ -884,7 +884,17 @@ class Client
                         $talk->slides = null;
                     }
 
-                    $talk->video = $this->redis->hget('videos', $talk->id);
+                    $video = $this->redis->hget('videos', $talk->id);
+
+                    if ($video) {
+                        $talk->video = (object) [
+                            'embed' => str_replace('watch?v=', 'embed/', $video) . '?rel=0&amp;showinfo=0',
+                            'type' => 'YouTube',
+                            'url' => $video
+                        ];
+                    } else {
+                        $talk->video = null;
+                    }
 
                     $event->description = str_replace('<p>' . $node->html() . '</p>', '', $event->description);
                     $event->talks[] = $talk;

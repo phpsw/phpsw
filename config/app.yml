@@ -181,3 +181,7 @@ vouchers: []
 website:
   url: http://phpsw.org.uk
   urlshort: phpsw.org.uk
+
+youtube:
+  channel:
+    id: UCjj5wcw49eACHL0rZwzDJCg

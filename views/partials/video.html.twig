@@ -1,6 +1,6 @@
 <div class="video {%- if size is defined %} video--{{ size }} {%- endif %}">
   <iframe
-    src="{{ talk.video }}?rel=0&amp;showinfo=0"
+    src="{{ talk.video.embed }}"
     frameborder="0" scrolling="no"
     allowfullscreen mozallowfullscreen webkitallowfullscreen
   >
@@ -8,9 +8,8 @@
 
   <br>
 
-  <a href="{{ talk.video }}" class="js-hidden">
-    View video on
-    {{ 'youtube.com' in talk.video ? 'YouTube' }}
+  <a href="{{ talk.video.url }}" class="js-hidden">
+    View video on {{ talk.video.type }}
     <i class="fa fa-external-link"></i>
   </a>
 </div>

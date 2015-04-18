@@ -16,9 +16,11 @@
   {% endblock %}
 
   {% block video %}
-    <div class="talk__video">
-      {{ include('partials/video.html.twig', {'size': 'small'}) }}
-    </div>
+    {% if talk.video %}
+      <div class="talk__video">
+        {{ include('partials/video.html.twig', {'size': 'small'}) }}
+      </div>
+    {% endif %}
   {% endblock %}
 
   {% block speaker %}
