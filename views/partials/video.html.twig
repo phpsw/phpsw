@@ -6,10 +6,21 @@
   >
   </iframe>
 
-  <br>
+  <div class="row">
+    <div class="col-xs-{{ size == 'large' ? 6 : 12 }}">
+      <a href="{{ talk.video.url }}" {%- if size == 'small' %} class="js-hidden" {%- endif %}>
+        View video on {{ talk.video.type }}
+        <i class="fa fa-external-link"></i>
+      </a>
+    </div>
+    {% if size is defined and size == 'large' %}
+      <div class="col-xs-6 text-right">
+        <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
+          {{- talk.event.name -}}
+        </a>,
 
-  <a href="{{ talk.video.url }}" class="js-hidden">
-    View video on {{ talk.video.type }}
-    <i class="fa fa-external-link"></i>
-  </a>
+        {{ talk.event.date.format('F Y') }}
+      </div>
+    {% endif %}
+  </div>
 </div>
