@@ -47,20 +47,17 @@
     }
   }
 
-  &__video {
-  }
-
   &__speakers {
     &__speaker {
       &:first-child {
-        .talk__details__speakers--multiple & .avatar {
-          top: 40%;
+        .talk__speakers--multiple & .avatar {
+          top: 45%;
           left: -.75em;
         }
       }
       &:last-child {
-        .talk__details__speakers--multiple & .avatar {
-          top: 60%;
+        .talk__speakers--multiple & .avatar {
+          top: 55%;
           left: .75em;
         }
       }
