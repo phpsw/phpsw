@@ -61,9 +61,11 @@ namespace :gulp do
   after "bower:install", :build
 end
 
-namespace :meetup do
+namespace :sf do
   task :import do
     on roles :app do
+      execute "#{release_path}/app/console joindin:import:all"
+      execute "#{release_path}/app/console youtube:import:all"
       execute "#{release_path}/app/console meetup:import:all"
     end
   end
