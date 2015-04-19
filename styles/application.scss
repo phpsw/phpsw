@@ -32,6 +32,10 @@ a {
 h1 {
   small {
     white-space: nowrap;
+
+    a {
+      color: inherit;
+    }
   }
 
   .btn {
@@ -42,6 +46,10 @@ h1 {
 
 img, svg {
   max-width: 100%;
+}
+
+small {
+  color: #999;
 }
 
 @import "layout";
