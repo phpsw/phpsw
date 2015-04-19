@@ -821,6 +821,8 @@ class Client
                         if ($speakerNodes->count()) {
                             $speaker->url = $speakerNodes->filter('a')->first()->attr('href');
 
+                            $speaker->url = str_replace('BillieAThompson', 'PurpleBooth', $speaker->url);
+
                             if (preg_match('#https?://www\.meetup\.com/php-sw/members/([^\/]+)#', $speaker->url, $matches)) {
                                 $speaker->member = $this->getMember($matches[1]);
 
