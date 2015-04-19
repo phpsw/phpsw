@@ -595,14 +595,20 @@ class Client
                     $event->comments
                 );
 
-                $event->feedback = (object) [
-                    'uri' => current(array_filter(
-                        $feedback,
-                        function ($feedback) use ($event) {
-                            return preg_replace('#.*/(\d+)-.*#', '\1', $feedback->href) == $event->id;
-                        }
-                    ))->humane_website_uri
-                ];
+                $event->feedback = current(array_filter(
+                    $feedback,
+                    function ($feedback) use ($event) {
+                        return preg_replace('#.*/(\d+)-.*#', '\1', $feedback->href) == $event->id;
+                    }
+                ));
+
+                if ($event->feedback) {
+                    $event->feedback = (object) [
+                        'uri' => $event->feedback->humane_website_uri
+                    ];
+                } else {
+                    $event->feedback = null;
+                }
 
                 $event->photos = array_values(
                     array_filter($this->getGroup()->photos, function ($photo) use ($event) {
