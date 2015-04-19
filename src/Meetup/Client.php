@@ -930,7 +930,7 @@ class Client
         return $event;
     }
 
-    protected function slugify($string)
+    public function slugify($string)
     {
         return $this->app['slugify']->slugify(
             preg_replace(['#\'#', '#\s*&\s#'], ['', ' and '], $string)
