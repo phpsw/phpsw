@@ -66,6 +66,11 @@
             {{ event.abstract | emoji | raw }}
           </div>
           <div class="col-sm-4 text-right">
+            {% if event.date < date() and event.feedback %}
+              <a href="{{ event.feedback.uri }}" class="btn btn-warning">
+                Leave feedback on Joind.in
+              </a>
+            {% endif %}
             <a href="{{ event.url }}" class="btn btn-primary">
               {% if event.status == 'upcoming' %}
                 RSVP

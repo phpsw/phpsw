@@ -36,8 +36,9 @@ class Client
 
         $this->app = $app;
         $this->cli = $cli;
-        $this->debug = $debug;
         $this->config = $config;
+        $this->debug = $debug;
+        $this->joindin = $app['joindin.client'];
         $this->redis = $app['redis'];
         $this->organisers = $app['organisers'];
         $this->sponsors = $app['sponsors'];
@@ -531,8 +532,10 @@ class Client
             'fields' => 'member_photo'
         ])->getData();
 
+        $feedback = $this->joindin->get('http://api.joind.in/v2.1/events', ['tags' => 'phpsw'])->events;
+
         return array_map(
-            function ($event) use ($comments) {
+            function ($event) use ($comments, $feedback) {
                 $event = (object) $event;
 
                 if (isset($event->description)) {
@@ -591,6 +594,15 @@ class Client
                     },
                     $event->comments
                 );
+
+                $event->feedback = (object) [
+                    'uri' => current(array_filter(
+                        $feedback,
+                        function ($feedback) use ($event) {
+                            return preg_replace('#.*/(\d+)-.*#', '\1', $feedback->href) == $event->id;
+                        }
+                    ))->humane_website_uri
+                ];
 
                 $event->photos = array_values(
                     array_filter($this->getGroup()->photos, function ($photo) use ($event) {

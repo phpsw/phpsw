@@ -7,11 +7,27 @@
 {% block main %}
   <div class="container">
     <h1>
-      {{ block('title') }}
+      <div class="row">
+        <div class="col-xs-8">
+          {{ block('title') }}
 
-      <small>
-        {{ talk.event.date.format('F Y') }}
-      </small>
+          <small>
+            {{- talk.event.date.format('F Y') -}}
+          </small>
+        </div>
+        <div class="col-xs-4 text-right">
+          {% if talk.event.date < date() and talk.feedback %}
+            <a href="{{ talk.feedback.uri }}" class="btn btn-warning">
+              Leave
+              {% for speaker in talk.speakers %}
+                {{- speaker.name | split(' ') | first -}}
+                {{- not loop.last ? ' &amp; ' -}}
+              {% endfor %}
+              feedback on Joind.in
+            </a>
+          {% endif %}
+        </div>
+      </div>
     </h1>
 
     {% if talk.slides and talk.video %}
@@ -52,17 +68,6 @@
             {% endif %}
           </h2>
         {% endfor %}
-
-        {% if talk.event.date < date() and talk.feedback %}
-          <a href="{{ talk.feedback.uri }}" class="alert alert-info text-center" style="display: block">
-            Leave
-            {% for speaker in talk.speakers %}
-              {{- speaker.name | split(' ') | first -}}
-              {{- not loop.last ? ' &amp; ' -}}
-            {% endfor %}
-            feedback on Joind.in
-          </a>
-        {% endif %}
 
         {% for speaker in talk.speakers %}
           {% if speaker.talks %}

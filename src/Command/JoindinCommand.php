@@ -19,16 +19,17 @@ class JoindinCommand extends Command
     {
         $app = $this->getSilexApplication();
 
-        $this->meetup = $app['meetup.client'];
-        $this->redis = $app['redis'];
+        $this->joindin = $app['joindin.client'];
+        $this->meetup  = $app['meetup.client'];
+        $this->redis   = $app['redis'];
 
         $tasks = [
             'feedback' => function ($callback) {
-                $events = $this->get('http://api.joind.in/v2.1/events', ['tags' => 'phpsw'])->events;
+                $events = $this->joindin->get('http://api.joind.in/v2.1/events', ['tags' => 'phpsw'])->events;
 
                 foreach ($events as $event) {
-                    $comments = $this->get($event->all_talk_comments_uri)->comments;
-                    $talks = $this->get($event->talks_uri)->talks;
+                    $comments = $this->joindin->get($event->all_talk_comments_uri)->comments;
+                    $talks = $this->joindin->get($event->talks_uri)->talks;
 
                     foreach ($talks as $talk) {
                         $id = preg_replace('#.*/(\d+)-.*#', '\1', $event->href) . '-' . $this->meetup->slugify($talk->talk_title);
@@ -61,14 +62,5 @@ class JoindinCommand extends Command
 
             echo PHP_EOL;
         }
-    }
-
-    protected function get($uri, $params = [])
-    {
-        return json_decode(file_get_contents($uri . '?' . http_build_query(array_merge($params, [
-            'format' => 'json',
-            'resultsperpage' => 0,
-            'verbose' => 'yes'
-        ]))));
     }
 }

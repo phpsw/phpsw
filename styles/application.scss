@@ -29,6 +29,17 @@ a {
   }
 }
 
+h1 {
+  small {
+    white-space: nowrap;
+  }
+
+  .btn {
+     max-width: 100%;
+     white-space: normal;
+  }
+}
+
 img, svg {
   max-width: 100%;
 }

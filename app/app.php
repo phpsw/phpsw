@@ -31,6 +31,10 @@ $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
 $app['guzzle'] = new GuzzleHttp\Client();
 
+$app['joindin.client'] = function () {
+    return new PHPSW\Joindin\Client();
+};
+
 $app['meetup.client'] = function ($app) {
     return new PHPSW\Meetup\Client($app, $app['meetup'], $app['cli'], $app['debug']);
 };
