@@ -53,6 +53,17 @@
           </h2>
         {% endfor %}
 
+        {% if talk.event.date < date() and talk.feedback %}
+          <a href="{{ talk.feedback.uri }}" class="alert alert-info text-center" style="display: block">
+            Leave
+            {% for speaker in talk.speakers %}
+              {{- speaker.name | split(' ') | first -}}
+              {{- not loop.last ? ' &amp; ' -}}
+            {% endfor %}
+            feedback on Joind.in
+          </a>
+        {% endif %}
+
         {% for speaker in talk.speakers %}
           {% if speaker.talks %}
             <hr>

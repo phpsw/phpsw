@@ -862,6 +862,8 @@ class Client
                         }
                     });
 
+                    $talk->feedback = json_decode($this->redis->hget('feedback', $talk->id));
+
                     $slides = $this->redis->hget('slides', $talk->id);
 
                     if ($slides) {
