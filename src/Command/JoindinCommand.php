@@ -43,7 +43,7 @@ class JoindinCommand extends Command
                             'duration' => $talk->duration,
                             'rating'   => $talk->average_rating,
                             'starred'  => $talk->starred_count,
-                            'uri'      => str_replace('talk/view', '', $talk->website_uri)
+                            'uri'      => str_replace('/talk/view', '', $talk->website_uri)
                         ]));
 
                         $callback();
