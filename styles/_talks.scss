@@ -116,22 +116,22 @@
 
   &--small {
     iframe {
-      min-height: 140px !important;
+      min-height: 194px !important;
 
       @media (min-width: $screen-xs-min) {
         min-height: 220px !important;
       }
 
       @media (min-width: $screen-sm-min) {
-        min-height: 180px !important;
+        min-height: 194px !important;
       }
 
       @media (min-width: $screen-md-min) {
-        min-height: 120px !important;
+        min-height: 165px !important;
       }
 
       @media (min-width: $screen-lg-min) {
-        min-height: 180px !important;
+        min-height: 202px !important;
       }
     }
   }
@@ -140,10 +140,22 @@
     margin-bottom: 1em;
 
     iframe {
-      min-height: 200px !important;
+      min-height: 240px !important;
 
       @media (min-width: $screen-xs-min) {
-        min-height: 320px !important;
+        min-height: 340px !important;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        min-height: 295px !important;
+      }
+
+      @media (min-width: $screen-md-min) {
+        min-height: 377px !important;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        min-height: 452px !important;
       }
     }
   }
