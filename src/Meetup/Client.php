@@ -455,7 +455,7 @@ class Client
     {
         $talks = [];
 
-        foreach ($this->getPastEvents() as $event) {
+        foreach ($this->getEvents() as $event) {
             foreach ($event->talks as $talk) {
                 $talk->event = $event;
                 $talks[] = $talk;
