@@ -51,13 +51,13 @@
   {% endblock %}
 
   {% block event %}
-    <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
-      {{- talk.event.name -}}
-    </a>
+    {% spaceless %}
+      <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
+        {{- talk.event.name -}}
+      </a>
 
-    <small>
-      {{ talk.event.date.format('F Y') }}
-    </small>
+      <small>, {{ talk.event.date.format('F Y') }}</small>
+    {% endspaceless %}
   {% endblock %}
 
   {% block description %}

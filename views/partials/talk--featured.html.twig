@@ -1,5 +1,6 @@
 {% extends 'partials/talk.html.twig' %}
 
 {% block avatar %}{% endblock %}
+{% block class %}{{ parent() }} {{ parent() }}--featured col-sm-6 col-md-4{% endblock %}
 {% block description %}{% endblock %}
-{% block event %}<hr style="margin: .5em 0">{{ parent() }}{% endblock %}
+{% block event %}<hr>{{ parent() }}{% endblock %}

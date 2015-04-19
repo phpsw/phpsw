@@ -1,4 +1,4 @@
-<div class="video {%- if size is defined %} video--{{ size }} {%- endif %}">
+<div id="video-{{ talk.id }}" class="video {%- if size is defined %} video--{{ size }} {%- endif %}">
   <iframe
     src="{{ talk.video.embed }}"
     frameborder="0" scrolling="no"
@@ -15,11 +15,13 @@
     </div>
     {% if size is defined and size == 'large' %}
       <div class="col-xs-6 text-right">
-        <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
-          {{- talk.event.name -}}
-        </a>,
+        {% spaceless %}
+          <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
+            {{- talk.event.name -}}
+          </a>
 
-        {{ talk.event.date.format('F Y') }}
+          <small>, {{ talk.event.date.format('F Y') }}</small>
+        {% endspaceless %}
       </div>
     {% endif %}
   </div>

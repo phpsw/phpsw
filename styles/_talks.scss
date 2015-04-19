@@ -19,19 +19,21 @@
   &--event {
     padding: 1em 0 1.5em;
   }
-
-  &--talks {
-    &__talk {
-      margin-bottom: 2em;
-    }
-  }
 }
 
 .talk {
   position: relative;
 
+  &--featured {
+    margin-bottom: 2em;
+  }
+
   &--padded {
     padding-left: 4em;
+  }
+
+  hr {
+    margin: .5em 0;
   }
 
   &__title {
@@ -89,6 +91,8 @@
   }
 
   &--large {
+    margin-bottom: 1em;
+
     iframe {
       min-height: 240px !important;
 
@@ -133,6 +137,8 @@
   }
 
   &--large {
+    margin-bottom: 1em;
+
     iframe {
       min-height: 200px !important;
 
