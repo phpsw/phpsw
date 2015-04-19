@@ -17,7 +17,7 @@ class MessageController extends AbstractController
         $referer = $request->headers->get('referer');
         $subject = $request->get('subject');
 
-        if ($request->get('name') != 'human') {
+        if ($request->get('name')) {
             $response = $this->fail(); # bot
         } elseif (!trim($request->get('message'))) {
             $response = $this->fail('Please enter a message');

@@ -1,4 +1,8 @@
 .message {
+    input {
+        display: none;
+    }
+
     textarea {
         border: 1px solid #ccc;
         width: 100%;
@@ -6,5 +10,9 @@
         height: 8em;
         padding: .25em .5em;
         box-shadow: inset 2px 2px 20px rgba(black, .1);
+    }
+
+    .btn {
+        display: block;
     }
 }
