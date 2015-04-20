@@ -1,19 +1,19 @@
 <div id="{{ subject }}" class="message">
-  {% for message in app.session.getFlashBag.get('message_success') %}
+  {% if app.request.get('success') %}
     <div class="alert alert-success" role="alert">
       <i class="fa fa-check" aria-hidden="true"></i>
       <span class="sr-only">Success:</span>
-      {{ message }}
+      {{ app.request.get('success') }}
     </div>
-  {% endfor %}
+  {% endif %}
 
-  {% for message in app.session.getFlashBag.get('message_fail') %}
+  {% if app.request.get('fail') %}
     <div class="alert alert-danger" role="alert">
       <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
       <span class="sr-only">Error:</span>
-      {{ message }}
+      {{ app.request.get('fail') }}
     </div>
-  {% endfor %}
+  {% endif %}
 
   <form action="{{ url('message') }}" method="post">
     <input name="name" type="text">

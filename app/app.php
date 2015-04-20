@@ -25,7 +25,6 @@ if ($app['bugsnag']['api']['key'] && $app['env'] == 'prod') {
 }
 
 $app->register(new Cocur\Slugify\Bridge\Silex\SlugifyServiceProvider());
-$app->register(new Silex\Provider\SessionServiceProvider());
 $app->register(new Silex\Provider\SwiftmailerServiceProvider());
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
