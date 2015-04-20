@@ -64,23 +64,6 @@ Referrer: {$referer}")
 
     private function success($message)
     {
-        $this->app['session']->getFlashBag()->add('message_success', $message);
-
-        $uri = (object) parse_url($this->request->headers->get('referer'));
-
-        return new RedirectResponse(sprintf(
-            '%s://%s%s#%s',
-            $uri->scheme,
-            $uri->host,
-            $uri->path,
-            $this->request->get('subject')
-        ));
-    }
-
-    private function fail($message = null)
-    {
-        if ($message) $this->app['session']->getFlashBag()->add('message_fail', $message);
-
         $uri = (object) parse_url($this->request->headers->get('referer'));
 
         return new RedirectResponse(sprintf(
@@ -88,7 +71,24 @@ Referrer: {$referer}")
             $uri->scheme,
             $uri->host,
             $uri->path,
-            http_build_query(['message' => $this->request->get('message')]),
+            http_build_query(['success' => $message]),
+            $this->request->get('subject')
+        ));
+    }
+
+    private function fail($message = null)
+    {
+        $uri = (object) parse_url($this->request->headers->get('referer'));
+
+        return new RedirectResponse(sprintf(
+            '%s://%s%s?%s#%s',
+            $uri->scheme,
+            $uri->host,
+            $uri->path,
+            http_build_query(array_filter([
+                'message' => $this->request->get('message'),
+                'fail' => $message
+            ])),
             $this->request->get('subject')
         ));
     }
