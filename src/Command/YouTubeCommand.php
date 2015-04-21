@@ -82,7 +82,7 @@ class YouTubeCommand extends Command
             echo PHP_EOL;
         }
 
-        $this->refresh();
+        if ($this->cc) $this->refresh();
     }
 
     protected function refresh()
