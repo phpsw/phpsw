@@ -10,6 +10,8 @@ use Knp\Command\Command,
 
 class MeetupCommand extends Command
 {
+    protected $cc = false;
+
     protected function configure()
     {
         $this->setName('meetup:import:all');
@@ -25,14 +27,14 @@ class MeetupCommand extends Command
         $tasks = [
             'group' => function ($callback) {
                 if ($this->meetup->getGroup()) {
-                    $this->set('group', $this->meetup->getGroup());
+                    $this->cc = $this->cc ?: !!$this->set('group', $this->meetup->getGroup());
 
                     $callback();
                 }
             },
             'events' => function ($callback) {
                 foreach ($this->meetup->getEvents() as $event) {
-                    $this->hset('events', $event->id, $event);
+                    $this->cc = $this->cc ?: !!$this->hset('events', $event->id, $event);
 
                     $callback();
                 }
@@ -88,7 +90,7 @@ class MeetupCommand extends Command
                                 $speaker->photos = [];
                             }
 
-                            $this->hset('speakers', $speaker->slug, $speaker);
+                            $this->cc = $this->cc ?: !!$this->hset('speakers', $speaker->slug, $speaker);
 
                             $callback();
                         }
@@ -98,7 +100,7 @@ class MeetupCommand extends Command
             'talks' => function ($callback) {
                 foreach ($this->meetup->getEvents() as $event) {
                     foreach ($event->talks as $talk) {
-                        $this->hset('talks', $talk->id, $talk);
+                        $this->cc = $this->cc ?: !!$this->hset('talks', $talk->id, $talk);
 
                         $callback();
                     }
@@ -115,6 +117,18 @@ class MeetupCommand extends Command
 
             echo PHP_EOL;
         }
+
+        if ($this->cc) $this->refresh();
+    }
+
+    protected function refresh()
+    {
+         exec('service varnish restart');
+         file_get_contents('http://phpsw.org.uk');
+         file_get_contents('http://phpsw.org.uk/events');
+         file_get_contents('http://phpsw.org.uk/speakers');
+         file_get_contents('http://phpsw.org.uk/sponsors');
+         file_get_contents('http://phpsw.org.uk/talks');
     }
 
     protected function get($key)

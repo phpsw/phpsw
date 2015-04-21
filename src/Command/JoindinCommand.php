@@ -10,6 +10,8 @@ use Knp\Command\Command,
 
 class JoindinCommand extends Command
 {
+    protected $cc = false;
+
     protected function configure()
     {
         $this->setName('joindin:import:all');
@@ -34,7 +36,7 @@ class JoindinCommand extends Command
                     foreach ($talks as $talk) {
                         $id = preg_replace('#.*/(\d+)-.*#', '\1', $event->href) . '-' . $this->meetup->slugify($talk->talk_title);
 
-                        $this->redis->hset('feedback', $id, json_encode((object) [
+                        $this->cc = $this->cc ?: !!$this->redis->hset('feedback', $id, json_encode((object) [
                             'comments' => array_filter(
                                 $comments,
                                 function ($comment) use ($talk) {
@@ -62,5 +64,17 @@ class JoindinCommand extends Command
 
             echo PHP_EOL;
         }
+
+        if ($this->cc) $this->refresh();
+    }
+
+    protected function refresh()
+    {
+         exec('service varnish restart');
+         file_get_contents('http://phpsw.org.uk');
+         file_get_contents('http://phpsw.org.uk/events');
+         file_get_contents('http://phpsw.org.uk/speakers');
+         file_get_contents('http://phpsw.org.uk/sponsors');
+         file_get_contents('http://phpsw.org.uk/talks');
     }
 }
