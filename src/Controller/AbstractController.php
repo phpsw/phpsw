@@ -13,7 +13,7 @@ abstract class AbstractController
 
         return new Response(
             $app['twig']->render($template, $parameters), 200, [
-                'Cache-Control' => 's-maxage=3600'
+                'Cache-Control' => 's-maxage=604800'
             ]
         );
     }

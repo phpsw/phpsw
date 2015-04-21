@@ -11,6 +11,8 @@ use Knp\Command\Command,
 
 class YouTubeCommand extends Command
 {
+    protected $cc = false;
+
     protected function configure()
     {
         $this->setName('youtube:import:all');
@@ -58,7 +60,7 @@ class YouTubeCommand extends Command
                         ));
 
                         if ($talk) {
-                            $this->hset('videos', $talk->id, "https://www.youtube.com/watch?v={$video->contentDetails->videoId}");
+                            $this->cc = $this->cc ?: !!$this->hset('videos', $talk->id, "https://www.youtube.com/watch?v={$video->contentDetails->videoId}");
                             $success();
                         } else {
                             $fail();
@@ -79,6 +81,18 @@ class YouTubeCommand extends Command
 
             echo PHP_EOL;
         }
+
+        $this->refresh();
+    }
+
+    protected function refresh()
+    {
+         exec('service varnish restart');
+         file_get_contents('http://phpsw.org.uk');
+         file_get_contents('http://phpsw.org.uk/events');
+         file_get_contents('http://phpsw.org.uk/speakers');
+         file_get_contents('http://phpsw.org.uk/sponsors');
+         file_get_contents('http://phpsw.org.uk/talks');
     }
 
     protected function hgetall($key)
