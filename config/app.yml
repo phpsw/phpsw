@@ -108,6 +108,16 @@ sponsors:
       start: 2014-08-01
       end: 2015-04-31
 
+    meanbee:
+      name: Meanbee
+      company: Meanbee Ltd
+      description: Meanbee are an ecommerce agency that specialises in the development and design of complex Magento Enterprise stores
+      member: 23546531
+      url: https://www.meanbee.com
+      logo: /images/sponsors/meanbee.png
+      start: 2015-05-01
+      end: ~
+
     redrock:
       name: Redrock Consulting
       company: Redrock Consulting
