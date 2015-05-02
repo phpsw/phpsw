@@ -918,7 +918,7 @@ class Client
         return $event;
     }
 
-    public function parseTalks($event)
+    protected function parseTalks($event)
     {
         // inject talks manually added into redis db
         foreach ($this->redis->hgetall('talks') as $id => $talk) {
