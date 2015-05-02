@@ -27,14 +27,14 @@ class MeetupCommand extends Command
         $tasks = [
             'group' => function ($callback) {
                 if ($this->meetup->getGroup()) {
-                    $this->cc = $this->cc || !!$this->set('group', $this->meetup->getGroup());
+                    $this->cc = !!$this->set('group', $this->meetup->getGroup()) || $this->cc;
 
                     $callback();
                 }
             },
             'events' => function ($callback) {
                 foreach ($this->meetup->getEvents() as $event) {
-                    $this->cc = $this->cc || !!$this->hset('events', $event->id, $event);
+                    $this->cc = !!$this->hset('events', $event->id, $event) || $this->cc;
 
                     $callback();
                 }
@@ -90,7 +90,7 @@ class MeetupCommand extends Command
                                 $speaker->photos = [];
                             }
 
-                            $this->cc = $this->cc || !!$this->hset('speakers', $speaker->slug, $speaker);
+                            $this->cc = !!$this->hset('speakers', $speaker->slug, $speaker) || $this->cc;
 
                             $callback();
                         }
@@ -100,7 +100,7 @@ class MeetupCommand extends Command
             'talks' => function ($callback) {
                 foreach ($this->meetup->getEvents() as $event) {
                     foreach ($event->talks as $talk) {
-                        $this->cc = $this->cc || !!$this->hset('talks', $talk->id, $talk);
+                        $this->cc = !!$this->hset('talks', $talk->id, $talk) || $this->cc;
 
                         $callback();
                     }
