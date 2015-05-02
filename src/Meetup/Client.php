@@ -652,6 +652,8 @@ class Client
             function ($event) {
                 $event = json_decode($event);
 
+                $event->talks = (array) $event->talks;
+
                 return $event;
             },
             $this->redis->hgetall('events')
