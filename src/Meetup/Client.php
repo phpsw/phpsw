@@ -98,7 +98,8 @@ class Client
             $this->events = array_map(
                 function ($event) use ($sponsor_ids) {
                     if ($this->cli && !$this->debug || !$this->cli && $this->debug) {
-                        $event = $this->parse($event);
+                        $event = $this->parseEvent($event);
+                        $event = $this->parseTalks($event);
                     }
 
                     $event->date = \DateTime::createFromFormat('U', $event->time / 1000);
@@ -750,7 +751,7 @@ class Client
         return $crawler;
     }
 
-    protected function parse($event)
+    protected function parseEvent($event)
     {
         $crawler = $this->crawl($event->description);
 
@@ -882,44 +883,9 @@ class Client
                         }
                     });
 
-                    $talk->feedback = json_decode($this->redis->hget('feedback', $talk->id));
-
-                    $slides = $this->redis->hget('slides', $talk->id);
-
-                    if ($slides) {
-                        if (strpos($slides, 'google.com/presentation')) $type = 'Google Docs';
-                        elseif (strpos($slides, 'slides.com'))          $type = 'slides.com';
-                        elseif (strpos($slides, 'slid.es'))             $type = 'slid.es';
-                        elseif (strpos($slides, 'slideshare'))          $type = 'SlideShare';
-                        elseif (strpos($slides, 'speakerdeck'))         $type = 'Speaker Deck';
-                        else                                            $type = null;
-
-                        $embedly = in_array($type, ['SlideShare', 'Speaker Deck']);
-
-                        $talk->slides = (object) [
-                            'embed' => $type ? str_replace('/pub', '', $slides) . '/embed' : $slides,
-                            'embedly' => $embedly,
-                            'type' => $type,
-                            'url' => $slides,
-                        ];
-                    } else {
-                        $talk->slides = null;
-                    }
-
-                    $video = $this->redis->hget('videos', $talk->id);
-
-                    if ($video) {
-                        $talk->video = (object) [
-                            'embed' => str_replace('watch?v=', 'embed/', $video) . '?rel=0&amp;showinfo=0',
-                            'type' => 'YouTube',
-                            'url' => $video
-                        ];
-                    } else {
-                        $talk->video = null;
-                    }
-
                     $event->description = str_replace('<p>' . $node->html() . '</p>', '', $event->description);
-                    $event->talks[] = $talk;
+
+                    $event->talks[$talk->id] = $talk;
                 }
             }
 
@@ -947,6 +913,58 @@ class Client
         } else {
             // strip crazy </p> descriptions meetup returns
             $event->description = null;
+        }
+
+        return $event;
+    }
+
+    public function parseTalks($event)
+    {
+        // inject talks manually added into redis db
+        foreach ($this->redis->hgetall('talks') as $id => $talk) {
+            $talk = json_decode($talk);
+
+            if ($event->id == $talk->event && !array_key_exists($talk->id, $event->talks)) {
+                $event->talks[$talk->id] = $talk;
+            }
+        }
+
+        foreach ($event->talks as $talk) {
+            $talk->feedback = json_decode($this->redis->hget('feedback', $talk->id));
+
+            $slides = $this->redis->hget('slides', $talk->id);
+
+            if ($slides) {
+                if (strpos($slides, 'google.com/presentation')) $type = 'Google Docs';
+                elseif (strpos($slides, 'slides.com'))          $type = 'slides.com';
+                elseif (strpos($slides, 'slid.es'))             $type = 'slid.es';
+                elseif (strpos($slides, 'slideshare'))          $type = 'SlideShare';
+                elseif (strpos($slides, 'speakerdeck'))         $type = 'Speaker Deck';
+                else                                            $type = null;
+
+                $embedly = in_array($type, ['SlideShare', 'Speaker Deck']);
+
+                $talk->slides = (object) [
+                    'embed' => $type ? str_replace('/pub', '', $slides) . '/embed' : $slides,
+                    'embedly' => $embedly,
+                    'type' => $type,
+                    'url' => $slides,
+                ];
+            } else {
+                $talk->slides = null;
+            }
+
+            $video = $this->redis->hget('videos', $talk->id);
+
+            if ($video) {
+                $talk->video = (object) [
+                    'embed' => str_replace('watch?v=', 'embed/', $video) . '?rel=0&amp;showinfo=0',
+                    'type' => 'YouTube',
+                    'url' => $video
+                ];
+            } else {
+                $talk->video = null;
+            }
         }
 
         return $event;
