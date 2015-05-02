@@ -1,5 +1,5 @@
 set :application, "phpsw"
-set :domain, "phpsw.org.uk"
+set :domain, "phpsw.uk"
 set :deploy_to, "/var/www/#{fetch(:domain)}"
 set :repo_url,  "git@github.com:phpsw/#{fetch(:application)}.git"
 set :linked_files, %w{config/secrets.yml}

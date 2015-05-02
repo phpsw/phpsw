@@ -88,11 +88,11 @@ class YouTubeCommand extends Command
     protected function refresh()
     {
          exec('sudo service varnish restart');
-         file_get_contents('http://phpsw.org.uk');
-         file_get_contents('http://phpsw.org.uk/events');
-         file_get_contents('http://phpsw.org.uk/speakers');
-         file_get_contents('http://phpsw.org.uk/sponsors');
-         file_get_contents('http://phpsw.org.uk/talks');
+         file_get_contents('http://phpsw.uk');
+         file_get_contents('http://phpsw.uk/events');
+         file_get_contents('http://phpsw.uk/speakers');
+         file_get_contents('http://phpsw.uk/sponsors');
+         file_get_contents('http://phpsw.uk/talks');
     }
 
     protected function hgetall($key)

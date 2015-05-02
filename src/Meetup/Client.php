@@ -847,10 +847,10 @@ class Client
                                 $speaker->twitter = $matches[1];
 
                                 $speaker->photo = (object) [
-                                    'thumb_link' => "http://avatars.phpsw.org.uk/twitter/{$speaker->twitter}?size=bigger",
-                                    'photo_link' => "http://avatars.phpsw.org.uk/twitter/{$speaker->twitter}?size=original",
-                                    'highres_link' => "http://avatars.phpsw.org.uk/twitter/{$speaker->twitter}?size=original",
-                                    'url' => "http://avatars.phpsw.org.uk/twitter/{$speaker->twitter}?size=original"
+                                    'thumb_link' => "http://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=bigger",
+                                    'photo_link' => "http://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=original",
+                                    'highres_link' => "http://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=original",
+                                    'url' => "http://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=original"
                                 ];
                             }
                         }
