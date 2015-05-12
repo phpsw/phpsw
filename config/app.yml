@@ -77,6 +77,15 @@ organisers:
     twitter: kasiazien
     url: http://katzien.com
 
+  lee:
+    name: Lee Stone
+    first_name: Lee
+    slug: lee-stone
+    github: leesto
+    meetup: 31894252
+    twitter: leesto
+    url: http://leestone.co.uk
+
   ade:
     name: Ade Slade
     first_name: Ade
