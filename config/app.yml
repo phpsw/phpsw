@@ -15,6 +15,7 @@ communities:
   - { name: Bristol Web Folk,         logo: bristol-web-folk.png,  url: http://bristolwebfolk.github.io }
   - { name: Bristol Drupal,           logo: drupal-bristol.png,    url: https://groups.drupal.org/bristol-and-west-uk }
   - { name: Bristol WordPress People, logo: bristol-wordpress.png, url: http://www.meetup.com/Bristol-WordPress-People }
+  - { name: PHP South Coast,          logo: php-south-coast.png,   url: http://phpsouthcoast.co.uk }
   - { name: BrightonPHP,              logo: brighton-php.png,      url: http://brightonphp.org }
   - { name: edPUG,                    logo: edpug.png,             url: http://www.edpug.co.uk }
   - { name: PHP Dorset,               logo: php-dorset.png,        url: http://www.phpdorset.co.uk }
