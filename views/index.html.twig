@@ -94,7 +94,7 @@
 
         {% for organiser in app.organisers %}
           <div class="organiser organiser--{{ organiser.first_name | lower }} col-xs-6">
-            <a href="{{ path('speaker', {slug: organiser.slug}) }}">
+            <a href="{{ organiser.url }}">
               <div class="avatar avatar--medium">
                 <img src="{{ avatar('http://avatars.phpsw.uk/twitter/' ~ organiser.twitter ~ '?size=400x400', 'medium') }}" alt="{{ organiser.name }}">
               </div>
