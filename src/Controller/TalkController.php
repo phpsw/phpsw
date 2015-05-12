@@ -31,6 +31,10 @@ class TalkController extends AbstractController
     {
         $talk = $app['meetup.client']->getTalk($slug);
 
+        if (!$talk) {
+            throw new \Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+        }
+
         return $this->render($app, 'talk.html.twig', [
             'talk' => $talk
         ]);

@@ -15,5 +15,5 @@
   return
 ) window, document, "script", "//www.google-analytics.com/analytics.js", "ga"
 
-ga "create", "UA-47721265-1", "phpsw.org.uk"
+ga "create", "UA-47721265-1", "phpsw.uk"
 ga "send", "pageview"
