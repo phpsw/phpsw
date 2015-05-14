@@ -2,6 +2,7 @@ set :application, "phpsw"
 set :domain, "phpsw.uk"
 set :deploy_to, "/var/www/#{fetch(:domain)}"
 set :repo_url,  "git@github.com:phpsw/#{fetch(:application)}.git"
+set :linked_dirs, %w{web/slides}
 set :linked_files, %w{config/secrets.yml}
 
 namespace :composer do
