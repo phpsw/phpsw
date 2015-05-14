@@ -944,7 +944,7 @@ class Client
                     case !!strpos($slides, 'slid.es'):      $type = 'slid.es';      break;
                     case !!strpos($slides, 'slideshare'):   $type = 'SlideShare';   break;
                     case !!strpos($slides, 'speakerdeck'):  $type = 'Speaker Deck'; break;
-                    default:                              $type = null;
+                    default:                                $type = null;
                 }
 
                 if (in_array($type, ['Google Docs', 'slides.com', 'slid.es', 'SlideShare', 'Speaker Deck'])) {
