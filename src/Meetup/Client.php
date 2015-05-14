@@ -939,7 +939,7 @@ class Client
             if ($slides) {
                 switch (true) {
                     case !!strpos($slides, 'google.com/p'): $type = 'Google Docs';  break;
-                    case substr($slides, -4) == '.pdf':   $type = 'PDF';          break;
+                    case substr($slides, -4) == '.pdf':     $type = 'PDF';          break;
                     case !!strpos($slides, 'slides.com'):   $type = 'slides.com';   break;
                     case !!strpos($slides, 'slid.es'):      $type = 'slid.es';      break;
                     case !!strpos($slides, 'slideshare'):   $type = 'SlideShare';   break;
