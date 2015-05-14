@@ -937,20 +937,29 @@ class Client
             $slides = $this->redis->hget('slides', $talk->id);
 
             if ($slides) {
-                if (strpos($slides, 'google.com/presentation')) $type = 'Google Docs';
-                elseif (strpos($slides, 'slides.com'))          $type = 'slides.com';
-                elseif (strpos($slides, 'slid.es'))             $type = 'slid.es';
-                elseif (strpos($slides, 'slideshare'))          $type = 'SlideShare';
-                elseif (strpos($slides, 'speakerdeck'))         $type = 'Speaker Deck';
-                else                                            $type = null;
+                switch ($slides) {
+                    case strpos($slides, 'google.com/p'): $type = 'Google Docs';  break;
+                    case substr($slides, -4) == '.pdf':  $type = 'PDF';          break;
+                    case strpos($slides, 'slides.com'):   $type = 'slides.com';   break;
+                    case strpos($slides, 'slid.es'):      $type = 'slid.es';      break;
+                    case strpos($slides, 'slideshare'):   $type = 'SlideShare';   break;
+                    case strpos($slides, 'speakerdeck'):  $type = 'Speaker Deck'; break;
+                    default:                              $type = null;
+                }
 
-                $embedly = in_array($type, ['SlideShare', 'Speaker Deck']);
+                if (in_array($type, ['Google Docs', 'slides.com', 'slid.es', 'SlideShare', 'Speaker Deck'])) {
+                    $embed = str_replace('/pub', '', $slides) . '/embed';
+                } elseif ($type == 'PDF') {
+                    $embed = 'http://mozilla.github.io/pdf.js/web/viewer.html?file=' . $slides . '#zoom=page-fit';
+                } else {
+                    $embed = $slides;
+                }
 
                 $talk->slides = (object) [
-                    'embed' => $type ? str_replace('/pub', '', $slides) . '/embed' : $slides,
-                    'embedly' => $embedly,
-                    'type' => $type,
-                    'url' => $slides,
+                    'embed'   => $embed,
+                    'embedly' => in_array($type, ['SlideShare', 'Speaker Deck']),
+                    'type'    => $type,
+                    'url'     => $slides,
                 ];
             } else {
                 $talk->slides = null;
@@ -961,8 +970,8 @@ class Client
             if ($video) {
                 $talk->video = (object) [
                     'embed' => str_replace('watch?v=', 'embed/', $video) . '?rel=0&amp;showinfo=0',
-                    'type' => 'YouTube',
-                    'url' => $video
+                    'type'  => 'YouTube',
+                    'url'   => $video
                 ];
             } else {
                 $talk->video = null;
