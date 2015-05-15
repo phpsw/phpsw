@@ -112,6 +112,8 @@ class Client
                         }
                     }
 
+                    reset($event->talks);
+
                     $event->comments = array_map(
                         function ($comment) use ($event, $speaker_ids, $sponsor_ids) {
                             $comment->date = \DateTime::createFromFormat('U', $comment->time / 1000);
@@ -977,6 +979,8 @@ class Client
                 $talk->video = null;
             }
         }
+
+        reset($event->talks);
 
         return $event;
     }

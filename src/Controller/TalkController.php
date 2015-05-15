@@ -11,11 +11,22 @@ class TalkController extends AbstractController
     {
         $events = $app['meetup.client']->getEvents();
 
+        $featured = [];
+
+        while (count($featured) < 6 && list($i, $event) = each($events)) {
+            while (count($featured) < 6 && list($i, $talk) = each($event->talks)) {
+                if ($talk->video && $app['redis']->sismember('featured', $talk->id)) {
+                    $featured[] = $talk;
+                    $talk->event = $event;
+                }
+            }
+        }
+
         $talks = [];
 
         foreach ($events as $event) {
-            foreach($event->talks as $talk) {
-                if ($talk->slides || $talk->video) {
+            foreach ($event->talks as $talk) {
+                if (($talk->slides || $talk->video) && !in_array($talk, $featured)) {
                     $talks[] = $talk;
                     $talk->event = $event;
                 }
@@ -23,7 +34,8 @@ class TalkController extends AbstractController
         }
 
         return $this->render($app, 'talks.html.twig', [
-            'talks' => $talks
+            'featured' => $featured,
+            'talks'    => $talks
         ]);
     }
 

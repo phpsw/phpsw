@@ -12,7 +12,7 @@
   <h2 class="sr-only">Featured</h2>
 
   <div class="talks row">
-    {% for talk in talks[0:6] %}
+    {% for talk in featured %}
       {{ include('partials/talk--featured.html.twig') }}
 
       {% if loop.index % 2 == 0 %}
@@ -27,7 +27,7 @@
 
   <div class="row">
     <div class="col-sm-8">
-      {{ include('partials/talks.html.twig', {'heading': 'Further viewing', 'talks': talks[6:], 'template': 'talk--with-speaker'}) }}
+      {{ include('partials/talks.html.twig', {'heading': 'Further viewing', 'template': 'talk--with-speaker'}) }}
     </div>
 
     <div class="col-sm-4">
