@@ -2,7 +2,7 @@
 
 {% block body %}
   {% block header %}
-    {{ include('partials/header.html.twig') }}
+    {{ include('partials/header.html.twig', {'nav': not not block('nav')}) }}
   {% endblock %}
 
   <div class="content">

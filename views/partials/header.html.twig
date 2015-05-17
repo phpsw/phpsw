@@ -13,17 +13,19 @@
       {{ include('balloon.svg.twig', {modifier: 'medium'}) }}
     </div>
 
-    <div class="js-nav-toggle js-shown">
-      <button
-        class="navbar-toggle collapsed"
-        aria-label="Toggle Navigation"
-        data-target="#nav"
-        data-toggle="collapse"
-        type="button"
-        role="button"
-      >
-        <span class="lines"></span>
-      </button>
-    </div>
+    {% if nav %}
+      <div class="js-nav-toggle js-shown">
+        <button
+          class="navbar-toggle collapsed"
+          aria-label="Toggle Navigation"
+          data-target="#nav"
+          data-toggle="collapse"
+          type="button"
+          role="button"
+        >
+          <span class="lines"></span>
+        </button>
+      </div>
+    {% endif %}
   </div>
 </header>

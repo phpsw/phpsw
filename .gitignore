@@ -1,4 +1,5 @@
 /config/secrets.yml
+/invoices
 /node_modules
 /vendor
 /views/*.svg.twig
@@ -6,4 +7,3 @@
 /web/fonts
 /web/images
 /web/js
-/.idea
