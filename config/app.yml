@@ -94,6 +94,19 @@ organisers:
 
 sponsors:
   meetup:
+    brightpearl:
+      name: Brightpearl
+      company: Brightpearl
+      description: Brightpearl handles the scale and complexity of a growing multi-channel retail business
+      contact:
+        name: Mike
+        email: mike.caisey@brightpearl.com
+        meetup: 71856992
+      url: https://www.brightpearl.com
+      logo: /images/sponsors/brightpearl.png
+      start: 2015-05-01
+      end: ~
+
     ents24:
       name: Ents24
       company: Ents24
@@ -157,19 +170,6 @@ sponsors:
         meetup: 8190757
       url: http://www.basekit.com
       logo: /images/sponsors/basekit.png
-      start: ~
-      end: ~
-
-    brightpearl:
-      name: Brightpearl
-      company: Brightpearl
-      description: Brightpearl handles the scale and complexity of a growing multi-channel retail business
-      contact:
-        name: Mike
-        email: mike.caisey@brightpearl.com
-        meetup: 71856992
-      url: https://www.brightpearl.com
-      logo: /images/sponsors/brightpearl.png
       start: ~
       end: ~
 
