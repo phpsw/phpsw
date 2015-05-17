@@ -89,8 +89,8 @@ class Client
 
             foreach ($this->sponsors as $type => $sponsors) {
                 foreach ($sponsors as $sponsor) {
-                    if (isset($sponsor['member'])) {
-                        $sponsor_ids[] = $sponsor['member'];
+                    if (isset($sponsor['contact']['meetup'])) {
+                        $sponsor_ids[] = $sponsor['contact']['meetup'];
                     }
                 }
             }
