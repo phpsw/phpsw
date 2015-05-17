@@ -52,7 +52,8 @@ class InvoiceCommand extends Command
                         $email = $app['mailer']->createMessage()
                             ->setSubject("PHPSW Invoice #{$ref}")
                             ->setFrom($app['email'])
-                            ->setTo('steve@phpsw.uk')
+                            ->setTo($sponsor['contact']['email'])
+                            ->setCC($app['email'])
                             ->setBody($app['twig']->render(
                                 'emails/invoice.txt.twig',
                                 array_merge($sponsor, ['url' => $url])
