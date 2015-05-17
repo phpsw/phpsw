@@ -42,7 +42,7 @@ class InvoiceCommand extends Command
                         'secret'   => $app['secret'],
                         'slug'     => $slug
                     ]));
-                    $url = "http://phpsw/invoice/{$token}";
+                    $url = "http://phpsw.uk/invoice/{$token}";
 
                     if (!is_dir(dirname($path))) mkdir(dirname($path));
 
