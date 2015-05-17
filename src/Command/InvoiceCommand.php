@@ -23,7 +23,6 @@ class InvoiceCommand extends Command
             'invoice' => function ($callback) {
                 $app = $this->getSilexApplication();
 
-                $amount = 100;
                 $date = new \DateTime('next month');
                 $sponsors = array_filter($app['sponsors']['meetup'], function ($sponsor) use ($date) {
                     $sponsor = (object) $sponsor;
@@ -34,21 +33,30 @@ class InvoiceCommand extends Command
                     return ($date >= $start || !$start) && ($date <= $end || !$end);
                 });
 
-
                 foreach ($sponsors as $slug => $sponsor) {
                     $ref = strtoupper($slug . date('My', strtotime('next month')));
                     $path = __DIR__ . "/../../invoices/{$date->format('Y-m')}/{$ref}.pdf";
+                    $token = md5(json_encode((object) [
+                        'amount'   => $app['sponsorship'],
+                        'invoiced' => date('Y-m-d'),
+                        'secret'   => $app['secret'],
+                        'slug'     => $slug
+                    ]));
+                    $url = "http://phpsw.uk/invoice/{$token}";
 
                     if (!is_dir(dirname($path))) mkdir(dirname($path));
 
-                    exec("wkhtmltopdf 'http://phpsw/invoice?sponsor={$slug}&amount={$amount}' {$path}", $output, $exit);
+                    exec("wkhtmltopdf '{$url}' {$path}", $output, $exit);
 
                     if ($exit === 0) {
                         $email = $app['mailer']->createMessage()
-                            ->setSubject("PHPSW {$ref} Invoice")
+                            ->setSubject("PHPSW Invoice #{$ref}")
                             ->setFrom($app['email'])
                             ->setTo('steve@phpsw.uk')
-                            ->setBody($app['twig']->render('emails/invoice.txt.twig', $sponsor))
+                            ->setBody($app['twig']->render(
+                                'emails/invoice.txt.twig',
+                                array_merge($sponsor, ['url' => $url])
+                            ))
                             ->attach(\Swift_Attachment::fromPath($path))
                         ;
 

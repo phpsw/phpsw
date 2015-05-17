@@ -3,6 +3,7 @@
 $app = require_once __DIR__ . '/app.php';
 
 $app['cli'] = true;
+$app['swiftmailer.use_spool'] = false;
 
 $app->register(new Knp\Provider\ConsoleServiceProvider, array(
     'console.name' => 'PHPSW',

@@ -52,8 +52,8 @@
 
                   <br>
 
-                  <p>Invoice date: {{ 'now' | date('d/m/Y') }}</p>
-                  <p>Due date: {{ 'last day of this month' | date('d/m/Y') }}</p>
+                  <p>Invoice date: {{ invoiced | date('d/m/Y') }}</p>
+                  <p>Due date: {{ due | date('d/m/Y') }}</p>
                 </div>
               </td>
             </tr>
@@ -67,7 +67,7 @@
             <tbody>
               <tr>
                 <td>
-                  <h2>{{ sponsor.company }}</h2>
+                  <h2>{{ sponsor }}</h2>
                 </td>
               </tr>
             </tbody>
