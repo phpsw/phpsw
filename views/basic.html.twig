@@ -3,11 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ block('title') ? (block('title') ~ ' · ') | raw }}{{ app.title }}</title>
-    <meta name="description" content="{{ app.description }}">
+    <title>{{ block('title') | trim | default(app.title) }}</title>
+    <meta name="description" content="{{ block('description') | trim | default(app.description) }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block og -%}
+      <meta property="og:site_name" content="{{ app.name }}">
+      <meta property="og:type" content="{{ block('og_type') | trim | default('website') }}">
+      <meta property="og:url" content="{{ app.request.uri }}">
+      <meta property="og:title" content="{{ block('title') | trim | default(app.title) }}">
+      <meta property="og:description" content="{{ block('description') | trim | default(app.description) }}">
+      <meta property="og:image" content="{{ block('og_image') | default(block('hero')) | trim }}">
+    {%- endblock -%}
+    {%- block twitter -%}
+      <meta name="twitter:card" content="{{ block('twitter_card') | trim | default('summary') }}">
+      <meta name="twitter:url" content="{{ app.request.uri }}">
+      <meta name="twitter:title" content="{{ block('title') | trim | default(app.title) }}">
+      <meta name="twitter:description" content="{{ block('description') | trim | default(app.description) }}">
+      <meta name="twitter:image" content="{{ block('twitter_image') | default(block('hero')) | trim }}">
+      <meta name="twitter:site" content="{{ block('twitter_site') | trim | default('@' ~ app.twitter.user) }}">
+      <meta name="twitter:creator" content="{{ block('twitter_creator') | trim | default('@' ~ app.twitter.user) }}">
+    {% endblock %}
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="canonical" href="{{ app.request.uri }}">
     <link rel="stylesheet" href="/rev/{{ 'now' | date('YmdHi') }}/css/vendor.css">
     <link rel="stylesheet" href="/rev/{{ 'now' | date('YmdHi') }}/css/main.css">
   </head>
