@@ -15,7 +15,7 @@
       <meta property="og:image" content="{{ block('og_image') | default(block('hero')) | trim }}">
     {%- endblock -%}
     {%- block twitter -%}
-      <meta name="twitter:card" content="{{ block('twitter_card') | trim | default('summary') }}">
+      <meta name="twitter:card" content="{{ block('twitter_card') | trim | default('summary_large_image') }}">
       <meta name="twitter:url" content="{{ app.request.uri }}">
       <meta name="twitter:title" content="{{ block('title') | trim | default(app.title) }}">
       <meta name="twitter:description" content="{{ block('description') | trim | default(app.description) }}">
