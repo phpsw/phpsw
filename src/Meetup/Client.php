@@ -969,13 +969,16 @@ class Client
 
             $video = $this->redis->hget('videos', $talk->id);
 
-            if ($video) {
+            if (preg_match('#https://www\.youtube\.com/watch\?v=(.*)#', $video, $matches)) {
+                $talk->image = "https://i.ytimg.com/vi/{$matches[1]}/maxresdefault.jpg";
+
                 $talk->video = (object) [
-                    'embed' => str_replace('watch?v=', 'embed/', $video) . '?rel=0&amp;showinfo=0',
+                    'embed' => "https://www.youtube.com/embed/{$matches[1]}?rel=0&amp;showinfo=0",
                     'type'  => 'YouTube',
                     'url'   => $video
                 ];
             } else {
+                $talk->image = null;
                 $talk->video = null;
             }
         }

@@ -1,7 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-  {{ talk.title | striptags | raw }}
+  {{ talk.title | striptags | raw }}{% for speaker in talk.speakers %}, {{ speaker.name }}{% endfor %} - {{ app.name }}: {{ talk.event.name }}, {{ talk.event.date | date('F Y') }}
+{% endblock %}
+
+{% block description %}
+  {{ talk.description | striptags | raw }}
 {% endblock %}
 
 {% block main %}
@@ -9,7 +13,7 @@
     <h1>
       <div class="row">
         <div class="col-xs-{{ talk.event.date < date() and talk.feedback ? '8' : '12' }}">
-          {{ block('title') }}
+          {{ talk.title | striptags | raw }}
 
           <small>
             <a href="{{ path('event', {'id': talk.event.id, 'slug': talk.event.slug}) }}">
@@ -116,4 +120,49 @@
       </a>
     {% endif %}
   </div>
+{% endblock %}
+
+{% block og %}
+  {{ parent() }}
+  {% if talk.video %}
+    <meta property="og:video:url" content="{{ talk.video.embed }}">
+    <meta property="og:video:secure_url" content="{{ talk.video.embed }}">
+    <meta property="og:video:type" content="text/html">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+    <meta property="og:video:url" content="{{ talk.video.url }}">
+    <meta property="og:video:secure_url" content="{{ talk.video.url }}">
+    <meta property="og:video:type" content="application/x-shockwave-flash">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+  {% endif %}
+{% endblock %}
+
+{% block og_type %}
+  {{ talk.video ? 'video' }}
+{% endblock %}
+
+{% block og_image %}
+  {{ talk.image }}
+{% endblock %}
+
+{% block twitter %}
+  {{ parent() }}
+  {%- if talk.video -%}
+    <meta name="twitter:player" content="{{ talk.video.embed }}">
+    <meta name="twitter:player:width" content="1280">
+    <meta name="twitter:player:height" content="720">
+  {%- endif -%}
+{% endblock %}
+
+{% block twitter_card %}
+  {{ talk.video ? 'player' }}
+{% endblock %}
+
+{% block twitter_creator %}
+  {{ talk.speakers[0].twitter | default ? '@' ~ talk.speakers[0].twitter }}
+{% endblock %}
+
+{% block twitter_image %}
+  {{ talk.image }}
 {% endblock %}
