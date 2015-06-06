@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-  {{ talk.title | striptags | raw }}{% for speaker in talk.speakers %}, {{ speaker.name }}{% endfor %} - {{ app.name }}: {{ talk.event.name }}, {{ talk.event.date | date('F Y') }}
+  {{ talk.title | striptags | raw }}{% for speaker in talk.speakers %}, {{ speaker.name }}{% endfor %} - {{ talk.event.name }}, {{ talk.event.date | date('F Y') }}
 {% endblock %}
 
 {% block description %}

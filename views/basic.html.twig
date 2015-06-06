@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ block('title') | trim | default(app.title) }}</title>
+    <title>{{ block('title') | trim ? (block('title') | trim ~ ' · ' ~ app.title) : app.title }}</title>
     <meta name="description" content="{{ block('description') | trim | default(app.description) }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block og -%}
