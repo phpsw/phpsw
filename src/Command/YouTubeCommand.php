@@ -60,7 +60,7 @@ class YouTubeCommand extends Command
                         ));
 
                         if ($talk) {
-                            $this->cc = $this->cc ?: !!$this->hset('videos', $talk->id, "https://www.youtube.com/watch?v={$video->contentDetails->videoId}");
+                            $this->cc = !!$this->hset('videos', $talk->id, "https://www.youtube.com/watch?v={$video->contentDetails->videoId}") || $this->cc;
                             $success();
                         } else {
                             $fail();
