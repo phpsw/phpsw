@@ -12,6 +12,7 @@ $app->register(new Knp\Provider\ConsoleServiceProvider, array(
 ));
 
 $console = $app['console'];
+$console->add(new PHPSW\Command\ActivityCommand);
 $console->add(new PHPSW\Command\InvoiceCommand);
 $console->add(new PHPSW\Command\JoindinCommand);
 $console->add(new PHPSW\Command\MeetupCommand);
