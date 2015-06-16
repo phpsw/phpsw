@@ -1,7 +1,9 @@
+{%- if contact.name -%}
 Hey {{ contact.name | split(' ') | first }},
 
 Hope all is well your end!
 
+{% endif -%}
 Next months fees are now due, invoice attached, or alternatively, view it online at {{ url }}
 
 Thanks,
