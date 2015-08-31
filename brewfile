@@ -1,4 +1,6 @@
 tap "homebrew/php"
 
 brew "php56"
+brew "php56-xdebug"
 brew "graphicsmagick"
+brew "redis"
