@@ -38,7 +38,7 @@ class YouTubeCommand extends Command
                     $event = current(array_filter(
                         $events,
                         function ($event) use ($name, $date) {
-                            return $event->name == $name && (new \DateTime($event->date->date))->format('F Y') == $date;
+                            return strcasecmp($event->name, $name) === 0 && (new \DateTime($event->date->date))->format('F Y') == $date;
                         }
                     ));
 
