@@ -194,8 +194,8 @@
         </a>
       {% endif %}
 
-      {% if 'basekit' in event.venue.name | lower or
-            'brightpearl' in event.venue.name | lower or
+      {% if event.venue and 'basekit' in event.venue.name | lower or
+            event.venue and 'brightpearl' in event.venue.name | lower or
             event.date > date('2014-08-01')
       %}
         <footer class="event__footer">

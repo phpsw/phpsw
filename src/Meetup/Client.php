@@ -640,7 +640,7 @@ class Client
 
                 $event->talks = [];
                 $event->url = $event->event_url;
-                $event->venue = (object) $event->venue;
+                $event->venue = isset($event->venue) ? (object) $event->venue : null;
 
                 return $event;
             },

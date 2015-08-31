@@ -30,7 +30,7 @@ class SponsorExtension extends \Twig_Extension
                 $end   = $sponsor->end   ? \DateTime::createFromFormat('U', $sponsor->end)   : null;
 
                 $active = ($date >= $start || !$start) && ($date <= $end || !$end);
-                $host = $event && stripos($event->venue->name, $sponsor->name) !== false;
+                $host = $event && $event->venue && stripos($event->venue->name, $sponsor->name) !== false;
 
                 return $host || $active && ($event && $type == 'meetup' || !$event);
             });
