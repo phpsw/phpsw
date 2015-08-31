@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-  {{ event.name }}, {{ event.date | date('F Y') }}
+  {{ event.name | raw }}, {{ event.date | date('F Y') }}
 {% endblock %}
 
 {% block hero %}
