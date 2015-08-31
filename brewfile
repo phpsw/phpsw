@@ -1,0 +1,4 @@
+tap "homebrew/php"
+
+brew "php56"
+brew "graphicsmagick"
