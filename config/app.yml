@@ -112,9 +112,9 @@ sponsors:
       end: ~
 
     justeat:
-      name: Just Eat
-      company: Just Eat Holding Ltd
-      description: Just Eat are expanding their technology development with the opening of a new specialist hub in Bristol
+      name: JUST EAT (inactive)
+      company: JUST EAT Holding Ltd
+      description: JUST EAT are expanding their technology development with the opening of a new specialist hub in Bristol
       contact:
         name: Simone
         email: simone.basso@just-eat.com
@@ -162,6 +162,19 @@ sponsors:
       url: http://www.basekit.com
       logo: /images/sponsors/basekit.png
       start: ~
+      end: ~
+
+    justeat:
+      name: JUST EAT
+      company: JUST EAT Holding Ltd
+      description: JUST EAT are expanding their technology development with the opening of a new specialist hub in Bristol
+      contact:
+        name: Simone
+        email: simone.basso@just-eat.com
+        meetup: 165774592
+      url: http://tech.just-eat.com
+      logo: /images/sponsors/just-eat.png
+      start: 2015-09-01
       end: ~
 
     mixradio:
