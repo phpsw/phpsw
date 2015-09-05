@@ -543,7 +543,7 @@ class Client
 
                 if (isset($event->description)) {
                     $event->description = preg_replace(
-                        '#<a href="mailto:.*">(.*)@(.*)\.(.*)</a>#',
+                        '#<a href="mailto:.*">(.*)@(.*)\.(.*)</a>#U',
                         '<a href="mailto:\1 at \2 dot \3" class="email">\1 at \2 dot \3</a>',
                         $event->description
                     );
