@@ -16,7 +16,7 @@
   {% endif %}
 
   <form action="{{ url('message') }}" method="post">
-    <input name="name" type="text">
+    <input name="url" type="text">
     <input name="subject" type="hidden" value="{{ subject|default('message') }}">
     <textarea name="message" required>{{ app.request.get('message') }}</textarea>
     <input class="btn btn-primary" type="submit" value="{{ button | default('Submit a ' ~ subject | default('message')) }}">
