@@ -1,0 +1,19 @@
+---
+- name: install ppa key
+  apt_key: id=C7917B12 url=http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0xB9316A7BC7917B12 state=present
+
+- name: install ppa
+  apt_repository: repo=ppa:chris-lea/node.js state=present
+
+- name: install package
+  apt: name=nodejs state=latest
+
+- name: install global packages
+  npm: name={{ item }} global=yes state=latest
+  with_items:
+    - bower
+    - gulp
+    - npm
+
+- name: clean cache
+  command: npm cache clean

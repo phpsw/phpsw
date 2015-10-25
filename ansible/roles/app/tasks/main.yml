@@ -1,0 +1,18 @@
+---
+- name: composer install
+  composer: command=install working_dir={{ app.path }}
+
+- name: npm install
+  command: npm install --quiet
+  args:
+    chdir: "{{ app.path }}"
+
+- name: bower install
+  command: bower install --quiet
+  args:
+    chdir: "{{ app.path }}"
+
+- name: gulp build
+  command: gulp build
+  args:
+    chdir: "{{ app.path }}"
