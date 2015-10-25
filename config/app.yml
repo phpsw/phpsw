@@ -84,6 +84,14 @@ organisers:
     twitter: leesto
     url: http://leestone.co.uk
 
+  oliver:
+    name: Oliver Davies
+    slug: oliver-davies
+    github: opdavies
+    meetup: 137208052
+    twitter: opdavies
+    url: http://www.oliverdavies.uk
+
 sponsors:
   meetup:
     brightpearl:
