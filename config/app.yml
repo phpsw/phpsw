@@ -222,7 +222,7 @@ thumbor:
   security_key: ~
 
 twitter:
-  url: http://twitter.com/phpsw
+  url: https://twitter.com/phpsw
   user: phpsw
 
 vouchers: []
