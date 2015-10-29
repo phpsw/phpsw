@@ -27,7 +27,7 @@
 {% endblock %}
 
 {%- block attendance -%}
-  http://chartspree.io/line.svg?Attendance=
+  https://chartspree.io/line.svg?Attendance=
   {{- block('attendance_values') | trim(',') -}}
   &amp;_labels=
   {{- block('attendance_labels') | trim(',') -}}
@@ -47,7 +47,7 @@
 {% endblock %}
 
 {%- block members -%}
-  http://chartspree.io/line.svg?members=
+  https://chartspree.io/line.svg?members=
   {{- block('members_values') | trim(',') -}}
   &amp;_labels=
   {{- block('members_labels') | trim(',') -}}
@@ -67,7 +67,7 @@
 {% endblock %}
 
 {%- block ratings -%}
-  http://chartspree.io/line.svg?Ratings=
+  https://chartspree.io/line.svg?Ratings=
   {{- block('ratings_values') | trim(',') -}}
   &amp;_labels=
   {{- block('ratings_labels') | trim(',') -}}

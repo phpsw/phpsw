@@ -6,10 +6,10 @@
     "url": "https:\/\/twitter.com\/derickr",
     "twitter": "derickr",
     "photo": {
-        "thumb_link": "http:\/\/avatars.phpsw.uk\/twitter\/derickr?size=bigger",
-        "photo_link": "http:\/\/avatars.phpsw.uk\/twitter\/derickr?size=original",
-        "highres_link": "http:\/\/avatars.phpsw.uk\/twitter\/derickr?size=original",
-        "url": "http:\/\/avatars.phpsw.uk\/twitter\/derickr?size=original"
+        "thumb_link": "https:\/\/avatars.phpsw.uk\/twitter\/derickr?size=bigger",
+        "photo_link": "https:\/\/avatars.phpsw.uk\/twitter\/derickr?size=original",
+        "highres_link": "https:\/\/avatars.phpsw.uk\/twitter\/derickr?size=original",
+        "url": "https:\/\/avatars.phpsw.uk\/twitter\/derickr?size=original"
     },
     "organisation": {
         "name": "MongoDB",

@@ -11,10 +11,10 @@
         "url": "https:\/\/twitter.com\/andygale",
         "twitter": "andygale",
         "photo": {
-            "thumb_link": "http:\/\/avatars.phpsw.uk\/twitter\/andygale?size=bigger",
-            "photo_link": "http:\/\/avatars.phpsw.uk\/twitter\/andygale?size=original",
-            "highres_link": "http:\/\/avatars.phpsw.uk\/twitter\/andygale?size=original",
-            "url": "http:\/\/avatars.phpsw.uk\/twitter\/andygale?size=original"
+            "thumb_link": "https:\/\/avatars.phpsw.uk\/twitter\/andygale?size=bigger",
+            "photo_link": "https:\/\/avatars.phpsw.uk\/twitter\/andygale?size=original",
+            "highres_link": "https:\/\/avatars.phpsw.uk\/twitter\/andygale?size=original",
+            "url": "https:\/\/avatars.phpsw.uk\/twitter\/andygale?size=original"
         },
         "organisation": {
             "name": "Hello Future",

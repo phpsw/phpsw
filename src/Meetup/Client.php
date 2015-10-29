@@ -852,10 +852,10 @@ class Client
                                 $speaker->twitter = $matches[1];
 
                                 $speaker->photo = (object) [
-                                    'thumb_link' => "http://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=bigger",
-                                    'photo_link' => "http://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=original",
-                                    'highres_link' => "http://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=original",
-                                    'url' => "http://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=original"
+                                    'thumb_link' => "https://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=bigger",
+                                    'photo_link' => "https://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=original",
+                                    'highres_link' => "https://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=original",
+                                    'url' => "https://avatars.phpsw.uk/twitter/{$speaker->twitter}?size=original"
                                 ];
                             }
                         }
@@ -952,7 +952,7 @@ class Client
                 if (in_array($type, ['Google Docs', 'slides.com', 'slid.es', 'SlideShare', 'Speaker Deck'])) {
                     $embed = str_replace('/pub', '', $slides) . '/embed';
                 } elseif ($type == 'PDF') {
-                    $embed = 'http://mozilla.github.io/pdf.js/web/viewer.html?file=' . $slides . '#zoom=page-fit';
+                    $embed = 'https://mozilla.github.io/pdf.js/web/viewer.html?file=' . $slides . '#zoom=page-fit';
                 } else {
                     $embed = $slides;
                 }
