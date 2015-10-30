@@ -11,10 +11,10 @@
         "url": "https:\/\/twitter.com\/adeslade",
         "twitter": "adeslade",
         "photo": {
-            "thumb_link": "https:\/\/avatars.phpsw.uk\/twitter\/adeslade?size=bigger",
-            "photo_link": "https:\/\/avatars.phpsw.uk\/twitter\/adeslade?size=original",
-            "highres_link": "https:\/\/avatars.phpsw.uk\/twitter\/adeslade?size=original",
-            "url": "https:\/\/avatars.phpsw.uk\/twitter\/adeslade?size=original"
+            "thumb_link": "http:\/\/avatars.phpsw.uk\/twitter\/adeslade?size=bigger",
+            "photo_link": "http:\/\/avatars.phpsw.uk\/twitter\/adeslade?size=original",
+            "highres_link": "http:\/\/avatars.phpsw.uk\/twitter\/adeslade?size=original",
+            "url": "http:\/\/avatars.phpsw.uk\/twitter\/adeslade?size=original"
         },
         "organisation": {
             "name": "BaseKit",
