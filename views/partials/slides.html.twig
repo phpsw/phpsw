@@ -1,17 +1,17 @@
 <div id="slides-{{ talk.id }}" class="slides {%- if size is defined %} slides--{{ size }} {%- endif %}">
-  {% if not talk.slides.embedly %}
+  {% if talk.slides.iframe %}
     <iframe
-      src="{{ talk.slides.embed }}"
+      src="{{ talk.slides.iframe }}"
       frameborder="0"
       allowfullscreen mozallowfullscreen webkitallowfullscreen
     >
     </iframe>
-  {% else %}
-    <a href="{{ talk.slides.url }}" class="embedly-card" data-card-chrome="0"></a>
+  {% elseif talk.slides.embedly %}
+    <a href="{{ talk.slides.embedly }}" class="embedly-card" data-card-chrome="0"></a>
   {% endif %}
 
   <a href="{{ talk.slides.url }}">
-    View {{ talk.slides.type ? 'on ' ~ talk.slides.type : 'slides' }}
+    View {{ talk.slides.type and talk.slides.type != 'PDF' ? 'on' }} {{ talk.slides.type ? talk.slides.type : 'slides' }}
     <i class="fa fa-external-link"></i>
   </a>
 </div>

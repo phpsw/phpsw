@@ -936,32 +936,37 @@ class Client
         foreach ($event->talks as $talk) {
             $talk->feedback = json_decode($this->redis->hget('feedback', $talk->id));
 
-            $slides = $this->redis->hget('slides', $talk->id);
+            $url = $this->redis->hget('slides', $talk->id);
 
-            if ($slides) {
+            if ($url) {
                 switch (true) {
-                    case !!strpos($slides, 'google.com/p'): $type = 'Google Docs';  break;
-                    case substr($slides, -4) == '.pdf':     $type = 'PDF';          break;
-                    case !!strpos($slides, 'slides.com'):   $type = 'slides.com';   break;
-                    case !!strpos($slides, 'slid.es'):      $type = 'slid.es';      break;
-                    case !!strpos($slides, 'slideshare'):   $type = 'SlideShare';   break;
-                    case !!strpos($slides, 'speakerdeck'):  $type = 'Speaker Deck'; break;
+                    case !!strpos($url, 'google.com/p'): $type = 'Google Docs';  break;
+                    case substr($url, -4) == '.pdf':     $type = 'PDF';          break;
+                    case !!strpos($url, 'slides.com'):   $type = 'slides.com';   break;
+                    case !!strpos($url, 'slid.es'):      $type = 'slid.es';      break;
+                    case !!strpos($url, 'slideshare'):   $type = 'SlideShare';   break;
+                    case !!strpos($url, 'speakerdeck'):  $type = 'Speaker Deck'; break;
                     default:                                $type = null;
                 }
 
-                if (in_array($type, ['Google Docs', 'slides.com', 'slid.es', 'SlideShare', 'Speaker Deck'])) {
-                    $embed = str_replace('/pub', '', $slides) . '/embed';
-                } elseif ($type == 'PDF') {
-                    $embed = 'https://mozilla.github.io/pdf.js/web/viewer.html?file=' . $slides . '#zoom=page-fit';
-                } else {
-                    $embed = $slides;
+                $embedlyable = in_array($type, ['SlideShare', 'Speaker Deck']);
+                $iframeable = !$embedlyable && strpos($url, 'https://') === 0;
+
+                if ($iframeable) {
+                    if (in_array($type, ['Google Docs', 'slides.com', 'slid.es'])) {
+                        $iframe = str_replace('/pub', '', $url) . '/embed';
+                    } elseif ($type == 'PDF') {
+                        $iframe = 'https://mozilla.github.io/pdf.js/web/viewer.html?file=' . $url . '#zoom=page-fit';
+                    } else {
+                        $iframe = $url;
+                    }
                 }
 
                 $talk->slides = (object) [
-                    'embed'   => $embed,
-                    'embedly' => in_array($type, ['SlideShare', 'Speaker Deck']),
+                    'embedly' => $embedlyable ? $url : null,
+                    'iframe'  => $iframeable ? $iframe : null,
                     'type'    => $type,
-                    'url'     => $slides,
+                    'url'     => $url,
                 ];
             } else {
                 $talk->slides = null;
