@@ -76,6 +76,8 @@ class EventController extends AbstractController
         foreach ($members as $member) {
             $date = $member->joined->format('Y-m');
 
+            if ($date == '1970-01') continue;
+
             if (array_key_exists($date, $totals)) {
                 $totals[$date]++;
             } else {
