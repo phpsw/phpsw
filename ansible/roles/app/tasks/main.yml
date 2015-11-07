@@ -4,15 +4,18 @@
 
 - name: npm install
   command: npm install --quiet
+  sudo: false
   args:
     chdir: "{{ app.path }}"
 
 - name: bower install
   command: bower install --quiet
+  sudo: false
   args:
     chdir: "{{ app.path }}"
 
 - name: gulp build
   command: gulp build
+  sudo: false
   args:
     chdir: "{{ app.path }}"
