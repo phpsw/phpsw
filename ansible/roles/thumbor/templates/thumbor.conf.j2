@@ -32,23 +32,21 @@
 ## Allowed domains for the http loader to download. These are regular
 ## expressions.
 ## Defaults to: []
-#ALLOWED_SOURCES = #    [
-#    ]
-
+#ALLOWED_SOURCES = []
 
 ## Quality index used for generated JPEG images
 ## Defaults to: 80
-#QUALITY = 80
+QUALITY = 90
 
 ## Quality index used for generated WebP images. If not set (None) the same level
 ## of JPEG quality will be used.
 ## Defaults to: None
-#WEBP_QUALITY = None
+#WEBP_QUALITY = 50
 
 ## Specifies whether WebP format should be used automatically if the request
 ## accepts it (via Accept header)
 ## Defaults to: False
-#AUTO_WEBP = False
+#AUTO_WEBP = True
 
 ## Max AGE sent as a header for the image served by thumbor in seconds
 ## Defaults to: 86400
@@ -62,7 +60,7 @@
 ## Indicates whether thumbor should rotate images that have an Orientation EXIF
 ## header
 ## Defaults to: False
-#RESPECT_ORIENTATION = False
+RESPECT_ORIENTATION = True
 
 ## Ignore errors during smart detections and return image as a temp image (not
 ## saved in result storage and with MAX_AGE_TEMP_IMAGE age)
@@ -79,6 +77,12 @@
 ## Defaults to: True
 #ALLOW_ANIMATED_GIFS = True
 
+## Indicates whether thumbor should use gifsicle engine. Please note that smart
+## cropping and filters are not supported for gifs using gifsicle (but won't
+## give an error).
+## Defaults to: False
+#USE_GIFSICLE_ENGINE = False
+
 ################################################################################
 
 
@@ -92,12 +96,12 @@
 ## The file storage thumbor should use to store original images. This must be the
 ## full name of a python module (python must be able to import it)
 ## Defaults to: thumbor.storages.file_storage
-STORAGE = 'thumbor.storages.file_storage'
+#STORAGE = 'thumbor.storages.file_storage'
 
 ## The result storage thumbor should use to store generated images. This must be
 ## the full name of a python module (python must be able to import it)
 ## Defaults to: None
-RESULT_STORAGE = 'thumbor.result_storages.file_storage'
+#RESULT_STORAGE = None
 
 ## The imaging engine thumbor should use to perform image operations. This must
 ## be the full name of a python module (python must be able to import it)
@@ -115,7 +119,7 @@ SECURITY_KEY = '{{ thumbor_security_key }}'
 
 ## Indicates if the /unsafe URL should be available
 ## Defaults to: True
-#ALLOW_UNSAFE_URL = True
+ALLOW_UNSAFE_URL = False
 
 ## Indicates if encrypted (old style) URLs should be allowed
 ## Defaults to: True
@@ -158,8 +162,8 @@ SECURITY_KEY = '{{ thumbor_security_key }}'
 #HTTP_LOADER_FORWARD_USER_AGENT = False
 
 ## Default user agent for thumbor http loader requests
-## Defaults to: Thumbor/3.15.0
-#HTTP_LOADER_DEFAULT_USER_AGENT = 'Thumbor/3.15.0'
+## Defaults to: Thumbor/4.3.0
+#HTTP_LOADER_DEFAULT_USER_AGENT = 'Thumbor/4.3.0'
 
 ## The proxy host needed to load images through
 ## Defaults to: None
@@ -195,7 +199,7 @@ SECURITY_KEY = '{{ thumbor_security_key }}'
 
 ## The root path where the File Storage will try to find images
 ## Defaults to: /tmp/thumbor/storage
-## FILE_STORAGE_ROOT_PATH = '/mnt/imagecache/storage'
+#FILE_STORAGE_ROOT_PATH = '/tmp/thumbor/storage'
 
 ################################################################################
 
@@ -324,8 +328,10 @@ SECURITY_KEY = '{{ thumbor_security_key }}'
 ## of them must be full names of python modules (python must be able to import
 ## it)
 ## Defaults to: []
-#DETECTORS = #    [
-#    ]
+DETECTORS = [
+    'thumbor.detectors.face_detector',
+    'thumbor.detectors.feature_detector'
+]
 
 
 ## The cascade file that opencv will use to detect faces
@@ -340,7 +346,7 @@ SECURITY_KEY = '{{ thumbor_security_key }}'
 ## List of filters that thumbor will allow to be used in generated images. All of
 ## them must be full names of python modules (python must be able to import
 ## it)
-## Defaults to: ['thumbor.filters.brightness', 'thumbor.filters.contrast', 'thumbor.filters.rgb', 'thumbor.filters.round_corner', 'thumbor.filters.quality', 'thumbor.filters.noise', 'thumbor.filters.watermark', 'thumbor.filters.equalize', 'thumbor.filters.fill', 'thumbor.filters.sharpen', 'thumbor.filters.strip_icc', 'thumbor.filters.frame', 'thumbor.filters.grayscale', 'thumbor.filters.format', 'thumbor.filters.max_bytes']
+## Defaults to: ['thumbor.filters.brightness', 'thumbor.filters.contrast', 'thumbor.filters.rgb', 'thumbor.filters.round_corner', 'thumbor.filters.quality', 'thumbor.filters.noise', 'thumbor.filters.watermark', 'thumbor.filters.equalize', 'thumbor.filters.fill', 'thumbor.filters.sharpen', 'thumbor.filters.strip_icc', 'thumbor.filters.frame', 'thumbor.filters.grayscale', 'thumbor.filters.rotate', 'thumbor.filters.format', 'thumbor.filters.max_bytes', 'thumbor.filters.convolution', 'thumbor.filters.blur', 'thumbor.filters.extract_focal']
 #FILTERS = #    [
 #        'thumbor.filters.brightness',
 #        'thumbor.filters.contrast',
@@ -355,8 +361,12 @@ SECURITY_KEY = '{{ thumbor_security_key }}'
 #        'thumbor.filters.strip_icc',
 #        'thumbor.filters.frame',
 #        'thumbor.filters.grayscale',
+#        'thumbor.filters.rotate',
 #        'thumbor.filters.format',
 #        'thumbor.filters.max_bytes',
+#        'thumbor.filters.convolution',
+#        'thumbor.filters.blur',
+#        'thumbor.filters.extract_focal',
 #    ]
 
 
@@ -371,7 +381,7 @@ SECURITY_KEY = '{{ thumbor_security_key }}'
 
 ## Path where the Result storage will store generated images
 ## Defaults to: /tmp/thumbor/result_storage
-RESULT_STORAGE_FILE_STORAGE_ROOT_PATH = '/mnt/imagecache/result_storage'
+#RESULT_STORAGE_FILE_STORAGE_ROOT_PATH = '/tmp/thumbor/result_storage'
 
 ## Indicates whether unsafe requests should also be stored in the Result Storage
 ## Defaults to: False
@@ -433,6 +443,10 @@ RESULT_STORAGE_FILE_STORAGE_ROOT_PATH = '/mnt/imagecache/result_storage'
 ## File of error log as json
 ## Defaults to: None
 #ERROR_FILE_LOGGER = None
+
+## File of error log name is parametrized with context attribute
+## Defaults to: False
+#ERROR_FILE_NAME_USE_CONTEXT = False
 
 ################################################################################
 
