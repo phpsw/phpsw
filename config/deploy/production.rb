@@ -1,4 +1,4 @@
-server fetch(:domain),
+server "app.#{fetch(:domain)}",
   user: "steve",
   roles: %w[app web],
   ssh_options: {

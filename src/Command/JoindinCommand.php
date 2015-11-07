@@ -71,10 +71,10 @@ class JoindinCommand extends Command
     protected function refresh()
     {
          exec('sudo service varnish restart');
-         file_get_contents('http://phpsw.uk');
-         file_get_contents('http://phpsw.uk/events');
-         file_get_contents('http://phpsw.uk/speakers');
-         file_get_contents('http://phpsw.uk/sponsors');
-         file_get_contents('http://phpsw.uk/talks');
+         file_get_contents('https://phpsw.uk');
+         file_get_contents('https://phpsw.uk/events');
+         file_get_contents('https://phpsw.uk/speakers');
+         file_get_contents('https://phpsw.uk/sponsors');
+         file_get_contents('https://phpsw.uk/talks');
     }
 }

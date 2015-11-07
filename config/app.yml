@@ -222,13 +222,13 @@ thumbor:
   security_key: ~
 
 twitter:
-  url: http://twitter.com/phpsw
+  url: https://twitter.com/phpsw
   user: phpsw
 
 vouchers: []
 
 website:
-  url: http://phpsw.uk
+  url: https://phpsw.uk
   urlshort: phpsw.uk
 
 youtube:

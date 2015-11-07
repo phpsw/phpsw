@@ -21,7 +21,7 @@ class MessageController extends AbstractController
             $response = $this->fail(); # bot
         } elseif (!trim($request->get('message'))) {
             $response = $this->fail('Please enter a message');
-        } elseif (strpos($referer, 'http://' . $request->getHttpHost() . '/') !== 0) {
+        } elseif (strpos($referer, 'https://' . $request->getHttpHost() . '/') !== 0) {
             $response = $this->fail('Invalid referrer');
         } else {
             $message = $request->get('message');

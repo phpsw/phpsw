@@ -1,10 +1,10 @@
 DirectoryIndex app.php
-Header add Access-Control-Allow-Origin "http://mozilla.github.io"
+Header add Access-Control-Allow-Origin "https://mozilla.github.io"
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    RewriteRule ^rev/[0-9]+/(.*)$ /$1 [P]
+    RewriteRule ^rev/[0-9]+/(.*)$ /$1 [L]
 
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule .* app.php [QSA,L]

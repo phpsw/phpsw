@@ -150,7 +150,7 @@
         {% if (event.venue.lat) %}data-latitude="{{ event.venue.lat }}"{% endif %}
         {% if (event.venue.lon) %}data-longitude="{{ event.venue.lon }}"{% endif %}
         style="background-image: url('{{
-            'http://maps.googleapis.com/maps/api/staticmap?markers='
+            'https://maps.googleapis.com/maps/api/staticmap?markers='
             ~ event.venue.lat ~ ',' ~ event.venue.lon ~
             '&scale=2&size=640x320&zoom=16'
         }}')"
