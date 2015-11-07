@@ -2,20 +2,22 @@
 - name: update apt
   apt: update_cache=yes
 
-- name: install pgmagick deps
+- name: install thumbor dependencies
   apt: pkg={{item}}
   with_items:
+    - git-core
+    - libjasper-dev
+    - libjpeg-dev
+    - libopencv-dev
+    - libpng-dev
+    - libtiff-dev
+    - libwebp-dev
+    - python-dev
+    - python-opencv
     - python-pgmagick
     - python-pip
-    - python-dev
-    - git-core
-    - libjpeg-dev
-    - libtiff-dev
-    - libpng-dev
-    - libjasper-dev
-    - libwebp-dev
 
-- name: install pgmagick
+- name: install thumbor
   pip: >
     name={{item}}
   with_items:
