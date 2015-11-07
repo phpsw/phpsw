@@ -19,3 +19,6 @@
   sudo: false
   args:
     chdir: "{{ app.path }}"
+
+- name: install sf helper
+  template: src=sf dest=/usr/local/bin mode=0755

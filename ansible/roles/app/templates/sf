@@ -1,0 +1,13 @@
+#!/bin/bash
+
+PWD=$(pwd)
+
+while [ "$PWD" != '/' ]; do
+  if [ -f "$PWD/symfony" ]; then
+    php "$PWD/symfony" $@
+    exit
+  elif [ -f "$PWD/app/console" ]; then
+    [[ "${BASH_SOURCE[0]}" != "${0}" ]] && cd $PWD && return 0 || php "$PWD/app/console" $@ && exit
+  fi
+  cd ..
+done
