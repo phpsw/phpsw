@@ -1,28 +1,27 @@
 ---
 app:
-    domain: phpsw.vm
-    path: /home/vagrant/phpsw
+  domain: phpsw.vm
+  path: /home/vagrant/phpsw
 
 nginx:
-    docroot: "{{ app.path }}/web"
-    servername: phpsw.vm
+  docroot: "{{ app.path }}/web"
+  servername: phpsw.vm
 
 php:
-    ppa: php5-5.6
-    packages: [php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-readline]
+  ppa: php5-5.6
+  packages: [php5-cli, php5-intl, php5-mcrypt, php5-curl, php5-readline]
 
 redis:
-    port: '6379'
+  port: '6379'
 
 server:
-    packages: [git, graphicsmagick, htop, vim, zsh]
-    timezone: UTC
-    locale: en_GB.UTF-8
+  packages: [git, graphicsmagick, htop, vim, zsh]
+  timezone: UTC
+  locale: en_GB.UTF-8
 
-thumbor_key: "changeme"
-
-thumbor_ports:
-  - "8000"
-  - "8001"
-  - "8002"
-  - "8003"
+thumbor:
+  ports:
+    - "8000"
+    - "8001"
+    - "8002"
+    - "8003"

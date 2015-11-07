@@ -13,7 +13,6 @@ setgid thumbor
 env DAEMON=thumbor
 
 env conffile=/etc/thumbor.conf
-env keyfile=/etc/thumbor.key
 env ip=0.0.0.0
 
 chdir /var/lib/thumbor
@@ -33,7 +32,7 @@ end script
 
 script
     . "/tmp/${UPSTART_JOB}-${p}"
-    $DAEMON -c "${conffile}" -i "${ip}" -k "${keyfile}" -p "${p}" -l "${level}"
+    $DAEMON -c "${conffile}" -i "${ip}" -p "${p}" -l "${level}"
 end script
 
 post-start script

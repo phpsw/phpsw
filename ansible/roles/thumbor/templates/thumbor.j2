@@ -6,15 +6,12 @@ enabled=1
 # Location of the configuration file
 conffile=/etc/thumbor.conf
 
-# Location of the keyfile which contains the signing secret used in URLs
-keyfile=/etc/thumbor.key
-
 # IP address to bind to. Defaults to all IP addresses
 # ip=127.0.0.1
 
 # TCP port to bind to. Defaults to port 8888.
 # multiple instances of thumbor can be started by putting several ports coma separeted
 # Ex:
-port={{ thumbor_ports | join(",") }}
+port={{ thumbor.ports | join(",") }}
 # or
 # port=8888 #Default

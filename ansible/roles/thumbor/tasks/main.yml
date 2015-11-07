@@ -37,10 +37,6 @@
   action: template src=thumbor.conf.j2 dest=/etc/thumbor.conf
   notify: restart thumbor
 
-- name: copy thumbor security key
-  action: template src=thumbor.key.j2 dest=/etc/thumbor.key
-  notify: restart thumbor
-
 - name: copy thumbor upstart script
   action: template src=upstart-thumbor.conf.j2 dest=/etc/init/thumbor.conf
   notify: restart thumbor

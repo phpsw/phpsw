@@ -39,12 +39,13 @@ Vagrant.configure("2") do |config|
     config.ssh.forward_agent = true
 
     # If ansible is in your path it will provision from your HOST machine
-    # If ansible is not found in the path it will be instaled in the VM and provisioned from there
+    # If ansible is not found in the path it will be installed in the VM and provisioned from there
     if which('ansible-playbook')
         config.vm.provision "ansible" do |ansible|
             ansible.playbook = "ansible/playbook.yml"
             ansible.inventory_path = "ansible/inventories/dev"
-            ansible.limit = 'all'
+            ansible.limit = "all"
+            ansible.vault_password_file = "~/.phpsw_vault_pass.txt"
         end
     else
         config.vm.provision :shell, path: "ansible/windows.sh", args: ["default"]

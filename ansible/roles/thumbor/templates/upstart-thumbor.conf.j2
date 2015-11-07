@@ -6,7 +6,7 @@ stop on runlevel [!2345]
 
 console output
 
-env port={{ thumbor_ports | join(",") }}
+env port={{ thumbor.ports | join(",") }}
 env level=warning
 
 pre-start script
