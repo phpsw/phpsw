@@ -1,7 +1,7 @@
 server {
     listen 8080;
-    server_name {{ nginx.servername }} www.{{ nginx.servername }};
-    root {{ nginx.docroot }};
+    server_name {{ varnish.servername }} www.{{ varnish.servername }};
+    root {{ varnish.docroot }};
 
     add_header Access-Control-Allow-Origin "http://mozilla.github.io";
 
@@ -24,6 +24,6 @@ server {
         rewrite ^/rev/[0-9]+/(.*)$ /$1;
     }
 
-    error_log /var/log/nginx/phpsw_error.log;
-    access_log /var/log/nginx/phpsw_access.log;
+    error_log /var/log/varnish/phpsw_error.log;
+    access_log /var/log/varnish/phpsw_access.log;
 }

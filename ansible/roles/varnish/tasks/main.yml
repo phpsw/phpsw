@@ -1,0 +1,9 @@
+---
+- name: install varnish
+  sudo: yes
+  apt: pkg=varnish state=latest
+
+# - name: change default varnish site
+#   sudo: yes
+#   template: src=default.tpl dest=/etc/varnish/sites-available/default
+#   notify: restart varnish

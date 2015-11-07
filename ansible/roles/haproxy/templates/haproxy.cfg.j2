@@ -1,0 +1,46 @@
+global
+    daemon
+    maxconn 256
+    tune.ssl.default-dh-param 2048
+
+defaults
+    mode http
+    timeout connect 5000ms
+    timeout client 600000ms
+    timeout server 600000ms
+
+frontend localhost
+    default_backend varnish
+    bind *:80
+
+    {% if ssl_certificates is defined %}
+    # ssl
+    bind *:443 ssl{% for hostname, _ in ssl_certificates.iteritems() %} crt /etc/ssl/{{ hostname }}.pem{% endfor %} no-sslv3 ciphers ECDHE-ECDSA-AES256-GCM-SHA384:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128:AES256:AES:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK
+    redirect scheme https if !{ ssl_fc }
+
+    # distinguish between secure and insecure requests
+    acl secure dst_port eq 443
+
+    # mark all cookies as secure if sent over SSL
+    rsprep ^Set-Cookie:\ (.*) Set-Cookie:\ \1;\ Secure if secure
+
+    # add the HSTS header with a 1 year max-age
+    # rspadd Strict-Transport-Security:\ max-age=31536000;\ includeSubDomains if secure
+    {% endif %}
+
+backend varnish
+    balance roundrobin
+    option forwardfor
+{% for host in groups['app'] %}
+    server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host]['ansible_eth1']['ipv4']['address'] }}:6081 check
+{% endfor %}
+    http-request set-header X-Forwarded-Port %[dst_port]
+    http-request add-header X-Forwarded-Proto https if { ssl_fc }
+
+backend thumbor
+    balance roundrobin
+{% for host in groups['app'] %}
+{% for port in thumbor.ports %}
+    server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host]['ansible_eth1']['ipv4']['address'] }}:{{ port }} check
+{% endfor %}
+{% endfor %}

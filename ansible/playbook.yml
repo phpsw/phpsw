@@ -1,16 +1,19 @@
 ---
-- hosts: all
+- hosts: app
+  gather_facts: true
   sudo: true
   vars_files:
     - vars/all.yml
   roles:
     - server
     - hostname
+    - haproxy
     - nginx
-    - redis
     - php
+    - redis
+    - thumbor
+    - varnish
     - xdebug
     - composer
     - node
-    - thumbor
     - app
