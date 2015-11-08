@@ -44,7 +44,7 @@ backend app
     balance roundrobin
     option forwardfor
 {% for host in groups['app'] %}
-    server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host]['ansible_eth1']['ipv4']['address'] }}:6081 check
+    server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host].get('ansible_eth1', hostvars[host]['ansible_lo'])['ipv4']['address'] }}:6081 check
 {% endfor %}
     http-request set-header X-Forwarded-Port %[dst_port]
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
@@ -53,7 +53,7 @@ backend blog
     balance roundrobin
     option forwardfor
 {% for host in groups['app'] %}
-    server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host]['ansible_eth1']['ipv4']['address'] }}:2369 check
+    server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host].get('ansible_eth1', hostvars[host]['ansible_lo'])['ipv4']['address'] }}:2369 check
 {% endfor %}
     http-request set-header X-Forwarded-Port %[dst_port]
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
@@ -62,7 +62,7 @@ backend redis
     balance roundrobin
     option forwardfor
 {% for host in groups['app'] %}
-    server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host]['ansible_eth1']['ipv4']['address'] }}:8081 check
+    server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host].get('ansible_eth1', hostvars[host]['ansible_lo'])['ipv4']['address'] }}:8081 check
 {% endfor %}
     http-request set-header X-Forwarded-Port %[dst_port]
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
@@ -71,6 +71,6 @@ backend thumbor
     balance roundrobin
 {% for host in groups['app'] %}
 {% for port in thumbor.ports %}
-    server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host]['ansible_eth1']['ipv4']['address'] }}:{{ port }} check
+    server {{ hostvars[host]['ansible_hostname'] }} {{ hostvars[host].get('ansible_eth1', hostvars[host]['ansible_lo'])['ipv4']['address'] }}:{{ port }} check
 {% endfor %}
 {% endfor %}
