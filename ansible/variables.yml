@@ -12,9 +12,6 @@ php:
     - php5-mcrypt
     - php5-readline
 
-redis:
-  port: '6379'
-
 secrets:
   amazon: "{{ amazon }}"
   bitly: "{{ bitly }}"
