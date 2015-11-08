@@ -52,17 +52,15 @@
     - |
       s3cmd sync $(s3cmd ls s3://phpsw/backups/* -c /home/vagrant/.s3cfg \
        | tail -n 1 \
-       | awk '{ print $4 }') /var/lib/redis/6379/dump.rdb.gz -c /home/vagrant/.s3cfg
+       | awk '{ print $4 }') /var/lib/redis/dump.rdb.gz -c /home/vagrant/.s3cfg
     - service redis stop
-    - gzip -df /var/lib/redis/6379/dump.rdb.gz
+    - gzip -df /var/lib/redis/dump.rdb.gz
     - service redis start
     - |
-      /opt/redis/bin/redis-cli keys \* \
+      redis-cli keys \* \
        | awk '{ print $1 }' \
        | perl -pe 's/phpsw:(.*)/rename phpsw:\1 phpsw:dev:\1/g' \
-       | /opt/redis/bin/redis-cli -x
-  tags:
-    - redis
+       | redis-cli -x
 
 - name: sf import all
   shell: "{{ item }}"
