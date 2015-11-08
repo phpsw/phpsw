@@ -1,13 +1,10 @@
 ---
 - hosts: app
-  gather_facts: true
-  sudo: true
-  vars_files:
-    - vars/all.yml
+  become: true
   roles:
     - server
     - hostname
-    - haproxy
+    - user
     - nginx
     - php
     - redis
@@ -16,4 +13,8 @@
     - xdebug
     - composer
     - node
+    - haproxy
     - app
+  vars_files:
+    - secrets.yml
+    - variables.yml

@@ -1,8 +1,6 @@
 ---
-- name: restart haproxy
-  service: name=haproxy state=restarted
-  sudo: yes
-
 - name: reload haproxy
   service: name=haproxy state=reloaded
-  sudo: yes
+
+- name: restart haproxy
+  service: name=haproxy state=restarted

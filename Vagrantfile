@@ -43,7 +43,7 @@ Vagrant.configure("2") do |config|
     if which('ansible-playbook')
         config.vm.provision "ansible" do |ansible|
             ansible.playbook = "ansible/playbook.yml"
-            ansible.inventory_path = "ansible/inventories/dev"
+            ansible.inventory_path = "ansible/inventories/development"
             ansible.limit = "all"
             ansible.vault_password_file = "~/.phpsw_vault_pass.txt"
         end
@@ -51,5 +51,5 @@ Vagrant.configure("2") do |config|
         config.vm.provision :shell, path: "ansible/windows.sh", args: ["default"]
     end
 
-    config.vm.synced_folder "./", "/home/vagrant/phpsw", type: "nfs"
+    config.vm.synced_folder "./", "/home/vagrant/app", type: "nfs"
 end

@@ -1,30 +1,28 @@
 ---
 - name: update apt
-  sudo: yes
   apt: update_cache=yes
 
 - name: install system packages
-  sudo: yes
   apt: pkg={{ item }} state=latest
   with_items:
     - curl
-    - wget
+    - git
+    - graphicsmagick # for gulp-imagemin
+    - htop
     - python-software-properties
+    - s3cmd
+    - vim
+    - wget
+    - zsh
 
-- name: install extra packages
-  sudo: yes
-  apt: pkg={{ item }} state=latest
-  with_items: server.packages
-  when: server.packages is defined
+- name: configure timezone
+  template: src=timezone.j2 dest=/etc/timezone
 
-- name: configure the timezone
-  sudo: yes
-  template: src=timezone.tpl dest=/etc/timezone
-
-- name: more configure the timezone
-  sudo: yes
+- name: more configure timezone
   file: src=/usr/share/zoneinfo/{{ server.timezone }} dest=/etc/localtime state=link force=yes backup=yes
 
 - name: set default system language pack
   shell: locale-gen {{ server.locale }}
-  sudo: yes
+
+- name: sf helper
+  copy: src=sf dest=/usr/local/bin mode=0755

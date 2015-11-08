@@ -6,6 +6,7 @@ if (strpos($_SERVER['SCRIPT_NAME'], 'kahlan') !== false) {
     $app['env'] = 'testing';
 } elseif (strpos(__DIR__, 'phpsw.uk') !== false) {
     $app['env'] = 'prod';
+    $app['thumbor']['server'] = str_replace('http', 'https', $app['thumbor']['server']);
     $_SERVER['HTTPS'] = 'on';
 } else {
     $app['env'] = 'dev';

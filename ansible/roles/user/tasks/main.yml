@@ -1,0 +1,4 @@
+---
+- name: configure s3
+  template: src=s3cfg.j2 dest=~/.s3cfg
+  become: false

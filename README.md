@@ -17,7 +17,7 @@ Prerequisites
 Setup
 -----
 
-```bash
+```sh
 git clone https://github.com/phpsw/phpsw.git
 cd phpsw
 composer install
@@ -29,7 +29,7 @@ app/console redis:restore-fixtures
 
 Note: if you do not have bower or gulp installed globally binaries can be found in
 
-```bash
+```sh
 phpsw/node_modules/.bin/
 ```
 
@@ -68,9 +68,21 @@ Fixtures
 
 If you want to test against PHPSW event data, you can simply load the fixtures into Redis:
 
-```bash
+```sh
 app/console redis:restore-fixtures
 ```
+
+Secrets
+-------
+
+Secrets are stored in Ansible Vault, to change any of them use:
+
+```sh
+ansible-vault edit ansible/secrets.yml
+```
+
+Note: any changes will also require regenerating `config/secrets.yml.enc` for Travis.
+
 
 Tasks
 -----
@@ -79,7 +91,7 @@ Almost all of our content is stored in [Meetup](http://www.meetup.com/php-sw), b
 
 If you're forking this project for your own use, you'll need to run these tasks to pull in the content from your own accounts, and you'll probably also want to set them up as cron jobs in production.
 
-```bash
+```sh
 app/console meetup:import:all
 app/console twitter:import:all
 ```
@@ -89,6 +101,14 @@ Tests
 
 We have a basic [Kahlan](https://github.com/crysalead/kahlan) test suite set up:
 
-```bash
+```sh
 app/kahlan
+```
+
+Travis requires the secrets file in order to run the tests, if you make changes,
+remember to regenerate and commit the encrypted version:
+
+```sh
+travis login
+travis encrypt-file -f config/secrets.yml
 ```

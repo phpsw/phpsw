@@ -12,7 +12,7 @@
 
 - name: create extension .ini file
   template: >
-    src="extension.tpl"
+    src="extension.j2"
     dest="/etc/php5/mods-available/{{ item }}.ini"
     owner="root"
     group="root"

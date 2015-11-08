@@ -54,13 +54,13 @@
   file: src={{ redis_path }}-{{ redis_version }} dest={{ redis_path }} state=link
 
 - name: create init script
-  template: src=init.tpl dest=/etc/init.d/redis mode=0755
+  template: src=init.j2 dest=/etc/init.d/redis mode=0755
 
 - name: set to start boot
   service: name=redis enabled=yes
 
 - name: create config file
-  template: src=conf.tpl dest={{ redis_conf_path }}/{{ redis.port }}.conf
+  template: src=conf.j2 dest={{ redis_conf_path }}/{{ redis.port }}.conf
   notify: restart redis
 
 - name: set bin folder into environment file

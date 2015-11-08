@@ -1,3 +1,4 @@
 source 'http://rubygems.org'
 
 gem 'capistrano', '~> 3.1.0'
+gem 'travis', '~> 1.8.0'

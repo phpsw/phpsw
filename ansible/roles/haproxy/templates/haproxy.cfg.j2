@@ -28,16 +28,16 @@ frontend localhost
 
     default_backend app
 
-    acl host_app hdr(host) -i {{ app.domain }}
+    acl host_app hdr(host) -i {{ app_host }}
     use_backend app if host_app
 
-    acl host_blog hdr(host) -i blog.{{ app.domain }}
+    acl host_blog hdr(host) -i blog.{{ app_host }}
     use_backend blog if host_blog
 
-    acl host_images hdr(host) -i images.{{ app.domain }}
+    acl host_images hdr(host) -i images.{{ app_host }}
     use_backend thumbor if host_images
 
-    acl host_redis hdr(host) -i redis.{{ app.domain }}
+    acl host_redis hdr(host) -i redis.{{ app_host }}
     use_backend redis if host_redis
 
 backend app

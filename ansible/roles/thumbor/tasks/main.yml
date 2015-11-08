@@ -3,7 +3,7 @@
   apt: update_cache=yes
 
 - name: install thumbor dependencies
-  apt: pkg={{item}}
+  apt: pkg={{ item }}
   with_items:
     - git-core
     - libjasper-dev
@@ -18,8 +18,7 @@
     - python-pip
 
 - name: install thumbor
-  pip: >
-    name={{item}}
+  pip: name={{ item }}
   with_items:
     - pycurl
     - numpy
@@ -30,6 +29,12 @@
 
 - name: ensure thumbor user exists
   user: name=thumbor group=thumbor createhome=yes state=present home=/home/thumbor
+
+- name: creates thumbor working directory
+  file: path=/var/lib/thumbor state=directory owner=thumbor group=thumbor
+
+- name: creates thumbor log directory
+  file: path=/home/thumbor/logs state=directory owner=thumbor group=thumbor
 
 - name: copy thumbor service file
   action: template src=thumbor.j2 dest=/etc/default/thumbor
@@ -47,11 +52,4 @@
   action: template src=upstart-thumbor-worker.conf.j2 dest=/etc/init/thumbor-worker.conf
   notify: restart thumbor
 
-- name: creates thumbor working directory
-  file: path=/var/lib/thumbor state=directory owner=thumbor group=thumbor
-
-- name: creates thumbor log directory
-  file: path=/home/thumbor/logs state=directory owner=thumbor group=thumbor
-
-- service: name=thumbor state=running enabled=yes
-  ignore_errors: yes
+- service: name=thumbor state=restarted enabled=yes
