@@ -2,7 +2,7 @@
 52.32.33.166
 
 [app:vars]
-app_hostphpsw.uk
+app_host=phpsw.uk
 app_path=/var/www/phpsw.uk/current
 app_config=/var/www/phpsw.uk/shared/config
 app_shared=/var/www/phpsw.uk/shared
