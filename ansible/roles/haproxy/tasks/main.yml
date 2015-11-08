@@ -1,24 +1,16 @@
 ---
 - name: add haproxy 1.6 repository
   apt_repository: repo='ppa:vbernat/haproxy-1.6'
-  tags:
-    - haproxy
 
 - name: install haproxy
   apt: name=haproxy state=latest
-  tags:
-    - haproxy
 
 - name: copy haproxy service file
   action: template src=haproxy.j2 dest=/etc/default/haproxy
   notify: reload haproxy
-  tags:
-    - haproxy
 
 # - name: create /etc/ssl directory
 #   file: path=/etc/ssl state=directory
-#   tags:
-#     - haproxy
 
 # - name: copy ssl certificates into /etc/ssl
 #   copy:
@@ -28,17 +20,11 @@
 #     group: root
 #     mode: 0600
 #   with_dict: "{{ ssl_certificates }}"
-#   tags:
-#     - haproxy
 
 - name: configure /etc/haproxy/haproxy.cfg
   template:
     src: 'haproxy.cfg.j2'
     dest: '/etc/haproxy/haproxy.cfg'
   notify: reload haproxy
-  tags:
-    - haproxy
 
 - service: name=haproxy state=running
-  tags:
-    - haproxy

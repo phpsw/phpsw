@@ -1,9 +1,5 @@
 ---
 - name: install redis-server
   apt: pkg=redis-server state=latest
-  tags:
-    - redis
 
 - service: name=redis-server state=running
-  tags:
-    - redis

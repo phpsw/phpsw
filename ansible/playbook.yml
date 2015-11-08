@@ -2,19 +2,20 @@
 - hosts: app
   become: true
   roles:
-    - server
-    - hostname
-    - user
-    - nginx
-    - php
-    - redis
-    - thumbor
-    - varnish
-    - xdebug
-    - composer
-    - node
-    - haproxy
-    - app
+    - {role: server,   tags: [server]}
+    - {role: hostname, tags: [hostname]}
+    - {role: user,     tags: [user]}
+    - {role: nginx,    tags: [nginx]}
+    - {role: php,      tags: [php]}
+    - {role: redis,    tags: [redis]}
+    - {role: thumbor,  tags: [thumbor]}
+    - {role: varnish,  tags: [varnish]}
+    - {role: xdebug,   tags: [xdebug]}
+    - {role: composer, tags: [composer]}
+    - {role: node,     tags: [node]}
+    - {role: haproxy,  tags: [haproxy]}
+    - {role: vagrant,  when: "app_host == 'phpsw.vm'", tags: [vagrant]}
+    - {role: app,      tags: [app]}
   vars_files:
     - secrets.yml
     - variables.yml

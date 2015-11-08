@@ -1,15 +1,9 @@
 ---
 - name: install nginx
   apt: pkg=nginx state=latest
-  tags:
-    - nginx
 
 - name: config default site
   template: src=default.j2 dest=/etc/nginx/sites-available/default
   notify: reload nginx
-  tags:
-    - nginx
 
 - service: name=nginx state=running
-  tags:
-    - nginx
