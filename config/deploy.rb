@@ -84,16 +84,6 @@ namespace :twitter do
   after "deploy:finishing", :import
 end
 
-namespace :mod_pagespeed do
-  task :flush do
-    on roles :all do
-      execute "sudo touch /var/cache/mod_pagespeed/cache.flush"
-    end
-  end
-
-  after "deploy:finishing", :flush
-end
-
 namespace :varnish do
   task :restart do
     on roles :all do
