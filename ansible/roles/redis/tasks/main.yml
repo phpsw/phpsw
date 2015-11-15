@@ -2,4 +2,11 @@
 - name: install redis-server
   apt: pkg=redis-server state=latest
 
+- template: src={{ item }}.sh.j2 dest=/var/lib/redis/{{ item }}.sh mode=0755
+  with_items:
+    - backup
+    - restore
+
+- command: /var/lib/redis/restore.sh creates=/var/lib/redis/dump.rdb
+
 - service: name=redis-server state=running

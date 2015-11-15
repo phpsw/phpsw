@@ -1,8 +1,9 @@
 ---
-- name: configure s3
+- name: configure s3 for ansible user
   template: src=s3cfg.j2 dest=~/.s3cfg
   become: false
   tags: [s3]
 
-- script: keys.rb ubuntu phpsw
-  tags: [keys]
+- name: configure s3 for root user
+  template: src=s3cfg.j2 dest=~/.s3cfg
+  tags: [s3]
