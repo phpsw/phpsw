@@ -1,0 +1,3 @@
+---
+- script: keys.rb ubuntu phpsw
+  tags: [keys]
