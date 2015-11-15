@@ -10,6 +10,7 @@
     - graphicsmagick # for gulp-imagemin
     - htop
     - python-software-properties
+    - ruby
     - s3cmd
     - vim
     - wget
