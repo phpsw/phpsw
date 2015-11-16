@@ -9,4 +9,13 @@
 
 - command: /var/lib/redis/restore.sh creates=/var/lib/redis/dump.rdb
 
-- service: name=redis-server state=running
+- name: install redis-commander
+  npm: name=redis-commander global=yes
+
+- template: src=redis-commander.j2 dest=/etc/init.d/redis-commander mode=0755
+  notify: restart redis-commander
+
+- service: name=redis-{{ item }} state=running
+  with_items:
+    - commander
+    - server
