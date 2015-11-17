@@ -1,7 +1,7 @@
 description "Thumbor image manipulation service"
 author "Wichert Akkerman <wichert@wiggy.net>"
 
-stop on stopping thumbor
+stop on stopped thumbor
 
 respawn
 respawn limit 5 10
@@ -10,7 +10,7 @@ umask 022
 setuid thumbor
 setgid thumbor
 
-env DAEMON=thumbor
+env DAEMON=/usr/local/bin/thumbor
 
 env conffile=/etc/thumbor.conf
 env ip=0.0.0.0
@@ -19,22 +19,4 @@ chdir /var/lib/thumbor
 
 instance $p
 
-pre-start script
-    [ -r /etc/default/thumbor ] && . /etc/default/thumbor
-    if [ "$enabled" = "0" ] && [ "$force" != "1" ] ; then
-        logger -is -t "$UPSTART_JOB" "Thumbor is disabled by /etc/default/thumbor, add force=1 to your service command"
-        stop
-        exit 0
-    fi
-    exec >"/tmp/${UPSTART_JOB}-${p}"
-    echo "ip=${ip}"
-end script
-
-script
-    . "/tmp/${UPSTART_JOB}-${p}"
-    $DAEMON -c "${conffile}" -i "${ip}" -p "${p}" -l "${level}"
-end script
-
-post-start script
-    rm -f "/tmp/$UPSTART_JOB-${p}"
-end script
+exec $DAEMON -c "${conffile}" -i "${ip}" -p "${p}"

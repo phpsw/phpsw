@@ -1,7 +1,4 @@
 ---
-- name: update apt
-  apt: update_cache=yes
-
 - name: install thumbor dependencies
   apt: pkg={{ item }}
   with_items:
@@ -32,13 +29,6 @@
 
 - name: creates thumbor working directory
   file: path=/var/lib/thumbor state=directory owner=thumbor group=thumbor
-
-- name: creates thumbor log directory
-  file: path=/home/thumbor/logs state=directory owner=thumbor group=thumbor
-
-- name: copy thumbor service file
-  action: template src=thumbor.j2 dest=/etc/default/thumbor
-  notify: restart thumbor
 
 - name: copy thumbor config file
   action: template src=thumbor.conf.j2 dest=/etc/thumbor.conf
