@@ -2,6 +2,9 @@
 - name: install redis-server
   apt: pkg=redis-server state=latest
 
+- name: set the kernel parameter for vm overcommit
+  sysctl: name=vm.overcommit_memory value=1 state=present
+
 - template: src={{ item }}.sh.j2 dest=/var/lib/redis/{{ item }}.sh mode=0755
   with_items:
     - backup
