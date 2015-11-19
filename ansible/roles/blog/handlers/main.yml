@@ -1,0 +1,3 @@
+---
+- name: restart blog
+  service: name=blog enabled=yes state=restarted

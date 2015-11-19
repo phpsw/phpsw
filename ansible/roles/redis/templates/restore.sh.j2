@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-s3cmd sync $(s3cmd ls s3://phpsw/backups/* -c ~/.s3cfg \
+s3cmd sync $(s3cmd ls s3://phpsw/backups/phpsw-app-* -c ~/.s3cfg \
  | tail -n 1 \
  | awk '{ print $4 }') /var/lib/redis/dump.rdb.gz -c ~/.s3cfg
 

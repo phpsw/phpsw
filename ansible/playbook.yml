@@ -13,6 +13,7 @@
     - {role: xdebug,   tags: [xdebug]}
     - {role: composer, tags: [composer]}
     - {role: node,     tags: [node]}
+    - {role: blog,     tags: [blog]}
     - {role: haproxy,  tags: [haproxy]}
     - {role: aws,      when: "app_host == 'phpsw.uk'", tags: [aws]}
     - {role: vagrant,  when: "app_host == 'phpsw.vm'", tags: [vagrant]}

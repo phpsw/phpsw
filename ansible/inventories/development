@@ -6,3 +6,4 @@ app_host=phpsw.vm
 app_path=/home/vagrant/app
 app_config=/home/vagrant/app/config
 app_shared=/home/vagrant/app
+blog_path=/var/www/blog.phpsw.vm
