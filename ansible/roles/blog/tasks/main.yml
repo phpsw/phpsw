@@ -1,24 +1,40 @@
 ---
-- name: create blog directory
-  file: path={{ blog_path }} state=directory owner={{ ansible_ssh_user }} group={{ ansible_ssh_user }} recurse=yes
+- name: ensure ghost group exists
+  group: name=ghost state=present system=yes
+
+- name: ensure ghost user exists
+  user: name=ghost group=ghost createhome=yes home={{ blog_path }} shell=/bin/false state=present system=yes
 
 - name: download ghost
   command: wget https://ghost.org/zip/ghost-latest.zip -P /tmp creates=/tmp/ghost-latest.zip
 
 - name: extract ghost
-  unarchive: src=/tmp/ghost-latest.zip dest={{ blog_path }} copy=no
+  unarchive: src=/tmp/ghost-latest.zip dest={{ blog_path }} copy=no creates={{ blog_path }}/core
+
+- name: configure ghost
+  template: src=config.js.j2 dest={{ blog_path }}/config.js
+  notify: restart blog
 
 - name: npm install
-  command: npm install --production chdir={{ blog_path }}
+  command: npm install --production chdir={{ blog_path }} creates={{ blog_path }}/node_modules
+  notify: restart blog
 
 - name: install theme
-  git: repo=https://github.com/stevelacey/ghostium.git dest={{ blog_path }}/content/themes/ghostium
+  git: repo=https://github.com/phpsw/ghostium.git dest={{ blog_path }}/content/themes/ghostium
+  notify: restart blog
 
-- template: src={{ item }}.sh.j2 dest={{ blog_path }}/content/{{ item }}.sh mode=0755
-  with_items:
-    - backup
-    - restore
+- name: install backup/restore scripts
+  template: src={{ item }}.sh.j2 dest={{ blog_path }}/content/{{ item }}.sh mode=0755
+  with_items: [backup, restore]
 
 - command: "{{ blog_path }}/content/restore.sh creates={{ blog_path }}/content/data/ghost.db"
+  notify: restart blog
 
-# - service: name=blog state=running
+- command: "chown -R ghost:ghost {{ blog_path }}"
+  notify: restart blog
+
+- name: copy blog service file
+  template: src=blog.j2 dest=/etc/init.d/blog mode=0755
+  notify: restart blog
+
+- service: name=blog state=running

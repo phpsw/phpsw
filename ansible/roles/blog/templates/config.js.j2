@@ -1,0 +1,36 @@
+// # Ghost Configuration
+
+var path = require('path'),
+    config;
+
+config = {
+    production: {
+        url: 'http://blog.{{ app_hostname }}',
+        mail: {},
+        database: {
+            client: 'sqlite3',
+            connection: {
+                filename: path.join(__dirname, '/content/data/ghost.db')
+            },
+            debug: false
+        },
+        mail: {
+            transport: 'SMTP',
+            options: {
+                host: 'smtp.mandrillapp.com',
+                port: 587,
+                service: 'Mandrill',
+                auth: {
+                    user: 'info@phpsw.uk',
+                    pass: '{{ mandrill.api.key }}'
+                }
+            }
+        },
+        server: {
+            host: '0.0.0.0',
+            port: '2368'
+        }
+    }
+};
+
+module.exports = config;

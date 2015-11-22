@@ -1,11 +1,9 @@
 ---
 - name: set the hostname in /etc/hostname
-  shell: echo {{ app_host }} > /etc/hostname
-  when: app_host is defined
+  shell: echo {{ inventory_hostname }} > /etc/hostname
 
 - name: set the hostname
-  shell: hostname {{ app_host }}
-  when: app_host is defined
+  shell: hostname {{ inventory_hostname }}
 
 - name: update /etc/hosts
-  lineinfile: dest=/etc/hosts regexp='^127\.0\.0\.1' line='127.0.0.1 localhost {{ app_host }}' owner=root group=root mode=0644
+  lineinfile: dest=/etc/hosts regexp='^127\.0\.0\.1' line='127.0.0.1 localhost {{ inventory_hostname }}' owner=root group=root mode=0644

@@ -6,7 +6,7 @@
   apt: name=haproxy state=latest
 
 - name: copy haproxy service file
-  action: template src=haproxy.j2 dest=/etc/default/haproxy
+  template: src=haproxy.j2 dest=/etc/default/haproxy
   notify: reload haproxy
 
 # - name: create /etc/ssl directory
@@ -22,9 +22,7 @@
 #   with_dict: "{{ ssl_certificates }}"
 
 - name: configure /etc/haproxy/haproxy.cfg
-  template:
-    src: 'haproxy.cfg.j2'
-    dest: '/etc/haproxy/haproxy.cfg'
+  template: src=haproxy.cfg.j2 dest=/etc/haproxy/haproxy.cfg
   notify: reload haproxy
 
 - service: name=haproxy state=running

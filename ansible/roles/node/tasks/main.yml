@@ -8,12 +8,5 @@
 - name: install package
   apt: name=nodejs state=latest
 
-- name: install global packages
-  npm: name={{ item }} global=yes state=latest
-  with_items:
-    - bower
-    - gulp
-    - npm
-
 - name: clean cache
   command: npm cache clean

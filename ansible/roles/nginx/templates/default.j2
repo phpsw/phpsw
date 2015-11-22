@@ -1,7 +1,7 @@
 server {
     listen 8080;
-    server_name {{ nginx.servername }} www.{{ nginx.servername }};
-    root {{ nginx.docroot }};
+    server_name {{ app_hostname }} www.{{ app_hostname }};
+    root {{ nginx_docroot }};
 
     add_header Access-Control-Allow-Origin "http://mozilla.github.io";
 

@@ -25,7 +25,7 @@
   group: name=thumbor state=present system=yes
 
 - name: ensure thumbor user exists
-  user: name=thumbor group=thumbor createhome=yes state=present home=/home/thumbor
+  user: name=thumbor group=thumbor createhome=yes home=/home/thumbor state=present
 
 - name: creates thumbor working directory
   file: path=/var/lib/thumbor state=directory owner=thumbor group=thumbor

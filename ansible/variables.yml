@@ -1,8 +1,4 @@
 ---
-nginx:
-  docroot: "{{ app_path }}/web"
-  servername: "{{ app_host }}"
-
 php:
   ppa: php5-5.6
   packages:
