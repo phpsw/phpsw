@@ -19,15 +19,19 @@
   command: npm install --production chdir={{ blog_path }} creates={{ blog_path }}/node_modules
   notify: restart blog
 
-- name: install theme
-  git: repo=https://github.com/phpsw/ghostium.git dest={{ blog_path }}/content/themes/ghostium
+- name: npm install ghost s3 storage
+  command: npm install ghost-s3-storage chdir={{ blog_path }} creates={{ blog_path }}/node_modules/ghost-s3-storage
   notify: restart blog
 
-- name: install backup/restore scripts
-  template: src={{ item }}.sh.j2 dest={{ blog_path }}/content/{{ item }}.sh mode=0755
-  with_items: [backup, restore]
+- name: create ghost s3 storage directory
+  file: path={{ blog_path }}/content/storage/ghost-s3 state=directory recurse=yes
 
-- command: "{{ blog_path }}/content/restore.sh creates={{ blog_path }}/content/data/ghost.db"
+- name: configure ghost s3 storage
+  template: src=s3.js.j2 dest={{ blog_path }}/content/storage/ghost-s3/index.js
+  notify: restart blog
+
+- name: install theme
+  git: repo=https://github.com/phpsw/ghostium.git dest={{ blog_path }}/content/themes/ghostium
   notify: restart blog
 
 - command: "chown -R ghost:ghost {{ blog_path }}"

@@ -1,0 +1,9 @@
+'use strict';
+var S3Store = require('ghost-s3-storage');
+
+S3Store.prototype.getTargetDir = function() {
+    var now = new Date();
+    return 'blog/images/' + now.getFullYear() + '/' + (now.getMonth() + 1) + '/';
+};
+
+module.exports = S3Store
