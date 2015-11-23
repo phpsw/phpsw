@@ -43,9 +43,19 @@ $app['meetup.client'] = function ($app) {
     return new PHPSW\Meetup\Client($app, $app['meetup'], $app['cli'], $app['debug']);
 };
 
-$app['redis'] = new Predis\Client(null, [
-    'prefix' => 'phpsw:' . ($app['env'] != 'prod' ? $app['env'] . ':' : '')
-]);
+if ($app['env'] == 'prod') {
+    $app['redis'] = new Predis\Client(
+        [
+            ['host' => 'phpsw-redis.sfkuch.ng.0001.euw1.cache.amazonaws.com', 'alias' => 'master'],
+            ['host' => 'phpsw-redis-002.sfkuch.0001.euw1.cache.amazonaws.com', 'alias' => 'slave'],
+        ],
+        ['prefix' => 'phpsw:', 'replication' => true]
+    );
+} else {
+    $app['redis'] = new Predis\Client(null, [
+        'prefix' => 'phpsw:' . $app['env'] . ':'
+    ]);
+}
 
 $app['swiftmailer.options'] = [
     'host' => 'smtp.mandrillapp.com',
