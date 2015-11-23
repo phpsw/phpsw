@@ -1,5 +1,5 @@
 set :application, "phpsw"
-ask :branch, proc { `git rev-parse HEAD`.chomp }.call
+set :branch, proc { `git rev-parse HEAD`.chomp }
 set :domain, "phpsw.uk"
 set :deploy_to, "/var/www/#{fetch(:domain)}"
 set :repo_url,  "git@github.com:phpsw/#{fetch(:application)}.git"
