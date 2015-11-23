@@ -47,7 +47,8 @@ if ($app['env'] == 'prod') {
     $app['redis'] = new Predis\Client(
         [
             ['host' => 'phpsw-redis.sfkuch.ng.0001.euw1.cache.amazonaws.com', 'alias' => 'master'],
-            ['host' => 'phpsw-redis-002.sfkuch.0001.euw1.cache.amazonaws.com', 'alias' => 'slave'],
+            ['host' => 'phpsw-redis-001.sfkuch.0001.euw1.cache.amazonaws.com', 'alias' => 'slave-01'],
+            ['host' => 'phpsw-redis-002.sfkuch.0001.euw1.cache.amazonaws.com', 'alias' => 'slave-02'],
         ],
         ['prefix' => 'phpsw:', 'replication' => true]
     );
