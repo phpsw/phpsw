@@ -92,6 +92,16 @@ namespace :twitter do
   after "deploy:finishing", :import
 end
 
+namespace :php do
+  task :restart do
+    on roles :app do
+      execute "sudo service php5-fpm restart"
+    end
+  end
+
+  after "deploy:finishing", :restart
+end
+
 namespace :varnish do
   task :restart do
     on roles :app do
