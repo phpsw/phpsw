@@ -8,7 +8,7 @@ set :linked_files, %w{config/secrets.yml}
 
 namespace :composer do
   task :install do
-    on roles :all do
+    on roles :app do
       execute "composer install --no-dev --optimize-autoloader --prefer-source --working-dir #{release_path} --verbose"
     end
   end
@@ -65,7 +65,7 @@ end
 
 namespace :sf do
   task :import do
-    on roles :app do
+    on roles :app1 do
       execute "#{release_path}/app/console joindin:import:all"
       execute "#{release_path}/app/console youtube:import:all"
       execute "#{release_path}/app/console meetup:import:all"
@@ -87,7 +87,7 @@ end
 
 namespace :varnish do
   task :restart do
-    on roles :all do
+    on roles :app do
       execute "sudo service varnish restart"
     end
   end
