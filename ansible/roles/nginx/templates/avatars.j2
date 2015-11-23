@@ -1,0 +1,15 @@
+server {
+    listen 8080;
+    server_name avatars.{{ app_hostname }}
+    root {{ avatars_path }};
+
+    location / {
+        include fastcgi_params;
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME {{ avatars_path }}/index.php;
+        fastcgi_param HTTPS off;
+    }
+
+    error_log /var/log/nginx/avatars_error.log;
+    access_log /var/log/nginx/avatars_access.log;
+}

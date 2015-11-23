@@ -7,5 +7,6 @@ app_hostname=phpsw.uk
 app_path=/var/www/phpsw.uk
 app_config=/var/www/phpsw.uk/shared/config
 app_shared=/var/www/phpsw.uk/shared
+avatars_path=/var/www/avatars.phpsw.uk
 blog_path=/var/www/blog.phpsw.uk
 nginx_docroot=/var/www/phpsw.uk/current/web

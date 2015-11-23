@@ -2,8 +2,26 @@
 - name: install nginx
   apt: pkg=nginx state=latest
 
-- name: config default site
-  template: src=default.j2 dest=/etc/nginx/sites-available/default
+- file: path=/etc/nginx/sites-available/default state=absent
   notify: restart nginx
 
-- service: name=nginx state=running
+- file: path=/etc/nginx/sites-enabled/default state=absent
+  notify: restart nginx
+
+- name: config app site
+  template: src=app.j2 dest=/etc/nginx/sites-available/app
+  notify: restart nginx
+
+- name: config avatars site
+  template: src=avatars.j2 dest=/etc/nginx/sites-available/avatars
+  notify: restart nginx
+
+- name: enable avatars site
+  file: src=../sites-available/avatars dest=/etc/nginx/sites-enabled/avatars state=link
+  notify: restart nginx
+
+- name: enable app site
+  file: src=../sites-available/app dest=/etc/nginx/sites-enabled/app state=link
+  notify: restart nginx
+
+- service: name=nginx state=restarted

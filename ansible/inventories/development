@@ -6,5 +6,6 @@ app_hostname=phpsw.vm
 app_path=/home/vagrant/app
 app_config=/home/vagrant/app/config
 app_shared=/home/vagrant/app
+avatars_path=/home/vagrant/avatars
 blog_path=/home/vagrant/blog
 nginx_docroot=/home/vagrant/app/web
