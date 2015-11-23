@@ -1,6 +1,3 @@
 ---
 - name: restart redis-commander
   service: name=redis-commander state=restarted
-
-- name: restart redis-server
-  service: name=redis-server state=restarted

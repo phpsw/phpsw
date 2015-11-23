@@ -1,24 +1,8 @@
 ---
-- name: install redis-server
-  apt: pkg=redis-server state=latest
-
-- name: set the kernel parameter for vm overcommit
-  sysctl: name=vm.overcommit_memory value=1 state=present
-
-- template: src={{ item }}.sh.j2 dest=/var/lib/redis/{{ item }}.sh mode=0755
-  with_items:
-    - backup
-    - restore
-
-- command: /var/lib/redis/restore.sh creates=/var/lib/redis/dump.rdb
-
 - name: install redis-commander
   npm: name=redis-commander global=yes
 
 - template: src=redis-commander.j2 dest=/etc/init.d/redis-commander mode=0755
   notify: restart redis-commander
 
-- service: name=redis-{{ item }} state=running
-  with_items:
-    - commander
-    - server
+- service: name=redis-commander state=running

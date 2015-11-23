@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-set -e
-
-redis-cli save
-
-gzip -9fk /var/lib/redis/dump.rdb
-
-s3cmd sync /var/lib/redis/dump.rdb.gz s3://phpsw/backups/phpsw-$(date +\%Y-\%m-\%d-\%H:\%M:\%S).rdb.gz -c ~/.s3cfg
