@@ -6,7 +6,6 @@ if (strpos($_SERVER['SCRIPT_NAME'], 'kahlan') !== false) {
     $app['env'] = 'testing';
 } elseif (strpos(__DIR__, 'phpsw.uk') !== false) {
     $app['env'] = 'prod';
-    $app['thumbor']['server'] = str_replace('http', 'https', $app['thumbor']['server']);
     $_SERVER['HTTPS'] = 'on';
 } else {
     $app['env'] = 'dev';
@@ -66,7 +65,10 @@ $app['swiftmailer.options'] = [
 ];
 
 $app['thumbor.builder'] = function ($app) {
-    return Thumbor\Url\BuilderFactory::construct($app['thumbor']['server'], $app['thumbor']['security_key']);
+    return Thumbor\Url\BuilderFactory::construct(
+        str_replace('http', $app['env'] == 'prod' ? 'https' : 'http', $app['thumbor']['server']),
+        $app['thumbor']['security_key']
+    );
 };
 
 $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
