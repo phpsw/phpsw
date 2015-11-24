@@ -9,6 +9,7 @@
     - git
     - graphicsmagick # for gulp-imagemin
     - htop
+    - openssl
     - python-software-properties
     - ruby
     - s3cmd

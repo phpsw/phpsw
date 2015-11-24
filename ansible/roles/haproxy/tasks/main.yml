@@ -9,17 +9,19 @@
   template: src=haproxy.j2 dest=/etc/default/haproxy
   notify: reload haproxy
 
-# - name: create /etc/ssl directory
-#   file: path=/etc/ssl state=directory
+- name: create /etc/ssl directory
+  file: path=/etc/ssl state=directory
 
-# - name: copy ssl certificates into /etc/ssl
-#   copy:
-#     content: "{{ item.value }}"
-#     dest: "/etc/ssl/{{ item.key }}.pem"
-#     owner: root
-#     group: root
-#     mode: 0600
-#   with_dict: "{{ ssl_certificates }}"
+- name: create self-signed ssl certificates in /etc/ssl
+  command: |
+    openssl req -x509 -newkey rsa:2048
+        -out /etc/ssl/{{ app_hostname }}.pem
+        -keyout /etc/ssl/{{ app_hostname }}.pem
+        -days 36500
+        -nodes
+        -subj "/C=GB/ST=City of Bristol/L=Bristol/O=PHP South West UK/OU=Org/CN={{ app_hostname }}"
+  args:
+    creates: /etc/ssl/{{ app_hostname }}.pem
 
 - name: configure /etc/haproxy/haproxy.cfg
   template: src=haproxy.cfg.j2 dest=/etc/haproxy/haproxy.cfg
