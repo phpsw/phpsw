@@ -1,4 +1,7 @@
 ---
+app: "{{ ansible_hostname | regex_replace('[^\\d]', '') }}"
+apps: "{{ groups['app'] | length }}"
+
 php:
   ppa: php5-5.6
   packages:
