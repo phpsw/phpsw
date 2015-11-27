@@ -16,7 +16,9 @@
         minute="{{ range(range(0, apps|int)[app|int-1] * 30 + 4, 60, 30 * apps|int) | join(',') }}"
 
 - cron: name="invoice all" minute=0 hour=9 day=14
-        job="{{ app_path }}/current/app/console invoice:all"
+        job="{{ app_path }}/current/app/console invoice:all &&
+             s3cmd sync {{ app_shared }}/invoices/ s3://phpsw/invoices/ -c ~/.s3cfg &&
+             rm {{ app_shared }}/invoices/*.pdf"
         month="{{ range(app|int * 1, 13, 1 * apps|int) | join(',') }}"
 
 - script: keys.rb ubuntu phpsw
