@@ -1,19 +1,19 @@
 ---
 - cron: name="joindin import"
         job="{{ app_path }}/current/app/console joindin:import:all"
-        minute="{{ range((app|int-1) * 30 + 2, 59, 30 * apps|int) | join(',') }}"
+        minute="{{ range(range(apps|int-1, -1, -1)[app|int-1] * 30 + 2, 60, 30 * apps|int) | join(',') }}"
 
 - cron: name="meetup import"
         job="{{ app_path }}/current/app/console meetup:import:all"
-        minute="{{ range((app|int-1) * 15 + 4, 59, 15 * apps|int) | join(',') }}"
+        minute="{{ range(range(0, apps|int)[app|int-1] * 15 + 8, 60, 15 * apps|int) | join(',') }}"
 
 - cron: name="twitter import"
         job="{{ app_path }}/current/app/console twitter:import:all"
-        minute="{{ range((app|int-1) * 30 + 6, 59, 30 * apps|int) | join(',') }}"
+        minute="{{ range(range(apps|int-1, -1, -1)[app|int-1] * 30 + 6, 60, 30 * apps|int) | join(',') }}"
 
 - cron: name="youtube import"
         job="{{ app_path }}/current/app/console youtube:import:all"
-        minute="{{ range((app|int-1) * 30 + 8, 59, 30 * apps|int) | join(',') }}"
+        minute="{{ range(range(0, apps|int)[app|int-1] * 30 + 4, 60, 30 * apps|int) | join(',') }}"
 
 - cron: name="invoice all" minute=0 hour=9 day=14
         job="{{ app_path }}/current/app/console invoice:all"
