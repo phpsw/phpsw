@@ -60,37 +60,49 @@ meetup:
     key: ~
 
 organisers:
-  steve:
-    name: Steve Lacey
-    slug: steve-lacey
-    github: stevelacey
-    meetup: 13915585
-    twitter: stevelacey
-    url: http://stevelacey.net
+  lee:
+    name: Lee Stone
+    slug: lee-stone
+    github: leesto
+    meetup: 31894252
+    profile: 32485902
+    twitter: leesto
+    url: http://leestone.co.uk
 
   kat:
     name: Kat Zien
     slug: kat-zien
     github: katzien
     meetup: 67450042
+    profile: 219497432
     twitter: kasiazien
     url: http://katzien.com
-
-  lee:
-    name: Lee Stone
-    slug: lee-stone
-    github: leesto
-    meetup: 31894252
-    twitter: leesto
-    url: http://leestone.co.uk
 
   oliver:
     name: Oliver Davies
     slug: oliver-davies
     github: opdavies
     meetup: 137208052
+    profile: 183591172
     twitter: opdavies
     url: http://www.oliverdavies.uk
+
+  tom:
+    name: Tom Adam
+    slug: tom-adam
+    github: tomadam
+    meetup: 96221542
+    profile: 122561392
+    url: http://www.instantiate.co.uk
+
+  # steve:
+  #   name: Steve Lacey
+  #   slug: steve-lacey
+  #   github: stevelacey
+  #   meetup: 13915585
+  #   profile: 155008212
+  #   twitter: stevelacey
+  #   url: http://stevelacey.net
 
 sponsors:
   meetup:
