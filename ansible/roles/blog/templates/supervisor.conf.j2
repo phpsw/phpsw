@@ -1,0 +1,9 @@
+[program:blog]
+command = node {{ blog_path }}/index.js
+directory = {{ blog_path }}
+user = ghost
+autostart = true
+autorestart = true
+stdout_logfile = /var/log/supervisor/blog.log
+stderr_logfile = /var/log/supervisor/blog_err.log
+environment = NODE_ENV="production"

@@ -2,7 +2,8 @@
 - name: install redis-commander
   npm: name=redis-commander global=yes
 
-- template: src=redis-commander.j2 dest=/etc/init.d/redis-commander mode=0755
-  notify: restart redis-commander
+- name: configure supervisor
+  template: src=supervisor.conf.j2 dest=/etc/supervisor/conf.d/redis-commander.conf
+  notify: reread supervisor
 
-- service: name=redis-commander state=running
+- supervisorctl: name=redis-commander state=started

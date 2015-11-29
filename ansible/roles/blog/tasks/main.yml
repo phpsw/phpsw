@@ -37,8 +37,8 @@
 - command: "chown -R ghost:ghost {{ blog_path }}"
   notify: restart blog
 
-- name: copy blog service file
-  template: src=blog.j2 dest=/etc/init.d/blog mode=0755
-  notify: restart blog
+- name: configure supervisor
+  template: src=supervisor.conf.j2 dest=/etc/supervisor/conf.d/blog.conf
+  notify: reread supervisor
 
-- service: name=blog state=running
+- supervisorctl: name=blog state=started

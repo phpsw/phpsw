@@ -13,6 +13,7 @@
     - python-software-properties
     - ruby
     - s3cmd
+    - supervisor
     - vim
     - wget
     - zip
@@ -29,3 +30,5 @@
 
 - name: sf helper
   copy: src=sf dest=/usr/local/bin mode=0755
+
+- service: name=supervisor state=running
