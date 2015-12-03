@@ -10,3 +10,6 @@ app_shared=/var/www/phpsw.uk/shared
 avatars_path=/var/www/avatars.phpsw.uk
 blog_path=/var/www/blog.phpsw.uk
 nginx_docroot=/var/www/phpsw.uk/current/web
+
+[db]
+db.phpsw.uk

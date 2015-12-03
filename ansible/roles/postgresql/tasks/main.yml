@@ -1,0 +1,21 @@
+---
+- name: install package
+  apt: name={{ item }} state=latest
+  with_items:
+    - postgresql
+    - postgresql-contrib
+    - python-psycopg2
+
+- lineinfile: dest=/etc/postgresql/9.3/main/postgresql.conf regexp='listen_addresses' line="listen_addresses = '*'"
+  notify: restart postgresql
+
+- lineinfile: dest=/etc/postgresql/9.3/main/pg_hba.conf line='host all all 0.0.0.0/0 trust'
+  notify: restart postgresql
+
+- service: name=postgresql state=running
+
+- postgresql_db: name={{ blog.database.name }}
+  become_user: postgres
+
+- postgresql_user: name={{ blog.database.user }} password={{ blog.database.password }} db={{ blog.database.name }} priv=ALL
+  become_user: postgres

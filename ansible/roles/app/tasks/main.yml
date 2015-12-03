@@ -33,3 +33,6 @@
   become: false
   tags:
     - secrets
+
+- name: sf helper
+  copy: src=sf dest=/usr/local/bin mode=0755

@@ -44,12 +44,8 @@ $app['meetup.client'] = function ($app) {
 
 if ($app['env'] == 'prod') {
     $app['redis'] = new Predis\Client(
-        [
-            ['host' => 'phpsw-redis.sfkuch.ng.0001.euw1.cache.amazonaws.com', 'alias' => 'master'],
-            ['host' => 'phpsw-redis-001.sfkuch.0001.euw1.cache.amazonaws.com', 'alias' => 'slave-01'],
-            ['host' => 'phpsw-redis-002.sfkuch.0001.euw1.cache.amazonaws.com', 'alias' => 'slave-02'],
-        ],
-        ['prefix' => 'phpsw:', 'replication' => true]
+        ['host' => 'db.phpsw.uk'],
+        ['prefix' => 'phpsw:']
     );
 } else {
     $app['redis'] = new Predis\Client(null, [

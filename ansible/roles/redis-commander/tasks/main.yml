@@ -4,6 +4,8 @@
 
 - name: configure supervisor
   template: src=supervisor.conf.j2 dest=/etc/supervisor/conf.d/redis-commander.conf
-  notify: reread supervisor
+  notify:
+    - reread supervisor
+    - restart redis-commander
 
 - supervisorctl: name=redis-commander state=started

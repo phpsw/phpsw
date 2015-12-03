@@ -1,0 +1,20 @@
+---
+- name: install redis-server
+  apt: name=redis-server state=latest
+
+- lineinfile: dest=/etc/redis/redis.conf regexp='^bind' line='bind 0.0.0.0'
+  notify: restart redis-server
+
+- name: set the kernel parameter for vm overcommit
+  sysctl: name=vm.overcommit_memory value=1 state=present
+  notify: restart redis-server
+
+- template: src={{ item }}.sh.j2 dest=/var/lib/redis/{{ item }}.sh mode=0755
+  with_items:
+    - backup
+    - restore
+
+- command: /var/lib/redis/restore.sh creates=/var/lib/redis/dump.rdb
+  notify: restart redis-server
+
+- service: name=redis-server state=running

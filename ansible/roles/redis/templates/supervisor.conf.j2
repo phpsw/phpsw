@@ -1,7 +1,0 @@
-[program:redis-commander]
-command = redis-commander --redis-host phpsw-redis.sfkuch.ng.0001.euw1.cache.amazonaws.com --http-auth-username {{ redis.commander.http_auth_username }} --http-auth-password {{ redis.commander.http_auth_password }}
-user = root
-autostart = true
-autorestart = true
-stdout_logfile = /var/log/supervisor/redis-commander.log
-stderr_logfile = /var/log/supervisor/redis-commander_err.log

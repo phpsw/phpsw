@@ -20,6 +20,3 @@
              s3cmd sync {{ app_shared }}/invoices/ s3://phpsw/invoices/ -c ~/.s3cfg &&
              rm {{ app_shared }}/invoices/*.pdf"
         month="{{ range(app|int * 1, 13, 1 * apps|int) | join(',') }}"
-
-- script: keys.rb ubuntu phpsw
-  tags: [keys]

@@ -2,22 +2,38 @@
 - hosts: app
   become: true
   roles:
-    - {role: server,   tags: [server]}
-    - {role: hostname, tags: [hostname]}
-    - {role: user,     tags: [user]}
-    - {role: nginx,    tags: [nginx]}
-    - {role: php,      tags: [php]}
-    - {role: composer, tags: [composer]}
-    - {role: haproxy,  tags: [haproxy]}
-    - {role: node,     tags: [node]}
-    - {role: redis,    tags: [redis]}
-    - {role: thumbor,  tags: [thumbor]}
-    - {role: varnish,  tags: [varnish]}
-    - {role: xdebug,   tags: [xdebug]}
-    - {role: aws,      when: "app_hostname == 'phpsw.uk'", tags: [aws]}
-    - {role: vagrant,  when: "app_hostname == 'phpsw.vm'", tags: [vagrant]}
-    - {role: app,      tags: [app]}
-    - {role: blog,     tags: [blog]}
+    - {role: server,          tags: [server]}
+    - {role: hostname,        tags: [hostname]}
+    - {role: user,            tags: [user]}
+    - {role: nginx,           tags: [nginx]}
+    - {role: php,             tags: [php]}
+    - {role: composer,        tags: [composer]}
+    - {role: haproxy,         tags: [haproxy]}
+    - {role: node,            tags: [node]}
+    - {role: postgresql,      when: "app_hostname == 'phpsw.vm'", tags: [postgresql]}
+    - {role: redis-commander, tags: [redis-commander]}
+    - {role: redis-server,    when: "app_hostname == 'phpsw.vm'", tags: [redis-server]}
+    - {role: thumbor,         tags: [thumbor]}
+    - {role: varnish,         tags: [varnish]}
+    - {role: xdebug,          tags: [xdebug]}
+    - {role: crons,           when: "app_hostname == 'phpsw.uk'", tags: [crons]}
+    - {role: keys,            when: "app_hostname == 'phpsw.uk'", tags: [keys]}
+    - {role: vagrant,         when: "app_hostname == 'phpsw.vm'", tags: [vagrant]}
+    - {role: app,             tags: [app]}
+    - {role: blog,            tags: [blog]}
+  vars_files:
+    - secrets.yml
+    - variables.yml
+
+- hosts: db
+  become: true
+  roles:
+    - {role: server,          tags: [server]}
+    - {role: hostname,        tags: [hostname]}
+    - {role: user,            tags: [user]}
+    - {role: postgresql,      tags: [postgresql]}
+    - {role: redis-server,    tags: [redis-server]}
+    - {role: keys,            tags: [keys]}
   vars_files:
     - secrets.yml
     - variables.yml
