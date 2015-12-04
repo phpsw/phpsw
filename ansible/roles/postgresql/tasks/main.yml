@@ -2,6 +2,7 @@
 - name: install package
   apt: name={{ item }} state=latest
   with_items:
+    - autopostgresqlbackup
     - postgresql
     - postgresql-contrib
     - python-psycopg2
@@ -19,3 +20,9 @@
 
 - postgresql_user: name={{ blog.database.user }} password={{ blog.database.password }} db={{ blog.database.name }} priv=ALL
   become_user: postgres
+
+- cron: name="postgresql {{ item }} backup" minute=0 hour=0 job="s3cmd sync /var/lib/autopostgresqlbackup/{{ item }}/{{ blog.database.name }}/ s3://phpsw/backups/"
+  with_items:
+    - daily
+    - monthly
+    - weekly
