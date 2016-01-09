@@ -1,14 +1,57 @@
-# This is a basic VCL configuration file for varnish.  See the vcl(7)
-# man page for details on VCL syntax and semantics.
-#
-# Default backend definition.  Set this to point to your content
-# server.
-#
 backend default {
     .host = "127.0.0.1";
     .port = "8080";
 }
-#
+
+sub vcl_deliver {
+    unset resp.http.Age;
+
+    if (obj.hits > 0) {
+      set resp.http.X-Cache = "HIT";
+    } else {
+      set resp.http.X-Cache = "MISS";
+    }
+
+    unset resp.http.Via;
+    unset resp.http.X-Mod-Pagespeed;
+    unset resp.http.X-Powered-By;
+    unset resp.http.X-Varnish;
+    unset resp.http.Server;
+}
+
+sub vcl_recv {
+    set req.url = regsub(req.url, "\?_pjax=\.content", "");
+
+    set req.http.Surrogate-Capability = "abc=ESI/1.0";
+
+    if (req.http.Cookie) {
+      set req.http.Cookie = regsuball(req.http.Cookie, "(^|;\s*)(__[a-z]+|_gat?|_mkto_trk|em_(cdn|p)_uid)=[^;]*", "");
+
+      if (req.http.Cookie == "") {
+        unset req.http.Cookie;
+      }
+    }
+
+    set req.grace = 60s;
+}
+
+sub vcl_fetch {
+    /**
+     * Check for ESI acknowledgement
+     * and remove Surrogate-Control header
+     */
+    if (beresp.http.Surrogate-Control ~ "ESI/1.0") {
+      unset beresp.http.Surrogate-Control;
+      set beresp.do_esi = true;
+    }
+
+    if (beresp.status >= 500) {
+      set beresp.saintmode = 20s;
+    }
+
+    set beresp.grace = 1h;
+}
+
 # Below is a commented-out copy of the default VCL logic.  If you
 # redefine any of these subroutines, the built-in logic will be
 # appended to your code.
