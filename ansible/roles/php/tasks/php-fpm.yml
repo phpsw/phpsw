@@ -1,20 +1,32 @@
 ---
 - name: set permissions on socket - owner
   lineinfile: "dest=/etc/php5/fpm/pool.d/www.conf state=present regexp='^;?listen.owner' line='listen.owner = www-data'"
+  notify: restart php5-fpm
 
 - name: set permissions on socket - group
   lineinfile: "dest=/etc/php5/fpm/pool.d/www.conf state=present regexp='^;?listen.group' line='listen.group = www-data'"
+  notify: restart php5-fpm
 
 - name: set permissions on socket - mode
   lineinfile: "dest=/etc/php5/fpm/pool.d/www.conf state=present regexp='^;?listen.mode' line='listen.mode = 0660'"
   notify: restart php5-fpm
 
 - name: ensure timezone is set in fpm php.ini
-  lineinfile: dest=/etc/php5/fpm/php.ini
-              regexp='date.timezone ='
+  lineinfile: dest=/etc/php5/fpm/php.ini regexp='date.timezone ='
               line='date.timezone = {{ server.timezone }}'
+  notify: restart php5-fpm
 
 - name: enabling opcache
-  lineinfile: dest=/etc/php5/fpm/php.ini
-              regexp=';?opcache.enable=\d'
+  lineinfile: dest=/etc/php5/fpm/php.ini regexp=';?opcache.enable=\d'
               line='opcache.enable=1'
+  notify: restart php5-fpm
+
+- name: set opcache memory consumption
+  lineinfile: dest=/etc/php5/fpm/php.ini regexp=';?opcache.memory_consumption=\d+'
+              line='opcache.memory_consumption=128'
+  notify: restart php5-fpm
+
+- name: set memory limit
+  lineinfile: dest=/etc/php5/fpm/php.ini regexp='memory_limit'
+              line='memory_limit = 192M'
+  notify: restart php5-fpm
