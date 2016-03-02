@@ -197,19 +197,6 @@ sponsors:
       start: 2015-09-01
       end: ~
 
-    mixradio:
-      name: MixRadio
-      company: MixRadio
-      description: MixRadio, formerly Nokia MixRadio, is a global music streaming service, it's like having your own personal radio station!
-      contact:
-        name: Tom
-        email: tcoupland@gmail.com
-        meetup: ~
-      url: http://www.mixrad.io
-      logo: /images/sponsors/mixradio.png
-      start: ~
-      end: ~
-
   community:
     jetbrains:
       name: JetBrains
