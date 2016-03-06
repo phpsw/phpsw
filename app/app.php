@@ -4,7 +4,7 @@ $app = new PHPSW\Application;
 
 if (strpos($_SERVER['SCRIPT_NAME'], 'kahlan') !== false) {
     $app['env'] = 'testing';
-} elseif (strpos(__DIR__, 'phpsw.uk') !== false || strpos(__DIR__, 'phpsw.herokuapp.com') !== false) {
+} elseif (strpos(__DIR__, 'phpsw.uk') !== false || getenv('PHP_ENV') == 'production') {
     $app['env'] = 'prod';
     $_SERVER['HTTPS'] = 'on';
 } else {
