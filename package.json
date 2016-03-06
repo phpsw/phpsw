@@ -1,4 +1,5 @@
 {
+  "cacheDirectories": ["node_modules", "vendor"],
   "dependencies": {
     "bower": "^1.3.3",
     "coffee-script": "^1.7.1",
