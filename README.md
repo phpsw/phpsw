@@ -20,6 +20,7 @@ Setup
 ```sh
 git clone https://github.com/phpsw/phpsw.git
 cd phpsw
+brew install graphicsmagick
 composer install
 npm install
 bower install
