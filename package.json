@@ -35,5 +35,8 @@
   "engines": {
     "node": "0.10.x"
   },
-  "private": true
+  "private": true,
+  "scripts": {
+    "postinstall": "bower install && gulp build"
+  }
 }
