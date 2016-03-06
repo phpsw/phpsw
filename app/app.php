@@ -4,7 +4,7 @@ $app = new PHPSW\Application;
 
 if (strpos($_SERVER['SCRIPT_NAME'], 'kahlan') !== false) {
     $app['env'] = 'testing';
-} elseif (strpos(__DIR__, 'phpsw.uk') !== false) {
+} elseif (strpos(__DIR__, 'phpsw.uk') !== false || strpos(__DIR__, 'phpsw.herokuapp.com') !== false) {
     $app['env'] = 'prod';
     $_SERVER['HTTPS'] = 'on';
 } else {
@@ -44,7 +44,7 @@ $app['meetup.client'] = function ($app) {
 
 if ($app['env'] == 'prod') {
     $app['redis'] = new Predis\Client(
-        ['host' => 'db.phpsw.uk'],
+        getenv('REDIS_URL'),
         ['prefix' => 'phpsw:']
     );
 } else {

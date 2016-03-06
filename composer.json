@@ -15,7 +15,7 @@
         "knplabs/console-service-provider": "dev-master",
         "misd/linkify-bundle": "~1.0",
         "nicl/silex-markdown": "~1.0",
-        "predis/predis": "~0.8",
+        "predis/predis": "~1.0.2",
         "salavert/time-ago-in-words": "1.*",
         "silex/silex": "~1.1",
         "swiftmailer/swiftmailer": "~5.3",
