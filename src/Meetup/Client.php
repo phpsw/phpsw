@@ -821,12 +821,23 @@ class Client
                             $speaker->bio = $speakerExplode[1];
                         }
 
+                        if (strpos($speaker->id, 'dave-liddament')) {
+                            $speaker->id = 'dave-liddament';
+                            $speaker->bio = 'Director and developer at <a href="http://www.lampbristol.com/">Lamp Bristol</a>.';
+                            $speaker->name = 'Dave Liddament';
+                            $speaker->slug = 'dave-liddament';
+                        }
+
                         /* end */
 
                         if ($speakerNodes->count()) {
                             $speaker->url = $speakerNodes->filter('a')->first()->attr('href');
 
-                            $speaker->url = str_replace('BillieAThompson', 'PurpleBooth', $speaker->url);
+                            if ($speaker->id == 'billie-thompson') {
+                                $speaker->url = str_replace('BillieAThompson', 'PurpleBooth', $speaker->url);
+                            } elseif ($speaker->id == 'dave-liddament') {
+                                $speaker->url = 'http://www.meetup.com/php-sw/members/104883962';
+                            }
 
                             if (preg_match('#https?://www\.meetup\.com/php-sw/members/([^\/]+)#', $speaker->url, $matches)) {
                                 $speaker->member = $this->getMember($matches[1]);
