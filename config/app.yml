@@ -170,6 +170,19 @@ sponsors:
       start: 2014-08-01
       end: 2015-05-31
 
+    deepbluesky:
+      name: Deep Blue Sky
+      company: Deep Blue Sky
+      description: Deep Blue Sky specialise in strategic web design and enterprise resource planning development, worldwide.
+      contact:
+        name: Jess
+        email: jess@deepbluesky.com
+        meetup: ~
+      url: http://deepbluesky.com
+      logo: /images/sponsors/deep-blue-sky.png
+      start: 2016-04-01
+      end: ~
+
   event:
     basekit:
       name: BaseKit
