@@ -210,6 +210,19 @@ sponsors:
       start: ~
       end: ~
 
+    siftdigital:
+      name: Sift Digital
+      company: Sift Digital
+      description: Sift Digital brings together people, technology and ideas to transform businesses and improve people's lives.
+      contact:
+        name: Rich Saddington
+        email: rich.saddington@siftdigital.com
+        meetup: ~
+      url: https://www.siftdigital.com
+      logo: /images/sponsors/sift-digital.png
+      start: 2016-03-01
+      end: 2016-03-31
+
   community:
     jetbrains:
       name: JetBrains
