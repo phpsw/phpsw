@@ -207,8 +207,8 @@ sponsors:
         meetup: ~
       url: http://www.mixrad.io
       logo: /images/sponsors/mixradio.png
-      start: ~
-      end: ~
+      start: 2015-01-01
+      end: 2016-02-01
 
   community:
     jetbrains:
