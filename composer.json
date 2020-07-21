@@ -50,5 +50,6 @@
     "autoload": {
         "psr-4": { "PHPSW\\": "src" }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "abandoned": "phpsw/phpsw-symfony5"
 }
