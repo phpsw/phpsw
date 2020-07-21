@@ -1,7 +1,9 @@
-PHP South West UK User Group
+[DEPRECATED] PHP South West UK User Group
 ============================
 
 ![Build Status](https://img.shields.io/badge/branch-master-blue.svg) [![Build Status](https://travis-ci.org/phpsw/phpsw.svg?branch=master)](https://travis-ci.org/phpsw/phpsw) ![Build Status](https://img.shields.io/badge/branch-develop-blue.svg) [![Build Status](https://travis-ci.org/phpsw/phpsw.svg?branch=develop)](https://travis-ci.org/phpsw/phpsw)
+
+See [phpsw/phpsw-symfony5](https://github.com/phpsw/phpsw-symfony5) for the replacement project.
 
 A simple [Silex](http://silex.sensiolabs.org)-based website for the [PHP South West UK User Group](http://phpsw.uk).
 
